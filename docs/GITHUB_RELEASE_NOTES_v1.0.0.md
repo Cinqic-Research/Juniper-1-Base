@@ -47,6 +47,6 @@ replication was neither run nor claimed. Details: `docs/REPRODUCTION.md`, `docs/
 
 ## Provenance
 
-Clean export of Cinqic's private `Juniper-1-Train` (`4d39c0e5`) and `Juniper-1-Data` (`542bec3b`) repositories;
+Clean export of Cinqic's private `Juniper-1-Train` (`52bd74ca`: main `4d39c0e5` plus the closure record) and `Juniper-1-Data` (`14ce3ffe`: main `542bec3b` plus the release decisions and rights analysis) repositories;
 every exported file is listed with its source commit and SHA-256 in `EXPORT_MAPPING.json`. Release checks and
 reviewer evidence: `docs/RELEASE_RECORD.md`.

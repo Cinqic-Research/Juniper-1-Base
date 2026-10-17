@@ -1,7 +1,7 @@
 # Training source and evidence (export of Juniper-1-Train)
 
 This directory is an allow-listed export of Cinqic's private `Juniper-1-Train` repository at commit
-`4d39c0e5` (see `../EXPORT_MAPPING.md`). The `j1bench` package files that the frozen checkpoint binds by
+`52bd74ca` (main `4d39c0e5` plus the 2026-10-16 closure record; see `../EXPORT_MAPPING.md`). The `j1bench` package files that the frozen checkpoint binds by
 hash (`__init__.py`, `ckpt.py`, `data.py`, `model.py`, `replicate.py`, `store.py`, `timeaudit.py`,
 `timelog.py`, `train.py`) are byte-identical to the code identity recorded in the checkpoint manifest
 (`code_identity.git_revision` `828edd19`, package SHA-256 `81a3a277…204e99`).

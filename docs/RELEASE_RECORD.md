@@ -15,7 +15,7 @@ Status: **STAGED, PENDING INDEPENDENT REVIEW** (updated when publication complet
 | Hugging Face model | `CinqicX/juniper1-base` (revision recorded below) |
 | Hugging Face dataset | `CinqicX/juniper1-base-corpus-v0.2.2` (revision recorded below) |
 | License scope | Apache-2.0: weights, tokenizer, code, manifests, documentation (Cinqic). Third-party training data: own licenses (`THIRD_PARTY_NOTICES.md`, `docs/RIGHTS.md`). Dataset card: `license: other` with `LICENSES.md`. |
-| Private origins | Juniper-1-Train `4d39c0e5`, Juniper-1-Data `542bec3b` (`EXPORT_MAPPING.json`); closure PR Train #35, data PR Data #16 |
+| Private origins | Juniper-1-Train `52bd74ca` (main `4d39c0e5` + closure PR #35), Juniper-1-Data `14ce3ffe` (main `542bec3b` + release PR #16); every file in `EXPORT_MAPPING.json` |
 
 ## Checks performed before publication
 
