@@ -1,5 +1,5 @@
 > **Export note.** This directory is an allow-listed export of Cinqic's private `Juniper-1-Data` repository
-> at commit `2231c7fd` (see `../EXPORT_MAPPING.md`): pipeline source, configs, schemas, tools, tests, manifests and
+> at commit `14ce3ffe` (see `../EXPORT_MAPPING.md`): pipeline source, configs, schemas, tools, tests, manifests and
 > reports for the base-corpus builds, and the data documentation. Post-training (SFT/distillation) datasets and
 > their manifests are not exported. Corpus bytes are published separately as the Hugging Face dataset
 > `CinqicX/juniper1-base-corpus-v0.2.2` (text payloads for seven sources, reconstruction manifests for three).

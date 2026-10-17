@@ -1,3 +1,5 @@
+> Copy of the closure record in the private Juniper-1-Train repository (PR #35). Relative paths such as `docs/...` refer to that repository; the same files are mirrored here under `training/docs/`, and the Juniper-1-Data paths under `data/`.
+
 # Juniper 1 R&D closure record (2026-10-16)
 
 Owner decision: on 2026-10-16 Markus Gillyard decided that continued Juniper 1 research and post-training no

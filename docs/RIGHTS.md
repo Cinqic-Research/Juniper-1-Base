@@ -1,6 +1,13 @@
 # Rights table for the Juniper 1 Base release (corpus `j1-base-v0.2.2`)
 
-Generated 2026-10-16 08:37 PM EDT by the rights-and-provenance subagent (Fable 5.1 lead session). Machine-readable twin: `rights_table_2026-10-16.json`. This document records evidence and a proposal; it changes no registry record. `configs/owner_decisions.toml` release decisions `weights-release-license-treatment` and `dataset-redistribution` remain PENDING.
+> **Resolution (2026-10-16, recorded 2026-10-17 01:50 AM EDT).** The owner's 2026-10-16 directive was applied: `configs/owner_decisions.toml`
+> now carries `weights-release-license-treatment-2026-10-16` and `dataset-redistribution-2026-10-16` (status `DECIDED`), adopting this
+> table's defaults: Cinqic-owned artifacts under Apache-2.0 with the NOTICE disclosures; seven text-payload sources under their own
+> licenses; FineWeb-Edu, FineMath and Stack v2 Edu as reconstruction manifests only (Q-1 and Q-2 stay open as owner questions; the
+> release is complete without them). Q-3 and Q-4 below are therefore resolved. The original PENDING records are preserved unchanged.
+> Sentences below that read as a proposal ("this branch", "remain PENDING", "NOT RE-VERIFIED") describe the state when the table was written.
+
+Generated 2026-10-16 08:37 PM EDT by the rights-and-provenance subagent (Fable 5.1 lead session). Machine-readable twin: `RIGHTS.json` (`rights_table_2026-10-16.json` in the private repository). This document records evidence and a proposal; it changes no registry record. `configs/owner_decisions.toml` release decisions `weights-release-license-treatment` and `dataset-redistribution` remain PENDING.
 
 Vocabulary: **the registry says** = `configs/sources.toml` / `configs/owner_decisions.toml`; **the upstream card says** = text fetched today at the pinned revision (quoted verbatim); **assessment** = my reading, not legal advice and not an owner decision.
 

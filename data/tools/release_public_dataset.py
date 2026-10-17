@@ -58,6 +58,9 @@ def license_fields(lic: str | None) -> tuple[str, str]:
 
 def authors_of(meta: dict) -> list[str]:
     a = meta.get("authors")
+    if isinstance(a, str) and a:
+        # arXiv: one string, "A, B, and C"
+        return [x.strip() for x in re.split(r",\s*(?:and\s+)?|\s+and\s+", a) if x.strip()]
     if isinstance(a, list):
         out = []
         for x in a:

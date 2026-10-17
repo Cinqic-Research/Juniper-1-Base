@@ -2,7 +2,7 @@
  "schema": "juniper1.export-mapping.v1",
  "sources": {
   "Juniper-1-Train": "52bd74ca11bbeffd00e439796fe132dbcd895c03",
-  "Juniper-1-Data": "2231c7fdac73d3694759a0e536cd0ae56b5f6780"
+  "Juniper-1-Data": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620"
  },
  "files": [
   {
@@ -242,7 +242,8 @@
    "source_commit": "52bd74ca11bbeffd00e439796fe132dbcd895c03",
    "source_path": "docs/audit_2026-10-12/findings.json",
    "sha256": "a94e61233dc24dd295a5c216a71df0fa2e40f04e8745f0ad9850d31d59f6cd41",
-   "modified": "email address redacted"
+   "modified": "email address redacted",
+   "sha256_after_export": "ab8c2bdfd9c3c2440e60c999a658ce7aae011fe7651eaee064d89f95c5e700db"
   },
   {
    "public_path": "training/docs/audit_2026-10-12/results/behavior_cpu.json",
@@ -5525,2410 +5526,2419 @@
   {
    "public_path": "data/src/j1data/__init__.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/__init__.py",
    "sha256": "c08a98239178bc4a5035aa4d8504a5174e5c73a1e0e130ce0f92c8ded067a397"
   },
   {
    "public_path": "data/src/j1data/__main__.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/__main__.py",
    "sha256": "d1119793acffb81706742c0c9b6f6afab29ee5c4fbe45097b1caf1d9f3394f95"
   },
   {
    "public_path": "data/src/j1data/acquire.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/acquire.py",
    "sha256": "3013bfbe1cad4fbca93a6550c098297f0f82ba9082f723e8ab76883bb5d69035"
   },
   {
    "public_path": "data/src/j1data/adapters/__init__.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/adapters/__init__.py",
    "sha256": "cff8c0e8a38eb38f946d6a4c3e0c9275233cfa2f170413d9360f32e5468f0e7e"
   },
   {
    "public_path": "data/src/j1data/audit.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/audit.py",
    "sha256": "07d27d48b3b6ca88841c21fa8c2e3c41dec86d5920e9fc5bd2e170ba33a6908b"
   },
   {
    "public_path": "data/src/j1data/audit_scan.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/audit_scan.py",
    "sha256": "81766e4ba0b7f9745e0a88b67d222d3d1132243eed7bee8017488a7cfe4e6ee9"
   },
   {
    "public_path": "data/src/j1data/build.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/build.py",
    "sha256": "541d4bad7cd125eeacc853ee1df0041fd2aaf12f596d9e973592499f9f671c50"
   },
   {
    "public_path": "data/src/j1data/cli.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/cli.py",
    "sha256": "57dc67a1d9c6782ed6267c906757e596649d6e322322e9a4d3f75c583d2cbc32"
   },
   {
    "public_path": "data/src/j1data/code_signatures.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/code_signatures.py",
    "sha256": "091a4c2a306515aa6716b5d4fae78d2afce39a636ab7c631e2a88d03576c608f"
   },
   {
    "public_path": "data/src/j1data/codecheck.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/codecheck.py",
    "sha256": "f0dd45def15f76365440f4c98cd3de61782aad1ec6c0b1e7ada8aee0cbfbacb3"
   },
   {
    "public_path": "data/src/j1data/contamination.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/contamination.py",
    "sha256": "f9a0ae90877269bb6861da2dda835aec22d546b7898cf87ae68e7772e167692a"
   },
   {
    "public_path": "data/src/j1data/convadmit.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/convadmit.py",
    "sha256": "da366a3d19c351bcdc792c833f9e64e5f7cc90b8994f685edd89d106b1602ae7"
   },
   {
    "public_path": "data/src/j1data/convdraft.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/convdraft.py",
    "sha256": "43c69ae2e625049a594f7153f2a538ad8ad3df862d66086d4027b19f344cba76"
   },
   {
    "public_path": "data/src/j1data/convreview.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/convreview.py",
    "sha256": "64c8d97cff836af6d1223753b94611472b38b2b908e0cdcd5c957e0d180dbfc9"
   },
   {
    "public_path": "data/src/j1data/dedup.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/dedup.py",
    "sha256": "fde99e983be3782c75f0c3b8657c2d0283a4bc1ea241a933eef85c615bc9cc5b"
   },
   {
    "public_path": "data/src/j1data/dedup_calibration.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/dedup_calibration.py",
    "sha256": "f2f7fc1cc485bfdd404b70e8277d8c0aef0e4976c7535176f50ee419eceb2ba3"
   },
   {
    "public_path": "data/src/j1data/distill.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/distill.py",
    "sha256": "e4072f5f4a53cdcb3df1680b4f26d7ba7222f91b5d67062e905c850893eb4ea1"
   },
   {
    "public_path": "data/src/j1data/domains.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/domains.py",
    "sha256": "c55a656de76ea7ebe652a24ef9702b476451d4d137c00e58c180a0cc896f03e7"
   },
   {
    "public_path": "data/src/j1data/episodes.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/episodes.py",
    "sha256": "1fdb364982c02153080d76245cf8e009fe989553e87323d712bcae4239f2a160"
   },
   {
    "public_path": "data/src/j1data/exclusions.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/exclusions.py",
    "sha256": "9499b07caa7394e04cc5e3e0b34d4413934514f30b5cd5fe4fe32969b9097e04"
   },
   {
    "public_path": "data/src/j1data/faults.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/faults.py",
    "sha256": "f387302690a40a79d1c3a9402ada27dbacf14baa416a6a9cfcfc475bc85c8ae9"
   },
   {
    "public_path": "data/src/j1data/finalize.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/finalize.py",
    "sha256": "71b004804073126c3dc8a43cae8ca0e4c840fa71ee3a58a2ca06be9f288650ab"
   },
   {
    "public_path": "data/src/j1data/gates.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/gates.py",
    "sha256": "2748e0279679ec353cd0c29e55f81ce6987edc5787a24c4cb3f36b7f5895e832"
   },
   {
    "public_path": "data/src/j1data/hashing.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/hashing.py",
    "sha256": "cfd795a5b81a40122ae9d3f8c3629051893cb56a2349d5763e7fdf3c25aec732"
   },
   {
    "public_path": "data/src/j1data/jtok.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/jtok.py",
    "sha256": "96a9c03f6db8ff0a3fe980a0a15cf54671c4fe0d4f093826929afbca66e78116"
   },
   {
    "public_path": "data/src/j1data/minhash.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/minhash.py",
    "sha256": "b49157401fbc68cc976866d95d18e6356f7b7e422c8fa459a4c567a2e7c0e471"
   },
   {
    "public_path": "data/src/j1data/ngrams.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/ngrams.py",
    "sha256": "079ead7acaa26ed4e66f8d8ab1e618a1c2b4a727bcde908b96a0ddc8a35bf571"
   },
   {
    "public_path": "data/src/j1data/normalize.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/normalize.py",
    "sha256": "1906af78ba3a4baff117afe71479b6bedcf4b84bf0767226e5ec9eb330325d16"
   },
   {
    "public_path": "data/src/j1data/paths.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/paths.py",
    "sha256": "0f4301b9c878febaabddfb7e1760fa04cb5cf87bec560c1517bd39264f911131"
   },
   {
    "public_path": "data/src/j1data/pools.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/pools.py",
    "sha256": "5d6e92a34e7876b01d5307bb1d53b9074e97c699cc20444237aff6c07af99267"
   },
   {
    "public_path": "data/src/j1data/privacy.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/privacy.py",
    "sha256": "cdf77ba2048ecc9bc60c2a0792a447bf6f745ef35505bc8de71bbc0baa4d86f0"
   },
   {
    "public_path": "data/src/j1data/process.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/process.py",
    "sha256": "a12067b7b0bb8bbbf8321fddd02e6a2fd70edaf205d90525e681f0b918bb2cdf"
   },
   {
    "public_path": "data/src/j1data/protocol.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/protocol.py",
    "sha256": "a857624409fd2dcbf8be4bf2cd2ef5dee69db06216b15439661d8e5d6c547e32"
   },
   {
    "public_path": "data/src/j1data/quality.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/quality.py",
    "sha256": "4a723f1327df4b64584b1dc4d270becbce35ce1ab0af56e414486d72c7f5e9c4"
   },
   {
    "public_path": "data/src/j1data/registry.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/registry.py",
    "sha256": "0e2efb5409653e092e572d6829bc36b7008bd0b88e094cf0882c90fadc94d023"
   },
   {
    "public_path": "data/src/j1data/report.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/report.py",
    "sha256": "ad7841701e4adbbbdec146156161b7470373e82fdd6d59ffcfd411c5f9d456f8"
   },
   {
    "public_path": "data/src/j1data/runtime_client.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/runtime_client.py",
    "sha256": "9f9bccfc435cbd614c7fd9a187a3951bedfdcb12de70771560b5c2c12e3da26d"
   },
   {
    "public_path": "data/src/j1data/sandbox.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/sandbox.py",
    "sha256": "1d7077d38a06c3f8a31a5899e9f6d4a0e37f57c7e50a342790ca880caa4c34b8"
   },
   {
    "public_path": "data/src/j1data/select.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/select.py",
    "sha256": "cb862d7b98a9015e5de9d2176fc610c527aaebd9485062bcbd9690a6830fcad3"
   },
   {
    "public_path": "data/src/j1data/sft.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/sft.py",
    "sha256": "9c162a76aab8d98a2ac80b11e1972581b16f3a5bda13c87563013036d5f7f1f6"
   },
   {
    "public_path": "data/src/j1data/sftbuild.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/sftbuild.py",
    "sha256": "72eae5b1dac58b25fb11ceb09efdecb788478f80322e3828e9ab28d3ea0dcb64"
   },
   {
    "public_path": "data/src/j1data/sftconfirm.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/sftconfirm.py",
    "sha256": "53147ec0e8a0d7713a9e42312d5194122817154d25088ab9078d83804404ec33"
   },
   {
    "public_path": "data/src/j1data/sfteval.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/sfteval.py",
    "sha256": "943351892f43111164c5324700250381d5e7b6e45176efcfe6118eac736cf4ae"
   },
   {
    "public_path": "data/src/j1data/sftgen.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/sftgen.py",
    "sha256": "4faca7c34d420f51bfad7bc56af90838b0a99dfe5eb61185675fb00cf7d912e5"
   },
   {
    "public_path": "data/src/j1data/sftmix.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/sftmix.py",
    "sha256": "bac04a0b155a3ac56126befb9ff4a61f771de1a9b2a1e519e54800aca89fa654"
   },
   {
    "public_path": "data/src/j1data/sftoasst.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/sftoasst.py",
    "sha256": "95f4237f32c295ce0274df9b78d6fb27b7d98b350a8c3ecc1ea9d6d0d2803d79"
   },
   {
    "public_path": "data/src/j1data/sftops.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/sftops.py",
    "sha256": "4c17232900e4b0e34f9010b653b733ba59624333d4383203f97caf87d2772177"
   },
   {
    "public_path": "data/src/j1data/sftreplay.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/sftreplay.py",
    "sha256": "c501322a1dd8106278750e5faf74bcaa68ddba148bcc398bf022087bf033a847"
   },
   {
    "public_path": "data/src/j1data/sftscore.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/sftscore.py",
    "sha256": "30a496f002999a091964096defad9cda8682ec4d1bf2d6d873ae328c9e5ffc2c"
   },
   {
    "public_path": "data/src/j1data/sftsources.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/sftsources.py",
    "sha256": "71d0d6dfa8eba7c13087075f14093442606dced51c8c56e3d2dbbe85049e7113"
   },
   {
    "public_path": "data/src/j1data/sftsubset.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/sftsubset.py",
    "sha256": "b011615e6f9264886886fdbb7811b73ddc30d9384e7faf9611031200403d01d9"
   },
   {
    "public_path": "data/src/j1data/shards.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/shards.py",
    "sha256": "fe6f58f13b30eecc64c8ddeab044e22e1b2930538d2876f934a6b61303455fc8"
   },
   {
    "public_path": "data/src/j1data/splits.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/splits.py",
    "sha256": "152cc4651ba98c1d06c379ce5d8a43324b5a5fd214dc21dd8ddbb2561a7a2d62"
   },
   {
    "public_path": "data/src/j1data/successor.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/successor.py",
    "sha256": "6513554ed0aaae45aa65f11ab41364c7f0435847a0f0f29177e03ad407451d9e"
   },
   {
    "public_path": "data/src/j1data/tokcli.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/tokcli.py",
    "sha256": "89d52c163ea79f573b6a6c8b62e2ed26531c508d8a5f910b12aa65248e719c46"
   },
   {
    "public_path": "data/src/j1data/token_counts.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/token_counts.py",
    "sha256": "6633ff26d241aa3c7ae0bc52236d1c7ddcf259734bf68209f3d34d122927927d"
   },
   {
    "public_path": "data/src/j1data/tokenization.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/tokenization.py",
    "sha256": "3c50b8a27fbf05427c961729854eb4aef8da8573285c1b41e2e1c5382a151f90"
   },
   {
    "public_path": "data/src/j1data/tokshards.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/tokshards.py",
    "sha256": "b399fe3d1a05288c2ecdd03debafeb43ab8d3a4792f60198eb88727f50af7f4c"
   },
   {
    "public_path": "data/src/j1data/tokstage.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/tokstage.py",
    "sha256": "e70c6de3163d3320dc6b0c818e5f44ccfbaf8c9a08dcd0c9bb96ae64a59af6b7"
   },
   {
    "public_path": "data/src/j1data/verify.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "src/j1data/verify.py",
    "sha256": "2e5d616e7f4da4a081c0627f61856a424ecdca3e3c4947cfad6629603ad64760"
   },
   {
    "public_path": "data/configs/build_scope.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/build_scope.toml",
    "sha256": "f1d620b344c67345d06c78b86f681608a5059721d81947eeb6794ddd67f70a02"
   },
   {
    "public_path": "data/configs/codecheck_v1.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/codecheck_v1.toml",
    "sha256": "504e188a63a2f518449f1b5ace95c2895c8f4869a01215c07dd6234f1ff1f106"
   },
   {
    "public_path": "data/configs/considered_sources.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/considered_sources.toml",
    "sha256": "3376319ad35f802f5267dde282ebc741a7ebb5e650b087c5fd821b919c5f6875"
   },
   {
    "public_path": "data/configs/conv_seed_v1.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/conv_seed_v1.toml",
    "sha256": "a54487194530f17f2857d96201c74ce2a77eb6c1439467c66a7c553bea7086c9"
   },
   {
    "public_path": "data/configs/exclusions.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/exclusions.toml",
    "sha256": "d6a398869d8883c6f29b4810d4723bdd13f5f22e20418ef14ee3ac7e4eca244e"
   },
   {
    "public_path": "data/configs/juniper_tokenizer.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/juniper_tokenizer.toml",
    "sha256": "185a5c13450bf564ab16a95975fca5d383b01819f4d7c77d96a6f53fc52bc659"
   },
   {
    "public_path": "data/configs/measurement_tokenizers.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/measurement_tokenizers.toml",
    "sha256": "7dd527f3214a2e67b13398a68d372997ff4731bf7a2b000089b94c955a477cb7"
   },
   {
    "public_path": "data/configs/owner_decisions.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/owner_decisions.toml",
    "sha256": "41ab3c732036489acb395386ec07801bfdb1a7e6eb9bcbe5bd16a4ddef13b3fa"
   },
   {
    "public_path": "data/configs/pipeline.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/pipeline.toml",
    "sha256": "7441b7217d960e841f55a8f4d5222abc9db3c82bd9d8ff33908eb19399b876a8"
   },
   {
    "public_path": "data/configs/selection.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/selection.toml",
    "sha256": "1effe72cf6e989eef016bda7fdbb58e33930d486a46397d676c978edf209a9fb"
   },
   {
    "public_path": "data/configs/sft_confirm_v1.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/sft_confirm_v1.toml",
    "sha256": "2967f2cd450317e49e26e239105c33142d3d8ce130af20c45420098ead1e0801"
   },
   {
    "public_path": "data/configs/sft_confirm_v2.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/sft_confirm_v2.toml",
    "sha256": "07882315ee394fba8bd5bf275fb0b5e935a616e13e8f169409f9a1ce6e1ad6cf"
   },
   {
    "public_path": "data/configs/sft_confirm_v3.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/sft_confirm_v3.toml",
    "sha256": "81d184d55343780d23702b296bbec866769be3c8760866835e23ed3438281d2a"
   },
   {
    "public_path": "data/configs/sft_oasst_v1.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/sft_oasst_v1.toml",
    "sha256": "53b33f5c077b75cd2120f8a8a64a49b9cbca0212d04267f98b8ecec22ac01c2b"
   },
   {
    "public_path": "data/configs/sft_rights_v1.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/sft_rights_v1.json",
    "sha256": "35db97f8cc1d5d9a16bcd27a0774e53ddffda0ec4e875f016226c257d5dafddc"
   },
   {
    "public_path": "data/configs/sft_v1.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/sft_v1.toml",
    "sha256": "d375b66d615e43f8b989381c0565c4f8828ed9f7ed0cf9c7971f6195a5add459"
   },
   {
    "public_path": "data/configs/sft_v12_replay_admission_mix2.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/sft_v12_replay_admission_mix2.json",
    "sha256": "538c158b7583465549f2b3655295506c7f6311cf07cce21760d92c525d04bdf5"
   },
   {
    "public_path": "data/configs/sft_v13.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/sft_v13.toml",
    "sha256": "4f8235828da43acb2f6f3233dd7754045f860b5c833f4519c9145048cc524258"
   },
   {
    "public_path": "data/configs/sft_v13_mix1.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/sft_v13_mix1.toml",
    "sha256": "f226e3a004e75b169ac02bf3d4867c9bd64407a6133bc3a9b485adae09164934"
   },
   {
    "public_path": "data/configs/sft_v13_mix2.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/sft_v13_mix2.toml",
    "sha256": "e0f9e9fbbae758046fd60a5e16256b189e30b832c7fbc79f1096ba685f41d08d"
   },
   {
    "public_path": "data/configs/sources.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/sources.toml",
    "sha256": "0bb0ef6a5423c7856ae04d45be1ecfa0cf2d67d2db324128d40d43f6aff8658c"
   },
   {
    "public_path": "data/configs/teacher.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "configs/teacher.toml",
    "sha256": "f6c51cbe69b917fbf2a6760f178bb88425812cd12254e71e87a26d58d43cbbaf"
   },
   {
    "public_path": "data/schemas/episode.schema.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "schemas/episode.schema.json",
    "sha256": "051e239d92f7ee1273e402060c83650ad8cc45835d15f7dd4957497b840206cb"
   },
   {
    "public_path": "data/schemas/source.schema.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "schemas/source.schema.json",
    "sha256": "4565fb655f2ac2e7fa596464cc7dea7cc342e11c5948c32a5e2425d85e1f64ac"
   },
   {
    "public_path": "data/schemas/teacher-record.schema.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "schemas/teacher-record.schema.json",
    "sha256": "21b23cd7465a7e7c7ac03cd55b4bd79b3f7bf7c8af049a76d0c70714f49426ca"
   },
   {
    "public_path": "data/tools/contamination_f9.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tools/contamination_f9.py",
    "sha256": "332069dbcb4fcc8b15fe62a58af9e0a31358d9488011728af32eea3ea45ab2c8"
   },
   {
    "public_path": "data/tools/contamination_f9_report.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tools/contamination_f9_report.py",
    "sha256": "3f2bd3a163b2bb724c8baac54955823960a107b1fad043efa895e9740dc7d0fa"
   },
   {
    "public_path": "data/tools/contamination_layers.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tools/contamination_layers.py",
    "sha256": "0629a44aac89e71bdfb37e0e0643556c79a6cb48a56771b9f75be1a7a7e9bfdb"
   },
   {
    "public_path": "data/tools/full_recount.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tools/full_recount.py",
    "sha256": "cb271833a215f23e65e3db97ebf97382995bb9e9fb0715c4abce15aa11148a9c"
   },
   {
    "public_path": "data/tools/independent_count_check.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tools/independent_count_check.py",
    "sha256": "8b03699244829ae68d1c9a232557ce4e2980d6ed37c9607be3dfdf2f3596c412"
   },
   {
    "public_path": "data/tools/release_public_dataset.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tools/release_public_dataset.py",
-   "sha256": "f72ce76d0ea7b6ec79f62280c0d3c356277b131b3e4e3fdac4d3287a5281487b"
+   "sha256": "cc6dea14ab848b5efd75b501bb9a778ce570c18e402b6b142d1cd58ce5a9807f"
   },
   {
    "public_path": "data/tools/stage_drill.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tools/stage_drill.py",
    "sha256": "7c55de874684c87edbc93924b315daf44675c8adc98e5dbb33598ca3c7e63518"
   },
   {
    "public_path": "data/tools/successor_manifest.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tools/successor_manifest.py",
    "sha256": "edd2491d225ee9bb87e8a2f110f7aa36b0bca6e90e42b2afac3cc97159c912d0"
   },
   {
    "public_path": "data/tools/successor_prefix.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tools/successor_prefix.py",
    "sha256": "c7e175eb8d852dc7daafaccdc512e2c2c3e09366b2df7ff0934498becb1fab05"
   },
   {
    "public_path": "data/tools/successor_records.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tools/successor_records.py",
    "sha256": "507fb010c1b7f7961d22ea5464ae0ac0a3933ca9047b771cccd5a8fd87bc0a85"
   },
   {
    "public_path": "data/tests/conftest.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/conftest.py",
    "sha256": "97a9a79b3a6d6d9c31991f7ce9ec4068acababa1e832fcf6cff6004007a78fd4"
   },
   {
    "public_path": "data/tests/fixtures/juniper_app_contract.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/fixtures/juniper_app_contract.json",
    "sha256": "adebcdddbfa849df224593a670bbf49083e8cd421ec6adc85b9e22db543c93c1"
   },
   {
    "public_path": "data/tests/test_acquire.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_acquire.py",
    "sha256": "141f86109f21d80de190995c7cd6239178e6f50a549b9a1b7145cbda87d70b8a"
   },
   {
    "public_path": "data/tests/test_adapters.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_adapters.py",
    "sha256": "51abac5140a967333a41884fc213ea0721dab128c1d25e88affff9f0df814762"
   },
   {
    "public_path": "data/tests/test_app_contract.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_app_contract.py",
    "sha256": "1f0eae7dfa12d9df9248deb5ff976dddc8d180e1c8ac5a16a7a91b81da332f54"
   },
   {
    "public_path": "data/tests/test_audit_scan.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_audit_scan.py",
    "sha256": "f8e0ecf0a173f88de82ab030f800028fa320563486f572eb04d55276ed60bc7a"
   },
   {
    "public_path": "data/tests/test_cli.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_cli.py",
    "sha256": "68eb25473251a237fbdc967da98608d28ec82ca56ea6e139af183da2bdad6741"
   },
   {
    "public_path": "data/tests/test_code_signatures.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_code_signatures.py",
    "sha256": "c6145df7585790b50810e97dccfc2216b974009fb47eab74f3f6989e3d39c747"
   },
   {
    "public_path": "data/tests/test_codecheck.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_codecheck.py",
    "sha256": "b626cb69d6ed0e40206a9e66af2fd5a10e5c4eafe09711f3868cb3e7e41dc230"
   },
   {
    "public_path": "data/tests/test_contamination.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_contamination.py",
    "sha256": "e580d1a71c0f6b08f68a9dda03a943c875fff86a84cd2ad3cbc43f4890d5bcb6"
   },
   {
    "public_path": "data/tests/test_contamination_f9.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_contamination_f9.py",
    "sha256": "319e6c77db5362a79bd3ce4e667c3f925a5d2d8cee04948b05036f9418cd4bbb"
   },
   {
    "public_path": "data/tests/test_contamination_layers.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_contamination_layers.py",
    "sha256": "0283c6442f7c72e12de4b4d8e07da26300306970b01848dd3c83f5472c2c6eba"
   },
   {
    "public_path": "data/tests/test_convadmit.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_convadmit.py",
    "sha256": "32376e8b09f7361973b7816d569f6319e4becccbd514f93d5de468334feb2b98"
   },
   {
    "public_path": "data/tests/test_convdraft.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_convdraft.py",
    "sha256": "b1f31954ad52d543717c2356cdd1a99f08683382f726d75b1cb8e2d5e940caca"
   },
   {
    "public_path": "data/tests/test_convreview.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_convreview.py",
    "sha256": "94a2243f8071b75c6e474c816ac4ee386113877c7f72e1d74de118afc358bc3d"
   },
   {
    "public_path": "data/tests/test_distill.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_distill.py",
    "sha256": "6be5347d7369167f02da7eae3d999c9b47686e32e576559a71307fb34ddbfd31"
   },
   {
    "public_path": "data/tests/test_domains.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_domains.py",
    "sha256": "e41240c1aed2e7c396cb2facb0221b4fa0dcfcb75021cc81d9955b3777abe228"
   },
   {
    "public_path": "data/tests/test_end_to_end.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_end_to_end.py",
    "sha256": "ef693968e4ad1ca65c2c1d738f1b5b04d15285d12460fd724a71192e5d8e709f"
   },
   {
    "public_path": "data/tests/test_full_recount.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_full_recount.py",
    "sha256": "4b12c89d7d76062ad42b89255866acb4f266aa2146f3739fc1788ec0ffd14acc"
   },
   {
    "public_path": "data/tests/test_hashing_ngrams_minhash.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_hashing_ngrams_minhash.py",
    "sha256": "bc09bfde07d0a016ba2aa9a5a67b71140213174c381027d5cdfa4413ec57429b"
   },
   {
    "public_path": "data/tests/test_independent_count_check.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_independent_count_check.py",
    "sha256": "544fecaa94fc43ed2aeeda2cea8efa28f51204f4bd61ceb83a244ad04ea20736"
   },
   {
    "public_path": "data/tests/test_independent_data_review.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_independent_data_review.py",
    "sha256": "d43ec640fa180e2ef048ce6f398bbd11a94bf9c58e2dd464dac09a502e180c93"
   },
   {
    "public_path": "data/tests/test_jtok_protocol.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_jtok_protocol.py",
    "sha256": "a3a26ffa200f62e46db48b4bdc8b36eb75e33eb2fc12705995d3416ee18a1ffd"
   },
   {
    "public_path": "data/tests/test_normalize.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_normalize.py",
    "sha256": "b8e19dc08684af82452386bae1ee1a4dc89cce2d74d28b67c28957f955eda7d5"
   },
   {
    "public_path": "data/tests/test_pathological_inputs.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_pathological_inputs.py",
    "sha256": "52cfc8e92c83e6aaf4f255bfc76525baf4ab2a3296b25c95dae3a69c70b7642a"
   },
   {
    "public_path": "data/tests/test_paths.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_paths.py",
    "sha256": "d872e3ac036e5a6d3ceb90b3353317d325ac2f935e5dcfb36920de90df2bd94f"
   },
   {
    "public_path": "data/tests/test_privacy.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_privacy.py",
    "sha256": "7b317a6d001f53fa512941f2418930e71b302cf7b81e6a81f2633a70c62403db"
   },
   {
    "public_path": "data/tests/test_quality.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_quality.py",
    "sha256": "3bb2f8dadafd9a876dbba9e17c8f4080b5870d1db1561cc09cdc45fb2509a13c"
   },
   {
    "public_path": "data/tests/test_registry_splits_shards.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_registry_splits_shards.py",
    "sha256": "7417d2aae553762dfc2065f83ae8f9c14692dd4d7f52a2df03814ad1defb8499"
   },
   {
    "public_path": "data/tests/test_review_gates.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_review_gates.py",
    "sha256": "55cd13030c9decdb00ee68b5f2dc749df5c153933a079f69b4b7cedf43f6d0b4"
   },
   {
    "public_path": "data/tests/test_runtime_client.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_runtime_client.py",
    "sha256": "ac5e88e73665274e0a2612c7dd02017c54d0fe124e73f7b5567f4cda96e5a39f"
   },
   {
    "public_path": "data/tests/test_sft.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_sft.py",
    "sha256": "2835205b8c5e4a97eca46206bbe783c811bcaf79fc86ee17b6f957959e1298e1"
   },
   {
    "public_path": "data/tests/test_sft_dataset.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_sft_dataset.py",
    "sha256": "bd173e18ada61e0998e6bbb0c9d282104603d6e9b06ec79739d6d9b00e334345"
   },
   {
    "public_path": "data/tests/test_sftconfirm.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_sftconfirm.py",
    "sha256": "2ef5f23515e2d47747ac85cc61264fffccf1cedd646f31d7159ad5e5f58da5f9"
   },
   {
    "public_path": "data/tests/test_sftmix.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_sftmix.py",
    "sha256": "1d2d373442c5598f6467be34e9e6a01b13974532688fec9343b4850ef6a0ad3c"
   },
   {
    "public_path": "data/tests/test_sftoasst.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_sftoasst.py",
    "sha256": "ea230893018a125134364ced38ee83f26fee1c5ba67be77d6238803114edf0dd"
   },
   {
    "public_path": "data/tests/test_sftops.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_sftops.py",
    "sha256": "9ad5db720c810c3843fd5df9c9c10f95fdbfb2056ace3818acbb03728778fa80"
   },
   {
    "public_path": "data/tests/test_sftreplay.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_sftreplay.py",
    "sha256": "299b1d16333aa2f7b6942f66727ac3a5917f6c36473050049a3d6fdc73bd4518"
   },
   {
    "public_path": "data/tests/test_sftscore_v4.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_sftscore_v4.py",
    "sha256": "385aaabad450689ed83e16643848dab7932ca6483427f4951792fcef341a1f1c"
   },
   {
    "public_path": "data/tests/test_stage_recovery.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_stage_recovery.py",
    "sha256": "b75d0272919f04d882399d44f5d94a587ae88cc360648c12c740c343c56a6524"
   },
   {
    "public_path": "data/tests/test_successor.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_successor.py",
    "sha256": "6ef1a8d4a38bf5267bdcb097c9607132d2f36a8dd23a0559064d30ee835dbc38"
   },
   {
    "public_path": "data/tests/test_successor_prefix.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_successor_prefix.py",
    "sha256": "daa713acb72cbe97e65aa9a4b174d7c2aaf65c9e4add5e1ee7dd86bc9cfd0b5e"
   },
   {
    "public_path": "data/tests/test_teacher_episodes.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_teacher_episodes.py",
    "sha256": "dfee11d0fd53845f5cbb3e95286c76257fca874154d6042379647b08cbcaab68"
   },
   {
    "public_path": "data/tests/test_teacherverify.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_teacherverify.py",
    "sha256": "6f1c71a21c8c5b3ac790d5c0eff923d4f2985b5068ecf141c5afb74ae92691d9"
   },
   {
    "public_path": "data/tests/test_tokenization.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_tokenization.py",
    "sha256": "b811c7d5d8b0f70cd3ae90ecac72fffa6fc74e58d33860e5717103eaa2f3aa0d"
   },
   {
    "public_path": "data/tests/test_tokshards_tokstage.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_tokshards_tokstage.py",
    "sha256": "7e2464e374248c93b9e4ee1f7bd8bcf12224e40480fb7c248b926b0c72a8ab61"
   },
   {
    "public_path": "data/tests/test_v022_records.py",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "tests/test_v022_records.py",
    "sha256": "e9394b707ad90eb954829de69c06772877e51b048269c459de7939b87970b0ec"
   },
   {
    "public_path": "data/pyproject.toml",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "pyproject.toml",
    "sha256": "eb8e2dced105ee55749d3e8070051718df0aaceeeeafe2b81328168692ed6637"
   },
   {
    "public_path": "data/README.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "README.md",
-   "sha256": "dd3d70d2e775ce4c3fa453ff3185d0b97ce48c9a62a07911ee60cff4f22f90da"
+   "sha256": "dd3d70d2e775ce4c3fa453ff3185d0b97ce48c9a62a07911ee60cff4f22f90da",
+   "modified": "export note prepended",
+   "sha256_after_export": "63cd4b7cbb563c4228354aa92aa779c0ae9f780cd5891c5b7c687c1e85970846"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/accepted_manifest.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/accepted_manifest.json",
    "sha256": "6aaf450f94a42f8ad0630a1b937cc44f09671a72e5b7e21c0cdd9b5399d6d044"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/build.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/build.json",
    "sha256": "9535c7ce800f4bd61dd74eadb12b6cd5db51e3b016b01f6bb1c23334ee3a6823"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/dedup_summary.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/dedup_summary.json",
    "sha256": "11db99768bf8bd5cdb6bb238b3245fab17f01fa7e5e28e5565a0ac7d7a553ddd"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/exclusions.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/exclusions.json",
    "sha256": "28dffbcde342ff698ba267161afe214dc24a4728607176be4349ed4e5e1bdcc9"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/measurement_tokenizers/measure-24k/info.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/measurement_tokenizers/measure-24k/info.json",
    "sha256": "3c6ef3ecc4a00c0a5942c668275f0ca99cbd0ca5eae8b44e1efb38e76524ca39"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/measurement_tokenizers/measure-24k/tokenizer.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/measurement_tokenizers/measure-24k/tokenizer.json",
    "sha256": "f839fed1aa55acce4724bdbbf5f6c5446c061cd1931ea269cefcc23898d61289"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/measurement_tokenizers/measure-28k/info.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/measurement_tokenizers/measure-28k/info.json",
    "sha256": "10f2e6ea5ccd258c70c6b1be9464410f819ed3d1afd95b0251ff6004fe245f45"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/measurement_tokenizers/measure-28k/tokenizer.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/measurement_tokenizers/measure-28k/tokenizer.json",
    "sha256": "a7ef3f1876be1dd077243f3e0583e21ee942d798e50003f6c61dcb4e5c06b3ae"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/measurement_tokenizers/measure-32k/info.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/measurement_tokenizers/measure-32k/info.json",
    "sha256": "ee98361d9005ead729c9613b3b2eed27ed25d855028054dc851aa2be3fa027f9"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/measurement_tokenizers/measure-32k/tokenizer.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/measurement_tokenizers/measure-32k/tokenizer.json",
    "sha256": "b588742313f79beab047b71f46e3852b50fc7f75d30f681ef9bf3cb74d5e6468"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/selection_summary.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/selection_summary.json",
    "sha256": "d60af29d9def34dbde6dff34def7b02e2be2f12d28193abd78823c1b15e97697"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/sources/arxiv-papers.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/sources/arxiv-papers.acquisition.json",
    "sha256": "f43a6cbcfc0eecdffc54bb07926cb913e4cebdb5e48b027a53b6efe8fd1e9c35"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/sources/cinqic-aaa-docs.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/sources/cinqic-aaa-docs.acquisition.json",
    "sha256": "9de8a0362e861a65a886ba8cf463b857379b1d043bf3a7dc9ddfc3863682bd86"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/sources/cinqic-calculator-docs.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/sources/cinqic-calculator-docs.acquisition.json",
    "sha256": "dbc181569f191bd16c76471c17e2c360f6f860f9c0574bcaabdda162174bb1b3"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/sources/cinqic-juniper-app-docs.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/sources/cinqic-juniper-app-docs.acquisition.json",
    "sha256": "f9f5655136949c436d620332832012359f0e7e4f107643af2ac30f80b52a2f50"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/sources/finemath-4plus.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/sources/finemath-4plus.acquisition.json",
    "sha256": "0903cf267a7c2c7a03f7d9fed793b64ec78dd154c0e6ccc3f741324b3d032a3c"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/sources/fineweb-edu-dedup.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/sources/fineweb-edu-dedup.acquisition.json",
    "sha256": "a8c2d356f7cb01e13535950b2b7fc2b769be360431a812caa7df87bb19d8a23f"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/sources/libretexts.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/sources/libretexts.acquisition.json",
    "sha256": "d3177e17ac2c8b3632316f717f360e7f28bb3d4b867b39521a6783a0b12c4d5b"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/sources/oercommons.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/sources/oercommons.acquisition.json",
    "sha256": "b2b8f541d4b27ea195c461b30bd92edc8020abe83878006479d4480d293453a3"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/sources/pressbooks.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/sources/pressbooks.acquisition.json",
    "sha256": "edde56119673c2cd0b26654c13338697dd97d58328871f3d583e9b23a57524f7"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/sources/python-peps.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/sources/python-peps.acquisition.json",
    "sha256": "adfb64cd4f9edcb4c293dcdb5723a497285f4f1b486bbca7fb9c76a60e8c8119"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/sources/stackexchange.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/sources/stackexchange.acquisition.json",
    "sha256": "f2d4b5c59a8cb822880322c52c36e904b4fbfa7a4f76297bb5e4954b7c534cd1"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/sources/stackv2-edu.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/sources/stackv2-edu.acquisition.json",
    "sha256": "2552fb16c4ce0c90d1fd21b8b9ead46439c6c0841c94b1b0af655dc5eaef1a17"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/sources/wikimedia.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/sources/wikimedia.acquisition.json",
    "sha256": "c411ad2148031671eb0da76bb2070102017b0ac37eb693378ac627acfbcad0e4"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/token_counts.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/token_counts.json",
    "sha256": "c911647edefe32e50beb4a0cbaf6a80dca6cab6f86bf4f298bdbb261641b9096"
   },
   {
    "public_path": "data/manifests/j1-base-v0.1/tokenizer_stage_sample.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.1/tokenizer_stage_sample.json",
    "sha256": "9c75751710b0c36f7b30b0588c7af08da329e185de7875e3898dd9cf281b00d7"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/accepted_manifest.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/accepted_manifest.json",
    "sha256": "1a99ef755084dcfb1af3b207a476cc009c2bed99694e648fbc2eb8c3a54f37b3"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/build.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/build.json",
    "sha256": "3230bced05cd5f635e082d152d2e64b275f279fb927cb6145ceb2cb0dd84a8cf"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/dedup_summary.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/dedup_summary.json",
    "sha256": "975ae0381e96052ff65964af24ff5e7d33675c556b98988ef217e218e4b9c97d"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/exclusions.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/exclusions.json",
    "sha256": "9fdd3f86a8dd084323b080c0c26ade0dc8d61f1f486725236ce7a51643a45cfd"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/selection_summary.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/selection_summary.json",
    "sha256": "a089f858d286fd048baff576c3644a4c3cf4bab381a09238bd66ddad85eeff89"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/sources/arxiv-papers.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/sources/arxiv-papers.acquisition.json",
    "sha256": "f43a6cbcfc0eecdffc54bb07926cb913e4cebdb5e48b027a53b6efe8fd1e9c35"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/sources/cinqic-aaa-docs.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/sources/cinqic-aaa-docs.acquisition.json",
    "sha256": "9de8a0362e861a65a886ba8cf463b857379b1d043bf3a7dc9ddfc3863682bd86"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/sources/cinqic-calculator-docs.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/sources/cinqic-calculator-docs.acquisition.json",
    "sha256": "dbc181569f191bd16c76471c17e2c360f6f860f9c0574bcaabdda162174bb1b3"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/sources/cinqic-juniper-app-docs.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/sources/cinqic-juniper-app-docs.acquisition.json",
    "sha256": "f9f5655136949c436d620332832012359f0e7e4f107643af2ac30f80b52a2f50"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/sources/finemath-4plus.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/sources/finemath-4plus.acquisition.json",
    "sha256": "0903cf267a7c2c7a03f7d9fed793b64ec78dd154c0e6ccc3f741324b3d032a3c"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/sources/fineweb-edu-dedup.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/sources/fineweb-edu-dedup.acquisition.json",
    "sha256": "a8c2d356f7cb01e13535950b2b7fc2b769be360431a812caa7df87bb19d8a23f"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/sources/libretexts.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/sources/libretexts.acquisition.json",
    "sha256": "d3177e17ac2c8b3632316f717f360e7f28bb3d4b867b39521a6783a0b12c4d5b"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/sources/oercommons.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/sources/oercommons.acquisition.json",
    "sha256": "b2b8f541d4b27ea195c461b30bd92edc8020abe83878006479d4480d293453a3"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/sources/pressbooks.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/sources/pressbooks.acquisition.json",
    "sha256": "edde56119673c2cd0b26654c13338697dd97d58328871f3d583e9b23a57524f7"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/sources/python-peps.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/sources/python-peps.acquisition.json",
    "sha256": "adfb64cd4f9edcb4c293dcdb5723a497285f4f1b486bbca7fb9c76a60e8c8119"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/sources/stackexchange.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/sources/stackexchange.acquisition.json",
    "sha256": "f2d4b5c59a8cb822880322c52c36e904b4fbfa7a4f76297bb5e4954b7c534cd1"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/sources/stackv2-edu.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/sources/stackv2-edu.acquisition.json",
    "sha256": "2552fb16c4ce0c90d1fd21b8b9ead46439c6c0841c94b1b0af655dc5eaef1a17"
   },
   {
    "public_path": "data/manifests/j1-base-v0.2/sources/wikimedia.acquisition.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "manifests/j1-base-v0.2/sources/wikimedia.acquisition.json",
    "sha256": "c411ad2148031671eb0da76bb2070102017b0ac37eb693378ac627acfbcad0e4"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/README.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/README.md",
    "sha256": "8599e9ec76eb75b2416a09147067120993f27477109a41eac9f80ee058c684a6"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/arxiv-papers/arxiv-papers-0007.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/arxiv-papers/arxiv-papers-0007.json",
    "sha256": "5441c5e837c7f660486905575e131a094fc3504cb5a8b2f38b2f052e96ba1aa3"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/build.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/build.json",
    "sha256": "db46ec2cb6ba9b6a70493ba14516201bff5be3934a30d13ae7560172690a77bb"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/cinqic-aaa-docs/all.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/cinqic-aaa-docs/all.json",
    "sha256": "5bb3f49e0e5df29b17688af32fb0808f2e91223b9f3f1f1a1194d4ee6146208a"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/cinqic-calculator-docs/all.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/cinqic-calculator-docs/all.json",
    "sha256": "37e92f5cfe5ac9c60004fd3eba884e567aa565fcb1dba502f69bc2900087dca5"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/cinqic-juniper-app-docs/all.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/cinqic-juniper-app-docs/all.json",
    "sha256": "31696c7dc8be332f43ebcfccbd36ac8422ee20397040ce0bdc06088d306db68a"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/libretexts/libretexts-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/libretexts/libretexts-0000.json",
    "sha256": "bfb51c68d4d53811bbf4b8193c0c01c7fbb934a8572bd5c957f2e0687e5ffe8d"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/oercommons/oercommons-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/oercommons/oercommons-0000.json",
    "sha256": "ecb125e7972480ffae126855a87c527793158eb75eb762fa50fc370474516d72"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/pressbooks/pressbooks-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/pressbooks/pressbooks-0000.json",
    "sha256": "616d7c4aa82890ac0e863cb8aa813817f799820eaa1c33b2687403537f78b877"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/python-peps/peps-dolma-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/python-peps/peps-dolma-0000.json",
    "sha256": "5a6f58cea0d56134576a833f23bb579073f9452904a263ceda2109429a400ff3"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0000.json",
    "sha256": "0bc5712c7352a4b66edb65da94d72f208e4ef8f11a225647e9ec927ab59ee41c"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0001.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0001.json",
    "sha256": "98c9ec69d1c4fc326978a2180d06364b34fd643475a31aa6748c7667cf4587db"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0002.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0002.json",
    "sha256": "d5bde9404bf4f0fa87a75fdf151479ac8e075d94c631806027f1cc08d36bf59c"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0003.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0003.json",
    "sha256": "5d61eaf7fe46cab6a1fe41b2c39449d5663041c2c3ff12c4a5c388a269ee6e5e"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0004.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0004.json",
    "sha256": "3e3a3da45a560e84d4b9b9b1b20c6e197f08d4d8e8c856a97e7b8e6eea21c79f"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0005.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0005.json",
    "sha256": "cb400da52cae68f117deeab7d6ff482d076c683598b3f151862f8798a7d69d0d"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0006.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0006.json",
    "sha256": "e90cff68a870656d3929ed7ac8b43b74f1a8c0d54143e3335d193bf4092ea1ee"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0007.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0007.json",
    "sha256": "df2d41fdc188af7c2ef0961d65ad0ed241e71e307d7ad2fc1715a33206788d93"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0008.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0008.json",
    "sha256": "a8a53a0cf4cea88b7b551b7ca4031c04c6ec0c9fbaeebb9c9824c2949dd319ef"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0009.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0009.json",
    "sha256": "c3a038e2f4e25a9c559471d3e234c196c75453abf26097355faa1fe5294e3428"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0010.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0010.json",
    "sha256": "189db11cfcb2ba3b5ec96d415e8344c66fccac6ddd68988992752199e128b071"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0011.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0011.json",
    "sha256": "8c5ee48fe1b6431f2668fd169280bd427b6048f96c8d2c235abba412c0605cfd"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0012.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0012.json",
    "sha256": "2669138fb66409b0193ce3030e0ed017542f7987b802817216b27261ac129fef"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0013.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0013.json",
    "sha256": "a7f1540d2d98dbeea9e6977736185f5e5c6654355d08e6dc52d0fc9f68a73137"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0014.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0014.json",
    "sha256": "5a6cf5081d2b01327d2031b23ff921fa780a69f5436de04c3d9a23d00ed1400d"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0015.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0015.json",
    "sha256": "55bc680520f64d54b5072027efcc15d3d54fe9880c5155fabfa38f0bc9f67c1f"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0016.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0016.json",
    "sha256": "0e0406bba11b39c970d405239e0f21197362f49ea1e9e08c7e5174a7e1ea7da5"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0017.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0017.json",
    "sha256": "029e7fb4153377477e3ec79722700d9ecfd4a2d5650288c02cb759033b5d626c"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0018.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0018.json",
    "sha256": "82aa2019db26e47250288d5f8a0cb7a1a125805c506135c37d318f8e3a3b8618"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0019.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0019.json",
    "sha256": "dc6f35fa4eec4dff3a17326d6957cdb1d3f296b6828769dae59c97706d2c75eb"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0020.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0020.json",
    "sha256": "5b582467cdd8ddabf558f45037fe664c67d55e3e1a075020899e8c8636f745cb"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0021.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0021.json",
    "sha256": "0c9cc1c23f9fc93d19ed9b5d218695381fac8dedfa8a8d9c980b73b718df41f8"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0022.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0022.json",
    "sha256": "1878a26fc4ec147ab35286f3435f550bda3a2c0eb6b5d2183818b0293d47c616"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0023.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0023.json",
    "sha256": "f9435630e3b22a292808a1a237aaecb2ebf9629529d2269b0f15ff5c64dd2d6a"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0024.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0024.json",
    "sha256": "ac64953f150a456de3d92d33a0aecd7799e32f95a0ca3f9c40d969c6c92c9521"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0025.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0025.json",
    "sha256": "27ba122ecd017ba8445aa3caabb3ce853f6ff820173722da7756e31f458c01f8"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0026.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0026.json",
    "sha256": "2012b59d5be759344199fe467de373aa0b42a5bb314f64044b32b3f2119cc12a"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0027.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0027.json",
    "sha256": "65a01247d546106aba664b9730945197365971fca4271049f6feb338182621a2"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0028.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0028.json",
    "sha256": "5b2f1a918673245d6d4f9e1b0059e00998b4f0996b8a62a80986fe1b49ec8a22"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0029.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0029.json",
    "sha256": "7ce1f6284e2c41b0e82208f372e6571ae0ad3c75efe42c9313640434f040ab03"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0030.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0030.json",
    "sha256": "a4aac033c1fea562c3aba589567f72155532ebd1892f21d2e343a8c8bb47e8fa"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0031.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0031.json",
    "sha256": "49a1e10427325006b757e3902b4cbe5c9d329065dc9994a24cb2af4bfac6f281"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0032.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0032.json",
    "sha256": "10f5acc33ce9e9c03514cd7891e0e080c44a8cd7cc45890c25887a223dd33f28"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0033.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0033.json",
    "sha256": "3b35949031cf332e96975539fda3d526cab753fa827b5c5225caa9e303fc532c"
   },
   {
    "public_path": "data/reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0034.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/aborted/j1-base-v0.1-attempt1/wikimedia/wikimedia-0034.json",
    "sha256": "55109a9d1de4f8508e095ababbb58ef45596ad363f1751acd7b3e0c2505c8efb"
   },
   {
    "public_path": "data/reports/calibration/calib-5/arxiv-papers/arxiv-papers-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-5/arxiv-papers/arxiv-papers-0000.json",
    "sha256": "82aec390a1d8edecb74b0894f7bdcb5e3660656a85cbffaec2bbf2c2eaee1269"
   },
   {
    "public_path": "data/reports/calibration/calib-5/arxiv-papers/arxiv-papers-0001.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-5/arxiv-papers/arxiv-papers-0001.json",
    "sha256": "68dedf461d1326c1d9cc787cb9f55b1d3aaa50e7d2c712118b1965b18c3ee2bb"
   },
   {
    "public_path": "data/reports/calibration/calib-5/build.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-5/build.json",
    "sha256": "2effa8e0a9591219ddc611b57d785c2ae2a55a72220fe122368e16cdbcb46e50"
   },
   {
    "public_path": "data/reports/calibration/calib-5/libretexts/libretexts-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-5/libretexts/libretexts-0000.json",
    "sha256": "76e53f4aacdd300185aa817bf76269eb446d678d1b6116f2c77bd5e589d9fba4"
   },
   {
    "public_path": "data/reports/calibration/calib-5/oercommons/oercommons-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-5/oercommons/oercommons-0000.json",
    "sha256": "c0cbeb5775c5a0b802b40afbc4c5e7ad18a4ac9a2a69dcd07888f6cb9b101b3a"
   },
   {
    "public_path": "data/reports/calibration/calib-5/pressbooks/pressbooks-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-5/pressbooks/pressbooks-0000.json",
    "sha256": "cac2a72ccb95cc234cc00c56037ad8749caa91e35065e90d90e7c96b94223bba"
   },
   {
    "public_path": "data/reports/calibration/calib-5/python-peps/peps-dolma-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-5/python-peps/peps-dolma-0000.json",
    "sha256": "119339522f9ecc9ef3d506fdc17550cc4407f9ba57019e7e0c52939e71f7990c"
   },
   {
    "public_path": "data/reports/calibration/calib-6/build.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-6/build.json",
    "sha256": "791a878f4896945ccfb35ae6566276b02ecf05238d183860b6fb1b1ddb4f90d2"
   },
   {
    "public_path": "data/reports/calibration/calib-6/stackv2-edu/stack-edu-0011.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-6/stackv2-edu/stack-edu-0011.json",
    "sha256": "103395d52b31ada582b01c654f084caed547e09fe940eec4b98a1eeda7c5302e"
   },
   {
    "public_path": "data/reports/calibration/calib-6/stackv2-edu/stack-edu-0018.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-6/stackv2-edu/stack-edu-0018.json",
    "sha256": "5e25f34b8c1b3c740a9c6b653e3352b0d7eed6c8736f1451942cdabc69bd31f7"
   },
   {
    "public_path": "data/reports/calibration/calib-6/stackv2-edu/stack-edu-0077.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-6/stackv2-edu/stack-edu-0077.json",
    "sha256": "15ea5378338a383b2e8510edc723eb30a81441e87aecac72f4dc65e4290bdc6c"
   },
   {
    "public_path": "data/reports/calibration/calib-7/build.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-7/build.json",
    "sha256": "70fc6017a2f36ad82a33524629084078aecb2bb3eb5a5ded37848271ed0641fb"
   },
   {
    "public_path": "data/reports/calibration/calib-7/libretexts/libretexts-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-7/libretexts/libretexts-0000.json",
    "sha256": "e8d73c2260a3979434c596c5baf89b4e8fe53b3adc8868c89e75acb81946f1ab"
   },
   {
    "public_path": "data/reports/calibration/calib-7/oercommons/oercommons-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-7/oercommons/oercommons-0000.json",
    "sha256": "7a0a35df7c5bd6cce0dba6285aabcda44c5db6d7c7fddfda024deb56f993234d"
   },
   {
    "public_path": "data/reports/calibration/calib-7/pressbooks/pressbooks-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-7/pressbooks/pressbooks-0000.json",
    "sha256": "28583bd81d822767458c75151d953b042132f97d7765c66f6e69318342106104"
   },
   {
    "public_path": "data/reports/calibration/calib-8/build.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-8/build.json",
    "sha256": "097d9bc60c4e0c74cdcfd1c9185df062d13b9c69988a89608879985139ef8172"
   },
   {
    "public_path": "data/reports/calibration/calib-8/stackexchange/stackexchange-dolma-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-8/stackexchange/stackexchange-dolma-0000.json",
    "sha256": "f60b6c10d0e8fdabce97ffb5fd064be3307a8e2c7dc57a5b9efb2d93375100a5"
   },
   {
    "public_path": "data/reports/calibration/calib-8/stackexchange/stackexchange-dolma-0005.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-8/stackexchange/stackexchange-dolma-0005.json",
    "sha256": "9aa42209db6a29f1b87fbf8ee76ed572913a220eeac01d3cd98488d6c039362c"
   },
   {
    "public_path": "data/reports/calibration/calib-8/stackexchange/stackexchange-dolma-0010.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-8/stackexchange/stackexchange-dolma-0010.json",
    "sha256": "127f1d5cfdbd829bd9763cf2745c0f700b854289116054dc1e309ddf39cee269"
   },
   {
    "public_path": "data/reports/calibration/calib-8/wikimedia/wikimedia-0000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-8/wikimedia/wikimedia-0000.json",
    "sha256": "fe5a1c1494d3cf7cea82d340f63c08f3a986f04390ee98ee941cae88934b241e"
   },
   {
    "public_path": "data/reports/calibration/calib-8/wikimedia/wikimedia-0005.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-8/wikimedia/wikimedia-0005.json",
    "sha256": "50927a1ae2e974006937683d25e0794b2c9f0ace3d85556afd035d2ec8cbb3fe"
   },
   {
    "public_path": "data/reports/calibration/calib-8/wikimedia/wikimedia-0010.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-8/wikimedia/wikimedia-0010.json",
    "sha256": "719b7c307d2c8e784f2698b6830236dbc01ac7fe1a2c1e4a9b80ed59676bd4fb"
   },
   {
    "public_path": "data/reports/calibration/calib-8/wikimedia/wikimedia-0015.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-8/wikimedia/wikimedia-0015.json",
    "sha256": "866809778cdb81dbabeae2f11f6f602461ecd9a1426077fa20972bd4b8b9d3ce"
   },
   {
    "public_path": "data/reports/calibration/calib-web/build.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-web/build.json",
    "sha256": "86d8d7b45710eaf22f16a74dee7603fa5cc63a5c91ef2144167244fd8181ff0a"
   },
   {
    "public_path": "data/reports/calibration/calib-web/finemath-4plus/train-00000-of-00064.r00000000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-web/finemath-4plus/train-00000-of-00064.r00000000.json",
    "sha256": "e9da7d53ce61d7958b6013ac2162a50bce365fc648b531feed0ca67395497dbd"
   },
   {
    "public_path": "data/reports/calibration/calib-web/fineweb-edu-dedup/train-00003-of-00234.r00000000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-web/fineweb-edu-dedup/train-00003-of-00234.r00000000.json",
    "sha256": "bcc8b972c49825050cbd7be747c26917550d11214e53c74ca4f8002f3ee7a9b8"
   },
   {
    "public_path": "data/reports/calibration/calib-web2/build.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-web2/build.json",
    "sha256": "bb259ec0b14748772001513015b2ab0823365fee0d327a751fc6ce5506544520"
   },
   {
    "public_path": "data/reports/calibration/calib-web2/finemath-4plus/train-00000-of-00064.r00000000.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/calibration/calib-web2/finemath-4plus/train-00000-of-00064.r00000000.json",
    "sha256": "75c2c6bd657629c6473c97fcb19dceec196b791b445baa3a3e7e962f4c71fc2d"
   },
   {
    "public_path": "data/reports/contamination_f9/archive_SHA256SUMS.txt",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/contamination_f9/archive_SHA256SUMS.txt",
    "sha256": "1c1a2fa578db4d52de0a4a9a05a5cb512a3b39c43e99ba21f694b03ec12673ae"
   },
   {
    "public_path": "data/reports/contamination_f9/prohibited_f9.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/contamination_f9/prohibited_f9.json",
    "sha256": "b4209e5a4d8b1e18794dd20f13da45f435fff2d6e11e52f880b4bb21ae027bbb"
   },
   {
    "public_path": "data/reports/contamination_f9/summary_f9.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/contamination_f9/summary_f9.json",
    "sha256": "220ab22b55a2ea4d58f13c6bf6bf050df79c68516d7db47892170a53ec4d3c9d"
   },
   {
    "public_path": "data/reports/j1-base-v0.1/accepted_statistics.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.1/accepted_statistics.json",
    "sha256": "adf9d87bc3184275431f5b852762a2f9be1c319e5115728b5936da47e2f5c339"
   },
   {
    "public_path": "data/reports/j1-base-v0.1/corpus_summary.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.1/corpus_summary.md",
    "sha256": "3f25bf05b45caaddede4cb46fd0e8f9c3a4668332225889f40751e84c3973838"
   },
   {
    "public_path": "data/reports/j1-base-v0.1/dedup_calibration_summary.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.1/dedup_calibration_summary.json",
    "sha256": "da9dc16f4dd4147c2ded5a3ec97b767c7d06944a3dae0acfeeaf9c08796abbce"
   },
   {
    "public_path": "data/reports/j1-base-v0.1/dedup_labels.jsonl",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.1/dedup_labels.jsonl",
    "sha256": "307f27b0e0a44f8f6b045ede5e4a4f0970f48ad1c965cf509cbc2ffb285e5953"
   },
   {
    "public_path": "data/reports/j1-base-v0.1/dedup_summary.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.1/dedup_summary.json",
    "sha256": "11db99768bf8bd5cdb6bb238b3245fab17f01fa7e5e28e5565a0ac7d7a553ddd"
   },
   {
    "public_path": "data/reports/j1-base-v0.1/dedup_summary_14x8.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.1/dedup_summary_14x8.json",
    "sha256": "1f306b577bfb97770a4d5e48bdec0a51b04dcc4c63d4000e1502e9ebd98d0a7f"
   },
   {
    "public_path": "data/reports/j1-base-v0.1/freeze_gates.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.1/freeze_gates.json",
    "sha256": "59c384601ead99afec3e7947a38e8e5bcf02aa8809c23019679e59df918a8c7e"
   },
   {
    "public_path": "data/reports/j1-base-v0.1/process_summary.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.1/process_summary.json",
    "sha256": "7b8749bf945015c90be128da0a40c977a08488868b8d6f78eb150c2f8f648192"
   },
   {
    "public_path": "data/reports/j1-base-v0.1/rejected_token_estimates.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.1/rejected_token_estimates.json",
    "sha256": "ae5b99edb088a09591ff694f35d34d5d01a0ab00ee45872ab1a449f7605c1ba6"
   },
   {
    "public_path": "data/reports/j1-base-v0.1/tests.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.1/tests.json",
    "sha256": "a258160c83c857591f8dec20c7d8613522844e39749f64bcaf7716b1e421a970"
   },
   {
    "public_path": "data/reports/j1-base-v0.1/verification.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.1/verification.json",
    "sha256": "9d0d446852da4bf7522e26314eacedfef51c6e8e31c35916368d82bd3357b446"
   },
   {
    "public_path": "data/reports/j1-base-v0.2/accepted_statistics.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2/accepted_statistics.json",
    "sha256": "950cd8672a8fd2483ae996ce0c4cc1ea176a021301d2b1dc0cbba947cd85d24a"
   },
   {
    "public_path": "data/reports/j1-base-v0.2/corpus_summary.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2/corpus_summary.md",
    "sha256": "32241002e412b713e37f48317875dbe8ed69b9aedc17bd61833d0d74463dda8c"
   },
   {
    "public_path": "data/reports/j1-base-v0.2/freeze_gates.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2/freeze_gates.json",
    "sha256": "d1a5a12d9c62223bf7e86909b8a20d0cb261ea474df17d36cfeb102e62dd912e"
   },
   {
    "public_path": "data/reports/j1-base-v0.2/freeze_gates_after_segment_fix_2026-10-09.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2/freeze_gates_after_segment_fix_2026-10-09.json",
    "sha256": "e25e6f1a51fd410358254782b2fc9edd65c7077e4dc3b7116ebad4f633705466"
   },
   {
    "public_path": "data/reports/j1-base-v0.2/process_summary.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2/process_summary.json",
    "sha256": "3fa5715960db4e0f04e967297a34dab70907faabb5da3b057a0ec801d1b74f20"
   },
   {
    "public_path": "data/reports/j1-base-v0.2/verification.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2/verification.json",
    "sha256": "dc8c73937f706a3c33c48443d6626b40d72e6d1608184ad283dfa7c3fe9dc45d"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.1/full_recount_cand5-j1tok-24k.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.1/full_recount_cand5-j1tok-24k.json",
    "sha256": "490eb4d8ff04f3f78ff7dc1c66bb20062089cfa852ef245814c52873d1193453"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.1/full_recount_literal_control_files.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.1/full_recount_literal_control_files.json",
    "sha256": "7e1539a6c025a84e44ad52df53b16c3478747773863b0180cd8f7918cd051d1a"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.2/MANIFEST.sha256",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.2/MANIFEST.sha256",
    "sha256": "8e1e9fc9aad246842a634830286f4c4f1cb76e70578765593b7885a0b7319a71"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.2/excluded_doc_ids_union.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.2/excluded_doc_ids_union.json",
    "sha256": "4bd2e8ef7f5f95c1c2541d1e1c6945a563eece4b3726ed6d80c6a743e0af4ca1"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.2/excluded_internal_source_doc_ids.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.2/excluded_internal_source_doc_ids.json",
    "sha256": "d00cf57c7d5c613c2ee12d7c535402991bd04dd57b2ae7e5b04dd8605eeb6169"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.2/full_recount_cand5-j1tok-24k.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.2/full_recount_cand5-j1tok-24k.json",
    "sha256": "ac29e08120980e677717191fc40cb39706fc796ead65da5bb50c7470ed51dbea"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.2/hf_receipt.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.2/hf_receipt.json",
    "sha256": "e849e8b63f4d778229deaf8d3b9099d54c78fe54fa88a3fb50230143d793f02d"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.2/manifest.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.2/manifest.json",
    "sha256": "54a3adb9650c96bf67b44b721386722383caeb774b48b0bf970ad6f9634d4185"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.2/prefix_18b_vs_official.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.2/prefix_18b_vs_official.json",
    "sha256": "a00424fd0696a7d541c71e558454cb0070fa417bfdaf27bd70e491e288abdeec"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.2/preservation_receipts.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.2/preservation_receipts.json",
    "sha256": "9f9391b9786fa53576f848be679f8816902623a6ca349e12ed6451a760187e2e"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.2/preservation_receipts_note.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.2/preservation_receipts_note.json",
    "sha256": "0b030ab4b75ff557a84be3c78c5430e284f53f8f0d1abe73af0ed9a8e7a3af42"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.2/recount_totals_note.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.2/recount_totals_note.json",
    "sha256": "6664b3b59571e30fc7d42516effe4a12f09b1a6b8724845d3b444edde538558a"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.2/source_permissions.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.2/source_permissions.json",
    "sha256": "886c3cf5a1045162a41a732a5fb825acbca05396398a6df570096b9f3ccc43fc"
   },
   {
    "public_path": "data/reports/j1-base-v0.2.2/successor_lineage.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/j1-base-v0.2.2/successor_lineage.json",
    "sha256": "771a5047a5ff7301dc576106569197b29393fa2c52577eb82fb1ace0473f0c74"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/OFF_GITHUB_SHA256SUMS.txt",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/OFF_GITHUB_SHA256SUMS.txt",
    "sha256": "4c7f9d9c45738ac9f94b26c1f7a1ceee2c2d3ee16560638eeb4abc320e069d12"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/adjudication_pass2b_lists.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/adjudication_pass2b_lists.json",
    "sha256": "eeea961eef415c252fa2c554583e2d7cf0adb1b894a95f7870f5aed7ad38a5c9"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/adjudication_pilot_inputs.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/adjudication_pilot_inputs.json",
    "sha256": "5a2b126f2eda1691b512a0dedccd013385bf129e6b3c3e237ee7854cd4f37a61"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/adjudication_pilot_inputs_v2.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/adjudication_pilot_inputs_v2.json",
    "sha256": "bafb3d7c78e53ce810c63d089d5c1d5562e36dbb81beeaf01df2dbd9eb1ab1ad"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/controls_layers_v1.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/controls_layers_v1.json",
    "sha256": "41f471889b32ceaaa6883f85ac0bbdcbe92ea527a8cb99224785adae017c1166"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/controls_layers_v1_calibrated.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/controls_layers_v1_calibrated.json",
    "sha256": "c0142f9b67a61e1c68040d92106bfddb5ffb097f1a16f69f22028b5cb85ed932"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/controls_layers_v1_calibrated_b.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/controls_layers_v1_calibrated_b.json",
    "sha256": "d16d986663c1e10edcdabed74445e490af34ffd30d9788c3c6ac760c3eb30701"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/excluded_tokenizer_sample_doc_ids.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/excluded_tokenizer_sample_doc_ids.json",
    "sha256": "89ab16b05f17a9314faa4cecca6c7f31e85dfbd746b2aa00a08254e64cf9c51a"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/excluded_tokenizer_sample_doc_ids_v2.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/excluded_tokenizer_sample_doc_ids_v2.json",
    "sha256": "97add4319e6519e877481609af82fedca726f2d396e1f7a1028d307fdbc82d5f"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/layers_v1_index.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/layers_v1_index.json",
    "sha256": "7465261304f615fbfb7161cc9f26992f98cb33d32bcb2c882b92ae4d965ec8fc"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/prohibited_full_corpus_v2.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/prohibited_full_corpus_v2.json",
    "sha256": "855624da2d8259e9e29375d2162b27b931b2cfd6579f5c7e3c48582b173851a2"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/prohibited_pilot_inputs_v2.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/prohibited_pilot_inputs_v2.json",
    "sha256": "0b4ef83fec619b2f0d93a8ccf92e742f0e326dddbffb93d12ff942c1df81eb43"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/scan_full_pass1.df_ge_10.npy",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/scan_full_pass1.df_ge_10.npy",
    "sha256": "f87d0902e97abe326ca56807531c1045399f7d636e74e133162a3da2fef9ad4f"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/scan_full_pass1.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/scan_full_pass1.json",
    "sha256": "a4ce0f2df469cd710933f1e8941f69034a54f42516633bc96a36e2c6c2db45e7"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/scan_full_pass2.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/scan_full_pass2.json",
    "sha256": "4a70c2b0c1bea09cea869365e70c62c72e3617b30b3147058e0c9d395f3680e3"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/scan_pilot_inputs_pass2.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/scan_pilot_inputs_pass2.json",
    "sha256": "3f8fb3d44340f13bb7787f862a2a434e4fd53d4ae1dc6ef79f48b19319663ab1"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/scan_pilot_inputs_pass2b.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/scan_pilot_inputs_pass2b.json",
    "sha256": "26c659ea2ec55171c83bca0e46798d057a587b62b8db1b29d39f29a6cbe85eea"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/scan_pilot_inputs_uncalibrated_060fb0f1.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/scan_pilot_inputs_uncalibrated_060fb0f1.json",
    "sha256": "df7859702b8438ff4fa2a1a8dcb7664f3c67016f614311e7c66e42c6b5c34a81"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/contamination/scan_v5_prefix_pass2c.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/contamination/scan_v5_prefix_pass2c.json",
    "sha256": "0cefe341abe6a3b3f5973693a482d5f03b6314447802d8173ccfd67e4573ab9c"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/count_check_selftest_v3_prefix.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/count_check_selftest_v3_prefix.json",
    "sha256": "92e020e29f1acfb1861553657969fbf51557a34b549f9455365dfb4ef43cab53"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/hf_stage_prefixes_receipt.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/hf_stage_prefixes_receipt.json",
    "sha256": "d25a07ee6d627f8c2f010a86182437b0a5552336d6585a210c239c529385399c"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/independent_count_check_v0.2.1_24k.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/independent_count_check_v0.2.1_24k.json",
    "sha256": "5c93686e00d123712c52ebe3cbfa69577bde25a7dd4e6c250bd3af615a7b1325"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/independent_count_check_v0.2.1_24k.superseded-h1.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/independent_count_check_v0.2.1_24k.superseded-h1.json",
    "sha256": "817aee50158c5f8e8d2496c9f9ceaa3b5eb2fa9da2e95a93c82ea36570586a3e"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/independent_count_check_v0.2.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/independent_count_check_v0.2.json",
    "sha256": "6114c20243abaa05119119f5f12b4af2a3f79b33f10917040f9767d17cdad686"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/independent_count_check_v5_prefixes.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/independent_count_check_v5_prefixes.json",
    "sha256": "2dc562a41346f05b35d0a24d4d1b829b0fa4efd8cd533ab3a7f89d5be9b8cf6a"
   },
   {
    "public_path": "data/reports/qualification-2026-10-10/rederive_v0.2.1_h1_comparison.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/qualification-2026-10-10/rederive_v0.2.1_h1_comparison.json",
    "sha256": "a08c6ede4d577a3a0c14f156538bfa33fb65b2a067a55cd72540e4698e0210f1"
   },
   {
    "public_path": "data/reports/stage_recovery/drills.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/stage_recovery/drills.json",
    "sha256": "1e4e6ae386f8397de46decbc28db6f13cc736aaf0f2ddfaf8fdc8ed5bbaf6015"
   },
   {
    "public_path": "data/reports/stage_recovery/memory.json",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "reports/stage_recovery/memory.json",
    "sha256": "c304b245431ebb9a1cef36f746b7998309e4f8866a9eef6b92e9b826aa30dbbd"
   },
   {
    "public_path": "data/docs/data_card.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/data_card.md",
    "sha256": "99753cb44e1d2ed7ea71f82f71cf9e9deece6b68760035ed0e7c74f86a234cf7"
   },
   {
    "public_path": "data/docs/tokenizer.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/tokenizer.md",
    "sha256": "6113e38cfaf5fc427420a3649021fc01d2b067522f3be6d05851f5314d80f348"
   },
   {
    "public_path": "data/docs/sources.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/sources.md",
    "sha256": "d34bf4ebf30c1d13726fd59442b15c0ad8b478fc95b03bf58246a466bd851ac1"
   },
   {
    "public_path": "data/docs/reproduction.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/reproduction.md",
    "sha256": "ae12dd6a8535d08b61074ded4f08a24f475dfb79fc49e7b8c3776fda6744e0d3"
   },
   {
    "public_path": "data/docs/stage_recovery.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/stage_recovery.md",
    "sha256": "c959c06238e61cf4c54f151d14c88f776dc907c95d9679bc36a469d88ea09226"
   },
   {
    "public_path": "data/docs/dedup.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/dedup.md",
    "sha256": "650ae573d3e32b31be0da7c1dd88f6edc1d306cf226f2ce4c0bd4774f48f59c7"
   },
   {
    "public_path": "data/docs/decisions.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/decisions.md",
    "sha256": "e2d8b5201c5b5ce35dc1e2ef1b9bbd33fbcfa9b44a563b87c3c2deb41acd722a"
   },
   {
    "public_path": "data/docs/stages.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/stages.md",
    "sha256": "9cd5ad02db3484dc23f13cf84eea5d584d617a51360d75f53f0301ff1f212d95"
   },
   {
    "public_path": "data/docs/calibration.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/calibration.md",
    "sha256": "53e0d74e7b52801460c876c9ec1d3518635b7293f8dd0644d141d1d6d90d1437"
   },
   {
    "public_path": "data/docs/quality_audit.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/quality_audit.md",
    "sha256": "b0aa058ffb3174e8a9c7422417d6f6fd539d2e5ef2c412eed333675a7eb372f1"
   },
   {
    "public_path": "data/docs/contamination_adjudication_criteria_v2.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/contamination_adjudication_criteria_v2.md",
    "sha256": "64952b7bdc34c379c3f462ab165f42c5effc7fbda198587f9f54545bb4d98f58"
   },
   {
    "public_path": "data/docs/contamination_f9_criteria.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/contamination_f9_criteria.md",
    "sha256": "fdf1fc88a9c374361131543ec74a6f92011599ea9e63dc14c67a4f059bd50650"
   },
   {
    "public_path": "data/docs/qualification_2026-10-10.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/qualification_2026-10-10.md",
    "sha256": "0581fb2d243a65641b9ad06529d09b4d741b7bcdd459f400a55e770e75f1e892"
   },
   {
    "public_path": "data/docs/full_recount_2026-10-10.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/full_recount_2026-10-10.md",
    "sha256": "c75dfc410ef47f14cacbd675a9b52d815153f76ee14b0c33d3eee4bb4f1e43a8"
   },
   {
    "public_path": "data/docs/independent_review_2026-10-08.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/independent_review_2026-10-08.md",
    "sha256": "e14996da79c8a1ce37ef7856ac61d7ff61e46e3781805fb0fc92774e7ea3c893"
   },
   {
    "public_path": "data/docs/owner_decision_brief_v0.3.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/owner_decision_brief_v0.3.md",
    "sha256": "95fac467fe0e54e3786177d7338ab30a4d80267787121783d7abf793637a3f04"
   },
   {
    "public_path": "data/docs/REPAIRS_2026-10-11.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/REPAIRS_2026-10-11.md",
    "sha256": "b27bd2357a45121162dc578c71c218491d8a2b6b3dcfbfee324392313519340d"
   },
   {
    "public_path": "data/docs/repository_inconsistencies.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/repository_inconsistencies.md",
    "sha256": "e8bc72f859ebb1fb43afb2cacf56ce14f9ac448f6ae668a545d7f60892b64b79"
   },
   {
    "public_path": "data/docs/scope_change_2026-10-08.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/scope_change_2026-10-08.md",
    "sha256": "5fbdc79f303dd18c80d2f01d57e9aa001ce75e4a8e25333cce1b95aebcf08441"
   },
   {
    "public_path": "data/docs/source_exclusion_internal_2026-10-10.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/source_exclusion_internal_2026-10-10.md",
    "sha256": "9e5ad9a4581ce01ae95a3fc0264c612a6fb960f270ddbaeb6264a0da22e83c52"
   },
   {
    "public_path": "data/docs/spec_compliance_v0.3.md",
    "source_repo": "Cinqic-Research/Juniper-1-Data",
-   "source_commit": "2231c7fdac73d3694759a0e536cd0ae56b5f6780",
+   "source_commit": "14ce3ffe78bc373d4bae43b3cd2bd5d8b7873620",
    "source_path": "docs/spec_compliance_v0.3.md",
    "sha256": "f0b20aeab98b72546d3b0676678959ecc510686846ec8da620cf3e75380ba863"
+  },
+  {
+   "public_path": "training/README.md",
+   "source_repo": "generated by export_public.py",
+   "source_commit": "52bd74ca11bbeffd00e439796fe132dbcd895c03",
+   "source_path": null,
+   "sha256": "f980d2e82ec87dfe6633a1e880e5e88f2aae16a7b6e440e4b9ce3c4d736ade79"
   }
  ]
 }

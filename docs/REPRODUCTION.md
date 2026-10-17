@@ -45,7 +45,7 @@ The recorded run (`j1-base-r2`) used, in `training/`:
 
 ```bash
 python -m j1bench.train --preset j1-wide-20x768 --vocab 24576 --seq-len 2048 \
-  --micro-bs 16 --accum 1 --steps 52034 --lr 0.0016971 --warmup 500 --min-lr-ratio 0.1 \
+  --micro-bs 16 --accum 2 --steps 52034 --lr 0.0016971 --warmup 500 --min-lr-ratio 0.1 \
   --wd 0.1 --wd-policy matrices --clip 1.0 --opt fused --no-compile --seed 1 \
   --tokens <J1_DATA_ROOT>/token_shards/j1-base-v0.2.2/cand5-j1tok-24k --limit-tokens 3410100225 \
   --preload-data --verify-data --tokenizer <tokenizer.json> \
@@ -55,8 +55,7 @@ python -m j1bench.train --preset j1-wide-20x768 --vocab 24576 --seq-len 2048 \
 
 The exact flags, including the data-order and evaluation identities, are bound in the checkpoint manifest
 (`full-state/manifest.json` on the Hub, `run_contract`) and in `training/docs/contract/training_contract_v2.json`
-(effective batch 32 × 2,048 = 65,536 targets per update; the launch used micro-batch 16 with accumulation 2 as
-recorded there). Data order: windows of the EOS-separated train stream in keyed-hash document order, visited
+(effective batch 32 × 2,048 = 65,536 targets per update: micro-batch 16 with accumulation 2, as recorded there). Data order: windows of the EOS-separated train stream in keyed-hash document order, visited
 in a permutation seeded by (seed = 1, epoch = 0); the stream prefix of 3,410,100,225 tokens drops the last six
 windows. Interruption and resume: full-state checkpoints (model, AdamW moments, scheduler, RNG, data cursor)
 every 500 updates or 900 active seconds; `--resume auto` restores the latest verified checkpoint.

@@ -25,7 +25,6 @@ def main(argv: list[str] | None = None) -> int:
     c.add_argument("--device", default="cpu", help="cpu (default) or cuda")
     c.add_argument("--dtype", default="float32", choices=["float32", "bfloat16", "float16"])
     c.add_argument("--json", action="store_true", help="print a JSON record instead of plain text")
-    c.add_argument("--no-verify-digest", action="store_true", help="skip the tensor digest check (faster start)")
     v = sub.add_parser("verify", help="check a release directory against the frozen identity")
     v.add_argument("--model", default="CinqicX/juniper1-base")
     v.add_argument("--revision", default=None)

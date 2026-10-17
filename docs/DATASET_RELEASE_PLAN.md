@@ -1,5 +1,12 @@
 # Dataset release plan: `juniper1-base-corpus-v0.2.2` public edition (proposal, 2026-10-16 08:37 PM EDT)
 
+> **Resolution (2026-10-16, recorded 2026-10-17 01:50 AM EDT).** The owner's 2026-10-16 directive was applied: `configs/owner_decisions.toml`
+> now carries `weights-release-license-treatment-2026-10-16` and `dataset-redistribution-2026-10-16` (status `DECIDED`), adopting this
+> table's defaults: Cinqic-owned artifacts under Apache-2.0 with the NOTICE disclosures; seven text-payload sources under their own
+> licenses; FineWeb-Edu, FineMath and Stack v2 Edu as reconstruction manifests only (Q-1 and Q-2 stay open as owner questions; the
+> release is complete without them). Q-3 and Q-4 below are therefore resolved. The original PENDING records are preserved unchanged.
+> Sentences below that read as a proposal ("this branch", "remain PENDING", "NOT RE-VERIFIED") describe the state when the table was written.
+
 Proposal by the rights-and-provenance subagent under the owner's 2026-10-16 directive. Nothing here is published; `dataset-redistribution` in `configs/owner_decisions.toml` stays PENDING until the owner records the source-by-source decision (rights table Q-4). Dispositions and evidence: `rights_table_2026-10-16.md`. Notices: `NOTICE_draft.md` section B.
 
 ## 1. Layout
