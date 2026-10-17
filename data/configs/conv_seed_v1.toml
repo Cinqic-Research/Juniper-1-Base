@@ -1,0 +1,98 @@
+# Conversational seed corpus v1 drafting (j1.convdraft.v1). Contract: docs/sft/conversation_contract_v1.md.
+# Route B only: every prompt and response is drafted by the pinned local GPT-OSS-20B (configs/teacher.toml).
+# This file is configuration, not record text. A changed count, seed, bucket or topic list is a new version.
+
+[draft]
+version = "j1-conv-seed-v1"
+seed = 20261016
+# Draft surplus: review rejects records and never edits them, so draft more than the 360 target.
+oversample = 1.6
+max_response_words = 180
+system_layer_share = 0.25
+max_tokens = 1400
+temperature = 0.8
+top_p = 0.95
+reasoning_effort = "low"
+
+[confirmation]
+# Sealed conversational confirmation prompts (user turns only; never targets). Topics are split by hash
+# so no confirmation topic is ever drafted for training.
+# Drafted and sealed before any training draft (`convdraft confirm`): up to `candidates` slots are tried in
+# order until `count` distinct prompts survive; fewer than `minimum` fails the step.
+count = 120
+minimum = 100
+candidates = 240
+topic_share = 0.2
+seed = 20261017
+
+[buckets.everyday_qa]
+count = 54
+turns = [1, 2]
+instruction = "The user asks an ordinary everyday factual or practical question about the topic. The assistant answers it directly in the first sentence, briefly and correctly. If a follow-up turn is present, the user asks a natural short follow-up and the assistant answers it."
+
+[buckets.explanation]
+count = 43
+turns = [1, 2]
+instruction = "The user asks why or how something about the topic works. The assistant gives a short, correct, plain-language explanation of two to five sentences, without jargon unless explained."
+
+[buckets.writing_revision]
+count = 54
+turns = [1, 3]
+instruction = "The user supplies a short piece of their own text about the topic (an email, note, message or paragraph, written in the user turn) and asks for a revision: shorter, friendlier, more formal, fixed grammar or clearer. The assistant returns the revised text, with at most one short sentence of comment."
+
+[buckets.summarization]
+count = 29
+turns = [1, 2]
+instruction = "The user pastes a short passage (four to eight sentences, written in the user turn) about the topic and asks for a summary of a requested length. The assistant summarizes faithfully, adding nothing that is not in the passage, and respects the length."
+
+[buckets.format_compliance]
+count = 36
+turns = [1, 2]
+instruction = "The user asks for something about the topic in a specific format or length: a numbered list of N items, one sentence, exactly N words or fewer, a two-column table, or only yes or no. The assistant follows the requested format exactly."
+
+[buckets.multi_turn]
+count = 43
+turns = [3, 5]
+instruction = "A short multi-turn exchange about the topic in which the user states a name, preference, constraint or detail early on, and a later user turn depends on it (\"what about the second one\", \"make it shorter\", \"use my budget\"). Every assistant turn uses the earlier context correctly."
+
+[buckets.corrections]
+count = 29
+turns = [2, 3]
+# The assistant never errs in these chats, so no target teaches a mistake: either the user's message carries
+# a false premise or wrong fact that the assistant corrects, or the user corrects a detail they gave earlier.
+instruction = "Either the user's message contains a false premise or a mistaken fact or number about the topic, in the user's own words, and the assistant politely corrects it (stating what is true only when that is well established, never inventing a replacement fact) and then helps with the real question; or the user gives a detail, the assistant answers correctly using it, and the user then corrects their own detail (\"actually it's six people, not four\"), and the assistant plainly updates its answer. The assistant itself never makes a mistake in this chat."
+
+[buckets.clarification]
+count = 22
+turns = [2, 3]
+instruction = "The user's request about the topic is genuinely ambiguous. The assistant asks exactly one short clarifying question; the user answers; the assistant then helps directly."
+
+[buckets.answerable_contrast]
+count = 29
+turns = [1, 2]
+instruction = "Either the user asks something about the topic that cannot be known (the future, the user's private life, real-time data) and the assistant says so in one or two sentences and offers what it can help with; or the user asks a closely related ordinary question that can be answered, and the assistant answers it directly without hedging."
+
+[buckets.practical_tasks]
+count = 21
+turns = [1, 3]
+instruction = "The user asks for practical help related to the topic: a short plan, checklist, or a small calculation (tip, split, unit conversion, time difference). Any arithmetic is written out and must be exactly correct."
+
+[topics]
+everyday = [
+ "cooking pasta", "baking bread", "grocery shopping", "meal planning", "coffee", "tea", "houseplants", "gardening", "composting",
+ "laundry", "cleaning a kitchen", "organizing a closet", "moving to a new apartment", "paying rent", "monthly budgeting",
+ "saving money", "credit card bills", "tipping at restaurants", "splitting a bill", "unit conversion in recipes",
+ "time zones", "daylight saving time", "calendars and scheduling", "making a to-do list", "morning routines", "sleep habits",
+ "drinking enough water", "walking for exercise", "stretching", "riding a bike", "running a 5K", "swimming lessons",
+ "car maintenance", "changing a tire", "gas mileage", "public transit", "airport security", "packing for a trip",
+ "hotel check-in", "road trip planning", "weather forecasts", "thunderstorms", "snow days", "heat waves", "seasons",
+ "dogs", "cats", "pet food", "birds at a feeder", "fish tanks", "the moon", "stars at night", "rainbows", "volcanoes",
+ "how plants grow", "recycling", "electricity bills", "light bulbs", "home Wi-Fi", "phone batteries", "passwords",
+ "email etiquette", "writing a thank-you note", "job interviews", "resumes", "asking for a day off", "meeting notes",
+ "birthday parties", "wedding gifts", "holiday decorations", "board games", "puzzles", "reading habits", "libraries",
+ "learning a language", "studying for a test", "homework help", "basic fractions", "percentages", "reading a map",
+ "first aid for a small cut", "allergies", "the common cold", "sunscreen", "dentist visits", "making a doctor's appointment",
+ "volunteering", "neighbors", "noise complaints", "returning an item to a store", "online shopping", "package delivery",
+ "picking a movie", "music practice", "photography", "painting a room", "furniture assembly", "fixing a leaky faucet",
+ "smoke detectors", "fire safety", "emergency kits", "camping", "picnics", "beach trips", "hiking safety", "farmers markets",
+]

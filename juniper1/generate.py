@@ -70,7 +70,9 @@ def continue_ids(model: Transformer, prompt_ids: list[int], settings: Generation
     return out, reason
 
 
-def complete(model: Transformer, tok: Juniper1Tokenizer, prompt: str, settings: GenerationSettings | None = None) -> dict:
+def complete(
+    model: Transformer, tok: Juniper1Tokenizer, prompt: str, settings: GenerationSettings | None = None
+) -> dict:
     settings = settings or GenerationSettings()
     prompt_ids = tok.encode(prompt)
     ids, reason = continue_ids(model, prompt_ids, settings)

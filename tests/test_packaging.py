@@ -1,4 +1,5 @@
 """The frozen tokenizer must ship inside the installed package with the recorded bytes."""
+
 import hashlib
 from importlib import resources
 

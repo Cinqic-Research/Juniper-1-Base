@@ -1,3 +1,5 @@
+> **Closed on 2026-10-16.** Juniper 1 R&D ended by owner decision; this document is preserved as history and is not an active plan. See `docs/closure/JUNIPER1_CLOSURE_2026-10-16.md`.
+
 # Juniper 1 later stages: bounded agentic workflows, context extension, AAA boundary (2026-10-13)
 
 > **Update 2026-10-14:**

@@ -51,6 +51,24 @@ def _open_ended_human(episode: dict[str, Any]) -> bool:
     )
 
 
+def _reviewed_teacher_conversation(episode: dict[str, Any]) -> bool:
+    """The one admission path for MODEL_JUDGED_ONLY: an open-ended conversation drafted by the pinned local
+    teacher (route B of docs/sft/conversation_contract_v1.md) has no per-item factual oracle. It needs
+    teacher origin, a ``conv.`` task family, the drafting harness's automatic checks and a passed rubric
+    review by a model independent of the author; the corpus build gates the second review."""
+    checks = episode["validation"]["checks"]
+    return (
+        episode["validation"]["factuality"] == "MODEL_JUDGED_ONLY"
+        and episode["provenance"].get("origin") == "teacher"
+        and episode["task_family"].startswith("conv.")
+        and any(c["name"] == "convdraft_automatic_checks" and c["passed"] for c in checks)
+        and any(
+            c["name"] == "rubric_first_review" and c["oracle"] == "independent_model" and c["passed"]
+            for c in checks
+        )
+    )
+
+
 class SFTAdmissionError(ValueError):
     """The episode is unsuitable for this explicitly limited SFT serializer."""
 
@@ -77,7 +95,11 @@ def encode_text_episode(
     if not episode["validation"]["accepted"]:
         raise SFTAdmissionError("episode was not accepted")
     checks = episode["validation"]["checks"]
-    if episode["validation"]["factuality"] not in ADMISSIBLE_FACTUALITY and not _open_ended_human(episode):
+    if (
+        episode["validation"]["factuality"] not in ADMISSIBLE_FACTUALITY
+        and not _open_ended_human(episode)
+        and not _reviewed_teacher_conversation(episode)
+    ):
         raise SFTAdmissionError("episode has no qualifying factuality evidence")
     if not checks or not all(c["passed"] for c in checks):
         raise SFTAdmissionError("episode needs at least one check and every check passing")

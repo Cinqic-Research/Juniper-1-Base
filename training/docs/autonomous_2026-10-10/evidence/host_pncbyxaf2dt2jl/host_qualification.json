@@ -1,0 +1,25 @@
+{
+ "schema": "j1.host-qualification.v1",
+ "pod_id": "pncbyxaf2dt2jl",
+ "gpu_uuid": "GPU-5c42020f-dc89-fe0f-2a91-a26d0948c4f4",
+ "gpu": "NVIDIA A100-SXM4-80GB",
+ "mig_disabled": true,
+ "ecc_enabled": true,
+ "driver": "580.126.16",
+ "image_digest": "sha256:0a360022e8de4375af99430f84e8b38951acc397252163a37ceac7204d01be35",
+ "datacenter": "US-MD-1",
+ "torch": "2.8.0+cu128 12.8 91002 3.4.0",
+ "pytest_passed": true,
+ "fa1_verdict": "EXPLAINED_ACCUMULATION_NOISE",
+ "probes_start_of_session": {
+  "probe-start-j1-core-28x640": {
+   "tokens_per_s_median": 117848.84176153959,
+   "peak_vram_gib": 28.584765911102295
+  },
+  "probe-start-j1-wide-20x768": {
+   "tokens_per_s_median": 129233.16422402291,
+   "peak_vram_gib": 24.998048305511475
+  }
+ },
+ "prefix_data_verified": true
+}

@@ -1,5 +1,5 @@
 > **Export note.** This directory is an allow-listed export of Cinqic's private `Juniper-1-Data` repository
-> at commit `542bec3b` (see `../EXPORT_MAPPING.md`): pipeline source, configs, schemas, tools, tests, manifests and
+> at commit `2231c7fd` (see `../EXPORT_MAPPING.md`): pipeline source, configs, schemas, tools, tests, manifests and
 > reports for the base-corpus builds, and the data documentation. Post-training (SFT/distillation) datasets and
 > their manifests are not exported. Corpus bytes are published separately as the Hugging Face dataset
 > `CinqicX/juniper1-base-corpus-v0.2.2` (text payloads for seven sources, reconstruction manifests for three).
@@ -12,12 +12,39 @@ checkpoint and recovery requirements, alongside the applicable owner directive;
 `j1-base-v0.1` is the first corpus version, not the specification version.
 The initial dataset target is about 3B accepted tokens; 15B is a hard ceiling, not a
 collection target. Provisional measurement-token counts do not certify that target.
-The corpus is not approved for training while source-use decisions and requalification
-gates remain open (`docs/spec_compliance_v0.3.md`).
+**Status (2026-10-16):** the launch corpus `j1-base-v0.2.2` was the approved training input for the
+`j1-base-r2` pretraining epoch (owner training approvals of 2026-10-08; qualification
+`docs/qualification_2026-10-10.md`). The resulting model is published as **Juniper 1 Base**
+(GitHub `Cinqic-Research/Juniper-1-Base`, Hugging Face `CinqicX/juniper1-base`), and the corpus's public
+edition as `CinqicX/juniper1-base-corpus-v0.2.2` under the source-by-source decisions recorded in
+`configs/owner_decisions.toml` and `docs/release/`. Juniper 1 R&D is closed; this repository holds the
+pipeline and its records. Historical gate text below (`docs/spec_compliance_v0.3.md`) describes the
+state before launch and is kept unchanged.
 
 This repository holds the machinery, configuration, schemas, manifests and reports.
 Corpus bytes live outside Git under a data root (`J1_DATA_ROOT`) on large storage.
 
+## Review roles
+
+From 2026-10-16:
+
+- **Implementer: Claude Opus 5.5.** Builds, tests, and documents changes, and prepares
+  the evidence. It may fix defects, but it never certifies its own work as
+  independently reviewed.
+- **Independent technical reviewer: Claude Fable 5.1,** in a separate session with a
+  fresh context. It reviews the exact head and the primary evidence itself, and may
+  reject work, require changes, or withhold approval. If it authored, repaired, or
+  directed the exact change, it says so and the change stays pending review.
+- **Owner: Markus Gillyard.** Decides direction, funding, releases, irreversible
+  operations, and policy exceptions. A technical approval is not owner authorization.
+
+Both models are Anthropic's, so this is separate-session review, not
+vendor-independent assurance. Reviews by earlier reviewers (GPT-6 Luna, GPT-6 and
+GPT-5.6 Sol, Codex) remain historical records. This section does not change any review
+gate.
+
+A dataset is not approved because another model reviewed its construction. Sealed
+evaluation material and frozen dataset identities are unchanged.
 ## Layout
 
 | Path | Contents |
@@ -63,7 +90,8 @@ those inputs change.
 The v0.3 recovery contract also covers tokenizer, architecture, training, evaluation,
 and export stages. Those external training-stack save, restore, replica-durability,
 and failure-injection gates have not been implemented or qualified by this dataset
-repository; canonical training remains blocked. Current coverage and remaining data
+repository. (Historical note: this paragraph predates the 2026-10-11 launch; the training stack's
+own recovery evidence is in Juniper-1-Train.) Current coverage and remaining data
 stage gaps are tracked in `docs/spec_compliance_v0.3.md`.
 
 The accepted normalized text is the canonical corpus. This repository does not

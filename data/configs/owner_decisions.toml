@@ -57,3 +57,36 @@ question = "Before a public Apache-2.0 weight release, record the treatment of w
 decision_id = "dataset-redistribution"
 status = "PENDING"
 question = "The training corpus stays private. Any redistribution of corpus text, shards, or derived token IDs needs a source-by-source decision."
+
+# 2026-10-16: the owner (Markus Gillyard) directed, in writing, that Juniper 1 Base be published on GitHub
+# and Hugging Face under Apache-2.0 for the Cinqic-owned weights, code, tokenizer and documentation
+# "wherever Cinqic has the rights to do so", and that the dataset and reproducibility materials be
+# published "to the fullest extent permitted by the actual source terms". The two PENDING records above are
+# preserved unchanged as the questions that were asked; the records below are the owner's answers as given
+# in that directive, applied source by source through the rights analysis in
+# docs/release/rights_table_2026-10-16.md (Claude Fable 5.1, recorded 2026-10-16). The directive supplies
+# owner authorization; it does not alter third-party terms.
+
+[[release_decision]]
+decision_id = "weights-release-license-treatment-2026-10-16"
+resolves = "weights-release-license-treatment"
+status = "DECIDED"
+decided_by = "Markus Gillyard (owner directive of 2026-10-16, recorded by Claude Fable 5.1)"
+decided_at = "2026-10-16"
+treatment = "Juniper 1 Base weights (juniper1-base-v1) are released under Apache-2.0 as Cinqic's own work. The release NOTICE carries the ODC-By 1.0 section 4.3 notice for FineWeb-Edu and FineMath, discloses the CC BY-SA sources (Wikimedia, Stack Exchange, and the CC BY-SA documents in the textbook and arXiv sources) with preserved per-document attribution, discloses the permissively licensed Stack v2 Edu code with its notice obligations, cites the Common Pile, and states that the model license does not relicense any third-party content. Cinqic does not assert whether weights are adaptations of ShareAlike text; the model card discloses this as an open question."
+evidence = ["docs/release/rights_table_2026-10-16.md", "docs/release/NOTICE_draft.md"]
+
+[[release_decision]]
+decision_id = "dataset-redistribution-2026-10-16"
+resolves = "dataset-redistribution"
+status = "DECIDED"
+decided_by = "Markus Gillyard (owner directive of 2026-10-16, recorded by Claude Fable 5.1)"
+decided_at = "2026-10-16"
+public_edition = "Hugging Face dataset CinqicX/juniper1-base-corpus-v0.2.2"
+text_payload_sources = ["libretexts", "pressbooks", "oercommons", "python-peps", "wikimedia", "arxiv-papers", "stackexchange"]
+text_payload_terms = "each document under its own upstream license (CC BY, CC BY-SA, CC0, public domain, GFDL) with per-row license, license URL, canonical URL, title and authors as the upstream collection provides them; ShareAlike documents stay under CC BY-SA of the same version"
+manifest_only_sources = ["stackv2-edu", "finemath-4plus", "fineweb-edu-dedup"]
+manifest_only_terms = "document IDs, upstream identifiers and locators, SHA-256 of the stored text, split and byte counts; no text. FineWeb-Edu and FineMath manifests are ODC-By 1.0 derivative databases with the section 4.2 notice; Stack v2 Edu text is withheld because per-file copyright and permission notices cannot be carried with the stored text and 86 license identifiers (72 not on the Blue Oak list as checked) plus 2,300 empty license strings are not resolved"
+token_shards = "shards.json and hashes published; token .bin files and document-index parquet withheld (reversible encoding of all ten sources' text)"
+held_for_owner = "rights_table_2026-10-16.md Q-1 (FineWeb-Edu/FineMath text as an ODC-By derivative database) and Q-2 (Stack v2 Edu text) stay withheld until the owner decides otherwise; the public edition is complete without them and says so"
+evidence = ["docs/release/rights_table_2026-10-16.md", "docs/release/dataset_release_plan_2026-10-16.md"]

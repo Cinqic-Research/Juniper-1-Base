@@ -61,9 +61,19 @@ class RMSNorm(nn.Module):
 
 
 FROZEN_CONFIG: dict = {
-    "vocab_size": 24576, "n_layer": 20, "d_model": 768, "n_head": 12, "n_kv_head": 6, "head_dim": 64,
-    "d_ff": 1920, "max_seq_len": 2048, "rope_theta": 100000.0, "norm_eps": 1e-05,
-    "qk_norm": "rmsnorm_per_head", "tie_embeddings": True, "init_std": 0.02,
+    "vocab_size": 24576,
+    "n_layer": 20,
+    "d_model": 768,
+    "n_head": 12,
+    "n_kv_head": 6,
+    "head_dim": 64,
+    "d_ff": 1920,
+    "max_seq_len": 2048,
+    "rope_theta": 100000.0,
+    "norm_eps": 1e-05,
+    "qk_norm": "rmsnorm_per_head",
+    "tie_embeddings": True,
+    "init_std": 0.02,
 }
 FROZEN_PARAMETERS = 142_771_456
 

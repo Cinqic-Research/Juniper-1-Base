@@ -1,7 +1,13 @@
 import pytest
 
-from juniper1.tokenizer import (CONTROL_TOKENS, FIRST_LEARNED_ID, N_CONTROL, VOCAB_SIZE, Juniper1Tokenizer,
-                                TokenizerError)
+from juniper1.tokenizer import (
+    CONTROL_TOKENS,
+    FIRST_LEARNED_ID,
+    N_CONTROL,
+    VOCAB_SIZE,
+    Juniper1Tokenizer,
+    TokenizerError,
+)
 
 FIXTURES = [
     "The quick brown fox jumps over the lazy dog.",

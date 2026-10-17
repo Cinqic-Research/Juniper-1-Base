@@ -23,7 +23,7 @@ hash (`__init__.py`, `ckpt.py`, `data.py`, `model.py`, `replicate.py`, `store.py
 | `docs/fable_2026-10-10/` | launch report, audit report, continuation package, repair log |
 | `docs/posttrain/` | post-training protocols, final reports and decision records (all closed) |
 | `results/` | historical A100 qualification evidence |
-| `tests/` | CPU tests for the model, data reader, checkpoints, resume, generation and SFT harness |
+| `tests/` | CPU tests for the model, data reader, checkpoints, resume, generation and SFT harness (the contract-builder test is not exported: it reads a private funding record) |
 
 Run the tests from this directory: `python -m pytest -q tests` (needs `torch`, `numpy`, `pyarrow`, `tokenizers`;
 versions in `env/flowbox-venv.lock.txt`). Operational tooling for the cloud pods (bootstrap, controllers,

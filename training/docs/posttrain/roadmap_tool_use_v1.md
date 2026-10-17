@@ -1,3 +1,5 @@
+> **Closed on 2026-10-16.** Juniper 1 R&D ended by owner decision; this document is preserved as history and is not an active plan. See `docs/closure/JUNIPER1_CLOSURE_2026-10-16.md`.
+
 # Juniper 1 post-training roadmap after the initial SFT pilot (v1, 2026-10-12)
 
 Each stage below is a separate, evidence-gated step with its own admitted dataset version, its own

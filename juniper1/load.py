@@ -48,7 +48,7 @@ def load_model(
     if verify_digest and tensor_tree_sha(sd) != TENSOR_TREE_SHA256:
         raise VerifyError("loaded tensors differ from the frozen juniper1-base-v1 tensor digest")
     model = Transformer(ModelConfig(**FROZEN_CONFIG))
-    missing, unexpected = model.load_state_dict(sd, strict=True), None  # raises on mismatch
+    model.load_state_dict(sd, strict=True)  # raises on missing or unexpected keys
     if model.num_params() != FROZEN_PARAMETERS:
         raise VerifyError(f"parameter count {model.num_params()} != {FROZEN_PARAMETERS}")
     tok_path = d / "tokenizer.json"

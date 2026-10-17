@@ -53,7 +53,9 @@ def main(argv: list[str] | None = None) -> int:
     from .load import load_model
 
     dtype = {"float32": torch.float32, "bfloat16": torch.bfloat16, "float16": torch.float16}[a.dtype]
-    model, tok, _ = load_model(a.model, revision=a.revision, device=a.device, dtype=dtype, verify_digest=not a.no_verify_digest)
+    model, tok, _ = load_model(
+        a.model, revision=a.revision, device=a.device, dtype=dtype, verify_digest=not a.no_verify_digest
+    )
     prompt = a.prompt if a.prompt is not None else sys.stdin.read()
     s = GenerationSettings(a.max_new_tokens, a.temperature, a.top_k, a.seed, not a.no_stop_at_eos)
     t0 = time.time()
