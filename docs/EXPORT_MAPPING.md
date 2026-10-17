@@ -13,7 +13,7 @@ path and SHA-256, so provenance can be checked file by file.
 | `training/docs/` | same | same | freeze record, 2026-10-12 audit and selection reports with raw results, training contract, preparation protocols, architecture-selection evidence, launch and audit reports, post-training protocols and decision records; funding contracts, money ledgers, host/pod evidence, supervision ledgers and sealed-test access logs are not exported |
 | `training/results/` | same | same | historical A100 qualification evidence |
 | `data/` | `Cinqic-Research/Juniper-1-Data` | `542bec3b` (main, 2026-10-14) | pipeline source, configs, schemas, tools, tests, manifests for `j1-base-v0.1`/`v0.2`, reports for all base builds, data-pipeline documentation; SFT/distillation datasets, their manifests and teacher-model code are not exported (closed post-training work) |
-| `tokenizer/tokenizer.json` | FLOWBOX archive `juniper1-data/data/tokenizer/j1-base-v0.2.2/frozen/cand5-j1tok-24k/` | — | SHA-256 `176a89e2…adf1`, bound in the freeze record |
+| `juniper1/tokenizer.json` | FLOWBOX archive `juniper1-data/data/tokenizer/j1-base-v0.2.2/frozen/cand5-j1tok-24k/` | — | SHA-256 `176a89e2…adf1`, bound in the freeze record |
 | `juniper1/model.py` | derived from `j1bench/model.py` | `4d39c0e5` | defaults changed to the frozen configuration; docstring updated; otherwise identical |
 
 Modifications made during export: one email address in `training/docs/audit_2026-10-12/findings.json` was

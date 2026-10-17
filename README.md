@@ -84,7 +84,7 @@ Local files: `juniper1 complete --model ./juniper1-base "..."` where the directo
 | Path | Contents |
 |---|---|
 | `juniper1/` | Release package: frozen model definition, tokenizer wrapper, verified loader, generation, CLI |
-| `tokenizer/tokenizer.json` | The frozen tokenizer (same bytes as on the Hub) |
+| `juniper1/tokenizer.json` | The frozen tokenizer (same bytes as on the Hub) |
 | `tests/` | Tokenizer, model-numerics and generation tests (CPU, no download) |
 | `scripts/` | `convert_checkpoint_to_safetensors.py`, `parity_check.py` |
 | `training/` | Juniper-1-Train source at the frozen code identity (`j1bench/`, tools, tests) and the research evidence: freeze record, audit and selection reports, training contract, protocols, logged results |

@@ -49,7 +49,7 @@ BYTE_TOKENS = [f"<0x{i:02X}>" for i in range(N_BYTE)]
 EOS_ID = 0
 PAD_ID = 0
 
-DEFAULT_PATH = Path(__file__).resolve().parent.parent / "tokenizer" / "tokenizer.json"
+DEFAULT_PATH = Path(__file__).resolve().parent / "tokenizer.json"
 
 
 class TokenizerError(RuntimeError):
