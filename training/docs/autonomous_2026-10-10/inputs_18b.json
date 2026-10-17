@@ -1,0 +1,16 @@
+{
+ "prefix_dir_name": "cand5-j1tok-24k-successor-prefix-960MB-v022excl",
+ "shards_json_sha256": "2a9555a08843f3a2ea0762a95bd4b9594ee52b66ffdbc6618b1dd0798a1e917d",
+ "train": {
+  "documents": 215831,
+  "stream_tokens": 250772987
+ },
+ "validation": {
+  "documents": 2576,
+  "stream_tokens": 3218204,
+  "scored_bytes": 12311466
+ },
+ "exclusion_list_sha256": "4bd2e8ef7f5f95c1c2541d1e1c6945a563eece4b3726ed6d80c6a743e0af4ca1",
+ "source_shards_json_sha256": "cb2e2b53d5b4ce26210bca2367c20ea751362bc81d92294c2e81b7f2cda76ef3",
+ "received_bytes_verification": "vol_prefix_v022_sha256.txt checked on the volume"
+}

@@ -1,0 +1,200 @@
+{
+ "candidates": 20196733,
+ "cluster_size_histogram": {
+  "1": 19926016,
+  "10": 125,
+  "100": 26,
+  "11": 94,
+  "12": 74,
+  "13": 42,
+  "14": 43,
+  "15": 41,
+  "16": 35,
+  "17": 34,
+  "18": 29,
+  "19": 19,
+  "2": 104196,
+  "20": 17,
+  "21": 22,
+  "22": 14,
+  "23": 13,
+  "24": 18,
+  "25": 12,
+  "26": 11,
+  "27": 13,
+  "28": 11,
+  "29": 5,
+  "3": 6584,
+  "30": 16,
+  "31": 6,
+  "32": 12,
+  "33": 5,
+  "34": 5,
+  "35": 4,
+  "36": 3,
+  "37": 4,
+  "38": 7,
+  "39": 4,
+  "4": 1832,
+  "40": 4,
+  "41": 6,
+  "42": 5,
+  "43": 1,
+  "44": 3,
+  "45": 1,
+  "46": 1,
+  "47": 2,
+  "48": 1,
+  "49": 4,
+  "5": 803,
+  "50": 7,
+  "51": 1,
+  "53": 1,
+  "54": 4,
+  "55": 1,
+  "58": 3,
+  "59": 1,
+  "6": 433,
+  "62": 3,
+  "63": 2,
+  "65": 2,
+  "68": 2,
+  "69": 1,
+  "7": 296,
+  "71": 1,
+  "74": 1,
+  "77": 2,
+  "78": 2,
+  "8": 232,
+  "81": 1,
+  "82": 2,
+  "83": 1,
+  "84": 1,
+  "87": 1,
+  "88": 2,
+  "89": 1,
+  "9": 167,
+  "90": 1,
+  "91": 1,
+  "93": 1,
+  "94": 1,
+  "97": 1,
+  "99": 1
+ },
+ "code": {
+  "commit": "1620d8f70c69cca0cc0137ee69e3abe5583b8633",
+  "dirty": false,
+  "package_version": "0.1.0"
+ },
+ "cross_source_removals": {
+  "finemath-4plus -> libretexts": 1135,
+  "finemath-4plus -> oercommons": 1,
+  "finemath-4plus -> pressbooks": 377,
+  "finemath-4plus -> python-peps": 3,
+  "finemath-4plus -> stackexchange": 47652,
+  "finemath-4plus -> stackv2-edu": 275,
+  "finemath-4plus -> wikimedia": 1910,
+  "fineweb-edu-dedup -> arxiv-papers": 20,
+  "fineweb-edu-dedup -> finemath-4plus": 1828,
+  "fineweb-edu-dedup -> libretexts": 200,
+  "fineweb-edu-dedup -> oercommons": 5,
+  "fineweb-edu-dedup -> pressbooks": 237,
+  "fineweb-edu-dedup -> stackexchange": 743,
+  "fineweb-edu-dedup -> stackv2-edu": 66,
+  "fineweb-edu-dedup -> wikimedia": 5047,
+  "oercommons -> libretexts": 369,
+  "oercommons -> pressbooks": 166,
+  "pressbooks -> libretexts": 5150,
+  "stackexchange -> arxiv-papers": 1,
+  "stackexchange -> pressbooks": 1,
+  "stackexchange -> wikimedia": 2,
+  "stackv2-edu -> libretexts": 7,
+  "stackv2-edu -> pressbooks": 2,
+  "stackv2-edu -> python-peps": 47,
+  "stackv2-edu -> stackexchange": 644,
+  "stackv2-edu -> wikimedia": 3,
+  "wikimedia -> libretexts": 196,
+  "wikimedia -> oercommons": 4,
+  "wikimedia -> pressbooks": 104
+ },
+ "dedup_version": "j1.dedup.v1",
+ "lsh": {
+  "bands": 14,
+  "rows": 8,
+  "threshold_at_half_detection": 0.719
+ },
+ "removed": {
+  "exact": 15,
+  "identity": 9001,
+  "near": 143205,
+  "normalized": 3112
+ },
+ "removed_by_source": {
+  "arxiv-papers": {
+   "near": 45
+  },
+  "finemath-4plus": {
+   "exact": 2,
+   "identity": 8910,
+   "near": 78789,
+   "normalized": 2305
+  },
+  "fineweb-edu-dedup": {
+   "exact": 5,
+   "near": 10182,
+   "normalized": 59
+  },
+  "libretexts": {
+   "near": 2294,
+   "normalized": 1
+  },
+  "oercommons": {
+   "near": 597
+  },
+  "pressbooks": {
+   "identity": 2,
+   "near": 8102,
+   "normalized": 11
+  },
+  "python-peps": {
+   "near": 1
+  },
+  "stackexchange": {
+   "near": 1375,
+   "normalized": 10
+  },
+  "stackv2-edu": {
+   "exact": 8,
+   "near": 13289,
+   "normalized": 703
+  },
+  "wikimedia": {
+   "identity": 89,
+   "near": 28531,
+   "normalized": 23
+  }
+ },
+ "removed_file": {
+  "file": "removed.parquet",
+  "rows": 155333,
+  "sha256": "d083a9295834d77fb1831d39b3c255a81851f027143c032bd090f98fce075ceb"
+ },
+ "retained": 20041400,
+ "retention_rule": "lowest (source priority, source id, unit id, row) in each cluster",
+ "schema": "j1.dedup-summary.v1",
+ "source_priorities": {
+  "arxiv-papers": 15,
+  "cinqic-aaa-docs": 1,
+  "cinqic-calculator-docs": 3,
+  "cinqic-juniper-app-docs": 2,
+  "finemath-4plus": 30,
+  "fineweb-edu-dedup": 40,
+  "libretexts": 5,
+  "oercommons": 7,
+  "pressbooks": 6,
+  "python-peps": 8,
+  "stackexchange": 20,
+  "stackv2-edu": 25,
+  "wikimedia": 10
+ }
+}

@@ -1,0 +1,11 @@
+........................................................................ [ 50%]
+.........s.............................................................  [100%]
+=============================== warnings summary ===============================
+tests/test_resume.py::test_resume_refuses_changed_contract_unless_corrective
+tests/test_resume.py::test_corrective_continuation_with_lower_lr_rebases_schedule_and_records_carryover
+  /usr/local/lib/python3.12/dist-packages/torch/optim/lr_scheduler.py:367: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+    _warn_get_lr_called_within_step(self)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+142 passed, 1 skipped, 2 warnings in 25.05s
+pytest rc=0

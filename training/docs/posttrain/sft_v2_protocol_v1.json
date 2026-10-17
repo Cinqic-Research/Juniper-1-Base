@@ -1,0 +1,202 @@
+{
+ "schema": "j1.sft-v2-protocol.v1",
+ "registered_before_any_result": true,
+ "registered_et": "2026-10-13 3:46 PM EDT",
+ "authority": "owner directive 2026-10-13, section 9",
+ "stage_id": "juniper1-sft-v2",
+ "base": {
+  "freeze_id": "juniper1-base-v1",
+  "freeze_record_sha256": "ef79b324fff459c8ffce7ac2e1b1542960a254b8383a6e8b19fd20402e92ff55"
+ },
+ "dataset_manifest_sha256": "8584130b6a6bb49f7c007aadbb228615255635456080d6331a0554b39a2f62b9",
+ "eval_bundle_sha256": "935e12edb42a0a39cb75839ffbb74fcb5e01e034746f2725e9ff985ecdb89906",
+ "data_code_revision": "5162bf7c9d76214ad0f81cb1a2472bae0197356f",
+ "scorer": "j1.sftscore.v4 + j1.sfteval.v2 at data_code_revision",
+ "training": {
+  "updates": 1226,
+  "warmup_updates": 40,
+  "min_lr_ratio": 0.1,
+  "episodes_per_update": 64,
+  "token_budget": 1024,
+  "optimizer": {
+   "name": "adamw",
+   "betas": [
+    0.9,
+    0.95
+   ],
+   "eps": 1e-08,
+   "weight_decay": 0.1,
+   "decay_policy": "matrices",
+   "clip": 1.0
+  },
+  "lr": 3e-05,
+  "precision": "fp32",
+  "dev_every": 100,
+  "checkpoint": {
+   "every_updates": 500,
+   "every_seconds": 900
+  },
+  "rationale": "identical to the v1.2 pilot (protocol v3) so the comparison isolates the dataset; LR is v3's stage-1 selection (not re-searched)"
+ },
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "runs": {
+  "1": "j1-sft-v2-s1",
+  "2": "j1-sft-v2-s2",
+  "3": "j1-sft-v2-s3"
+ },
+ "smoke": {
+  "run_id": "j1-sft-v2-smoke",
+  "updates": 30,
+  "warmup_updates": 15,
+  "sigterm_after": 15,
+  "pass": "bitwise A/B; corrupted and torn latest checkpoints rejected and rolled back to bitwise equality with A"
+ },
+ "candidate": "the final checkpoint of seed 1 (j1-sft-v2-s1, update 1226); seeds 2 and 3 enter the acceptance rule; no checkpoint or seed is selected after scoring",
+ "baseline": {
+  "description": "replicated v1.2-recipe candidates (protocol v3 seed 1, replication v1 seeds 2 and 3) evaluated on this bundle with this scorer before the protocol was frozen; pairing by seed number",
+  "checkpoints": {
+   "1": "j1-sft-v1-pilot/ckpt-000001226-55d13f9a",
+   "2": "j1-sft-v1-rep-s2/ckpt-000001226-0ccc062e",
+   "3": "j1-sft-v1-rep-s3/ckpt-000001226-4389d0e3"
+  },
+  "evaluation_dir": "FLOWBOX ~/j1post/eval/v13_baseline/rep_s{1,2,3} and base"
+ },
+ "statistics": {
+  "bootstrap": {
+   "resamples": 10000,
+   "seed": 20261013
+  },
+  "seed_aggregation": "seed mean; per-seed exact McNemar against the same-seed baseline"
+ },
+ "primary": {
+  "endpoints": [
+   "category:if_paraphrase",
+   "category:if_composition_heldout"
+  ],
+  "margin": 0.1,
+  "alpha": 0.05,
+  "multiplicity": "Holm over the endpoints (largest per-seed exact McNemar p per endpoint)",
+  "pass": "seed-mean improvement >= margin AND paired item-bootstrap 95% CI lower bound > 0 AND every seed improves on its same-seed baseline AND Holm-adjusted p < alpha"
+ },
+ "noninferiority": {
+  "groups": {
+   "if_in_distribution": "auto",
+   "category:json": "auto",
+   "math_arith": "auto",
+   "math_gsm8k": "auto",
+   "category:python": "auto",
+   "category:hierarchy": "auto",
+   "category:injection": "auto",
+   "category:uncertainty": "auto"
+  },
+  "auto": {
+   "floor": 0.03,
+   "k": 2,
+   "formula": "margin = max(0.03, 2 * sample SD of the three baseline seeds' accuracy on the group)"
+  },
+  "rule": "PASS if the paired bootstrap CI lower bound of the seed-mean difference > -margin; FAIL if the CI upper bound < -margin or the point estimate < -margin; otherwise INSUFFICIENT"
+ },
+ "knowledge": {
+  "relations": {
+   "facts_capitals": "auto",
+   "family:facts.country_continent": "auto",
+   "family:facts.country_currency": "auto",
+   "family:facts.element_symbol": "auto",
+   "family:facts.element_number": "auto"
+  },
+  "auto": {
+   "floor": 0.05,
+   "k": 2,
+   "formula": "chat margin vs baseline = max(0.05, 2 * baseline seed SD on the relation)"
+  },
+  "alpha": 0.05,
+  "retention_view": "each v2 seed's own few-shot answers vs the base's few-shot answers on the bundle's test facts items (exact McNemar per seed, Holm over relations); a relation fails retention only if every seed is significantly worse",
+  "chat_view": "chat facts non-inferior to the baseline seed mean by the auto margin"
+ },
+ "gates": {
+  "protocol_valid_min": 0.95,
+  "full_split_bpb_max": 0.943872,
+  "uncertainty_strict_min": 0.5,
+  "false_abstention_max": 0.25
+ },
+ "reported_not_gated": [
+  "heldout_instruction_following (v1.2 heldout.if and heldout.ops)",
+  "category:multi_turn",
+  "category:formatting",
+  "category:grounded_qa",
+  "open-ended writing: blinded independent rubric review of seed-1 vs baseline seed-1 on the 21 test OASST1 prompts (unscored by the automatic scorer)"
+ ],
+ "decision": {
+  "outcomes": [
+   "QUALIFIED_FOR_REVIEW",
+   "FAILED",
+   "INSUFFICIENT_EVIDENCE",
+   "BLOCKED"
+  ],
+  "tool": "tools/sft_v2_decide.py",
+  "note": "a qualified research candidate is not a production release; the engineer does not promote it"
+ },
+ "rollback": "juniper1-base-v1 remains canonical; every v2 run is a new lineage; all runs and rejected checkpoints preserved",
+ "budget": {
+  "runpod_usd_cap": 4.9,
+  "estimate_usd": 1.1,
+  "resources": "3 x RTX 4090 community ($0.34/h each at amendment), container disk only, no network volume",
+  "timeouts": "on-pod watchdog stops the pod after 150 min independent of the worker; the controller (this session) stops each pod after its outputs are pulled and verified",
+  "reserve": "stop and pull before the cap; never top up"
+ },
+ "dataset_note": "j1-sft-v1.3 rebuilt after the independent admission review rejected manifest bf769ecd (never trained on)",
+ "registered_note": "frozen before any v2 training run and before the v1.3-bundle baseline results; every baseline-dependent threshold is a formula below",
+ "reported_groups": [
+  "if_heldout_families",
+  "family_prefix:heldout.ops.v12",
+  "family_prefix:heldout.ops.new",
+  "family_prefix:heldout.if",
+  "category:multi_turn",
+  "category:formatting",
+  "category:grounded_qa",
+  "category:factuality"
+ ],
+ "sensitivity": {
+  "file": "docs/posttrain/sft_v2_sensitivity_v1.json",
+  "tool": "tools/sft_v2_sensitivity.py",
+  "classes": "if_paraphrase: frame_only 195 / clean 87 / sibling_near 55 / same_op_near 63; if_composition_heldout: functional_trained 48 / unseen_function 252 (rebuild review N1/N2); reported, not gated"
+ },
+ "also_reported": [
+  "chat abstention rate on answerable facts per seed (rebuild review condition)",
+  "open-ended writing: blinded independent rubric review of seed-1 vs baseline seed-1 outputs on the 21 test OASST1 prompts"
+ ],
+ "environment": {
+  "training_and_generation": "RunPod RTX 4090 (community, 1 GPU per pod; secure single-GPU only as fallback within the cap), one pod per seed, image runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404 (torch 2.8.0+cu128, as on FLOWBOX), fp32, TF32 off, deterministic algorithms, CUBLAS_WORKSPACE_CONFIG=:4096:8",
+  "baseline": "replication candidates trained and evaluated on FLOWBOX RTX 2060",
+  "scoring": "FLOWBOX CPU, Data scorer at data_code_revision (sandboxed)",
+  "hardware_control": "the seed-1 v2 candidate's test chat generations are repeated on the FLOWBOX RTX 2060; agreement with the pod's generations is reported (GPU type alone vs method)",
+  "difference_recorded": "training hardware differs from the baseline's; fp32 deterministic numerics differ across GPU types at rounding level only"
+ },
+ "budget_note": "assignment-wide RunPod authority $5; this stage may use at most $3.00",
+ "amendments": [
+  {
+   "et": "2026-10-13 3:47 PM EDT",
+   "before_any_v2_run": true,
+   "change": "hardware RTX 3090 -> RTX 4090 (3090 stock went to none); nothing else changes",
+   "by": "engineer, owner informed in chat"
+  },
+  {
+   "et": "2026-10-14 12:38 AM EDT",
+   "before_any_v2_decision": true,
+   "results_seen": "seed 3 scores only (no selection; acceptance rules unchanged)",
+   "change": "stage RunPod cap $3.00 -> $4.00 (within the $5 assignment cap) to re-run seeds 1 and 2 on a new RTX 4090: their pod's host GPU was taken after its watchdog stop, so its persistent outputs cannot be read through the API",
+   "by": "engineer; owner asked for the fastest path in chat"
+  },
+  {
+   "et": "2026-10-14 1:58 AM EDT",
+   "before_any_v2_decision": true,
+   "results_seen": "seed 3 scores only (no selection; acceptance rules unchanged)",
+   "change": "stage RunPod cap $4.00 -> $4.90 (inside the $5 assignment cap): provider billing read $2.82 for the assignment through 1:00 AM EDT, seeds 1 and 2 run in parallel on pod lvmojshkyirv5z ($0.89/h) whose on-pod watchdog stops it at 3:14 AM EDT at the latest (worst case about $4.85 in total)",
+   "by": "engineer"
+  }
+ ]
+}

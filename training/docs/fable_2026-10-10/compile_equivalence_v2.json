@@ -1,0 +1,167 @@
+{
+ "schema": "j1.compile-equivalence.v2",
+ "protocol": {
+  "path": "/root/j1train-launch/docs/fable_2026-10-10/compile_equivalence_protocol_v2.json",
+  "sha256": "34bba33de279a419b4de8675eaa6333f86d93baea556d4d481040bc18434dc75"
+ },
+ "identity": {
+  "preset": "j1-wide-20x768",
+  "shards_json_sha256": "1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef",
+  "tokenizer_json_sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+  "build": "j1-base-v0.2.2",
+  "limit_tokens": 3410100225,
+  "seed": 1,
+  "steps": 52034,
+  "stop_at": 1000,
+  "eval_documents": 2576,
+  "eval_scored_bytes": 12311466,
+  "code_package_sha256": {
+   "eager": "dbd0009e480e8e52fabfb7fcf1d2596736a8245fdb363e31bba1653b22106053",
+   "compiled": "dbd0009e480e8e52fabfb7fcf1d2596736a8245fdb363e31bba1653b22106053"
+  },
+  "n_params": 142771456,
+  "compile_mode": "default",
+  "run_ids": {
+   "eager": "ce2-eager",
+   "compiled": "ce2-compiled"
+  }
+ },
+ "inputs_sha256": {
+  "eager_summary": "b717eb483fb629b8c82e18581e5cafd25baeeeadc310bcb724f6f368bd998b44",
+  "compiled_summary": "00325b92be2ed074b712a1fc0651f8d6ac91b3413f9e8f92204905ae21a9de7a",
+  "eager_metrics": "6b7bfc552ac98af96f465f43bbecde5f36570d4da9c98126c06cb9869ee9be3b",
+  "compiled_metrics": "02631ca8ba875247487c2fa234b8dfc2eea648f12a87aecbdd801ee35d7174ac"
+ },
+ "status": "FAIL",
+ "criteria": {
+  "mean_rel_loss_within": true,
+  "final_bpb_within": false,
+  "stability_max_rel_within": false,
+  "critical_domains_within": false,
+  "milestones_finite": true
+ },
+ "mean_rel_loss_diff": 0.004169748700887372,
+ "max_rel_loss_diff": 0.026033457717312983,
+ "range": [
+  501,
+  1000
+ ],
+ "final_bpb": {
+  "eager": 1.366264927878312,
+  "compiled": 1.3606525275280417,
+  "rel_diff": 0.004107841924176447
+ },
+ "milestones": {
+  "250": {
+   "eager": 2.0784309755987085,
+   "compiled": 2.0873308168387723,
+   "rel_diff": 0.004281999905000527
+  },
+  "500": {
+   "eager": 1.6443590865456705,
+   "compiled": 1.6499465320207103,
+   "rel_diff": 0.0033979472736562566
+  },
+  "750": {
+   "eager": 1.46081474879122,
+   "compiled": 1.4548878426064635,
+   "rel_diff": 0.004057260641474751
+  },
+  "1000": {
+   "eager": 1.366264927878312,
+   "compiled": 1.3606525275280417,
+   "rel_diff": 0.004107841924176447
+  }
+ },
+ "domains": {
+  "arxiv-papers": {
+   "bytes": 710269,
+   "critical": true,
+   "eager": 1.3686438806233006,
+   "compiled": 1.365350615540538,
+   "rel_diff": 0.0024062249715848787
+  },
+  "finemath-4plus": {
+   "bytes": 1444837,
+   "critical": true,
+   "eager": 1.3538396609701517,
+   "compiled": 1.3447562505680533,
+   "rel_diff": 0.006709369406115177
+  },
+  "fineweb-edu-dedup": {
+   "bytes": 3960864,
+   "critical": true,
+   "eager": 1.3550764385908083,
+   "compiled": 1.3507124413451026,
+   "rel_diff": 0.003220480499420358
+  },
+  "libretexts": {
+   "bytes": 118548,
+   "critical": false,
+   "eager": 1.29935654303828,
+   "compiled": 1.2948765947321428,
+   "rel_diff": 0.003447820638715413
+  },
+  "oercommons": {
+   "bytes": 39444,
+   "critical": false,
+   "eager": 1.3388456051005202,
+   "compiled": 1.3304519445112601,
+   "rel_diff": 0.006269326767241291
+  },
+  "pressbooks": {
+   "bytes": 1057288,
+   "critical": true,
+   "eager": 1.38960551658653,
+   "compiled": 1.3846091817091033,
+   "rel_diff": 0.00359550593156814
+  },
+  "python-peps": {
+   "bytes": 8465,
+   "critical": false,
+   "eager": 1.4828282138475508,
+   "compiled": 1.4793836740293573,
+   "rel_diff": 0.0023229527102507736
+  },
+  "stackexchange": {
+   "bytes": 1480767,
+   "critical": true,
+   "eager": 1.5387016468820562,
+   "compiled": 1.5327212068103921,
+   "rel_diff": 0.0038866794506800867
+  },
+  "stackv2-edu": {
+   "bytes": 1730553,
+   "critical": true,
+   "eager": 1.1386627852557454,
+   "compiled": 1.1325025049301871,
+   "rel_diff": 0.005410100694715035
+  },
+  "wikimedia": {
+   "bytes": 1760431,
+   "critical": true,
+   "eager": 1.4699138589903575,
+   "compiled": 1.463859487265158,
+   "rel_diff": 0.004118861583738038
+  }
+ },
+ "tolerances": {
+  "loss_rel": 0.005,
+  "bpb_rel": 0.003
+ },
+ "stability": {
+  "max_rel_loss_diff": 0.02
+ },
+ "throughput": {
+  "eager": 65315.8336580119,
+  "compiled": 131071.00891862679
+ },
+ "first_step_s": {
+  "eager": 1.3839728413149714,
+  "compiled": 42.20407113991678
+ },
+ "startup": {
+  "eager": 11.98,
+  "compiled": 53.84
+ }
+}

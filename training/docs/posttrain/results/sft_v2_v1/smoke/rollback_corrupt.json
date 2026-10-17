@@ -1,0 +1,24 @@
+{
+ "b_resumed_from_update": 16,
+ "b_stopped_on_signal_at": 16,
+ "batch_fingerprints_match": true,
+ "bitwise": true,
+ "evidence": "manifests and logs only (weights not preserved); file digests not re-hashed",
+ "fingerprints_and_losses_match": true,
+ "interruption_evidence_complete": true,
+ "run_a_final": "ckpt-000000030-7f8b2123",
+ "run_b_final": "ckpt-000000030-641cbf83",
+ "state_sha256_a": {
+  "model": "1dd2a49f194eaad0ea1bcc2d049783c5fde32b75dd0bedb67d04c37816dc3007",
+  "optim": "96734a80ea583f5a8aab3e6b0226d75ae9d1ee691a83202ed1380140b6cda265"
+ },
+ "state_sha256_b": {
+  "model": "1dd2a49f194eaad0ea1bcc2d049783c5fde32b75dd0bedb67d04c37816dc3007",
+  "optim": "96734a80ea583f5a8aab3e6b0226d75ae9d1ee691a83202ed1380140b6cda265"
+ },
+ "updates": [
+  30,
+  30
+ ],
+ "updates_compared_after_resume": 14
+}

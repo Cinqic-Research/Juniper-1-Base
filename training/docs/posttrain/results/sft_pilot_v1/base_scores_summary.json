@@ -1,0 +1,1598 @@
+{
+ "bundle_sha256": "f96320150025d0250b5fbe7f5bc44b1f39b56ea836c8dfe842dbfc48c508eea1",
+ "generations_sha256": "6a294e52c82b0fc6b23c9f82b7d8b752950e0b0a434d5beeee62e6cb97c0fbd1",
+ "model": {
+  "checkpoint": "ckpt-000052034-336e5967",
+  "freeze_id": "juniper1-base-v1",
+  "kind": "frozen_base",
+  "manifest_sha256": "a2f616c714bbad26a2dade682e71e80493ca70d6a4531430c64fdaedf5932e74"
+ },
+ "note": "per-item outputs and scores: HDD juniper1-archive/sft-2026-10-12/eval/v1.2 and HF CinqicX/juniper1-checkpoints eval/sft-pilot-v1 (commit 2802c620)",
+ "report_sha256": "72f3a275b6bacc8cbf904d5aed87129fe1cbbcd3474c0a4e6f3c7eccf750fb1d",
+ "summary": {
+  "dev/chat/all": {
+   "abstained": 0.02788339670468948,
+   "lenient": 0.009505703422053232,
+   "n": 1578,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.0024284727522647827
+   ]
+  },
+  "dev/chat/category/factuality": {
+   "abstained": 0.023529411764705882,
+   "lenient": 0.0,
+   "n": 85,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.04323948446669139
+   ]
+  },
+  "dev/chat/category/hierarchy": {
+   "abstained": 0.0,
+   "lenient": 0.017857142857142856,
+   "n": 56,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.06419393766646092
+   ]
+  },
+  "dev/chat/category/injection": {
+   "abstained": 0.03,
+   "lenient": 0.0,
+   "n": 100,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.03699349876899627
+   ]
+  },
+  "dev/chat/category/instruction_following": {
+   "abstained": 0.020905923344947737,
+   "lenient": 0.0,
+   "n": 287,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.013208085587494776
+   ]
+  },
+  "dev/chat/category/json": {
+   "abstained": 0.12,
+   "lenient": 0.0,
+   "n": 150,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    1.734723475976807e-18,
+    0.024970244752164417
+   ]
+  },
+  "dev/chat/category/math": {
+   "abstained": 0.023450586264656615,
+   "lenient": 0.023450586264656615,
+   "n": 597,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.006393465072214549
+   ]
+  },
+  "dev/chat/category/python": {
+   "abstained": 0.0045871559633027525,
+   "lenient": 0.0,
+   "n": 218,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.01731623520990054
+   ]
+  },
+  "dev/chat/category/uncertainty": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 85,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.04323948446669139
+   ]
+  },
+  "dev/chat/family/arith.basic": {
+   "abstained": 0.01652892561983471,
+   "lenient": 0.05785123966942149,
+   "n": 121,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.030770698417971906
+   ]
+  },
+  "dev/chat/family/arith.multi": {
+   "abstained": 0.0,
+   "lenient": 0.020618556701030927,
+   "n": 97,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.038094043104016526
+   ]
+  },
+  "dev/chat/family/arith.word": {
+   "abstained": 0.02,
+   "lenient": 0.01,
+   "n": 100,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.03699349876899627
+   ]
+  },
+  "dev/chat/family/facts.country_capital": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 19,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.16817922625956366
+   ]
+  },
+  "dev/chat/family/facts.country_continent": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 20,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.16112516018512965
+   ]
+  },
+  "dev/chat/family/facts.country_currency": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 17,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.18431813738065556
+   ]
+  },
+  "dev/chat/family/facts.element_number": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 12,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.2424940095530979
+   ]
+  },
+  "dev/chat/family/facts.element_symbol": {
+   "abstained": 0.16666666666666666,
+   "lenient": 0.0,
+   "n": 12,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.2424940095530979
+   ]
+  },
+  "dev/chat/family/facts.us_state_capital": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 5,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.43448246865939283
+   ]
+  },
+  "dev/chat/family/gsm8k": {
+   "abstained": 0.035842293906810034,
+   "lenient": 0.014336917562724014,
+   "n": 279,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.013581668318675296
+   ]
+  },
+  "dev/chat/family/hierarchy.system": {
+   "abstained": 0.0,
+   "lenient": 0.017857142857142856,
+   "n": 56,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.06419393766646092
+   ]
+  },
+  "dev/chat/family/if.bullet_list": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 12,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.2424940095530979
+   ]
+  },
+  "dev/chat/family/if.capitalize_words": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 10,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.2775328030260577
+   ]
+  },
+  "dev/chat/family/if.count_letter": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 6,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.39033429165637346
+   ]
+  },
+  "dev/chat/family/if.count_words": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 13,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.22809537513180025
+   ]
+  },
+  "dev/chat/family/if.extract_numbers": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 14,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.21531080540298042
+   ]
+  },
+  "dev/chat/family/if.first_word": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 7,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.35433043867586833
+   ]
+  },
+  "dev/chat/family/if.join_and": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 6,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.39033429165637346
+   ]
+  },
+  "dev/chat/family/if.last_word": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 9,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.299145051727044
+   ]
+  },
+  "dev/chat/family/if.lower": {
+   "abstained": 0.0625,
+   "lenient": 0.0,
+   "n": 16,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.1936076829974049
+   ]
+  },
+  "dev/chat/family/if.numbered_list": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 10,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.2775328030260577
+   ]
+  },
+  "dev/chat/family/if.remove_word": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 11,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.25883296999442634
+   ]
+  },
+  "dev/chat/family/if.repeat_word": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 12,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.2424940095530979
+   ]
+  },
+  "dev/chat/family/if.replace_word": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 19,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.16817922625956366
+   ]
+  },
+  "dev/chat/family/if.reverse_words": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 11,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.25883296999442634
+   ]
+  },
+  "dev/chat/family/if.sort_words": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 10,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.2775328030260577
+   ]
+  },
+  "dev/chat/family/if.spell": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 12,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.2424940095530979
+   ]
+  },
+  "dev/chat/family/if.upper": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 9,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.299145051727044
+   ]
+  },
+  "dev/chat/family/if.user_format": {
+   "abstained": 0.056179775280898875,
+   "lenient": 0.0,
+   "n": 89,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.04137654586198997
+   ]
+  },
+  "dev/chat/family/if.word_length": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 11,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.25883296999442634
+   ]
+  },
+  "dev/chat/family/injection.document": {
+   "abstained": 0.03,
+   "lenient": 0.0,
+   "n": 100,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.03699349876899627
+   ]
+  },
+  "dev/chat/family/json.array": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 40,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.08762160245846368
+   ]
+  },
+  "dev/chat/family/json.create": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 32,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.10717919976468034
+   ]
+  },
+  "dev/chat/family/json.extract": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 20,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.16112516018512965
+   ]
+  },
+  "dev/chat/family/json.kv": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 23,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.14311662038507353
+   ]
+  },
+  "dev/chat/family/json.read": {
+   "abstained": 0.5142857142857142,
+   "lenient": 0.0,
+   "n": 35,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.0989009937303319
+   ]
+  },
+  "dev/chat/family/python.mbpp": {
+   "abstained": 0.011764705882352941,
+   "lenient": 0.0,
+   "n": 85,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.04323948446669139
+   ]
+  },
+  "dev/chat/family/python.mbpp_fix": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 57,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.0631388357861509
+   ]
+  },
+  "dev/chat/family/python.output": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 76,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.04811358578764542
+   ]
+  },
+  "dev/chat/family/uncertainty.abstain": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 85,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.04323948446669139
+   ]
+  },
+  "test/base_fewshot/all": {
+   "abstained": 0.0,
+   "lenient": 0.18662613981762918,
+   "n": 1645,
+   "protocol_valid": 1.0,
+   "strict": 0.18662613981762918,
+   "strict_ci95": [
+    0.1685363480742887,
+    0.2061761238576631
+   ]
+  },
+  "test/base_fewshot/category/factuality": {
+   "abstained": 0.0,
+   "lenient": 0.23295454545454544,
+   "n": 176,
+   "protocol_valid": 1.0,
+   "strict": 0.23295454545454544,
+   "strict_ci95": [
+    0.17661572742556722,
+    0.30070167989125995
+   ]
+  },
+  "test/base_fewshot/category/instruction_following": {
+   "abstained": 0.0,
+   "lenient": 0.114,
+   "n": 500,
+   "protocol_valid": 1.0,
+   "strict": 0.114,
+   "strict_ci95": [
+    0.08903690081920589,
+    0.14484909010926042
+   ]
+  },
+  "test/base_fewshot/category/json": {
+   "abstained": 0.0,
+   "lenient": 0.54,
+   "n": 300,
+   "protocol_valid": 1.0,
+   "strict": 0.54,
+   "strict_ci95": [
+    0.4834517093547498,
+    0.5955368529315322
+   ]
+  },
+  "test/base_fewshot/category/math": {
+   "abstained": 0.0,
+   "lenient": 0.07025411061285501,
+   "n": 669,
+   "protocol_valid": 1.0,
+   "strict": 0.07025411061285501,
+   "strict_ci95": [
+    0.05324119971567848,
+    0.09217412448858905
+   ]
+  },
+  "test/base_fewshot/family/arith.basic": {
+   "abstained": 0.0,
+   "lenient": 0.20710059171597633,
+   "n": 169,
+   "protocol_valid": 1.0,
+   "strict": 0.20710059171597633,
+   "strict_ci95": [
+    0.1528485668005896,
+    0.274372190066597
+   ]
+  },
+  "test/base_fewshot/family/ext.gsm8k": {
+   "abstained": 0.0,
+   "lenient": 0.024,
+   "n": 500,
+   "protocol_valid": 1.0,
+   "strict": 0.024,
+   "strict_ci95": [
+    0.013781314596471032,
+    0.0414770576365599
+   ]
+  },
+  "test/base_fewshot/family/facts.country_capital": {
+   "abstained": 0.0,
+   "lenient": 0.25,
+   "n": 40,
+   "protocol_valid": 1.0,
+   "strict": 0.25,
+   "strict_ci95": [
+    0.1418711857438798,
+    0.40193961548535195
+   ]
+  },
+  "test/base_fewshot/family/facts.country_continent": {
+   "abstained": 0.0,
+   "lenient": 0.5,
+   "n": 42,
+   "protocol_valid": 1.0,
+   "strict": 0.5,
+   "strict_ci95": [
+    0.3552598949177257,
+    0.6447401050822743
+   ]
+  },
+  "test/base_fewshot/family/facts.country_currency": {
+   "abstained": 0.0,
+   "lenient": 0.05714285714285714,
+   "n": 35,
+   "protocol_valid": 1.0,
+   "strict": 0.05714285714285714,
+   "strict_ci95": [
+    0.01581316171448853,
+    0.18607057558951973
+   ]
+  },
+  "test/base_fewshot/family/facts.element_number": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 24,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.13797620655132792
+   ]
+  },
+  "test/base_fewshot/family/facts.element_symbol": {
+   "abstained": 0.0,
+   "lenient": 0.2916666666666667,
+   "n": 24,
+   "protocol_valid": 1.0,
+   "strict": 0.2916666666666667,
+   "strict_ci95": [
+    0.14914648116318613,
+    0.4916769382332005
+   ]
+  },
+  "test/base_fewshot/family/facts.us_state_capital": {
+   "abstained": 0.0,
+   "lenient": 0.09090909090909091,
+   "n": 11,
+   "protocol_valid": 1.0,
+   "strict": 0.09090909090909091,
+   "strict_ci95": [
+    0.016232172705325593,
+    0.3773584391082959
+   ]
+  },
+  "test/base_fewshot/family/if.bullet_list": {
+   "abstained": 0.0,
+   "lenient": 0.46153846153846156,
+   "n": 13,
+   "protocol_valid": 1.0,
+   "strict": 0.46153846153846156,
+   "strict_ci95": [
+    0.23206067674961361,
+    0.7085620444143711
+   ]
+  },
+  "test/base_fewshot/family/if.capitalize_words": {
+   "abstained": 0.0,
+   "lenient": 0.10526315789473684,
+   "n": 19,
+   "protocol_valid": 1.0,
+   "strict": 0.10526315789473684,
+   "strict_ci95": [
+    0.029358560033196812,
+    0.31394082911909027
+   ]
+  },
+  "test/base_fewshot/family/if.count_letter": {
+   "abstained": 0.0,
+   "lenient": 0.5555555555555556,
+   "n": 18,
+   "protocol_valid": 1.0,
+   "strict": 0.5555555555555556,
+   "strict_ci95": [
+    0.3371641549342691,
+    0.7544048199620327
+   ]
+  },
+  "test/base_fewshot/family/if.count_words": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 15,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.20388330359648707
+   ]
+  },
+  "test/base_fewshot/family/if.extract_numbers": {
+   "abstained": 0.0,
+   "lenient": 0.6521739130434783,
+   "n": 23,
+   "protocol_valid": 1.0,
+   "strict": 0.6521739130434783,
+   "strict_ci95": [
+    0.4489033522338618,
+    0.8118872415619854
+   ]
+  },
+  "test/base_fewshot/family/if.first_word": {
+   "abstained": 0.0,
+   "lenient": 0.5,
+   "n": 8,
+   "protocol_valid": 1.0,
+   "strict": 0.5,
+   "strict_ci95": [
+    0.21521606069626764,
+    0.7847839393037324
+   ]
+  },
+  "test/base_fewshot/family/if.join_and": {
+   "abstained": 0.0,
+   "lenient": 0.2,
+   "n": 15,
+   "protocol_valid": 1.0,
+   "strict": 0.2,
+   "strict_ci95": [
+    0.0704754929173392,
+    0.45185448924055305
+   ]
+  },
+  "test/base_fewshot/family/if.last_word": {
+   "abstained": 0.0,
+   "lenient": 0.5,
+   "n": 2,
+   "protocol_valid": 1.0,
+   "strict": 0.5,
+   "strict_ci95": [
+    0.09453120463920084,
+    0.9054687953607992
+   ]
+  },
+  "test/base_fewshot/family/if.lower": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 9,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.299145051727044
+   ]
+  },
+  "test/base_fewshot/family/if.numbered_list": {
+   "abstained": 0.0,
+   "lenient": 0.058823529411764705,
+   "n": 17,
+   "protocol_valid": 1.0,
+   "strict": 0.058823529411764705,
+   "strict_ci95": [
+    0.010460400868949865,
+    0.26982030858456973
+   ]
+  },
+  "test/base_fewshot/family/if.remove_word": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 21,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.15463902098714374
+   ]
+  },
+  "test/base_fewshot/family/if.repeat_word": {
+   "abstained": 0.0,
+   "lenient": 0.21428571428571427,
+   "n": 14,
+   "protocol_valid": 1.0,
+   "strict": 0.21428571428571427,
+   "strict_ci95": [
+    0.07571386653293533,
+    0.4758923079830535
+   ]
+  },
+  "test/base_fewshot/family/if.replace_word": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 24,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.13797620655132792
+   ]
+  },
+  "test/base_fewshot/family/if.reverse_words": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 22,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.14865487660514556
+   ]
+  },
+  "test/base_fewshot/family/if.sort_words": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 20,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.16112516018512965
+   ]
+  },
+  "test/base_fewshot/family/if.spell": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 20,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.16112516018512965
+   ]
+  },
+  "test/base_fewshot/family/if.upper": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 24,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.13797620655132792
+   ]
+  },
+  "test/base_fewshot/family/if.user_format": {
+   "abstained": 0.0,
+   "lenient": 0.055,
+   "n": 200,
+   "protocol_valid": 1.0,
+   "strict": 0.055,
+   "strict_ci95": [
+    0.03098534156570805,
+    0.09578699916966894
+   ]
+  },
+  "test/base_fewshot/family/if.word_length": {
+   "abstained": 0.0,
+   "lenient": 0.0625,
+   "n": 16,
+   "protocol_valid": 1.0,
+   "strict": 0.0625,
+   "strict_ci95": [
+    0.011119344641247308,
+    0.283287377981482
+   ]
+  },
+  "test/base_fewshot/family/json.array": {
+   "abstained": 0.0,
+   "lenient": 0.25862068965517243,
+   "n": 58,
+   "protocol_valid": 1.0,
+   "strict": 0.25862068965517243,
+   "strict_ci95": [
+    0.1634554514347729,
+    0.38377385869929603
+   ]
+  },
+  "test/base_fewshot/family/json.create": {
+   "abstained": 0.0,
+   "lenient": 0.9836065573770492,
+   "n": 61,
+   "protocol_valid": 1.0,
+   "strict": 0.9836065573770492,
+   "strict_ci95": [
+    0.9128113986711063,
+    0.9971002692327599
+   ]
+  },
+  "test/base_fewshot/family/json.extract": {
+   "abstained": 0.0,
+   "lenient": 0.296875,
+   "n": 64,
+   "protocol_valid": 1.0,
+   "strict": 0.296875,
+   "strict_ci95": [
+    0.19905151260405385,
+    0.41770201202912227
+   ]
+  },
+  "test/base_fewshot/family/json.kv": {
+   "abstained": 0.0,
+   "lenient": 0.4067796610169492,
+   "n": 59,
+   "protocol_valid": 1.0,
+   "strict": 0.4067796610169492,
+   "strict_ci95": [
+    0.2908903350539105,
+    0.5340659884334485
+   ]
+  },
+  "test/base_fewshot/family/json.read": {
+   "abstained": 0.0,
+   "lenient": 0.7586206896551724,
+   "n": 58,
+   "protocol_valid": 1.0,
+   "strict": 0.7586206896551724,
+   "strict_ci95": [
+    0.634700196416566,
+    0.8504112570112171
+   ]
+  },
+  "test/chat/all": {
+   "abstained": 0.03472714386959603,
+   "lenient": 0.004724781478856603,
+   "n": 4233,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.000906679874283119
+   ]
+  },
+  "test/chat/category/factuality": {
+   "abstained": 0.0,
+   "lenient": 0.011363636363636364,
+   "n": 176,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.02136025199746376
+   ]
+  },
+  "test/chat/category/hierarchy": {
+   "abstained": 0.0,
+   "lenient": 0.004524886877828055,
+   "n": 221,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.017085189272517932
+   ]
+  },
+  "test/chat/category/injection": {
+   "abstained": 0.05333333333333334,
+   "lenient": 0.0,
+   "n": 300,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    8.673617379884035e-19,
+    0.012642971421476655
+   ]
+  },
+  "test/chat/category/instruction_following": {
+   "abstained": 0.012953367875647668,
+   "lenient": 0.0012953367875647669,
+   "n": 772,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.004951345197297254
+   ]
+  },
+  "test/chat/category/json": {
+   "abstained": 0.164,
+   "lenient": 0.0,
+   "n": 500,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    4.336808689942018e-19,
+    0.007624340580914839
+   ]
+  },
+  "test/chat/category/math": {
+   "abstained": 0.01,
+   "lenient": 0.013636363636363636,
+   "n": 1100,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.0034800820809803446
+   ]
+  },
+  "test/chat/category/python": {
+   "abstained": 0.03125,
+   "lenient": 0.0,
+   "n": 864,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.0044264523686709896
+   ]
+  },
+  "test/chat/category/uncertainty": {
+   "abstained": 0.0033333333333333335,
+   "lenient": 0.0033333333333333335,
+   "n": 300,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    8.673617379884035e-19,
+    0.012642971421476655
+   ]
+  },
+  "test/chat/family/arith.basic": {
+   "abstained": 0.005,
+   "lenient": 0.04,
+   "n": 200,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.018845326668962936
+   ]
+  },
+  "test/chat/family/arith.multi": {
+   "abstained": 0.005,
+   "lenient": 0.005,
+   "n": 200,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.018845326668962936
+   ]
+  },
+  "test/chat/family/arith.word": {
+   "abstained": 0.01,
+   "lenient": 0.005,
+   "n": 200,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.018845326668962936
+   ]
+  },
+  "test/chat/family/ext.gsm8k": {
+   "abstained": 0.014,
+   "lenient": 0.01,
+   "n": 500,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    4.336808689942018e-19,
+    0.007624340580914839
+   ]
+  },
+  "test/chat/family/ext.humaneval": {
+   "abstained": 0.012195121951219513,
+   "lenient": 0.0,
+   "n": 164,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.022887425472229894
+   ]
+  },
+  "test/chat/family/ext.mbpp": {
+   "abstained": 0.05,
+   "lenient": 0.0,
+   "n": 500,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    4.336808689942018e-19,
+    0.007624340580914839
+   ]
+  },
+  "test/chat/family/facts.country_capital": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 40,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.08762160245846368
+   ]
+  },
+  "test/chat/family/facts.country_continent": {
+   "abstained": 0.0,
+   "lenient": 0.047619047619047616,
+   "n": 42,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.08379879207691124
+   ]
+  },
+  "test/chat/family/facts.country_currency": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 35,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.0989009937303319
+   ]
+  },
+  "test/chat/family/facts.element_number": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 24,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.13797620655132792
+   ]
+  },
+  "test/chat/family/facts.element_symbol": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 24,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.13797620655132792
+   ]
+  },
+  "test/chat/family/facts.us_state_capital": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 11,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.25883296999442634
+   ]
+  },
+  "test/chat/family/heldout.if.count_vowels": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 22,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.14865487660514556
+   ]
+  },
+  "test/chat/family/heldout.if.every_other": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 46,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.07707356420776004
+   ]
+  },
+  "test/chat/family/heldout.if.last_letters": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 54,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.06641358906903712
+   ]
+  },
+  "test/chat/family/heldout.if.reverse_sort": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 45,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.07865159987608598
+   ]
+  },
+  "test/chat/family/heldout.if.swap_first_last": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 64,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.05662406063551054
+   ]
+  },
+  "test/chat/family/heldout.if.word_after": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 41,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.08566757142012449
+   ]
+  },
+  "test/chat/family/heldout.json.0": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 61,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.0592438687773587
+   ]
+  },
+  "test/chat/family/heldout.json.1": {
+   "abstained": 0.6923076923076923,
+   "lenient": 0.0,
+   "n": 78,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.04693781041791674
+   ]
+  },
+  "test/chat/family/heldout.json.2": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 61,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.0592438687773587
+   ]
+  },
+  "test/chat/family/hierarchy.system": {
+   "abstained": 0.0,
+   "lenient": 0.004524886877828055,
+   "n": 221,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.017085189272517932
+   ]
+  },
+  "test/chat/family/if.bullet_list": {
+   "abstained": 0.07692307692307693,
+   "lenient": 0.0,
+   "n": 13,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.22809537513180025
+   ]
+  },
+  "test/chat/family/if.capitalize_words": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 19,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.16817922625956366
+   ]
+  },
+  "test/chat/family/if.count_letter": {
+   "abstained": 0.0,
+   "lenient": 0.05555555555555555,
+   "n": 18,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.17587922593328437
+   ]
+  },
+  "test/chat/family/if.count_words": {
+   "abstained": 0.06666666666666667,
+   "lenient": 0.0,
+   "n": 15,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.20388330359648707
+   ]
+  },
+  "test/chat/family/if.extract_numbers": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 23,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.14311662038507353
+   ]
+  },
+  "test/chat/family/if.first_word": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 8,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.3244075683414076
+   ]
+  },
+  "test/chat/family/if.join_and": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 15,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.20388330359648707
+   ]
+  },
+  "test/chat/family/if.last_word": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 2,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.6576197760453506
+   ]
+  },
+  "test/chat/family/if.lower": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 9,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.299145051727044
+   ]
+  },
+  "test/chat/family/if.numbered_list": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 17,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.18431813738065556
+   ]
+  },
+  "test/chat/family/if.remove_word": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 21,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.15463902098714374
+   ]
+  },
+  "test/chat/family/if.repeat_word": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 14,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.21531080540298042
+   ]
+  },
+  "test/chat/family/if.replace_word": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 24,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.13797620655132792
+   ]
+  },
+  "test/chat/family/if.reverse_words": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 22,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.14865487660514556
+   ]
+  },
+  "test/chat/family/if.sort_words": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 20,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.16112516018512965
+   ]
+  },
+  "test/chat/family/if.spell": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 20,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.16112516018512965
+   ]
+  },
+  "test/chat/family/if.upper": {
+   "abstained": 0.041666666666666664,
+   "lenient": 0.0,
+   "n": 24,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.13797620655132792
+   ]
+  },
+  "test/chat/family/if.user_format": {
+   "abstained": 0.03,
+   "lenient": 0.0,
+   "n": 200,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.018845326668962936
+   ]
+  },
+  "test/chat/family/if.word_length": {
+   "abstained": 0.0625,
+   "lenient": 0.0,
+   "n": 16,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.1936076829974049
+   ]
+  },
+  "test/chat/family/injection.document": {
+   "abstained": 0.05333333333333334,
+   "lenient": 0.0,
+   "n": 300,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    8.673617379884035e-19,
+    0.012642971421476655
+   ]
+  },
+  "test/chat/family/json.array": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 58,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.06211785670628563
+   ]
+  },
+  "test/chat/family/json.create": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 61,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.0592438687773587
+   ]
+  },
+  "test/chat/family/json.extract": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 64,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.05662406063551054
+   ]
+  },
+  "test/chat/family/json.kv": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 59,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.06112937143219893
+   ]
+  },
+  "test/chat/family/json.read": {
+   "abstained": 0.4827586206896552,
+   "lenient": 0.0,
+   "n": 58,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.06211785670628563
+   ]
+  },
+  "test/chat/family/python.output": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 200,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.018845326668962936
+   ]
+  },
+  "test/chat/family/uncertainty.abstain": {
+   "abstained": 0.0033333333333333335,
+   "lenient": 0.0033333333333333335,
+   "n": 300,
+   "protocol_valid": 0.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    8.673617379884035e-19,
+    0.012642971421476655
+   ]
+  }
+ }
+}

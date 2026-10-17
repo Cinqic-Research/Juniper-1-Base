@@ -1,0 +1,1 @@
+cand_gen 01c232e5c2d88af17c9fb1c7fbf977ac10cf48d1173ddb5257f1dc7a69ea6ac0 808.02 NVIDIA GeForce RTX 4090 2.8.0+cu128

@@ -1,0 +1,49 @@
+[ckpt] step 0 -> /root/ckpt/archlr-j1-core-28x640-x2/ckpt-000000000-0515c1d8 (545.9 MiB, 3.37s)
+step 1 loss 10.2266 lr 3.72e-05 67509ms
+step 10 loss 8.7247 lr 0.000372 765ms
+step 20 loss 7.6659 lr 0.000744 765ms
+step 30 loss 7.4890 lr 0.00112 766ms
+step 40 loss 7.7980 lr 0.00149 766ms
+step 50 loss 7.5327 lr 0.00186 767ms
+step 60 loss 7.3003 lr 0.00223 768ms
+step 70 loss 7.1770 lr 0.0026 768ms
+step 80 loss 7.1135 lr 0.00297 768ms
+step 90 loss 6.7904 lr 0.00335 768ms
+step 100 loss 6.9586 lr 0.00372 768ms
+[ckpt] step 104 -> /root/ckpt/archlr-j1-core-28x640-x2/ckpt-000000104-9c306005 (1637.7 MiB, 7.90s)
+step 110 loss 6.7029 lr 0.00371 766ms
+step 120 loss 6.7746 lr 0.00369 768ms
+step 130 loss 6.3558 lr 0.00365 768ms
+step 140 loss 6.3444 lr 0.0036 769ms
+step 150 loss 6.2536 lr 0.00353 770ms
+step 160 loss 6.2457 lr 0.00344 770ms
+step 170 loss 6.2501 lr 0.00334 770ms
+step 180 loss 6.1595 lr 0.00323 770ms
+step 190 loss 6.1428 lr 0.00311 770ms
+step 200 loss 5.8783 lr 0.00298 770ms
+[ckpt] step 208 -> /root/ckpt/archlr-j1-core-28x640-x2/ckpt-000000208-f0449840 (1637.7 MiB, 7.20s)
+step 210 loss 5.9119 lr 0.00284 767ms
+step 220 loss 5.8000 lr 0.00269 767ms
+step 230 loss 5.7694 lr 0.00253 768ms
+step 240 loss 5.7105 lr 0.00237 769ms
+step 250 loss 5.6786 lr 0.00221 769ms
+step 260 loss 5.8002 lr 0.00204 769ms
+step 270 loss 5.5574 lr 0.00188 769ms
+step 280 loss 5.6052 lr 0.00172 769ms
+step 290 loss 5.5223 lr 0.00156 769ms
+step 300 loss 5.5059 lr 0.0014 769ms
+step 310 loss 5.5494 lr 0.00125 769ms
+[ckpt] step 312 -> /root/ckpt/archlr-j1-core-28x640-x2/ckpt-000000312-b5316669 (1637.7 MiB, 6.72s)
+step 320 loss 5.3976 lr 0.00111 767ms
+step 330 loss 5.5506 lr 0.000978 767ms
+step 340 loss 5.2012 lr 0.000856 770ms
+step 350 loss 5.3160 lr 0.000746 770ms
+step 360 loss 5.2939 lr 0.000648 769ms
+step 370 loss 5.3580 lr 0.000564 770ms
+step 380 loss 5.0916 lr 0.000494 769ms
+step 390 loss 5.3350 lr 0.00044 769ms
+step 400 loss 5.2837 lr 0.000401 769ms
+step 410 loss 5.2458 lr 0.000378 770ms
+[ckpt] step 416 -> /root/ckpt/archlr-j1-core-28x640-x2/ckpt-000000416-0efb0674 (1637.7 MiB, 6.80s)
+[ckpt] step 418 -> /root/ckpt/archlr-j1-core-28x640-x2/ckpt-000000418-e6f777a3 (1637.7 MiB, 6.96s)
+{"steps_run": 418, "final_step": 418, "tokens_per_s_median": 85252.62585621681, "step_ms_median": 768.72705493588, "peak_vram_gib": 15.51137113571167, "final_param_sha256": "8303757a14ba8fba09a20c11550243d940ab5afa651e2b1abc5b5e0dcf881d38"}

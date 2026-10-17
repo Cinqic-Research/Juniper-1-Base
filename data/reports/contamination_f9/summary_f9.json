@@ -1,0 +1,379 @@
+{
+ "schema": "j1.contamination-f9-summary.v1",
+ "prereg_commit": "4c24740b32bffade3bf6a661fb4dbf431af4a291",
+ "index_identity": "7378a0f9c45c72609d19d46b5e1a146ad4689382079c41d358cfee7d0bda3e8b",
+ "index_items": 89687,
+ "index_distinct_grams": 1539564,
+ "index_identifiers": 6979,
+ "fields": {
+  "humanevalplus-test": {
+   "benchmark": "humanevalplus",
+   "duplicates_dropped": 1564,
+   "fields": [
+    "test"
+   ],
+   "records": 164,
+   "repo": "evalplus/humanevalplus",
+   "revision": "d32357cf319e50e9c8d8dab5ea876c72b0fd321b",
+   "values": 164,
+   "whole_items": 164,
+   "window_items": 65891,
+   "files": [
+    {
+     "path": "data/test-00000-of-00001-5973903632b82d40.parquet",
+     "sha256": "4436f5c03d77c17e0cbc57543b90665b5c1266f55a43992a5ed7922cd34a7558"
+    }
+   ]
+  },
+  "mbpp-challenge-tests": {
+   "benchmark": "mbpp",
+   "duplicates_dropped": 0,
+   "fields": [
+    "challenge_test_list",
+    "test_setup_code"
+   ],
+   "records": 974,
+   "repo": "google-research-datasets/mbpp",
+   "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+   "values": 13,
+   "whole_items": 13,
+   "window_items": 7,
+   "files": [
+    {
+     "path": "full/prompt-00000-of-00001.parquet",
+     "sha256": "a053e4bb85ceb77430ae80592addb4ca4dc6ba087592f9e04537800ee88b7431"
+    },
+    {
+     "path": "full/test-00000-of-00001.parquet",
+     "sha256": "566fd53060ffba5766dace1d1e2f4c38906781526de222b0dfbdbc325b696c77"
+    },
+    {
+     "path": "full/train-00000-of-00001.parquet",
+     "sha256": "09d125ca31edacb7800be8c67c45abff618faf0214ff551291817d06bdb914ae"
+    },
+    {
+     "path": "full/validation-00000-of-00001.parquet",
+     "sha256": "3f0ec060987432d99fe8fb409d31e6c67445b208a01741c5583517c80a10fe80"
+    }
+   ]
+  },
+  "mbppplus-test": {
+   "benchmark": "mbppplus",
+   "duplicates_dropped": 3864,
+   "fields": [
+    "test"
+   ],
+   "records": 378,
+   "repo": "evalplus/mbppplus",
+   "revision": "b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+   "values": 378,
+   "whole_items": 378,
+   "window_items": 30532,
+   "files": [
+    {
+     "path": "data/test-00000-of-00001-d5781c9c51e02795.parquet",
+     "sha256": "dc20030b3788fccf617444edcb34138ef13d7e4fafd17bfcb8c1279dbb12399b"
+    }
+   ]
+  }
+ },
+ "index_coverage": {
+  "humanevalplus-test": {
+   "items": 66055,
+   "layer_a_items": 59592,
+   "layer_c_items": 2831,
+   "items_without_layer_a_gram": 6463,
+   "items_without_gram_or_identifier": 6174,
+   "value_tokens": 4311984,
+   "tokens_inside_an_indexable_gram": 3722619,
+   "token_coverage": 0.8633
+  },
+  "mbpp-challenge-tests": {
+   "items": 20,
+   "layer_a_items": 20,
+   "layer_c_items": 0,
+   "items_without_layer_a_gram": 0,
+   "items_without_gram_or_identifier": 0,
+   "value_tokens": 700,
+   "tokens_inside_an_indexable_gram": 689,
+   "token_coverage": 0.9843
+  },
+  "mbppplus-test": {
+   "items": 30910,
+   "layer_a_items": 29764,
+   "layer_c_items": 467,
+   "items_without_layer_a_gram": 1146,
+   "items_without_gram_or_identifier": 1124,
+   "value_tokens": 2189332,
+   "tokens_inside_an_indexable_gram": 1821658,
+   "token_coverage": 0.8321
+  }
+ },
+ "controls_uncalibrated": {
+  "positive": {
+   "humanevalplus-test": {
+    "verbatim": {
+     "planted": 200,
+     "detected": 176,
+     "rate": 0.88
+    },
+    "case_space": {
+     "planted": 200,
+     "detected": 176,
+     "rate": 0.88
+    },
+    "reindent": {
+     "planted": 200,
+     "detected": 176,
+     "rate": 0.88
+    },
+    "comma_spacing": {
+     "planted": 200,
+     "detected": 176,
+     "rate": 0.88
+    },
+    "truncated_80": {
+     "planted": 200,
+     "detected": 171,
+     "rate": 0.855
+    }
+   },
+   "mbpp-challenge-tests": {
+    "verbatim": {
+     "planted": 20,
+     "detected": 20,
+     "rate": 1.0
+    },
+    "case_space": {
+     "planted": 20,
+     "detected": 20,
+     "rate": 1.0
+    },
+    "reindent": {
+     "planted": 20,
+     "detected": 20,
+     "rate": 1.0
+    },
+    "comma_spacing": {
+     "planted": 20,
+     "detected": 20,
+     "rate": 1.0
+    },
+    "truncated_80": {
+     "planted": 20,
+     "detected": 17,
+     "rate": 0.85
+    }
+   },
+   "mbppplus-test": {
+    "verbatim": {
+     "planted": 200,
+     "detected": 194,
+     "rate": 0.97
+    },
+    "case_space": {
+     "planted": 200,
+     "detected": 194,
+     "rate": 0.97
+    },
+    "reindent": {
+     "planted": 200,
+     "detected": 194,
+     "rate": 0.97
+    },
+    "comma_spacing": {
+     "planted": 200,
+     "detected": 194,
+     "rate": 0.97
+    },
+    "truncated_80": {
+     "planted": 200,
+     "detected": 185,
+     "rate": 0.925
+    }
+   }
+  },
+  "negative": {
+   "documents": 3000,
+   "flagged": 17,
+   "flagged_rate": 0.005666666666666667
+  }
+ },
+ "controls_calibrated": {
+  "positive": {
+   "humanevalplus-test": {
+    "verbatim": {
+     "planted": 200,
+     "detected": 176,
+     "rate": 0.88
+    },
+    "case_space": {
+     "planted": 200,
+     "detected": 176,
+     "rate": 0.88
+    },
+    "reindent": {
+     "planted": 200,
+     "detected": 176,
+     "rate": 0.88
+    },
+    "comma_spacing": {
+     "planted": 200,
+     "detected": 176,
+     "rate": 0.88
+    },
+    "truncated_80": {
+     "planted": 200,
+     "detected": 171,
+     "rate": 0.855
+    }
+   },
+   "mbpp-challenge-tests": {
+    "verbatim": {
+     "planted": 20,
+     "detected": 20,
+     "rate": 1.0
+    },
+    "case_space": {
+     "planted": 20,
+     "detected": 20,
+     "rate": 1.0
+    },
+    "reindent": {
+     "planted": 20,
+     "detected": 20,
+     "rate": 1.0
+    },
+    "comma_spacing": {
+     "planted": 20,
+     "detected": 20,
+     "rate": 1.0
+    },
+    "truncated_80": {
+     "planted": 20,
+     "detected": 14,
+     "rate": 0.7
+    }
+   },
+   "mbppplus-test": {
+    "verbatim": {
+     "planted": 200,
+     "detected": 194,
+     "rate": 0.97
+    },
+    "case_space": {
+     "planted": 200,
+     "detected": 194,
+     "rate": 0.97
+    },
+    "reindent": {
+     "planted": 200,
+     "detected": 194,
+     "rate": 0.97
+    },
+    "comma_spacing": {
+     "planted": 200,
+     "detected": 194,
+     "rate": 0.97
+    },
+    "truncated_80": {
+     "planted": 200,
+     "detected": 183,
+     "rate": 0.915
+    }
+   }
+  },
+  "negative": {
+   "documents": 3000,
+   "flagged": 14,
+   "flagged_rate": 0.004666666666666667
+  }
+ },
+ "scan": {
+  "tool_sha256": "f74e4a98e0c1cc2ce03b19f1517d75d01b925b454ef77d5644273aa67dff6284",
+  "index_identity": "7378a0f9c45c72609d19d46b5e1a146ad4689382079c41d358cfee7d0bda3e8b",
+  "accepted_manifest_sha256": "8d00090632bf6ca07f4dd75d3deea89421de823366c8216c6a85c9f003237968",
+  "build_identity": "e7909e40df202f0fb407369802d4d1d0becc02f9f86a777ef50a840d700c765a",
+  "units": 1345,
+  "units_reused": 0,
+  "documents": 2966479,
+  "documents_by_split": {
+   "train": 2961286,
+   "validation": 2583,
+   "test": 2610
+  },
+  "touched_documents": 71443,
+  "distinct_index_grams_seen": 68244,
+  "common_grams_df_ge_10": 10861,
+  "common_sha256": "b3faf5260ce0bb136b14f7a5ff93b131785ee28953f8faff06a5319da8f6edca",
+  "hit_documents_pass1_uncalibrated": 8175,
+  "hit_documents_pass2": 7026,
+  "seconds": 776.1
+ },
+ "hits_pass2": 7026,
+ "hits_by_label": {
+  "humanevalplus-test": 4355,
+  "mbppplus-test": 4325
+ },
+ "decisions": {
+  "test:PROHIBITED": 6,
+  "train:NOT_PROHIBITED": 18,
+  "train:PROHIBITED": 6995,
+  "validation:PROHIBITED": 7
+ },
+ "prohibited_by_split": {
+  "train": 6995,
+  "validation": 7,
+  "test": 6
+ },
+ "prohibited_by_split_source": {
+  "train": {
+   "arxiv-papers": 136,
+   "finemath-4plus": 870,
+   "fineweb-edu-dedup": 109,
+   "libretexts": 24,
+   "oercommons": 1,
+   "pressbooks": 15,
+   "python-peps": 13,
+   "stackexchange": 1170,
+   "stackv2-edu": 4638,
+   "wikimedia": 19
+  },
+  "validation": {
+   "stackexchange": 1,
+   "stackv2-edu": 6
+  },
+  "test": {
+   "stackexchange": 1,
+   "stackv2-edu": 5
+  }
+ },
+ "sensitivity_informational": {
+  "note": "Informational only; not a decision input. Decisions follow the pre-registered rule (docs/contamination_f9_criteria.md). Most-hit common_only items are generic literal windows, e.g. lists of short letter strings or runs of 1s, whose only indexable 10-grams are common.",
+  "prohibited_by_support": {
+   "test:common_only_items_only": 5,
+   "test:layer_a_item_with_ge_6_non_common_grams": 1,
+   "train:common_only_items_only": 6346,
+   "train:layer_a_best_item_1_non_common_gram": 115,
+   "train:layer_a_best_item_2_to_5_non_common_grams": 295,
+   "train:layer_a_item_with_ge_6_non_common_grams": 207,
+   "train:layer_c_non_generic_identifier_only": 32,
+   "validation:common_only_items_only": 7
+  },
+  "strong_layer_a_by_split_source": {
+   "test:stackv2-edu": 1,
+   "train:finemath-4plus": 25,
+   "train:fineweb-edu-dedup": 4,
+   "train:stackexchange": 43,
+   "train:stackv2-edu": 134,
+   "train:wikimedia": 1
+  }
+ },
+ "residual_blind_spots": [
+  "Field tokens outside every indexable 10-gram (layers-v1 needs >= 3 alphanumeric tokens per gram): HumanEval+ 13.7 %, MBPP+ 16.8 %, MBPP challenge 1.6 % of value tokens; 6,174 HumanEval+ and 1,124 MBPP+ items have no gram and no identifier (punctuation-dense inputs, e.g. lists of brackets).",
+  "Representation changes of the same test data: EvalPlus JSONL form (base_input/plus_input as JSON: double quotes, lists for tuples, null for None), pretty-printed or reordered inputs, single inputs shorter than 10 tokens.",
+  "Partial copies shorter than about 2 x 64 tokens that do not cover 0.6 of one window's non-common grams.",
+  "Expected outputs without inputs, re-generated or paraphrased tests, renamed entry points.",
+  "Items whose grams are all common are matched only via common_only; generic literal windows make that rule over-inclusive (see sensitivity_informational), not under-inclusive."
+ ]
+}

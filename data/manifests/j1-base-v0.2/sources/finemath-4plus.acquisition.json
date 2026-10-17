@@ -1,0 +1,595 @@
+{
+ "acquire_version": "j1.acquire.v1",
+ "acquired_utc": "2026-10-07T17:01:58+00:00",
+ "files": [
+  {
+   "git_blob_oid": "053df10b28d11c998e68b1f31b12e02702276436",
+   "path": "finemath-4plus/train-00000-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:39:45+00:00",
+   "sha256": "5d0b26114b4cf309c82a4ba8f6f45857480b27812e23a46b61b45e8bbed61fe5",
+   "size": 286267316,
+   "upstream_sha256": "5d0b26114b4cf309c82a4ba8f6f45857480b27812e23a46b61b45e8bbed61fe5",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00000-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "ba26e442bc9c79d24054fbe09ecf8c9a42eaffb4",
+   "path": "finemath-4plus/train-00001-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:40:33+00:00",
+   "sha256": "4f38efdb251638c1a71be4ed380119bdd9966b1d6f200f6ff637e4768cc3930c",
+   "size": 288474354,
+   "upstream_sha256": "4f38efdb251638c1a71be4ed380119bdd9966b1d6f200f6ff637e4768cc3930c",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00001-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "dd607b253787aaa150318c0157e01782aa773143",
+   "path": "finemath-4plus/train-00002-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:41:13+00:00",
+   "sha256": "aed5a2aed72e2683c6c967f669b12214c3a2370738a75b83fb92f6194217ab04",
+   "size": 287634720,
+   "upstream_sha256": "aed5a2aed72e2683c6c967f669b12214c3a2370738a75b83fb92f6194217ab04",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00002-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "c0e06c1d49864cfb373cf0b96e2209ae0eb26d48",
+   "path": "finemath-4plus/train-00003-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:41:35+00:00",
+   "sha256": "b20b6da635493e3c7e151880db612bdf1bab2e6bc2fe87ed5cd21910f590aada",
+   "size": 284689405,
+   "upstream_sha256": "b20b6da635493e3c7e151880db612bdf1bab2e6bc2fe87ed5cd21910f590aada",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00003-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "ffcfdbee586b7298f5af7d155480e37e70c0a341",
+   "path": "finemath-4plus/train-00004-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:41:13+00:00",
+   "sha256": "9644be6589159f9ab85a147f71a48b4ea40ed712cb7c7b5b42bf91b1bb844973",
+   "size": 284684820,
+   "upstream_sha256": "9644be6589159f9ab85a147f71a48b4ea40ed712cb7c7b5b42bf91b1bb844973",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00004-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "63b3ceec55134c63bcbb9f7e32c84573fb4a501b",
+   "path": "finemath-4plus/train-00005-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:41:33+00:00",
+   "sha256": "bc0e109357245f5bf91c956ec98e7d8f88e6356c08b25196e8760fe5839b2f99",
+   "size": 284773965,
+   "upstream_sha256": "bc0e109357245f5bf91c956ec98e7d8f88e6356c08b25196e8760fe5839b2f99",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00005-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "bee7a66799e506da6b1e1307f08eafdb7316bec4",
+   "path": "finemath-4plus/train-00006-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:42:48+00:00",
+   "sha256": "7afa1e173e27a492e0527fc82eb8859ff0040b79eae9aa39851c9b57aad0c95d",
+   "size": 286407909,
+   "upstream_sha256": "7afa1e173e27a492e0527fc82eb8859ff0040b79eae9aa39851c9b57aad0c95d",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00006-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "d1db27cc07420070937d620b97c20b859c945e46",
+   "path": "finemath-4plus/train-00007-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:43:05+00:00",
+   "sha256": "b63045b1d32f7b10664e5e8cea9a4dfcd972cbc92e3d6eb9aa56c677ea9863b7",
+   "size": 286615349,
+   "upstream_sha256": "b63045b1d32f7b10664e5e8cea9a4dfcd972cbc92e3d6eb9aa56c677ea9863b7",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00007-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "72e7b3c1d6aaebac01bfe9ea7fe0146c1b180e05",
+   "path": "finemath-4plus/train-00008-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:42:36+00:00",
+   "sha256": "39224cfcc751afbc04671bc9491266a90d58c30c27fd58f93551db8766ca96c6",
+   "size": 287847133,
+   "upstream_sha256": "39224cfcc751afbc04671bc9491266a90d58c30c27fd58f93551db8766ca96c6",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00008-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "7d189e0c239deebdd33a4cef089bfd71eaa48f89",
+   "path": "finemath-4plus/train-00009-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:42:49+00:00",
+   "sha256": "5e2b8db60462621ac0e45dd9865103f685915b09eee577f505b35f95ff601ea5",
+   "size": 288931475,
+   "upstream_sha256": "5e2b8db60462621ac0e45dd9865103f685915b09eee577f505b35f95ff601ea5",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00009-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "2003ffa518625c8f9d05e1897400a6e2024674cf",
+   "path": "finemath-4plus/train-00010-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:44:11+00:00",
+   "sha256": "9d9b4481659d3b24cc9913f2025f323bafb0d19c0e2f33f6eeb0fd82a230a018",
+   "size": 285916752,
+   "upstream_sha256": "9d9b4481659d3b24cc9913f2025f323bafb0d19c0e2f33f6eeb0fd82a230a018",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00010-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "35324f3a1044c9877054ac6f3bb72cf396b340cd",
+   "path": "finemath-4plus/train-00011-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:43:49+00:00",
+   "sha256": "cc1f03a25f744f3595bc808a93b40ed5aa0f2b4976c0eebbadf693fe1ae9f7c9",
+   "size": 287613757,
+   "upstream_sha256": "cc1f03a25f744f3595bc808a93b40ed5aa0f2b4976c0eebbadf693fe1ae9f7c9",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00011-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "c723a50d50264c629d24856c89d8e7072bddb230",
+   "path": "finemath-4plus/train-00012-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:44:23+00:00",
+   "sha256": "8357ab429ac19c08290ae78ee8280d75140a3d82c4f18b1e747607b70eeece93",
+   "size": 286861763,
+   "upstream_sha256": "8357ab429ac19c08290ae78ee8280d75140a3d82c4f18b1e747607b70eeece93",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00012-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "c17462b2d1228d3c48aa18c8171bfadde8d12c41",
+   "path": "finemath-4plus/train-00013-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:44:42+00:00",
+   "sha256": "2188e377ec460f443a169d22cd44672282e5a5ea10b70ef67b66733d3e897ff2",
+   "size": 287269661,
+   "upstream_sha256": "2188e377ec460f443a169d22cd44672282e5a5ea10b70ef67b66733d3e897ff2",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00013-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "d96b9d04a7c3bbbeb3041b085a24f08723af0539",
+   "path": "finemath-4plus/train-00014-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:45:12+00:00",
+   "sha256": "7418045311f2bac739b79175654fa97b394645d42548d7cf52ed7787ffd9883f",
+   "size": 285892807,
+   "upstream_sha256": "7418045311f2bac739b79175654fa97b394645d42548d7cf52ed7787ffd9883f",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00014-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "918c64e13cefb977996365241684cea722631243",
+   "path": "finemath-4plus/train-00015-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:45:33+00:00",
+   "sha256": "7af8c5bcd8728514ec8bb4dd4aeeeec3cc0778818b8be6878d6a84e6b0c2c6eb",
+   "size": 284854630,
+   "upstream_sha256": "7af8c5bcd8728514ec8bb4dd4aeeeec3cc0778818b8be6878d6a84e6b0c2c6eb",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00015-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "0e3eaf48f997aa809668bc236834cb0a48e2ec4c",
+   "path": "finemath-4plus/train-00016-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:45:56+00:00",
+   "sha256": "4d086cac2cd42a82979903d532d39c7e87ad0088f86409f6a7c2f9e8e290e3af",
+   "size": 285230750,
+   "upstream_sha256": "4d086cac2cd42a82979903d532d39c7e87ad0088f86409f6a7c2f9e8e290e3af",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00016-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "9f12e7910efa0ab5bc2db31dbcfaebe017f215f6",
+   "path": "finemath-4plus/train-00017-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:45:51+00:00",
+   "sha256": "7188aa08c9a3a9e6f217fad9bd752a170282a3b029c158eab0e68df1927b83f1",
+   "size": 285105883,
+   "upstream_sha256": "7188aa08c9a3a9e6f217fad9bd752a170282a3b029c158eab0e68df1927b83f1",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00017-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "134025fe82faf763b7d1a900abd03cc06a44cef8",
+   "path": "finemath-4plus/train-00018-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:46:41+00:00",
+   "sha256": "6234f2ef80ca281d8b3818e22269ab5b5a0cc72c38083b608d115d807440e2ff",
+   "size": 286388383,
+   "upstream_sha256": "6234f2ef80ca281d8b3818e22269ab5b5a0cc72c38083b608d115d807440e2ff",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00018-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "c77a39b678727edb98d88baac827c821fbec7087",
+   "path": "finemath-4plus/train-00019-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:46:59+00:00",
+   "sha256": "a6f24a84c01f792ca02c5bdbc2eff17749331be49b442a9428b916860ae8b60a",
+   "size": 287300048,
+   "upstream_sha256": "a6f24a84c01f792ca02c5bdbc2eff17749331be49b442a9428b916860ae8b60a",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00019-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "9b22fd52e8742f64bf460632f61fcb96a11e4cfd",
+   "path": "finemath-4plus/train-00020-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:47:13+00:00",
+   "sha256": "938e6ffcf290d7925df11239d67fc953791c361f1d3db37527fcb5468a371a95",
+   "size": 288418140,
+   "upstream_sha256": "938e6ffcf290d7925df11239d67fc953791c361f1d3db37527fcb5468a371a95",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00020-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "1152b2660ab2deb7d0e134a6520eb9da29a1ef14",
+   "path": "finemath-4plus/train-00021-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:47:18+00:00",
+   "sha256": "38a5262c389a1b04cdebe2eaf7654c2c0a03e894e2a0b35e26a450682cf3651b",
+   "size": 289304294,
+   "upstream_sha256": "38a5262c389a1b04cdebe2eaf7654c2c0a03e894e2a0b35e26a450682cf3651b",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00021-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "4725666fbc0a1868f0337b27ce416f1f61e44953",
+   "path": "finemath-4plus/train-00022-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:47:58+00:00",
+   "sha256": "d8f0548f5e73166ff60535ba2f219d85ab96eba23dff659411ea2876a66bd058",
+   "size": 285625844,
+   "upstream_sha256": "d8f0548f5e73166ff60535ba2f219d85ab96eba23dff659411ea2876a66bd058",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00022-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "5f2e6a3fb72bbff040bb217aeb7f72fa10c5d6a6",
+   "path": "finemath-4plus/train-00023-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:48:08+00:00",
+   "sha256": "661164ca586963621968df1ed20bb2f103ab4c5c4bd32c9a53ea020694b92ed3",
+   "size": 286320892,
+   "upstream_sha256": "661164ca586963621968df1ed20bb2f103ab4c5c4bd32c9a53ea020694b92ed3",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00023-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "88d5fc232f0bb8282352a63f9e2939a4d9ffaba5",
+   "path": "finemath-4plus/train-00024-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:48:31+00:00",
+   "sha256": "d1042d40e62790e2e265e9986ee2e88359e2e294d0e3e7b31fa2b1562edc3cb4",
+   "size": 287841727,
+   "upstream_sha256": "d1042d40e62790e2e265e9986ee2e88359e2e294d0e3e7b31fa2b1562edc3cb4",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00024-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "642a4f40e29dcc4018991f22cb92183491e55bde",
+   "path": "finemath-4plus/train-00025-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:48:51+00:00",
+   "sha256": "d50e43d1c4523c72a1e578c0b5aeb0a52ad7da2fa2cca6184da9c359a68bbae8",
+   "size": 287597422,
+   "upstream_sha256": "d50e43d1c4523c72a1e578c0b5aeb0a52ad7da2fa2cca6184da9c359a68bbae8",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00025-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "935f45a97f706ba7edb6c6d63a68d829bb38a077",
+   "path": "finemath-4plus/train-00026-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:49:38+00:00",
+   "sha256": "993f12c563bb3ad4eb6c7313434227a6df316ebb763c56e242000613316b71f3",
+   "size": 288787284,
+   "upstream_sha256": "993f12c563bb3ad4eb6c7313434227a6df316ebb763c56e242000613316b71f3",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00026-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "61b009b7b48ab93213232f87c9869a5c941277c9",
+   "path": "finemath-4plus/train-00027-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:49:19+00:00",
+   "sha256": "52df8a5db9e19df1b66c4db22bcffa27976c896db7f599a595e28359833bcd16",
+   "size": 287696956,
+   "upstream_sha256": "52df8a5db9e19df1b66c4db22bcffa27976c896db7f599a595e28359833bcd16",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00027-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "f0ead6f0c655ed873b6ba3d69736cec7f746d92b",
+   "path": "finemath-4plus/train-00028-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:50:30+00:00",
+   "sha256": "e2fcc0241110c215bb69291d5acc3a36cb963a4421547065341372989196d87e",
+   "size": 285140740,
+   "upstream_sha256": "e2fcc0241110c215bb69291d5acc3a36cb963a4421547065341372989196d87e",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00028-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "5aab999eda85412f8bf6718c23e4a05898e91467",
+   "path": "finemath-4plus/train-00029-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:49:54+00:00",
+   "sha256": "33af174dbce679c11a11210e314c1da8bb0c905f352173d7a4f9c1e253752792",
+   "size": 284671899,
+   "upstream_sha256": "33af174dbce679c11a11210e314c1da8bb0c905f352173d7a4f9c1e253752792",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00029-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "71d98f7a6d9444ee0402885ca22dec30ed29a0d1",
+   "path": "finemath-4plus/train-00030-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:50:21+00:00",
+   "sha256": "eebf8fa736b3d01a39ffdc527f237b97515508d1d0f891c37b4b7b66e881f8ad",
+   "size": 287047408,
+   "upstream_sha256": "eebf8fa736b3d01a39ffdc527f237b97515508d1d0f891c37b4b7b66e881f8ad",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00030-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "fae849c86b0ea69c8605cd5958b38142241d19df",
+   "path": "finemath-4plus/train-00031-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:51:07+00:00",
+   "sha256": "173378335be37fecc53badf18b8d9e3751b36deca83192d656e46d283a0b790b",
+   "size": 286853079,
+   "upstream_sha256": "173378335be37fecc53badf18b8d9e3751b36deca83192d656e46d283a0b790b",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00031-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "61f8ae27259c9cb701f09085f158cfb1d756118a",
+   "path": "finemath-4plus/train-00032-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:51:16+00:00",
+   "sha256": "3908b3a7770116230dc9b33fb8cdedf7e2e201bddf91c85dd67d604ef042cbeb",
+   "size": 290228916,
+   "upstream_sha256": "3908b3a7770116230dc9b33fb8cdedf7e2e201bddf91c85dd67d604ef042cbeb",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00032-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "7d0e1f286642617ce1061b565b914f7f133fefa3",
+   "path": "finemath-4plus/train-00033-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:51:52+00:00",
+   "sha256": "59c396794e2a3beaf424cd38a300054f70e81f5241dabca1833d0ae8774a94bf",
+   "size": 287898199,
+   "upstream_sha256": "59c396794e2a3beaf424cd38a300054f70e81f5241dabca1833d0ae8774a94bf",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00033-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "122fef1f9c386af26d031f83878e6c98e40a91ca",
+   "path": "finemath-4plus/train-00034-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:51:52+00:00",
+   "sha256": "82b84eec9e9ef34dce9161c0309038b26ed44269a8bd1d0e0b03702cccfbbbe5",
+   "size": 289810386,
+   "upstream_sha256": "82b84eec9e9ef34dce9161c0309038b26ed44269a8bd1d0e0b03702cccfbbbe5",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00034-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "afc430b52e487e4bff17402c3f82f660a8f58326",
+   "path": "finemath-4plus/train-00035-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:52:18+00:00",
+   "sha256": "460fb500ce95a04c649a5defa26465fd202dac8be102c93ad008a4ff413c9125",
+   "size": 284461159,
+   "upstream_sha256": "460fb500ce95a04c649a5defa26465fd202dac8be102c93ad008a4ff413c9125",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00035-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "45d377e18320391148259c6f8ad8d4d3d003dc73",
+   "path": "finemath-4plus/train-00036-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:53:34+00:00",
+   "sha256": "210ed04eef3f67f69e8b33af70169ffa675ead7040fda5ff752dcfd53cb3f3c0",
+   "size": 288088785,
+   "upstream_sha256": "210ed04eef3f67f69e8b33af70169ffa675ead7040fda5ff752dcfd53cb3f3c0",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00036-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "8ea86cc9ff3726323e6d926764b5c04a4d4d6287",
+   "path": "finemath-4plus/train-00037-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:53:03+00:00",
+   "sha256": "3f1f800ad82dbd58f76d8bf614132e021c0966cd474563458758f4f4ff8ef431",
+   "size": 288490473,
+   "upstream_sha256": "3f1f800ad82dbd58f76d8bf614132e021c0966cd474563458758f4f4ff8ef431",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00037-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "478bab6b1d227eb89bccac8a593b9a6772a77dee",
+   "path": "finemath-4plus/train-00038-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:53:21+00:00",
+   "sha256": "79ec06e3c4178bbe530bcf513787cf983c8194cd71ef68a059190d1e88cd09d8",
+   "size": 286826637,
+   "upstream_sha256": "79ec06e3c4178bbe530bcf513787cf983c8194cd71ef68a059190d1e88cd09d8",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00038-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "7e5eb9f3c5ba396e99d0ef5b95de2dfe548f63e4",
+   "path": "finemath-4plus/train-00039-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:53:45+00:00",
+   "sha256": "2b893fdc56c818f601f100d4e7b4ee5183ab337b97e041f870ede9ff434b0d91",
+   "size": 287576805,
+   "upstream_sha256": "2b893fdc56c818f601f100d4e7b4ee5183ab337b97e041f870ede9ff434b0d91",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00039-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "89278e165971437feb1cc60d747a257d5edfe959",
+   "path": "finemath-4plus/train-00040-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:54:22+00:00",
+   "sha256": "84eef483837d4d4cdf68512eac5b18eb8f2b19dc98c9518c31454fc96daa48a0",
+   "size": 286200864,
+   "upstream_sha256": "84eef483837d4d4cdf68512eac5b18eb8f2b19dc98c9518c31454fc96daa48a0",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00040-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "dd88bf671ad3d21e538c0d2760f289a7a4ce01b0",
+   "path": "finemath-4plus/train-00041-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:54:29+00:00",
+   "sha256": "a80a637295c6ca4084d508615f68e40fa7d5d99653014a049132a4067b96a17f",
+   "size": 287168422,
+   "upstream_sha256": "a80a637295c6ca4084d508615f68e40fa7d5d99653014a049132a4067b96a17f",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00041-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "faf2b0c341909e7e19ade6591de666c9c2799987",
+   "path": "finemath-4plus/train-00042-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:54:53+00:00",
+   "sha256": "209b4839e8324cd849e58355092d12884a32f049201aaa1fb5072d6ea8232afe",
+   "size": 285668052,
+   "upstream_sha256": "209b4839e8324cd849e58355092d12884a32f049201aaa1fb5072d6ea8232afe",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00042-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "a6c427fa685ce7d52f368a6256a0aeb68dab351a",
+   "path": "finemath-4plus/train-00043-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:55:36+00:00",
+   "sha256": "d6e5706cc53f79015065308877cedf33e82c17197cbf1be0b937c3a47270d391",
+   "size": 286461543,
+   "upstream_sha256": "d6e5706cc53f79015065308877cedf33e82c17197cbf1be0b937c3a47270d391",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00043-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "c82dd7cc1f7987c2d34e5f435b3d3f8896f73389",
+   "path": "finemath-4plus/train-00044-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:55:41+00:00",
+   "sha256": "aeb894d1d5c9fe7b7f92bc3a90d0bade32987846ec56ffccedf1588f8634f0b5",
+   "size": 287724326,
+   "upstream_sha256": "aeb894d1d5c9fe7b7f92bc3a90d0bade32987846ec56ffccedf1588f8634f0b5",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00044-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "6f4c3060298f3e235a203f421afeebe5b13cc14c",
+   "path": "finemath-4plus/train-00045-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:55:50+00:00",
+   "sha256": "2c3e25eccc80c71af05c1c27a260fb25d5743169dbace5e3ecdd18e6b96c277e",
+   "size": 285137076,
+   "upstream_sha256": "2c3e25eccc80c71af05c1c27a260fb25d5743169dbace5e3ecdd18e6b96c277e",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00045-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "51833dd136d5fcd8c6bd0a5b9fbba0818858af4b",
+   "path": "finemath-4plus/train-00046-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:56:13+00:00",
+   "sha256": "2d0803166fa42fbe1237bbc36d7348c6ab210a2958684b6ad2b1a1e2fffb0960",
+   "size": 287466256,
+   "upstream_sha256": "2d0803166fa42fbe1237bbc36d7348c6ab210a2958684b6ad2b1a1e2fffb0960",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00046-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "c47cadc575cb7d1e228352bc06a65a6c1e7b34a0",
+   "path": "finemath-4plus/train-00047-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:57:26+00:00",
+   "sha256": "072dd4aee4e5f09e647109b0155edeed9364417f891f64b60ae9453a8f57543f",
+   "size": 286816750,
+   "upstream_sha256": "072dd4aee4e5f09e647109b0155edeed9364417f891f64b60ae9453a8f57543f",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00047-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "6e2bf3e5f62565f00d2545a9f121abde92c61879",
+   "path": "finemath-4plus/train-00048-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:56:55+00:00",
+   "sha256": "d30c8f3681b94bb799d4c64feea211ef2e85a398f3cd0d7ae2802468653d0231",
+   "size": 286142969,
+   "upstream_sha256": "d30c8f3681b94bb799d4c64feea211ef2e85a398f3cd0d7ae2802468653d0231",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00048-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "4c2c1bac06372ea77e56f18bcd274c9d54eeab38",
+   "path": "finemath-4plus/train-00049-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:57:21+00:00",
+   "sha256": "844b6c543e8493b8570fc83f5f152ebaa4a324f36f86ded5c8b22158242f5976",
+   "size": 287762910,
+   "upstream_sha256": "844b6c543e8493b8570fc83f5f152ebaa4a324f36f86ded5c8b22158242f5976",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00049-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "a924d6b54dc81c7c08fc317b587b7ec834441801",
+   "path": "finemath-4plus/train-00050-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:57:20+00:00",
+   "sha256": "493e3155e54f0b43e350cbd732f2733949d9237b6e65025f473d8aec81bb631b",
+   "size": 288979859,
+   "upstream_sha256": "493e3155e54f0b43e350cbd732f2733949d9237b6e65025f473d8aec81bb631b",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00050-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "99db93a01c52dfabaf0d4ae81ce05211e468b506",
+   "path": "finemath-4plus/train-00051-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:58:02+00:00",
+   "sha256": "79e67c3d2bea7331f5c0d0def3aded21a2101852e26feddcda2f87491119e6d8",
+   "size": 288516393,
+   "upstream_sha256": "79e67c3d2bea7331f5c0d0def3aded21a2101852e26feddcda2f87491119e6d8",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00051-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "5d41f7df7c0e7d9fba268c242fad996dd0033b70",
+   "path": "finemath-4plus/train-00052-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:58:50+00:00",
+   "sha256": "f43826fecf00f41cdf78f3c4d1b17bd80b8c816f5b53414ee2bf0fd51c55a0f0",
+   "size": 286603913,
+   "upstream_sha256": "f43826fecf00f41cdf78f3c4d1b17bd80b8c816f5b53414ee2bf0fd51c55a0f0",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00052-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "6bc6bf5422156e19a97835ed6d4aee775c1ea9a4",
+   "path": "finemath-4plus/train-00053-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:59:07+00:00",
+   "sha256": "e91ed59b94cab8cd1a763c6e768eca1fe52183c4029a9f81896836cf8df8332c",
+   "size": 288438678,
+   "upstream_sha256": "e91ed59b94cab8cd1a763c6e768eca1fe52183c4029a9f81896836cf8df8332c",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00053-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "f9529c73d5249c56c1b6d72e751aaec8ca158e58",
+   "path": "finemath-4plus/train-00054-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:58:51+00:00",
+   "sha256": "fbe428def745237f8c4d7c175ed07700bfd043018b4ffb72f52f6308e737b3e9",
+   "size": 287848798,
+   "upstream_sha256": "fbe428def745237f8c4d7c175ed07700bfd043018b4ffb72f52f6308e737b3e9",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00054-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "b165a1bf76efe7f7da38617fdf174926b4f202ec",
+   "path": "finemath-4plus/train-00055-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:59:37+00:00",
+   "sha256": "a097663e3e928e36c2713aedfa1b48c6784e6874ebd57570c1b591c9cf2a4247",
+   "size": 284921841,
+   "upstream_sha256": "a097663e3e928e36c2713aedfa1b48c6784e6874ebd57570c1b591c9cf2a4247",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00055-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "1964816b12ff9def042f60c019207f1f8a1cbbd0",
+   "path": "finemath-4plus/train-00056-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T16:59:53+00:00",
+   "sha256": "e06d3ada6b375560cff610049221a23df5cd881cd8463d5b18841d09daf420c3",
+   "size": 285402320,
+   "upstream_sha256": "e06d3ada6b375560cff610049221a23df5cd881cd8463d5b18841d09daf420c3",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00056-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "b2f92ed4f5cb29882d8baf975ddf2fc907bb3242",
+   "path": "finemath-4plus/train-00057-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T17:00:17+00:00",
+   "sha256": "2c4652d889bfb0ae24464c05c9d77cd2cff4e69f8f6ade0062acc67eac35ab2f",
+   "size": 285845878,
+   "upstream_sha256": "2c4652d889bfb0ae24464c05c9d77cd2cff4e69f8f6ade0062acc67eac35ab2f",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00057-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "d08fddef9dd73c8ebcdb6211b4a6c1a847df1b1d",
+   "path": "finemath-4plus/train-00058-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T17:00:35+00:00",
+   "sha256": "2a66a63e3f1a431bc08b67cdd3a4e3bf74c21efadf5632df8a0179968bedc8cd",
+   "size": 288566069,
+   "upstream_sha256": "2a66a63e3f1a431bc08b67cdd3a4e3bf74c21efadf5632df8a0179968bedc8cd",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00058-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "20c767d90e6bfd9dafabbc468c69f69dac30c169",
+   "path": "finemath-4plus/train-00059-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T17:00:59+00:00",
+   "sha256": "db590431963f0915340b87a00ef011e0c837b088b7b15e992bc22fb7c3b85c95",
+   "size": 286510764,
+   "upstream_sha256": "db590431963f0915340b87a00ef011e0c837b088b7b15e992bc22fb7c3b85c95",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00059-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "e2ff003609406951fcaf73a3879d369d382d805a",
+   "path": "finemath-4plus/train-00060-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T17:01:20+00:00",
+   "sha256": "d8ee743cf9f6eaa336b99c50b556c6aea1fa34a8209bbd3220716444485aa27f",
+   "size": 284239808,
+   "upstream_sha256": "d8ee743cf9f6eaa336b99c50b556c6aea1fa34a8209bbd3220716444485aa27f",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00060-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "e7055bd40da4c705bb3036bfb951653b3d9c9b39",
+   "path": "finemath-4plus/train-00061-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T17:01:49+00:00",
+   "sha256": "c78473e2f04cefe953ebe26c8d5fdee1b1a4b70c4b95a0210314304a9ba175e7",
+   "size": 288814138,
+   "upstream_sha256": "c78473e2f04cefe953ebe26c8d5fdee1b1a4b70c4b95a0210314304a9ba175e7",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00061-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "b7c567836c05bc45e9e10b4858674eba3a97e47e",
+   "path": "finemath-4plus/train-00062-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T17:01:37+00:00",
+   "sha256": "0ac3a1f547029023ddc36661cc334fd67c220b0863808d589f23bd9b724fefd3",
+   "size": 287258638,
+   "upstream_sha256": "0ac3a1f547029023ddc36661cc334fd67c220b0863808d589f23bd9b724fefd3",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00062-of-00064.parquet"
+  },
+  {
+   "git_blob_oid": "47c1919bd4736cde21100c1444842afcdca0111d",
+   "path": "finemath-4plus/train-00063-of-00064.parquet",
+   "retrieved_utc": "2026-10-07T17:01:58+00:00",
+   "sha256": "ca21ff1b4127b1da10243f7e675f752c5c6cb9b6f7e57448ba01bb1a1824dfee",
+   "size": 289240443,
+   "upstream_sha256": "ca21ff1b4127b1da10243f7e675f752c5c6cb9b6f7e57448ba01bb1a1824dfee",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00063-of-00064.parquet"
+  }
+ ],
+ "mechanism": "huggingface",
+ "repo": "HuggingFaceTB/finemath",
+ "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+ "schema": "j1.acquisition-manifest.v1",
+ "selected_bytes": 18365184633,
+ "selected_file_count": 64,
+ "selection": {
+  "include": [
+   "finemath-4plus/*.parquet"
+  ]
+ },
+ "source_id": "finemath-4plus",
+ "upstream_file_count": 293
+}

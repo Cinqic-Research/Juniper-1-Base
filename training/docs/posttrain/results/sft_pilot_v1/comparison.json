@@ -1,0 +1,275 @@
+{
+ "base_model": {
+  "checkpoint": "ckpt-000052034-336e5967",
+  "freeze_id": "juniper1-base-v1",
+  "kind": "frozen_base",
+  "manifest_sha256": "a2f616c714bbad26a2dade682e71e80493ca70d6a4531430c64fdaedf5932e74"
+ },
+ "candidate_model": {
+  "checkpoint": "ckpt-000001226-55d13f9a",
+  "kind": "sft_checkpoint",
+  "manifest_sha256": "dc0bbbb0cd655cc5114c1ee73ac777634985fca8a713a9f149f7686b08a110ce",
+  "model_state_sha256": "a4616f9045cfe250f188595fba591dd4c157cb613e331ceaa89aa889f8a79e95",
+  "run_id": "j1-sft-v1-pilot",
+  "stage": "juniper1-sft-v1-pilot",
+  "updates": 1226
+ },
+ "comparison_sha256": "d92c560ee7725e8ec68ca9663da41692a87f62e09b0502ae52097960cca764e3",
+ "test": {
+  "abstention": {
+   "base_false_abstention_on_facts": 0.0,
+   "false_abstention_on_facts": 0.07386363636363637,
+   "n_facts": 176,
+   "n_uncertainty": 300,
+   "uncertainty_strict": 0.9933333333333333
+  },
+  "protocol_valid": {
+   "base": 0.0,
+   "candidate": 0.9567682494684621,
+   "n": 4233
+  },
+  "significant_regressions_vs_fewshot": [],
+  "versus_base_chat": {
+   "all": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.42664776754075123,
+     0.45641389085754785
+    ],
+    "candidate": 0.4412945901252067,
+    "candidate_only": 1868,
+    "difference": 0.4412945901252067,
+    "mcnemar_p": 0.0,
+    "n": 4233
+   },
+   "factuality": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.23863636363636365,
+     0.3693181818181818
+    ],
+    "candidate": 0.30113636363636365,
+    "candidate_only": 53,
+    "difference": 0.30113636363636365,
+    "mcnemar_p": 2.220446049250313e-16,
+    "n": 176
+   },
+   "heldout_instruction_following": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.0,
+     0.025735294117647058
+    ],
+    "candidate": 0.011029411764705883,
+    "candidate_only": 3,
+    "difference": 0.011029411764705883,
+    "mcnemar_p": 0.25,
+    "n": 272
+   },
+   "heldout_json": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.2,
+     0.32
+    ],
+    "candidate": 0.26,
+    "candidate_only": 52,
+    "difference": 0.26,
+    "mcnemar_p": 4.440892098500626e-16,
+    "n": 200
+   },
+   "hierarchy": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.36199095022624433,
+     0.48868778280542985
+    ],
+    "candidate": 0.4253393665158371,
+    "candidate_only": 94,
+    "difference": 0.4253393665158371,
+    "mcnemar_p": 1.0097419586828951e-28,
+    "n": 221
+   },
+   "injection": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.9366666666666666,
+     0.98
+    ],
+    "candidate": 0.96,
+    "candidate_only": 288,
+    "difference": 0.96,
+    "mcnemar_p": 4.021529366771898e-87,
+    "n": 300
+   },
+   "instruction_following": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.3898963730569948,
+     0.4572538860103627
+    ],
+    "candidate": 0.42357512953367876,
+    "candidate_only": 327,
+    "difference": 0.42357512953367876,
+    "mcnemar_p": 7.31511930420656e-99,
+    "n": 772
+   },
+   "instruction_following_in_distribution": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.606,
+     0.69
+    ],
+    "candidate": 0.648,
+    "candidate_only": 324,
+    "difference": 0.648,
+    "mcnemar_p": 5.852095443365248e-98,
+    "n": 500
+   },
+   "json": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.664,
+     0.744
+    ],
+    "candidate": 0.704,
+    "candidate_only": 352,
+    "difference": 0.704,
+    "mcnemar_p": 2.1800754380841732e-106,
+    "n": 500
+   },
+   "math": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.3418181818181818,
+     0.3990909090909091
+    ],
+    "candidate": 0.37,
+    "candidate_only": 407,
+    "difference": 0.37,
+    "mcnemar_p": 6.05092486695206e-123,
+    "n": 1100
+   },
+   "python": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.041666666666666664,
+     0.07291666666666667
+    ],
+    "candidate": 0.056712962962962965,
+    "candidate_only": 49,
+    "difference": 0.056712962962962965,
+    "mcnemar_p": 3.552713678800501e-15,
+    "n": 864
+   },
+   "uncertainty": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.9833333333333333,
+     1.0
+    ],
+    "candidate": 0.9933333333333333,
+    "candidate_only": 298,
+    "difference": 0.9933333333333333,
+    "mcnemar_p": 3.9272747722381812e-90,
+    "n": 300
+   }
+  },
+  "versus_base_fewshot": {
+   "all": {
+    "base": 0.18662613981762918,
+    "base_only": 31,
+    "bootstrap_ci95": [
+     0.26382978723404255,
+     0.31124620060790276
+    ],
+    "candidate": 0.47416413373860183,
+    "candidate_only": 504,
+    "difference": 0.2875379939209726,
+    "mcnemar_p": 3.601819656579521e-111,
+    "n": 1645
+   },
+   "factuality": {
+    "base": 0.23295454545454544,
+    "base_only": 14,
+    "bootstrap_ci95": [
+     0.0,
+     0.13636363636363635
+    ],
+    "candidate": 0.30113636363636365,
+    "candidate_only": 26,
+    "difference": 0.06818181818181818,
+    "mcnemar_p": 0.0806904677519924,
+    "mcnemar_p_holm": 0.0806904677519924,
+    "n": 176
+   },
+   "instruction_following": {
+    "base": 0.114,
+    "base_only": 4,
+    "bootstrap_ci95": [
+     0.488,
+     0.578
+    ],
+    "candidate": 0.648,
+    "candidate_only": 271,
+    "difference": 0.534,
+    "mcnemar_p": 7.794613752553222e-75,
+    "mcnemar_p_holm": 3.1178455010212886e-74,
+    "n": 500
+   },
+   "instruction_following_in_distribution": {
+    "base": 0.114,
+    "base_only": 4,
+    "bootstrap_ci95": [
+     0.488,
+     0.578
+    ],
+    "candidate": 0.648,
+    "candidate_only": 271,
+    "difference": 0.534,
+    "mcnemar_p": 7.794613752553222e-75,
+    "n": 500
+   },
+   "json": {
+    "base": 0.54,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.4033333333333333,
+     0.5166666666666667
+    ],
+    "candidate": 1.0,
+    "candidate_only": 138,
+    "difference": 0.46,
+    "mcnemar_p": 5.739718509874451e-42,
+    "mcnemar_p_holm": 1.7219155529623352e-41,
+    "n": 300
+   },
+   "math": {
+    "base": 0.07025411061285501,
+    "base_only": 13,
+    "bootstrap_ci95": [
+     0.05829596412556054,
+     0.10911808669656203
+    ],
+    "candidate": 0.15396113602391628,
+    "candidate_only": 69,
+    "difference": 0.08370702541106129,
+    "mcnemar_p": 2.2558474942467337e-10,
+    "mcnemar_p_holm": 4.5116949884934674e-10,
+    "n": 669
+   }
+  }
+ }
+}

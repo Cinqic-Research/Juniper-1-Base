@@ -1,0 +1,80 @@
+{
+ "build_identity": "ebdada903044b12bd9d59fa085198352e89f8a4496cfba737e6b479d4f425cdb",
+ "bytes_by_stage": {
+  "candidate": 46707838,
+  "contamination": 56886,
+  "extraction": 0,
+  "quality": 5114206
+ },
+ "bytes_in": 51878930,
+ "chars_in": 51675057,
+ "contamination_benchmarks": {
+  "mmlu": 3
+ },
+ "docs_in": 5249,
+ "kinds": {
+  "math": 13,
+  "prose": 4451,
+  "technical": 1
+ },
+ "outputs": [
+  {
+   "file": "candidates/oercommons/oercommons-0000.parquet",
+   "rows": 4465,
+   "sha256": "0bd04c39c2342bfa3c4e733e6749cba2badc8f06f031af8ebe006e2483e810b8"
+  },
+  {
+   "file": "rejects/oercommons/oercommons-0000.parquet",
+   "rows": 784,
+   "sha256": "d9f99c6a2c3e460e4538dc9776b5c1393b7407412669af7e12d9c40d7bd157da"
+  },
+  {
+   "file": "signatures/oercommons/oercommons-0000.npy",
+   "rows": 4465,
+   "sha256": "4ee51b7b2feb31f12549a3944b8b53e0fab50802cc8872a438d482cc4248b2f7"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "oercommons-0000.json.gz",
+ "reasons": {
+  "contamination.mmlu": 3,
+  "extraction.empty": 5,
+  "quality.corrupt_decoding": 2,
+  "quality.prose.alpha_words": 42,
+  "quality.prose.bullet_lines": 3,
+  "quality.prose.duplicate_lines": 449,
+  "quality.prose.duplicate_ngrams": 604,
+  "quality.prose.ellipsis_lines": 2,
+  "quality.prose.line_length": 1,
+  "quality.prose.mean_word_length": 11,
+  "quality.prose.non_latin_script": 1,
+  "quality.prose.not_english": 41,
+  "quality.prose.stopwords": 14,
+  "quality.prose.symbol_ratio": 5,
+  "quality.prose.too_long": 1,
+  "quality.prose.too_short": 83,
+  "quality.prose.top_ngram_repetition": 119,
+  "quality.technical.duplicate_lines": 1,
+  "quality.technical.duplicate_ngrams": 1
+ },
+ "redactions": {
+  "email": 22,
+  "home_path_user": 17,
+  "phone": 15
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 40.75,
+ "slow_documents": [],
+ "source_id": "oercommons",
+ "stages": {
+  "candidate": 4465,
+  "contamination": 3,
+  "extraction": 5,
+  "quality": 776
+ },
+ "unit_id": "oercommons-0000"
+}

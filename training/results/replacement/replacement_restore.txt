@@ -1,0 +1,7 @@
+verify: (True, 'ok') 1.4 s
+rc=0 wall=132s
+[resume] restored /root/restore/t1/ckpt-000000015-7e9d30eb at step 15 in 2.78s (lr=0.000249171)
+[ckpt] step 25 -> /root/j1ckpt-repl/t1/ckpt-000000025-7be4ff68 (1697.6 MiB, 6.70s)
+[ckpt] step 35 -> /root/j1ckpt-repl/t1/ckpt-000000035-29ff76ae (1697.6 MiB, 6.62s)
+[ckpt] step 40 -> /root/j1ckpt-repl/t1/ckpt-000000040-f760b8c4 (1697.6 MiB, 6.61s)
+NVIDIA A100-SXM4-80GB, GPU-d7326183-f93c-fbbd-8361-ae78f8cc0647, 595.91.07

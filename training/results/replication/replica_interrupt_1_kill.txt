@@ -1,0 +1,12 @@
+== interrupted replica transfer 2026-10-08T17:07:21Z
+incoming after kill:
+total 723592
+-rw-rw-rw- 1 cinqic cinqic        64 Oct  8 13:03 COMPLETE
+-rw-rw-rw- 1 cinqic cinqic      4486 Oct  8 13:03 manifest.json
+-rw-rw-rw- 1 cinqic cinqic 593355099 Oct  8 13:03 model.pt
+-rw------- 1 cinqic cinqic 147587072 Oct  8 13:07 optim.pt
+final dir exists: no
+receipts:
+ckpt-000000000-7fa60aad.VERIFIED.1791479182.json
+verify incoming: (False, 'size mismatch optim.pt: 147587072 != 1186743531')
+archive latest-valid: /media/cinqic/Cinqic Storage/juniper1-archive/checkpoints/t1/ckpt-000000000-7fa60aad

@@ -1,0 +1,22 @@
+{
+ "status": "FAIL",
+ "mean_rel_loss_diff": 0.003267812909359366,
+ "max_rel_loss_diff": 0.007555428480854664,
+ "range": [
+  101,
+  200
+ ],
+ "final_bpb": {
+  "eager": 2.204645191569334,
+  "compiled": 2.197464720819423,
+  "rel_diff": 0.0032569734020555653
+ },
+ "tolerances": {
+  "loss_rel": 0.005,
+  "bpb_rel": 0.003
+ },
+ "throughput": {
+  "eager": 65194.47842392455,
+  "compiled": 129652.10107897613
+ }
+}

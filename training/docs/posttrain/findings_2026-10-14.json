@@ -1,0 +1,226 @@
+{
+ "schema": "juniper1.posttrain-findings.v1",
+ "assignment": "2026-10-13 engineering execution directive",
+ "findings": [
+  {
+   "id": "S-09",
+   "severity": "MEDIUM",
+   "repo": "Juniper-1-Data",
+   "component": "sftscore abstain",
+   "root_cause": "forbidden_symbols matched any case-sensitive standalone token; 25 of the symbols in v1.2 abstention specs are English words",
+   "repair": "scorer v4: word-like symbols count only in symbol positions; COMMIT_RE; broader honest phrasing; hedge exceptions",
+   "regression_test": "tests/test_sftscore_v4.py (44 cases)",
+   "status": "FIXED (branch sft/dataset-v1.3)",
+   "impact": "0 changed items when rescoring v1.2 seed 1 and base (both never produced affected text)"
+  },
+  {
+   "id": "N-01",
+   "severity": "MEDIUM",
+   "repo": "Juniper-1-Data",
+   "component": "j1-sft-v1.2 mix",
+   "evidence": "facts 552 train episodes (0.4% of target tokens) + 2,335 fact-embedded episodes; 26/49 wrong test capital answers are train-split labels",
+   "status": "DIAGNOSIS_RUNNING (knowledge diag protocol v1)"
+  },
+  {
+   "id": "N-02",
+   "severity": "LOW",
+   "repo": "FLOWBOX",
+   "component": "~/j1post/Juniper-1-Data git config",
+   "evidence": "local user.name/email = review <review@local> left from an earlier review setup",
+   "repair": "local override removed; 3 assignment commits re-authored before review",
+   "status": "FIXED"
+  },
+  {
+   "id": "N-03",
+   "severity": "LOW",
+   "repo": "Juniper-1-Train evidence",
+   "component": "teacher feasibility batch 2026-10-13",
+   "evidence": "only the summary JSON (results/teacher_feasibility_2026-10-13.json) is preserved; per-record raw teacher outputs not found on FLOWBOX",
+   "status": "RECORDED (distillation v2 records raw outputs per record)"
+  },
+  {
+   "id": "N-04",
+   "severity": "INFO",
+   "repo": "Cinqic-Backup",
+   "component": "HDD checkout",
+   "evidence": "branch feat/four-destination-backup behind 18 with uncommitted changes in drive.py/github.py/tests/inventory (not assignment work)",
+   "status": "LEFT_UNTOUCHED (owner/previous session work; reported)"
+  },
+  {
+   "id": "A-11",
+   "severity": "MEDIUM",
+   "repo": "RunPod account",
+   "component": "3 exited pods",
+   "repair": "JUPYTER_PASSWORD env and 8888/http removed via update-pod; SSH key unchanged",
+   "evidence": "receipts/a11_remediation_2026-10-13.json",
+   "status": "REMEDIATED_CONFIG; live unusability NOT VERIFIED (would need a paid start)"
+  },
+  {
+   "id": "D-01",
+   "severity": "LOW",
+   "repo": "Juniper-1-Train",
+   "component": "README, roadmap_tool_use_v1.md",
+   "evidence": "README said no post-training had run; roadmap row 1 named v1.1/protocol v2",
+   "repair": "branch docs/status-2026-10-13",
+   "status": "FIXED (pending review)"
+  },
+  {
+   "id": "N-05",
+   "severity": "LOW",
+   "repo": "Juniper-App (public)",
+   "component": "PR #46 tests/juniper1/golden.v1.json",
+   "evidence": "token IDs of synthetic strings under the private tokenizer were committed to a public branch (head c529a2b, ~1 h)",
+   "repair": "fixture moved to the private research dir, loaded via JUNIPER1_GOLDEN with pinned SHA-256 82198489...0745; branch history rewritten (force-with-lease) so no commit contains it; PR text updated",
+   "status": "FIXED (GitHub may retain the old commit object by SHA until garbage collection)"
+  },
+  {
+   "id": "N-06",
+   "severity": "LOW",
+   "repo": "process",
+   "component": "adapter subagent",
+   "evidence": "the owner's email address was sent once in a User-Agent header to the crates.io API while checking crate versions",
+   "repair": "none possible after the fact; reported to the owner",
+   "status": "REPORTED"
+  },
+  {
+   "id": "N-07",
+   "severity": "MEDIUM",
+   "repo": "Juniper-1-Data",
+   "component": "OASST1 source gate (v1.3)",
+   "evidence": "independent blinded rubric review: admitted pass 106/120 (Wilson 0.814-0.929) but 2 admitted rows show model-pasted text; 9/14 admitted failures are confidently wrong explanations",
+   "decision": "REJECT_SOURCE applied as predeclared: no OASST1 training/dev data in v1.3; test prompts evaluation-only",
+   "status": "GATE_FAILED_SOURCE_EXCLUDED",
+   "next": "stronger model-origin filters + fresh independent sample, or owner-authored seeds"
+  },
+  {
+   "id": "N-08",
+   "severity": "HIGH",
+   "repo": "Juniper-1-Data",
+   "component": "j1-sft-v1.3 first build bf769ecd",
+   "evidence": "independent admission review: conv.chain trained 50/63 held-out pairs (F1); reserved phrasings via other families (F2); reverse_sort trainable as sort->reverse (F3); NOTICE omissions (F4); abstention 2:1 (F5)",
+   "repair": "Data 5162bf7; rebuilt manifest 8584130b; text-level regression tests",
+   "status": "FIXED_PENDING_REREVIEW",
+   "note": "caught before any training"
+  },
+  {
+   "id": "C-01",
+   "severity": "HIGH",
+   "repo": "Juniper-1-Data",
+   "component": "sftscore in-process python harness",
+   "evidence": "accepts 3 of 14 adversarial programs (frame inspection, patched builtins, fake marker)",
+   "repair": "j1data.codecheck out-of-process I/O checker; v1.3 coding evaluation = asserts AND graded python_suite",
+   "regression_test": "tests/test_codecheck.py exploits",
+   "status": "FIXED (evaluation); in-process harness remains for non-adversarial admission only"
+  },
+  {
+   "id": "C-02",
+   "severity": "HIGH",
+   "repo": "Juniper-1-Data",
+   "component": "MBPP split isolation (v1.2)",
+   "evidence": "37 MBPP test tasks have behaviourally identical twins in v1.2 train/dev (estimate was ~12); 166 train/dev items TWIN/AMBIGUOUS",
+   "repair": "cross-execution twin report; v1.3 quarantines 144 tasks",
+   "status": "FIXED in v1.3"
+  },
+  {
+   "id": "C-03",
+   "severity": "MEDIUM",
+   "repo": "Juniper-1-Data",
+   "component": "coding scorer strength",
+   "evidence": "upstream asserts accept 11.4% of demonstrably wrong programs; 2.2% with the graded suite; 3 of seed-1 pilot's 17 coding passes are wrong code",
+   "repair": "python_suite in the v1.3 bundle",
+   "status": "FIXED (v1.3 bundle)"
+  },
+  {
+   "id": "C-04",
+   "severity": "MEDIUM",
+   "repo": "Juniper-1-Data",
+   "component": "sandbox.run_python",
+   "evidence": "a program printing 'bwrap:' to stderr and exiting made the scorer record 'not executed' instead of failed",
+   "repair": "per-run launcher token proves sandbox start",
+   "regression_test": "tests/test_sft_dataset.py::test_program_stderr_cannot_fake_a_sandbox_setup_failure / test_a_real_setup_failure_is_reported",
+   "status": "FIXED"
+  },
+  {
+   "id": "T-01",
+   "severity": "MEDIUM",
+   "repo": "Juniper-1-Train",
+   "component": "j1bench.sft CLI device default",
+   "evidence": "on a rented host with a broken CUDA stack (pod ujsfypdqm5rhui) torch reported no device and the trainer would have run on the CPU",
+   "repair": "CLI refuses CPU unless --device cpu is explicit; pod runner asserts a usable GPU",
+   "regression_test": "tests/test_sft.py::test_cli_refuses_a_silent_cpu_fallback",
+   "status": "FIXED (sft/v2-stage 3b0e90b)"
+  },
+  {
+   "id": "O-01",
+   "severity": "MEDIUM",
+   "repo": "operations",
+   "component": "rented pod supervision",
+   "evidence": "pod omzwhqkxidvjgm ran ~40 min idle after its queue because FLOWBOX restarted and the controller was absent; its own watchdog stopped it at 6:20 PM EDT as designed; its GPU host was then taken, blocking data retrieval",
+   "repair": "watchdog on persistent volume worked; lesson: queue a self-stop at the end of the pod job, and keep outputs on a network volume reachable without the original host",
+   "status": "RECORDED"
+  },
+  {
+   "id": "P-01",
+   "severity": "LOW",
+   "repo": "Juniper-1-Train",
+   "component": "seed-report in-distribution slice",
+   "evidence": "family prefix 'if.' put evaluation-only if.paraphrase/if.compose_heldout into the in-distribution slice on the v1.3 bundle",
+   "repair": "slice excludes them (no effect on v1.2 results, verified)",
+   "status": "FIXED before any v2 decision"
+  },
+  {
+   "id": "V-01",
+   "severity": "HIGH",
+   "repo": "Juniper-1-Train",
+   "component": "SFT v2 stage (dataset v1.3)",
+   "evidence": "decision FAILED: arithmetic -0.15, injection -0.15, hierarchy -0.13, JSON -0.08 (CIs below -0.03), chat continents/element symbols below the knowledge margin; primary generalization +0.37/+0.34",
+   "repair": "none in this assignment: a follow-up protocol should restore those mixture shares or replay v1.2 episodes, everything else fixed",
+   "status": "OPEN (owner/reviewer decision)"
+  },
+  {
+   "id": "E-01",
+   "severity": "MEDIUM",
+   "repo": "Juniper-1-Data",
+   "component": "teacherverify v1",
+   "evidence": "layout defects: '= 85 .', U+202F/U+00A0 spaces and list bullets made correct equalities unverifiable (a bullet could read as a minus sign); matched set 44/300",
+   "repair": "v1.1 layout normalization with tests; protocol amendment before any arm trained; 80/300 matched, same false equations detected",
+   "status": "FIXED (Data#11)"
+  },
+  {
+   "id": "O-02",
+   "severity": "LOW",
+   "repo": "assignment operations",
+   "component": "pod lifecycle",
+   "evidence": "a watchdog-stopped pod could not be restarted (host GPU reassigned), so its seed 1/2 outputs and the smoke result file were lost; an over-broad pkill pattern killed the controller's own shell once",
+   "repair": "pull every output before a pod can stop; seeds re-run; smoke result regenerated from preserved manifests/logs; narrower process patterns",
+   "status": "MITIGATED"
+  },
+  {
+   "id": "T-02",
+   "severity": "LOW",
+   "repo": "assignment operations",
+   "component": "teacher runner",
+   "evidence": "first teacher start used the rejected 9.6B candidate's --n-cpu-moe 5 (OOM on 6 GB) and a wrong CLI argument; no output produced",
+   "repair": "qualified gpt-oss-20b evaluation flags (--n-cpu-moe 17); positional prompts path",
+   "status": "FIXED"
+  },
+  {
+   "id": "E-02",
+   "severity": "MEDIUM",
+   "repo": "Juniper-1-Train",
+   "component": "distillation v2 stage design",
+   "evidence": "registered 200 updates x 64 episodes over 1,272-episode arm datasets (318 matched problems) = ~10 passes; dev loss rises at every evaluation; bpb 0.960-0.970 > 0.943872 in every arm including C0; GSM8K 0.016-0.032 in every arm",
+   "repair": "next stage: size the update budget from the matched set (<= 2 passes) or register dev-loss early stopping; target skills the 143M student can express",
+   "status": "OPEN (recorded; no arm adopted)"
+  },
+  {
+   "id": "I-02",
+   "severity": "MEDIUM",
+   "repo": "infrastructure",
+   "component": "Hugging Face private storage (org CinqicX)",
+   "evidence": "7:15 AM EDT 10-14 commit refused: 'Private storage limit reached for org CinqicX'; 7 of 8 distillation checkpoints uploaded before the limit",
+   "repair": "C0 final preserved on archive HDD + FLOWBOX (verified); no plan purchased (owner decision)",
+   "status": "BLOCKED (owner)"
+  }
+ ]
+}

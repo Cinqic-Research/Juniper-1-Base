@@ -1,0 +1,142 @@
+{
+ "basis": {
+  "rate_usd_per_h": 1.929,
+  "ckpt_overhead_frac_15min": 0.03294444444444444,
+  "eval_overhead_frac": [
+   0.02,
+   0.05
+  ],
+  "interruption_allowance_frac": [
+   0.0,
+   0.1
+  ],
+  "throughput_variance": [
+   1.0,
+   0.9
+  ],
+  "startup": "65 s cold compile + 7.5 s restore per (re)start",
+  "note": "ESTIMATES from measured synthetic-data throughput; exposure schedule not frozen"
+ },
+ "rows": [
+  {
+   "profile": "optimized (compile, mb16, non-deterministic)",
+   "tokens_per_s": 115249,
+   "exposure_tokens": 3000000000.0,
+   "raw_hours": 7.23,
+   "hours_low": 7.62,
+   "hours_high": 9.59,
+   "usd_low": 14.7,
+   "usd_high": 18.49
+  },
+  {
+   "profile": "optimized (compile, mb16, non-deterministic)",
+   "tokens_per_s": 115249,
+   "exposure_tokens": 6000000000.0,
+   "raw_hours": 14.46,
+   "hours_low": 15.24,
+   "hours_high": 19.17,
+   "usd_low": 29.39,
+   "usd_high": 36.98
+  },
+  {
+   "profile": "optimized (compile, mb16, non-deterministic)",
+   "tokens_per_s": 115249,
+   "exposure_tokens": 15000000000.0,
+   "raw_hours": 36.15,
+   "hours_low": 38.09,
+   "hours_high": 47.93,
+   "usd_low": 73.48,
+   "usd_high": 92.45
+  },
+  {
+   "profile": "optimized deterministic (compile, mb16x2, strict)",
+   "tokens_per_s": 102708,
+   "exposure_tokens": 3000000000.0,
+   "raw_hours": 8.11,
+   "hours_low": 8.55,
+   "hours_high": 10.76,
+   "usd_low": 16.49,
+   "usd_high": 20.75
+  },
+  {
+   "profile": "optimized deterministic (compile, mb16x2, strict)",
+   "tokens_per_s": 102708,
+   "exposure_tokens": 6000000000.0,
+   "raw_hours": 16.23,
+   "hours_low": 17.1,
+   "hours_high": 21.51,
+   "usd_low": 32.98,
+   "usd_high": 41.49
+  },
+  {
+   "profile": "optimized deterministic (compile, mb16x2, strict)",
+   "tokens_per_s": 102708,
+   "exposure_tokens": 15000000000.0,
+   "raw_hours": 40.57,
+   "hours_low": 42.74,
+   "hours_high": 53.78,
+   "usd_low": 82.45,
+   "usd_high": 103.74
+  },
+  {
+   "profile": "optimized mb32 (compile)",
+   "tokens_per_s": 119306,
+   "exposure_tokens": 3000000000.0,
+   "raw_hours": 6.98,
+   "hours_low": 7.36,
+   "hours_high": 9.26,
+   "usd_low": 14.2,
+   "usd_high": 17.86
+  },
+  {
+   "profile": "optimized mb32 (compile)",
+   "tokens_per_s": 119306,
+   "exposure_tokens": 6000000000.0,
+   "raw_hours": 13.97,
+   "hours_low": 14.72,
+   "hours_high": 18.52,
+   "usd_low": 28.39,
+   "usd_high": 35.72
+  },
+  {
+   "profile": "optimized mb32 (compile)",
+   "tokens_per_s": 119306,
+   "exposure_tokens": 15000000000.0,
+   "raw_hours": 34.92,
+   "hours_low": 36.8,
+   "hours_high": 46.3,
+   "usd_low": 70.98,
+   "usd_high": 89.3
+  },
+  {
+   "profile": "reference (eager BF16, deterministic)",
+   "tokens_per_s": 51350,
+   "exposure_tokens": 3000000000.0,
+   "raw_hours": 16.23,
+   "hours_low": 17.1,
+   "hours_high": 21.51,
+   "usd_low": 32.98,
+   "usd_high": 41.5
+  },
+  {
+   "profile": "reference (eager BF16, deterministic)",
+   "tokens_per_s": 51350,
+   "exposure_tokens": 6000000000.0,
+   "raw_hours": 32.46,
+   "hours_low": 34.2,
+   "hours_high": 43.03,
+   "usd_low": 65.97,
+   "usd_high": 83.0
+  },
+  {
+   "profile": "reference (eager BF16, deterministic)",
+   "tokens_per_s": 51350,
+   "exposure_tokens": 15000000000.0,
+   "raw_hours": 81.14,
+   "hours_low": 85.49,
+   "hours_high": 107.56,
+   "usd_low": 164.91,
+   "usd_high": 207.49
+  }
+ ]
+}

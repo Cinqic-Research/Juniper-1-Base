@@ -1,0 +1,159 @@
+# Sources that were researched but are not admitted to j1-base v0.1.
+#
+# Entries here are never acquired or processed. Each records why, with
+# evidence, so that a later version can revisit the decision deliberately.
+# Researched 2026-10-07.
+
+[[considered]]
+source_id = "the-stack-dedup"
+origin = "https://huggingface.co/datasets/bigcode/the-stack-dedup"
+revision = "17cad72c886a2858e08d4c349a00d6466f54df63"
+state = "REVIEW_REQUIRED"
+reason = "Gated behind BigCode terms of use (update-to-latest and re-hosting obligations). Cinqic has not accepted them; accepting third-party terms is an owner decision. Permissive code is admitted instead through common-pile/stackv2_edu_filtered."
+evidence = ["https://huggingface.co/datasets/bigcode/the-stack-dedup"]
+
+[[considered]]
+source_id = "the-stack-v2"
+origin = "https://huggingface.co/datasets/bigcode/the-stack-v2-dedup"
+revision = "611ef38f"
+state = "REVIEW_REQUIRED"
+reason = "File contents are only Software Heritage IDs; bulk download requires a Software Heritage / INRIA agreement. Includes no-license repositories."
+evidence = ["https://huggingface.co/datasets/bigcode/the-stack-v2", "https://www.softwareheritage.org/2023/10/19/swh-statement-on-llm-for-code/"]
+
+[[considered]]
+source_id = "stack-edu-and-python-edu"
+origin = "https://huggingface.co/datasets/HuggingFaceTB/stack-edu"
+revision = "eeec5caa"
+state = "REVIEW_REQUIRED"
+reason = "Blob IDs only; text must be fetched from the Software Heritage S3 bucket under Software Heritage terms. The Common Pile re-release (stackv2_edu_filtered) carries text and per-file permissive licenses and is used instead."
+evidence = ["https://huggingface.co/datasets/HuggingFaceTB/stack-edu", "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus"]
+
+[[considered]]
+source_id = "github-code-clean"
+origin = "https://huggingface.co/datasets/codeparrot/github-code-clean"
+revision = "c48d40f9"
+state = "REJECTED"
+reason = "Includes GPL/AGPL/LGPL code and has no opt-out process; the dataset-level Apache-2.0 tag does not license the files."
+evidence = ["https://huggingface.co/datasets/codeparrot/github-code-clean"]
+
+[[considered]]
+source_id = "cosmopedia-v2"
+origin = "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus (cosmopedia-v2)"
+revision = "3ba9d605774198c5868892d7a8deda78031a781f"
+state = "REJECTED"
+reason = "Synthetic Mixtral-generated text. The Juniper 1 directive forbids filling the base corpus with generated prose; teacher data belongs to separately versioned post-training stages."
+evidence = ["https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus"]
+
+[[considered]]
+source_id = "openstax"
+origin = "https://github.com/openstax (osbooks-* repositories)"
+revision = "current main"
+state = "REJECTED"
+reason = "Relicensed to CC BY-NC-SA 4.0 on 2026-03-18/19; non-commercial terms are incompatible with an Apache-2.0 release. Pre-relicense CC BY snapshots would need an owner legal decision."
+evidence = ["https://github.com/openstax/osbooks-chemistry-bundle/blob/main/LICENSE"]
+
+[[considered]]
+source_id = "stackexchange-official-dump"
+origin = "https://stackoverflow.com/help/data-dumps (2024-07 and later)"
+revision = "n/a"
+state = "REJECTED"
+reason = "Access requires accepting terms restricting use to projects that do not train a large language model. Not accepted; the Common Pile community-dump derivative is used instead."
+evidence = ["https://wiki.archiveteam.org/index.php/Stack_Exchange"]
+
+[[considered]]
+source_id = "pes2o-full"
+origin = "https://huggingface.co/datasets/allenai/peS2o"
+revision = "636a503e"
+state = "REVIEW_REQUIRED"
+reason = "ODC-By covers the compilation only; per-paper licenses are not given. The openly licensed subset (common-pile/peS2o_filtered, 57 GB) is admissible but not acquired in v0.1 (storage and mixture: arXiv already supplies open-license papers)."
+evidence = ["https://huggingface.co/datasets/allenai/peS2o", "https://huggingface.co/datasets/common-pile/peS2o_filtered"]
+
+[[considered]]
+source_id = "open-web-math"
+origin = "https://huggingface.co/datasets/open-web-math/open-web-math"
+revision = "fde8ef8de2300f5e778f56261843dab89f230815"
+state = "APPROVED_WITH_ATTRIBUTION"
+reason = "Admissible (ODC-By plus Common Crawl ToU) but not acquired in v0.1: largely overlaps FineMath, which is extracted from the same crawl with a stronger math classifier."
+evidence = ["https://huggingface.co/datasets/open-web-math/open-web-math"]
+
+[[considered]]
+source_id = "cinqic-history-dataset"
+origin = "local: Cinqic-History-Dataset cinqic.history.v1"
+revision = "dataset-v1.0.0"
+state = "REJECTED"
+reason = "Contains private partitions (founder statements, assistant memories, session summaries) and marks AAA golden answers and exams as training-eligible; v1.1.0 is explicitly NOT APPROVED for training-data distribution. Cinqic material enters only through the allowlisted public documentation sources."
+evidence = ["local DATASET_CARD and ERRATA of Cinqic-History-Dataset"]
+
+[[considered]]
+source_id = "cinqic-website"
+origin = "https://github.com/Cinqic-Research/cinqic.com"
+revision = "33ded1e0f3fda18d745f09758e526439325f17b5"
+state = "REVIEW_REQUIRED"
+reason = "The repository carries no license file (NOASSERTION), and its pages state mutable product and model-identity facts that belong in post-training or App retrieval."
+evidence = ["https://github.com/Cinqic-Research/cinqic.com"]
+
+[[considered]]
+source_id = "project-gutenberg"
+origin = "https://huggingface.co/datasets/deepmind/pg19"
+revision = "4d28bd77"
+state = "APPROVED_WITH_ATTRIBUTION"
+reason = "US public domain, but pre-1919 English is far from the contemporary American-English target; not acquired in v0.1."
+evidence = ["https://www.gutenberg.org/policy/license.html"]
+
+# Established large corpora evaluated as alternative raw material (2026-10-07).
+
+[[considered]]
+source_id = "dclm-baseline"
+origin = "https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0"
+revision = "a3b142c183aebe5af344955ae20836eb34dcf69b"
+state = "TRAINING_ONLY_NO_REDISTRIBUTION"
+reason = "Strong general-web alternative (fastText quality classifier, ~4T tokens; CC-BY-4.0 on the compilation plus Common Crawl ToU). Not acquired in v0.1: FineWeb-Edu plus FineMath already supply the educational and STEM web foundation the design asks for at the target size, DCLM performs no PII anonymization and no decontamination, and adding it would duplicate much of the same crawl. Candidate for general-domain breadth in a later version once pilot domain losses are measured."
+evidence = ["https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0", "https://arxiv.org/abs/2406.11794"]
+
+[[considered]]
+source_id = "dolma-v1_7"
+origin = "https://huggingface.co/datasets/allenai/dolma"
+revision = "7f48140530a023e9ea4c5cfb141160922727d4d3"
+state = "REVIEW_REQUIRED"
+reason = "ODC-By compilation of heterogeneous subsets (Common Crawl, C4, Reddit, Gutenberg, Stack-derived code, peS2o, arXiv, Wikipedia) whose underlying terms differ per subset; the code inherits The Stack's terms and Reddit adds user-content PII risk. Every subset Juniper needs is covered by an individually licensed, better-filtered dataset already admitted."
+evidence = ["https://huggingface.co/datasets/allenai/dolma", "https://arxiv.org/abs/2402.00159"]
+
+[[considered]]
+source_id = "olmo-mix-1124"
+origin = "https://huggingface.co/datasets/allenai/olmo-mix-1124"
+revision = "99ee6aaace88779d1ef099d36251b91101c1679b"
+state = "REVIEW_REQUIRED"
+reason = "OLMo 2 pretraining mix (DCLM-baseline, StarCoder code, peS2o, arXiv, OpenWebMath, Algebraic Stack, Wikipedia). Its code is StarCoder-derived (gated BigCode terms) and its arXiv and peS2o parts are not restricted to open per-paper licenses; the web part is DCLM (see dclm-baseline)."
+evidence = ["https://huggingface.co/datasets/allenai/olmo-mix-1124", "https://arxiv.org/abs/2501.00656"]
+
+[[considered]]
+source_id = "dolmino-mix-1124"
+origin = "https://huggingface.co/datasets/allenai/dolmino-mix-1124"
+revision = "a319f19eef1e257417b11ea8c30da266ae175557"
+state = "REJECTED"
+reason = "Mid-training mixture that includes synthetic math and instruction collections (FLAN-style task data derived from public benchmarks): synthetic text is excluded from base pretraining by directive and the instruction collections carry high evaluation-contamination risk."
+evidence = ["https://huggingface.co/datasets/allenai/dolmino-mix-1124"]
+
+[[considered]]
+source_id = "fineweb"
+origin = "https://huggingface.co/datasets/HuggingFaceFW/fineweb"
+revision = "9bb295ddab0e05d785b879661af7260fed5140fc"
+state = "TRAINING_ONLY_NO_REDISTRIBUTION"
+reason = "Unfiltered-for-education parent of FineWeb-Edu; FineWeb-Edu was chosen because the educational classifier matches the design's educational foundation and outperforms FineWeb on knowledge and reasoning benchmarks at small scale."
+evidence = ["https://arxiv.org/abs/2406.17557"]
+
+[[considered]]
+source_id = "proof-pile-2"
+origin = "https://huggingface.co/datasets/EleutherAI/proof-pile-2"
+revision = "901a9273a770e9d4138c5ddd91802f9c5c6cdc4b"
+state = "REVIEW_REQUIRED"
+reason = "Its arXiv part (RedPajama) is not filtered to open per-paper licenses; FineMath and open-license arXiv cover mathematics instead."
+evidence = ["https://huggingface.co/datasets/EleutherAI/proof-pile-2"]
+
+[[considered]]
+source_id = "starcoderdata"
+origin = "https://huggingface.co/datasets/bigcode/starcoderdata"
+revision = "9fc30b578cedaec69e47302df72cf00feed7c8c4"
+state = "REVIEW_REQUIRED"
+reason = "Gated behind BigCode terms that Cinqic has not accepted."
+evidence = ["https://huggingface.co/datasets/bigcode/starcoderdata"]

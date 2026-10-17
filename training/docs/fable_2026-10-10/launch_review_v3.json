@@ -1,0 +1,59 @@
+{
+ "schema": "j1.launch-review.v2",
+ "utc": "2026-10-11T16:30:46Z",
+ "reviewed_commit": "828edd192fd97057c5126d6731191d2118638538",
+ "reviewed_tree": "3f3d05c169005625c9bec9b15e9bb03288277b67",
+ "basis": "continuation of j1-base-r2 (launch policy LP-4): deployed commit 828edd1 = prep d4e8166 (main-equivalent, carries the reviewed f0b4dea/8f91e88 launch chain) + fddf206 (continuation mode, retention, manifest/policy/contract/gates; fresh-context review APPROVE_WITH_FIXES C-01..C-11) + 51fb198 (fixes; re-check APPROVE, no blocking IDs) + d329418/828edd1 (gate B14 manifest binding; re-check items C-12 flowbox unit script paths, C-15 preserver prune_failed message, C-14 FC-7a note; B13c re-pin). The 828edd1 code delta beyond the APPROVE head is two lines in a FLOWBOX-only script and one print in the preserver (tests green: 414 passed). j1bench/ is byte-identical to the launched f0b4dea tree.",
+ "verdict": "APPROVE_WITH_FIXES_APPLIED",
+ "reviews": [
+  {
+   "ledger": "findings/review_train_pr6_tooling.md",
+   "subject": "8534f2abb698 (PR #6 head)",
+   "verdict": "findings T-01..T-22",
+   "sha256": "b3eee0d655ce9eeb82a18ae626e25211bbc8cc098fe9c43c0e11576522032563"
+  },
+  {
+   "ledger": "findings/review_numerics_selection.md",
+   "subject": "8534f2abb698 model/trainer/selection",
+   "verdict": "no CRITICAL/HIGH; N-01..N-17",
+   "sha256": "3214af090a0dac16053ed8ef1852fb18dde9115b36e8c54d900782cfb6321020"
+  },
+  {
+   "ledger": "findings/review_repairs_99273bb.md",
+   "subject": "99273bb (B17 repair + supervision + launch chain + compile checker + funding)",
+   "verdict": "A APPROVE_WITH_FIXES [R-07]; B APPROVE; C APPROVE_WITH_FIXES [R-01,R-02]; D [R-06,R-08]; E [R-03,R-04]; F [R-05,R-10]",
+   "sha256": "39367a528c8fdee573d1a6dbbdcac810a2b890ba0bc9aa9a5cf04684d7a31bf6"
+  },
+  {
+   "ledger": "findings/review_rfix_HEAD.md",
+   "subject": "a378835 (fix commits) + post-scope 6b795e0/3dd9b50",
+   "verdict": "APPROVE_WITH_FIXES: R-01..R-08,R-10 FIXED; RR-01/RR-04 fixed in 6b795e0; RR-10 fixed in 63cad4d; RR-03 fixed in 63cad4d",
+   "sha256": "3477314ca0ebcec802a8f067f58197af58345a5e92b34ffd262e535813a3639d"
+  },
+  {
+   "ledger": "findings/review_x2_d577343.md",
+   "subject": "8f91e88..d577343 (post-deployment commits; authorization binds the gate file by hash)",
+   "verdict": "APPROVE_WITH_FIXES: X-01 (MEDIUM, non-blocking: a docs-only weakened gate definition would pass the pod; mitigated by the committed-HEAD rule, git history and this review record; on-pod definition-identity check deferred), X-02 (stale comments), X-03 (Data checkout head; readiness re-run from the Data main head 47cd1dd), X-07 (manifest/records regenerated for the deployed commit)",
+   "sha256": "96db9e28dfe0c651ebc7e2088a5bd80f7a73ff51721946d7ecdc85f7f569e1c7"
+  },
+  {
+   "ledger": "findings/review_continuation_fddf206.md",
+   "subject": "fddf206 (continuation + retention) and re-check of 51fb198",
+   "verdict": "fddf206: APPROVE_WITH_FIXES (C-01, C-02 blocking; C-03..C-11); 51fb198: APPROVE (C-01..C-06, C-08..C-11 RESOLVED; C-07 advisory OPEN; new C-12..C-15 non-blocking)",
+   "sha256": "771999a49428604b0b041d82ccc24fd988e851af08a8807247392e246d893592"
+  }
+ ],
+ "fixes_applied_after_last_review": [
+  "C-12: flowbox_launch_units.sh resolves MANIFEST/DEST with readlink -f and resets failed units",
+  "C-15: preserve_ckpts.release_hdd prints prune_failed when a delete fails",
+  "C-14: FC-7a amendment note in funding_contract_v7.json; gate B13c re-pinned",
+  "C-13: runbook order build -> commit manifest -> pin B14 -> commit gates -> readiness -> authorize"
+ ],
+ "open_advisory": [
+  "C-07: no automated throughput projection for the continuation; the QUAL3 B17/first-step measurement is a human judgement; the guard's frozen/absent rules and the controllers' deadline bound the downside"
+ ],
+ "previous_record": {
+  "path": "docs/fable_2026-10-10/launch_review_v2.json",
+  "sha256": "041b161ff14e517fbc5d65347e6f99d81572d44c38540388016cc8d3a7543763"
+ }
+}

@@ -1,0 +1,7 @@
+# Overlay on runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404
+# (sha256:0a360022e8de4375af99430f84e8b38951acc397252163a37ceac7204d01be35), which provides torch 2.8.0+cu128,
+# triton 3.4.0 and numpy 2.1.2 (results/env/pip-freeze.txt). Install with --system-site-packages.
+# pytest pinned to the FLOWBOX/CI version (review T-22: the pod overlay carried 8.4.2).
+pyarrow==25.0.1
+pytest==9.1.1
+tokenizers==0.23.2

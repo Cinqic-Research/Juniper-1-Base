@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/j1train/j1bench/train.py", line 1124, in <module>
+    main()
+  File "/root/j1train/j1bench/train.py", line 1120, in main
+    Trainer(args).run()
+  File "/root/j1train/j1bench/train.py", line 863, in run
+    summary = self._run_body()
+              ^^^^^^^^^^^^^^^^
+  File "/root/j1train/j1bench/train.py", line 938, in _run_body
+    raise C.CheckpointError(
+j1bench.ckpt.CheckpointError: checkpoints exist under t1 but none is valid and compatible; inspect them or start a new --run-id
+[ckpt] candidate /root/ckpt-recovery/t1/ckpt-000000040-b1a78c79 step=40: incompatible run contract 4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59 (expected cd90cc717e8b6b3265c260f064f29a5ea08a473f39d886157b821d2f38280ec4)
+[ckpt] candidate /root/ckpt-recovery/t1/ckpt-000000035-9e6db749 step=35: incompatible run contract 4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59 (expected cd90cc717e8b6b3265c260f064f29a5ea08a473f39d886157b821d2f38280ec4)
+[ckpt] candidate /root/ckpt-recovery/t1/ckpt-000000025-b2150637 step=25: incompatible run contract 4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59 (expected cd90cc717e8b6b3265c260f064f29a5ea08a473f39d886157b821d2f38280ec4)
+[ckpt] candidate /root/ckpt-recovery/t1/ckpt-000000015-20654228 step=15: incompatible run contract 4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59 (expected cd90cc717e8b6b3265c260f064f29a5ea08a473f39d886157b821d2f38280ec4)
+[ckpt] candidate /root/ckpt-recovery/t1/ckpt-000000010-ad294749 step=10: incompatible run contract 4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59 (expected cd90cc717e8b6b3265c260f064f29a5ea08a473f39d886157b821d2f38280ec4)
+[ckpt] candidate /root/ckpt-recovery/t1/ckpt-000000000-5a0e9470 step=0: incompatible run contract 4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59 (expected cd90cc717e8b6b3265c260f064f29a5ea08a473f39d886157b821d2f38280ec4)

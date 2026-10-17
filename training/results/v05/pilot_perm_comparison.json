@@ -1,0 +1,44 @@
+{
+ "task": "synthetic-perm (fixed permutation chain, 10% noise), vocab 32768",
+ "steps": 200,
+ "same_batches": true,
+ "lr_equal": true,
+ "ln_V": 10.39720770839918,
+ "loss_at": {
+  "1": [
+   10.5195,
+   10.5196
+  ],
+  "25": [
+   9.8258,
+   9.7632
+  ],
+  "50": [
+   7.614,
+   7.4097
+  ],
+  "100": [
+   1.5481,
+   1.5484
+  ],
+  "150": [
+   1.4574,
+   1.4581
+  ],
+  "200": [
+   1.4654,
+   1.4663
+  ]
+ },
+ "mean_last20": {
+  "reference": 1.4625148177146912,
+  "optimized": 1.4629393875598908
+ },
+ "rel_diff_mean_last20": 0.00029030122639242843,
+ "max_abs_loss_diff": 0.8696341514587402,
+ "mean_abs_loss_diff_last50": 0.0009613585472106934,
+ "data_s_median_ms": {
+  "reference": 18.766150809824467,
+  "optimized": 18.09505419805646
+ }
+}

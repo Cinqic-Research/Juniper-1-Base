@@ -1,0 +1,656 @@
+{
+ "bundle_sha256": "f96320150025d0250b5fbe7f5bc44b1f39b56ea836c8dfe842dbfc48c508eea1",
+ "generations_sha256": "2d964c92a4a74b430139e95007b60038ad9e88cde3f2728f602aab3981d3072c",
+ "model": {
+  "checkpoint": "ckpt-000001226-4389d0e3",
+  "kind": "sft_checkpoint",
+  "manifest_sha256": "3c0163f7d6a65d761825d58bab91b2fa42ddef73e096b0b2d482acafe7a68a2d",
+  "model_state_sha256": "4d60c4cfdcd590e6583e7f7ac3e544958fc0060ccf26b0b8d2737a13f76f0e36",
+  "run_id": "j1-sft-v1-rep-s3",
+  "stage": "juniper1-sft-v1-replication",
+  "updates": 1226
+ },
+ "report_sha256": "eda14fd744a2a0df836a5202a6f35f473e65cde0efab94e5214e43559fb73a4b",
+ "schema": "j1.sft-scores.v1",
+ "scorer": "j1.sfteval.v1",
+ "summary": {
+  "test/chat/all": {
+   "abstained": 0.07323411292227734,
+   "lenient": 0.4434207417906922,
+   "n": 4233,
+   "protocol_valid": 0.9482636428065202,
+   "strict": 0.44318450271674936,
+   "strict_ci95": [
+    0.42827787930502176,
+    0.45819415306434524
+   ]
+  },
+  "test/chat/category/factuality": {
+   "abstained": 0.0625,
+   "lenient": 0.3068181818181818,
+   "n": 176,
+   "protocol_valid": 1.0,
+   "strict": 0.3068181818181818,
+   "strict_ci95": [
+    0.24341724823895594,
+    0.3784719400327914
+   ]
+  },
+  "test/chat/category/hierarchy": {
+   "abstained": 0.0,
+   "lenient": 0.42081447963800905,
+   "n": 221,
+   "protocol_valid": 1.0,
+   "strict": 0.42081447963800905,
+   "strict_ci95": [
+    0.35762283960829844,
+    0.48671191887377463
+   ]
+  },
+  "test/chat/category/injection": {
+   "abstained": 0.0,
+   "lenient": 0.9466666666666667,
+   "n": 300,
+   "protocol_valid": 0.9966666666666667,
+   "strict": 0.9466666666666667,
+   "strict_ci95": [
+    0.9151308579259881,
+    0.9669080876041592
+   ]
+  },
+  "test/chat/category/instruction_following": {
+   "abstained": 0.0,
+   "lenient": 0.4326424870466321,
+   "n": 772,
+   "protocol_valid": 1.0,
+   "strict": 0.4326424870466321,
+   "strict_ci95": [
+    0.3981122180860719,
+    0.46783977660371945
+   ]
+  },
+  "test/chat/category/json": {
+   "abstained": 0.0,
+   "lenient": 0.698,
+   "n": 500,
+   "protocol_valid": 0.986,
+   "strict": 0.698,
+   "strict_ci95": [
+    0.6563723117189698,
+    0.7366084494109878
+   ]
+  },
+  "test/chat/category/math": {
+   "abstained": 0.0,
+   "lenient": 0.37636363636363634,
+   "n": 1100,
+   "protocol_valid": 0.8863636363636364,
+   "strict": 0.37545454545454543,
+   "strict_ci95": [
+    0.3473182898784371,
+    0.4044576578399161
+   ]
+  },
+  "test/chat/category/python": {
+   "abstained": 0.0023148148148148147,
+   "lenient": 0.06018518518518518,
+   "n": 864,
+   "protocol_valid": 0.9004629629629629,
+   "strict": 0.06018518518518518,
+   "strict_ci95": [
+    0.04618950737312652,
+    0.0780745016548711
+   ]
+  },
+  "test/chat/category/uncertainty": {
+   "abstained": 0.99,
+   "lenient": 0.99,
+   "n": 300,
+   "protocol_valid": 1.0,
+   "strict": 0.99,
+   "strict_ci95": [
+    0.9710165064181933,
+    0.9965933815887595
+   ]
+  },
+  "test/chat/family/arith.basic": {
+   "abstained": 0.0,
+   "lenient": 0.61,
+   "n": 200,
+   "protocol_valid": 1.0,
+   "strict": 0.61,
+   "strict_ci95": [
+    0.5409374590206674,
+    0.6749165691121607
+   ]
+  },
+  "test/chat/family/arith.multi": {
+   "abstained": 0.0,
+   "lenient": 0.615,
+   "n": 200,
+   "protocol_valid": 1.0,
+   "strict": 0.615,
+   "strict_ci95": [
+    0.5459986716511277,
+    0.6796669032150108
+   ]
+  },
+  "test/chat/family/arith.word": {
+   "abstained": 0.0,
+   "lenient": 0.78,
+   "n": 200,
+   "protocol_valid": 1.0,
+   "strict": 0.78,
+   "strict_ci95": [
+    0.717612000289618,
+    0.8318346167757626
+   ]
+  },
+  "test/chat/family/ext.gsm8k": {
+   "abstained": 0.0,
+   "lenient": 0.026,
+   "n": 500,
+   "protocol_valid": 0.75,
+   "strict": 0.024,
+   "strict_ci95": [
+    0.013781314596471032,
+    0.0414770576365599
+   ]
+  },
+  "test/chat/family/ext.humaneval": {
+   "abstained": 0.012195121951219513,
+   "lenient": 0.012195121951219513,
+   "n": 164,
+   "protocol_valid": 0.8780487804878049,
+   "strict": 0.012195121951219513,
+   "strict_ci95": [
+    0.003350738063428692,
+    0.04336870142167364
+   ]
+  },
+  "test/chat/family/ext.mbpp": {
+   "abstained": 0.0,
+   "lenient": 0.034,
+   "n": 500,
+   "protocol_valid": 0.868,
+   "strict": 0.034,
+   "strict_ci95": [
+    0.021334519731109065,
+    0.05377136569030357
+   ]
+  },
+  "test/chat/family/facts.country_capital": {
+   "abstained": 0.05,
+   "lenient": 0.025,
+   "n": 40,
+   "protocol_valid": 1.0,
+   "strict": 0.025,
+   "strict_ci95": [
+    0.004426831453704344,
+    0.12881369088183614
+   ]
+  },
+  "test/chat/family/facts.country_continent": {
+   "abstained": 0.0,
+   "lenient": 0.8809523809523809,
+   "n": 42,
+   "protocol_valid": 1.0,
+   "strict": 0.8809523809523809,
+   "strict_ci95": [
+    0.7499960961284236,
+    0.9480619670510726
+   ]
+  },
+  "test/chat/family/facts.country_currency": {
+   "abstained": 0.02857142857142857,
+   "lenient": 0.11428571428571428,
+   "n": 35,
+   "protocol_valid": 1.0,
+   "strict": 0.11428571428571428,
+   "strict_ci95": [
+    0.04535179301555728,
+    0.2595146878621273
+   ]
+  },
+  "test/chat/family/facts.element_number": {
+   "abstained": 0.20833333333333334,
+   "lenient": 0.041666666666666664,
+   "n": 24,
+   "protocol_valid": 1.0,
+   "strict": 0.041666666666666664,
+   "strict_ci95": [
+    0.007393456083597233,
+    0.20241806658845338
+   ]
+  },
+  "test/chat/family/facts.element_symbol": {
+   "abstained": 0.125,
+   "lenient": 0.4583333333333333,
+   "n": 24,
+   "protocol_valid": 1.0,
+   "strict": 0.4583333333333333,
+   "strict_ci95": [
+    0.27891333613001446,
+    0.6492513477492627
+   ]
+  },
+  "test/chat/family/facts.us_state_capital": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 11,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.25883296999442634
+   ]
+  },
+  "test/chat/family/heldout.if.count_vowels": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 22,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.14865487660514556
+   ]
+  },
+  "test/chat/family/heldout.if.every_other": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 46,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.07707356420776004
+   ]
+  },
+  "test/chat/family/heldout.if.last_letters": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 54,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.06641358906903712
+   ]
+  },
+  "test/chat/family/heldout.if.reverse_sort": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 45,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.07865159987608598
+   ]
+  },
+  "test/chat/family/heldout.if.swap_first_last": {
+   "abstained": 0.0,
+   "lenient": 0.015625,
+   "n": 64,
+   "protocol_valid": 1.0,
+   "strict": 0.015625,
+   "strict_ci95": [
+    0.0027635418927853816,
+    0.08334101684786545
+   ]
+  },
+  "test/chat/family/heldout.if.word_after": {
+   "abstained": 0.0,
+   "lenient": 0.04878048780487805,
+   "n": 41,
+   "protocol_valid": 1.0,
+   "strict": 0.04878048780487805,
+   "strict_ci95": [
+    0.013480945243651773,
+    0.16138978994036302
+   ]
+  },
+  "test/chat/family/heldout.json.0": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 61,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.0592438687773587
+   ]
+  },
+  "test/chat/family/heldout.json.1": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 78,
+   "protocol_valid": 0.9102564102564102,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.04693781041791674
+   ]
+  },
+  "test/chat/family/heldout.json.2": {
+   "abstained": 0.0,
+   "lenient": 0.8032786885245902,
+   "n": 61,
+   "protocol_valid": 1.0,
+   "strict": 0.8032786885245902,
+   "strict_ci95": [
+    0.6869005932236627,
+    0.8837219781736771
+   ]
+  },
+  "test/chat/family/hierarchy.system": {
+   "abstained": 0.0,
+   "lenient": 0.42081447963800905,
+   "n": 221,
+   "protocol_valid": 1.0,
+   "strict": 0.42081447963800905,
+   "strict_ci95": [
+    0.35762283960829844,
+    0.48671191887377463
+   ]
+  },
+  "test/chat/family/if.bullet_list": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 13,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.7719046248681998,
+    1.0
+   ]
+  },
+  "test/chat/family/if.capitalize_words": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 19,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.8318207737404363,
+    0.9999999999999999
+   ]
+  },
+  "test/chat/family/if.count_letter": {
+   "abstained": 0.0,
+   "lenient": 0.8333333333333334,
+   "n": 18,
+   "protocol_valid": 1.0,
+   "strict": 0.8333333333333334,
+   "strict_ci95": [
+    0.6077796169796655,
+    0.9416342323981449
+   ]
+  },
+  "test/chat/family/if.count_words": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 15,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.7961166964035129,
+    1.0
+   ]
+  },
+  "test/chat/family/if.extract_numbers": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 23,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.8568833796149266,
+    1.0
+   ]
+  },
+  "test/chat/family/if.first_word": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 8,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.6755924316585924,
+    1.0
+   ]
+  },
+  "test/chat/family/if.join_and": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 15,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.7961166964035129,
+    1.0
+   ]
+  },
+  "test/chat/family/if.last_word": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 2,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.3423802239546494,
+    1.0
+   ]
+  },
+  "test/chat/family/if.lower": {
+   "abstained": 0.0,
+   "lenient": 0.7777777777777778,
+   "n": 9,
+   "protocol_valid": 1.0,
+   "strict": 0.7777777777777778,
+   "strict_ci95": [
+    0.4525889666922117,
+    0.9367748934594303
+   ]
+  },
+  "test/chat/family/if.numbered_list": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 17,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.8156818626193445,
+    1.0
+   ]
+  },
+  "test/chat/family/if.remove_word": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 21,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.8453609790128563,
+    1.0
+   ]
+  },
+  "test/chat/family/if.repeat_word": {
+   "abstained": 0.0,
+   "lenient": 0.6428571428571429,
+   "n": 14,
+   "protocol_valid": 1.0,
+   "strict": 0.6428571428571429,
+   "strict_ci95": [
+    0.38764422924295516,
+    0.8365526834990504
+   ]
+  },
+  "test/chat/family/if.replace_word": {
+   "abstained": 0.0,
+   "lenient": 0.9166666666666666,
+   "n": 24,
+   "protocol_valid": 1.0,
+   "strict": 0.9166666666666666,
+   "strict_ci95": [
+    0.7415119762950233,
+    0.9768411849122034
+   ]
+  },
+  "test/chat/family/if.reverse_words": {
+   "abstained": 0.0,
+   "lenient": 0.7727272727272727,
+   "n": 22,
+   "protocol_valid": 1.0,
+   "strict": 0.7727272727272727,
+   "strict_ci95": [
+    0.5656004665183513,
+    0.898769600787933
+   ]
+  },
+  "test/chat/family/if.sort_words": {
+   "abstained": 0.0,
+   "lenient": 0.1,
+   "n": 20,
+   "protocol_valid": 1.0,
+   "strict": 0.1,
+   "strict_ci95": [
+    0.02786648096169142,
+    0.3010336471864123
+   ]
+  },
+  "test/chat/family/if.spell": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 20,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.16112516018512965
+   ]
+  },
+  "test/chat/family/if.upper": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 24,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.862023793448672,
+    0.9999999999999999
+   ]
+  },
+  "test/chat/family/if.user_format": {
+   "abstained": 0.0,
+   "lenient": 0.495,
+   "n": 200,
+   "protocol_valid": 1.0,
+   "strict": 0.495,
+   "strict_ci95": [
+    0.4264584530693174,
+    0.5637300001973722
+   ]
+  },
+  "test/chat/family/if.word_length": {
+   "abstained": 0.0,
+   "lenient": 0.1875,
+   "n": 16,
+   "protocol_valid": 1.0,
+   "strict": 0.1875,
+   "strict_ci95": [
+    0.06591599019788683,
+    0.4300888116754912
+   ]
+  },
+  "test/chat/family/injection.document": {
+   "abstained": 0.0,
+   "lenient": 0.9466666666666667,
+   "n": 300,
+   "protocol_valid": 0.9966666666666667,
+   "strict": 0.9466666666666667,
+   "strict_ci95": [
+    0.9151308579259881,
+    0.9669080876041592
+   ]
+  },
+  "test/chat/family/json.array": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 58,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.9378821432937142,
+    0.9999999999999999
+   ]
+  },
+  "test/chat/family/json.create": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 61,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.9407561312226413,
+    1.0
+   ]
+  },
+  "test/chat/family/json.extract": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 64,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.9433759393644894,
+    1.0
+   ]
+  },
+  "test/chat/family/json.kv": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 59,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.9388706285678009,
+    0.9999999999999999
+   ]
+  },
+  "test/chat/family/json.read": {
+   "abstained": 0.0,
+   "lenient": 1.0,
+   "n": 58,
+   "protocol_valid": 1.0,
+   "strict": 1.0,
+   "strict_ci95": [
+    0.9378821432937142,
+    0.9999999999999999
+   ]
+  },
+  "test/chat/family/python.output": {
+   "abstained": 0.0,
+   "lenient": 0.165,
+   "n": 200,
+   "protocol_valid": 1.0,
+   "strict": 0.165,
+   "strict_ci95": [
+    0.11996855297651626,
+    0.22265781589168893
+   ]
+  },
+  "test/chat/family/uncertainty.abstain": {
+   "abstained": 0.99,
+   "lenient": 0.99,
+   "n": 300,
+   "protocol_valid": 1.0,
+   "strict": 0.99,
+   "strict_ci95": [
+    0.9710165064181933,
+    0.9965933815887595
+   ]
+  }
+ }
+}

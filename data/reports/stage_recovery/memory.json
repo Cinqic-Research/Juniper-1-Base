@@ -1,0 +1,110 @@
+{
+ "dedup": {
+  "f0.1 drill reference (1,857,537 candidates)": {
+   "peak_rss_kib": 510016,
+   "wall_seconds": 76.92
+  },
+  "f0.25 (7,698,532 candidates, def3c45)": {
+   "exit_status": "0",
+   "peak_rss_kib": 1400972,
+   "wall": "4:55.05"
+  },
+  "f1.0 (20,196,491 candidates, historical v0.2 run, previous dedup code)": {
+   "peak_rss_kib": 2934436,
+   "source": "data/logs/v0.2-dedup.log",
+   "wall": "12:50.03"
+  }
+ },
+ "token_shards": {
+  "build_log_new_0.25": {
+   "peak_rss_kib": 1240412,
+   "schema": "j1.token-shards-build-log.v1",
+   "seconds": 273.4,
+   "splits": {
+    "test": {
+     "commits": 65,
+     "max_commit_interval_seconds": 4.329181701999914,
+     "recovery_events": [],
+     "resumed_from": {
+      "next_shard": 0,
+      "phase": "spill",
+      "placed": 0
+     },
+     "tokenize_and_spill": 4.4,
+     "total": 14.1
+    },
+    "train": {
+     "commits": 66,
+     "max_commit_interval_seconds": 124.62143964300049,
+     "recovery_events": [],
+     "resumed_from": {
+      "next_shard": 0,
+      "phase": "spill",
+      "placed": 0
+     },
+     "tokenize_and_spill": 198.1,
+     "total": 235.8
+    },
+    "validation": {
+     "commits": 65,
+     "max_commit_interval_seconds": 12.019098541999483,
+     "recovery_events": [],
+     "resumed_from": {
+      "next_shard": 0,
+      "phase": "spill",
+      "placed": 0
+     },
+     "tokenize_and_spill": 12.2,
+     "total": 22.7
+    }
+   }
+  },
+  "new-0.05": {
+   "exit_status": "0",
+   "peak_rss_kib": 1123160,
+   "wall": "3:02.53"
+  },
+  "new-0.25": {
+   "exit_status": "0",
+   "peak_rss_kib": 1240412,
+   "wall": "4:34.01"
+  },
+  "note": "new = commit def3c45 (first run, concurrent with other jobs); old = parent commit 3b19a87 tokshards.py",
+  "old-0.05": {
+   "exit_status": "0",
+   "peak_rss_kib": 1247420,
+   "wall": "0:41.53"
+  },
+  "old-0.25": {
+   "exit_status": "0",
+   "peak_rss_kib": 2535004,
+   "wall": "3:31.12"
+  },
+  "old_vs_new_identity_0.05_at_c10d566": {
+   "differing": [
+    "shards.json"
+   ],
+   "doc_index_content_equal": {
+    "test-docs.parquet": true,
+    "train-docs.parquet": true,
+    "validation-docs.parquet": true
+   },
+   "files_compared": [
+    "shards.json",
+    "test-docs.parquet",
+    "test-tokens-00000.bin",
+    "train-docs.parquet",
+    "train-tokens-00000.bin",
+    "validation-docs.parquet",
+    "validation-tokens-00000.bin"
+   ],
+   "shards_json_equal_without_old_seconds": true,
+   "train_documents": 148641,
+   "train_stream_tokens": 149814008
+  },
+  "train_documents": {
+   "0.05": 148641,
+   "0.25": 598982
+  }
+ }
+}

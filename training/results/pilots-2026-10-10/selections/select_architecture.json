@@ -1,0 +1,71 @@
+{
+ "rule": "architecture-v1",
+ "noise_band_rel": 0.00570274138827859,
+ "pooled_rel_seed_sd": 0.002851370694139295,
+ "pooled_dof": 3,
+ "equal_compute_seconds": 1418.216870713979,
+ "equal_compute_boundary": "cumulative synchronized optimizer-update time, excluding the first (compile) update; evaluation and checkpoint time excluded",
+ "rows": [
+  {
+   "preset": "j1-core-28x640",
+   "seeds": [
+    1
+   ],
+   "n_params": 143072384,
+   "lr": 0.0009295,
+   "equal_token_bpb": 1.1757708370027016,
+   "equal_compute_bpb": 1.1834715907102007,
+   "train_seconds_excl_first_update": 1554.0742987208068,
+   "first_update_seconds": 57.48696279525757,
+   "wall_seconds": 1944.9667319580913,
+   "tokens_per_s_median": 117741.07413644408,
+   "peak_vram_gib": 28.584765911102295,
+   "equal_token_improvement_rel": 0.0,
+   "equal_compute_improvement_rel": 0.0,
+   "beats_band_both": false,
+   "beats_band_one": false
+  },
+  {
+   "preset": "j1-deep-30x576",
+   "seeds": [
+    1
+   ],
+   "n_params": 146905152,
+   "lr": 0.0009798,
+   "equal_token_bpb": 1.1727045120090327,
+   "equal_compute_bpb": 1.1848790751269473,
+   "train_seconds_excl_first_update": 1607.7833826430142,
+   "first_update_seconds": 62.88732873275876,
+   "wall_seconds": 1999.202373124659,
+   "tokens_per_s_median": 113821.91974137179,
+   "peak_vram_gib": 30.121002674102783,
+   "equal_token_improvement_rel": 0.0026079274099752425,
+   "equal_compute_improvement_rel": -0.001189284498077407,
+   "beats_band_both": false,
+   "beats_band_one": false
+  },
+  {
+   "preset": "j1-wide-20x768",
+   "seeds": [
+    1
+   ],
+   "n_params": 142771456,
+   "lr": 0.0016971,
+   "equal_token_bpb": 1.1726242977515906,
+   "equal_compute_bpb": 1.1726242977515906,
+   "train_seconds_excl_first_update": 1418.216870713979,
+   "first_update_seconds": 42.49203421548009,
+   "wall_seconds": 1765.631706032902,
+   "tokens_per_s_median": 128997.4694260624,
+   "peak_vram_gib": 24.998048305511475,
+   "equal_token_improvement_rel": 0.0026761501068798318,
+   "equal_compute_improvement_rel": 0.009165655554182448,
+   "beats_band_both": false,
+   "beats_band_one": true
+  }
+ ],
+ "status": "INCONCLUSIVE",
+ "decision": "j1-core-28x640",
+ "provisional": true,
+ "reason": "an alternative clears the band on only one comparison; core retained provisionally"
+}

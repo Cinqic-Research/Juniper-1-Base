@@ -1,0 +1,140 @@
+# Juniper 1 base-pretraining build configuration.
+#
+# The build identity hashes this file (canonical JSON of the parsed TOML)
+# together with the source registry, the exclusion registry and the code
+# version. Changing any value requires a new build id; finished builds are
+# never overwritten.
+
+[build]
+id = "j1-base-v0.2"
+stage = "base-pretraining"
+audit_reject_text_rate = 0.01   # fraction of quality rejects whose text is kept for audit
+
+[normalize]
+version = "j1.normalize.v1"
+
+[privacy]
+version = "j1.privacy.v1"
+
+[quality]
+version = "j1.quality.v1"
+max_replacement_char_frac = 0.001
+max_mojibake_per_kchar = 1.0
+max_base64_char_frac = 0.2
+max_spam_terms_per_kword = 8.0
+math_latex_per_kword = 8.0
+technical_code_line_frac = 0.25
+
+# Gopher (Rae et al., 2021, App. A) thresholds for prose.
+[quality.kinds.prose]
+min_words = 50
+max_words = 200000
+min_mean_word_len = 3.0
+max_mean_word_len = 10.0
+max_symbol_ratio = 0.1
+max_bullet_line_frac = 0.9
+max_ellipsis_line_frac = 0.3
+min_alpha_word_frac = 0.8
+min_stopwords = 2
+max_dup_line_frac = 0.3
+max_dup_para_frac = 0.3
+max_dup_line_char_frac = 0.2
+max_dup_para_char_frac = 0.2
+max_top_ngram_char_frac = { 2 = 0.20, 3 = 0.18, 4 = 0.16 }
+max_dup_ngram_char_frac = { 5 = 0.15, 6 = 0.14, 7 = 0.13, 8 = 0.12, 9 = 0.11, 10 = 0.10 }
+max_line_len = 50000
+min_english_function_word_frac = 0.15
+max_non_latin_letter_frac = 0.2
+
+# Equations shift word statistics: shorter "words", fewer alphabetic tokens.
+[quality.kinds.math]
+min_words = 50
+max_words = 200000
+min_mean_word_len = 2.0
+max_mean_word_len = 15.0
+max_symbol_ratio = 0.25
+max_bullet_line_frac = 0.9
+max_ellipsis_line_frac = 0.3
+min_alpha_word_frac = 0.5
+min_stopwords = 2
+max_dup_line_frac = 0.35
+max_dup_para_frac = 0.3
+max_dup_line_char_frac = 0.25
+max_dup_para_char_frac = 0.2
+max_top_ngram_char_frac = { 2 = 0.20, 3 = 0.18, 4 = 0.16 }
+max_dup_ngram_char_frac = { 5 = 0.20, 6 = 0.19, 7 = 0.18, 8 = 0.17, 9 = 0.16, 10 = 0.15 }
+max_line_len = 50000
+min_english_function_word_frac = 0.08
+max_non_latin_letter_frac = 0.2
+
+# Prose with substantial code or markup (Q&A, technical documentation, papers).
+[quality.kinds.technical]
+min_words = 30
+max_words = 200000
+min_mean_word_len = 2.0
+max_mean_word_len = 20.0
+max_symbol_ratio = 0.3
+max_bullet_line_frac = 0.95
+max_ellipsis_line_frac = 0.3
+min_alpha_word_frac = 0.4
+min_stopwords = 2
+max_dup_line_frac = 0.5
+max_dup_para_frac = 0.4
+max_dup_line_char_frac = 0.3
+max_dup_para_char_frac = 0.3
+max_top_ngram_char_frac = { 2 = 0.25, 3 = 0.22, 4 = 0.20 }
+max_dup_ngram_char_frac = { 5 = 0.30, 6 = 0.28, 7 = 0.26, 8 = 0.24, 9 = 0.22, 10 = 0.20 }
+max_line_len = 50000
+min_english_function_word_frac = 0.05
+max_non_latin_letter_frac = 0.2
+
+# Repetition limits for human-edited open textbooks (sources with curated = true):
+# learning objectives, key points and summaries restate whole sentences of the
+# body by design, so their repeated-n-gram share is flat across n (measured
+# 0.22-0.29 on rejected LibreTexts pages); repetitive spam is typically above 0.5.
+[quality.curated]
+max_dup_line_frac = 0.5
+max_dup_line_char_frac = 0.3
+max_dup_para_frac = 0.4
+max_dup_para_char_frac = 0.3
+max_top_ngram_char_frac = { 2 = 0.25, 3 = 0.22, 4 = 0.20 }
+max_dup_ngram_char_frac = { 5 = 0.35, 6 = 0.35, 7 = 0.35, 8 = 0.35, 9 = 0.35, 10 = 0.35 }
+
+# StarCoder / The Stack file filters.
+[quality.code]
+min_chars = 64
+min_nonblank_lines = 3
+max_bytes = 1000000
+max_mean_line_len = 100.0
+max_line_len = 1000
+min_alnum_frac = 0.25
+max_numeric_token_frac = 0.5
+max_non_latin_letter_frac = 0.3
+
+[minhash]
+version = "j1.minhash.v1"
+num_perm = 112
+shingle_words = 5
+seed = 1
+
+# LSH banding is applied at dedup time from the stored signatures.
+[dedup]
+version = "j1.dedup.v1"
+bands = 14
+rows = 8
+
+[contamination]
+version = "j1.contamination.v3"
+ngram = 13
+min_coverage = 0.5            # share of one evaluation item's 13-grams a document must contain
+min_informative_words = 6     # alphabetic words (>= 2 chars) an indexed 13-gram must contain
+short_min_words = 6           # short exact items are protected as whole normalized word sequences
+short_min_chars = 48
+short_min_informative_words = 5
+
+[splits]
+version = "j1.split.v1"
+namespace = "j1.split.v1"
+validation_fraction = 0.001
+test_fraction = 0.001
+leak_fraction = 0.5   # a train document covering half of a held-out document's 13-grams (or vice versa) is removed

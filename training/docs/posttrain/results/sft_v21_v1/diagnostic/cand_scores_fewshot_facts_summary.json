@@ -1,0 +1,119 @@
+{
+ "bundle_sha256": "935e12edb42a0a39cb75839ffbb74fcb5e01e034746f2725e9ff985ecdb89906",
+ "code_sha256": {
+  "codecheck.py": "f0dd45def15f76365440f4c98cd3de61782aad1ec6c0b1e7ada8aee0cbfbacb3",
+  "jtok.py": "96a9c03f6db8ff0a3fe980a0a15cf54671c4fe0d4f093826929afbca66e78116",
+  "protocol.py": "a857624409fd2dcbf8be4bf2cd2ef5dee69db06216b15439661d8e5d6c547e32",
+  "sandbox.py": "1d7077d38a06c3f8a31a5899e9f6d4a0e37f57c7e50a342790ca880caa4c34b8",
+  "sfteval.py": "943351892f43111164c5324700250381d5e7b6e45176efcfe6118eac736cf4ae",
+  "sftscore.py": "30a496f002999a091964096defad9cda8682ec4d1bf2d6d873ae328c9e5ffc2c"
+ },
+ "executable_scoring": {
+  "limitation": "untrusted emitted-output diagnostic; not authenticated function returns; no adversarial qualification",
+  "policy": "j1.codecheck.emitted-output-diagnostic.v2",
+  "purpose": "functional_diagnostic"
+ },
+ "generations_sha256": "ffe8fe1760f3a43e4b78788799ee638fcf1fdf875978314e1989a7f478d75488",
+ "model": {
+  "checkpoint": "ckpt-000001226-4bf03e97",
+  "kind": "sft_checkpoint",
+  "manifest_sha256": "20efc742bb5db4968e16371950b9eeb9dc2907a9c702a7aaf931c917a4f71c54",
+  "model_state_sha256": "2192387a7118ce62df9fc272fe88589790ab0f35228eba91dee8c90fd2ce68be",
+  "run_id": "j1-sft-v21-s1",
+  "stage": "juniper1-sft-v21",
+  "updates": 1226
+ },
+ "report_sha256": "43c0fe8d8bc771e3e535ed808762b121e42b13cd9d2293f25bc6671691478589",
+ "schema": "j1.sft-scores.v1",
+ "scorer": "j1.sfteval.v3",
+ "summary": {
+  "test/base_fewshot/all": {
+   "abstained": 0.0,
+   "lenient": 0.24431818181818182,
+   "n": 176,
+   "protocol_valid": 1.0,
+   "strict": 0.24431818181818182,
+   "strict_ci95": [
+    0.1867438871744886,
+    0.31281533259694166
+   ]
+  },
+  "test/base_fewshot/category/factuality": {
+   "abstained": 0.0,
+   "lenient": 0.24431818181818182,
+   "n": 176,
+   "protocol_valid": 1.0,
+   "strict": 0.24431818181818182,
+   "strict_ci95": [
+    0.1867438871744886,
+    0.31281533259694166
+   ]
+  },
+  "test/base_fewshot/family/facts.country_capital": {
+   "abstained": 0.0,
+   "lenient": 0.275,
+   "n": 40,
+   "protocol_valid": 1.0,
+   "strict": 0.275,
+   "strict_ci95": [
+    0.16108016177777446,
+    0.4283495593285342
+   ]
+  },
+  "test/base_fewshot/family/facts.country_continent": {
+   "abstained": 0.0,
+   "lenient": 0.5714285714285714,
+   "n": 42,
+   "protocol_valid": 1.0,
+   "strict": 0.5714285714285714,
+   "strict_ci95": [
+    0.4220623976565314,
+    0.7088234891896241
+   ]
+  },
+  "test/base_fewshot/family/facts.country_currency": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 35,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.0989009937303319
+   ]
+  },
+  "test/base_fewshot/family/facts.element_number": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 24,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.13797620655132792
+   ]
+  },
+  "test/base_fewshot/family/facts.element_symbol": {
+   "abstained": 0.0,
+   "lenient": 0.3333333333333333,
+   "n": 24,
+   "protocol_valid": 1.0,
+   "strict": 0.3333333333333333,
+   "strict_ci95": [
+    0.1797219023644938,
+    0.5329368331526154
+   ]
+  },
+  "test/base_fewshot/family/facts.us_state_capital": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 11,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.25883296999442634
+   ]
+  }
+ }
+}

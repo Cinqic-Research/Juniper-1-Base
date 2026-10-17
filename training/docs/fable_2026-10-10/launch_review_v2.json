@@ -1,0 +1,51 @@
+{
+ "schema": "j1.launch-review.v2",
+ "utc": "2026-10-11T12:06:43Z",
+ "reviewed_commit": "f0b4dea81fb6003ae15ace0f9dbe3f5ecf780d10",
+ "reviewed_tree": "e0009c23ae005467ab258eee297daa0e89e421b9",
+ "basis": "deployed launch commit f0b4dea: 8f91e88 (merge of the reviewed PR #7 head 715f8d4, tree equal) plus the post-deployment commits 8f91e88..d577343 (B16/B17/manifest records, drill script, authorization gate-file binding) reviewed by a further fresh-context reviewer, plus one docs-only evidence commit f0b4dea (drill report); j1bench/ is byte-identical to 715f8d4",
+ "verdict": "APPROVE_WITH_FIXES_APPLIED",
+ "reviews": [
+  {
+   "ledger": "findings/review_train_pr6_tooling.md",
+   "subject": "8534f2abb698 (PR #6 head)",
+   "verdict": "findings T-01..T-22",
+   "sha256": "b3eee0d655ce9eeb82a18ae626e25211bbc8cc098fe9c43c0e11576522032563"
+  },
+  {
+   "ledger": "findings/review_numerics_selection.md",
+   "subject": "8534f2abb698 model/trainer/selection",
+   "verdict": "no CRITICAL/HIGH; N-01..N-17",
+   "sha256": "3214af090a0dac16053ed8ef1852fb18dde9115b36e8c54d900782cfb6321020"
+  },
+  {
+   "ledger": "findings/review_repairs_99273bb.md",
+   "subject": "99273bb (B17 repair + supervision + launch chain + compile checker + funding)",
+   "verdict": "A APPROVE_WITH_FIXES [R-07]; B APPROVE; C APPROVE_WITH_FIXES [R-01,R-02]; D [R-06,R-08]; E [R-03,R-04]; F [R-05,R-10]",
+   "sha256": "39367a528c8fdee573d1a6dbbdcac810a2b890ba0bc9aa9a5cf04684d7a31bf6"
+  },
+  {
+   "ledger": "findings/review_rfix_HEAD.md",
+   "subject": "a378835 (fix commits) + post-scope 6b795e0/3dd9b50",
+   "verdict": "APPROVE_WITH_FIXES: R-01..R-08,R-10 FIXED; RR-01/RR-04 fixed in 6b795e0; RR-10 fixed in 63cad4d; RR-03 fixed in 63cad4d",
+   "sha256": "3477314ca0ebcec802a8f067f58197af58345a5e92b34ffd262e535813a3639d"
+  },
+  {
+   "ledger": "findings/review_x2_d577343.md",
+   "subject": "8f91e88..d577343 (post-deployment commits; authorization binds the gate file by hash)",
+   "verdict": "APPROVE_WITH_FIXES: X-01 (MEDIUM, non-blocking: a docs-only weakened gate definition would pass the pod; mitigated by the committed-HEAD rule, git history and this review record; on-pod definition-identity check deferred), X-02 (stale comments), X-03 (Data checkout head; readiness re-run from the Data main head 47cd1dd), X-07 (manifest/records regenerated for the deployed commit)",
+   "sha256": "96db9e28dfe0c651ebc7e2088a5bd80f7a73ff51721946d7ecdc85f7f569e1c7"
+  }
+ ],
+ "fixes_applied_after_last_review": [
+  "X-03: readiness evaluated with the Data checkout at 47cd1dd (main)",
+  "X-07: manifest, B16 and B17 records regenerated for f0b4dea"
+ ],
+ "scope": "trainer startup (B17), supervision, launch chain (readiness binding, preconditions, manifest, guard, contract), compile checker v2, funding contracts v5/v6, admission control, preservation tools; all regression tests pass (395 passed, 1 skipped at 715f8d4)",
+ "independence": "implementers (lead and three implementer agents) were not the validators: four fresh-context reviewers produced the ledgers above; the lead applied or delegated the fixes and the fix set was re-reviewed by a further fresh-context reviewer",
+ "not_covered": "the docs-only commits after the deployed commit (this record, the B17 record, the manifest) are evidence, not code",
+ "known_limitations": [
+  "X-01: the on-pod preconditions bind the gate file by hash (uploaded, authorized) and the deployed policy's required ids, not the gate definitions' content; a weakened definition would have to be committed and consistently uploaded by the lead and is visible in git history",
+  "X-02: stale header comments in authorize_launch.sh / launch_tranche.sh / launch_guard.py describe the superseded deployed-tree rule"
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "schema": "j1.preservation-receipts-note.v1",
+ "build": "j1-base-v0.2.2",
+ "annotates": "reports/j1-base-v0.2.2/preservation_receipts.json",
+ "annotated_record_sha256": "9f9391b9786fa53576f848be679f8816902623a6ca349e12ed6451a760187e2e",
+ "findings": "D-05 and D-12 (independent review of PR #5/#4, 2026-10-10)",
+ "manifest": {
+  "file": "reports/j1-base-v0.2.2/MANIFEST.sha256",
+  "sha256": "8e1e9fc9aad246842a634830286f4c4f1cb76e70578765593b7885a0b7319a71",
+  "entries": 18
+ },
+ "canonical_hdd_root": {
+  "path": "/media/cinqic/Cinqic Storage/juniper1-data/data",
+  "files_present": 17,
+  "files_absent": [
+   "./accepted/excluded_doc_ids_union.json"
+  ],
+  "statement": "The receipt's hdd entry ('(canonical) verified: true', files 18) is correct for 17 of the 18 MANIFEST.sha256 entries. The canonical accepted directory data/accepted/j1-base-v0.2.2/ holds excluded_doc_ids.json and manifest.json only. ./accepted/excluded_doc_ids_union.json exists in the archive staging payload only (juniper1-archive/autonomous-2026-10-10/stage/preserve_v022/payload/accepted/), where it is a plain copy byte-identical to excluded_doc_ids.json (both SHA-256 4bd2e8ef7f5f95c1c2541d1e1c6945a563eece4b3726ed6d80c6a743e0af4ca1 = the committed union exclusion list). The 17 other payload files are hard links to the canonical root. MANIFEST.sha256 uses the staging-payload layout (token_shards/, accepted/, tokenizer/), so `sha256sum -c` must be run from the payload directory, where 18/18 verify; the payload's 17 shared files are the canonical bytes (same inodes), and the union file has no canonical counterpart. The HF and Drive copies hold all 18."
+ },
+ "hf_readback_receipt": {
+  "file": "reports/j1-base-v0.2.2/hf_receipt.json",
+  "source": "juniper1-archive/autonomous-2026-10-10/stage/preserve_v022/hf_receipt.json (read-only copy, byte-identical)",
+  "repo": "CinqicX/juniper1-corpus",
+  "commit": "6f8c986783c8662485748fa0153bae5b2e39aeaa",
+  "entries": 19,
+  "statement": "19 per-file readback entries (the 18 MANIFEST.sha256 files plus MANIFEST.sha256 itself), each with size, SHA-256 and readback_ok true; every per-file SHA-256 equals the MANIFEST.sha256 entry for that path and the MANIFEST.sha256 entry equals the SHA-256 of the committed MANIFEST.sha256 (tests/test_v022_records.py)."
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "acquire_version": "j1.acquire.v1",
+ "acquired_utc": "2026-10-07T15:31:00+00:00",
+ "files": [
+  {
+   "git_blob_oid": "061c62b2d4380bd8b9ee33c226b541e00b868d05",
+   "path": "PRIVACY.md",
+   "size": 3312
+  },
+  {
+   "git_blob_oid": "940c281717ab38b71e413329db6b5ea1be2ede3c",
+   "path": "README.md",
+   "size": 10796
+  },
+  {
+   "git_blob_oid": "19a20ac6b56c60f6ba7ff764689a0a6dbf7864a4",
+   "path": "SECURITY.md",
+   "size": 1909
+  },
+  {
+   "git_blob_oid": "813b27f4b01d44537c68b284eb7f89a1fe8dbaee",
+   "path": "THIRD_PARTY_NOTICES.md",
+   "size": 2939
+  },
+  {
+   "git_blob_oid": "3f67cdcc2650a14d44f9fd304f48a041c372f18f",
+   "path": "android/README.md",
+   "size": 6348
+  }
+ ],
+ "mechanism": "git",
+ "repo": "Cinqic-Research/Cinqic-Calculator",
+ "revision": "15b765cf98d920efcc018f5bcbcb6af9e9f925c4",
+ "schema": "j1.acquisition-manifest.v1",
+ "selected_bytes": 25304,
+ "selected_file_count": 5,
+ "selection": {
+  "exclude": [
+   "tests/*",
+   "CHANGELOG.md",
+   "*review*",
+   "*audit*",
+   "node_modules/*",
+   "vendor/*",
+   "third_party/*"
+  ],
+  "include": [
+   "*.md"
+  ]
+ },
+ "source_id": "cinqic-calculator-docs",
+ "upstream_file_count": 96
+}

@@ -1,0 +1,7 @@
+[ckpt] step 0 -> /root/qual-ckpt8/qual-det-B/ckpt-000000000-5cd9c276 (116.3 MiB, 0.61s)
+step 1 loss 10.3366 lr 0.0002 898ms
+step 10 loss 8.2249 lr 0.000971 446ms
+[ckpt] step 10 -> /root/qual-ckpt8/qual-det-B/ckpt-000000010-75b66ff8 (349.0 MiB, 1.69s)
+step 20 loss 7.6883 lr 0.000689 446ms
+[ckpt] step 20 -> /root/qual-ckpt8/qual-det-B/ckpt-000000020-5325c761 (349.0 MiB, 1.77s)
+{"steps_run": 20, "final_step": 20, "tokens_per_s_median": 147058.16420836604, "step_ms_median": 445.6467980053276, "peak_vram_gib": 11.507285118103027, "final_param_sha256": "8e0bd725c0e63cb313028a739071bf39d821ba753e8fc0d32b8ac69f721440c7"}

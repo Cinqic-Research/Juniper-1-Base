@@ -1,0 +1,4652 @@
+{
+ "schema": "j1.token-count-summary.v1",
+ "shards": [
+  {
+   "accepted_sha256": "066c5aabfd5a3a7b7856ec4242240c7642ec77fcb582bdc9f0258ce3eb2a2090",
+   "accepted_shard": "test/arxiv-papers/arxiv-papers-0000.parquet",
+   "counts_sha256": "eb7e7174b891e83de4591df74601f4c7046b24ee7eef7c97f83bc6d63afce3ad",
+   "documents": 1,
+   "source_id": "arxiv-papers",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 22884,
+    "measure-28k": 22670,
+    "measure-32k": 22349
+   }
+  },
+  {
+   "accepted_sha256": "5343ddf9c5821508e426295845c6d24fbd10d01e73292f6fd7248a2bdc1de53d",
+   "accepted_shard": "test/arxiv-papers/arxiv-papers-0002.parquet",
+   "counts_sha256": "09b4d03cc1b8bfe5bb7619961236009a756ec88fa3476edb9250eb44c0290dba",
+   "documents": 3,
+   "source_id": "arxiv-papers",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 63855,
+    "measure-28k": 63275,
+    "measure-32k": 62704
+   }
+  },
+  {
+   "accepted_sha256": "e9102ea881a5bd8661fd0aeb2dafae1f01eddf289b5f440d2a36ffb7700e439d",
+   "accepted_shard": "test/arxiv-papers/arxiv-papers-0003.parquet",
+   "counts_sha256": "0e9b903925fe3ee2d14be7e072f4a325627181042bd0a78c7ab8209383243006",
+   "documents": 1,
+   "source_id": "arxiv-papers",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 7938,
+    "measure-28k": 7858,
+    "measure-32k": 7785
+   }
+  },
+  {
+   "accepted_sha256": "ca8c1f81939996597b6318ae04a8eec12436d743646883e07e75049f112be119",
+   "accepted_shard": "test/finemath-4plus/train-00001-of-00064.r00000000.parquet",
+   "counts_sha256": "b1ef058ef12e638c8b14e12546ef91208efac6198af9b04c782485974ca25217",
+   "documents": 4,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 4283,
+    "measure-28k": 4237,
+    "measure-32k": 4216
+   }
+  },
+  {
+   "accepted_sha256": "15b07e966d83dedf0792a2b5c4e4dc767cc936c27ddeba485864921780da9bd5",
+   "accepted_shard": "test/finemath-4plus/train-00004-of-00064.r00000000.parquet",
+   "counts_sha256": "52c2ef76ab85fa59f910e97e5a8ae51246a35d32391b1e90e824c2ca5808612f",
+   "documents": 4,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 3488,
+    "measure-28k": 3468,
+    "measure-32k": 3436
+   }
+  },
+  {
+   "accepted_sha256": "8c1e1f8ce1b63fc1c1b9a6d86d3ebb8c3e5cbc04141b26a4c61f42944a14a985",
+   "accepted_shard": "test/finemath-4plus/train-00005-of-00064.r00000000.parquet",
+   "counts_sha256": "efb28ae44706bb179314136bbc66e2b43d489117127169019a1c4fd83ba73553",
+   "documents": 7,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 20433,
+    "measure-28k": 20209,
+    "measure-32k": 20072
+   }
+  },
+  {
+   "accepted_sha256": "5277412cd8192accebe5c05c00b7feac61bb3af8d1c1888cd23b31077b497f8a",
+   "accepted_shard": "test/finemath-4plus/train-00012-of-00064.r00100000.parquet",
+   "counts_sha256": "e466d883b334d0f05b53e7a63681cf225a47591b61d61eafe8dbdd80d752304d",
+   "documents": 1,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 2720,
+    "measure-28k": 2676,
+    "measure-32k": 2642
+   }
+  },
+  {
+   "accepted_sha256": "c2b08107e42886e73bad662a37a69af5fa9ed0dbc62e2ed802d6af2e8e787e2f",
+   "accepted_shard": "test/finemath-4plus/train-00013-of-00064.r00100000.parquet",
+   "counts_sha256": "e853065f4765a82e7c4596cf227afa27c44540bc9a0bfef9b144537244f1e21d",
+   "documents": 2,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 1072,
+    "measure-28k": 1068,
+    "measure-32k": 1064
+   }
+  },
+  {
+   "accepted_sha256": "e3e9b8ff4acf8a9e8991fe0c13dd4334237db1bbf7ae957f9c620713bbd10d0f",
+   "accepted_shard": "test/finemath-4plus/train-00016-of-00064.r00000000.parquet",
+   "counts_sha256": "46794f03124c9f1b562f696c6d1f5aeda84ba665417649befe7e628c5eba9329",
+   "documents": 6,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 16051,
+    "measure-28k": 15812,
+    "measure-32k": 15670
+   }
+  },
+  {
+   "accepted_sha256": "7111de85706c8e9eca5bfb0f5ddb482fb7e03e5aa81e6e4837e97311864a38ad",
+   "accepted_shard": "test/finemath-4plus/train-00019-of-00064.r00000000.parquet",
+   "counts_sha256": "99575ca2f261ac9797d8183be14642a15f3cc1183c171bbb0dd07d841bc92ac7",
+   "documents": 9,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 18723,
+    "measure-28k": 18592,
+    "measure-32k": 18430
+   }
+  },
+  {
+   "accepted_sha256": "cb97181b3c7710141514fa3f4017cb2a981f184654a315aea1a7ff019e5daeef",
+   "accepted_shard": "test/finemath-4plus/train-00020-of-00064.r00000000.parquet",
+   "counts_sha256": "2525dfc6a85fbaacb5ad1518148db0e49b2f7f21150cfa36f6d3ab4ecf0484bc",
+   "documents": 7,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 9597,
+    "measure-28k": 9504,
+    "measure-32k": 9469
+   }
+  },
+  {
+   "accepted_sha256": "74406c641c967599beb0a6be735442d3fd11bd7b246ddd53660c24e14ffd81ef",
+   "accepted_shard": "test/finemath-4plus/train-00024-of-00064.r00100000.parquet",
+   "counts_sha256": "376138d415fd3181ccf2d959aae7fc0b68e154879e879f30b86db1b2d5bfa822",
+   "documents": 1,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 2305,
+    "measure-28k": 2282,
+    "measure-32k": 2274
+   }
+  },
+  {
+   "accepted_sha256": "cf0e4eeb2d24c3d01c5003fbc315bfb66ccdbbe8a53d1528d8fa2e1935000522",
+   "accepted_shard": "test/finemath-4plus/train-00026-of-00064.r00000000.parquet",
+   "counts_sha256": "a4560cdd671f51a5a948b4ee699d958940d3eb8dda0acc569351b0b570358fac",
+   "documents": 9,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 7584,
+    "measure-28k": 7521,
+    "measure-32k": 7425
+   }
+  },
+  {
+   "accepted_sha256": "0e9c327e2b21efd1f3933abb5e21fd8c8aa4e493dd5b10a2b3f7aa023e12be19",
+   "accepted_shard": "test/finemath-4plus/train-00029-of-00064.r00000000.parquet",
+   "counts_sha256": "2a0eb384b5691e9ef5725ef6767796fdedd6a3e0499be6ba5a4d6043918a2d78",
+   "documents": 3,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 2261,
+    "measure-28k": 2246,
+    "measure-32k": 2227
+   }
+  },
+  {
+   "accepted_sha256": "825334de8367718a701a50dcdf210954973736b0884ad7b20e001478c2b6ee90",
+   "accepted_shard": "test/finemath-4plus/train-00031-of-00064.r00000000.parquet",
+   "counts_sha256": "db2ed2994c08dd5d425a753705328f2529ffe75be5b68ba8722ebba87a98ea58",
+   "documents": 3,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 6701,
+    "measure-28k": 6557,
+    "measure-32k": 6512
+   }
+  },
+  {
+   "accepted_sha256": "55850ddb648e1d14810375cb14051de9429a849f67ba8ed6cf5d8e7e413d0030",
+   "accepted_shard": "test/finemath-4plus/train-00053-of-00064.r00000000.parquet",
+   "counts_sha256": "855b8c7a99bc5ec11376312ed91b22cc4db42edd7bded04af365a43367bfb06b",
+   "documents": 2,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 1568,
+    "measure-28k": 1553,
+    "measure-32k": 1537
+   }
+  },
+  {
+   "accepted_sha256": "b2467bcb02350b67ce9cfbf543098fba979dfb0f8bcefd7d009bfff5a8194462",
+   "accepted_shard": "test/finemath-4plus/train-00054-of-00064.r00100000.parquet",
+   "counts_sha256": "4ceafac4b7b80c5a2613144c4dcaddce31d604446df5493dc4cde10ca9a02a3e",
+   "documents": 1,
+   "source_id": "finemath-4plus",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 828,
+    "measure-28k": 822,
+    "measure-32k": 819
+   }
+  },
+  {
+   "accepted_sha256": "49679a3b5d92d230522825d99d64c3f401b29685e9ad3cb9b470ef87846d46e7",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00003-of-00234.r00200000.parquet",
+   "counts_sha256": "5a9653d8e230606c7d00edfc59c749905e008cdad7de25315db8afebd81b5b9e",
+   "documents": 41,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 56953,
+    "measure-28k": 56068,
+    "measure-32k": 55394
+   }
+  },
+  {
+   "accepted_sha256": "daed238291b38b837ad9266b88c381bc66529d5a77eca9c3eae2d3c2ae059072",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00003-of-00234.r00400000.parquet",
+   "counts_sha256": "07899c01309d7637f9fd1109a1d6192f73b77d35a24674731916ec56a176ef4d",
+   "documents": 31,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 27958,
+    "measure-28k": 27511,
+    "measure-32k": 27171
+   }
+  },
+  {
+   "accepted_sha256": "496d9eaa4206c1331e083d2d73a285ef02d59442a5e390a0e6ac7096be3ae8b1",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00006-of-00234.r00100000.parquet",
+   "counts_sha256": "4f1ba049bb162d4dc7ded69cbebc7ffa84e08fd69dcea078e4a0bcaa6164d65d",
+   "documents": 29,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 23430,
+    "measure-28k": 23106,
+    "measure-32k": 22863
+   }
+  },
+  {
+   "accepted_sha256": "9fbe83933f4f40ab5ef0286dd252aac4d151c5a33f5ff031df766521567f5bff",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00006-of-00234.r00200000.parquet",
+   "counts_sha256": "8655b39642561e1e6989732e31ed5f9b43b12c0336bec60494b4f75304a22de6",
+   "documents": 38,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 48228,
+    "measure-28k": 47447,
+    "measure-32k": 46856
+   }
+  },
+  {
+   "accepted_sha256": "92589a1cefe1c553185ef5f126f8de071f53a5ea2eeb82a6b615ccf38e963f7e",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00006-of-00234.r00700000.parquet",
+   "counts_sha256": "2522b015a7706c69201a7f85742640cc11f15441c69a2136e2f27afff78d553d",
+   "documents": 42,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 42543,
+    "measure-28k": 41859,
+    "measure-32k": 41335
+   }
+  },
+  {
+   "accepted_sha256": "9b7162a7d19bae3f5d054c57ec444235854b921fb4982dbc387cfc30ef935f12",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00069-of-00234.r00500000.parquet",
+   "counts_sha256": "efdc6a4093bf0f942c8f5113bb0e5a5c9fff76cc898fd10869607f4e2d6fe67e",
+   "documents": 34,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 44831,
+    "measure-28k": 44204,
+    "measure-32k": 43678
+   }
+  },
+  {
+   "accepted_sha256": "43cc41f677ff5805e50493c68c79d1aa9c2ed72317f780c3810f97e7da87eaa1",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00069-of-00234.r00800000.parquet",
+   "counts_sha256": "fcbc5beb1867f396b2e5c7d4b751fcc7ce1f1c322ec22425f0a44836a763d640",
+   "documents": 2,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 1202,
+    "measure-28k": 1190,
+    "measure-32k": 1176
+   }
+  },
+  {
+   "accepted_sha256": "7f4a25e520f20389dca87114432f0171c51d5fda6b55c8a91dddff5101fcec9d",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00091-of-00234.r00100000.parquet",
+   "counts_sha256": "7b6559a7d1770985764b06325a7c0359e39de2809337f493b9f06ed9193201d9",
+   "documents": 30,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 25455,
+    "measure-28k": 25111,
+    "measure-32k": 24806
+   }
+  },
+  {
+   "accepted_sha256": "aa5a528a68913b1dae2153d3195cfdadf50d27bdfd8c2a92589b9c472adf76b1",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00091-of-00234.r00400000.parquet",
+   "counts_sha256": "ca5562f08f44eefdd3f4e355d95efb57e122775bac3b8a6959820d3207a0f2fd",
+   "documents": 43,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 36148,
+    "measure-28k": 35639,
+    "measure-32k": 35269
+   }
+  },
+  {
+   "accepted_sha256": "a76dfd67f2901eb9881cc726c790fe38685808c60120f2a42cea54819923dadc",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00091-of-00234.r00500000.parquet",
+   "counts_sha256": "27baf6b10f77f40e53384d4c63f4289937d1059c81e26c67587a2464c45122f0",
+   "documents": 21,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 22095,
+    "measure-28k": 21738,
+    "measure-32k": 21467
+   }
+  },
+  {
+   "accepted_sha256": "65f855dfe255ffe2397faea79fc0ec7834f5a95887a594e5345257d20ec1f7d8",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00095-of-00234.r00700000.parquet",
+   "counts_sha256": "d03150d2adcac34c5500dee0a16af75ce6352e3f02d679bce3b33f018d942378",
+   "documents": 25,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 22567,
+    "measure-28k": 22255,
+    "measure-32k": 21931
+   }
+  },
+  {
+   "accepted_sha256": "1ba3c2d64664478a1ecc52ab16156820397b793e009f5de63fd1c8e75a975312",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00095-of-00234.r00800000.parquet",
+   "counts_sha256": "ca58efe1f51ca9a1c3ceca75d798ecc7f6ed50e304af0b0f4618be5145a23c58",
+   "documents": 4,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 3926,
+    "measure-28k": 3877,
+    "measure-32k": 3831
+   }
+  },
+  {
+   "accepted_sha256": "970e0e06f8225c997a30311b156adf4e9d606ed443e220265aaf4e73393395d7",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00099-of-00234.r00000000.parquet",
+   "counts_sha256": "4031038c1c065bff9ad77bf21b304b072caefe606fa916fee630de8e5102772a",
+   "documents": 25,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 21646,
+    "measure-28k": 21379,
+    "measure-32k": 21173
+   }
+  },
+  {
+   "accepted_sha256": "116d659b8ba3e013db5f1d5d4e6103b88ccc787cce4b1a0c946e74f04914f327",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00099-of-00234.r00300000.parquet",
+   "counts_sha256": "beee3f7fed2fa80383d74b602b5d9c1268fa609296f48811d1d5b0594f6df0bf",
+   "documents": 15,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 16242,
+    "measure-28k": 15990,
+    "measure-32k": 15804
+   }
+  },
+  {
+   "accepted_sha256": "487ee817746c9538d4da0e7eca48b85f9d0ec9343f5b8e7ec551c2602535c8c8",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00099-of-00234.r00600000.parquet",
+   "counts_sha256": "e97c639d834ea9246d4d39d5d8befcd6765f9bdc5ef9bc7466c31b2a767fbeb6",
+   "documents": 21,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 20536,
+    "measure-28k": 20262,
+    "measure-32k": 19962
+   }
+  },
+  {
+   "accepted_sha256": "31e09dccc76607be0da66987a180669bc3c9e74a398ce27a10a8179bb6f1bf45",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00109-of-00234.r00200000.parquet",
+   "counts_sha256": "431c050b5d98687af8cf72dad68eb7b327c40944351416153ca53545618290d9",
+   "documents": 24,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 18086,
+    "measure-28k": 17823,
+    "measure-32k": 17621
+   }
+  },
+  {
+   "accepted_sha256": "6cdcfd2df2fbb22aef96e5a5e966e471eca1079782701bde42dcd75cac494792",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00181-of-00234.r00000000.parquet",
+   "counts_sha256": "e197032ac8c6169f7469357139c2b09aaa9d965b1e9dffd8b9174b49968effd7",
+   "documents": 21,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 18707,
+    "measure-28k": 18406,
+    "measure-32k": 18162
+   }
+  },
+  {
+   "accepted_sha256": "b98cb6a488de15afff638adf215fecf867cad8df77a1a42acd50b4169e4e8048",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00181-of-00234.r00300000.parquet",
+   "counts_sha256": "59511f67fcb6467fe53a4f8e72443a7e7b0acfc0d7327d761c40228aca9f73bb",
+   "documents": 20,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 17501,
+    "measure-28k": 17263,
+    "measure-32k": 17053
+   }
+  },
+  {
+   "accepted_sha256": "2eddbdbe64706511aad43bd4cc98553dd72c3399a15049ff36bddbc875051f76",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00181-of-00234.r00400000.parquet",
+   "counts_sha256": "c639aec4b7a00e15bec42d38de2a5e8ec33ce4d1d7475596174c72b01a6676b2",
+   "documents": 23,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 26685,
+    "measure-28k": 26291,
+    "measure-32k": 25969
+   }
+  },
+  {
+   "accepted_sha256": "9106cab0345fa9d810987a675c5ed6fcd8818459f3d3d8a6d5120ddd13ddff0e",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00181-of-00234.r00800000.parquet",
+   "counts_sha256": "ec582d9e92f2f1da731e651b31e6e94d1891f81a2270b117f2dfdbdba681f3ac",
+   "documents": 1,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 2670,
+    "measure-28k": 2640,
+    "measure-32k": 2604
+   }
+  },
+  {
+   "accepted_sha256": "ec5ca9986b4a8032221550d251cdf3be2e8b44856d5d0cac7b9b9b95d90c4681",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00205-of-00234.r00000000.parquet",
+   "counts_sha256": "5605383b3a88e78c3b6b547d7917cf66be01175696a6945edf7ea6b828d62112",
+   "documents": 21,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 28487,
+    "measure-28k": 28058,
+    "measure-32k": 27682
+   }
+  },
+  {
+   "accepted_sha256": "f8abbf52b89de9d3b8089027414f6e3580fb257987d050a3523dabeb41e3bf6a",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00205-of-00234.r00100000.parquet",
+   "counts_sha256": "327e9f28dc295866f8220d9f3b3c40718eeaa5fc3c69d7e02cd022bd3952d75e",
+   "documents": 20,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 55668,
+    "measure-28k": 55053,
+    "measure-32k": 54358
+   }
+  },
+  {
+   "accepted_sha256": "c949e6c9f5fad39378f145ba584718f557141f8c07a52540d677fa8b745c513c",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00205-of-00234.r00200000.parquet",
+   "counts_sha256": "f053214d58a8a5b400f704838914a165e959f860fbed7e77762ec6ec4ea43c2f",
+   "documents": 32,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 35637,
+    "measure-28k": 35136,
+    "measure-32k": 34729
+   }
+  },
+  {
+   "accepted_sha256": "e728c639e2118db03388a696b4747df1a8729acacbb0f3c675ad179d1eed2181",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00205-of-00234.r00600000.parquet",
+   "counts_sha256": "341d0b448ece9d93e3eef7cba6ff9359b92b15f5d12b9acfa09275ec038f9b0f",
+   "documents": 30,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 31306,
+    "measure-28k": 30789,
+    "measure-32k": 30341
+   }
+  },
+  {
+   "accepted_sha256": "8f6c532f0bdc16206a2bf825cd61b053e610d64aa57989d6db2aa3c882bc57b6",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00205-of-00234.r00700000.parquet",
+   "counts_sha256": "f4aded3cb11e7ffd055f8ae5964a4f5881c186bc05dc8170e9d696a920937afa",
+   "documents": 32,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 21599,
+    "measure-28k": 21237,
+    "measure-32k": 21008
+   }
+  },
+  {
+   "accepted_sha256": "edcad40322676aaf0a1aaeb170ead2a215ee82760237d7649ba622c72e9baa86",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00205-of-00234.r00800000.parquet",
+   "counts_sha256": "95ed7f33005aac3191e602384e7340778d0a5b2a82083fdb1df661182ba863ae",
+   "documents": 4,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 4537,
+    "measure-28k": 4474,
+    "measure-32k": 4413
+   }
+  },
+  {
+   "accepted_sha256": "2a14324eda6c830b7ee7789f0bb30026eb903ea27115750f0a78632b7982d937",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00217-of-00234.r00100000.parquet",
+   "counts_sha256": "e150701e0adfdc326fce964cfea19a295c13860e72658f3c58e0344d0a95a198",
+   "documents": 26,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 24424,
+    "measure-28k": 24014,
+    "measure-32k": 23680
+   }
+  },
+  {
+   "accepted_sha256": "344932652fe19c856bb72ff9fc787e7aecc5a6e9efe984b440c9c80f26f876d7",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00217-of-00234.r00500000.parquet",
+   "counts_sha256": "88cddb58b82d7878b2e772f90cc43d80db16009421a4ca8ea85584d51fc516a5",
+   "documents": 28,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 40162,
+    "measure-28k": 39608,
+    "measure-32k": 39078
+   }
+  },
+  {
+   "accepted_sha256": "8b5a7d19569931e6ceb5ac78c2a5a0358e490494ec63de5b114e4a828c27f6b3",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00217-of-00234.r00700000.parquet",
+   "counts_sha256": "c5e9d75cc1125bb960845662ef397bdfa6bb09aae5343fab973532e953a983de",
+   "documents": 34,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 25859,
+    "measure-28k": 25436,
+    "measure-32k": 25039
+   }
+  },
+  {
+   "accepted_sha256": "93d86d296e18f31f2493496e7de2dcacd523f74a6de1b5d628391c3153138452",
+   "accepted_shard": "test/fineweb-edu-dedup/train-00219-of-00234.r00500000.parquet",
+   "counts_sha256": "f2281a64a67dcb4356274e728a499dc715c99bb5657ceab6cf198126d8082881",
+   "documents": 20,
+   "source_id": "fineweb-edu-dedup",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 14429,
+    "measure-28k": 14236,
+    "measure-32k": 14038
+   }
+  },
+  {
+   "accepted_sha256": "eab3bba3aa76e96ab69de6ff13dc4c055e310a609287fe88933071c9d2ee6fd5",
+   "accepted_shard": "test/libretexts/libretexts-0000.parquet",
+   "counts_sha256": "01c35f5ca4bb4437621655b0501b063b86abdc7d34dd2415cc72c171f683a73e",
+   "documents": 149,
+   "source_id": "libretexts",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 155421,
+    "measure-28k": 153557,
+    "measure-32k": 152228
+   }
+  },
+  {
+   "accepted_sha256": "1a373b05c2353991716c067f613f842a882d083b5c06204970fcc1125fcdef3c",
+   "accepted_shard": "test/oercommons/oercommons-0000.parquet",
+   "counts_sha256": "c1dc6e9e6f263671ee9a97007de9c1db822eac2b5a34bc51dad86da51d0f7e31",
+   "documents": 4,
+   "source_id": "oercommons",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 2091,
+    "measure-28k": 2042,
+    "measure-32k": 2003
+   }
+  },
+  {
+   "accepted_sha256": "4e71d0664ecb1839d714f135791603d1488c7ebba9bdab2692e60f36fc205086",
+   "accepted_shard": "test/pressbooks/pressbooks-0000.parquet",
+   "counts_sha256": "d68d5f05103607a78adb2bea1e42c92f8fcf9d3259f2f431b1e6c35a1ab523e8",
+   "documents": 82,
+   "source_id": "pressbooks",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 112866,
+    "measure-28k": 111118,
+    "measure-32k": 109704
+   }
+  },
+  {
+   "accepted_sha256": "08809db77d4c3519b20f8fdd3fa295df0fff17f403292d564c6639f086f872ea",
+   "accepted_shard": "test/stackexchange/stackexchange-dolma-0001.parquet",
+   "counts_sha256": "00274e5d9c80acb70dd9f3bed08cf0facedda169a9b8bad917af137c2779f0cf",
+   "documents": 53,
+   "source_id": "stackexchange",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 45296,
+    "measure-28k": 44686,
+    "measure-32k": 44268
+   }
+  },
+  {
+   "accepted_sha256": "0384c1b235268cd8aee5a1ed787eec306202a0d6f8016fc1e15daea8dc4285fa",
+   "accepted_shard": "test/stackexchange/stackexchange-dolma-0002.parquet",
+   "counts_sha256": "82fe038c5d7769ccfa3ffa28f47329448817f4a5ca4276dc8382eec812e3dfdc",
+   "documents": 61,
+   "source_id": "stackexchange",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 34130,
+    "measure-28k": 33714,
+    "measure-32k": 33421
+   }
+  },
+  {
+   "accepted_sha256": "2e50d54cca3468f34710b8f18c369081378554340eff180fab871b2c6dc582ac",
+   "accepted_shard": "test/stackexchange/stackexchange-dolma-0003.parquet",
+   "counts_sha256": "664fdd5bb878fba0d9a21481123d857a15200e8d38ee6c88e10c82eeef12e775",
+   "documents": 37,
+   "source_id": "stackexchange",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 21613,
+    "measure-28k": 21339,
+    "measure-32k": 21106
+   }
+  },
+  {
+   "accepted_sha256": "a12185c285779bc19caa0bf254f23e873b63645da3d8b77f1da72f57b5c1f759",
+   "accepted_shard": "test/stackexchange/stackexchange-dolma-0004.parquet",
+   "counts_sha256": "52198dbc9b65e9d1c113627056ea131849e41895ccc94b513c5140447f18847e",
+   "documents": 35,
+   "source_id": "stackexchange",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 29523,
+    "measure-28k": 29206,
+    "measure-32k": 28975
+   }
+  },
+  {
+   "accepted_sha256": "fe9808464faac56bcd01f488d05c348a32a9cc4f1adc1d5fff4ddfa5f3d1bbde",
+   "accepted_shard": "test/stackexchange/stackexchange-dolma-0005.parquet",
+   "counts_sha256": "264178bb33c577ba75ddfdce94d0842527153be644256f34a1450c4d5d0b212d",
+   "documents": 85,
+   "source_id": "stackexchange",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 51005,
+    "measure-28k": 50592,
+    "measure-32k": 50331
+   }
+  },
+  {
+   "accepted_sha256": "01a07dd1081ea74a40be7fffa97ca1a5c713cd6e818b8920cff8c713d36aa957",
+   "accepted_shard": "test/stackexchange/stackexchange-dolma-0006.parquet",
+   "counts_sha256": "e37a0ebdca8bb3c7fc0549dc6030c8187a57310099dd7281735dfa4a2667900b",
+   "documents": 52,
+   "source_id": "stackexchange",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 39518,
+    "measure-28k": 39238,
+    "measure-32k": 38985
+   }
+  },
+  {
+   "accepted_sha256": "effa0880fc5be8b3a3a47ac2a0cebef49c31d354ee6154c19ad44f965ea96202",
+   "accepted_shard": "test/stackexchange/stackexchange-dolma-0008.parquet",
+   "counts_sha256": "e1cf88fea7a5b2dbd42bd6c79053dfa0bd7a73ea49c90dde03be43417d705fe5",
+   "documents": 11,
+   "source_id": "stackexchange",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 11497,
+    "measure-28k": 11372,
+    "measure-32k": 11244
+   }
+  },
+  {
+   "accepted_sha256": "bf33176f18259a829ddd47df958d926ec6e5ae50dff681a923e31f14d0f1af24",
+   "accepted_shard": "test/stackexchange/stackexchange-dolma-0021.parquet",
+   "counts_sha256": "ed76613f4d27ff3fad5c7d57a2bb181aca175707e65dbb941c8a62fc66362618",
+   "documents": 55,
+   "source_id": "stackexchange",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 49560,
+    "measure-28k": 48886,
+    "measure-32k": 48385
+   }
+  },
+  {
+   "accepted_sha256": "34629cba93cb0081a1bd685846c382321ac58c1c78218a99d5b3f2ca12625e7a",
+   "accepted_shard": "test/stackexchange/stackexchange-dolma-0028.parquet",
+   "counts_sha256": "17ecf7b61652f3740056f7337b28ba281bb38753d11e3a58987b23c15cec5a21",
+   "documents": 43,
+   "source_id": "stackexchange",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 33649,
+    "measure-28k": 33230,
+    "measure-32k": 32863
+   }
+  },
+  {
+   "accepted_sha256": "a8853640c4dd80c525d3b13d37141eb10f93aad3ad04beb32b08e63b14e00d6e",
+   "accepted_shard": "test/stackexchange/stackexchange-dolma-0042.parquet",
+   "counts_sha256": "bd9494edc9100bf54859ffd1c81a00a2b0ef0cf0c080843fee1ed9f8539ba9d1",
+   "documents": 70,
+   "source_id": "stackexchange",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 45841,
+    "measure-28k": 45258,
+    "measure-32k": 44804
+   }
+  },
+  {
+   "accepted_sha256": "5f7c4cd2ebffbecf746bcb28328f594baaf9a076b87de7c21ee79abb486d1465",
+   "accepted_shard": "test/stackexchange/stackexchange-dolma-0043.parquet",
+   "counts_sha256": "b2baea3ad6ae9c9cd3ee7825bf58415d605ce0b8c952776da90356de3bae628f",
+   "documents": 43,
+   "source_id": "stackexchange",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 42734,
+    "measure-28k": 42189,
+    "measure-32k": 41774
+   }
+  },
+  {
+   "accepted_sha256": "f6d8a2ce1d25b6183851bdb4766f051c33d937d918438c2d73d236ac20beb0c3",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0007.parquet",
+   "counts_sha256": "f629243c6935bd1da1495ff6f42c35b02140e65f58a80e136d5e17b616424464",
+   "documents": 32,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 27361,
+    "measure-28k": 26946,
+    "measure-32k": 26578
+   }
+  },
+  {
+   "accepted_sha256": "929972bfef9bfe98cfdd584381ac5b13a06a835d0e77391d13ed4a18f4144d5a",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0011.parquet",
+   "counts_sha256": "d3e025918fe3b27227642b5f7e5a8b6d39e57af612125acc899f3ac06f7b4723",
+   "documents": 25,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 19226,
+    "measure-28k": 18898,
+    "measure-32k": 18542
+   }
+  },
+  {
+   "accepted_sha256": "909f50241d08a3e8e5e8d3ee419dc9391cc11b872c662c80dca78058826906d4",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0018.parquet",
+   "counts_sha256": "a2c240599f1b8a35f7a6c173ea08e9a8dbcd52bd3cf68c3bf7913b01157d4d99",
+   "documents": 19,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 19625,
+    "measure-28k": 19252,
+    "measure-32k": 18987
+   }
+  },
+  {
+   "accepted_sha256": "518333cd465fec0f43726711645faba7b134831eedcacf654aba842ff5a93686",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0026.parquet",
+   "counts_sha256": "4ff1d86b6a1d63115e72b49cffddb9b94ee736712c13579d8bc4051781c48522",
+   "documents": 21,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 22654,
+    "measure-28k": 22177,
+    "measure-32k": 21882
+   }
+  },
+  {
+   "accepted_sha256": "f987b64287a36440be3dd9ffd058d35471c1af9da23f3c3e47b9991b4a9ce54a",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0036.parquet",
+   "counts_sha256": "36926c3d952283e406282a473bf9d4ae657f47505379559bf3d4b2be9bbc78c0",
+   "documents": 14,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 11393,
+    "measure-28k": 11195,
+    "measure-32k": 11056
+   }
+  },
+  {
+   "accepted_sha256": "38e0fc2ea09873978fcd312ec90d36ae6abd2fc40b41f18f796cf5767840ef8e",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0047.parquet",
+   "counts_sha256": "1864aa1df8698a469d0aa807e8063b58fcff35576a058933f533117ce7abc4db",
+   "documents": 25,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 22457,
+    "measure-28k": 22001,
+    "measure-32k": 21715
+   }
+  },
+  {
+   "accepted_sha256": "2cedbe7aa51e712b68566dc488bb407583469304b6e851916fdaeee5a021c280",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0055.parquet",
+   "counts_sha256": "8a0f3a999319aee995ab1aa10b8fda373d77a5062082dd4ead2373cc71428a57",
+   "documents": 23,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 16606,
+    "measure-28k": 16294,
+    "measure-32k": 16113
+   }
+  },
+  {
+   "accepted_sha256": "172cd83a3a2bb316a18d61019ab7881e94f314e96b7b7ab3e14d701f4d8000cf",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0077.parquet",
+   "counts_sha256": "909c042b0ae18ded03b83b802dfd46b58ab361cb918adc0242b251b02552cfe7",
+   "documents": 88,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 90860,
+    "measure-28k": 88883,
+    "measure-32k": 87849
+   }
+  },
+  {
+   "accepted_sha256": "b18b64aa42f48d0f2a9c2fa534e68b583d9b67769a926c5c7bb41f39772e0742",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0079.parquet",
+   "counts_sha256": "026fae97f91dc0b71f5ab2bca8b9778863f9cedf77e5b889eb7d0f6bca4bdfa0",
+   "documents": 81,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 102766,
+    "measure-28k": 101142,
+    "measure-32k": 100048
+   }
+  },
+  {
+   "accepted_sha256": "0c1dac9ea2033cc9654ace180081430300a97ce4122fcd888d20d7cba7c8851f",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0082.parquet",
+   "counts_sha256": "59a0ba11bc58c9279a3dae3414875c017dd75e6c3eb0c2d3890ea2eb83da0680",
+   "documents": 72,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 48503,
+    "measure-28k": 47634,
+    "measure-32k": 47031
+   }
+  },
+  {
+   "accepted_sha256": "cbd40e88bf3f38351630ec159895d5784285e450bd941a3f82d5785fdcc8c9da",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0084.parquet",
+   "counts_sha256": "44186af9593d88915aa094eda79aac52dfab3e6093593be72264f8165125f752",
+   "documents": 29,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 31819,
+    "measure-28k": 31175,
+    "measure-32k": 30865
+   }
+  },
+  {
+   "accepted_sha256": "44575b9930a1502225761a6791eb898a363ff790c864053e2aa2d494fbe41514",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0086.parquet",
+   "counts_sha256": "4aeb29ad3c4fedebb172361a37187fef0f00817379a25018b2261c6700c0fa5e",
+   "documents": 28,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 30762,
+    "measure-28k": 30238,
+    "measure-32k": 29867
+   }
+  },
+  {
+   "accepted_sha256": "8b0e8e6e964d7160b94fb4c80d145d421b85dc669fc16750f6972d46fe8333e0",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0088.parquet",
+   "counts_sha256": "ce3f631fb8db6934099f0de2b53e100762413fedbb1f1246d412c0b55a93f920",
+   "documents": 44,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 68087,
+    "measure-28k": 67014,
+    "measure-32k": 66087
+   }
+  },
+  {
+   "accepted_sha256": "6cb1c4ce7c4a8ebe77585d4f42550c9c857ae78534fca0f39d3a0c681ebdc44f",
+   "accepted_shard": "test/stackv2-edu/stack-edu-0092.parquet",
+   "counts_sha256": "a92117b7dac267ea700b2139d4aa71a8cdf46ce671112e952cd4bd158b931a12",
+   "documents": 22,
+   "source_id": "stackv2-edu",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 14780,
+    "measure-28k": 14493,
+    "measure-32k": 14297
+   }
+  },
+  {
+   "accepted_sha256": "5f64cafc9eb50a316d9b41815bf560f54469381686f5d170b64630b1707a4763",
+   "accepted_shard": "test/wikimedia/wikimedia-0000.parquet",
+   "counts_sha256": "fe0cfddcfd7dec34b9efd8614804101942d0a3cd8ff4c8b540c0985306e71838",
+   "documents": 8,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 22090,
+    "measure-28k": 21818,
+    "measure-32k": 21505
+   }
+  },
+  {
+   "accepted_sha256": "cec1590e4d25c9047f7bfa6969aeab253650ff07e90664a920a18091c9a268b4",
+   "accepted_shard": "test/wikimedia/wikimedia-0001.parquet",
+   "counts_sha256": "1d04f054528b62c4848a46852e0f398e8465e87711f07f247995b6735ea43525",
+   "documents": 10,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 32285,
+    "measure-28k": 31824,
+    "measure-32k": 31445
+   }
+  },
+  {
+   "accepted_sha256": "e53a260c9756d92a3148edeefd8bd9eb6c89b13bb5cbe1e8330e30da0603cff8",
+   "accepted_shard": "test/wikimedia/wikimedia-0002.parquet",
+   "counts_sha256": "152b6a59762f7f4349ff33e41c0b69eb2b98b00435d64f2bb68e73b89d73927c",
+   "documents": 4,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 9824,
+    "measure-28k": 9662,
+    "measure-32k": 9566
+   }
+  },
+  {
+   "accepted_sha256": "e81d21abfcaf81586dc61faa3245df2c0fd2af7260cc0b9c29e162336dbc64cf",
+   "accepted_shard": "test/wikimedia/wikimedia-0003.parquet",
+   "counts_sha256": "26d1b82894aa6884700acb41e52535db2a18bc648d30f4689e1c706dde774b59",
+   "documents": 9,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 17767,
+    "measure-28k": 17418,
+    "measure-32k": 17130
+   }
+  },
+  {
+   "accepted_sha256": "df977db7c170044bf6f8a8ecb528c3d30bd319961d322686bea8e8d1644930e5",
+   "accepted_shard": "test/wikimedia/wikimedia-0004.parquet",
+   "counts_sha256": "4564f206b65a729784164911ec6607adbe5d8325201fc2f0b2369be9baea082d",
+   "documents": 13,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 19405,
+    "measure-28k": 19064,
+    "measure-32k": 18806
+   }
+  },
+  {
+   "accepted_sha256": "865f9842bd078e11979fbe90da41e06e85bc4650bfeaa73d7ed5dbcec96d2e22",
+   "accepted_shard": "test/wikimedia/wikimedia-0005.parquet",
+   "counts_sha256": "94beb63f59a767bb3b82e381399edb873ec547d7f3d69a433950af6ee7409787",
+   "documents": 5,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 8038,
+    "measure-28k": 7899,
+    "measure-32k": 7770
+   }
+  },
+  {
+   "accepted_sha256": "87de61617f0af7e36281965613b96e5ac8d9b256577125aba1be505864ae5831",
+   "accepted_shard": "test/wikimedia/wikimedia-0006.parquet",
+   "counts_sha256": "b9f181e757332b0ae12b2288c533ebc02842d345658381c091b4b12a9849efd9",
+   "documents": 3,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 19262,
+    "measure-28k": 18972,
+    "measure-32k": 18583
+   }
+  },
+  {
+   "accepted_sha256": "9c24243808afc245659bc399eab497699009b50e96d6a13b7acaea8a613efab9",
+   "accepted_shard": "test/wikimedia/wikimedia-0007.parquet",
+   "counts_sha256": "5ae52aa728608186247dbbfdfabe788192b8a864f83dd74b7b9e380b3b5f99e3",
+   "documents": 8,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 11085,
+    "measure-28k": 10926,
+    "measure-32k": 10773
+   }
+  },
+  {
+   "accepted_sha256": "3c7cc6d404618c657680b5b984980ae358a0d7bd12554e969e3a38b3222bab5f",
+   "accepted_shard": "test/wikimedia/wikimedia-0008.parquet",
+   "counts_sha256": "f5114b78a4135102ce9fbb3bd987fd5ee4bc3e9c6953e1f50f5e7265da6e1c58",
+   "documents": 9,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 7024,
+    "measure-28k": 6913,
+    "measure-32k": 6796
+   }
+  },
+  {
+   "accepted_sha256": "6c44815bbe8fde4b0e270ce7e94e86aa2787bbc39369ea71c5518b7b0ad0814c",
+   "accepted_shard": "test/wikimedia/wikimedia-0009.parquet",
+   "counts_sha256": "1bc921c9c85e625138b5ba352df946ddb8964777a68397cb5a69d1fe0b5a42b5",
+   "documents": 21,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 22451,
+    "measure-28k": 21960,
+    "measure-32k": 21628
+   }
+  },
+  {
+   "accepted_sha256": "29bf9186a547c9487e7a6a6da14811617391836f5a84e4e27cf3bd99d4ccc299",
+   "accepted_shard": "test/wikimedia/wikimedia-0010.parquet",
+   "counts_sha256": "a3bbf42cfaf647cfc11f6430949d493b954c942e7a2105a739aea84e5785d12a",
+   "documents": 13,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 13582,
+    "measure-28k": 13339,
+    "measure-32k": 13169
+   }
+  },
+  {
+   "accepted_sha256": "18de8f0bb915a1b12a6a30accfeb1c9d8d654e24182454d47838f967fb54f1d9",
+   "accepted_shard": "test/wikimedia/wikimedia-0011.parquet",
+   "counts_sha256": "2b072e166eada9bf3a49b7c98aab838758b6edb51673397db027280ab7c48317",
+   "documents": 23,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 16999,
+    "measure-28k": 16719,
+    "measure-32k": 16528
+   }
+  },
+  {
+   "accepted_sha256": "edcc4cd34f54f9ae56e5dfcd8d0b75ceef76b257a5fc1cc727218117f0785a9c",
+   "accepted_shard": "test/wikimedia/wikimedia-0012.parquet",
+   "counts_sha256": "c363cc3ce51cd6695a637cf17950f23beedb62ef1a610c6ed7de2e229374b7a9",
+   "documents": 22,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 28823,
+    "measure-28k": 28383,
+    "measure-32k": 27986
+   }
+  },
+  {
+   "accepted_sha256": "27afe6de5170208348696183bdeeba72674ba4b68c1e499ce13911f490a5b1a7",
+   "accepted_shard": "test/wikimedia/wikimedia-0013.parquet",
+   "counts_sha256": "581a18b59a968e75fae05c5daf3e6229ccf9d17c1c13a8415d18253f069626e2",
+   "documents": 23,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 20203,
+    "measure-28k": 19838,
+    "measure-32k": 19607
+   }
+  },
+  {
+   "accepted_sha256": "f4121c623cb4441c604a7a59ff29f67c7f3e0a7ec0e7e43a11b7b78ef1285d23",
+   "accepted_shard": "test/wikimedia/wikimedia-0014.parquet",
+   "counts_sha256": "e838c17e1658ce53b7096feee239593caa8bdb7392dee5872012626a82dbe351",
+   "documents": 16,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 22407,
+    "measure-28k": 22005,
+    "measure-32k": 21761
+   }
+  },
+  {
+   "accepted_sha256": "9ba942df6e814a81f9d131cef1e1776919c589858df6fb02452a70ab354d47a9",
+   "accepted_shard": "test/wikimedia/wikimedia-0015.parquet",
+   "counts_sha256": "dc0898aa12e7adb60db83a62b2fcc73b333ad521277d4b9723b2729de0db7071",
+   "documents": 21,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 8176,
+    "measure-28k": 8026,
+    "measure-32k": 7915
+   }
+  },
+  {
+   "accepted_sha256": "2409faabe8277bcfcbc9b272c4647d2e6f88a38c3f7cd1ee9fb8ac4bc654a634",
+   "accepted_shard": "test/wikimedia/wikimedia-0016.parquet",
+   "counts_sha256": "fe638597fff3a4e8ba8e60fe30e8a36e9a27909a27496599e73c150ab057be7a",
+   "documents": 18,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 9511,
+    "measure-28k": 9342,
+    "measure-32k": 9206
+   }
+  },
+  {
+   "accepted_sha256": "b132b62c6b795b578148302473a58fcd63e0a4ab220d327968de7cba2fc44190",
+   "accepted_shard": "test/wikimedia/wikimedia-0017.parquet",
+   "counts_sha256": "0820049871f1782b933d1661094d787a9571d16d6c30452fb054d45f10fa0a2e",
+   "documents": 9,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 6354,
+    "measure-28k": 6240,
+    "measure-32k": 6164
+   }
+  },
+  {
+   "accepted_sha256": "0fa79963b990392226bbd8b9f61cbd45c5433ad126e3644447a6e5978333c1ca",
+   "accepted_shard": "test/wikimedia/wikimedia-0018.parquet",
+   "counts_sha256": "5b2a455491586b3f7be2c6565b1eff42e7ed41212c64455624c099f5c1acc036",
+   "documents": 12,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 8389,
+    "measure-28k": 8197,
+    "measure-32k": 8092
+   }
+  },
+  {
+   "accepted_sha256": "72ffc4b84419794df6b6b1dfbc22c9cb77316417f6a3c5cae0118a372423fd8b",
+   "accepted_shard": "test/wikimedia/wikimedia-0019.parquet",
+   "counts_sha256": "46f397fbc83dd12288739002378640fef5b4e833296baf8bf7f17e6341c2e155",
+   "documents": 16,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 10619,
+    "measure-28k": 10447,
+    "measure-32k": 10302
+   }
+  },
+  {
+   "accepted_sha256": "162529a25bd5c75864604ed586f549a62b2595645bf9722f91cade22d51e4229",
+   "accepted_shard": "test/wikimedia/wikimedia-0020.parquet",
+   "counts_sha256": "7d47973c6c0e61635623fd134a2d72f376e924bb6b368cf9d72095b4518847d5",
+   "documents": 12,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 8195,
+    "measure-28k": 8055,
+    "measure-32k": 7958
+   }
+  },
+  {
+   "accepted_sha256": "a210bb7860111cce8d4cdf0b1685310dfe54e1e9b475268cf532e68b3dd2b8b0",
+   "accepted_shard": "test/wikimedia/wikimedia-0021.parquet",
+   "counts_sha256": "1968509f45695e3b06b6cafd49e37ccd2311043d631ea67cdc384b4b0582e83b",
+   "documents": 16,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 9396,
+    "measure-28k": 9255,
+    "measure-32k": 9169
+   }
+  },
+  {
+   "accepted_sha256": "9820826f4bef4616d64931c9d00f1119c800c1fdb4851a32f76b663252ed10f0",
+   "accepted_shard": "test/wikimedia/wikimedia-0022.parquet",
+   "counts_sha256": "790e7dc736d5dcfca5640e00b1acc891f9265dc0d7b634a34d34187d0e068ec6",
+   "documents": 19,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 9083,
+    "measure-28k": 8967,
+    "measure-32k": 8825
+   }
+  },
+  {
+   "accepted_sha256": "5604d6d19b225732f6412f75c5c5614773eec6014eab8998a6433bf4ac77cde4",
+   "accepted_shard": "test/wikimedia/wikimedia-0023.parquet",
+   "counts_sha256": "574c75e50cee8f587e899037a781be08d816eec012e58c98f0a9ff9c119ea5d2",
+   "documents": 15,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 12357,
+    "measure-28k": 12152,
+    "measure-32k": 11995
+   }
+  },
+  {
+   "accepted_sha256": "3cddec73311c37410e62044129512c2f8cecd86c0fcd82c4b6cd5f0c69229230",
+   "accepted_shard": "test/wikimedia/wikimedia-0024.parquet",
+   "counts_sha256": "0ca7effea36c7523c827ae0895cded9e18f82e07ef0ae40c21eaf45de7fa0b78",
+   "documents": 10,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 6370,
+    "measure-28k": 6267,
+    "measure-32k": 6160
+   }
+  },
+  {
+   "accepted_sha256": "bccf9ac58110dc9959d5e983b45688934beecca48685a4c5f32923d883cec2bc",
+   "accepted_shard": "test/wikimedia/wikimedia-0025.parquet",
+   "counts_sha256": "cead0b53cba23ca3ed4e1b8f0ec6114de2f6fa065259f74b2fd8e9203ac2430c",
+   "documents": 16,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 14247,
+    "measure-28k": 14018,
+    "measure-32k": 13839
+   }
+  },
+  {
+   "accepted_sha256": "d71b6ef32ee046696f341f6d1e832fe136c17068312a8440c547f298846e1761",
+   "accepted_shard": "test/wikimedia/wikimedia-0026.parquet",
+   "counts_sha256": "b0434d9c6d4be4997279e832603b8e4bf91048d1cb35eb53ab0f174f91148a1d",
+   "documents": 19,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 10866,
+    "measure-28k": 10683,
+    "measure-32k": 10528
+   }
+  },
+  {
+   "accepted_sha256": "97495ebfcd5db79276a21946af6b7d4eb9130d47e3488358819a926eade06866",
+   "accepted_shard": "test/wikimedia/wikimedia-0027.parquet",
+   "counts_sha256": "a69d22d3a0921379a010adac0da049f80c0e4490bbe49a5eb4bdceeb889fab5a",
+   "documents": 21,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 20178,
+    "measure-28k": 19880,
+    "measure-32k": 19608
+   }
+  },
+  {
+   "accepted_sha256": "d5ebd49b498ceae0f04230b34b7b9fec548395640e5247beb01d614462148c90",
+   "accepted_shard": "test/wikimedia/wikimedia-0028.parquet",
+   "counts_sha256": "8e347b4cfe939c3fcb78745b211b39039e18f6e5af44c69496d77b484bfe37bc",
+   "documents": 19,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 11740,
+    "measure-28k": 11511,
+    "measure-32k": 11368
+   }
+  },
+  {
+   "accepted_sha256": "9450901a380c0146d841e373aae167b09748410625a126b05be108bb36cd5508",
+   "accepted_shard": "test/wikimedia/wikimedia-0029.parquet",
+   "counts_sha256": "1c2f4e986b31a09c4839f94439b2ed83f1689a771119a30f96478281e5cceb43",
+   "documents": 17,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 8815,
+    "measure-28k": 8658,
+    "measure-32k": 8550
+   }
+  },
+  {
+   "accepted_sha256": "fa1921964a5d70fbfc50ce158eefd958852c71ed9ef2af4072dd093ae621e90a",
+   "accepted_shard": "test/wikimedia/wikimedia-0030.parquet",
+   "counts_sha256": "e473d03d2d881d9201a9becd3fb8e824a11406ed69a359d8c4aefd812a59c75c",
+   "documents": 18,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 14305,
+    "measure-28k": 14042,
+    "measure-32k": 13854
+   }
+  },
+  {
+   "accepted_sha256": "f02f69d684e4e7bd3cda2435446664ee14e296408b300db8825f4d412d0c34a8",
+   "accepted_shard": "test/wikimedia/wikimedia-0031.parquet",
+   "counts_sha256": "c390d9799d623b19defd718189d5982a1ce7564b5526bb9a96810839c843f7f9",
+   "documents": 8,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 7004,
+    "measure-28k": 6867,
+    "measure-32k": 6745
+   }
+  },
+  {
+   "accepted_sha256": "7be755f0c0943f2ae3096ce9819359c2135e34f1a57649d8b65f696dacc7cbb0",
+   "accepted_shard": "test/wikimedia/wikimedia-0032.parquet",
+   "counts_sha256": "8124dcca29d35e434a27e5707c20e1efa8f2f3544c1b7cffcb547446e3293459",
+   "documents": 19,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 11532,
+    "measure-28k": 11360,
+    "measure-32k": 11232
+   }
+  },
+  {
+   "accepted_sha256": "88656b8b7f1b027234b19fc383896ed9045ae8e5135b35e20b198cf4178c2c68",
+   "accepted_shard": "test/wikimedia/wikimedia-0033.parquet",
+   "counts_sha256": "6982b19fbd88da6a374b57ba19f2790b8f1a8cb6a7c833ee91a48e8bc4b01f49",
+   "documents": 25,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 21246,
+    "measure-28k": 20881,
+    "measure-32k": 20637
+   }
+  },
+  {
+   "accepted_sha256": "fda43c08e4c7e89c183c2fe0ce332634d10b72b11d5229553599e852d35ca4db",
+   "accepted_shard": "test/wikimedia/wikimedia-0034.parquet",
+   "counts_sha256": "2e047f740d630c6072f02b4caf35e9e9633a2cf652bff26e123bbb2aaef6ff14",
+   "documents": 9,
+   "source_id": "wikimedia",
+   "split": "test",
+   "tokens": {
+    "measure-24k": 5788,
+    "measure-28k": 5684,
+    "measure-32k": 5614
+   }
+  },
+  {
+   "accepted_sha256": "552d44a69c2fb4e9eb06cdd4926327a790a684e936947f1f88ff67c0620137cc",
+   "accepted_shard": "train/arxiv-papers/arxiv-papers-0000.parquet",
+   "counts_sha256": "e1f08f4b89df67110a2bd2bc17a0adb2ae5c08f65a28f5ac441f45f2fa5a7e56",
+   "documents": 1550,
+   "source_id": "arxiv-papers",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 29638860,
+    "measure-28k": 29281422,
+    "measure-32k": 28978162
+   }
+  },
+  {
+   "accepted_sha256": "1e519326bc5a0e6a8540c212d891153d62c009d374277042a97e482d444e1651",
+   "accepted_shard": "train/arxiv-papers/arxiv-papers-0001.parquet",
+   "counts_sha256": "74e20f476bae5372de2e5f0c457e11bb793afa70eef6ae41fbece4240ef5ba49",
+   "documents": 1523,
+   "source_id": "arxiv-papers",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 31578654,
+    "measure-28k": 31199437,
+    "measure-32k": 30879349
+   }
+  },
+  {
+   "accepted_sha256": "c367c702ab58c5e9df8aee775cbcb6539f1072145f587b7332bc6c6f23a47052",
+   "accepted_shard": "train/arxiv-papers/arxiv-papers-0002.parquet",
+   "counts_sha256": "86a2c6c17b46e3945266ebfce206d9f3947ad386c914d8f51c19612f2cb5269d",
+   "documents": 1424,
+   "source_id": "arxiv-papers",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 28661200,
+    "measure-28k": 28309410,
+    "measure-32k": 28007080
+   }
+  },
+  {
+   "accepted_sha256": "d914eb3e260c281ead064628eb62ed720d8587f12e5df21c36d7b68493215543",
+   "accepted_shard": "train/arxiv-papers/arxiv-papers-0003.parquet",
+   "counts_sha256": "602cdb7582f0568a40f2bdd0ea268618d55900e928d7596f918e126a77e19cb4",
+   "documents": 1352,
+   "source_id": "arxiv-papers",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 27621008,
+    "measure-28k": 27282508,
+    "measure-32k": 27000437
+   }
+  },
+  {
+   "accepted_sha256": "3c3617d5b96de33db3c9a4891e3a7d33fddc878bfe77426ff4fbb8e1a5380a03",
+   "accepted_shard": "train/arxiv-papers/arxiv-papers-0004.parquet",
+   "counts_sha256": "1b23e198368c7fc3433e73d01bf2e21003bad8286ed131cf9d97e6fb4a69d5fb",
+   "documents": 1468,
+   "source_id": "arxiv-papers",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 30492445,
+    "measure-28k": 30115304,
+    "measure-32k": 29800092
+   }
+  },
+  {
+   "accepted_sha256": "847a81ce65f48b7f0260906f16bd5d80f48cc37189c23ef21f1ad0d1c3feeb4d",
+   "accepted_shard": "train/arxiv-papers/arxiv-papers-0005.parquet",
+   "counts_sha256": "0cc505fbc99b22a8423f58f5747acce7d251afb1d250c70b388f38177f56ea14",
+   "documents": 1414,
+   "source_id": "arxiv-papers",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 28879008,
+    "measure-28k": 28520531,
+    "measure-32k": 28220956
+   }
+  },
+  {
+   "accepted_sha256": "b7617fd3b4b174d68dd70188f76688a617d46190ff253c9ae61fa8ac252f997c",
+   "accepted_shard": "train/arxiv-papers/arxiv-papers-0006.parquet",
+   "counts_sha256": "7a492a2ee08d938e866b910c717f7ae05e93ef6de58206cae348b15ad031f7ba",
+   "documents": 1438,
+   "source_id": "arxiv-papers",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 29784055,
+    "measure-28k": 29414171,
+    "measure-32k": 29099701
+   }
+  },
+  {
+   "accepted_sha256": "9036c5cf1b4e894815ae28a6349768b7b8803ce76a6750f3321f4b92ec311b71",
+   "accepted_shard": "train/arxiv-papers/arxiv-papers-0007.parquet",
+   "counts_sha256": "f73f2f2c6dfe4801a2c4a5b0829e98d82b36c48c5716a92d866c10167645983d",
+   "documents": 339,
+   "source_id": "arxiv-papers",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 7017993,
+    "measure-28k": 6931382,
+    "measure-32k": 6854764
+   }
+  },
+  {
+   "accepted_sha256": "58601ccd12151db7c6845fd4101d4a06d35c7a1510d1063404855a2a756c5c4c",
+   "accepted_shard": "train/cinqic-aaa-docs/all.parquet",
+   "counts_sha256": "ec5b2f23c3c8c132578bd114c896c70e9e60d8fa319b046e5f08b93f57c0791a",
+   "documents": 52,
+   "source_id": "cinqic-aaa-docs",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 144078,
+    "measure-28k": 142053,
+    "measure-32k": 140079
+   }
+  },
+  {
+   "accepted_sha256": "e498a4e8f15d2e84c0621368256a21ba16b8a95c8628aefe0eff8cf910e13dbb",
+   "accepted_shard": "train/cinqic-calculator-docs/all.parquet",
+   "counts_sha256": "3056df2434731f7658b042b8438784636a6653005e22a446939d576dc7a06267",
+   "documents": 5,
+   "source_id": "cinqic-calculator-docs",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 6892,
+    "measure-28k": 6768,
+    "measure-32k": 6673
+   }
+  },
+  {
+   "accepted_sha256": "d73dccd9f1449a1a49563d1ab428166ef6d9ba9b8f81635e81cf5da1faa1056c",
+   "accepted_shard": "train/cinqic-juniper-app-docs/all.parquet",
+   "counts_sha256": "5626eddd1c4452c18f72d579bd8f9bca2a92a41534cb318bbd77502e91b32907",
+   "documents": 52,
+   "source_id": "cinqic-juniper-app-docs",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 30550,
+    "measure-28k": 29821,
+    "measure-32k": 29190
+   }
+  },
+  {
+   "accepted_sha256": "a7abe0b721cc9d245ef888711769c9c16c056ecf99e53d46a0f3eb66aba8cd4b",
+   "accepted_shard": "train/finemath-4plus/train-00001-of-00064.r00000000.parquet",
+   "counts_sha256": "6dddb1787c8cd57ad2299a7fb7d2a4e14c8a35ccc665cc3e9db7eb0f61462745",
+   "documents": 29240,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 42257983,
+    "measure-28k": 41891181,
+    "measure-32k": 41612241
+   }
+  },
+  {
+   "accepted_sha256": "d19a3477dde46d399fd41a1be470dc556015f0e2c9c28faecf35e14f5d7c9ead",
+   "accepted_shard": "train/finemath-4plus/train-00004-of-00064.r00000000.parquet",
+   "counts_sha256": "0a4203d810e7785f2b3af4fe329a2b8504947eea726565796fd2ad555adb22e6",
+   "documents": 29139,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 41513746,
+    "measure-28k": 41155654,
+    "measure-32k": 40878887
+   }
+  },
+  {
+   "accepted_sha256": "af6d6e2bba60fd367d622fb15b31ea03e971b7afae11804dd4a8c8e6a4149a35",
+   "accepted_shard": "train/finemath-4plus/train-00005-of-00064.r00000000.parquet",
+   "counts_sha256": "84e31ed0c9857d55451dc0a23e8a095b6eaf1cd5d161efc8d79f0441086760d7",
+   "documents": 28374,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 41045619,
+    "measure-28k": 40697827,
+    "measure-32k": 40426830
+   }
+  },
+  {
+   "accepted_sha256": "3859c58adb1e6b69405592e8606c6a690a180f8579a2e85a53ccbd8b55852340",
+   "accepted_shard": "train/finemath-4plus/train-00012-of-00064.r00100000.parquet",
+   "counts_sha256": "12e9544382a9a2c8ea8fe6d65f888f32389507793c43c171552176c0274618fc",
+   "documents": 1318,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 1903194,
+    "measure-28k": 1887122,
+    "measure-32k": 1875622
+   }
+  },
+  {
+   "accepted_sha256": "d16f10c365c3b24d041574d8c6beb3d5caced7bc280232431fb2268e454b445b",
+   "accepted_shard": "train/finemath-4plus/train-00013-of-00064.r00100000.parquet",
+   "counts_sha256": "0bf898c4927c506a696dab20a4a35f314988106df86cc62adbd117e2161bbc90",
+   "documents": 1366,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 2067832,
+    "measure-28k": 2049909,
+    "measure-32k": 2036072
+   }
+  },
+  {
+   "accepted_sha256": "a3ea6be6a7f977a5601e68f7eb36692ea65f72c22878110c97cd6bb04aad5510",
+   "accepted_shard": "train/finemath-4plus/train-00014-of-00064.r00100000.parquet",
+   "counts_sha256": "bb3e7cd8994e36e141e13f18b1cba9618f11122e6afbda3bc4a0d6d1c55b6a25",
+   "documents": 1304,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 1865452,
+    "measure-28k": 1849704,
+    "measure-32k": 1837529
+   }
+  },
+  {
+   "accepted_sha256": "db0c33ee59607a0e7cd6af59bd958f3eae7fc9ec763f77dcc51eb6babe0c28fa",
+   "accepted_shard": "train/finemath-4plus/train-00015-of-00064.r00100000.parquet",
+   "counts_sha256": "438a224a408872f2648cee26b7884f6038ac4869575b33317bd3e03c47a404f6",
+   "documents": 1362,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 1958015,
+    "measure-28k": 1940762,
+    "measure-32k": 1927608
+   }
+  },
+  {
+   "accepted_sha256": "93815b28210c59ccc6f2b41de1640582d3efd1fae048a130c1a46e038659ea7b",
+   "accepted_shard": "train/finemath-4plus/train-00016-of-00064.r00000000.parquet",
+   "counts_sha256": "9c6d802e950e2d5c7e4c7982b55eac96cb1e75352af5e1ec294c991c9c5d572f",
+   "documents": 28412,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 41157650,
+    "measure-28k": 40808114,
+    "measure-32k": 40537548
+   }
+  },
+  {
+   "accepted_sha256": "530b12ee38a97281f275a394d17f6d2b74a7d476f48c18fc8a807819d5fbdf16",
+   "accepted_shard": "train/finemath-4plus/train-00017-of-00064.r00100000.parquet",
+   "counts_sha256": "23ceeec849faedda32dc9f70174e241393417d6b7a9b0dcc1e746d44852d9126",
+   "documents": 1346,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 1965782,
+    "measure-28k": 1948203,
+    "measure-32k": 1935070
+   }
+  },
+  {
+   "accepted_sha256": "82fe3f2556e0045bc24283de03475aec355c7e29228ad6700855ac0e08f639cf",
+   "accepted_shard": "train/finemath-4plus/train-00019-of-00064.r00000000.parquet",
+   "counts_sha256": "09fea9715a3936cd768c751db469f7f3c2ef556d176e129da9b220309aeff7fd",
+   "documents": 28296,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 40780006,
+    "measure-28k": 40431959,
+    "measure-32k": 40161512
+   }
+  },
+  {
+   "accepted_sha256": "18d427467c4d6742ee916600ec9a7f05fd9c642e4aee1e96a5f610802c763bee",
+   "accepted_shard": "train/finemath-4plus/train-00020-of-00064.r00000000.parquet",
+   "counts_sha256": "92670ff3522160e7cb0983e63158edf5720d3dec631d88d60940dbb3dde4ec45",
+   "documents": 27802,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 39999733,
+    "measure-28k": 39657777,
+    "measure-32k": 39391184
+   }
+  },
+  {
+   "accepted_sha256": "d69dcf721edb41fece12597399c93df7e91a0eac055ce1722f5aa4127f78e497",
+   "accepted_shard": "train/finemath-4plus/train-00024-of-00064.r00100000.parquet",
+   "counts_sha256": "85360037c44b7304ce6f3a34a4ab04a77693b375c816b609c3cd63df8d65716d",
+   "documents": 1308,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 1825137,
+    "measure-28k": 1809629,
+    "measure-32k": 1797739
+   }
+  },
+  {
+   "accepted_sha256": "ab9c2f03b750a96457f91fa4693469534546dca2ee32bd6b887baa0e7e9572ea",
+   "accepted_shard": "train/finemath-4plus/train-00026-of-00064.r00000000.parquet",
+   "counts_sha256": "4ed5f4597312b40146324d797b1635accbf3d3b66b655cce159c0bdb0f8aef9e",
+   "documents": 27732,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 40293381,
+    "measure-28k": 39948753,
+    "measure-32k": 39679317
+   }
+  },
+  {
+   "accepted_sha256": "a9740fad5e0c8d0791dc93d118d0089400d1175a89b17ea65b600875d3d7d5e1",
+   "accepted_shard": "train/finemath-4plus/train-00029-of-00064.r00000000.parquet",
+   "counts_sha256": "51796dc608e5eed604b4b95541c2ab6fb04786e408bf67e5b9c49b755318ed38",
+   "documents": 27487,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 39113368,
+    "measure-28k": 38777861,
+    "measure-32k": 38521621
+   }
+  },
+  {
+   "accepted_sha256": "79f4fb5e2a094f9260ce3bef30aebbf0426f880ddc8fd00f18953516547bdabe",
+   "accepted_shard": "train/finemath-4plus/train-00031-of-00064.r00000000.parquet",
+   "counts_sha256": "d7a4fc4367e01f624116ebbedb82ba70d95ee81f10928285885ba44ab7ce23d0",
+   "documents": 27045,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 38696572,
+    "measure-28k": 38370218,
+    "measure-32k": 38114564
+   }
+  },
+  {
+   "accepted_sha256": "dee58706432d9e3883ca64b01421bfc89133f97e79a1ecb478daed1180e95edd",
+   "accepted_shard": "train/finemath-4plus/train-00033-of-00064.r00100000.parquet",
+   "counts_sha256": "7e2bda71fe716973b384b2dd9ae19692ccb5cf825c8b88fe878a5590380dafef",
+   "documents": 1225,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 1806809,
+    "measure-28k": 1791660,
+    "measure-32k": 1779859
+   }
+  },
+  {
+   "accepted_sha256": "776d380e08e8771a002089fb94d9461521e0cdfd2e85750464f3507c924eb524",
+   "accepted_shard": "train/finemath-4plus/train-00039-of-00064.r00100000.parquet",
+   "counts_sha256": "c03717613533e99857f5f3b53c2b50c0dab4585e04ddfaa3c960babae197f1fa",
+   "documents": 1253,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 1789718,
+    "measure-28k": 1774254,
+    "measure-32k": 1762216
+   }
+  },
+  {
+   "accepted_sha256": "f5c2e117347cd0d43f10c5eaa04e32d60d340b394b662430302b0f162cfa9794",
+   "accepted_shard": "train/finemath-4plus/train-00041-of-00064.r00100000.parquet",
+   "counts_sha256": "67a185b8d18b838aa44d7d523bdb41044734c4baf0ad236108f6de36254001dc",
+   "documents": 1248,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 1881339,
+    "measure-28k": 1865013,
+    "measure-32k": 1852004
+   }
+  },
+  {
+   "accepted_sha256": "75807b2c8d43dfe6f1858370ed5a47d0a3c63170b28a6040c607777a3c8f3573",
+   "accepted_shard": "train/finemath-4plus/train-00047-of-00064.r00100000.parquet",
+   "counts_sha256": "e5b1c003909cfa35a87d20495b16215f620353bdd1ddb0b90bbd46613bf9b094",
+   "documents": 1200,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 1556330,
+    "measure-28k": 1543275,
+    "measure-32k": 1532837
+   }
+  },
+  {
+   "accepted_sha256": "a57100b562849b4b2c802c15a75d47e2259be4c562f9420aa6e8e30fe60c6d70",
+   "accepted_shard": "train/finemath-4plus/train-00048-of-00064.r00100000.parquet",
+   "counts_sha256": "55918f1630feb267a19f542776411389b4efadec723275257d82668e64cb70b6",
+   "documents": 1264,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 1705972,
+    "measure-28k": 1691656,
+    "measure-32k": 1679881
+   }
+  },
+  {
+   "accepted_sha256": "0a2fda6f4d050b34b39b7519fceebc77076e8e671862c922fa0b54deb42f7c5c",
+   "accepted_shard": "train/finemath-4plus/train-00049-of-00064.r00100000.parquet",
+   "counts_sha256": "f01be2f0018b39abef26c507dba8dd35e40479c926e719f344e8b22027fd69b9",
+   "documents": 1277,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 1935334,
+    "measure-28k": 1919871,
+    "measure-32k": 1907526
+   }
+  },
+  {
+   "accepted_sha256": "957f152d73ba26f86e9a5f93f14c96f88eb065bf1f106ebed6eb1b00efdfaa57",
+   "accepted_shard": "train/finemath-4plus/train-00053-of-00064.r00000000.parquet",
+   "counts_sha256": "50ae0b9aba2d427c92ef41c61ce233fec835e67eca330ca626147e2ae1e5e444",
+   "documents": 27185,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 38349331,
+    "measure-28k": 38023891,
+    "measure-32k": 37770430
+   }
+  },
+  {
+   "accepted_sha256": "d6fb35b80abf9f1d83d342dc06f5bfb9ffaf8baf3c06a55ac022105128e4a1b7",
+   "accepted_shard": "train/finemath-4plus/train-00054-of-00064.r00100000.parquet",
+   "counts_sha256": "bb4e27d7b403c6cacfac463b7c263dbd91f28eeb2e8756fd6221513d76324d97",
+   "documents": 1232,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 1710659,
+    "measure-28k": 1696676,
+    "measure-32k": 1686292
+   }
+  },
+  {
+   "accepted_sha256": "00a7fa99b3db563b169064c6fa598f13d088aefe175a7de85563e9a40ad3c6d2",
+   "accepted_shard": "train/finemath-4plus/train-00060-of-00064.r00100000.parquet",
+   "counts_sha256": "4a51ed1523a6eb72623b2dfcb0ac0ecc5ca2c1c9854439411cac9ffe82fb3d97",
+   "documents": 1242,
+   "source_id": "finemath-4plus",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 1558164,
+    "measure-28k": 1544352,
+    "measure-32k": 1534007
+   }
+  },
+  {
+   "accepted_sha256": "b977e4f4c66284cd91d4df2b94316a56c5af080b1c87b461d29b6e8368bfada2",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00003-of-00234.r00200000.parquet",
+   "counts_sha256": "28083d723b3c1d8667cb9ef174d2452490a960cb7800df02c5d44a84dfd84d1f",
+   "documents": 39203,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 43939288,
+    "measure-28k": 43277048,
+    "measure-32k": 42746838
+   }
+  },
+  {
+   "accepted_sha256": "ea3c2236111ec222e9441900d8e84bc846022337fafdd4ffce7d80248501987c",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00003-of-00234.r00400000.parquet",
+   "counts_sha256": "3842f11b6340d9c8edb80700d9c909eb678109aef0adad2af0f830506401c634",
+   "documents": 40153,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 46243337,
+    "measure-28k": 45526239,
+    "measure-32k": 44950266
+   }
+  },
+  {
+   "accepted_sha256": "80e9f18da8b2e8c4ede6c75d9aada62894df2dba32b1aa20d32e6b09458b7022",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00006-of-00234.r00100000.parquet",
+   "counts_sha256": "d5eb4540dc5363f1a9ba2d7d6022da1c8c5d1ad053c85293890fcec4a145847d",
+   "documents": 38665,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 41808833,
+    "measure-28k": 41171986,
+    "measure-32k": 40663667
+   }
+  },
+  {
+   "accepted_sha256": "ebff3e20633eb17e2e0ef8708892fb27faafb002d6a97967df08d8b334c50662",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00006-of-00234.r00200000.parquet",
+   "counts_sha256": "ce5c19720a8f17ea32f4adefbc8f8e4d7818b5e86e137e9f4aa98b711421c064",
+   "documents": 38723,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 42021073,
+    "measure-28k": 41380581,
+    "measure-32k": 40868588
+   }
+  },
+  {
+   "accepted_sha256": "226c77fb06710cc31179c3cf3c4d97bfe83393e135614014b1cd6b0f5bd23d61",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00006-of-00234.r00700000.parquet",
+   "counts_sha256": "56c084cb673821d8196e9af882d0abf90045ed967fe88da78adb1a9685a8d553",
+   "documents": 40698,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 47210546,
+    "measure-28k": 46480702,
+    "measure-32k": 45891177
+   }
+  },
+  {
+   "accepted_sha256": "a68fab1c1b45d871f251aab6dd79af38d6d00150ff66940bdb218cb3056ce4d9",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00069-of-00234.r00500000.parquet",
+   "counts_sha256": "007b839ffc70e85501e9a9914729df54bf36ce105f677b3604c568750968df07",
+   "documents": 37045,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 39951773,
+    "measure-28k": 39347551,
+    "measure-32k": 38865849
+   }
+  },
+  {
+   "accepted_sha256": "7a0c5585d743814dffebb2495b0df0b231641cc76abaf1fac1cc8053bf207d35",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00069-of-00234.r00800000.parquet",
+   "counts_sha256": "db35d3136732eba71cb90b8226c6e06e856cbffc37538d31a1db13f290f0c8ad",
+   "documents": 4827,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 4480336,
+    "measure-28k": 4411047,
+    "measure-32k": 4354690
+   }
+  },
+  {
+   "accepted_sha256": "c5636dbbb814f20d7e75ae6ad7f3a5f54ffb7ec0008694bcdbb48128106b4f57",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00091-of-00234.r00100000.parquet",
+   "counts_sha256": "c3c2113bd953c010a16499d0a8143192b52d6bc02a52b23dafe6ad94cda5bd33",
+   "documents": 36307,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 39584872,
+    "measure-28k": 38981462,
+    "measure-32k": 38496187
+   }
+  },
+  {
+   "accepted_sha256": "9be2eedac4f6d3f6e950b6009ced6f7be07e74f3d80aeb569628addfb258cdf7",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00091-of-00234.r00400000.parquet",
+   "counts_sha256": "418d69534c7f7ab5de63a4f8c7c40693a4ebb2082a9e3653d8980c9ac6e229b1",
+   "documents": 36170,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 34689609,
+    "measure-28k": 34153762,
+    "measure-32k": 33724234
+   }
+  },
+  {
+   "accepted_sha256": "827b4f056537a82223ec92380b58d1d8b47096d7e45223af94acf081bca58fb3",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00091-of-00234.r00500000.parquet",
+   "counts_sha256": "fd923d5250b9e5eaf45d1ff36dff0c5272964a34f2c9337fd162068f58146a9b",
+   "documents": 36124,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 38079505,
+    "measure-28k": 37501477,
+    "measure-32k": 37037073
+   }
+  },
+  {
+   "accepted_sha256": "fd6a876510a7e1f9c4a95ff3ad304aaa468b5f76620d4664e012907110d792fd",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00095-of-00234.r00700000.parquet",
+   "counts_sha256": "8517883981a3e7fbdd2ac2b495b9c212d0899e8592430dc06afa6a9db60295da",
+   "documents": 35907,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 37308627,
+    "measure-28k": 36741668,
+    "measure-32k": 36288003
+   }
+  },
+  {
+   "accepted_sha256": "f692d6d97fa590f84ac57b6de088eb6edfa9a665483f4122abb157d7e1fff225",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00095-of-00234.r00800000.parquet",
+   "counts_sha256": "eed57772faac21f4f84d21f5601a76b18c9c75e4d4da6e558936ac6109809f61",
+   "documents": 4632,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 4987606,
+    "measure-28k": 4911061,
+    "measure-32k": 4850888
+   }
+  },
+  {
+   "accepted_sha256": "c663881ac7cd130d8e198e7842f41de59f867fecb3beb9d52e5dfddbca97e745",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00099-of-00234.r00000000.parquet",
+   "counts_sha256": "19daa495d6171b0a634e83752856415c3ce55599893b1a3160c2374f31f8f5bc",
+   "documents": 36867,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 41865198,
+    "measure-28k": 41235835,
+    "measure-32k": 40730039
+   }
+  },
+  {
+   "accepted_sha256": "9006ed145a1a69997056f0fa39de3070867118fdfcac0df2ad1d7ea549879243",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00099-of-00234.r00300000.parquet",
+   "counts_sha256": "5c5a418218b6de30a5f8ba6b9f6ceba7660a410f9fbae7b758a1050274e785fb",
+   "documents": 36181,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 39623769,
+    "measure-28k": 39023039,
+    "measure-32k": 38543761
+   }
+  },
+  {
+   "accepted_sha256": "6eeee5aae9982a51b925bbed957b491685efcd90713dcd1d5c5ab63a65cb3493",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00099-of-00234.r00600000.parquet",
+   "counts_sha256": "f14b6e5517afa973769a8c3c789a6dd67a57a400b3150d4acab4bcf0b71878cf",
+   "documents": 35785,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 38778798,
+    "measure-28k": 38193336,
+    "measure-32k": 37722746
+   }
+  },
+  {
+   "accepted_sha256": "968a428f8524e4f24dd88743a7935b5cbec1cb8ca4f77acbcbbd227360010bd7",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00109-of-00234.r00200000.parquet",
+   "counts_sha256": "eae8bc7ad5df783628a00661a4666d434d6970d16683beacfccd2f7a2be7251a",
+   "documents": 35788,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 36523145,
+    "measure-28k": 35961772,
+    "measure-32k": 35512227
+   }
+  },
+  {
+   "accepted_sha256": "0d89105ca1b691a1c25d70e479af8232af33727e860e49794befe1a0a7ede811",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00181-of-00234.r00000000.parquet",
+   "counts_sha256": "7c6b36d6eb7a4307b9c24ed2d8740fd6e1dfee585074dab864fb8075f9078b5a",
+   "documents": 35764,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 40226286,
+    "measure-28k": 39600291,
+    "measure-32k": 39100493
+   }
+  },
+  {
+   "accepted_sha256": "20dc80bd53edcc9f468a54d5de4101ec1d3f3ed37ca91959e1a7f6a753fcd838",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00181-of-00234.r00300000.parquet",
+   "counts_sha256": "1786dc731b664f0fe0d5918be308fed6748939ea97747b64b6016af193fce254",
+   "documents": 35455,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 40440943,
+    "measure-28k": 39819782,
+    "measure-32k": 39321912
+   }
+  },
+  {
+   "accepted_sha256": "31b6c77578732e92d69554872fd10307a04ab75b61b521a0fa15e059dfad38de",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00181-of-00234.r00400000.parquet",
+   "counts_sha256": "804a5810814c7dd3cfdf279e6fab4cbb296b897fc77ff2037dbc0d34ab9636e8",
+   "documents": 35482,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 40861416,
+    "measure-28k": 40234417,
+    "measure-32k": 39731803
+   }
+  },
+  {
+   "accepted_sha256": "3cba80e835ee872822fa6adbcda4729cbe349042460a4275e8f503fa48d60b1b",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00181-of-00234.r00800000.parquet",
+   "counts_sha256": "13cfc044fc131896a40a426e3473bd8cb650d17d86d59c0a127fa6af2a6353fa",
+   "documents": 4550,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 5272273,
+    "measure-28k": 5192029,
+    "measure-32k": 5128006
+   }
+  },
+  {
+   "accepted_sha256": "99e947f84b52e041b325424c0b42febd412e5eb6655662f43973f71f77df87a6",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00205-of-00234.r00000000.parquet",
+   "counts_sha256": "71afde09849ca51f99ca2551e6f3c954f46fb27aa4ef97178dbf8ac267241d7f",
+   "documents": 35368,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 40978619,
+    "measure-28k": 40345197,
+    "measure-32k": 39836978
+   }
+  },
+  {
+   "accepted_sha256": "e132a42878b96c21c2b14c18fe4474723800332167133acdb6ed9bf9d882a741",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00205-of-00234.r00100000.parquet",
+   "counts_sha256": "6c74f25d42f1042f8dfc237eefce904c16f38d30ee3bae38a284cfd1464e43b6",
+   "documents": 35663,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 41027066,
+    "measure-28k": 40396939,
+    "measure-32k": 39895776
+   }
+  },
+  {
+   "accepted_sha256": "fb720a8bfcbb4de13875185ff77f7d9464cf846da70e7427fbb7d7e09ef2b2a4",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00205-of-00234.r00200000.parquet",
+   "counts_sha256": "55a871d7a1d41f3cfc2de3f207614364e36ffc1dd50634f4d0bb56af2116c7b8",
+   "documents": 35881,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 41692902,
+    "measure-28k": 41045917,
+    "measure-32k": 40532692
+   }
+  },
+  {
+   "accepted_sha256": "16524a4cdf84a6f08778e70ae03afc489ba96d31841e5d00a8c49aee745f41bc",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00205-of-00234.r00600000.parquet",
+   "counts_sha256": "edbe85f324b3631bc81a25e7e32db1b50bc513c479f945c0e4124c6ff30fcd87",
+   "documents": 35362,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 40334847,
+    "measure-28k": 39706378,
+    "measure-32k": 39209216
+   }
+  },
+  {
+   "accepted_sha256": "b98171443a224cd8457d654b3e4376b8d1ee86f8a3dd0fc60d7162f5a6f36fef",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00205-of-00234.r00700000.parquet",
+   "counts_sha256": "d40c60467afee270f354ad1e2e0cc6721d293647e6c5c3bf5f97b2e85a3acea8",
+   "documents": 35612,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 41615074,
+    "measure-28k": 40977609,
+    "measure-32k": 40468221
+   }
+  },
+  {
+   "accepted_sha256": "a03dbd343d142aa581c3d5ee21c1a0264d0865d7421790c71a5aa84e0fa205dc",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00205-of-00234.r00800000.parquet",
+   "counts_sha256": "df07e31e101c45c5eca8cd72a27b1528a40b5c162984fb4bcca38a03cff69f00",
+   "documents": 4935,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 5900594,
+    "measure-28k": 5806490,
+    "measure-32k": 5733315
+   }
+  },
+  {
+   "accepted_sha256": "c795e796165fd363ca8c6dfc4a429902171d6f9e79477bdc382b24bacf7c4b52",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00217-of-00234.r00100000.parquet",
+   "counts_sha256": "c1119a811079348886eeb2219dcebcec940e7624c0eb0538f419e85c014dbc7f",
+   "documents": 35240,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 39684099,
+    "measure-28k": 39067723,
+    "measure-32k": 38574997
+   }
+  },
+  {
+   "accepted_sha256": "3e1c43fc2556ea49eba5c1ceaccd0c8af483e372b7d35fb35a3f658adc9e8e6a",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00217-of-00234.r00500000.parquet",
+   "counts_sha256": "ff625c7438942a1439cc5fb422f0dc0ef0ec20862b44d5a7a625157680ff1226",
+   "documents": 35815,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 41970741,
+    "measure-28k": 41317519,
+    "measure-32k": 40797776
+   }
+  },
+  {
+   "accepted_sha256": "727a2fe30463488edfa81c2bb2c32f145aee0c53e6dbc3493996d020d99342eb",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00217-of-00234.r00700000.parquet",
+   "counts_sha256": "add6c8d3032cf6f407670b5bac3201ff6784b7bcbf9979a59b702d5c4613645a",
+   "documents": 35439,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 41839959,
+    "measure-28k": 41194271,
+    "measure-32k": 40673626
+   }
+  },
+  {
+   "accepted_sha256": "a4ffdf81541b9bdf684bb74e19880e3d74080e18b8720234eb15de395dee17cc",
+   "accepted_shard": "train/fineweb-edu-dedup/train-00219-of-00234.r00500000.parquet",
+   "counts_sha256": "eb22886d2370d2956435cb04dee20eb6847e9373f0ff817e2f52ed32f79312f0",
+   "documents": 35410,
+   "source_id": "fineweb-edu-dedup",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 40116905,
+    "measure-28k": 39491270,
+    "measure-32k": 38988547
+   }
+  },
+  {
+   "accepted_sha256": "96d719085f0d8ce2458c5f02d170669e9841542f04e118b51c7ee3ef8f5b0cd5",
+   "accepted_shard": "train/libretexts/libretexts-0000.parquet",
+   "counts_sha256": "26a5d2f753297b45f11fe3396337588a0625438fe1ba76eceeb949895f854594",
+   "documents": 35969,
+   "source_id": "libretexts",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 78609787,
+    "measure-28k": 77550421,
+    "measure-32k": 76726799
+   }
+  },
+  {
+   "accepted_sha256": "92d60451505920639492d5284240434c8298c2761dd8fcecf6f7c1394cc6f174",
+   "accepted_shard": "train/oercommons/oercommons-0000.parquet",
+   "counts_sha256": "04616d33f63c44ea035b955cd7b708c53dc90c232a649a28ce47da7c0d64aeae",
+   "documents": 3884,
+   "source_id": "oercommons",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 8600574,
+    "measure-28k": 8470128,
+    "measure-32k": 8364351
+   }
+  },
+  {
+   "accepted_sha256": "5059668e7532ea2e7e8d5114a42595cb4a5c76f0206d77c962813f45287d81de",
+   "accepted_shard": "train/pressbooks/pressbooks-0000.parquet",
+   "counts_sha256": "cc282132e519a4010d5192f62d155a8ace9e001da3356dd7f5955066f529d27f",
+   "documents": 43796,
+   "source_id": "pressbooks",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 106779429,
+    "measure-28k": 105238308,
+    "measure-32k": 104050567
+   }
+  },
+  {
+   "accepted_sha256": "e2d4093ebbd4d2665b31f838cd65fd7f92ca1e9dc2ca3e302a9acf416109cc84",
+   "accepted_shard": "train/python-peps/peps-dolma-0000.parquet",
+   "counts_sha256": "2193164e56241b78662bae5538299bd4b14d965b5bad9c0f0cc092c3948353f3",
+   "documents": 651,
+   "source_id": "python-peps",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 2793316,
+    "measure-28k": 2747277,
+    "measure-32k": 2715110
+   }
+  },
+  {
+   "accepted_sha256": "cd1ad7f5faf2e33d85aecc3a338db7912954d86df031c48be8b215eba6415ae7",
+   "accepted_shard": "train/stackexchange/stackexchange-dolma-0001.parquet",
+   "counts_sha256": "0c72408225ca9cbaa7f9e124006fb0b037db0d386482621023f1d54e9fda3a2a",
+   "documents": 49810,
+   "source_id": "stackexchange",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 49832576,
+    "measure-28k": 49244221,
+    "measure-32k": 48779432
+   }
+  },
+  {
+   "accepted_sha256": "92da00fde668bebe4f160f9e5233bdba438cf59c08eb160b9a0b0ee731fd7234",
+   "accepted_shard": "train/stackexchange/stackexchange-dolma-0002.parquet",
+   "counts_sha256": "026761a7e0334eb75b8a76eac56fcc84143b6e2a17d531fac03c21269d80d361",
+   "documents": 58631,
+   "source_id": "stackexchange",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 44541733,
+    "measure-28k": 43998950,
+    "measure-32k": 43583263
+   }
+  },
+  {
+   "accepted_sha256": "1c511adbc581bc67351ae948bd4b2b58e31b81fe3216384342f382db870aeeed",
+   "accepted_shard": "train/stackexchange/stackexchange-dolma-0003.parquet",
+   "counts_sha256": "42ab127f5f70af675bcf943699fac789b372544e561957b0c71b9c93ee62feac",
+   "documents": 44643,
+   "source_id": "stackexchange",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 33463475,
+    "measure-28k": 33040729,
+    "measure-32k": 32695707
+   }
+  },
+  {
+   "accepted_sha256": "6d601f282f94b2d6991643bf92856680e6a0f47defb18b39965ba871be4f7d21",
+   "accepted_shard": "train/stackexchange/stackexchange-dolma-0004.parquet",
+   "counts_sha256": "64afc896e5cf06111756303543684fbca2511448c8af6cea48d7bf4318e066f1",
+   "documents": 41877,
+   "source_id": "stackexchange",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 32925140,
+    "measure-28k": 32584750,
+    "measure-32k": 32320227
+   }
+  },
+  {
+   "accepted_sha256": "8743644ce3fd9ac576874d396a5555615330eeaa68a61f09349c1c45128e4c3b",
+   "accepted_shard": "train/stackexchange/stackexchange-dolma-0005.parquet",
+   "counts_sha256": "ee67620596b7083a8de13a22d9cdfd3d1ec6627c3919fad62faefc2a80b9a26f",
+   "documents": 76811,
+   "source_id": "stackexchange",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 54249122,
+    "measure-28k": 53824853,
+    "measure-32k": 53529510
+   }
+  },
+  {
+   "accepted_sha256": "7ec1d9a5f8b911ff1b489c3636b5a9f9a46c4c08e26174de61f3f7054518739e",
+   "accepted_shard": "train/stackexchange/stackexchange-dolma-0006.parquet",
+   "counts_sha256": "9f27d0a1303330859a1d0d3d02b9af931ed5d9418a6fcb2950b09f46466a8a5b",
+   "documents": 56035,
+   "source_id": "stackexchange",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 48874481,
+    "measure-28k": 48418857,
+    "measure-32k": 48075558
+   }
+  },
+  {
+   "accepted_sha256": "93202f86404b98a1a03eaedee1b98859a924161e32f3adab7dce8ff6a048c378",
+   "accepted_shard": "train/stackexchange/stackexchange-dolma-0008.parquet",
+   "counts_sha256": "ee8f0ac876adbdadd4be70d7ff6da9a1da7d93ca3ce16ca1dc44a479dffae91b",
+   "documents": 17057,
+   "source_id": "stackexchange",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 17144148,
+    "measure-28k": 16921772,
+    "measure-32k": 16762943
+   }
+  },
+  {
+   "accepted_sha256": "34bbd1a2fa07090dc83489d8d9fffc642a064eed9cb4458c8eb1d9c84205c52b",
+   "accepted_shard": "train/stackexchange/stackexchange-dolma-0021.parquet",
+   "counts_sha256": "7c617af5983123d4458f29428f221a3fcf89e23eabde2041ff71736047c136d9",
+   "documents": 55698,
+   "source_id": "stackexchange",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 40424565,
+    "measure-28k": 39848082,
+    "measure-32k": 39421933
+   }
+  },
+  {
+   "accepted_sha256": "9e3e4b458104131a04d5747bd453044c704f5ca130b049562444f38fc4bf92d5",
+   "accepted_shard": "train/stackexchange/stackexchange-dolma-0028.parquet",
+   "counts_sha256": "49996f7ef796565badc6bc1d07c1c56b6709311cc35372c879e8fbe7f50c698c",
+   "documents": 54283,
+   "source_id": "stackexchange",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 39883010,
+    "measure-28k": 39312571,
+    "measure-32k": 38878694
+   }
+  },
+  {
+   "accepted_sha256": "18f2d6c1a5f1c8129e8da8f1c2de3022f812c843fea6f7746d4c0f1ae4e46def",
+   "accepted_shard": "train/stackexchange/stackexchange-dolma-0042.parquet",
+   "counts_sha256": "6113ff52e0270d85935d26ef83f0e64e42eb3564e5e0dd24e41c8bbe790ae0cf",
+   "documents": 60509,
+   "source_id": "stackexchange",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 41902358,
+    "measure-28k": 41339745,
+    "measure-32k": 40887369
+   }
+  },
+  {
+   "accepted_sha256": "5864bec460a7df95864f62c53b3c0432fe1ee65f186201b886d6a9fc5da9a6c7",
+   "accepted_shard": "train/stackexchange/stackexchange-dolma-0043.parquet",
+   "counts_sha256": "cf8485a4c1934fe3a72dd2f08c46cc026c106755907bda24a3978c6e04162c81",
+   "documents": 43702,
+   "source_id": "stackexchange",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 41394585,
+    "measure-28k": 40883245,
+    "measure-32k": 40463443
+   }
+  },
+  {
+   "accepted_sha256": "6f34b010439ee28de1c24cc1fbca5d1cc91ad286cacdc539db10381f5a6dd4ad",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0007.parquet",
+   "counts_sha256": "4302e94497894a4fa4a8197daa0b2af5d3a4600dbba719a6336465351207e39a",
+   "documents": 23699,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 23881842,
+    "measure-28k": 23459731,
+    "measure-32k": 23119395
+   }
+  },
+  {
+   "accepted_sha256": "2c09919a7caa17fce05078ad757b4ea6e161d6a80771a23561138c91bfff4016",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0011.parquet",
+   "counts_sha256": "d34475bd770283b97724a7ab1aa0cb275f0650d5dfc833f8f1eabc980fa411c3",
+   "documents": 23970,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 24059170,
+    "measure-28k": 23629786,
+    "measure-32k": 23288007
+   }
+  },
+  {
+   "accepted_sha256": "01b2a9373c2019c0771d814f94d8a4ffe3d32ebf2aa0b164f71feb8bfd498aac",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0018.parquet",
+   "counts_sha256": "dcdb70a72cfde7c9b1beafa43d656f25bad6bf6c500bfdf4bf14384b0f7c5f43",
+   "documents": 19989,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 24298995,
+    "measure-28k": 23934775,
+    "measure-32k": 23661992
+   }
+  },
+  {
+   "accepted_sha256": "7d19fe034b650bf536ce5d5a521d0f781a2b0b530afb7f8fd5bfdd7175cccb3f",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0026.parquet",
+   "counts_sha256": "c7456f79a4f565ac9df1adc08d0a1ab5fca75d1060ba9e5619de0384307c66c4",
+   "documents": 18437,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 21720796,
+    "measure-28k": 21313753,
+    "measure-32k": 21036619
+   }
+  },
+  {
+   "accepted_sha256": "f23e160e450ad447006dbf2b17fd660f6526149eefceed54e0e9b3f2661606f0",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0036.parquet",
+   "counts_sha256": "3d3cdab6d5d1dbfde550f10bd5b7e7c254d90a3ba8428d512dc5f65496960dd6",
+   "documents": 22951,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 22756987,
+    "measure-28k": 22364429,
+    "measure-32k": 22081312
+   }
+  },
+  {
+   "accepted_sha256": "c01933f2b7991285f36f5ac05bbf55a694f1d6a25b874d765d38d1055a831d58",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0047.parquet",
+   "counts_sha256": "8e8a4ec490b2a30a358b163f62a81b1ec838397d89bae39b3b21f92ada1c29fb",
+   "documents": 24674,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 18676615,
+    "measure-28k": 18363529,
+    "measure-32k": 18117314
+   }
+  },
+  {
+   "accepted_sha256": "ccfd7464451fca35203dbfd194f8d46e1fc0eeedb275dfb93d010bdbb7562919",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0055.parquet",
+   "counts_sha256": "46768bcd99136f0c817bbbd899c65fc39f2ed074267aea660d394409cf3d5f00",
+   "documents": 16797,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 16186768,
+    "measure-28k": 15892973,
+    "measure-32k": 15665860
+   }
+  },
+  {
+   "accepted_sha256": "deb688980151310a77e3200b76c1bfa7a68c468c853e02492991201c4f4497b9",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0077.parquet",
+   "counts_sha256": "34c81b82b2ab57204aeaa2221c66cbde14ea186ed4a07e2437483f197e0f5d06",
+   "documents": 86558,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 96375744,
+    "measure-28k": 94758654,
+    "measure-32k": 93592521
+   }
+  },
+  {
+   "accepted_sha256": "6c5fbfe059d10e82ff5aea820128d34c57a7d0c9e547f1a4ba3d25ef67a86436",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0079.parquet",
+   "counts_sha256": "85360b578955b89e343a78ce3b27bb3636546979d5cea1aaa363a4dd98a15a45",
+   "documents": 85827,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 96484486,
+    "measure-28k": 94870529,
+    "measure-32k": 93694025
+   }
+  },
+  {
+   "accepted_sha256": "32da25b72a385b169b7080235d2a60f42c7183b5f7872a21b48b772d766e7c85",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0082.parquet",
+   "counts_sha256": "074e5b844ff85970b1e3beedc1b36adf3919ca5da958894d4f3d76682f20e4df",
+   "documents": 85667,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 94843681,
+    "measure-28k": 93250770,
+    "measure-32k": 92090959
+   }
+  },
+  {
+   "accepted_sha256": "4efb66d7ab531ce098cef1ceb4dd29c34b1709469c5a4281c2ebe7e0d1176d9c",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0084.parquet",
+   "counts_sha256": "f5ad7c99aba1103c01895e5d89840c99b43d3a2364f9b9794c320ced6a306be4",
+   "documents": 36599,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 35785094,
+    "measure-28k": 35178805,
+    "measure-32k": 34743118
+   }
+  },
+  {
+   "accepted_sha256": "da07171a242ce0a2cdbbcf413ff9e0181e6117ddc8f5e5f64b8d328f4e7fb9a1",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0086.parquet",
+   "counts_sha256": "d001556e0aa19e5f1c76d00156f1184600fc9e5a127518562329ee76f0a9c6ba",
+   "documents": 34469,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 41856184,
+    "measure-28k": 41132387,
+    "measure-32k": 40567549
+   }
+  },
+  {
+   "accepted_sha256": "221cc78ae76b0b882c7af8965f218e38efd8579d25a295dd6a44a3b24bf8456b",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0088.parquet",
+   "counts_sha256": "ffb4e3eebaa1790cb8ec3006092a1a2f90053d3c49b9d5413512ca0caffa3f5c",
+   "documents": 42517,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 60543331,
+    "measure-28k": 59652064,
+    "measure-32k": 58875394
+   }
+  },
+  {
+   "accepted_sha256": "52fedb07f7f093a4fcac7d7714336d98fce178e2bf181c5a0a645b6e91a11d4d",
+   "accepted_shard": "train/stackv2-edu/stack-edu-0092.parquet",
+   "counts_sha256": "d2500b5225e764e0b133269b0bac81f5ee639285f822c72af8a2650d7d3da3b0",
+   "documents": 29252,
+   "source_id": "stackv2-edu",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 22769130,
+    "measure-28k": 22364901,
+    "measure-32k": 22029898
+   }
+  },
+  {
+   "accepted_sha256": "436df1d973e44c7c185f038139ed80b6237ee4c8d745047cf461534f105434c2",
+   "accepted_shard": "train/wikimedia/wikimedia-0000.parquet",
+   "counts_sha256": "22c37ef7e7938ca2ba336e32c09fb4f8e26bc9d942bd4f424c36020bc7e4470d",
+   "documents": 7967,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 16787386,
+    "measure-28k": 16520452,
+    "measure-32k": 16309542
+   }
+  },
+  {
+   "accepted_sha256": "ff699d9dda9ce65b51356c0de9095b6ef4d4de25d66a2bc335844a0ffe714f1c",
+   "accepted_shard": "train/wikimedia/wikimedia-0001.parquet",
+   "counts_sha256": "77862979089e2f05f147e87db4dedf9b96f16e61bfd10e22d5f71c2eb401d099",
+   "documents": 8173,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 18084387,
+    "measure-28k": 17788049,
+    "measure-32k": 17557861
+   }
+  },
+  {
+   "accepted_sha256": "6abf75c437da6312f787d7694289247e86f8e25ec055a00a037f4ada835bb22b",
+   "accepted_shard": "train/wikimedia/wikimedia-0002.parquet",
+   "counts_sha256": "598a8f1a13bace75a0f3d6e6b6437119d47a39ea0ca401ef6166a4833542fac6",
+   "documents": 6472,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 16739411,
+    "measure-28k": 16477445,
+    "measure-32k": 16272207
+   }
+  },
+  {
+   "accepted_sha256": "f2f16ea45669483c8ff2ea6e94e1a36f5499483a011d87026dbed72e646596b1",
+   "accepted_shard": "train/wikimedia/wikimedia-0003.parquet",
+   "counts_sha256": "6397db0a72c456e0f30baa14096a8c11648a0c8adb5278eab33bf738128d96f8",
+   "documents": 6157,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 15852630,
+    "measure-28k": 15578654,
+    "measure-32k": 15372817
+   }
+  },
+  {
+   "accepted_sha256": "2f4c291e70d7e4b4fea1e75587670f8cb11a886882cf56fc336b0a814fb81022",
+   "accepted_shard": "train/wikimedia/wikimedia-0004.parquet",
+   "counts_sha256": "e70851d8e1c312dc461ec7931650f126627b5b4b1a1c9c15916470cc17cc646c",
+   "documents": 7181,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 14765727,
+    "measure-28k": 14511348,
+    "measure-32k": 14316257
+   }
+  },
+  {
+   "accepted_sha256": "5d56680071e92a8f58b9077beea84b26d2dd8b5234e4a87c797ec8056a5232a8",
+   "accepted_shard": "train/wikimedia/wikimedia-0005.parquet",
+   "counts_sha256": "b2fbbfc884a56a6ff18416b245615fc25a68bee3e451c6aca0920262bd6be874",
+   "documents": 3993,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 7318520,
+    "measure-28k": 7191319,
+    "measure-32k": 7095837
+   }
+  },
+  {
+   "accepted_sha256": "9eedc5f08b863f62eb68ca520919f7f4744595f8cf8279caad4ad917061baa7a",
+   "accepted_shard": "train/wikimedia/wikimedia-0006.parquet",
+   "counts_sha256": "db80a974e19574942f50cfc16939e19b19d88ed18d642e0e06e9a88866089396",
+   "documents": 8071,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 13538894,
+    "measure-28k": 13306123,
+    "measure-32k": 13123734
+   }
+  },
+  {
+   "accepted_sha256": "5cee75a5dc21a4ac4524b331ddd1913ee9eb3c9545035ec76e1d51ecebc61256",
+   "accepted_shard": "train/wikimedia/wikimedia-0007.parquet",
+   "counts_sha256": "05fa5ce63b931573b7e53349f49da0c664431f7172dd90069d8dd48945343ce7",
+   "documents": 8111,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 12384369,
+    "measure-28k": 12171083,
+    "measure-32k": 12004243
+   }
+  },
+  {
+   "accepted_sha256": "e196974c4fa2b28a7262d838b871a76b7487cda57ca5178a7c8f03c47fac82cd",
+   "accepted_shard": "train/wikimedia/wikimedia-0008.parquet",
+   "counts_sha256": "35c0e0d244ac756d65581e5572fcfd09b7d633b0be7681985aa8ea4d370b99d0",
+   "documents": 12653,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 17650798,
+    "measure-28k": 17347584,
+    "measure-32k": 17113677
+   }
+  },
+  {
+   "accepted_sha256": "a179af47f41267333d80b4f4f5145906e1825d1985b5abaf07c454c7ac31a1b7",
+   "accepted_shard": "train/wikimedia/wikimedia-0009.parquet",
+   "counts_sha256": "c6f218cf76665724de280e458782c11e64d5272905193d7d05ae3820cc7486ca",
+   "documents": 19950,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 24164974,
+    "measure-28k": 23750575,
+    "measure-32k": 23430188
+   }
+  },
+  {
+   "accepted_sha256": "4aa1fe328287477ac58a907b3c4418c137d80a0500bd63122ffbe43a9940b92c",
+   "accepted_shard": "train/wikimedia/wikimedia-0010.parquet",
+   "counts_sha256": "af6304050de217b7c3ccf968790c63375ce541f7e4de0700e3ffc28ec98ecbb6",
+   "documents": 19025,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 20514226,
+    "measure-28k": 20164225,
+    "measure-32k": 19892146
+   }
+  },
+  {
+   "accepted_sha256": "8dcaa83d642de4e2d363aca09d284b9146f9d62ff24bec333781984e7aa97a41",
+   "accepted_shard": "train/wikimedia/wikimedia-0011.parquet",
+   "counts_sha256": "1867ce77d7ca5754bb73e29ce9fb307a3b85d9d161c8d2e46be59fb8dfcbad5e",
+   "documents": 17742,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 17115636,
+    "measure-28k": 16825042,
+    "measure-32k": 16598832
+   }
+  },
+  {
+   "accepted_sha256": "fd6878b42f97b0ce3cb411019d9108b2efae8342527d8c22e089c9219821cb66",
+   "accepted_shard": "train/wikimedia/wikimedia-0012.parquet",
+   "counts_sha256": "9aead020d1745787e63b3771ad7fd808e2deac134964e433c9f1b0cad44633cc",
+   "documents": 15346,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 14453156,
+    "measure-28k": 14202836,
+    "measure-32k": 14011780
+   }
+  },
+  {
+   "accepted_sha256": "ab9e75f82033bcd034481c97b37defd1b205fb2a59390ad9e4e20fd68a8a063f",
+   "accepted_shard": "train/wikimedia/wikimedia-0013.parquet",
+   "counts_sha256": "91af61718525ef6bb26008727e0bd5bb65d2fc7cac0e7445988be1ff8bfefbbe",
+   "documents": 19937,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 16841011,
+    "measure-28k": 16552290,
+    "measure-32k": 16325386
+   }
+  },
+  {
+   "accepted_sha256": "911ea6953e80131d0bd836fd3d0fcdbf4d05921cd5542ed94c746b0f2fd37dd2",
+   "accepted_shard": "train/wikimedia/wikimedia-0014.parquet",
+   "counts_sha256": "b28265bf5725571712c73bd3cfbd6c0769f1ec6bb8bb20013f47f49db60429ba",
+   "documents": 17804,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 14352343,
+    "measure-28k": 14106495,
+    "measure-32k": 13916785
+   }
+  },
+  {
+   "accepted_sha256": "264ef8a5ae47270911022e386186556113a9bc0708a336fa86228a5fe140bbe1",
+   "accepted_shard": "train/wikimedia/wikimedia-0015.parquet",
+   "counts_sha256": "548b3153c221a613d7902d1dc023570ef1504490a34ee537b5d1fcd481768422",
+   "documents": 17627,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 14351806,
+    "measure-28k": 14106115,
+    "measure-32k": 13916037
+   }
+  },
+  {
+   "accepted_sha256": "bd293cf94a6b5f7cb9cdd3fd5ba7da48b7333de2a8336f3fec38478825aa5059",
+   "accepted_shard": "train/wikimedia/wikimedia-0016.parquet",
+   "counts_sha256": "8a737f40069ead230704744090ed8a55d60bc77831a3a65e657d8d155ad1860a",
+   "documents": 17373,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 13532338,
+    "measure-28k": 13300026,
+    "measure-32k": 13120366
+   }
+  },
+  {
+   "accepted_sha256": "d93bef5d33ba699b07fc25d4b316f67d1fcbe7c3d499c906f874f032af77b1d4",
+   "accepted_shard": "train/wikimedia/wikimedia-0017.parquet",
+   "counts_sha256": "2aef36ee715469178362b8abaf6e032350c90a3777526304ba5e60d9a95fc52a",
+   "documents": 16327,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 12996676,
+    "measure-28k": 12773009,
+    "measure-32k": 12599092
+   }
+  },
+  {
+   "accepted_sha256": "8a14c6d5db186568a84e5d413be0f92513b94efee087c513eb77deb0ecbd6d05",
+   "accepted_shard": "train/wikimedia/wikimedia-0018.parquet",
+   "counts_sha256": "895d2def288654e59dd4fc9a0f849be4b424df04ebbcd4726282bc8e54ec2ba8",
+   "documents": 15823,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 12658817,
+    "measure-28k": 12440901,
+    "measure-32k": 12273283
+   }
+  },
+  {
+   "accepted_sha256": "e6519e50bca9187a5d9ec562e101caace7b2df391fcc7ab3b0805a95a6626f84",
+   "accepted_shard": "train/wikimedia/wikimedia-0019.parquet",
+   "counts_sha256": "061294e411f09d686461ab066dd558a421f1b1fc4ed31b8a6bd16a17fd54a32f",
+   "documents": 15272,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 12041763,
+    "measure-28k": 11832517,
+    "measure-32k": 11671040
+   }
+  },
+  {
+   "accepted_sha256": "66d508f61edd1998d96472deade8c230fdbb7e38bb90ccea50aa6e4895d219ce",
+   "accepted_shard": "train/wikimedia/wikimedia-0020.parquet",
+   "counts_sha256": "ab33bfde8d0db0abe586d864e39b4a15db885c6a607cdb8e689a8c41546805e9",
+   "documents": 15007,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 11811081,
+    "measure-28k": 11607954,
+    "measure-32k": 11449205
+   }
+  },
+  {
+   "accepted_sha256": "d5b958d29cf9971f4b8fec88162302c5415ab4d18f660a95cd18211535b26236",
+   "accepted_shard": "train/wikimedia/wikimedia-0021.parquet",
+   "counts_sha256": "2e28a3bb858af65b3402226123ccc188a96da45574ad7f03e01842baa7c317b4",
+   "documents": 14291,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 11021394,
+    "measure-28k": 10830120,
+    "measure-32k": 10682319
+   }
+  },
+  {
+   "accepted_sha256": "9b1e43cd5d88b2cdf5d36d6c45cb46fb6ef8396ea64c374ece2c4c271cde87d8",
+   "accepted_shard": "train/wikimedia/wikimedia-0022.parquet",
+   "counts_sha256": "e52753e20ba29d4edf13af8c499345d40c9ada7dbb479bf8acf1d680936f622d",
+   "documents": 14817,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 11380164,
+    "measure-28k": 11185816,
+    "measure-32k": 11033883
+   }
+  },
+  {
+   "accepted_sha256": "1b1e833793dfc5369ba55d0143d38e57457818aa59432718a7c6a3a0cb10f6be",
+   "accepted_shard": "train/wikimedia/wikimedia-0023.parquet",
+   "counts_sha256": "c141280b7aa1116786434f5b704844d8aaca38fb6764689afb34ec2ca51328cd",
+   "documents": 16792,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 12535341,
+    "measure-28k": 12319095,
+    "measure-32k": 12152286
+   }
+  },
+  {
+   "accepted_sha256": "2824144e5636ba586f7d43beb5fc3f3d1edfef874f1ac0b5e9829e2133c966f1",
+   "accepted_shard": "train/wikimedia/wikimedia-0024.parquet",
+   "counts_sha256": "7e869836fba3a5ba3c3e16b52f8c26126b57d652c8846c7867700614593aed35",
+   "documents": 16626,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 12388932,
+    "measure-28k": 12171905,
+    "measure-32k": 12004469
+   }
+  },
+  {
+   "accepted_sha256": "1d97b0b43856ef145723e8ce8f6e07e0711eed36df7dc0ae8e1c43a58e2ec71d",
+   "accepted_shard": "train/wikimedia/wikimedia-0025.parquet",
+   "counts_sha256": "c4e831372cdd126c82f9039b3f308d90dbfe24a6fe8bfa75587a90606ed7c479",
+   "documents": 16026,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 11584094,
+    "measure-28k": 11383498,
+    "measure-32k": 11230228
+   }
+  },
+  {
+   "accepted_sha256": "d26922ac2742df27457790fb74bc7b212ba2cbfd2b8a4ec91f1f0c6e4803c50c",
+   "accepted_shard": "train/wikimedia/wikimedia-0026.parquet",
+   "counts_sha256": "6e28945dbd0ad75f91b5fd8072f3632b0ffc5130031e2043d175d07f2a2da0ea",
+   "documents": 16675,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 11711187,
+    "measure-28k": 11508650,
+    "measure-32k": 11353688
+   }
+  },
+  {
+   "accepted_sha256": "9ead77262901db3a8db62118e904ab30ae0de5218ef458c88275643250c6bb5f",
+   "accepted_shard": "train/wikimedia/wikimedia-0027.parquet",
+   "counts_sha256": "37477f4bd41523dbb3b66cd49404fc9d739ae65bb7ced2de5e60df88f734e4f2",
+   "documents": 15283,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 11021847,
+    "measure-28k": 10830052,
+    "measure-32k": 10681879
+   }
+  },
+  {
+   "accepted_sha256": "01aa183454f0f0380ee0a479910528aec103bb3d48a9d1e9a4dfe205554e7549",
+   "accepted_shard": "train/wikimedia/wikimedia-0028.parquet",
+   "counts_sha256": "47c027759f029f01571001eb2bc5337f937ed5e11243ab50636e0f3537caaa53",
+   "documents": 15907,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 11355782,
+    "measure-28k": 11159216,
+    "measure-32k": 11008062
+   }
+  },
+  {
+   "accepted_sha256": "eb943d6d1261fffba14a5b89b608b76d727f233c558fe4bc24e277a778b8691f",
+   "accepted_shard": "train/wikimedia/wikimedia-0029.parquet",
+   "counts_sha256": "25a7e5cb137c5d259f6cfeabbc313446d5a9606400434104261f1f4f70f10a59",
+   "documents": 15308,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 10822471,
+    "measure-28k": 10632402,
+    "measure-32k": 10487994
+   }
+  },
+  {
+   "accepted_sha256": "8e4a5102f17bf91f9ebfe287018fccd770d7baf87254963b726bce81fcc469e5",
+   "accepted_shard": "train/wikimedia/wikimedia-0030.parquet",
+   "counts_sha256": "64a2621b36725fad969159690a2c79dedaf392b36676cfb9cbb5101ba6fcb0f5",
+   "documents": 14627,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 10578766,
+    "measure-28k": 10393641,
+    "measure-32k": 10252761
+   }
+  },
+  {
+   "accepted_sha256": "a1bd117e2ec823493dbc49f8510435d61748a5cc727afc8257c1ac2add8eab30",
+   "accepted_shard": "train/wikimedia/wikimedia-0031.parquet",
+   "counts_sha256": "1df4440a763cb6df609fd281190c615a55354ba7f31c3b964163b424cd02c41b",
+   "documents": 14363,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 10582145,
+    "measure-28k": 10396533,
+    "measure-32k": 10254244
+   }
+  },
+  {
+   "accepted_sha256": "e25f06e7358c9e70ac59237815ef8222a4984f146633e0905258e2dca9c16f3d",
+   "accepted_shard": "train/wikimedia/wikimedia-0032.parquet",
+   "counts_sha256": "4479e99b0b9104d2033913ed70ef9d5c184bcdc0e28d6d7d112f7982f0b930ce",
+   "documents": 14274,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 10189357,
+    "measure-28k": 10014685,
+    "measure-32k": 9878679
+   }
+  },
+  {
+   "accepted_sha256": "5f5cd75cd5ce00b03cbef5ca38be165b251b884fb9b0c8b22ac2590d4ea8197c",
+   "accepted_shard": "train/wikimedia/wikimedia-0033.parquet",
+   "counts_sha256": "cd14bb3c525cd7d81cf952db8fb6c094b26bd3d431f500fbd0587f13d1b54669",
+   "documents": 14434,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 10551149,
+    "measure-28k": 10368326,
+    "measure-32k": 10226763
+   }
+  },
+  {
+   "accepted_sha256": "01b8b87d17f75a5255de0dfb95b716d3375f339c4eb2808f35b47108900f8b06",
+   "accepted_shard": "train/wikimedia/wikimedia-0034.parquet",
+   "counts_sha256": "06d22c5ac33cf0495ad2cdbc67455b87105f7cc467af92a1b9b10169f3e0caa9",
+   "documents": 13203,
+   "source_id": "wikimedia",
+   "split": "train",
+   "tokens": {
+    "measure-24k": 9239559,
+    "measure-28k": 9077778,
+    "measure-32k": 8953586
+   }
+  },
+  {
+   "accepted_sha256": "fe4080677fb1f80700f0edfcb6629941755b618519b0531216b939b6e31ee0f8",
+   "accepted_shard": "validation/arxiv-papers/arxiv-papers-0000.parquet",
+   "counts_sha256": "4dfa947953f723c785108cdee579d2420f0db4023470b78e32d5e2ba63ecde5d",
+   "documents": 3,
+   "source_id": "arxiv-papers",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 41958,
+    "measure-28k": 41386,
+    "measure-32k": 40978
+   }
+  },
+  {
+   "accepted_sha256": "c0ff018c3791e06e1add1df033610f1ea82aeb2e64e8975ddc6609858f121612",
+   "accepted_shard": "validation/arxiv-papers/arxiv-papers-0001.parquet",
+   "counts_sha256": "c16f154459f90676525b452b250f15c0bc3e54ec360aa0809a2a8a13471373ab",
+   "documents": 1,
+   "source_id": "arxiv-papers",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 16667,
+    "measure-28k": 16458,
+    "measure-32k": 16274
+   }
+  },
+  {
+   "accepted_sha256": "9a2b5d5feb46c5c362d44e87fe637aa8b53a8bfe8307b4a9703c89e4bf1db3be",
+   "accepted_shard": "validation/arxiv-papers/arxiv-papers-0002.parquet",
+   "counts_sha256": "59e100da4b32f8907fc7268ba49e518ee6febbbdbfd6664e0d1653787c585905",
+   "documents": 2,
+   "source_id": "arxiv-papers",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 20277,
+    "measure-28k": 20069,
+    "measure-32k": 19846
+   }
+  },
+  {
+   "accepted_sha256": "5c018465084ceefe7195fb2261fc28d2f5335bd9ada8fdf3546cd64b5777c99c",
+   "accepted_shard": "validation/arxiv-papers/arxiv-papers-0003.parquet",
+   "counts_sha256": "373b7269e0622121a713ff06b3c55eb6e3967e79483c4de0b269319b4f0fb3de",
+   "documents": 2,
+   "source_id": "arxiv-papers",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 39237,
+    "measure-28k": 38932,
+    "measure-32k": 38621
+   }
+  },
+  {
+   "accepted_sha256": "3fb82b1dfa951951641f11df57d7d2d89d0dc5d6d3cd79c08c01a6f965eff140",
+   "accepted_shard": "validation/arxiv-papers/arxiv-papers-0004.parquet",
+   "counts_sha256": "d2d8529d70e0a031df877ed1116e395c35166a7bfeafcec7244a01acfc7d846e",
+   "documents": 1,
+   "source_id": "arxiv-papers",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 18074,
+    "measure-28k": 17841,
+    "measure-32k": 17593
+   }
+  },
+  {
+   "accepted_sha256": "b4e395c280fa255f71fda1afb8b0e4603b0e02bc19782de49de4a6ab997540fe",
+   "accepted_shard": "validation/arxiv-papers/arxiv-papers-0005.parquet",
+   "counts_sha256": "f0f17bf9547af86dca7826f08189a703ecf2101d096e1ff44f8db5256e92cf01",
+   "documents": 1,
+   "source_id": "arxiv-papers",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 22777,
+    "measure-28k": 22475,
+    "measure-32k": 22135
+   }
+  },
+  {
+   "accepted_sha256": "27e7ad87196e345c82ffefa0731e58d331f259d7bed4930d712237d64401b8bc",
+   "accepted_shard": "validation/arxiv-papers/arxiv-papers-0006.parquet",
+   "counts_sha256": "33cb606daaec23cd82e051bd0f573f87b7606f468f5cc2dfd7d5066731631a12",
+   "documents": 2,
+   "source_id": "arxiv-papers",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 56643,
+    "measure-28k": 56129,
+    "measure-32k": 55403
+   }
+  },
+  {
+   "accepted_sha256": "806e784ab10280a81154f41768e2fc8fc90910b6dc05e9b38bd40128476d3612",
+   "accepted_shard": "validation/finemath-4plus/train-00001-of-00064.r00000000.parquet",
+   "counts_sha256": "7abedb8fbbdba605a4b9bf5b758128e076fefa7ed12f08545bdcd8597818ddc5",
+   "documents": 17,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 33615,
+    "measure-28k": 33356,
+    "measure-32k": 33213
+   }
+  },
+  {
+   "accepted_sha256": "ad1b3f3439e8cce3a320e0b8de0b6c69147c0c80f42f0d01208d4d0fa5e36a90",
+   "accepted_shard": "validation/finemath-4plus/train-00004-of-00064.r00000000.parquet",
+   "counts_sha256": "21ccdb6b1e8674aa061c22b1bf8ed4bc1da24842df157578022a61ca23b8672e",
+   "documents": 16,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 110393,
+    "measure-28k": 109249,
+    "measure-32k": 108383
+   }
+  },
+  {
+   "accepted_sha256": "a0fa63d68d96b823ca1a501259e62b91488adfe5cb97cf7a06cc3fb7bdba8661",
+   "accepted_shard": "validation/finemath-4plus/train-00005-of-00064.r00000000.parquet",
+   "counts_sha256": "e1a8e65532fc69ca0f732d36fde2f5282823895ddad57271f87955abd30c5fb9",
+   "documents": 21,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 52271,
+    "measure-28k": 51893,
+    "measure-32k": 51626
+   }
+  },
+  {
+   "accepted_sha256": "53f49e5d49de5c3df58892766ef21cbf832c7276f3245334152d59ee2106f7e4",
+   "accepted_shard": "validation/finemath-4plus/train-00012-of-00064.r00100000.parquet",
+   "counts_sha256": "a8ae86b8302377224280ea384e0c5cdb885c9d1e3f34f41fb57529d151d30b5b",
+   "documents": 1,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 2748,
+    "measure-28k": 2706,
+    "measure-32k": 2694
+   }
+  },
+  {
+   "accepted_sha256": "f070294648f695627ef7107ae50417aa573a47ee944cdb162b4597f93e1df305",
+   "accepted_shard": "validation/finemath-4plus/train-00014-of-00064.r00100000.parquet",
+   "counts_sha256": "78c627fe5b32a3585718046283c9b0e95619804406319f4c1c8c2dd105fe913b",
+   "documents": 2,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 1865,
+    "measure-28k": 1853,
+    "measure-32k": 1836
+   }
+  },
+  {
+   "accepted_sha256": "faa769396b293caf79f78d9ad49306e40cea09fc5deb1df2659c21180099a354",
+   "accepted_shard": "validation/finemath-4plus/train-00016-of-00064.r00000000.parquet",
+   "counts_sha256": "1938c6b11c6704bf3894fe6fb3390ac9b93c5c4fd77198842962afa058017180",
+   "documents": 24,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 51467,
+    "measure-28k": 51112,
+    "measure-32k": 50842
+   }
+  },
+  {
+   "accepted_sha256": "8b5adf87f269290a7e6ac81bc2142d0b783a9cabdccac6d9906d672ae65e4657",
+   "accepted_shard": "validation/finemath-4plus/train-00017-of-00064.r00100000.parquet",
+   "counts_sha256": "61e422cf7cf5e4ffdce3529e907bedf6fe3fd735a9f715b76851c100a5850cd2",
+   "documents": 1,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 1341,
+    "measure-28k": 1337,
+    "measure-32k": 1335
+   }
+  },
+  {
+   "accepted_sha256": "70ede5667de9027aa7e99b553b278d37e21278f5d36809d461fbe2fd3427f41e",
+   "accepted_shard": "validation/finemath-4plus/train-00019-of-00064.r00000000.parquet",
+   "counts_sha256": "6fd54c055fd130d14e40166b2317e27af70d12c6210299e6c6d784052bcb9a63",
+   "documents": 13,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 19441,
+    "measure-28k": 19240,
+    "measure-32k": 19119
+   }
+  },
+  {
+   "accepted_sha256": "940707dacedcdfd60c90baec10371c63d6992c902b627de61a9e06c75cff1f17",
+   "accepted_shard": "validation/finemath-4plus/train-00020-of-00064.r00000000.parquet",
+   "counts_sha256": "874b39562ebb1c7cb9adae05dafa6fca39693de9f5ea028677390e1a79314069",
+   "documents": 23,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 53206,
+    "measure-28k": 52708,
+    "measure-32k": 52440
+   }
+  },
+  {
+   "accepted_sha256": "04201501caca1a2c1bb40eb51129f2be25742d2be3cc381c6bcf0fe9657e5e1a",
+   "accepted_shard": "validation/finemath-4plus/train-00024-of-00064.r00100000.parquet",
+   "counts_sha256": "2c49e73398987924f307709b39cc1f7ee0916aa902e6806eef2df2027d38c006",
+   "documents": 2,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 4765,
+    "measure-28k": 4725,
+    "measure-32k": 4719
+   }
+  },
+  {
+   "accepted_sha256": "fc1177ff4b17ac9bb607733f8a6caca07be1bc090c7c603484db4c0f0f23ee12",
+   "accepted_shard": "validation/finemath-4plus/train-00026-of-00064.r00000000.parquet",
+   "counts_sha256": "eb6f532a64ab14cf2f26fb04042e844271905c0e7df1eded1523fe94cf936eee",
+   "documents": 7,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 10448,
+    "measure-28k": 10313,
+    "measure-32k": 10247
+   }
+  },
+  {
+   "accepted_sha256": "e95d63862602940b04a5764839346a17f9b212c42bdac739a4136755d65bc653",
+   "accepted_shard": "validation/finemath-4plus/train-00029-of-00064.r00000000.parquet",
+   "counts_sha256": "e6983e42fe25dc17019f893c04a6e7ca879fb300245421904c0bddb2e8223f53",
+   "documents": 22,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 37947,
+    "measure-28k": 37665,
+    "measure-32k": 37518
+   }
+  },
+  {
+   "accepted_sha256": "4d961d03e714a4f8a0bd6aa09f40ca19fbcb788ab2e15dbc9581607c3c48d145",
+   "accepted_shard": "validation/finemath-4plus/train-00031-of-00064.r00000000.parquet",
+   "counts_sha256": "df16805b0d04dab4e48e1c214e7d179b096ecc4b24f01897e2ef6728ec567dde",
+   "documents": 15,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 23875,
+    "measure-28k": 23668,
+    "measure-32k": 23541
+   }
+  },
+  {
+   "accepted_sha256": "a1da7d9c8230222beb40f6ed2a0fead3f3cc642d8e7ed47c2baf06540860d3e9",
+   "accepted_shard": "validation/finemath-4plus/train-00041-of-00064.r00100000.parquet",
+   "counts_sha256": "685908c453473c72121b55a2ddf71c9a3725ccf76746f777bba031df97c61093",
+   "documents": 2,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 4491,
+    "measure-28k": 4475,
+    "measure-32k": 4469
+   }
+  },
+  {
+   "accepted_sha256": "79bfe278f24a46a669106269502945c7bda1718b568a1bec9635a437c42a02cd",
+   "accepted_shard": "validation/finemath-4plus/train-00047-of-00064.r00100000.parquet",
+   "counts_sha256": "e621c1aad393f2d0448b60d30a365d96d9fee211fae513049695609d0898a90a",
+   "documents": 1,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 2523,
+    "measure-28k": 2493,
+    "measure-32k": 2479
+   }
+  },
+  {
+   "accepted_sha256": "5c48c4532229be8781ca34e755ae7082b6bc1cbbf3c36464efa63fe2a2887e5d",
+   "accepted_shard": "validation/finemath-4plus/train-00048-of-00064.r00100000.parquet",
+   "counts_sha256": "d8e942f1fdd71ff838ec2757a466b80d86262d3d44ceda5c6b076efca044e1ac",
+   "documents": 1,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 2078,
+    "measure-28k": 2057,
+    "measure-32k": 2054
+   }
+  },
+  {
+   "accepted_sha256": "a4e4a8b4e52384dcfaa42fd78c73069b539e95ad37287c40b1eb0047c98bb66b",
+   "accepted_shard": "validation/finemath-4plus/train-00053-of-00064.r00000000.parquet",
+   "counts_sha256": "ccef797aa7bd48e3faf4b76d052d025b3aea9d19eaa56260a2bf3385407c30e3",
+   "documents": 12,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 19825,
+    "measure-28k": 19660,
+    "measure-32k": 19559
+   }
+  },
+  {
+   "accepted_sha256": "f7f0d7fae09b22560a56d435e20813f027bea877eaa66ffdb62c3616740825c0",
+   "accepted_shard": "validation/finemath-4plus/train-00054-of-00064.r00100000.parquet",
+   "counts_sha256": "9b8002e782cbf61fc657d64affb3fc0b2065f07c00225b389b865cf96cf4b93e",
+   "documents": 1,
+   "source_id": "finemath-4plus",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 2690,
+    "measure-28k": 2661,
+    "measure-32k": 2643
+   }
+  },
+  {
+   "accepted_sha256": "9be0ef77e27d49f629008fb8400ec72dda1fe7e533b2a415f9c35dcd07c47b01",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00003-of-00234.r00200000.parquet",
+   "counts_sha256": "63bbdb7cd30450f50f2aea5f552b5139e544d12f7ccd5a4751acdb505a4c7b54",
+   "documents": 43,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 48615,
+    "measure-28k": 47855,
+    "measure-32k": 47225
+   }
+  },
+  {
+   "accepted_sha256": "2711b07fdbacef5db100a4a5d21f16d6fc29055bf090e091773b97a5e81550af",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00003-of-00234.r00400000.parquet",
+   "counts_sha256": "8c41fa5c100c5f633243ddab7bc249e13cf76fadfe67808f10099f1adada2134",
+   "documents": 27,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 47536,
+    "measure-28k": 46689,
+    "measure-32k": 46098
+   }
+  },
+  {
+   "accepted_sha256": "c6cdbd8d2b62f52dfff9d1608cd6010efc77043ac4ac1290a7bc60fe934a86d5",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00006-of-00234.r00100000.parquet",
+   "counts_sha256": "a71c6afc1141c638bad2b7b58fb94bdda910ab0ab95a2a5c208d80fce857b69b",
+   "documents": 32,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 30114,
+    "measure-28k": 29671,
+    "measure-32k": 29305
+   }
+  },
+  {
+   "accepted_sha256": "c3d7b7cd989dfaf0f402d7816c462169ab7dedf504b1413ca5a76299312cce68",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00006-of-00234.r00200000.parquet",
+   "counts_sha256": "121d9f170490b0e3a735f4aa308deeef11513b372df6060cc94e0e0986c143d3",
+   "documents": 34,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 49402,
+    "measure-28k": 48678,
+    "measure-32k": 48076
+   }
+  },
+  {
+   "accepted_sha256": "6f44c9156f578d76c2bb3397bf39d3a2064b37a13b9d54952ecb36f3b376ce1a",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00006-of-00234.r00700000.parquet",
+   "counts_sha256": "818500121ea355a9e3cc29826a7dce08d4e995559190f14d5bdd7bea59657783",
+   "documents": 29,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 24016,
+    "measure-28k": 23600,
+    "measure-32k": 23254
+   }
+  },
+  {
+   "accepted_sha256": "c7bc8076e073adfad8c6bbfb58d66311389343a48a9b23f6120d16ad58d452ff",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00069-of-00234.r00500000.parquet",
+   "counts_sha256": "06ab9ebc64844df0e64f7a7c11917c0c1e1392e879d3ad0d1793b30de68dc4eb",
+   "documents": 34,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 35618,
+    "measure-28k": 35077,
+    "measure-32k": 34629
+   }
+  },
+  {
+   "accepted_sha256": "ee7391a3ff0fe7f67ecdf3688b2f12f9da61a50d7803d7274965e5e4d3f8cdf2",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00091-of-00234.r00100000.parquet",
+   "counts_sha256": "a9470028cf704f69a8b676bb2393309ed13c3db3270a0651a89322757e75f4da",
+   "documents": 37,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 32334,
+    "measure-28k": 31916,
+    "measure-32k": 31462
+   }
+  },
+  {
+   "accepted_sha256": "28aa6c224b305c53ced7285798d5f8530593c6bd2919e2c15138ab074f0751f1",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00091-of-00234.r00400000.parquet",
+   "counts_sha256": "001c8523610c7d5e90fb83c9964bfd7135ebc95e9352307356d91413effcafd6",
+   "documents": 32,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 25226,
+    "measure-28k": 24864,
+    "measure-32k": 24565
+   }
+  },
+  {
+   "accepted_sha256": "d79aec3920a852470c4eb26e0ad7e369683956eadc138bcadc39ad53b7a4e198",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00091-of-00234.r00500000.parquet",
+   "counts_sha256": "4b275ecc17b09af83109c7216fa500a88fb6ebd945a1ac26ae00f05d4806d792",
+   "documents": 39,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 50009,
+    "measure-28k": 49254,
+    "measure-32k": 48537
+   }
+  },
+  {
+   "accepted_sha256": "44f00484ea3023beb388bf052d7aaba351bef1a41aca10dcc2179d4c31a7c992",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00095-of-00234.r00700000.parquet",
+   "counts_sha256": "e0aa1acd67993b29129b94c5901aac1d70c257ed0a1376a1e450eb8482ef6a7e",
+   "documents": 27,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 26107,
+    "measure-28k": 25728,
+    "measure-32k": 25430
+   }
+  },
+  {
+   "accepted_sha256": "60c92a5db2fc4fbe7fbc6ce07813c49e0e22e1a2afd01ba232551317e754199a",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00095-of-00234.r00800000.parquet",
+   "counts_sha256": "45b0d4498dc8cc7799b45088dc2edd05c4479d56500c8d2d0717668f26c5930e",
+   "documents": 4,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 4265,
+    "measure-28k": 4211,
+    "measure-32k": 4170
+   }
+  },
+  {
+   "accepted_sha256": "3c7aac9a0a399ed36c47e506d181499937d6cf8e9a1f0b4851ce2b556a2ec7ab",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00099-of-00234.r00000000.parquet",
+   "counts_sha256": "fd5f5e4bd3222cad293330f432f0e51205daacc1c1b4837d34caf7b9ae1e1ee8",
+   "documents": 40,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 33111,
+    "measure-28k": 32614,
+    "measure-32k": 32204
+   }
+  },
+  {
+   "accepted_sha256": "0ca196a7b560449521be9e21436966fdd4148ae84ea8c0d9a934ee0ab99e5aca",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00099-of-00234.r00300000.parquet",
+   "counts_sha256": "ab72f90b22504062c8fcd6279f9ef953a219cbdb2bded9dced15599890ee6962",
+   "documents": 36,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 27733,
+    "measure-28k": 27293,
+    "measure-32k": 26925
+   }
+  },
+  {
+   "accepted_sha256": "5ac27552ae6580cb34882c62cd976353d628198ad63b870f9baa6c45f49c5ed8",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00099-of-00234.r00600000.parquet",
+   "counts_sha256": "757d74923edb4107b06de9b3e3931bdd22dc97b0468a5d3dbac2382c53c37436",
+   "documents": 31,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 29045,
+    "measure-28k": 28600,
+    "measure-32k": 28296
+   }
+  },
+  {
+   "accepted_sha256": "921b945196cd44fa58c23d6eada90956d06482f35165a5ed315497bbf5eba1bb",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00109-of-00234.r00200000.parquet",
+   "counts_sha256": "d16dc3410dff5281f5286bf7ba3bf6818b874b818fb4ab5ad5cf5d88afd9c24c",
+   "documents": 42,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 41740,
+    "measure-28k": 41093,
+    "measure-32k": 40573
+   }
+  },
+  {
+   "accepted_sha256": "5b32c79b6ebfe631d1625b90083ce1f8a403c468f38c68d3d93da9eafec1e7cd",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00181-of-00234.r00000000.parquet",
+   "counts_sha256": "37969177775563cc6f8d47af681c4e58a83bf47bc9eee92e1de0df93ee87fe1b",
+   "documents": 31,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 49221,
+    "measure-28k": 48501,
+    "measure-32k": 47917
+   }
+  },
+  {
+   "accepted_sha256": "fb8682321cce469a81a3c024eba1d2071831af13ae0546ee053302b229564063",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00181-of-00234.r00300000.parquet",
+   "counts_sha256": "85f36f28ee98238b5dc6c3eeba299914fa7d7167498a1ad7c904a06f3cffe22d",
+   "documents": 28,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 16455,
+    "measure-28k": 16188,
+    "measure-32k": 15934
+   }
+  },
+  {
+   "accepted_sha256": "13f6899a0c33d0694fe3d394c8b21e4540d39ec2da49fde747627695b85a2fbc",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00181-of-00234.r00400000.parquet",
+   "counts_sha256": "7ef40af284f387da82bab8b4cf902e4535f90b08410c43ff494766cc60dc3eee",
+   "documents": 30,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 35363,
+    "measure-28k": 34883,
+    "measure-32k": 34481
+   }
+  },
+  {
+   "accepted_sha256": "62546ff7de77964a963789cfba2f44d74f58428de3d2d03056dc3632dea0f47f",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00181-of-00234.r00800000.parquet",
+   "counts_sha256": "f767949a895492f977ee52945023cb991e91c2a860b4eae9c4b22ffccc145b0f",
+   "documents": 5,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 12215,
+    "measure-28k": 12092,
+    "measure-32k": 11953
+   }
+  },
+  {
+   "accepted_sha256": "1fa87a09349eab8d376434ea46a730f06eb383b2357d5f4a3cfd39e8ab3059dd",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00205-of-00234.r00000000.parquet",
+   "counts_sha256": "35112c90d5ae2ca2556aaba04f7b4b4fa9d32363f794ced1887aa0f02632db2f",
+   "documents": 30,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 35539,
+    "measure-28k": 34940,
+    "measure-32k": 34545
+   }
+  },
+  {
+   "accepted_sha256": "eec48317edd4c32f42b45f2e6f2717e7fa3096b8673a9a72a4aa17e429656c75",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00205-of-00234.r00100000.parquet",
+   "counts_sha256": "9892f4f1efa88dd5b22b6294340f2497b8e9428a4753911662cb4dc08abe4b62",
+   "documents": 31,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 36212,
+    "measure-28k": 35666,
+    "measure-32k": 35160
+   }
+  },
+  {
+   "accepted_sha256": "6fca977a9a0c30d75e29edf248ac237e1c6175b205c7da5ab374315579af28e6",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00205-of-00234.r00200000.parquet",
+   "counts_sha256": "10656de1744394a2c4d832f1748922db47646892bdbe8051ea3061628a422577",
+   "documents": 34,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 36880,
+    "measure-28k": 36301,
+    "measure-32k": 35848
+   }
+  },
+  {
+   "accepted_sha256": "7d818e4ec3865e1f5a8d8d06c94656b09609503af4bf6589b5a44af00a0f5d4e",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00205-of-00234.r00600000.parquet",
+   "counts_sha256": "4f445566dcc510281ba0505e357deea8a7e2de8ed78ba977e962ee0e080bfcb4",
+   "documents": 26,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 27128,
+    "measure-28k": 26687,
+    "measure-32k": 26409
+   }
+  },
+  {
+   "accepted_sha256": "4cf093ea1a09d3b584f2b455b35a8a4887abe5fb6cfb952ed54a075f67d7df54",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00205-of-00234.r00700000.parquet",
+   "counts_sha256": "2ac2622d423171ef7e5eb1f06fb802d368a8fe817038587889b80c9f69a3099a",
+   "documents": 24,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 21854,
+    "measure-28k": 21591,
+    "measure-32k": 21325
+   }
+  },
+  {
+   "accepted_sha256": "2c717ff18c15a3ae3bf9e2c9f9a12b67a342769e15f607d7c07c61637b6c03ab",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00205-of-00234.r00800000.parquet",
+   "counts_sha256": "ce6d17ccb2a4e6be98a43226d6d412979bc2ae357c48d7750e000b07ebbf2e64",
+   "documents": 4,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 9776,
+    "measure-28k": 9602,
+    "measure-32k": 9468
+   }
+  },
+  {
+   "accepted_sha256": "8e5f730d93615656143b6e47c50d9e0a2bec92a699cd8a4f85801d056a2d611e",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00217-of-00234.r00100000.parquet",
+   "counts_sha256": "d0fa8e2076864445a0128d44ba99774684389037ff8ca397c18c5d60a804f69a",
+   "documents": 22,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 26972,
+    "measure-28k": 26546,
+    "measure-32k": 26229
+   }
+  },
+  {
+   "accepted_sha256": "3e0bd3bd8bdbad0a23c62c077d90468ebe853c739c07b8dada37298dbc1b3602",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00217-of-00234.r00500000.parquet",
+   "counts_sha256": "ffcdac2fe4d6bd2406a959e6d5609337fdd75ec2937c4ff7c8fc118df3a001fb",
+   "documents": 26,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 23811,
+    "measure-28k": 23296,
+    "measure-32k": 23038
+   }
+  },
+  {
+   "accepted_sha256": "4cb717ca914649fd10b700c72593a51f0da531294c7609077aeb879e7f7069c0",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00217-of-00234.r00700000.parquet",
+   "counts_sha256": "53a27ce15762168a394d9f238ef73bb1645de20df88b31716bc757b41231ccd7",
+   "documents": 26,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 31855,
+    "measure-28k": 31487,
+    "measure-32k": 31130
+   }
+  },
+  {
+   "accepted_sha256": "9ae05ca7f63641fa2432c8a14a7f44a1d5d6e49e5f0bab64d3f696dbda1139db",
+   "accepted_shard": "validation/fineweb-edu-dedup/train-00219-of-00234.r00500000.parquet",
+   "counts_sha256": "ee6c95af2c25b8f53186bc6b5929999fd9ec3781612c5eaf2fba33acba76ebe3",
+   "documents": 28,
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 22552,
+    "measure-28k": 22228,
+    "measure-32k": 21910
+   }
+  },
+  {
+   "accepted_sha256": "31a60c74f852f63bcdd8af6bee3bc1043880f08a7a8818744fcec87c8a522444",
+   "accepted_shard": "validation/libretexts/libretexts-0000.parquet",
+   "counts_sha256": "869a89c7759d3aeca038536630cba730548f4b057751e1c91915e397df79cc73",
+   "documents": 9,
+   "source_id": "libretexts",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 26456,
+    "measure-28k": 26049,
+    "measure-32k": 25711
+   }
+  },
+  {
+   "accepted_sha256": "577cf8f22f10b3bf1afc6ec7300caff6f5782eeb2b86bd7013cbb3ad9724dd16",
+   "accepted_shard": "validation/oercommons/oercommons-0000.parquet",
+   "counts_sha256": "b1c51b1c13d1a99c8b4c79d50c595472f7201a023aa28f01cfd4316622e31841",
+   "documents": 2,
+   "source_id": "oercommons",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 9292,
+    "measure-28k": 9197,
+    "measure-32k": 9108
+   }
+  },
+  {
+   "accepted_sha256": "6dba257276917d0836dad67efb7eaf2cbc04f484e2483bd22e2ee3435f79117c",
+   "accepted_shard": "validation/pressbooks/pressbooks-0000.parquet",
+   "counts_sha256": "b17dc2c54caad51fbe0be267ee173e9e590f1ed8996cf6bdb61c90a6842cd32f",
+   "documents": 24,
+   "source_id": "pressbooks",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 258299,
+    "measure-28k": 251507,
+    "measure-32k": 247984
+   }
+  },
+  {
+   "accepted_sha256": "b4e75773726029783d1e58dc385d6807fda1fca8d25e3fe48ad01352f97be64e",
+   "accepted_shard": "validation/python-peps/peps-dolma-0000.parquet",
+   "counts_sha256": "da7ec1e6c90cc387268cb88947f01c11f9e2034f842514550798a6e619ced984",
+   "documents": 1,
+   "source_id": "python-peps",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 1980,
+    "measure-28k": 1966,
+    "measure-32k": 1944
+   }
+  },
+  {
+   "accepted_sha256": "3429a9884200248e2d787950774c91e2aa08b8c336bb34ec96b3671468147510",
+   "accepted_shard": "validation/stackexchange/stackexchange-dolma-0001.parquet",
+   "counts_sha256": "ce1ff5d0d21e4b0e03ff2fbc1048fdc767ff465a21cd96bd4d08e9174ade21a2",
+   "documents": 42,
+   "source_id": "stackexchange",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 63410,
+    "measure-28k": 62615,
+    "measure-32k": 62003
+   }
+  },
+  {
+   "accepted_sha256": "4d47980faf5dc0c097d8c82d4e89a67a73c6fd661ef00683240e656c08356ff8",
+   "accepted_shard": "validation/stackexchange/stackexchange-dolma-0002.parquet",
+   "counts_sha256": "54912b7253317bb6ebc07fe4129db7e9f7d9eccaf989dd7505e5a03ae96bcf32",
+   "documents": 53,
+   "source_id": "stackexchange",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 39374,
+    "measure-28k": 38987,
+    "measure-32k": 38685
+   }
+  },
+  {
+   "accepted_sha256": "215f71f8acf5d6621e319deabc244181f729d723dd98125a5d9890c1c19f9acb",
+   "accepted_shard": "validation/stackexchange/stackexchange-dolma-0003.parquet",
+   "counts_sha256": "354d9eba6f0b757f67d0326b0e8064cba312c9f3bfd6da693104c04a970b825a",
+   "documents": 52,
+   "source_id": "stackexchange",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 36218,
+    "measure-28k": 35713,
+    "measure-32k": 35313
+   }
+  },
+  {
+   "accepted_sha256": "8c06bf7718aa31ad7f70bee0b51cba26672e96ef15231e2d3e4dbf25d1e22cc9",
+   "accepted_shard": "validation/stackexchange/stackexchange-dolma-0004.parquet",
+   "counts_sha256": "ce96094e563846f753ddfb12e52143156e8ca81716f5f1fde6baec8b789d078b",
+   "documents": 41,
+   "source_id": "stackexchange",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 19073,
+    "measure-28k": 18883,
+    "measure-32k": 18752
+   }
+  },
+  {
+   "accepted_sha256": "7c160f88644b748243c873b34f4c60c41c77f8bd40b1f53208282d2ff6f90493",
+   "accepted_shard": "validation/stackexchange/stackexchange-dolma-0005.parquet",
+   "counts_sha256": "d15d1c910a8cff7e66cd55ff05c88386685aaaef3367ed880ef49eb53f6ab73d",
+   "documents": 58,
+   "source_id": "stackexchange",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 45487,
+    "measure-28k": 45130,
+    "measure-32k": 44908
+   }
+  },
+  {
+   "accepted_sha256": "5824c27219055b5d3f4cafbc91537ca50f1bd3debbd07184200d4d4d675ba094",
+   "accepted_shard": "validation/stackexchange/stackexchange-dolma-0006.parquet",
+   "counts_sha256": "4a660a9b773731aec641652286a090d68933bd4fd26970efbfe896083bd65b5c",
+   "documents": 50,
+   "source_id": "stackexchange",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 39860,
+    "measure-28k": 39532,
+    "measure-32k": 39275
+   }
+  },
+  {
+   "accepted_sha256": "07d1692093a445e0ea640307dca100f56c71edbc92085f4ba9321015dbb07ab9",
+   "accepted_shard": "validation/stackexchange/stackexchange-dolma-0008.parquet",
+   "counts_sha256": "f18aca853cf7fae58758ea8061e0e2b45ebc1590b8620600fc028d62e648ef5e",
+   "documents": 22,
+   "source_id": "stackexchange",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 23600,
+    "measure-28k": 23264,
+    "measure-32k": 23061
+   }
+  },
+  {
+   "accepted_sha256": "25d9fe82aca7cef32e427a968b5f29f8d81e1aaa5a8fb5f8da536bb793458db5",
+   "accepted_shard": "validation/stackexchange/stackexchange-dolma-0021.parquet",
+   "counts_sha256": "d64821423bc393d628f8ba9487b81343cfa833ac22606f9e660a5a23fbe3d1ff",
+   "documents": 50,
+   "source_id": "stackexchange",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 35916,
+    "measure-28k": 35438,
+    "measure-32k": 34990
+   }
+  },
+  {
+   "accepted_sha256": "895fa27a606e3507aa409fb3bfbc05de01434e1f13fd986bf396630bf6f42a3e",
+   "accepted_shard": "validation/stackexchange/stackexchange-dolma-0028.parquet",
+   "counts_sha256": "834e36bf1d687d2516f51267cdece6d682269fd912f757b23d825994245e481b",
+   "documents": 54,
+   "source_id": "stackexchange",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 33770,
+    "measure-28k": 33325,
+    "measure-32k": 32945
+   }
+  },
+  {
+   "accepted_sha256": "bdd4c44625a94f5c36f26627d83c1458418a5bd2d97cf33ebb9543093b5545c5",
+   "accepted_shard": "validation/stackexchange/stackexchange-dolma-0042.parquet",
+   "counts_sha256": "b520e6d1277f3ed4b79b8998105a903ec77854e82c900a9c83e359b7925fe9fb",
+   "documents": 57,
+   "source_id": "stackexchange",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 41806,
+    "measure-28k": 41254,
+    "measure-32k": 40794
+   }
+  },
+  {
+   "accepted_sha256": "cfdfa8910c696e644bdde750e0ba12960eb8929c35cd3241163290624e400148",
+   "accepted_shard": "validation/stackexchange/stackexchange-dolma-0043.parquet",
+   "counts_sha256": "ccf01e5bd06a9c2a7e2a70849307ccd0bfb928f65a7c0cf94d78ab034f7e2e04",
+   "documents": 45,
+   "source_id": "stackexchange",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 37039,
+    "measure-28k": 36499,
+    "measure-32k": 36154
+   }
+  },
+  {
+   "accepted_sha256": "33eb3091c94c90c78539ca56f4bc6a624215bcac532ceb649db27939dc3e8704",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0007.parquet",
+   "counts_sha256": "32349e0f66444b84f3240623edfdb93d1bed5b4bd4384b8b894caa243a3f08f3",
+   "documents": 12,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 22906,
+    "measure-28k": 22538,
+    "measure-32k": 22257
+   }
+  },
+  {
+   "accepted_sha256": "9ce3b66253ae1707d12a3a8cea4e0d1ac5f07dbdbaabf0c3dd27637bef6551d8",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0011.parquet",
+   "counts_sha256": "fbbaa154d033f7f7f33bd889605a6f8de2ec815d4dbf650c9e89c6d11505b86b",
+   "documents": 15,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 19383,
+    "measure-28k": 19004,
+    "measure-32k": 18748
+   }
+  },
+  {
+   "accepted_sha256": "72b3f6f0322bde6eea2f437b557a9dafd7aa25c6dbce15bbf47a11789f150ddc",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0018.parquet",
+   "counts_sha256": "e67e9d5363d3610433391f9bc123f2707cdd7b703da9a6f1084dee670fd6f4f5",
+   "documents": 15,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 13734,
+    "measure-28k": 13526,
+    "measure-32k": 13401
+   }
+  },
+  {
+   "accepted_sha256": "7dbdce21aa2bfea47030f087922076dd9d050a867395d4e23088bef59a9387cc",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0026.parquet",
+   "counts_sha256": "a3a8653c474940adbf4b5cb082716fd58a33b8b1b931c08f805367ee8e1abc0a",
+   "documents": 20,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 19528,
+    "measure-28k": 19177,
+    "measure-32k": 18863
+   }
+  },
+  {
+   "accepted_sha256": "0caf3e76f95fae7cab23fecee9a591a1106c42aa7258d5dd1694fe014a4e6537",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0036.parquet",
+   "counts_sha256": "333a31a5fc5556fb552a1b43c0d350285152c3b69bd60a8aaabc4392c648deb2",
+   "documents": 34,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 41532,
+    "measure-28k": 40856,
+    "measure-32k": 40494
+   }
+  },
+  {
+   "accepted_sha256": "cdb78f7c0b36069db8c175e5f0cc460a70b18cd329946c28e6ca66b03b38a300",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0047.parquet",
+   "counts_sha256": "29a7fcad9c0aec9d83a387e1f6929a3db341dc3b42073cce4800670916b7891f",
+   "documents": 19,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 8145,
+    "measure-28k": 7994,
+    "measure-32k": 7925
+   }
+  },
+  {
+   "accepted_sha256": "c02b36b87f2ac66e3bccdfec9fcc73965851bdeab5a279ebc97d9fbceb822b14",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0055.parquet",
+   "counts_sha256": "b0f803f9b0c210876f36e12a5166d36d1106289701e220feb67883737a74989d",
+   "documents": 18,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 22384,
+    "measure-28k": 21957,
+    "measure-32k": 21691
+   }
+  },
+  {
+   "accepted_sha256": "d7196351c55edea03c2847a1badf39d2e4da7a2ae074f7f900f1dbcf4245958b",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0077.parquet",
+   "counts_sha256": "47ad98674afcc683c06675a15ee7c36cbdb564e0f457316d021d25625dcc4e8b",
+   "documents": 79,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 81124,
+    "measure-28k": 79906,
+    "measure-32k": 78962
+   }
+  },
+  {
+   "accepted_sha256": "2cf0018022565dbdcc4e2f7bc7fbaf48e2017d32741f5afc433027a9e6bac0e0",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0079.parquet",
+   "counts_sha256": "b6e9abbd835de412b44af64a7758e2b1f41e7abd5ea66c9b8169dfdfc297ef6b",
+   "documents": 70,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 72193,
+    "measure-28k": 71117,
+    "measure-32k": 70361
+   }
+  },
+  {
+   "accepted_sha256": "48bbaa6f475d32a4e8721d4ef8b2f43ac2fca1adb977fc980c7a45179246b672",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0082.parquet",
+   "counts_sha256": "b647e088d34dba895c90368106820b4dadba715a5d688fb88b146d4fad91ae9f",
+   "documents": 90,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 87938,
+    "measure-28k": 86477,
+    "measure-32k": 85454
+   }
+  },
+  {
+   "accepted_sha256": "20438c5826591f2b91a3db7b9c1b15970eba51c071d6e67be7ba1935cce91b04",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0084.parquet",
+   "counts_sha256": "506486b6fe7857b5415447e0562cb392167de7a8808da1e27b7bb11cd696054e",
+   "documents": 28,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 24102,
+    "measure-28k": 23657,
+    "measure-32k": 23453
+   }
+  },
+  {
+   "accepted_sha256": "9ffca6c08fd17395bcb34d5de6cabaf1ec25209d350e7302e8120f27ed52c2b4",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0086.parquet",
+   "counts_sha256": "edf9db98ce5ae239a3dec9eefef7a420cc9a064ed414c831a6317445713edbf6",
+   "documents": 30,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 36186,
+    "measure-28k": 35526,
+    "measure-32k": 34980
+   }
+  },
+  {
+   "accepted_sha256": "6d16449d457887f5c0aed542accdddb1b7e2bd281cab36055711da7fa75d1564",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0088.parquet",
+   "counts_sha256": "fdb0e778458ce49f2302f563d67796cad289b5ff0a00c5dff1f14692b35365b7",
+   "documents": 42,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 46204,
+    "measure-28k": 45387,
+    "measure-32k": 44792
+   }
+  },
+  {
+   "accepted_sha256": "c1ce170e9e032921d8b9d46ff6223c62333870071a886ecca193b69348bdd1fd",
+   "accepted_shard": "validation/stackv2-edu/stack-edu-0092.parquet",
+   "counts_sha256": "1c0a1f1eb7ae468f03cbfe4b599db7da1927528b9972017c20d59f508af269b5",
+   "documents": 26,
+   "source_id": "stackv2-edu",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 19836,
+    "measure-28k": 19573,
+    "measure-32k": 19323
+   }
+  },
+  {
+   "accepted_sha256": "3a0858680f76c33fc0f56876e29ee68ca2c26ea264cd550b5d3f0595a68d9e36",
+   "accepted_shard": "validation/wikimedia/wikimedia-0000.parquet",
+   "counts_sha256": "a404615cd4bc1d52717a4f45431e378efc732443e7872dfb27cafca466aa391a",
+   "documents": 6,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 2390,
+    "measure-28k": 2367,
+    "measure-32k": 2320
+   }
+  },
+  {
+   "accepted_sha256": "6a27c3a374be2c8fa18214e0954856e7fd442518c041b2b707649fc9ff07236d",
+   "accepted_shard": "validation/wikimedia/wikimedia-0001.parquet",
+   "counts_sha256": "13bd63ba3d6542b3c26547f42657fa261723c0a38f4e9efa01a1273b5bbc17a4",
+   "documents": 11,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 13824,
+    "measure-28k": 13551,
+    "measure-32k": 13305
+   }
+  },
+  {
+   "accepted_sha256": "52c8b89e00bb722df56c67b96011c9a33edcecf5673cff271853b70c5d190214",
+   "accepted_shard": "validation/wikimedia/wikimedia-0002.parquet",
+   "counts_sha256": "ee85a28f9bbaeb334ad82c05eaf58aa46404a072e9e2f0f06fea82c994e7f317",
+   "documents": 8,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 15256,
+    "measure-28k": 15016,
+    "measure-32k": 14871
+   }
+  },
+  {
+   "accepted_sha256": "31e4f3f16a70b099e9129bfc93d6764c4acd5e35c3d13ef14db65b93bd8feb5c",
+   "accepted_shard": "validation/wikimedia/wikimedia-0003.parquet",
+   "counts_sha256": "9ce36223174a31e0210128edc681b6f1cc1fef8873e6d25f5a715dacd1bf96de",
+   "documents": 5,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 10872,
+    "measure-28k": 10696,
+    "measure-32k": 10529
+   }
+  },
+  {
+   "accepted_sha256": "523e7e0104cf88063858c44918ba829888c72173d645639b2a076453597f3a70",
+   "accepted_shard": "validation/wikimedia/wikimedia-0004.parquet",
+   "counts_sha256": "ecfcc873df40fc1061306311d9ae5a8618636a9306654fbcc06c13d632bead7a",
+   "documents": 5,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 4240,
+    "measure-28k": 4166,
+    "measure-32k": 4101
+   }
+  },
+  {
+   "accepted_sha256": "b26ff25a8b4ed01a44de2bc4a31a41c783ec282797264b86f5620012dc22e5ad",
+   "accepted_shard": "validation/wikimedia/wikimedia-0005.parquet",
+   "counts_sha256": "292a778f1ef027daf8153e367dfb35041181c8cfb6ce8b82e8ed3532113faf1a",
+   "documents": 11,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 26997,
+    "measure-28k": 26563,
+    "measure-32k": 26204
+   }
+  },
+  {
+   "accepted_sha256": "d862656fd974f43bffec83676358cdde230392248325c884869aaad1fb6cfd24",
+   "accepted_shard": "validation/wikimedia/wikimedia-0006.parquet",
+   "counts_sha256": "9ea4d9c42bf29dc1dfdf6ec25bd9a44eea63ae27d880a92016aee9023f0be227",
+   "documents": 14,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 27430,
+    "measure-28k": 27003,
+    "measure-32k": 26713
+   }
+  },
+  {
+   "accepted_sha256": "1db0a8fad8d566101b2cbcafcd305d720e004275c0258d6db163df7ae6ac5a8a",
+   "accepted_shard": "validation/wikimedia/wikimedia-0007.parquet",
+   "counts_sha256": "0406b1102e1a7c704d2264392e132e2f4f88a81af62ba1f679688275061765d5",
+   "documents": 2,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 1913,
+    "measure-28k": 1882,
+    "measure-32k": 1858
+   }
+  },
+  {
+   "accepted_sha256": "1040591cc83645c5ef7851dca571f83e4f7e63efc07200816016975c1c3c66c3",
+   "accepted_shard": "validation/wikimedia/wikimedia-0008.parquet",
+   "counts_sha256": "065815dc5dbbc6c26ec4c7d9aec62d6c12996552459c99fe3b52cbe60c649911",
+   "documents": 17,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 16561,
+    "measure-28k": 16196,
+    "measure-32k": 16041
+   }
+  },
+  {
+   "accepted_sha256": "ac6ff27d810e374e142a9f9968d43c6cacd304605817779210b758e25c646192",
+   "accepted_shard": "validation/wikimedia/wikimedia-0009.parquet",
+   "counts_sha256": "ef61e726a73b085e89846aabc6c1b656a546bba17da6117e3480a385b62ee867",
+   "documents": 22,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 35143,
+    "measure-28k": 34450,
+    "measure-32k": 33928
+   }
+  },
+  {
+   "accepted_sha256": "87265dcb6f2b6b3ef3fa1b956dc6a4bef1035074af39d2dcd70f6e4085006f64",
+   "accepted_shard": "validation/wikimedia/wikimedia-0010.parquet",
+   "counts_sha256": "87bcf9888658b7cfc9d72b49ffc6408258e7063342e2880e2c0f1bf3740c36a4",
+   "documents": 15,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 22453,
+    "measure-28k": 22049,
+    "measure-32k": 21739
+   }
+  },
+  {
+   "accepted_sha256": "141d0c52fc1301320c6c833141a8af911e4608b7f29b0b05d87ba8fa84466104",
+   "accepted_shard": "validation/wikimedia/wikimedia-0011.parquet",
+   "counts_sha256": "6f6d5e6a72b8d2f7febad8e0582e155e6c1f674f2ab0c572c2ba130042e292da",
+   "documents": 16,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 12491,
+    "measure-28k": 12296,
+    "measure-32k": 12097
+   }
+  },
+  {
+   "accepted_sha256": "b98a2a6494ba83b5611cfa9a904bf1b487f820c73ed12dc442893ba4d8bf0f3e",
+   "accepted_shard": "validation/wikimedia/wikimedia-0012.parquet",
+   "counts_sha256": "cfe16f8858fbb56d5d4eb86b3301724c2c9748d7cdb8a13a6e948a1c70d259c2",
+   "documents": 16,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 9241,
+    "measure-28k": 9113,
+    "measure-32k": 9011
+   }
+  },
+  {
+   "accepted_sha256": "d4dcc9604855f92acc97a3051e2503039964fa31ad6a55caef20fe8dff9409bc",
+   "accepted_shard": "validation/wikimedia/wikimedia-0013.parquet",
+   "counts_sha256": "40fc4dd67de849a066285725240b9e66167a9f433631a276fff8f9331bbedbf7",
+   "documents": 16,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 16953,
+    "measure-28k": 16659,
+    "measure-32k": 16430
+   }
+  },
+  {
+   "accepted_sha256": "224923980173b55d930d0e4d4f70a6ab332f79dac8f1dbf2eecdd2096cc5bc73",
+   "accepted_shard": "validation/wikimedia/wikimedia-0014.parquet",
+   "counts_sha256": "954cd26f1369e9f05b3c039a0b0bfa01dd559c6f44fa1f01968a36d5c96c0156",
+   "documents": 17,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 9597,
+    "measure-28k": 9458,
+    "measure-32k": 9349
+   }
+  },
+  {
+   "accepted_sha256": "0d9b631ce6567e93e1f50e06ac260934c8b50137cb28d3d9cd0235efcca4cd97",
+   "accepted_shard": "validation/wikimedia/wikimedia-0015.parquet",
+   "counts_sha256": "ce7d37a37f922663d8c66db27707d7ea040de11c7eebeef7520d78ca562403b9",
+   "documents": 20,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 15866,
+    "measure-28k": 15541,
+    "measure-32k": 15307
+   }
+  },
+  {
+   "accepted_sha256": "b3a0ef6e20c2b3671bc3e473984cbbf341d229a6fb1a1c9fe9c680c799bfa12b",
+   "accepted_shard": "validation/wikimedia/wikimedia-0016.parquet",
+   "counts_sha256": "8d23d8e938d8bd876f696456372be01a5cc143e72e94af2c4cdd64e94125e70f",
+   "documents": 17,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 11585,
+    "measure-28k": 11378,
+    "measure-32k": 11195
+   }
+  },
+  {
+   "accepted_sha256": "3fde517f79f05374745f3c9892a2e326d0c9ceddcbb105249add256931c03200",
+   "accepted_shard": "validation/wikimedia/wikimedia-0017.parquet",
+   "counts_sha256": "3055378397d9dcdb4c12555c7deac7eb8202302c4a732596f8934f2fa1513276",
+   "documents": 11,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 12333,
+    "measure-28k": 12103,
+    "measure-32k": 11948
+   }
+  },
+  {
+   "accepted_sha256": "23f77041a292f92e652f71cce382aa2830074bad43dc1dd904dfc481a6356266",
+   "accepted_shard": "validation/wikimedia/wikimedia-0018.parquet",
+   "counts_sha256": "dd89e262dcb14e59712f102c364efb6e358cd48a43720a8c059f43593c238cca",
+   "documents": 14,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 8293,
+    "measure-28k": 8153,
+    "measure-32k": 8035
+   }
+  },
+  {
+   "accepted_sha256": "bfd74f11e20d1dcc281b746a68754f0c2b6abedc2a11ae3f0f66762ba82ae7ea",
+   "accepted_shard": "validation/wikimedia/wikimedia-0019.parquet",
+   "counts_sha256": "0ab25f381fd18f5ff245b0fdf7719a4a51cbea39736333efbaac186acd6e759d",
+   "documents": 20,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 13031,
+    "measure-28k": 12832,
+    "measure-32k": 12617
+   }
+  },
+  {
+   "accepted_sha256": "0ca235326a6e401295df19df0e5e1ca5fc1a8e8d6ecc11ad00ccd3458b823256",
+   "accepted_shard": "validation/wikimedia/wikimedia-0020.parquet",
+   "counts_sha256": "07010a284bbcc58bd37b46e80fa147573091fa062a40894ed398bef2d7d4e235",
+   "documents": 14,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 11463,
+    "measure-28k": 11282,
+    "measure-32k": 11111
+   }
+  },
+  {
+   "accepted_sha256": "67971300ecfc7fb4c63018b1286247b7c07fb4b5b76fba828725100ddf8753ed",
+   "accepted_shard": "validation/wikimedia/wikimedia-0021.parquet",
+   "counts_sha256": "2265d5cc02f40858fd0996a8f535df287c5cdfa937fa534af880eb364c8f381e",
+   "documents": 17,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 13886,
+    "measure-28k": 13626,
+    "measure-32k": 13464
+   }
+  },
+  {
+   "accepted_sha256": "67268eb7958c1720eb07992c82215940c4d9fed4c14babf0a3a3a3748c96dca0",
+   "accepted_shard": "validation/wikimedia/wikimedia-0022.parquet",
+   "counts_sha256": "cb33a6d7ce695ba8cc8752288fc8d811a5efe3c733828758963ab2756e12cb50",
+   "documents": 14,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 13683,
+    "measure-28k": 13486,
+    "measure-32k": 13283
+   }
+  },
+  {
+   "accepted_sha256": "bc26a20f30308b62073294f8c9f0e2b3212b5127844ec8d20cdbe1ee73b8e1d9",
+   "accepted_shard": "validation/wikimedia/wikimedia-0023.parquet",
+   "counts_sha256": "33c99c4b761fa829a430ecdd7c5526396ae18130268a1c36ed8b41de5f053103",
+   "documents": 18,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 17553,
+    "measure-28k": 17282,
+    "measure-32k": 17043
+   }
+  },
+  {
+   "accepted_sha256": "9c2036e7f10eda6f187103621f341524d769e93341095c5baba4815a78476e21",
+   "accepted_shard": "validation/wikimedia/wikimedia-0024.parquet",
+   "counts_sha256": "e1ee5a11336ad43a0c95b2d9b6c845a65b6062cade5b0b0d99849a54b283b9c2",
+   "documents": 14,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 8361,
+    "measure-28k": 8238,
+    "measure-32k": 8122
+   }
+  },
+  {
+   "accepted_sha256": "faf13b1cfdd3a344d9701ab1715a1a7db0ce91828afc17b416d7e89f741c6bd9",
+   "accepted_shard": "validation/wikimedia/wikimedia-0025.parquet",
+   "counts_sha256": "029fa811cbf3c51175d4f91fcfd1e54e17b1daae5f226fd512a3dac9e3c37fe8",
+   "documents": 17,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 18339,
+    "measure-28k": 18007,
+    "measure-32k": 17777
+   }
+  },
+  {
+   "accepted_sha256": "628e3ec72d36688957e51c27fefa1d1f1c3c66994cf71f6a4752db958fee61ef",
+   "accepted_shard": "validation/wikimedia/wikimedia-0026.parquet",
+   "counts_sha256": "0e0fd84c6bd383a84ad2e55f2d94cd425ab3ab6206d88272c281028d2ac35b95",
+   "documents": 26,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 24256,
+    "measure-28k": 23937,
+    "measure-32k": 23614
+   }
+  },
+  {
+   "accepted_sha256": "00f6f56cf2032724a36baa394ec7bb6615e3e3ebe13588c7f87767b16e9cecee",
+   "accepted_shard": "validation/wikimedia/wikimedia-0027.parquet",
+   "counts_sha256": "78d83929cb49d90c8a774f8c86560f570541ee297d33dc5860514f3659e5e9c1",
+   "documents": 16,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 5824,
+    "measure-28k": 5732,
+    "measure-32k": 5641
+   }
+  },
+  {
+   "accepted_sha256": "464a88d4088efcbe0beca884ddce659e6b732d78d93576ed42e8596eb36b8658",
+   "accepted_shard": "validation/wikimedia/wikimedia-0028.parquet",
+   "counts_sha256": "44bbbae5261df80cb9e67ca2e987286365803cb584f9b398e9ecc8dd5b38d48e",
+   "documents": 18,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 10114,
+    "measure-28k": 9941,
+    "measure-32k": 9804
+   }
+  },
+  {
+   "accepted_sha256": "d5e3650e0872de843b81751658f4af08b4ee9982a3b7bcfb9430a6ae591cacd8",
+   "accepted_shard": "validation/wikimedia/wikimedia-0029.parquet",
+   "counts_sha256": "b84568da7b8e6f5003fc6d8784cf56c13d45a80c64c470191ae84d47664e0e54",
+   "documents": 11,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 9270,
+    "measure-28k": 9129,
+    "measure-32k": 8990
+   }
+  },
+  {
+   "accepted_sha256": "ee98466aeb9e07e61bbf3a3fcedad4007d8aa4cd778f21f00f095dfa1bb24123",
+   "accepted_shard": "validation/wikimedia/wikimedia-0030.parquet",
+   "counts_sha256": "3c76a0a88bc2589b9a1661d4dd7c6603e1e6dca0dbb045f69633df49cc1e13a9",
+   "documents": 22,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 13860,
+    "measure-28k": 13640,
+    "measure-32k": 13488
+   }
+  },
+  {
+   "accepted_sha256": "5ec8a132fc65d074ec329c466b326f181d224a1132358b2e950f658d02457bf9",
+   "accepted_shard": "validation/wikimedia/wikimedia-0031.parquet",
+   "counts_sha256": "cd849c53f7755183e32ce56345745efef360b0165ad86f071a42215c11b6319b",
+   "documents": 13,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 6919,
+    "measure-28k": 6798,
+    "measure-32k": 6722
+   }
+  },
+  {
+   "accepted_sha256": "91f42eb79d4020d4a4442c640a7cdf86192f61fbebe7610edb9ce2bc06c27a9a",
+   "accepted_shard": "validation/wikimedia/wikimedia-0032.parquet",
+   "counts_sha256": "1920d610699be65adaafd598ccdcfc1148de30da54f62aaaec91e3ed797fe433",
+   "documents": 9,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 6915,
+    "measure-28k": 6747,
+    "measure-32k": 6665
+   }
+  },
+  {
+   "accepted_sha256": "dad5d0ace825e7cf9ab1b72eabaf5fba2300c5287ff771e4b8ddef4cea7027aa",
+   "accepted_shard": "validation/wikimedia/wikimedia-0033.parquet",
+   "counts_sha256": "5dd3d5df203aeb462a9eee25e973d45775ab2dcf3ce6f864195db699ef939a6b",
+   "documents": 13,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 8923,
+    "measure-28k": 8729,
+    "measure-32k": 8630
+   }
+  },
+  {
+   "accepted_sha256": "6d156e4bd534eca2096f57ca1c52ae20d65443f027524b82fd8e849aa838a9b0",
+   "accepted_shard": "validation/wikimedia/wikimedia-0034.parquet",
+   "counts_sha256": "8a5a7dad284794e87af50543fecacb9a6ba00a7c8e6444462994d9fcb34963dc",
+   "documents": 15,
+   "source_id": "wikimedia",
+   "split": "validation",
+   "tokens": {
+    "measure-24k": 5835,
+    "measure-28k": 5719,
+    "measure-32k": 5619
+   }
+  }
+ ],
+ "status": "PROVISIONAL - measurement tokenizers, not a Juniper 1 tokenizer",
+ "tokenizers": {
+  "measure-24k": "e8d5cc38e636b0fdbc2b8f86fa11bdb970a502e84190ce3fe6610e51d27a050e",
+  "measure-28k": "ac18965ddb5ee05eb0e993896d984354ac3342ef2d66e76cdca02c659d967d01",
+  "measure-32k": "3d85a5c822c331ad900f409fc0875c5f35c38f7c6b7f08945a770f2d1465cce6"
+ }
+}

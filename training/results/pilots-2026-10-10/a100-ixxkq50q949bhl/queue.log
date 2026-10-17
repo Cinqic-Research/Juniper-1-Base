@@ -1,0 +1,4 @@
+2026-10-10T07:54:59Z recovery suite ended
+eager                  rc=0 56193 tok/s med 1166ms p90 1168 first 1.8s vram 52.0GiB
+compiled               rc=0 114407 tok/s med 573ms p90 575 first 59.9s vram 29.4GiB
+2026-10-10T08:00:58Z profile ended rc=0

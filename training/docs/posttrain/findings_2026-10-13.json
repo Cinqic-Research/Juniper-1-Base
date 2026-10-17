@@ -1,0 +1,162 @@
+{
+ "schema": "juniper1.posttrain-findings.v1",
+ "assignment": "2026-10-12 post-training implementation, qualification and research expansion",
+ "findings": [
+  {
+   "id": "S-01",
+   "severity": "HIGH",
+   "repo": "Juniper-1-Data",
+   "component": "j1data.teacher.run_python_tests",
+   "evidence": "teacher-generated code ran with unshare -rn only: host filesystem and home directory readable; exit status 0 accepted",
+   "impact": "executing model-generated code directly on FLOWBOX",
+   "remedy": "shared bubblewrap harness (no network, no home, nonce after tests); no fallback",
+   "regression_test": "tests/test_teacher_episodes.py (sandbox-gated), tests/test_sft_dataset.py harness tests",
+   "status": "FIXED",
+   "pr": "Juniper-1-Data#9 (ea95f50)"
+  },
+  {
+   "id": "S-02",
+   "severity": "HIGH",
+   "repo": "Juniper-1-Data",
+   "component": "SFT evaluation v1.0",
+   "evidence": "independent data review: python_tests passed on exit status 0; hedged abstentions passed; 29% fictional-entity train/test overlap; MBPP train/test duplicates; base compared only on chat prompts; verify not independent",
+   "impact": "evaluation results not fit for go/no-go",
+   "remedy": "scorer v2/v3, isolation by all task keys, MBPP renamed-code and statement checks, two comparison views with Holm, independent verify; v1.0/v1.1 superseded before any measurement",
+   "regression_test": "tests/test_sft_dataset.py",
+   "status": "FIXED",
+   "pr": "Juniper-1-Data#9"
+  },
+  {
+   "id": "S-03",
+   "severity": "HIGH",
+   "repo": "Juniper-1-Train",
+   "component": "j1bench.sft / generate",
+   "evidence": "trainer review F1-F3: torch.save RuntimeError bypassed retry; SFT checkpoints unloadable by eval tools; one over-long prompt aborted generation",
+   "impact": "unrecoverable save failures; evaluation impossible; lost runs",
+   "remedy": "see docs/posttrain/reviews/trainer_review_2026-10-12.md (F1-F13)",
+   "regression_test": "tests/test_sft.py, tests/test_generate.py",
+   "status": "FIXED",
+   "pr": "Juniper-1-Train (sft/trainer-v1)"
+  },
+  {
+   "id": "S-04",
+   "severity": "HIGH",
+   "repo": "Juniper-1-Train",
+   "component": "tools/sft_pilot_pipeline.sh, sft_decide.py, sft_recovery_ab.py",
+   "evidence": "final review: SIGTERM hit a bash subshell (run B never interrupted); recovery gate passed without evidence; registered early stop not enforced",
+   "impact": "a qualification decision could be wrong",
+   "remedy": "trainer process signalled directly; evidence-based recovery gate; early stop and candidate identity enforced in the decision",
+   "regression_test": "tests/test_sft.py::test_recovery_ab_tool_and_decision_rule; shell signal check",
+   "status": "FIXED_BEFORE_RUN",
+   "pr": "Juniper-1-Train (sft/trainer-v1)"
+  },
+  {
+   "id": "S-05",
+   "severity": "MEDIUM",
+   "repo": "Juniper-1-Data",
+   "component": "j1data.runtime_client",
+   "evidence": "default urllib opener honoured http_proxy; bearer key and prompt reached a recording proxy",
+   "impact": "credential leak path",
+   "remedy": "ProxyHandler({}) + no redirects",
+   "regression_test": "tests/test_runtime_client.py::test_proxies_are_never_used",
+   "status": "FIXED",
+   "pr": "Juniper-1-Data#9"
+  },
+  {
+   "id": "S-06",
+   "severity": "MEDIUM",
+   "repo": "Juniper-1-Data",
+   "component": "episodes.validate",
+   "evidence": "jsonschema.validate re-checked the schema per call; building 45k episodes did not finish in 35 min",
+   "impact": "dataset builds impractical",
+   "remedy": "one checked validator, same messages",
+   "regression_test": "tests/test_sft.py, tests/test_teacher_episodes.py",
+   "status": "FIXED",
+   "pr": "Juniper-1-Data#9"
+  },
+  {
+   "id": "S-07",
+   "severity": "MEDIUM",
+   "repo": "Juniper-App",
+   "component": "CI",
+   "evidence": "pnpm audit (source-map-js 1.2.1) and cargo-audit (quinn-proto 0.11.17) failed on new advisories; validation stopped before cargo clippy/test",
+   "impact": "no PR could pass CI",
+   "remedy": "exact override source-map-js 1.2.2; quinn-proto 0.11.18",
+   "regression_test": "CI on 4e07cfa",
+   "status": "FIXED",
+   "pr": "Juniper-App#45 (merged e3e86568)"
+  },
+  {
+   "id": "S-08",
+   "severity": "LOW",
+   "repo": "Juniper-1-Train",
+   "component": "qual/a02_token_id_qual.py",
+   "evidence": "KV-cache check split after the stop token once the model learned to stop",
+   "impact": "false failure",
+   "remedy": "split inside the generated span; base and candidate rerun",
+   "regression_test": "results/a02_token_id_qual_*.json",
+   "status": "FIXED",
+   "pr": "Juniper-1-Train"
+  },
+  {
+   "id": "S-09",
+   "severity": "MEDIUM",
+   "repo": "Juniper-1-Data",
+   "component": "j1-sft-v1.2 known limitations",
+   "evidence": "re-review: element-symbol English words fail some correct abstentions (36 of 300 uncertainty items can be affected); ~12 MBPP test tasks keep functionally equivalent train twins",
+   "impact": "conservative for G-UNC; inflates the ungated Python report by at most ~2.4 points on MBPP",
+   "remedy": "dataset v1.3 (cross-execution MBPP check; drop symbol-words from forbidden lists)",
+   "regression_test": null,
+   "status": "OPEN_DOCUMENTED",
+   "pr": null
+  },
+  {
+   "id": "A-02",
+   "severity": "HIGH",
+   "repo": "Juniper-1-Train / Juniper-App",
+   "component": "GGUF text path",
+   "evidence": "0/200 llama.cpp text tokenization parity; forged delimiters to control IDs",
+   "impact": "role forgery and wrong inputs",
+   "remedy": "host token-ID client qualified live; GGUF markers; App guard refuses every text path",
+   "regression_test": "qual/a02_token_id_qual.py; gguf_guard tests",
+   "status": "REMEDIATED_TEXT_PATH_ISOLATED; native App adapter open",
+   "pr": "Juniper-App#45, Juniper-1-Data#9, Juniper-1-Train"
+  },
+  {
+   "id": "A-11",
+   "severity": "MEDIUM",
+   "repo": "RunPod account",
+   "component": "exited owner pods",
+   "evidence": "list-pods 2026-10-13: JUPYTER_PASSWORD still present for k3mul4cjkmiong, dxl7jz3zezlz0m, 4i13u1p447t6e7",
+   "impact": "credential readable by any holder of the account API key",
+   "remedy": "owner: terminate or rotate (not assignment-created; not changed)",
+   "regression_test": null,
+   "status": "OPEN_OWNER",
+   "pr": null
+  },
+  {
+   "id": "A-13",
+   "severity": "HIGH",
+   "repo": "AAA",
+   "component": "PR #34",
+   "evidence": "head moved 7150cd70 -> 507dc415 by README/docs merges only",
+   "impact": "unchanged",
+   "remedy": "unchanged; not merged",
+   "regression_test": null,
+   "status": "OPEN",
+   "pr": "AAA#34/#36; cinqic.com#22"
+  },
+  {
+   "id": "S-10",
+   "severity": "LOW",
+   "repo": "Juniper-LM-1.1 local storage",
+   "component": "runtime build",
+   "evidence": "Juniper-GPT-OSS-Qualification runtime/llama.cpp/build-cuda missing; the same b11270 build exists under AAA/juniper1/llama-build",
+   "impact": "serve script fails",
+   "remedy": "used the identical pinned build; documented",
+   "regression_test": null,
+   "status": "DOCUMENTED",
+   "pr": null
+  }
+ ]
+}

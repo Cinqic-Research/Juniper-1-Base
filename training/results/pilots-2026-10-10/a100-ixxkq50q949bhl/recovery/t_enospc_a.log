@@ -1,0 +1,5 @@
+[ckpt] step 0 -> /root/ckpt-recovery/t_enospc/ckpt-000000000-5ae4992d (555.9 MiB, 2.10s)
+step 1 loss 10.3499 lr 0.000185 5216ms
+step 10 loss 7.9697 lr 0.000897 319ms
+[ckpt] step 10 -> /root/ckpt-recovery/t_enospc/ckpt-000000010-551d5f3f (1667.7 MiB, 6.29s)
+{"steps_run": 10, "final_step": 10, "tokens_per_s_median": 102752.29778128043, "step_ms_median": 318.9028440974653, "peak_vram_gib": 28.861260414123535, "final_param_sha256": "2d562fdcf496cfc1ca6a5befe250b59635001c0eb886ad9e6804cd2d39f2b697"}

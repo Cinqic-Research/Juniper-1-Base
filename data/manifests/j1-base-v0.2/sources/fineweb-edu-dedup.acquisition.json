@@ -1,0 +1,127 @@
+{
+ "acquire_version": "j1.acquire.v1",
+ "acquired_utc": "2026-10-07T20:55:42+00:00",
+ "files": [
+  {
+   "git_blob_oid": "c464387c237d29fc6d99bc44441d9d873c74a58d",
+   "path": "fineweb-edu-dedup/train-00003-of-00234.parquet",
+   "retrieved_utc": "2026-10-07T20:30:05+00:00",
+   "sha256": "cfb9a70502a8fa59598f4ca5f327d2cf535234d8e007c16ae35ff2c87daea9d9",
+   "size": 2438670951,
+   "upstream_sha256": "cfb9a70502a8fa59598f4ca5f327d2cf535234d8e007c16ae35ff2c87daea9d9",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/3ba9d605774198c5868892d7a8deda78031a781f/fineweb-edu-dedup/train-00003-of-00234.parquet"
+  },
+  {
+   "git_blob_oid": "97f1c0a364da01323a5526a765e41763ab85cfe3",
+   "path": "fineweb-edu-dedup/train-00006-of-00234.parquet",
+   "retrieved_utc": "2026-10-07T20:38:18+00:00",
+   "sha256": "7e6b7024b4d55c468008619df2c17be7b5747efee0d674350b24d236fc059fb0",
+   "size": 2402120053,
+   "upstream_sha256": "7e6b7024b4d55c468008619df2c17be7b5747efee0d674350b24d236fc059fb0",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/3ba9d605774198c5868892d7a8deda78031a781f/fineweb-edu-dedup/train-00006-of-00234.parquet"
+  },
+  {
+   "git_blob_oid": "1d58d3ed62bd0e564d1390d0372a8e043609136a",
+   "path": "fineweb-edu-dedup/train-00069-of-00234.parquet",
+   "retrieved_utc": "2026-10-07T20:35:58+00:00",
+   "sha256": "19fda3ab12d542f2d3baa1df86de987d8e7d27abac7ce0d42a7f4742fd090195",
+   "size": 2311530404,
+   "upstream_sha256": "19fda3ab12d542f2d3baa1df86de987d8e7d27abac7ce0d42a7f4742fd090195",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/3ba9d605774198c5868892d7a8deda78031a781f/fineweb-edu-dedup/train-00069-of-00234.parquet"
+  },
+  {
+   "git_blob_oid": "d616665e3b7d6efb44facbc6603a1c4267d6d94b",
+   "path": "fineweb-edu-dedup/train-00091-of-00234.parquet",
+   "retrieved_utc": "2026-10-07T20:38:04+00:00",
+   "sha256": "6451bc50f8b773c3ad270608bad6c4dd3c3dc2874b68b9e8cd643ad06cc3d702",
+   "size": 2284585662,
+   "upstream_sha256": "6451bc50f8b773c3ad270608bad6c4dd3c3dc2874b68b9e8cd643ad06cc3d702",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/3ba9d605774198c5868892d7a8deda78031a781f/fineweb-edu-dedup/train-00091-of-00234.parquet"
+  },
+  {
+   "git_blob_oid": "1099b2c1aee39c1fe562d1991878f6db4620f535",
+   "path": "fineweb-edu-dedup/train-00095-of-00234.parquet",
+   "retrieved_utc": "2026-10-07T20:37:03+00:00",
+   "sha256": "6b583bcf294df2ae826f2856629e652a419599d91ce542bf8ffb8765dde2a86f",
+   "size": 2292858927,
+   "upstream_sha256": "6b583bcf294df2ae826f2856629e652a419599d91ce542bf8ffb8765dde2a86f",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/3ba9d605774198c5868892d7a8deda78031a781f/fineweb-edu-dedup/train-00095-of-00234.parquet"
+  },
+  {
+   "git_blob_oid": "05145a9f919e32efdd918681969cb302475846bb",
+   "path": "fineweb-edu-dedup/train-00099-of-00234.parquet",
+   "retrieved_utc": "2026-10-07T20:48:18+00:00",
+   "sha256": "f22a1942f98e9a5805f3454915b837afa0f290b9a65010e6b14380e0a8582324",
+   "size": 2327358288,
+   "upstream_sha256": "f22a1942f98e9a5805f3454915b837afa0f290b9a65010e6b14380e0a8582324",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/3ba9d605774198c5868892d7a8deda78031a781f/fineweb-edu-dedup/train-00099-of-00234.parquet"
+  },
+  {
+   "git_blob_oid": "adac12f2681907746df219af64c7302f0868b607",
+   "path": "fineweb-edu-dedup/train-00109-of-00234.parquet",
+   "retrieved_utc": "2026-10-07T20:46:29+00:00",
+   "sha256": "815ba9a8f064500f1159d86a4180a443d040f2af4d7d9eef026482a63c10d0ee",
+   "size": 2312062376,
+   "upstream_sha256": "815ba9a8f064500f1159d86a4180a443d040f2af4d7d9eef026482a63c10d0ee",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/3ba9d605774198c5868892d7a8deda78031a781f/fineweb-edu-dedup/train-00109-of-00234.parquet"
+  },
+  {
+   "git_blob_oid": "116f97e245255cf0f755b3593eaa91c49c71d1a6",
+   "path": "fineweb-edu-dedup/train-00181-of-00234.parquet",
+   "retrieved_utc": "2026-10-07T20:47:39+00:00",
+   "sha256": "7b0c16340b52444838302c0ce9f590abd92c636d150d86ae5bdeea6b2a58918d",
+   "size": 2394917081,
+   "upstream_sha256": "7b0c16340b52444838302c0ce9f590abd92c636d150d86ae5bdeea6b2a58918d",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/3ba9d605774198c5868892d7a8deda78031a781f/fineweb-edu-dedup/train-00181-of-00234.parquet"
+  },
+  {
+   "git_blob_oid": "31300c3d6827efcbf8abc6d1d71700b507d943b6",
+   "path": "fineweb-edu-dedup/train-00205-of-00234.parquet",
+   "retrieved_utc": "2026-10-07T20:52:23+00:00",
+   "sha256": "519fa63cd8f7630f57a41f106168af826fef1d2a52ebc48811759510a9f5b336",
+   "size": 2450034781,
+   "upstream_sha256": "519fa63cd8f7630f57a41f106168af826fef1d2a52ebc48811759510a9f5b336",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/3ba9d605774198c5868892d7a8deda78031a781f/fineweb-edu-dedup/train-00205-of-00234.parquet"
+  },
+  {
+   "git_blob_oid": "02e49a36233894fb5bde8101006eefc1a5333a8d",
+   "path": "fineweb-edu-dedup/train-00217-of-00234.parquet",
+   "retrieved_utc": "2026-10-07T20:55:23+00:00",
+   "sha256": "035d0f6183af3f5aa4b199f503853c7c0f238c6de21997f9175db8eb20bdf322",
+   "size": 2459070977,
+   "upstream_sha256": "035d0f6183af3f5aa4b199f503853c7c0f238c6de21997f9175db8eb20bdf322",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/3ba9d605774198c5868892d7a8deda78031a781f/fineweb-edu-dedup/train-00217-of-00234.parquet"
+  },
+  {
+   "git_blob_oid": "19874a8d70f8389e3ca39bff334f7e1eba809658",
+   "path": "fineweb-edu-dedup/train-00219-of-00234.parquet",
+   "retrieved_utc": "2026-10-07T20:55:42+00:00",
+   "sha256": "a8c9376eca09d9b9bc22f03e8f0a6e6c565b03f713b4cf0d3ac10945dd77ace8",
+   "size": 2459975311,
+   "upstream_sha256": "a8c9376eca09d9b9bc22f03e8f0a6e6c565b03f713b4cf0d3ac10945dd77ace8",
+   "url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/3ba9d605774198c5868892d7a8deda78031a781f/fineweb-edu-dedup/train-00219-of-00234.parquet"
+  }
+ ],
+ "mechanism": "huggingface",
+ "repo": "HuggingFaceTB/smollm-corpus",
+ "revision": "3ba9d605774198c5868892d7a8deda78031a781f",
+ "schema": "j1.acquisition-manifest.v1",
+ "selected_bytes": 26133184811,
+ "selected_file_count": 11,
+ "selection": {
+  "hash_select": [
+   {
+    "count": 11,
+    "namespace": "j1.select.v1.fineweb-edu-dedup",
+    "patterns": [
+     "fineweb-edu-dedup/train-*.parquet"
+    ]
+   }
+  ],
+  "include": [
+   "fineweb-edu-dedup/train-*.parquet"
+  ]
+ },
+ "source_id": "fineweb-edu-dedup",
+ "upstream_file_count": 342
+}

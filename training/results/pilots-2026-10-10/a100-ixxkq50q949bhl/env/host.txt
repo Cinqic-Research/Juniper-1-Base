@@ -1,0 +1,21 @@
+2026-10-10T06:45:44Z
+Linux 67473682c1d9 6.17.0-14-generic #14~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Jan 15 15:52:10 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-8cf6aabc-9af9-c836-00eb-bd6ea7271174)
+name, uuid, memory.total [MiB], mig.mode.current, driver_version, clocks.max.sm [MHz], power.limit [W], ecc.mode.current
+NVIDIA A100-SXM4-80GB, GPU-8cf6aabc-9af9-c836-00eb-bd6ea7271174, 81920 MiB, Disabled, 580.126.16, 1410 MHz, 400.00 W, Enabled
+--- mounts
+Filesystem      Size  Used Avail Use% Mounted on
+overlay         250G  1.3G  249G   1% /
+overlay         250G  1.3G  249G   1% /
+overlay         250G  1.3G  249G   1% /
+overlay on / type overlay (rw,relatime,lowerdir=/var/lib/docker/100000.100000/overlay2/l/WMRE5UDU3WCP6ITQAFPTMMJ7KX:/var/lib/docker/100000.100000/overlay2/l/QUBFMM6HUHFHAO7FL276FBSS37:/var/lib/docker/100000.100000/overlay2/l/7IP7BHWOFJLQU4GSCFSPFCYIUB:/var/lib/docker/100000.100000/overlay2/l/3JCDEAWGIAJM7WT5OXTOZDBF35:/var/lib/docker/100000.100000/overlay2/l/LUTPARIPDGI3NBKDQ7QJXKJSIB:/var/lib/docker/100000.100000/overlay2/l/KH5QIWJHMMP6SABYR4DHCA2GUA:/var/lib/docker/100000.100000/overlay2/l/5IAESRCZZYHWQFAW5D4DHCTX5J:/var/lib/docker/100000.100000/overlay2/l/7XLBXHGU2FDDK66BUOYXPPOPRA:/var/lib/docker/100000.100000/overlay2/l/7E2NB3TU52XSFKE46T2PKUZKVR:/var/lib/docker/100000.100000/overlay2/l/4FY757TYZM5LYUNLPWVAOMVY5B:/var/lib/docker/100000.100000/overlay2/l/FUNVXO3QGWE7SPFKPMY4CRVNMJ:/var/lib/docker/100000.100000/overlay2/l/5RLFDHZFWGHH6DUHDGZCUPOLK5:/var/lib/docker/100000.100000/overlay2/l/HYMBZLTMSFWHOCH7YOTGCQOTXP:/var/lib/docker/100000.100000/overlay2/l/I565YJXSR5A53FRDXPXNS3NLN2:/var/lib/docker/100000.100000/overlay2/l/BT3NXYDMZMKHEY6GFPNU7LASJB:/var/lib/docker/100000.100000/overlay2/l/AXNDRNMTRS6BLQ2A2LSXWKLBXX:/var/lib/docker/100000.100000/overlay2/l/FYL5XDJQUGMN6X3MPMUYG4GHWF:/var/lib/docker/100000.100000/overlay2/l/RIWXRVCWWPQ7TCGDHGLA2CKY7X:/var/lib/docker/100000.100000/overlay2/l/3MBQSHFRMC5EDH7THIBU56XH5D:/var/lib/docker/100000.100000/overlay2/l/V5S6IJ4Q6BIP3AVSSZANC6TCN7:/var/lib/docker/100000.100000/overlay2/l/UZ5BMOAPOIUC3SBV5P6WB6MH4A:/var/lib/docker/100000.100000/overlay2/l/GG7YZR3RDE7H4ONKYJBFQDIRWI:/var/lib/docker/100000.100000/overlay2/l/Y6TS2HVUWKHYBMGZVBBM3H7UPK:/var/lib/docker/100000.100000/overlay2/l/5M67BTWTQVX7ZHTMSTWMR3I74P:/var/lib/docker/100000.100000/overlay2/l/XWTWCRGO4TVT3K4SFK6464BK32:/var/lib/docker/100000.100000/overlay2/l/GMJ5OMCCTJ6PIPSV5GG3LJERKD:/var/lib/docker/100000.100000/overlay2/l/2QDS4KQCO4TDXT7M5W64UQ4R5L:/var/lib/docker/100000.100000/overlay2/l/WSRTYTGTZK2VV3FHJWMTEVZMVW:/var/lib/docker/100000.100000/overlay2/l/55RCWYFRTXZOAQ7HV3P4L2MVGT:/var/lib/docker/100000.100000/overlay2/l/WC6U637G4PRVQMVQCNCQHPZJTI:/var/lib/docker/100000.100000/overlay2/l/FFYTAI4K7DCAY4UJ4VCMVIG2CK:/var/lib/docker/100000.100000/overlay2/l/IP37ODNXCFBF7BV2LX2ATKOVWK:/var/lib/docker/100000.100000/overlay2/l/R6RKZHN2LZ3B5GZRQ7NA2JVFST:/var/lib/docker/100000.100000/overlay2/l/N3OOSZMGE4AZMI4UBKGV5GMTTM:/var/lib/docker/100000.100000/overlay2/l/6I54XA6RC5LO6RE3KJGTJBX7QD,upperdir=/var/lib/docker/100000.100000/overlay2/0e0c19040a300c975d93af3e3c5453307c12fdfea7bf9a354222ac7c6ea5e900/diff,workdir=/var/lib/docker/100000.100000/overlay2/0e0c19040a300c975d93af3e3c5453307c12fdfea7bf9a354222ac7c6ea5e900/work,nouserxattr)
+--- cpu
+128
+1530000 100000
+               total        used        free      shared  buff/cache   available
+Mem:            2003         257         310          64        1511        1745
+Swap:              0           0           0
+--- env names
+--- runpodctl
+/usr/bin/runpodctl
+runpodctl 1.14.15-dac76ad

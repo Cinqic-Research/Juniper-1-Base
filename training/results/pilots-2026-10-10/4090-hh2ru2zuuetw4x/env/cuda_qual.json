@@ -1,0 +1,32 @@
+{
+ "torch": "2.8.0+cu128",
+ "cuda_runtime": "12.8",
+ "cudnn": 91002,
+ "device": {
+  "name": "NVIDIA GeForce RTX 4090",
+  "total_mem_gib": 23.53,
+  "cc": "8.9",
+  "sms": 128
+ },
+ "bf16_supported": true,
+ "matmul_relerr_bfloat16": 0.002878099193245411,
+ "matmul_relerr_float32": 6.631412666059295e-07,
+ "tflops_bf16_8192": 163.7,
+ "tflops_tf32_8192": 85.7,
+ "tflops_fp32_8192": 52.5,
+ "adamw_param_changed": true,
+ "adamw_fused_vs_foreach_maxdiff": 7.450580596923828e-09,
+ "sdpa_backends": {
+  "FLASH_ATTENTION": "ok",
+  "EFFICIENT_ATTENTION": "ok",
+  "CUDNN_ATTENTION": "ok",
+  "MATH": "ok"
+ },
+ "h2d_pinned_GBps": 12.51,
+ "d2h_pinned_GBps": 12.31,
+ "h2d_pageable_GBps": 3.17,
+ "device_assert_exit_code": 1,
+ "device_assert_stderr_tail": "Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.",
+ "oom_exit_code": 1,
+ "oom_is_OutOfMemoryError": true
+}

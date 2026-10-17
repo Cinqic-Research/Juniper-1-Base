@@ -1,0 +1,90 @@
+{
+ "build_identity": "07c062463b406a7cc508cfac0a96be9fd6daf44cf4522f30b83e7c8ef94d9556",
+ "bytes_by_stage": {
+  "candidate": 281714768,
+  "contamination": 883600,
+  "extraction": 0,
+  "privacy": 30668,
+  "quality": 78129897
+ },
+ "bytes_in": 360758933,
+ "chars_in": 358867364,
+ "contamination_benchmarks": {
+  "mmlu": 10
+ },
+ "docs_in": 40049,
+ "kinds": {
+  "math": 6431,
+  "prose": 25644,
+  "technical": 47
+ },
+ "outputs": [
+  {
+   "file": "candidates/libretexts/libretexts-0000.parquet",
+   "rows": 32122,
+   "sha256": "73bacead17177fb108795fc3d9e39b19f116d1aff4d67943aa54f466007b9909"
+  },
+  {
+   "file": "rejects/libretexts/libretexts-0000.parquet",
+   "rows": 7927,
+   "sha256": "b657093239bab835d625841eccdf9ba008fceac54408f0b7a1dd05581dc31757"
+  },
+  {
+   "file": "signatures/libretexts/libretexts-0000.npy",
+   "rows": 32122,
+   "sha256": "7220354f97bf4fc0b55aa5484a9ff4cfa932224f4b7732ab7a5dd5d983e69089"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "libretexts-0000.json.gz",
+ "reasons": {
+  "contamination.mmlu": 10,
+  "extraction.empty": 7,
+  "privacy.pii.payment_card": 2,
+  "quality.corrupt_decoding": 2,
+  "quality.math.alpha_words": 16,
+  "quality.math.bullet_lines": 13,
+  "quality.math.duplicate_lines": 343,
+  "quality.math.duplicate_ngrams": 2020,
+  "quality.math.not_english": 21,
+  "quality.math.top_ngram_repetition": 98,
+  "quality.prose.alpha_words": 768,
+  "quality.prose.bullet_lines": 107,
+  "quality.prose.duplicate_lines": 2407,
+  "quality.prose.duplicate_ngrams": 3031,
+  "quality.prose.ellipsis_lines": 9,
+  "quality.prose.line_length": 1,
+  "quality.prose.mean_word_length": 85,
+  "quality.prose.non_latin_script": 42,
+  "quality.prose.not_english": 485,
+  "quality.prose.stopwords": 15,
+  "quality.prose.symbol_ratio": 29,
+  "quality.prose.too_long": 1,
+  "quality.prose.too_short": 6,
+  "quality.prose.top_ngram_repetition": 145,
+  "quality.spam_terms": 12,
+  "quality.technical.duplicate_ngrams": 1,
+  "quality.technical.top_ngram_repetition": 1
+ },
+ "redactions": {
+  "email": 6,
+  "home_path_user": 61,
+  "phone": 112
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 261.2,
+ "slow_documents": [],
+ "source_id": "libretexts",
+ "stages": {
+  "candidate": 32122,
+  "contamination": 10,
+  "extraction": 7,
+  "privacy": 2,
+  "quality": 7908
+ },
+ "unit_id": "libretexts-0000"
+}

@@ -1,0 +1,97 @@
+{
+ "build_identity": "6b91fa976cb3d19ac955489a320f810aed818a25097647edbff792d0b399b6ab",
+ "bytes_by_stage": {
+  "candidate": 347306372,
+  "contamination": 366931,
+  "privacy": 1562220,
+  "quality": 158308373
+ },
+ "bytes_in": 507543896,
+ "chars_in": 501015702,
+ "contamination_benchmarks": {
+  "arc": 2,
+  "gsm8k": 2,
+  "hellaswag": 1,
+  "humaneval": 1,
+  "humanevalplus": 1,
+  "math": 75,
+  "mbpp": 7,
+  "mbppplus": 2,
+  "mmlu": 2
+ },
+ "docs_in": 100000,
+ "kinds": {
+  "math": 70648
+ },
+ "outputs": [
+  {
+   "file": "candidates/finemath-4plus/train-00000-of-00064.r00000000.parquet",
+   "rows": 70648,
+   "sha256": "347728edd17e96eaeb057411c7a0747dabbc7699a2bafc227589dc3f285a59a7"
+  },
+  {
+   "file": "rejects/finemath-4plus/train-00000-of-00064.r00000000.parquet",
+   "rows": 29352,
+   "sha256": "cce444c6d59a14768efe65808a6ce70036112b134e7b1f3cc28a0e2dc5179845"
+  },
+  {
+   "file": "signatures/finemath-4plus/train-00000-of-00064.r00000000.npy",
+   "rows": 70648,
+   "sha256": "91eeefccea2ecc20582e2f565aba3198802320fec48dfcaa576794f5fedab91f"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "finemath-4plus/train-00000-of-00064.parquet",
+ "reasons": {
+  "contamination.arc": 2,
+  "contamination.gsm8k": 2,
+  "contamination.hellaswag": 1,
+  "contamination.humaneval": 1,
+  "contamination.humanevalplus": 1,
+  "contamination.math": 75,
+  "contamination.mbpp": 7,
+  "contamination.mbppplus": 2,
+  "contamination.mmlu": 2,
+  "privacy.pii.payment_card": 12,
+  "privacy.pii.us_ssn": 1,
+  "quality.binary_or_base64": 15,
+  "quality.corrupt_decoding": 96,
+  "quality.math.alpha_words": 1127,
+  "quality.math.bullet_lines": 148,
+  "quality.math.duplicate_lines": 6040,
+  "quality.math.duplicate_ngrams": 18620,
+  "quality.math.duplicate_paragraphs": 3746,
+  "quality.math.ellipsis_lines": 646,
+  "quality.math.line_length": 39,
+  "quality.math.mean_word_length": 358,
+  "quality.math.non_latin_script": 222,
+  "quality.math.not_english": 2229,
+  "quality.math.stopwords": 1162,
+  "quality.math.symbol_ratio": 428,
+  "quality.math.too_short": 1309,
+  "quality.math.top_ngram_repetition": 9659,
+  "quality.mojibake": 600,
+  "quality.spam_terms": 128
+ },
+ "redactions": {
+  "email": 2070,
+  "home_path_user": 85,
+  "ipv4": 314,
+  "phone": 357
+ },
+ "row_range": [
+  0,
+  100000
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 378.67,
+ "slow_documents": [],
+ "source_id": "finemath-4plus",
+ "stages": {
+  "candidate": 70648,
+  "contamination": 90,
+  "privacy": 13,
+  "quality": 29249
+ },
+ "unit_id": "train-00000-of-00064.r00000000"
+}

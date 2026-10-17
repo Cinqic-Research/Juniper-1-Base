@@ -1,0 +1,82 @@
+{
+ "schema": "j1.compile-equivalence-protocol.v2",
+ "registered_utc": "2026-10-11T04:03:23Z",
+ "authority": "owner order 2026-10-10 section 9 (compiled profile): bounded successor experiment registered before any new result; registered limits 0.5 % mean relative loss and 0.3 % final bpb preserved",
+ "supersedes": "docs/autonomous_2026-10-10/compile_equivalence.json (200-update check on the 13.1M-token prefix; FAIL 0.326 % > 0.3 %)",
+ "design": "one matched eager/compiled pair of 1,000 optimizer updates each on the launch basis: full v0.2.2 train stream (shards.json 1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef, tokenizer 176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1), exact-epoch horizon 52,034 updates (limit_tokens 3,410,100,225), warmup 500, peak LR 0.0016971, cosine min ratio 0.1, seed 1, micro-batch 16 x accumulation 2 (65,536 targets/update), bf16 autocast, fused AdamW, flash SDPA (default), --stop-at 1000, newly initialised weights (same seed), identical batches (verified by batch_fp at every update). The pair therefore reproduces the first 1,000 updates of the launch data order and schedule; it is qualification work, not the production canary (own run ids, checkpoints not reused).",
+ "required_config": {
+  "preset": "j1-wide-20x768",
+  "seq_len": 2048,
+  "micro_bs": 16,
+  "accum": 2,
+  "steps": 52034,
+  "limit_tokens": 3410100225,
+  "exact_epoch": true,
+  "lr": 0.0016971,
+  "warmup": 500,
+  "min_lr_ratio": 0.1,
+  "wd": 0.1,
+  "wd_policy": "matrices",
+  "clip": 1.0,
+  "opt": "fused",
+  "precision": "bf16",
+  "seed": 1,
+  "eval_set": "full-split",
+  "eval_every": 250,
+  "sdpa": "default",
+  "gqa_kernel": "native",
+  "deterministic": false
+ },
+ "stop_at": 1000,
+ "eval_every": 250,
+ "milestones": [
+  250,
+  500,
+  750,
+  1000
+ ],
+ "compare_range": [
+  501,
+  1000
+ ],
+ "compare_range_rationale": "post-warmup updates; the whole range 1..1000 is also reported (stability) but the mean criterion is registered on 501..1000",
+ "tolerances": {
+  "loss_rel": 0.005,
+  "bpb_rel": 0.003
+ },
+ "stability": {
+  "max_rel_loss_diff": 0.02,
+  "no_nonfinite": true,
+  "no_resume": true
+ },
+ "domains": {
+  "critical_min_bytes": 700000,
+  "bpb_rel": 0.005,
+  "rule": "every validation source with at least 700,000 scored bytes (the protocol-18b critical set) must have final bpb within 0.5 % between the runs; others are reported"
+ },
+ "compile_options": {
+  "mode": "default",
+  "torch": "2.8.0+cu128 (runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404)",
+  "flags": "torch.compile(model, mode='default'); no CUDA graphs; same SDPA backend as eager"
+ },
+ "seed_policy": "single pair at the launch seed 1; no seed selection; the result of this pair is the decision",
+ "retry_policy": "no rerun of a completed run; a run that fails for infrastructure reasons (pod loss, OOM, non-zero exit without a trainer verdict) may be restarted once from scratch with the same arguments; partial records are kept beside the final ones",
+ "diagnostic": {
+  "when": "the pair FAILS any criterion and the funding contract admits it",
+  "what": "one eager replicate with identical arguments (run id ce2-eager-rep) to measure the eager-vs-eager trajectory noise of the non-deterministic flash backward",
+  "use": "attribution in the report only; it cannot promote the compiled profile and does not change the tolerances"
+ },
+ "spend_cap_usd": {
+  "pair": 2.5,
+  "diagnostic": 0.8
+ },
+ "promotion_rule": "the compiled profile may be selected for the tranche only if this record is PASS AND the B17 startup measurement, the recovery suite and the supervision checks are re-run on the compiled profile AND an independent review approves; otherwise the tranche runs eager",
+ "run_ids": {
+  "eager": "ce2-eager",
+  "compiled": "ce2-compiled",
+  "diagnostic": "ce2-eager-rep"
+ },
+ "checkpoints": "written to the pod's container disk (/root/ckpt-ce2) at the launch cadence (500 updates / 900 s); qualification artefacts, not retained",
+ "evaluation": "validation split only (2,576 documents, 12,311,466 scored bytes); the test split is untouched",
+ "reporting": "measured end-to-end speed and cost of both runs including compilation, evaluation, logging and checkpointing (summary startup/first_step_s/tokens_per_s_median, bench_matrix status start/end)"
+}

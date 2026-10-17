@@ -1,0 +1,5 @@
+COMPLETE: OK
+manifest.json: OK
+model.pt: OK
+optim.pt: OK
+trainer.pt: OK

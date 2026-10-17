@@ -1,0 +1,28 @@
+{
+ "acquire_version": "j1.acquire.v1",
+ "acquired_utc": "2026-10-07T15:24:26+00:00",
+ "files": [
+  {
+   "git_blob_oid": "4b3df92ec78bcd51b2fc3a98045f964e77b33991",
+   "path": "libretexts-0000.json.gz",
+   "retrieved_utc": "2026-10-07T15:24:26+00:00",
+   "sha256": "71851a2b5acfccf80659729a0eccd07ab6ed737f0edc659a662aa9c1cd2194db",
+   "size": 115037937,
+   "upstream_sha256": "71851a2b5acfccf80659729a0eccd07ab6ed737f0edc659a662aa9c1cd2194db",
+   "url": "https://huggingface.co/datasets/common-pile/libretexts_filtered/resolve/70388bca52b4a93515e14b1d56618fd7944988fd/libretexts-0000.json.gz"
+  }
+ ],
+ "mechanism": "huggingface",
+ "repo": "common-pile/libretexts_filtered",
+ "revision": "70388bca52b4a93515e14b1d56618fd7944988fd",
+ "schema": "j1.acquisition-manifest.v1",
+ "selected_bytes": 115037937,
+ "selected_file_count": 1,
+ "selection": {
+  "include": [
+   "*.json.gz"
+  ]
+ },
+ "source_id": "libretexts",
+ "upstream_file_count": 3
+}

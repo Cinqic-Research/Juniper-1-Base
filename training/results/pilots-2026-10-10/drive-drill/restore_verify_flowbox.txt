@@ -1,0 +1,8 @@
+bytes: all verified
+juniper-1-train clone+fsck ok, HEAD e942abec29ad7987e4c7bf331fe1a5c2c88fe60b expected e942abec29ad7987e4c7bf331fe1a5c2c88fe60b
+juniper-1-data clone+fsck ok, HEAD 8935ab36e2daf527f829b2a359139d36972c99e6 expected 8935ab36e2daf527f829b2a359139d36972c99e6
+representative shards matching the inventory: 4/4; inventory shards 1345
+j1tok-24k round trip True
+j1tok-28k round trip True
+j1tok-32k round trip True
+checkpoint verify (restored code): (True, 'ok')

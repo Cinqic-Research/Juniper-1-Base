@@ -1,0 +1,90 @@
+{
+ "schema": "j1.sft-distill-stage.v1",
+ "registered_et": "2026-10-14 2:45 AM EDT",
+ "registered_before_any_result": true,
+ "results_seen_at_registration": "none of the distillation arms; teacher batch running (records not inspected); SFT v2 decision FAILED (selects the init below)",
+ "authority": "owner directive 2026-10-13 section E; Data docs/distillation/gptoss_teacher_protocol_v2.json (registered 2026-10-13) fixes arms, sizes and criteria",
+ "stage_id": "juniper1-distill-v2",
+ "protocol": {
+  "path": "Juniper-1-Data docs/distillation/gptoss_teacher_protocol_v2.json",
+  "data_revision": "sft/dataset-v1.3 head at the arm build (verifier v1.1)"
+ },
+ "base": {
+  "freeze_id": "juniper1-base-v1",
+  "freeze_record_sha256": "ef79b324fff459c8ffce7ac2e1b1542960a254b8383a6e8b19fd20402e92ff55"
+ },
+ "init": {
+  "kind": "sft_checkpoint",
+  "checkpoint": "ckpt-000001226-55d13f9a",
+  "manifest_sha256": "dc0bbbb0cd655cc5114c1ee73ac777634985fca8a713a9f149f7686b08a110ce",
+  "model_state_sha256": "a4616f9045cfe250f188595fba591dd4c157cb613e331ceaa89aa889f8a79e95"
+ },
+ "eval_bundle_sha256": "935e12edb42a0a39cb75839ffbb74fcb5e01e034746f2725e9ff985ecdb89906",
+ "scorer": "j1.sftscore.v4 + j1.sfteval.v2 at data_code_revision",
+ "arms": {
+  "C0": {
+   "run_id": "j1-distill-v2-c0",
+   "manifest_sha256": "03423040dd7492e6f2980e6458b01a067ac18fab047733a336676f039fb701b4"
+  },
+  "A1": {
+   "run_id": "j1-distill-v2-a1",
+   "manifest_sha256": "a5221b0057ec297174d37f0e16cef447abca26bdb481ebd3bbe920ab377dae11"
+  },
+  "A2": {
+   "run_id": "j1-distill-v2-a2",
+   "manifest_sha256": "c5c6b17593559fba98bf256ccef9cce84c5458a908ab5e595e8833da9b0bb21e"
+  },
+  "A3": {
+   "run_id": "j1-distill-v2-a3",
+   "manifest_sha256": "0885bbef568ec90ac61170b1d5fe2e320691dc84e8f3d8260b436eb6dcd4e22d"
+  }
+ },
+ "arm_build": {
+  "command": "python -m j1data.distill arms --replay 3 --seed 20261013 (Data e41cb2b+, teacherverify v1.1; amendment of 2:47 AM EDT before any arm trained)",
+  "records": "synthetic/runs/gptoss-v2/records.jsonl",
+  "controls": "sft/teacher/gptoss-v2/controls.jsonl",
+  "note": "arm manifests are filled in from the deterministic build before any arm trains",
+  "built_et": "2026-10-14 4:50 AM EDT",
+  "matched_problems": 318,
+  "replay_episodes": 954,
+  "records_sha256": "abd405b104b2580397a8adb63bd977e87cd2f664169ebeba2020508a91342d9b",
+  "teacher_batch": "1,200 prompts, 1,121 accepted, 79 rejected (finished 4:48 AM EDT; llama-server dumped core while being stopped after the last record)",
+  "double_build": "byte-identical",
+  "data_revision": "bbce713"
+ },
+ "training": {
+  "updates": 200,
+  "warmup_updates": 10,
+  "min_lr_ratio": 1.0,
+  "episodes_per_update": 64,
+  "token_budget": 1024,
+  "optimizer": {
+   "name": "adamw",
+   "betas": [
+    0.9,
+    0.95
+   ],
+   "eps": 1e-08,
+   "weight_decay": 0.1,
+   "decay_policy": "matrices",
+   "clip": 1.0
+  },
+  "lr": 2e-05,
+  "precision": "fp32",
+  "seed": 1,
+  "dev_every": 50,
+  "checkpoint": {
+   "every_updates": 100,
+   "every_seconds": 900
+  }
+ },
+ "hardware": "all four arms on one rented RTX 4090 (same image and software as SFT v2), concurrent processes; scoring on FLOWBOX",
+ "decision": "tools/sft_distill_decide.py: per arm vs C0 on the v1.3 test split; GSM8K test strict, exact McNemar, Holm over A1-A3; claim = Holm p < 0.05 and gain >= 0.03 and retention (bpb <= 0.943872, no Holm-significant category regression vs C0); outcomes IMPROVEMENT / NO_IMPROVEMENT_DETECTED",
+ "replication": "an arm with IMPROVEMENT gets one replication seed (seed 2, same stage) before any adoption claim",
+ "budget": {
+  "runpod_usd_cap": 1.5,
+  "assignment_cap_usd": 10.0,
+  "note": "owner raised the assignment authority from $5 to $10 at 2:12 AM EDT 2026-10-14"
+ },
+ "init_note": "j1-sft-v1-pilot: SFT v2 decision FAILED (results/sft_v2_v1), so the protocol's fallback applies: the v1.2 pilot candidate, seed 1"
+}

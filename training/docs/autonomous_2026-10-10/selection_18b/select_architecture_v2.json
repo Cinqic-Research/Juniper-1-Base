@@ -1,0 +1,153 @@
+{
+ "rule": "architecture-v2",
+ "margins": {
+  "NI": 0.005,
+  "M": 0.005,
+  "DOM": -0.015,
+  "EFF": 0.03,
+  "alpha_one_sided": 0.1
+ },
+ "candidates": {
+  "j1-core-28x640": {
+   "equal_token": {
+    "n": 3,
+    "values": [
+     -0.007936239950525894,
+     -0.004527849360513323,
+     -0.0014846435573389611
+    ],
+    "mean": -0.004649577622792726,
+    "sd": 0.003227520307066066,
+    "lower90": -0.008163222987241286,
+    "upper90": -0.0011359322583441639
+   },
+   "equal_compute": {
+    "n": 3,
+    "values": [
+     -0.010418338999244714,
+     -0.015632241851559623,
+     -0.011511556756339693
+    ],
+    "mean": -0.012520712535714677,
+    "sd": 0.0027495440128553744,
+    "lower90": -0.015514008210405168,
+    "upper90": -0.009527416861024186
+   },
+   "domain_mean_improvement": {
+    "arxiv-papers": -0.004564451038744688,
+    "fineweb-edu-dedup": -0.004590043250415767,
+    "finemath-4plus": -0.0034327724559818484,
+    "pressbooks": -0.0036736451421190528,
+    "stackexchange": -0.0044931967552306416,
+    "stackv2-edu": -0.006616753394598749,
+    "wikimedia": -0.005103468961863921
+   },
+   "NI_ET": false,
+   "SUP_ET": false,
+   "SUP_EC": false,
+   "DOM": true
+  },
+  "j1-wide-20x768": {
+   "equal_token": {
+    "n": 3,
+    "values": [
+     0.00787375196561584,
+     0.004507440349608794,
+     0.0014824426583970474
+    ],
+    "mean": 0.004621211657873894,
+    "sd": 0.003197173219904367,
+    "lower90": 0.0011406037004702317,
+    "upper90": 0.008101819615277558
+   },
+   "equal_compute": {
+    "n": 3,
+    "values": [
+     0.01031091637703589,
+     0.015391636073960288,
+     0.011380548921511413
+    ],
+    "mean": 0.012361033790835863,
+    "sd": 0.00267851471788182,
+    "lower90": 0.009445064276565643,
+    "upper90": 0.015277003305106082
+   },
+   "domain_mean_improvement": {
+    "arxiv-papers": 0.004532174718093672,
+    "fineweb-edu-dedup": 0.004562670903002966,
+    "finemath-4plus": 0.003409613659812242,
+    "pressbooks": 0.003657051789109796,
+    "stackexchange": 0.004469149810189324,
+    "stackv2-edu": 0.006546931889352406,
+    "wikimedia": 0.005070666400683215
+   },
+   "NI_ET": true,
+   "SUP_ET": false,
+   "SUP_EC": true,
+   "DOM": true
+  }
+ },
+ "et_bpb": {
+  "j1-core-28x640": {
+   "21": 1.1721644492428474,
+   "22": 1.1763863496725842,
+   "23": 1.1696894588931077
+  },
+  "j1-wide-20x768": {
+   "21": 1.1629351171065965,
+   "22": 1.171083858373341,
+   "23": 1.1679554613421672
+  }
+ },
+ "ec_bpb": {
+  "j1-core-28x640": {
+   "21": 1.1721644492428474,
+   "22": 1.1763863496725842,
+   "23": 1.1696894588931077
+  },
+  "j1-wide-20x768": {
+   "21": 1.16007835962657,
+   "22": 1.1582798390960491,
+   "23": 1.1563777507831985
+  }
+ },
+ "critical_domains": [
+  "arxiv-papers",
+  "fineweb-edu-dedup",
+  "finemath-4plus",
+  "pressbooks",
+  "stackexchange",
+  "stackv2-edu",
+  "wikimedia"
+ ],
+ "slower": "j1-core-28x640",
+ "faster": "j1-wide-20x768",
+ "updates_per_s_median": {
+  "j1-core-28x640": 1.800992253683878,
+  "j1-wide-20x768": 1.9683972440919026
+ },
+ "paid_targets_per_s": {
+  "j1-core-28x640": 95899.76226298047,
+  "j1-wide-20x768": 104958.1766515803
+ },
+ "paid_time_basis": "run process start to end (bench status): data load/verify, compile, training, evaluations and checkpoint saves",
+ "equal_compute_seconds": 1549.7012795535848,
+ "equal_compute_status": "MATCHED",
+ "ec_time_mismatch_rel": {
+  "21": 0.0005215338913693301,
+  "22": 0.0008628467511981874,
+  "23": -0.002093647571584034
+ },
+ "lr": {
+  "j1-core-28x640": 0.001859,
+  "j1-wide-20x768": 0.0016971
+ },
+ "u_fast": 3055,
+ "host": {
+  "gpu_uuid": "GPU-5c42020f-dc89-fe0f-2a91-a26d0948c4f4",
+  "pod_id": "pncbyxaf2dt2jl"
+ },
+ "status": "SELECTED",
+ "decision": "j1-wide-20x768",
+ "basis": "equal-token noninferiority, domain gates, material equal-compute improvement"
+}

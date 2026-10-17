@@ -1,0 +1,7 @@
+[ckpt] step 0 -> /root/ckpt-recovery/t_delete/ckpt-000000000-4b3efa57 (555.9 MiB, 2.09s)
+step 1 loss 10.3499 lr 0.000185 4896ms
+step 10 loss 7.9697 lr 0.000897 319ms
+[ckpt] step 10 -> /root/ckpt-recovery/t_delete/ckpt-000000010-61d2a326 (1667.7 MiB, 6.22s)
+step 20 loss 7.7968 lr 0.000637 319ms
+[ckpt] step 20 -> /root/ckpt-recovery/t_delete/ckpt-000000020-ad6f5c3a (1667.7 MiB, 6.36s)
+{"steps_run": 20, "final_step": 20, "tokens_per_s_median": 102954.55403005113, "step_ms_median": 318.2763531804085, "peak_vram_gib": 28.861260414123535, "final_param_sha256": "262438756550552a32318160287e505b2467ab3cd188ae84ba0f279c74aab05b"}

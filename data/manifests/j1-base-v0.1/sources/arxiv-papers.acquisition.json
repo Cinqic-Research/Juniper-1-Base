@@ -1,0 +1,91 @@
+{
+ "acquire_version": "j1.acquire.v1",
+ "acquired_utc": "2026-10-07T15:32:09+00:00",
+ "files": [
+  {
+   "git_blob_oid": "875ce8b1b4ad8c238a99a629c198cfeaeab8157f",
+   "path": "arxiv-papers-0000.json.gz",
+   "retrieved_utc": "2026-10-07T15:28:23+00:00",
+   "sha256": "8fcc333282a73f08e870b91d685957e43dae49746621d4183ca1ecc56595cc7f",
+   "size": 807211839,
+   "upstream_sha256": "8fcc333282a73f08e870b91d685957e43dae49746621d4183ca1ecc56595cc7f",
+   "url": "https://huggingface.co/datasets/common-pile/arxiv_papers_filtered/resolve/033cf7f53f9b348deec868c1a5a48484f3ee9e52/arxiv-papers-0000.json.gz"
+  },
+  {
+   "git_blob_oid": "c0e437c0f8be6bcc48fbd9a159a00259340c9476",
+   "path": "arxiv-papers-0001.json.gz",
+   "retrieved_utc": "2026-10-07T15:29:32+00:00",
+   "sha256": "adc639bd7fec51e92b9a00d6047fd0ef370375860a1d517eff5482d0d17b0be3",
+   "size": 825104906,
+   "upstream_sha256": "adc639bd7fec51e92b9a00d6047fd0ef370375860a1d517eff5482d0d17b0be3",
+   "url": "https://huggingface.co/datasets/common-pile/arxiv_papers_filtered/resolve/033cf7f53f9b348deec868c1a5a48484f3ee9e52/arxiv-papers-0001.json.gz"
+  },
+  {
+   "git_blob_oid": "ddac2d0db8ba34c000ba768c3bb2fb0b76bb1b10",
+   "path": "arxiv-papers-0002.json.gz",
+   "retrieved_utc": "2026-10-07T15:28:13+00:00",
+   "sha256": "111b0cd16ff4110fff6995a3b8e98f8a1d82f16894ea699796133fef5c2fb198",
+   "size": 836455630,
+   "upstream_sha256": "111b0cd16ff4110fff6995a3b8e98f8a1d82f16894ea699796133fef5c2fb198",
+   "url": "https://huggingface.co/datasets/common-pile/arxiv_papers_filtered/resolve/033cf7f53f9b348deec868c1a5a48484f3ee9e52/arxiv-papers-0002.json.gz"
+  },
+  {
+   "git_blob_oid": "9d5e1cf8df90f17837f379e831b685ff6fe00753",
+   "path": "arxiv-papers-0003.json.gz",
+   "retrieved_utc": "2026-10-07T15:28:53+00:00",
+   "sha256": "adaff24434e6468094b17daf6b0368f77741d01329d9c8877cbce15459a72392",
+   "size": 834877687,
+   "upstream_sha256": "adaff24434e6468094b17daf6b0368f77741d01329d9c8877cbce15459a72392",
+   "url": "https://huggingface.co/datasets/common-pile/arxiv_papers_filtered/resolve/033cf7f53f9b348deec868c1a5a48484f3ee9e52/arxiv-papers-0003.json.gz"
+  },
+  {
+   "git_blob_oid": "b5b81c066ebfc8be8f684b01c85189b1e1dd3a09",
+   "path": "arxiv-papers-0004.json.gz",
+   "retrieved_utc": "2026-10-07T15:31:15+00:00",
+   "sha256": "8f9e9006a5a8c1f1c2beb391ccd313bcd457f047e6e250de083f1f47e8c13857",
+   "size": 840154089,
+   "upstream_sha256": "8f9e9006a5a8c1f1c2beb391ccd313bcd457f047e6e250de083f1f47e8c13857",
+   "url": "https://huggingface.co/datasets/common-pile/arxiv_papers_filtered/resolve/033cf7f53f9b348deec868c1a5a48484f3ee9e52/arxiv-papers-0004.json.gz"
+  },
+  {
+   "git_blob_oid": "8859dcbf6098f8ebea5c1e7b4ad6c7341d0f1298",
+   "path": "arxiv-papers-0005.json.gz",
+   "retrieved_utc": "2026-10-07T15:32:01+00:00",
+   "sha256": "f54481c7318b01aa8e459d1da519d839ed2af694fd9a2c33b86d3b8be63e7470",
+   "size": 842526499,
+   "upstream_sha256": "f54481c7318b01aa8e459d1da519d839ed2af694fd9a2c33b86d3b8be63e7470",
+   "url": "https://huggingface.co/datasets/common-pile/arxiv_papers_filtered/resolve/033cf7f53f9b348deec868c1a5a48484f3ee9e52/arxiv-papers-0005.json.gz"
+  },
+  {
+   "git_blob_oid": "b7193fa348bf6ac8550605cd728ef6a1405162ba",
+   "path": "arxiv-papers-0006.json.gz",
+   "retrieved_utc": "2026-10-07T15:32:09+00:00",
+   "sha256": "60dbfe42596e6255eb2e54566c715c2ebddb77df0d6030154a293f570d933f32",
+   "size": 840230674,
+   "upstream_sha256": "60dbfe42596e6255eb2e54566c715c2ebddb77df0d6030154a293f570d933f32",
+   "url": "https://huggingface.co/datasets/common-pile/arxiv_papers_filtered/resolve/033cf7f53f9b348deec868c1a5a48484f3ee9e52/arxiv-papers-0006.json.gz"
+  },
+  {
+   "git_blob_oid": "685b45ffa6e4a3d140f2058f1d52a8bae85b93db",
+   "path": "arxiv-papers-0007.json.gz",
+   "retrieved_utc": "2026-10-07T15:30:36+00:00",
+   "sha256": "3c930859c88959b37519b77f597da9ccbb5bb2825bba1458d216f9ec5c94a90c",
+   "size": 210893770,
+   "upstream_sha256": "3c930859c88959b37519b77f597da9ccbb5bb2825bba1458d216f9ec5c94a90c",
+   "url": "https://huggingface.co/datasets/common-pile/arxiv_papers_filtered/resolve/033cf7f53f9b348deec868c1a5a48484f3ee9e52/arxiv-papers-0007.json.gz"
+  }
+ ],
+ "mechanism": "huggingface",
+ "repo": "common-pile/arxiv_papers_filtered",
+ "revision": "033cf7f53f9b348deec868c1a5a48484f3ee9e52",
+ "schema": "j1.acquisition-manifest.v1",
+ "selected_bytes": 6037455094,
+ "selected_file_count": 8,
+ "selection": {
+  "include": [
+   "*.json.gz"
+  ]
+ },
+ "source_id": "arxiv-papers",
+ "upstream_file_count": 10
+}

@@ -1,0 +1,42 @@
+{
+ "lr": 3e-05,
+ "probes": [
+  {
+   "checkpoint": "ckpt-000000150-a24fc024",
+   "dev_loss": 1.0814063670460912,
+   "fixed32_bpb": 0.8713548584265816,
+   "lr": 1e-05
+  },
+  {
+   "checkpoint": "ckpt-000000150-484e1bc2",
+   "dev_loss": 0.7960542512026956,
+   "fixed32_bpb": 0.8763584005094007,
+   "lr": 3e-05
+  },
+  {
+   "checkpoint": "ckpt-000000150-e10605a0",
+   "dev_loss": 0.7015577601147278,
+   "fixed32_bpb": 0.897864076694259,
+   "lr": 0.0001
+  }
+ ],
+ "reason": "lowest dev loss within 0.5% among probes under the bpb limit",
+ "rule": {
+  "constraint": {
+   "base_fixed32_bpb": 0.867697,
+   "fixed32_bpb_max": 0.893728,
+   "ratio": 1.03
+  },
+  "fallback": "smallest lr",
+  "lrs": [
+   1e-05,
+   3e-05,
+   0.0001
+  ],
+  "metric": "dev_loss_at_150",
+  "min_lr_ratio": 1.0,
+  "tie_relative": 0.005,
+  "updates": 150,
+  "warmup_updates": 15
+ }
+}

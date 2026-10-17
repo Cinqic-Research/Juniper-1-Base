@@ -1,0 +1,25 @@
+== /root/stq
+write_1GiB_s 0.757
+960e380736fa49fe
+read_hash_1GiB_s 1.074
+960e380736fa49fe
+rename_rc=0 content=new
+dir_rename_ok=x
+200_small_writes_s 0.963
+fsync_ok
+perm_after_chmod600=600
+flock_ok
+overlay        1000G  2.1G  998G   1% /
+== /workspace/qual/stq-20261008T162920Z
+write_1GiB_s 1.996
+eef4669a85203e1c
+read_hash_1GiB_s 7.672
+eef4669a85203e1c
+rename_rc=0 content=new
+dir_rename_ok=x
+200_small_writes_s 1.175
+fsync_ok
+chmod: changing permissions of '/workspace/qual/stq-20261008T162920Z/target': Operation not permitted
+perm_after_chmod600=666
+flock_ok
+653478ff-ba87-4cab-b64f-154ee0c7fe62  1.0P     0  1.0P   0% /workspace

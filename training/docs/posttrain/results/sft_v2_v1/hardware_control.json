@@ -1,0 +1,88 @@
+{
+ "by_category": {
+  "factuality": {
+   "identical_ids": 176,
+   "items": 176,
+   "same_strict": 176
+  },
+  "formatting": {
+   "identical_ids": 300,
+   "items": 300,
+   "same_strict": 300
+  },
+  "grounded_qa": {
+   "identical_ids": 300,
+   "items": 300,
+   "same_strict": 300
+  },
+  "hierarchy": {
+   "identical_ids": 211,
+   "items": 211,
+   "same_strict": 211
+  },
+  "if_composition_heldout": {
+   "identical_ids": 300,
+   "items": 300,
+   "same_strict": 300
+  },
+  "if_paraphrase": {
+   "identical_ids": 400,
+   "items": 400,
+   "same_strict": 400
+  },
+  "injection": {
+   "identical_ids": 300,
+   "items": 300,
+   "same_strict": 300
+  },
+  "instruction_following": {
+   "identical_ids": 1561,
+   "items": 1562,
+   "same_strict": 1562
+  },
+  "json": {
+   "identical_ids": 500,
+   "items": 500,
+   "same_strict": 500
+  },
+  "math": {
+   "identical_ids": 1100,
+   "items": 1100,
+   "same_strict": 1100
+  },
+  "multi_turn": {
+   "identical_ids": 300,
+   "items": 300,
+   "same_strict": 300
+  },
+  "open_ended": {
+   "identical_ids": 21,
+   "items": 21,
+   "same_strict": 21
+  },
+  "python": {
+   "identical_ids": 864,
+   "items": 864,
+   "same_strict": 864
+  },
+  "uncertainty": {
+   "identical_ids": 300,
+   "items": 300,
+   "same_strict": 300
+  }
+ },
+ "devices": {
+  "a": "NVIDIA GeForce RTX 4090",
+  "b": "NVIDIA GeForce RTX 2060"
+ },
+ "identical_token_ids": 6633,
+ "identical_token_ids_rate": 0.9998492613807658,
+ "items": 6634,
+ "same_strict_score": 6634,
+ "same_strict_score_rate": 1.0,
+ "schema": "j1.sft-hw-agreement.v1",
+ "strict_accuracy": {
+  "a": 0.42794694000602956,
+  "b": 0.42794694000602956
+ }
+}

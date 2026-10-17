@@ -1,0 +1,64 @@
+[
+ {
+  "byte_identical": true,
+  "code_commit": "def3c45e3da265f49049fad0d80686d9281201a6",
+  "dedup_recovery_log": {
+   "events": [
+    "resumed at near:0"
+   ],
+   "max_band_commit_interval_seconds": 15.6,
+   "seconds": 52.1,
+   "state_commits": 2
+  },
+  "evidence": "f0.1_dedup.json",
+  "files_compared": 50,
+  "killed_at_seconds": 36.0,
+  "leftover_temporary_files": [],
+  "pass": true,
+  "reference_peak_rss_kib": 510016,
+  "reference_wall_seconds": 76.92,
+  "restart_peak_rss_kib": 353532,
+  "restart_wall_seconds": 65.2,
+  "stage": "dedup",
+  "subset": "10% of v0.2 processing units (11 units, 1,857,537 candidates), hard-linked"
+ },
+ {
+  "byte_identical": true,
+  "code_commit": "c10d566db008878052e85309ae4e01975bd7f6d0",
+  "evidence": "f0.1_select.json",
+  "files_compared": 54,
+  "killed_at_seconds": 24.83,
+  "leftover_temporary_files": [],
+  "pass": true,
+  "reference_peak_rss_kib": 2108656,
+  "reference_wall_seconds": 62.76,
+  "restart_peak_rss_kib": 2129416,
+  "restart_wall_seconds": 29.19,
+  "stage": "select",
+  "subset": "10% of v0.2 processing units (11 units, 1,857,537 candidates), hard-linked"
+ },
+ {
+  "byte_identical": true,
+  "code_commit": "c10d566",
+  "evidence": "tok0.05_token-shards.json",
+  "files_compared": 7,
+  "kill": "real SIGKILL of the whole process group by the disk-space guard (free space fell to 29 GB from other jobs), not a planned random time",
+  "pass": true,
+  "restart_peak_rss_kib": 372996,
+  "restart_wall": "0:45.34",
+  "resumed_from": {
+   "next_shard": 26,
+   "phase": "place",
+   "placed": 14
+  },
+  "stage": "token-shards",
+  "state_at_kill": {
+   "commits": 15,
+   "of": 64,
+   "phase": "place",
+   "placed_buckets": 14,
+   "split": "train"
+  },
+  "subset": "v0.2 accepted: 5% of train shards (148,641 docs) + all held-out shards, hard-linked; tokenizer cand5-j1tok-24k"
+ }
+]

@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/j1train/j1bench/train.py", line 1142, in <module>
+    main()
+  File "/root/j1train/j1bench/train.py", line 1138, in main
+    Trainer(args).run()
+  File "/root/j1train/j1bench/train.py", line 881, in run
+    summary = self._run_body()
+              ^^^^^^^^^^^^^^^^
+  File "/root/j1train/j1bench/train.py", line 956, in _run_body
+    raise C.CheckpointError(
+j1bench.ckpt.CheckpointError: checkpoints exist under t1 but none is valid and compatible; inspect them or start a new --run-id
+[ckpt] candidate /root/ckpt-recovery/t1/ckpt-000000040-b1a78c79 step=40: incompatible run contract 4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59 (expected 3a0669b0aafd97c9752e8c030ea3caf47e86236b7781bafb4be6a8b9fd377411)
+[ckpt] candidate /root/ckpt-recovery/t1/ckpt-000000035-9e6db749 step=35: incompatible run contract 4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59 (expected 3a0669b0aafd97c9752e8c030ea3caf47e86236b7781bafb4be6a8b9fd377411)
+[ckpt] candidate /root/ckpt-recovery/t1/ckpt-000000025-b2150637 step=25: incompatible run contract 4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59 (expected 3a0669b0aafd97c9752e8c030ea3caf47e86236b7781bafb4be6a8b9fd377411)
+[ckpt] candidate /root/ckpt-recovery/t1/ckpt-000000015-20654228 step=15: incompatible run contract 4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59 (expected 3a0669b0aafd97c9752e8c030ea3caf47e86236b7781bafb4be6a8b9fd377411)
+[ckpt] candidate /root/ckpt-recovery/t1/ckpt-000000010-ad294749 step=10: incompatible run contract 4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59 (expected 3a0669b0aafd97c9752e8c030ea3caf47e86236b7781bafb4be6a8b9fd377411)
+[ckpt] candidate /root/ckpt-recovery/t1/ckpt-000000000-5a0e9470 step=0: incompatible run contract 4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59 (expected 3a0669b0aafd97c9752e8c030ea3caf47e86236b7781bafb4be6a8b9fd377411)

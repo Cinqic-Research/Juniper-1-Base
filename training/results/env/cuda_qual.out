@@ -1,0 +1,33 @@
+exit=0
+{
+ "torch": "2.8.0+cu128",
+ "cuda_runtime": "12.8",
+ "cudnn": 91002,
+ "device": {
+  "name": "NVIDIA A100-SXM4-80GB",
+  "total_mem_gib": 79.25,
+  "cc": "8.0",
+  "sms": 108
+ },
+ "bf16_supported": true,
+ "matmul_relerr_bfloat16": 0.0028769837746409578,
+ "matmul_relerr_float32": 1.1455984732087207e-06,
+ "tflops_bf16_8192": 242.6,
+ "tflops_tf32_8192": 120.8,
+ "tflops_fp32_8192": 19.1,
+ "adamw_param_changed": true,
+ "adamw_fused_vs_foreach_maxdiff": 7.450580596923828e-09,
+ "sdpa_backends": {
+  "FLASH_ATTENTION": "ok",
+  "EFFICIENT_ATTENTION": "ok",
+  "CUDNN_ATTENTION": "ok",
+  "MATH": "ok"
+ },
+ "h2d_pinned_GBps": 21.41,
+ "d2h_pinned_GBps": 20.95,
+ "h2d_pageable_GBps": 5.1,
+ "device_assert_exit_code": 1,
+ "device_assert_stderr_tail": "Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.",
+ "oom_exit_code": 1,
+ "oom_is_OutOfMemoryError": true
+}

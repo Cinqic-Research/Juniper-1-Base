@@ -1,0 +1,6 @@
+[ckpt] candidate /root/ckpt-recovery/t_enospc/ckpt-000000010-551d5f3f step=10: ok
+[resume] restored /root/ckpt-recovery/t_enospc/ckpt-000000010-551d5f3f at step 10 in 42.34s (lr=0.000882594)
+step 20 loss 7.7968 lr 0.000637 318ms
+[ckpt] FAILED attempt 1 at step 20: OSError(28, 'No space left on device (injected)')
+[ckpt] FAILED attempt 2 at step 20: OSError(28, 'No space left on device (injected)')
+[ckpt] CHECKPOINT_FAILED: stopping; previous valid checkpoint remains latest

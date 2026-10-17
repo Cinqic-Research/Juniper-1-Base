@@ -1,0 +1,84 @@
+{
+ "tool": "independent_count_check.v1",
+ "accepted_manifest_sha256": "1a99ef755084dcfb1af3b207a476cc009c2bed99694e648fbc2eb8c3a54f37b3",
+ "build_identity": "aa9c4ed9522449521881a64b1dd810006df6249f56d8c1dae8b4e7cc1de8d005",
+ "accepted_docs": {
+  "train": 156588,
+  "validation": 2583,
+  "test": 2610
+ },
+ "sample_namespace": "j1.count-check.v1",
+ "sample_rate": 0.002,
+ "min_per_stratum": 20,
+ "sample_docs": {
+  "train": 399,
+  "validation": 144,
+  "test": 149
+ },
+ "prefix_bytes": 700000000,
+ "prefix_documents_expected": 156588,
+ "sample_texts_found": 692,
+ "candidates": {
+  "v3-28k-prefix": {
+   "shards_json_sha256": "c2e6f6f78f87dac9d0c9f1069e474ec0d34f503d8fff5a40a116e8ac0be6a390",
+   "tokenizer_json_sha256": "a50ee49930006f9b4ff7af091081c860b8e9ba4f4d46f7babf9e0d519324f04e",
+   "tokenizer_matches_shards": true,
+   "splits": {
+    "train": {
+     "documents": 156588,
+     "accepted_documents": 156588,
+     "doc_set_equal_accepted": true,
+     "doc_ids_unique": true,
+     "sum_n_tokens": 180163191,
+     "table_document_tokens": 180163191,
+     "table_stream_tokens": 180319779,
+     "table_separator_tokens": 156588,
+     "file_tokens": 180319779,
+     "by_source_equal": true,
+     "offsets_contiguous": true,
+     "token_files_sha256_ok": true,
+     "prefix_order_equal_independent": true,
+     "eos_after_every_doc": true,
+     "arithmetic_ok": true,
+     "sample": {
+      "checked": 399,
+      "missing": 0,
+      "count_mismatches": 0,
+      "id_mismatches": 0,
+      "examples": []
+     },
+     "ok": true
+    },
+    "validation": {
+     "documents": 2583,
+     "accepted_documents": 2583,
+     "doc_set_equal_accepted": true,
+     "doc_ids_unique": true,
+     "sum_n_tokens": 3176152,
+     "table_document_tokens": 3176152,
+     "table_stream_tokens": 3178735,
+     "table_separator_tokens": 2583,
+     "file_tokens": 3178735,
+     "by_source_equal": true,
+     "offsets_contiguous": true,
+     "token_files_sha256_ok": true,
+     "prefix_order_equal_independent": true,
+     "eos_after_every_doc": true,
+     "arithmetic_ok": true,
+     "sample": {
+      "checked": 144,
+      "missing": 0,
+      "count_mismatches": 0,
+      "id_mismatches": 0,
+      "examples": []
+     },
+     "ok": true
+    }
+   },
+   "accepted_manifest_matches": true,
+   "splits_present": false
+  }
+ },
+ "ok": false,
+ "seconds": 130.6
+}

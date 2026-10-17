@@ -1,0 +1,37 @@
+SSH_OK 2026-10-08T18:11:29Z
+[154.54.102.32]:18079 ED25519 SHA256:VyFiKMLJxHDi7Mulljs+kAYEiMsExdZ7wUOJL2iwZSU
++ nvidia-smi --query-gpu=name,uuid,driver_version,memory.total,pci.bus_id --format=csv,noheader
+NVIDIA A100-SXM4-80GB, GPU-7528250f-6ccc-2d13-7f10-a1d3f4d128ab, 580.126.16, 81920 MiB, 00000000:07:00.0
++ findmnt /workspace -o SOURCE,FSTYPE -n
+653478ff-ba87-4cab-b64f-154ee0c7fe62 fuse.geesefs
++ ls /root/marker_container.bin /root/runs /root/j1train
++ head -3
+ls: cannot access '/root/marker_container.bin': No such file or directory
+ls: cannot access '/root/runs': No such file or directory
+ls: cannot access '/root/j1train': No such file or directory
++ sha256sum /workspace/qual-evidence/marker_volume.bin
+8756bac04ed6d70569e102b13b955d80ccbf45b21c2bd8dae1e97cccff329433  /workspace/qual-evidence/marker_volume.bin
++ cd /workspace/qual-evidence
++ sha256sum -c --quiet evidence_manifest.sha256
+++ wc -l
+EVIDENCE_MANIFEST_OK 266 files
++ echo 'EVIDENCE_MANIFEST_OK 266 files'
++ ls /workspace/j1ckpt/
+t1
+t3
+t9corr
+t_delete
+t_die_before_complete
+t_die_mid_file
+t_enospc
+t_flip
++ ls /workspace/j1code/
++ wc -l
+7
+restore source: /workspace/j1ckpt/t1/ckpt-000000035-38e0f4a3
+[resume] restored /workspace/j1ckpt/t1/ckpt-000000035-38e0f4a3 at step 35 in 6.09s (lr=4.33692e-05)
+[ckpt] step 36 -> /root/postrestart/t1/ckpt-000000036-c4d810c0 (1697.6 MiB, 6.35s)
+{"steps_run": 1, "final_step": 36, "tokens_per_s_median": 510.0071112651639, "step_ms_median": 64250.08451100439, "peak_vram_gib": 29.647576332092285, "final_param_sha256": "38c03737780fdcbdafe14d5fa0deab801839bd856d03c92775a37fe32be4c8c5"}
+rc=0 wall=97s
+post-restart steps: [36]
+step36 loss_hex equal: True batch_fp equal: True lr equal: True 10.437553405761719 10.437553405761719

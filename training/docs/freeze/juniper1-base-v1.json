@@ -1,0 +1,273 @@
+{
+  "schema": "juniper1.base-freeze.v1",
+  "freeze_id": "juniper1-base-v1",
+  "decision": "BASE_FREEZE_APPROVED",
+  "decided_utc": "2026-10-12T18:32:37Z",
+  "decided_by": "independent review (Claude Opus 5.5, continuing the GPT-6 Sol assignment) under the owner instruction of 2026-10-12",
+  "selection_report": "docs/audit_2026-10-12/base_checkpoint_selection_report.md",
+  "selection_protocol": "docs/audit_2026-10-12/base_evaluation_protocol_v1.md (registered 305ea96)",
+  "source_checkpoint": {
+    "name": "ckpt-000052034-336e5967",
+    "run_id": "j1-base-r2",
+    "step": 52034,
+    "created_utc": "2026-10-12T13:44:07.476939+00:00",
+    "manifest_sha256": "a2f616c714bbad26a2dade682e71e80493ca70d6a4531430c64fdaedf5932e74",
+    "run_contract_sha256": "eb4c9fb1acea3305c63c95f88194b174c7bf5adc836dbb3bf2ef1041a05cbfcd",
+    "files": {
+      "model.pt": {
+        "sha256": "71773e46db2511332af97891b6485b04bf414a448dab9c4b050988e0b532649c",
+        "size": 571153211
+      },
+      "optim.pt": {
+        "sha256": "04cd1a351b205c2eb2b35716ac44cd77e5977f4151402711e0c1a64100d3f3ce",
+        "size": 1142330507
+      },
+      "trainer.pt": {
+        "sha256": "07f728b06dd4e8a629be700976066ef6e4c03ed177f32beb761551ed0e09e387",
+        "size": 16869
+      }
+    },
+    "original_labels": {
+      "stage": "base-tranche-1",
+      "tags": [
+        "final"
+      ],
+      "non_production": true
+    },
+    "full_state": "model.pt + optim.pt (AdamW state) + trainer.pt (scheduler/RNG/data cursor); preserved unmodified"
+  },
+  "model": {
+    "architecture": "j1-wide-20x768 dense decoder-only causal Transformer (pre-RMSNorm, per-head QK-Norm, RoPE, SwiGLU, GQA 12/6, tied embeddings, no biases)",
+    "config": {
+      "d_ff": 1920,
+      "d_model": 768,
+      "head_dim": 64,
+      "init_std": 0.02,
+      "max_seq_len": 2048,
+      "n_head": 12,
+      "n_kv_head": 6,
+      "n_layer": 20,
+      "norm_eps": 1e-05,
+      "qk_norm": "rmsnorm_per_head",
+      "rope_theta": 100000.0,
+      "tie_embeddings": true,
+      "vocab_size": 24576
+    },
+    "parameters": 142771456,
+    "state_sha256": "1fd07c0d0c6c6b355460ab82ebe02530047b5682a4e6a41b9e4f0146323076e4",
+    "optimizer_state_sha256": "94c03b3098f2cec57e5638f27d3e5fa578885236782f8abc1a1006a6a873f2ed",
+    "inference_weights": "model.pt inside the source checkpoint (no separate export is canonical)",
+    "context_tokens_qualified": 2048
+  },
+  "tokenizer": {
+    "name": "j1tok-24k (cand5-j1tok-24k)",
+    "sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+    "vocab_size": 24576,
+    "load_requirement": "j1data.jtok.load (sets encode_special_tokens; tokenizer.json alone does not)"
+  },
+  "protocol": {
+    "name": "juniper-chat-v1",
+    "source": "Juniper-1-Data src/j1data/protocol.py @ 47cd1dd754903379c18cb821aba23a6993243eb9",
+    "trained_into_base": false
+  },
+  "dataset": {
+    "build": "j1-base-v0.2.2",
+    "build_identity": "89b08d5754c46dfd18ec239fdacb21ae899c1cf9d7606392401b5224c54bffc5",
+    "accepted_manifest_sha256": "54a3adb9650c96bf67b44b721386722383caeb774b48b0bf970ad6f9634d4185",
+    "shards_json_sha256": "1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef",
+    "dataset_identity": {
+      "batch_size": 16,
+      "build": "j1-base-v0.2.2",
+      "kind": "token_stream_v1",
+      "limit_tokens": 3410100225,
+      "packing": "EOS-separated documents; cross-document attention allowed; all positions trained",
+      "preload": true,
+      "seed": 1,
+      "seq_len": 2048,
+      "shards_json_sha256": "1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef",
+      "shuffle": true,
+      "split": "train",
+      "tokenizer_json_sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1"
+    },
+    "documents": {
+      "test": 2604,
+      "train": 2954191,
+      "validation": 2576
+    },
+    "train_targets_consumed": 3410100224,
+    "test_split_used_for_selection": false
+  },
+  "training": {
+    "run_id": "j1-base-r2",
+    "optimizer_updates": 52034,
+    "epochs": 1,
+    "precision_profile": "bf16",
+    "compile": false,
+    "code_identity": {
+      "files": {
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "ckpt.py": "df4efd9da260f5722bc4ab55743e8dc99720aac78080fac4543ba17c2695b313",
+        "data.py": "fea9885888356c1f942dc1c0cb990a6921fc14446e85bb1bab1c8fbbc4ac63a0",
+        "model.py": "1496b57baccca22ed444f5c6ecaac3998eea336a1dcd1cfc1c7c3e380688a098",
+        "replicate.py": "38a22c16c408ffc4eb738efc57a9328d88abdfc03911a76d888da4a0d6222d1c",
+        "store.py": "6c28047f8e6f12b42ffff401f2003fb8a839602302269de4d7881843c9ada258",
+        "timeaudit.py": "7eca0697e4fcff983f107627a076287f98b12b49da1442c9dd7152a2728958a5",
+        "timelog.py": "04024c2055e410d0f813fa431a92c7587f4a01aeb55c887f1b6a58b7f49c14df",
+        "train.py": "873603ecd0c0fc970f9a2d70ed2468878ec3d4aac19d22200da4130d5e3609cc"
+      },
+      "git_revision": "828edd192fd97057c5126d6731191d2118638538",
+      "package_sha256": "81a3a277082541068e5a8f61c58749a4673067106d06e7de7451d09380204e99"
+    }
+  },
+  "evaluation": {
+    "training_logged_eval_identity": {
+      "context_policy": "fixed windows of seq_len targets over the EOS-separated split stream, leading EOS, cross-document attention allowed, no overlap beyond one input token",
+      "doc_index_sha256": "42e057d7771fc1223c9f59895edb5d4d2bb8cbfacdca5dabe6a91ec37482f787",
+      "documents": 2576,
+      "eos_targets": 2576,
+      "kind": "full_split_eval_v1",
+      "logits_precision": "autocast bf16; cross-entropy in float32; sums in float64",
+      "scored_bytes": 12311466,
+      "scored_targets": 3218204,
+      "split": "validation",
+      "token_files_sha256": [
+        "03efc04fc4c1bf1b1960f950cf98de229a9494dca786bb9472410bc9d44e13df"
+      ],
+      "windows": 1572
+    },
+    "independent_full_split_fp16": {
+      "numerics": "cuda_autocast_fp16",
+      "device": "NVIDIA GeForce RTX 2060",
+      "targets": 3218204,
+      "by_candidate": {
+        "ckpt-000050000-e4775a69": {
+          "bpb": 0.9178287646778311,
+          "loss": 2.4337912485293653,
+          "perplexity": 11.402028162062336
+        },
+        "ckpt-000052000-6b13028e": {
+          "bpb": 0.9161989026242958,
+          "loss": 2.4294693704679418,
+          "perplexity": 11.35285632058298
+        },
+        "ckpt-000052034-336e5967": {
+          "bpb": 0.9163837348257209,
+          "loss": 2.429959486938014,
+          "perplexity": 11.358421906229246
+        }
+      }
+    },
+    "independent_full_split_fp32": {
+      "numerics": "cuda_fp32",
+      "device": "NVIDIA GeForce RTX 2060",
+      "targets": 3218204,
+      "by_candidate": {
+        "ckpt-000050000-e4775a69": {
+          "bpb": 0.917827119025279,
+          "loss": 2.433786884779902,
+          "perplexity": 11.401978406576621
+        },
+        "ckpt-000052000-6b13028e": {
+          "bpb": 0.9161984967872895,
+          "loss": 2.4294682943167114,
+          "perplexity": 11.352844103199255
+        },
+        "ckpt-000052034-336e5967": {
+          "bpb": 0.9163812723127076,
+          "loss": 2.429952957133271,
+          "perplexity": 11.35834773819416
+        }
+      }
+    },
+    "results_sha256": {
+      "behavior_cpu.json": "9e3702eebc06218360ea5a347e8808e0a38983b33ee67638fac09ce9e311d1c2",
+      "full_fp16.json": "92c45095142223071f91f4c4095b3775add41724fcb5978c7c3c164b28dccb41",
+      "full_fp32.json": "5aca7b7274763703fd55a75435c97c0183f43374d69ac285b93e2b5557414ee4",
+      "gguf_parity_52034_Q4_K_M_gpu.json": "e1b30aab476b25e8dc8b3fdf20ca096a7d72f5b20b2ee5845ba047fbda7ee6f7",
+      "gguf_parity_52034_Q8_0_gpu.json": "9a5e8b95213ad191642501607d50c0ea00cac754cdfa309de9bb547fa95bc75d",
+      "gguf_parity_52034_f16_cpu.json": "ffcec1ae1262dbb2f16be2c33e9ef6dec74f47467294439ea37a8ddd1e8e3874",
+      "gguf_parity_52034_f16_gpu.json": "1da38c4ef5acae0421bf0edb1d8e3e6dba5bed568de1cb9d667e5e6cfc4b584f",
+      "gguf_text_tokenizer_parity.json": "aa6058cf01d6f504e617894c5405687c5b0f27889130fd2ead138fa665353338",
+      "hf_readback_52000.txt": "7a4873af8f391f2af49c456071149be64a3f41c79d45fcac52c73f296a6a8488",
+      "llama_bench_cpu.md": "a7ae9098e3c3db1849788130113a1417f0c6ce183eb333f41100f2f4b80da4fb",
+      "llama_bench_gpu.md": "0de7ce2b58fe4f9cc3e154c2992232660bc398c5453698aa7b90b1e10a1268fe",
+      "preserve_52000_receipts.jsonl": "b9b9db0f3f523f120d16d9fbbb01fd683d8ee295efc28e11c37639526edabe38",
+      "restore_52034_receipts.jsonl": "4f032c6afb93428156dfb2d99a6bee4fe6f5b8a5dc368ad1160ac17a8d52ee41",
+      "sft_production_tokenizer_check.txt": "21c4294909185e158f247171b24bd831a6f6ada2ef79cbd633b6ff409f860c7e",
+      "sol_fixed_32_windows.json": "558d58d4aa2fac0c24b954064d66427f4c99135a302a75c002187cb505105074",
+      "sol_full_split_50000_only.json": "abe6987585bb4d5ad94dd0bd7c8c3c943d87874362c70180445f263bb353bf09",
+      "sol_smoke_1window.json": "3067a23c4a6827de8bacd32a69aef7e40145f51b7c3ad0767499ab6db26d5db6"
+    }
+  },
+  "recovery": {
+    "flowbox_hdd": "/media/cinqic/Cinqic Storage/juniper1-archive/fable-2026-10-10/ckpt/j1-base-r2/ckpt-000052034-336e5967",
+    "offsite_receipts_at_training": [
+      {
+        "destination": "drive",
+        "remote": "cinqic-drive:juniper1/checkpoints/j1-base-r2/ckpt-000052034-336e5967",
+        "repo": null,
+        "path_prefix": null,
+        "commit": null,
+        "ok": true,
+        "verified_utc": "2026-10-12T14:01:21+00:00"
+      },
+      {
+        "destination": "hf",
+        "remote": null,
+        "repo": "CinqicX/juniper1-checkpoints",
+        "path_prefix": "checkpoints/j1-base-r2/ckpt-000052034-336e5967",
+        "commit": "a7f21ba2051ae7772e2b7932a9ab14d595c42e26",
+        "ok": true,
+        "verified_utc": "2026-10-12T14:14:02+00:00"
+      }
+    ],
+    "independent_restore_drills": [
+      {
+        "replica": "hf",
+        "name": "ckpt-000052034-336e5967",
+        "verify_checkpoint": [
+          true,
+          "ok"
+        ],
+        "manifest_sha256": "a2f616c714bbad26a2dade682e71e80493ca70d6a4531430c64fdaedf5932e74",
+        "model_state_sha256": "1fd07c0d0c6c6b355460ab82ebe02530047b5682a4e6a41b9e4f0146323076e4",
+        "files": {
+          "model.pt": "71773e46db2511332af97891b6485b04bf414a448dab9c4b050988e0b532649c",
+          "optim.pt": "04cd1a351b205c2eb2b35716ac44cd77e5977f4151402711e0c1a64100d3f3ce",
+          "trainer.pt": "07f728b06dd4e8a629be700976066ef6e4c03ed177f32beb761551ed0e09e387"
+        },
+        "utc": "2026-10-12T18:12:31Z"
+      },
+      {
+        "replica": "drive",
+        "name": "ckpt-000052034-336e5967",
+        "verify_checkpoint": [
+          true,
+          "ok"
+        ],
+        "manifest_sha256": "a2f616c714bbad26a2dade682e71e80493ca70d6a4531430c64fdaedf5932e74",
+        "model_state_sha256": "1fd07c0d0c6c6b355460ab82ebe02530047b5682a4e6a41b9e4f0146323076e4",
+        "files": {
+          "model.pt": "71773e46db2511332af97891b6485b04bf414a448dab9c4b050988e0b532649c",
+          "optim.pt": "04cd1a351b205c2eb2b35716ac44cd77e5977f4151402711e0c1a64100d3f3ce",
+          "trainer.pt": "07f728b06dd4e8a629be700976066ef6e4c03ed177f32beb761551ed0e09e387"
+        },
+        "utc": "2026-10-12T18:14:48Z"
+      }
+    ]
+  },
+  "code_references": {
+    "juniper_1_train": "a00c4afc17f4b9d55551af1d61c58e6424c580e5",
+    "juniper_1_data": "47cd1dd754903379c18cb821aba23a6993243eb9"
+  },
+  "limitations": [
+    "Base language model only: no instruction, chat, tool-use or safety training; not a product model.",
+    "Qualified context is 2,048 tokens; 4,096 is unqualified.",
+    "Validation split was observed during training; full-split bpb checks the checkpoint choice but is not an unbiased capability estimate. The test split remains unused.",
+    "Objective diagnostics (MC, addition, Python, JSON) are small descriptive probes, not benchmarks.",
+    "Text-in/text-out via the experimental GGUF (llama.cpp SPM vocabulary) does not reproduce j1tok tokenization; only token-ID inference is parity-qualified.",
+    "The original manifest labels this artifact stage 'base-tranche-1' and non_production=true (launch-harness labels); this freeze record, not those labels, is the canonical identity.",
+    "Weights are private; no public release is authorized."
+  ],
+  "freeze_record_sha256": "ef79b324fff459c8ffce7ac2e1b1542960a254b8383a6e8b19fd20402e92ff55"
+}

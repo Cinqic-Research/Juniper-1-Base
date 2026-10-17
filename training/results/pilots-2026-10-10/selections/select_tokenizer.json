@@ -1,0 +1,80 @@
+{
+ "rule": "tokenizer-v1.2",
+ "status": "DECIDED",
+ "decision": "tok-j1tok-24k",
+ "best_bpb": 1.2262263611876822,
+ "tied": [
+  "tok-j1tok-24k",
+  "tok-j1tok-28k",
+  "tok-j1tok-32k"
+ ],
+ "pooled_rel_seed_sd": 0.002851370694139295,
+ "pooled_dof": 3,
+ "runner_up_gap_rel": null,
+ "uncertainty_could_change_result": false,
+ "rows": [
+  {
+   "candidate": "tok-j1tok-24k",
+   "vocab": 24576,
+   "seeds": [
+    1,
+    2
+   ],
+   "val_bpb_by_seed": {
+    "1": 1.2308453812202154,
+    "2": 1.2280759516793167
+   },
+   "val_bpb": 1.229460666449766,
+   "val_loss_per_token": 3.25819969455144,
+   "train_bytes_per_s": 1727713.2025386,
+   "throughput_device": "NVIDIA A100-SXM4-80GB",
+   "train_tokens_per_s": 336125.39518034103,
+   "consumed_target_bytes": 699764347,
+   "byte_fallback_rate": 0.002295,
+   "n_params": 28912512,
+   "hard_requirements": true
+  },
+  {
+   "candidate": "tok-j1tok-28k",
+   "vocab": 28672,
+   "seeds": [
+    1,
+    2
+   ],
+   "val_bpb_by_seed": {
+    "1": 1.2290459464403543,
+    "2": 1.2346772242720763
+   },
+   "val_bpb": 1.2318615853562154,
+   "val_loss_per_token": 3.31716042629155,
+   "train_bytes_per_s": 1699834.8740985682,
+   "throughput_device": "NVIDIA A100-SXM4-80GB",
+   "train_tokens_per_s": 329672.218660297,
+   "consumed_target_bytes": 699754946,
+   "byte_fallback_rate": 0.002312,
+   "n_params": 30485376,
+   "hard_requirements": true
+  },
+  {
+   "candidate": "tok-j1tok-32k",
+   "vocab": 32768,
+   "seeds": [
+    1,
+    2
+   ],
+   "val_bpb_by_seed": {
+    "1": 1.2232981065162234,
+    "2": 1.229154615859141
+   },
+   "val_bpb": 1.2262263611876822,
+   "val_loss_per_token": 3.3412253219687855,
+   "train_bytes_per_s": 1670790.1042275499,
+   "throughput_device": "NVIDIA A100-SXM4-80GB",
+   "train_tokens_per_s": 317795.2366100142,
+   "consumed_target_bytes": 699934945,
+   "byte_fallback_rate": 0.002367,
+   "n_params": 32058240,
+   "hard_requirements": true
+  }
+ ]
+}

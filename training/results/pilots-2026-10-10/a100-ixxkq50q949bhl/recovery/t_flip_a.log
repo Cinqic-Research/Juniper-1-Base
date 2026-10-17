@@ -1,0 +1,7 @@
+[ckpt] step 0 -> /root/ckpt-recovery/t_flip/ckpt-000000000-cae104a7 (555.9 MiB, 2.17s)
+step 1 loss 10.3499 lr 0.000185 4924ms
+step 10 loss 7.9697 lr 0.000897 320ms
+[ckpt] step 10 -> /root/ckpt-recovery/t_flip/ckpt-000000010-fee224fd (1667.7 MiB, 6.25s)
+step 20 loss 7.7968 lr 0.000637 318ms
+[ckpt] step 20 -> /root/ckpt-recovery/t_flip/ckpt-000000020-7ae2bece (1667.7 MiB, 6.19s)
+{"steps_run": 20, "final_step": 20, "tokens_per_s_median": 102816.33381973812, "step_ms_median": 318.7042251229286, "peak_vram_gib": 28.861260414123535, "final_param_sha256": "262438756550552a32318160287e505b2467ab3cd188ae84ba0f279c74aab05b"}

@@ -1,0 +1,78 @@
+{
+ "build_identity": "e20847a1edd8452571c279942291f4a2fd64a33fed858a40f2d3994c3106abd9",
+ "bytes_by_stage": {
+  "candidate": 464285223,
+  "quality": 58909854,
+  "selection": 841625779
+ },
+ "bytes_in": 1364820856,
+ "chars_in": 1359436108,
+ "contamination_benchmarks": {},
+ "docs_in": 419742,
+ "kinds": {
+  "math": 456,
+  "prose": 168669,
+  "technical": 285
+ },
+ "outputs": [
+  {
+   "file": "candidates/wikimedia/wikimedia-0025.parquet",
+   "rows": 169410,
+   "sha256": "90f78cc59294f3ff0ee550165856685a352d31bd4bef15938cc2679678c874fd"
+  },
+  {
+   "file": "rejects/wikimedia/wikimedia-0025.parquet",
+   "rows": 250332,
+   "sha256": "9cc1d50cc2dd727e2ff3b4bed1dcd103b52ff65715669540ed728b5fb92b874f"
+  },
+  {
+   "file": "signatures/wikimedia/wikimedia-0025.npy",
+   "rows": 169410,
+   "sha256": "44b06aaa95443b0435dfb7dd4f29218eccbd43c6313ae5e589016054f8618624"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "wikimedia-0025.json.gz",
+ "reasons": {
+  "quality.math.too_short": 10,
+  "quality.math.top_ngram_repetition": 4,
+  "quality.prose.alpha_words": 1986,
+  "quality.prose.bullet_lines": 1893,
+  "quality.prose.duplicate_lines": 1212,
+  "quality.prose.duplicate_ngrams": 10144,
+  "quality.prose.duplicate_paragraphs": 355,
+  "quality.prose.ellipsis_lines": 5,
+  "quality.prose.mean_word_length": 20,
+  "quality.prose.non_latin_script": 293,
+  "quality.prose.not_english": 9749,
+  "quality.prose.stopwords": 9513,
+  "quality.prose.symbol_ratio": 297,
+  "quality.prose.too_short": 44051,
+  "quality.prose.top_ngram_repetition": 27980,
+  "quality.spam_terms": 214,
+  "quality.technical.duplicate_ngrams": 4,
+  "quality.technical.non_latin_script": 1,
+  "quality.technical.stopwords": 2,
+  "quality.technical.too_short": 4,
+  "quality.technical.top_ngram_repetition": 15,
+  "selection.namespace": 187684
+ },
+ "redactions": {
+  "home_path_user": 5,
+  "phone": 5
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 834.17,
+ "slow_documents": [],
+ "source_id": "wikimedia",
+ "stages": {
+  "candidate": 169410,
+  "quality": 62648,
+  "selection": 187684
+ },
+ "unit_id": "wikimedia-0025"
+}

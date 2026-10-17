@@ -1,0 +1,56 @@
+# SFT v2.1 mixture over the frozen j1-sft-v1.3 build (j1.sft-mix.v1; python -m j1data.sftmix).
+# A changed count, group, seed or license list is a new mixture version.
+#
+# The budget is the unchanged v1.2/v2 recipe: 1,226 updates x 64 episodes = 78,464 draws.
+# v1.2 drew each of its 39,234 episodes exactly twice. v2 drew v1.3's 61,806 episodes 1.2695 times
+# on average (one epoch plus 261 updates of a second). Groups that regressed in SFT v2 (arithmetic,
+# JSON, injection, hierarchy; Python INSUFFICIENT; two chat factual relations) get exactly their
+# v1.2 realized draws. Groups that passed (GSM8K, uncertainty) keep their v2 realized draws. The
+# remainder goes to v1.3's new material (instruction following including paraphrase and composition,
+# formatting, grounded QA, multi-turn): 0.7638 passes, 60% of its v2 exposure.
+
+version = "j1-sft-v1.3-mix1"
+parent_manifest_sha256 = "8584130b6a6bb49f7c007aadbb228615255635456080d6331a0554b39a2f62b9"
+seed = 20261014
+updates = 1226
+episodes_per_update = 64
+draws_total = 78464
+# Narrowed from the parent: Apache-2.0 is removed while OASST1 stays rejected (no train record uses it).
+approved_licenses = ["Cinqic-generated", "MIT", "CC-BY-4.0", "CC0-1.0"]
+rationale = "SFT v2 regressions coincide with ~44-59% of v1.2's realized draws on those skills; restore them at an unchanged update budget"
+
+[groups.arith]
+select = { family_prefix = "arith" }
+draws = 13228   # v1.2: 6,614 episodes x 2
+
+[groups.gsm8k]
+select = { family_prefix = "gsm8k" }
+draws = 2539    # v2 realized: 2,000 x 1.2695 (passed non-inferiority)
+
+[groups.json]
+select = { category = "json" }
+draws = 7994    # v1.2: 3,997 x 2
+
+[groups.injection]
+select = { category = "injection" }
+draws = 5000    # v1.2: 2,500 x 2
+
+[groups.hierarchy]
+select = { category = "hierarchy" }
+draws = 3712    # v1.2: 1,856 x 2
+
+[groups.python]
+select = { category = "python" }
+draws = 10894   # v1.2: 5,447 x 2
+
+[groups.factuality]
+select = { category = "factuality" }
+draws = 1104    # v1.2: 552 x 2
+
+[groups.uncertainty]
+select = { category = "uncertainty" }
+draws = 1581    # v2 realized: 1,245 x 1.2695 (passed non-inferiority)
+
+[groups.new_material]
+select = { categories = ["instruction_following", "formatting", "grounded_qa", "multi_turn"] }
+draws = 32412   # remainder: 42,435 episodes x 0.7638

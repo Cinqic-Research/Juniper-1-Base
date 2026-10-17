@@ -1,0 +1,3 @@
+[ckpt] candidate /root/ckpt-recovery/t_die_mid_file/ckpt-000000010-679d33e7 step=10: ok
+[resume] restored /root/ckpt-recovery/t_die_mid_file/ckpt-000000010-679d33e7 at step 10 in 41.70s (lr=0.000882594)
+step 20 loss 7.7968 lr 0.000637 318ms

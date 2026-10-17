@@ -1,0 +1,30 @@
+{
+ "schema": "j1.recount-totals-note.v1",
+ "build": "j1-base-v0.2.2",
+ "annotates": "reports/j1-base-v0.2.2/full_recount_cand5-j1tok-24k.json",
+ "annotated_record_sha256": "ac29e08120980e677717191fc40cb39706fc796ead65da5bb50c7470ed51dbea",
+ "annotated_record_schema": "j1.full-recount.v1",
+ "finding": "D-01 (independent review of PR #5/#4, 2026-10-10)",
+ "statement": "phase_a.tokens = 3,413,019,479 is the sum of per-document token counts (document tokens, no separators). It is not the stream token count. Stream tokens include one EOS (ID 0) after every document and equal the token-file sizes / 2.",
+ "document_tokens": {
+  "train": 3407159863,
+  "validation": 3215628,
+  "test": 2643988,
+  "total": 3413019479
+ },
+ "separator_tokens": {
+  "train": 2954191,
+  "validation": 2576,
+  "test": 2604,
+  "total": 2959371
+ },
+ "stream_tokens_from_file_sizes": {
+  "train": 3410114054,
+  "validation": 3218204,
+  "test": 2646592,
+  "total": 3415978850,
+  "method": "sum of os.path.getsize(token file) // 2 over the 9 uint16 token files listed in shards.json (train 536,870,912 x 6 + 188,888,582; validation 3,218,204; test 2,646,592); equal to the per-split stream_tokens fields of the annotated record"
+ },
+ "tool_change": "tools/full_recount.py schema j1.full-recount.v2 writes a totals block (document_tokens_total, separator_tokens_total, stream_tokens_total) beside phase_a.tokens; the committed v1 record above is unchanged",
+ "quoting_rule": "any statement of the launch corpus size must say which figure it quotes: 3,413,019,479 document tokens or 3,415,978,850 stream tokens"
+}

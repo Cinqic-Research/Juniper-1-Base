@@ -1,0 +1,8 @@
+{
+ "schema": "j1.training-contract-lock.v2",
+ "contract_sha256": "cc7a1f2212b45fec8fdec4c7e8ee24b76e9114f6ee391135589035d9bc4135d8",
+ "train_commit": "f9caa8b2d8b9b6e87b94b922af08cd70933a39fc",
+ "data_commit": "1c8cdf2699796007237f727314e8ae95d0324799",
+ "deployed_train_commit": "f832c0ecb27a53d58ee8e996c6f4e65bae16a8e0",
+ "status": "FROZEN_LAUNCH_BLOCKED"
+}

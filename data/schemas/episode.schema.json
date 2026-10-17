@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cinqic.com/schemas/j1data/episode.v1.json",
+  "title": "Juniper 1 post-training episode (protocol-neutral)",
+  "description": "Structured conversation used for reasoning distillation, agent and instruction SFT and refinement. It is deliberately independent of the token-level protocol: role, channel and trust are fields set by the host serializer, never text inside a message.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "episode_id", "stage", "task_family", "behaviors", "messages", "provenance", "validation", "decontamination"],
+  "properties": {
+    "schema": {"const": "j1.episode.v1"},
+    "episode_id": {"type": "string", "pattern": "^[0-9a-f]{32}$"},
+    "stage": {"enum": ["reasoning-distillation", "agent-instruction-sft", "refinement"]},
+    "task_family": {"type": "string", "minLength": 2},
+    "difficulty": {"enum": ["easy", "medium", "hard"]},
+    "behaviors": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"enum": [
+        "direct_answer", "no_tool", "tool_selection", "python_use", "web_retrieval", "structured_json",
+        "schema_following", "error_correction", "multi_step_tools", "result_inspection", "failed_tool_recovery",
+        "invalid_arguments", "missing_evidence", "conflicting_evidence", "uncertainty", "abstention",
+        "conflicting_instructions", "forged_role_text", "fake_tool_confirmation", "prompt_injection_document",
+        "poisoned_retrieval", "quoted_instructions", "secret_exfiltration_attempt", "concise_reasoning"
+      ]}
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "description", "parameters"],
+        "properties": {
+          "name": {"type": "string", "pattern": "^[a-z][a-z0-9_.]*$"},
+          "description": {"type": "string"},
+          "parameters": {"type": "object"}
+        }
+      }
+    },
+    "messages": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "content", "train"],
+        "properties": {
+          "role": {"enum": ["system", "developer", "user", "assistant", "tool"]},
+          "channel": {"enum": ["analysis", "final", "tool_call"]},
+          "content": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["type", "text", "trust"],
+              "properties": {
+                "type": {"enum": ["text", "attachment", "retrieved", "quoted"]},
+                "name": {"type": "string"},
+                "text": {"type": "string"},
+                "trust": {"enum": ["trusted", "untrusted"]}
+              }
+            }
+          },
+          "tool_call": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["call_id", "name", "arguments"],
+            "properties": {
+              "call_id": {"type": "string"},
+              "name": {"type": "string"},
+              "arguments": {"type": "object"}
+            }
+          },
+          "tool_result": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["call_id", "name", "status", "output", "provenance"],
+            "properties": {
+              "call_id": {"type": "string"},
+              "name": {"type": "string"},
+              "status": {"enum": ["ok", "error", "denied", "timeout"]},
+              "output": {"type": "string"},
+              "provenance": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["host_executed", "executor", "record_id"],
+                "properties": {
+                  "host_executed": {"type": "boolean"},
+                  "executor": {"type": "string"},
+                  "record_id": {"type": "string"},
+                  "executed_at": {"type": "string"}
+                }
+              }
+            }
+          },
+          "train": {"type": "boolean"}
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["origin", "created"],
+      "properties": {
+        "origin": {"enum": ["human", "template", "teacher", "host_trace"]},
+        "teacher_record_id": {"type": ["string", "null"]},
+        "source_prompt_id": {"type": ["string", "null"]},
+        "source_license": {"type": "string"},
+        "created": {"type": "string"}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["validator_version", "checks", "factuality", "accepted", "acceptance_reason"],
+      "properties": {
+        "validator_version": {"type": "string"},
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "oracle", "passed"],
+            "properties": {
+              "name": {"type": "string"},
+              "oracle": {"enum": ["execution", "known_answer", "source_evidence", "schema", "deterministic_rule", "independent_model", "human_review", "same_model"]},
+              "passed": {"type": "boolean"},
+              "detail": {"type": "string"}
+            }
+          }
+        },
+        "factuality": {"enum": ["VERIFIED_EXECUTION", "VERIFIED_KNOWN_ANSWER", "VERIFIED_SOURCE", "VERIFIED_HUMAN", "SCHEMA_VALID_ONLY", "MODEL_JUDGED_ONLY", "NOT_VERIFIED", "NOT_APPLICABLE"]},
+        "accepted": {"type": "boolean"},
+        "acceptance_reason": {"type": "string"}
+      }
+    },
+    "decontamination": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["index_identity", "best_coverage", "passed"],
+      "properties": {
+        "index_identity": {"type": "string"},
+        "best_coverage": {"type": "number", "minimum": 0, "maximum": 1},
+        "passed": {"type": "boolean"}
+      }
+    }
+  }
+}

@@ -1,0 +1,203 @@
++ date -u +%FT%TZ
+2026-10-08T16:26:40Z
++ cat /etc/os-release
++ head -4
+PRETTY_NAME="Ubuntu 24.04.3 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.3 LTS (Noble Numbat)"
++ uname -a
+Linux 4af561218999 6.8.0-100-generic #100-Ubuntu SMP PREEMPT_DYNAMIC Tue Jan 13 16:40:06 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
++ nvidia-smi
+Thu Oct  8 16:26:40 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.126.16             Driver Version: 580.126.16     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:07:00.0 Off |                    0 |
+| N/A   31C    P0             62W /  400W |       0MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
++ nvidia-smi --query-gpu=name,pci.bus_id,memory.total,driver_version,vbios_version,power.limit,clocks.max.sm,compute_cap --format=csv
+name, pci.bus_id, memory.total [MiB], driver_version, vbios_version, power.limit [W], clocks.max.sm [MHz], compute_cap
+NVIDIA A100-SXM4-80GB, 00000000:07:00.0, 81920 MiB, 580.126.16, 92.00.9E.00.16, 400.00 W, 1410 MHz, 8.0
++ nvidia-smi topo -m
++ head -5
+	[4mGPU0	NIC0	NIC1	NIC2	NIC3	NIC4	NIC5	NIC6	NIC7	NIC8	NIC9	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	PXB	PXB	NODE	NODE	SYS	SYS	SYS	SYS	SYS	SYS	0-63	0		N/A
+NIC0	PXB	 X 	PXB	NODE	NODE	SYS	SYS	SYS	SYS	SYS	SYS				
+NIC1	PXB	PXB	 X 	NODE	NODE	SYS	SYS	SYS	SYS	SYS	SYS				
+NIC2	NODE	NODE	NODE	 X 	PXB	SYS	SYS	SYS	SYS	SYS	SYS				
++ nproc
+128
++ cat /sys/fs/cgroup/cpu.max
+1360000 100000
++ free -g
+               total        used        free      shared  buff/cache   available
+Mem:            2003          88         577          29        1378        1914
+Swap:              0           0           0
++ cat /sys/fs/cgroup/memory.max
+249999998976
++ lscpu
++ grep -E 'Model name|Socket|Thread|Core|NUMA node'
+Model name:                              AMD EPYC 7742 64-Core Processor
+Thread(s) per core:                      1
+Core(s) per socket:                      64
+Socket(s):                               2
+NUMA node(s):                            2
+NUMA node0 CPU(s):                       0-63
+NUMA node1 CPU(s):                       64-127
++ df -hT
+Filesystem                           Type          Size  Used Avail Use% Mounted on
+overlay                              overlay      1000G   16M 1000G   1% /
+tmpfs                                tmpfs          64M     0   64M   0% /dev
+shm                                  tmpfs         117G     0  117G   0% /dev/shm
+/dev/mapper/ubuntu--vg-ubuntu--lv    ext4          1.8T   26G  1.7T   2% /usr/bin/nvidia-smi
+tmpfs                                tmpfs         201G   40M  201G   1% /run/nvidia-persistenced/socket
+653478ff-ba87-4cab-b64f-154ee0c7fe62 fuse.geesefs  1.0P     0  1.0P   0% /workspace
+/dev/mapper/xfsdata-xfs_lv           xfs            28T  3.5T   25T  13% /etc/hosts
+tmpfs                                tmpfs         4.0K  4.0K     0 100% /run/nvidia-ctk-hooke02c3b1d-4284-4613-bc4c-4fd64ee81c17
+tmpfs                                tmpfs        1002G     0 1002G   0% /proc/acpi
+tmpfs                                tmpfs        1002G     0 1002G   0% /proc/scsi
+tmpfs                                tmpfs        1002G     0 1002G   0% /sys/devices/virtual/powercap
+tmpfs                                tmpfs        1002G     0 1002G   0% /sys/firmware
++ mount
++ grep -vE 'proc|sysfs|cgroup|devpts|mqueue|tmpfs'
+overlay on / type overlay (rw,relatime,lowerdir=/var/lib/docker/100000.100000/overlay2/l/NLLZ7GLCRITJ57B7FWZG4ZWNAG:/var/lib/docker/100000.100000/overlay2/l/7VCL3QRJ5L43O5457RJHPKG3XX:/var/lib/docker/100000.100000/overlay2/l/FP4YPUCGOH4KD7QRTXZROGQHQZ:/var/lib/docker/100000.100000/overlay2/l/OIRREHWWU6UDJU6OJSOK5G6BFJ:/var/lib/docker/100000.100000/overlay2/l/6ORNRC2ZTMVIOGPMLCSOTUJWWH:/var/lib/docker/100000.100000/overlay2/l/2LUEG3MSVJJIHWTPTEWQCFVZMN:/var/lib/docker/100000.100000/overlay2/l/XHJ53KATIWRYU55BF6LASHUKDD:/var/lib/docker/100000.100000/overlay2/l/TLLSQRPYW5C2Q43G2MNNECB36N:/var/lib/docker/100000.100000/overlay2/l/LC2FYULDGDUQM5ZSK566FH5YWH:/var/lib/docker/100000.100000/overlay2/l/32AYYV2MMFEYUJVXS5XEZFGF7Y:/var/lib/docker/100000.100000/overlay2/l/IATSOOL5CA76W7JKNSJ254ZHXO:/var/lib/docker/100000.100000/overlay2/l/QDXXKQ4ANK6QJHFTLYU2OJFAT3:/var/lib/docker/100000.100000/overlay2/l/HO5D6MULXC4CYIFVUEKQZLMSMA:/var/lib/docker/100000.100000/overlay2/l/LSGGHDZTXK3XALA65EVDZ3MTCV:/var/lib/docker/100000.100000/overlay2/l/FP3RT3M6SSWSCBET4OMOR6YE3T:/var/lib/docker/100000.100000/overlay2/l/VSH6AL3IH7NQAZIHH23JCHFOTK:/var/lib/docker/100000.100000/overlay2/l/ZCFIFFUC2QVRDGA74HDSDIB23A:/var/lib/docker/100000.100000/overlay2/l/IST22TMOIRGKMWWDUADNXV3A4J:/var/lib/docker/100000.100000/overlay2/l/QVWQX65CV6ATKZHVJEOM7O2NPQ:/var/lib/docker/100000.100000/overlay2/l/ZUQGSQUHUMNP5S3E3A4WWKCDQ6:/var/lib/docker/100000.100000/overlay2/l/R6PLBJ6PNHXVU4TLRTDMCSA5UO:/var/lib/docker/100000.100000/overlay2/l/FKHGUNG552DCKZJXXEDVF6AHKN:/var/lib/docker/100000.100000/overlay2/l/RUAN35SYFB3FG5GZLKZ7HMQXWO:/var/lib/docker/100000.100000/overlay2/l/NQZ5XE6LJTMQHBBLOXEIA6NR3P:/var/lib/docker/100000.100000/overlay2/l/FLGASNKBYYNNRZHVCZ4CJPK54W:/var/lib/docker/100000.100000/overlay2/l/SBTE3OLL3S3IK6W6ANXWMRUE24:/var/lib/docker/100000.100000/overlay2/l/BP3UO2EFAVKRGQSUPDKMMPXC3M:/var/lib/docker/100000.100000/overlay2/l/YGBKDRKJSL4MSWBD3WXHZA2KFN:/var/lib/docker/100000.100000/overlay2/l/UKZURI4IY7RRLHIZLKC6ZTLQVA:/var/lib/docker/100000.100000/overlay2/l/TELQOHI4LPRCRCYWRJ3E5ATIDK:/var/lib/docker/100000.100000/overlay2/l/4GVK3VR5R74JS7FGU5IZPQ33KG:/var/lib/docker/100000.100000/overlay2/l/P4AXP5MGRK3UXEBVWBWMAR2UW5:/var/lib/docker/100000.100000/overlay2/l/4Q7QN2GTZJO7LVNNIAAQSEITUC:/var/lib/docker/100000.100000/overlay2/l/LW6VDWZQJIVEKSQFO7AJTAX5PI:/var/lib/docker/100000.100000/overlay2/l/7IDKAWBZI7MYEIUNJANCKSFOGP,upperdir=/var/lib/docker/100000.100000/overlay2/315b116a3ca613d29c10398ffca5e1903a3f3cf45ab142ef5ff4d68c754723a4/diff,workdir=/var/lib/docker/100000.100000/overlay2/315b116a3ca613d29c10398ffca5e1903a3f3cf45ab142ef5ff4d68c754723a4/work,nouserxattr)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/sbin/docker-init type ext4 (ro,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/bin/nvidia-cuda-mps-control type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/bin/nvidia-cuda-mps-server type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/bin/nvidia-debugdump type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/bin/nvidia-imex type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/bin/nvidia-imex-ctl type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/bin/nvidia-persistenced type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/bin/nvidia-smi type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /etc/vulkan/icd.d/nvidia_icd.json type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /etc/vulkan/implicit_layer.d/nvidia_layers.json type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libEGL_nvidia.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libGLESv1_CM_nvidia.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libGLESv2_nvidia.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libGLX_nvidia.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libcuda.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libcudadebugger.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvcuvid.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-allocator.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-cfg.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-egl-gbm.so.1.1.3 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-egl-wayland.so.1.1.21 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-eglcore.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-encode.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-fbc.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-glcore.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-glsi.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-glvkspirv.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-gpucomp.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-gtk2.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-gtk3.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-ngx.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-nscq.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-nvvm.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-opencl.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-opticalflow.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-pkcs11-openssl3.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-present.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-ptxjitcompiler.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-rtcore.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-sandboxutils.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-tls.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-vksc-core.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvidia-wayland-client.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/libnvoptix.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/share/nvidia/nvoptix.bin type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/firmware/nvidia/580.126.16/gsp_ga10x.bin type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/firmware/nvidia/580.126.16/gsp_tu10x.bin type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/x86_64-linux-gnu/vdpau/libvdpau_nvidia.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/share/X11/xorg.conf.d/nvidia-drm-outputclass.conf type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/share/egl/egl_external_platform.d/10_nvidia_wayland.json type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/share/egl/egl_external_platform.d/15_nvidia_gbm.json type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/share/glvnd/egl_vendor.d/10_nvidia.json type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/xorg/modules/drivers/nvidia_drv.so type ext4 (ro,nosuid,nodev,relatime)
+/dev/mapper/ubuntu--vg-ubuntu--lv on /usr/lib/xorg/modules/extensions/libglxserver_nvidia.so.580.126.16 type ext4 (ro,nosuid,nodev,relatime)
+653478ff-ba87-4cab-b64f-154ee0c7fe62 on /workspace type fuse.geesefs (rw,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other)
+/dev/mapper/xfsdata-xfs_lv on /etc/resolv.conf type xfs (rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,usrquota,prjquota)
+/dev/mapper/xfsdata-xfs_lv on /etc/hostname type xfs (rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,usrquota,prjquota)
+/dev/mapper/xfsdata-xfs_lv on /etc/hosts type xfs (rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,usrquota,prjquota)
+TARGET     SOURCE                               FSTYPE       OPTIONS
+/workspace 653478ff-ba87-4cab-b64f-154ee0c7fe62 fuse.geesefs rw,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other
++ findmnt /workspace -o TARGET,SOURCE,FSTYPE,OPTIONS
++ ls -la /workspace
+total 4
+drwxrwxrwx 2 nobody nogroup 4096 Oct  8 16:22 .
+drwxr-xr-x 1 root   root     109 Oct  8 16:25 ..
+/usr/local/bin/python
+/usr/bin/python3
++ which python python3
++ python -V
+Python 3.12.3
++ pip -V
+pip 25.2 from /usr/local/lib/python3.12/dist-packages/pip (python 3.12)
++ python -c 'import torch,sys;print(torch.__version__,torch.version.cuda,torch.backends.cudnn.version(),torch.cuda.is_available(),torch.cuda.get_device_name(0),torch.cuda.get_device_capability(0),torch.cuda.is_bf16_supported());print(torch.backends.cuda.flash_sdp_enabled(),torch.backends.cuda.mem_efficient_sdp_enabled(),torch.backends.cuda.cudnn_sdp_enabled())'
+2.8.0+cu128 12.8 91002 True NVIDIA A100-SXM4-80GB (8, 0) True
+True True True
++ pip list
++ grep -iE 'torch|numpy|triton|nvidia|flash|safetensors|xformers'
+numpy                     2.1.2
+nvidia-cublas-cu12        12.8.4.1
+nvidia-cuda-cupti-cu12    12.8.90
+nvidia-cuda-nvrtc-cu12    12.8.93
+nvidia-cuda-runtime-cu12  12.8.90
+nvidia-cudnn-cu12         9.10.2.21
+nvidia-cufft-cu12         11.3.3.83
+nvidia-cufile-cu12        1.13.1.3
+nvidia-curand-cu12        10.3.9.90
+nvidia-cusolver-cu12      11.7.3.90
+nvidia-cusparse-cu12      12.5.8.93
+nvidia-cusparselt-cu12    0.7.1
+nvidia-nccl-cu12          2.27.3
+nvidia-nvjitlink-cu12     12.8.93
+nvidia-nvtx-cu12          12.8.90
+torch                     2.8.0+cu128
+torchaudio                2.8.0+cu128
+torchvision               0.23.0+cu128
+triton                    3.4.0
++ nvcc --version
++ tail -2
+bash: line 16: nvcc: command not found
++ gcc --version
++ head -1
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
++ ls /usr/local/
++ head
+bin
+cuda
+cuda-12
+cuda-12.8
+etc
+games
+include
+lib
+man
+sbin
++ env
++ grep -E '^(RUNPOD_[A-Z_]*ID|RUNPOD_DC_ID|RUNPOD_GPU_COUNT|RUNPOD_CPU_COUNT|RUNPOD_VOLUME|RUNPOD_POD_HOSTNAME)'
++ which rclone aws runpodctl s3cmd rsync zstd
+/usr/bin/rclone
+/usr/bin/runpodctl
+/usr/bin/rsync
+/usr/bin/zstd
++ ip -4 addr
++ grep inet
+    inet 127.0.0.1/8 scope host lo
+    inet 172.19.0.2/16 brd 172.19.255.255 scope global eth0

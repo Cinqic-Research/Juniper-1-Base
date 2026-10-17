@@ -1,0 +1,124 @@
+{
+ "repo": "CinqicX/juniper1-corpus",
+ "started": "2026-10-10T19:29:18Z",
+ "files": [
+  {
+   "path_in_repo": "j1-base-v0.2.2/MANIFEST.sha256",
+   "size": 1815,
+   "sha256": "8e1e9fc9aad246842a634830286f4c4f1cb76e70578765593b7885a0b7319a71",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/accepted/excluded_doc_ids.json",
+   "size": 255888,
+   "sha256": "4bd2e8ef7f5f95c1c2541d1e1c6945a563eece4b3726ed6d80c6a743e0af4ca1",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/accepted/excluded_doc_ids_union.json",
+   "size": 255888,
+   "sha256": "4bd2e8ef7f5f95c1c2541d1e1c6945a563eece4b3726ed6d80c6a743e0af4ca1",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/accepted/manifest.json",
+   "size": 321105,
+   "sha256": "54a3adb9650c96bf67b44b721386722383caeb774b48b0bf970ad6f9634d4185",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/token_shards/shards.json",
+   "size": 5702,
+   "sha256": "1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/token_shards/test-docs.parquet",
+   "size": 67905,
+   "sha256": "4d87ae43f6ffc5697533424e884dece6cb36da696514865b7138eb43cfb657ea",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/token_shards/test-tokens-00000.bin",
+   "size": 5293184,
+   "sha256": "a5206fd21555ff40eb3fbe500ee4e8849eb210b452ec0a3f708e2ac3a5787542",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/token_shards/train-docs.parquet",
+   "size": 65694241,
+   "sha256": "29efa83be4674a3c367a7ed70ef83fa7f8a4eb25a3be507817a89ba60ca075a4",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/token_shards/train-tokens-00000.bin",
+   "size": 1073741824,
+   "sha256": "abe259b274ce83c53ec2c1b20391de547731a22cc14642d2576ed6c860fc021e",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/token_shards/train-tokens-00001.bin",
+   "size": 1073741824,
+   "sha256": "b58cd2e903e92ea044d2153523ca879f908d5ac229c5e3de24babba3a4a85cce",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/token_shards/train-tokens-00002.bin",
+   "size": 1073741824,
+   "sha256": "4d311eccba82d70d5c59761b6ccab41c58f4c94b790b8e63d3899536c6e7f08b",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/token_shards/train-tokens-00003.bin",
+   "size": 1073741824,
+   "sha256": "27cebaaeb25418bc2307e477f51114cbf2536bdb3a06ce03d1da060453263e8c",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/token_shards/train-tokens-00004.bin",
+   "size": 1073741824,
+   "sha256": "8cbe8510833b9cfd6222b8b889148ead57cbc6f49117b3387975a7d7a5f49456",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/token_shards/train-tokens-00005.bin",
+   "size": 1073741824,
+   "sha256": "a1d15f579c2f34dd450e57989b28f604dbc161815637b27bb7dbb25bcec3b42b",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/token_shards/train-tokens-00006.bin",
+   "size": 377777164,
+   "sha256": "34e2dda3d61e993accfba274c846ff36246405cfd6100c5914b80952be424116",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/token_shards/validation-docs.parquet",
+   "size": 67404,
+   "sha256": "42e057d7771fc1223c9f59895edb5d4d2bb8cbfacdca5dabe6a91ec37482f787",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/token_shards/validation-tokens-00000.bin",
+   "size": 6436408,
+   "sha256": "03efc04fc4c1bf1b1960f950cf98de229a9494dca786bb9472410bc9d44e13df",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/tokenizer/freeze.json",
+   "size": 10223,
+   "sha256": "08a2d8986107f1ac3e9f94097f8bc5ff7352d00e3ca07b44ba8cf0037b4fedf7",
+   "readback_ok": true
+  },
+  {
+   "path_in_repo": "j1-base-v0.2.2/tokenizer/tokenizer.json",
+   "size": 680825,
+   "sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+   "readback_ok": true
+  }
+ ],
+ "upload_seconds": 464.4,
+ "commit": "6f8c986783c8662485748fa0153bae5b2e39aeaa",
+ "all_ok": true,
+ "finished": "2026-10-10T19:47:47Z"
+}

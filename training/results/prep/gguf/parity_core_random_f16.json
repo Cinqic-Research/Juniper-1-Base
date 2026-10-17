@@ -1,0 +1,44 @@
+{
+ "gguf": "/tmp/claude-1000/-home-cinqic-Documents-AAA/38c0026a-759d-4bb6-854d-33fe45806cf1/scratchpad/gguf/core-rand-f16.gguf",
+ "gguf_bytes": 297439936,
+ "ngl": 0,
+ "rows": [
+  {
+   "prompt_tokens": 1,
+   "top1_llama": 13275,
+   "top1_torch": 13275,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.00088
+  },
+  {
+   "prompt_tokens": 7,
+   "top1_llama": 9904,
+   "top1_torch": 9904,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.00114
+  },
+  {
+   "prompt_tokens": 64,
+   "top1_llama": 25138,
+   "top1_torch": 25138,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.00367
+  },
+  {
+   "prompt_tokens": 300,
+   "top1_llama": 15743,
+   "top1_torch": 15743,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.00371
+  },
+  {
+   "prompt_tokens": 1000,
+   "top1_llama": 27636,
+   "top1_torch": 27636,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.0042
+  }
+ ],
+ "gate": "F16 vs FP32: top-1 agree and max |dlogp| <= 0.05",
+ "pass": true
+}

@@ -1,0 +1,121 @@
+{
+ "schema": "j1.sft-pilot-protocol.v2",
+ "registered_before_any_result": true,
+ "base": {
+  "freeze_id": "juniper1-base-v1",
+  "freeze_record_sha256": "ef79b324fff459c8ffce7ac2e1b1542960a254b8383a6e8b19fd20402e92ff55"
+ },
+ "dataset_manifest_sha256": "7081dbde86c1328112a16f7ed37efda3f26028d807cbd5f36d0e3f1e25334265",
+ "eval_bundle_sha256": "5119c5b409a3df6bd07899805936eef51cc8895a3e46c97918a362f289a0b325",
+ "data_code_revision": "689204f",
+ "lr_probes": {
+  "lrs": [
+   1e-05,
+   3e-05,
+   0.0001
+  ],
+  "updates": 150,
+  "warmup_updates": 15,
+  "min_lr_ratio": 1.0,
+  "metric": "dev_loss_at_150",
+  "constraint": {
+   "fixed32_bpb_max": 0.893728,
+   "base_fixed32_bpb": 0.867697,
+   "ratio": 1.03
+  },
+  "fallback": "smallest lr",
+  "tie_relative": 0.005
+ },
+ "pilot": {
+  "updates": 1226,
+  "warmup_updates": 40,
+  "min_lr_ratio": 0.1,
+  "episodes_per_update": 64,
+  "token_budget": 1024,
+  "optimizer": {
+   "name": "adamw",
+   "betas": [
+    0.9,
+    0.95
+   ],
+   "eps": 1e-08,
+   "weight_decay": 0.1,
+   "decay_policy": "matrices",
+   "clip": 1.0
+  },
+  "precision": "fp32",
+  "seed": 1,
+  "dev_every": 100,
+  "checkpoint": {
+   "every_updates": 500,
+   "every_seconds": 900
+  },
+  "candidate": "final checkpoint",
+  "early_stop": [
+   "non-finite",
+   "dev loss rises at 3 consecutive dev evals",
+   "checkpoint publication failure"
+  ]
+ },
+ "recovery": {
+  "run_a_updates": 30,
+  "run_b_sigterm_after": 15,
+  "pass": "bitwise model+optimizer digests and batch fingerprints 16-30"
+ },
+ "evaluation": {
+  "split": "test",
+  "variant": "chat",
+  "scoring": "strict",
+  "views": [
+   "versus_base_chat (format)",
+   "versus_base_fewshot (capability, same items)"
+  ],
+  "bootstrap": {
+   "resamples": 10000,
+   "seed": 20261012
+  },
+  "test": "exact McNemar",
+  "multiplicity": "Holm across categories for regression tests"
+ },
+ "primary": {
+  "id": "P1",
+  "category": "instruction_following_in_distribution",
+  "items": 500,
+  "absolute": {
+   "strict_min": 0.5,
+   "wilson_lower_min": 0.4
+  },
+  "versus_base_fewshot": {
+   "ci_lower_gt": 0.0
+  }
+ },
+ "gates": {
+  "G-PROTO": {
+   "protocol_valid_min": 0.9
+  },
+  "G-REG": {
+   "rule": "no category with candidate < base few-shot and Holm-adjusted McNemar p < 0.05",
+   "alpha": 0.05
+  },
+  "G-RET": {
+   "full_split_bpb_max": 0.943872,
+   "base_full_split_bpb": 0.916381,
+   "ratio": 1.03
+  },
+  "G-UNC": {
+   "uncertainty_strict_min": 0.5,
+   "false_abstention_max": 0.25
+  },
+  "G-REC": "stage 3"
+ },
+ "decision": {
+  "pass": "PILOT_CANDIDATE_QUALIFIED",
+  "fail": "NOT_PROMOTED",
+  "note": "not production; base remains canonical"
+ },
+ "supersedes": {
+  "protocol": "sft_pilot_protocol_v1.json",
+  "reason": "independent dataset/evaluation review 2026-10-12 found evaluation-integrity defects before any measurement; dataset/bundle v1.1 replace v1.0",
+  "results_seen_before_change": false
+ }
+}

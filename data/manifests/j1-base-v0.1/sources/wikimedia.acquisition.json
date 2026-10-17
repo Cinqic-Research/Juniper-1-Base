@@ -1,0 +1,334 @@
+{
+ "acquire_version": "j1.acquire.v1",
+ "acquired_utc": "2026-10-07T16:39:43+00:00",
+ "files": [
+  {
+   "git_blob_oid": "fe2a3acad106e7bf57311fdb414242651a2c3bae",
+   "path": "wikimedia-0000.json.gz",
+   "retrieved_utc": "2026-10-07T16:14:04+00:00",
+   "sha256": "dcfd152dd0da7127df156bd4d60b82ecb9808545fcfef07f776ced3701774d73",
+   "size": 766126416,
+   "upstream_sha256": "dcfd152dd0da7127df156bd4d60b82ecb9808545fcfef07f776ced3701774d73",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0000.json.gz"
+  },
+  {
+   "git_blob_oid": "e51efc3a23530078ca9066df150351c148c69d54",
+   "path": "wikimedia-0001.json.gz",
+   "retrieved_utc": "2026-10-07T16:14:15+00:00",
+   "sha256": "601017ab7ac106c0dcea52747c1d6d320a0753aa38c7f32c3bf075492156909c",
+   "size": 704114735,
+   "upstream_sha256": "601017ab7ac106c0dcea52747c1d6d320a0753aa38c7f32c3bf075492156909c",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0001.json.gz"
+  },
+  {
+   "git_blob_oid": "a59d8fac72d30ca19b04b431d71821a51ee3374f",
+   "path": "wikimedia-0002.json.gz",
+   "retrieved_utc": "2026-10-07T16:13:39+00:00",
+   "sha256": "046f1eb96595685ed4a0d2f877523f17542b9e5a7f0b579b84f95873a721fd0f",
+   "size": 790846312,
+   "upstream_sha256": "046f1eb96595685ed4a0d2f877523f17542b9e5a7f0b579b84f95873a721fd0f",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0002.json.gz"
+  },
+  {
+   "git_blob_oid": "e43b919d2cce1252de6282350a831bd256218259",
+   "path": "wikimedia-0003.json.gz",
+   "retrieved_utc": "2026-10-07T16:15:53+00:00",
+   "sha256": "61ccbfa441b24f0fd60416d84a7134aa69cfdb9adb912a3a49670bf34d6933e6",
+   "size": 802864713,
+   "upstream_sha256": "61ccbfa441b24f0fd60416d84a7134aa69cfdb9adb912a3a49670bf34d6933e6",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0003.json.gz"
+  },
+  {
+   "git_blob_oid": "f7237662e4d8d50d03bd1babc046cdd7905617c9",
+   "path": "wikimedia-0004.json.gz",
+   "retrieved_utc": "2026-10-07T16:17:41+00:00",
+   "sha256": "8ffded56113eacdb6fa4aaa21f0689a101086262f91e3bc0949fd9149f82459a",
+   "size": 600531019,
+   "upstream_sha256": "8ffded56113eacdb6fa4aaa21f0689a101086262f91e3bc0949fd9149f82459a",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0004.json.gz"
+  },
+  {
+   "git_blob_oid": "6183fb47ca78ff09e040ef78e03d2bfc5725da3d",
+   "path": "wikimedia-0005.json.gz",
+   "retrieved_utc": "2026-10-07T16:17:19+00:00",
+   "sha256": "42649f2f480152e5cc8d1b95c206e9c2da97a26fa52543d86052dc97b726b22e",
+   "size": 641179277,
+   "upstream_sha256": "42649f2f480152e5cc8d1b95c206e9c2da97a26fa52543d86052dc97b726b22e",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0005.json.gz"
+  },
+  {
+   "git_blob_oid": "d0d4cb14e2c1050715b021bad9591d6c1b840f1d",
+   "path": "wikimedia-0006.json.gz",
+   "retrieved_utc": "2026-10-07T16:18:30+00:00",
+   "sha256": "7ea1e63d0c51b2d6628967f6a7725f2a6719b1014a94b6875aa8dde1b9d92b81",
+   "size": 629344972,
+   "upstream_sha256": "7ea1e63d0c51b2d6628967f6a7725f2a6719b1014a94b6875aa8dde1b9d92b81",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0006.json.gz"
+  },
+  {
+   "git_blob_oid": "4e4bc145491969ec33470ac301bbafb1d6068f52",
+   "path": "wikimedia-0007.json.gz",
+   "retrieved_utc": "2026-10-07T16:19:36+00:00",
+   "sha256": "79e31e9991a8f07fbda8c4dbf5ff7311b3a9c99a483c748b70b74aa87dfe49ee",
+   "size": 801033948,
+   "upstream_sha256": "79e31e9991a8f07fbda8c4dbf5ff7311b3a9c99a483c748b70b74aa87dfe49ee",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0007.json.gz"
+  },
+  {
+   "git_blob_oid": "b11e2a731c325888211ae2daacd8743e6bb1c3f7",
+   "path": "wikimedia-0008.json.gz",
+   "retrieved_utc": "2026-10-07T16:23:41+00:00",
+   "sha256": "5b165d9761e530e3a056f1127db830b5ba4aab6445cefa3d87302622fca7d787",
+   "size": 804668776,
+   "upstream_sha256": "5b165d9761e530e3a056f1127db830b5ba4aab6445cefa3d87302622fca7d787",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0008.json.gz"
+  },
+  {
+   "git_blob_oid": "f0a13893a91fbb2d2ad12bd71c3b8985e06d553a",
+   "path": "wikimedia-0009.json.gz",
+   "retrieved_utc": "2026-10-07T16:21:42+00:00",
+   "sha256": "62b6cf10e773b33b4eb16a63c3109d684657b17424e2332a3fa74f2ceccd5be4",
+   "size": 748019614,
+   "upstream_sha256": "62b6cf10e773b33b4eb16a63c3109d684657b17424e2332a3fa74f2ceccd5be4",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0009.json.gz"
+  },
+  {
+   "git_blob_oid": "960f2cf9454325ac74fe2d2c08ad91e3760eb0d1",
+   "path": "wikimedia-0010.json.gz",
+   "retrieved_utc": "2026-10-07T16:23:34+00:00",
+   "sha256": "d6f8d288cc26a41ffeb9cf6d0549f71e8717e511a78e6f13cc59361b81bcfa66",
+   "size": 706899938,
+   "upstream_sha256": "d6f8d288cc26a41ffeb9cf6d0549f71e8717e511a78e6f13cc59361b81bcfa66",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0010.json.gz"
+  },
+  {
+   "git_blob_oid": "c2f4320e5781877ca8ccfd882ea25345f803140f",
+   "path": "wikimedia-0011.json.gz",
+   "retrieved_utc": "2026-10-07T16:24:27+00:00",
+   "sha256": "063bff419a3a0c3a45332dbef65650ac4f42a8e0c6357dd19b4a740d19eff7cb",
+   "size": 673741838,
+   "upstream_sha256": "063bff419a3a0c3a45332dbef65650ac4f42a8e0c6357dd19b4a740d19eff7cb",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0011.json.gz"
+  },
+  {
+   "git_blob_oid": "a3a38372aca42c358a1af867bbf44b2e3b7adaf5",
+   "path": "wikimedia-0012.json.gz",
+   "retrieved_utc": "2026-10-07T16:24:12+00:00",
+   "sha256": "9e288f283cb3227538ea348b940e97b0a6f3dc83b7a51fe008f6fa33ab44296a",
+   "size": 605540695,
+   "upstream_sha256": "9e288f283cb3227538ea348b940e97b0a6f3dc83b7a51fe008f6fa33ab44296a",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0012.json.gz"
+  },
+  {
+   "git_blob_oid": "0a14d6c43fa2e9a0fd05bb2c3c29d64961993e2f",
+   "path": "wikimedia-0013.json.gz",
+   "retrieved_utc": "2026-10-07T16:28:28+00:00",
+   "sha256": "e806c929ce9dfe0604f1bc681399a67285e9915a4c531c6998bca02a9256e1a8",
+   "size": 691138740,
+   "upstream_sha256": "e806c929ce9dfe0604f1bc681399a67285e9915a4c531c6998bca02a9256e1a8",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0013.json.gz"
+  },
+  {
+   "git_blob_oid": "ef55c29ce94c3806f80901794f38b5e07829e4f9",
+   "path": "wikimedia-0014.json.gz",
+   "retrieved_utc": "2026-10-07T16:27:39+00:00",
+   "sha256": "45399e4bb1cdd62c360077d1a0c290d12596b87c3e91f9eb959ff1f103980231",
+   "size": 636261760,
+   "upstream_sha256": "45399e4bb1cdd62c360077d1a0c290d12596b87c3e91f9eb959ff1f103980231",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0014.json.gz"
+  },
+  {
+   "git_blob_oid": "671d964557b15cb4fd39faaf940341fbf0403555",
+   "path": "wikimedia-0015.json.gz",
+   "retrieved_utc": "2026-10-07T16:27:56+00:00",
+   "sha256": "5fa7d853ce9294008e42d910064032dd2ab53b19b826d79fe341fe698ce95922",
+   "size": 650945278,
+   "upstream_sha256": "5fa7d853ce9294008e42d910064032dd2ab53b19b826d79fe341fe698ce95922",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0015.json.gz"
+  },
+  {
+   "git_blob_oid": "0c2216d24ebd5a6b1f9868040708cb29a435cc8e",
+   "path": "wikimedia-0016.json.gz",
+   "retrieved_utc": "2026-10-07T16:27:06+00:00",
+   "sha256": "cd9fc651b473367571976347efc613152e9d32bdc87b19818df89a53dfb71637",
+   "size": 619045256,
+   "upstream_sha256": "cd9fc651b473367571976347efc613152e9d32bdc87b19818df89a53dfb71637",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0016.json.gz"
+  },
+  {
+   "git_blob_oid": "86194d4b7544ec440a830c1a2530a34153702cee",
+   "path": "wikimedia-0017.json.gz",
+   "retrieved_utc": "2026-10-07T16:29:24+00:00",
+   "sha256": "8858d40126c1507ab4808612401c015f09fe9ebf2b4a3750724480c96977a7f4",
+   "size": 613249597,
+   "upstream_sha256": "8858d40126c1507ab4808612401c015f09fe9ebf2b4a3750724480c96977a7f4",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0017.json.gz"
+  },
+  {
+   "git_blob_oid": "0a4843f04fc1be933cebba79fefe57bc2a6b9260",
+   "path": "wikimedia-0018.json.gz",
+   "retrieved_utc": "2026-10-07T16:31:14+00:00",
+   "sha256": "e89a77a914b648042f9b7c4765bab0cbd002710c2a6d24b38cb121a55e27a6b9",
+   "size": 615766809,
+   "upstream_sha256": "e89a77a914b648042f9b7c4765bab0cbd002710c2a6d24b38cb121a55e27a6b9",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0018.json.gz"
+  },
+  {
+   "git_blob_oid": "8b49181bc3e1cecbf15dd073f597b94e2c205847",
+   "path": "wikimedia-0019.json.gz",
+   "retrieved_utc": "2026-10-07T16:32:38+00:00",
+   "sha256": "ae3ffdb9b04c5eba5244e1ed7e5240c2021bc42cfd73e3d1a7e6d6ca28a77543",
+   "size": 579449395,
+   "upstream_sha256": "ae3ffdb9b04c5eba5244e1ed7e5240c2021bc42cfd73e3d1a7e6d6ca28a77543",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0019.json.gz"
+  },
+  {
+   "git_blob_oid": "1d0eb7c4ceb5d37239715ef05e8fed14dee48dc3",
+   "path": "wikimedia-0020.json.gz",
+   "retrieved_utc": "2026-10-07T16:31:09+00:00",
+   "sha256": "b7ef2a9f95f6985ae687d768900d901eef7928a38cb28e85b63738f4d581d83a",
+   "size": 549734661,
+   "upstream_sha256": "b7ef2a9f95f6985ae687d768900d901eef7928a38cb28e85b63738f4d581d83a",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0020.json.gz"
+  },
+  {
+   "git_blob_oid": "8c1741d3448c79f4a55fdd0bdbd2a27258e81cfc",
+   "path": "wikimedia-0021.json.gz",
+   "retrieved_utc": "2026-10-07T16:31:22+00:00",
+   "sha256": "c90e93a48ac0861e5d8eebc64aeb547b9b330ea749f1104260a74a00789aaad9",
+   "size": 527593276,
+   "upstream_sha256": "c90e93a48ac0861e5d8eebc64aeb547b9b330ea749f1104260a74a00789aaad9",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0021.json.gz"
+  },
+  {
+   "git_blob_oid": "b6a17e3257618a434842842d0c16721ca583c7be",
+   "path": "wikimedia-0022.json.gz",
+   "retrieved_utc": "2026-10-07T16:34:25+00:00",
+   "sha256": "9bb56d50df185ced21d1f3d964ad4fb4ec66e6b367d7b39c7b873c6afe8bec19",
+   "size": 557814331,
+   "upstream_sha256": "9bb56d50df185ced21d1f3d964ad4fb4ec66e6b367d7b39c7b873c6afe8bec19",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0022.json.gz"
+  },
+  {
+   "git_blob_oid": "776591534b5aa7d576e1729f945c5f4e038a0d86",
+   "path": "wikimedia-0023.json.gz",
+   "retrieved_utc": "2026-10-07T16:34:22+00:00",
+   "sha256": "fee126f4e6c58ea666c906690a92aa7e1fd1ee859161d82ffedf86bf99d341b9",
+   "size": 592001163,
+   "upstream_sha256": "fee126f4e6c58ea666c906690a92aa7e1fd1ee859161d82ffedf86bf99d341b9",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0023.json.gz"
+  },
+  {
+   "git_blob_oid": "8d987347b0fade422d4ef74f5e334ea22e8d46ec",
+   "path": "wikimedia-0024.json.gz",
+   "retrieved_utc": "2026-10-07T16:33:44+00:00",
+   "sha256": "30b19e4939d920027a34b5267ad00cf10449a5d166f54da795302bea651a20f4",
+   "size": 552204176,
+   "upstream_sha256": "30b19e4939d920027a34b5267ad00cf10449a5d166f54da795302bea651a20f4",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0024.json.gz"
+  },
+  {
+   "git_blob_oid": "c04d7ac294a344216190a437d5a4e97e27881134",
+   "path": "wikimedia-0025.json.gz",
+   "retrieved_utc": "2026-10-07T16:35:21+00:00",
+   "sha256": "1cce1f59a23628f506e5ad37a757ad7b6274052332ddeddddb1aa40cf85d65cd",
+   "size": 515730509,
+   "upstream_sha256": "1cce1f59a23628f506e5ad37a757ad7b6274052332ddeddddb1aa40cf85d65cd",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0025.json.gz"
+  },
+  {
+   "git_blob_oid": "67da5f3cb431093cb4d6a1fcb4797c18476a00dc",
+   "path": "wikimedia-0026.json.gz",
+   "retrieved_utc": "2026-10-07T16:35:12+00:00",
+   "sha256": "1bba0dab77186fb831e711bd715584d81918af399139af068173082c65b03de7",
+   "size": 508108661,
+   "upstream_sha256": "1bba0dab77186fb831e711bd715584d81918af399139af068173082c65b03de7",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0026.json.gz"
+  },
+  {
+   "git_blob_oid": "71aae478fd7854857c293aea66a8ce469d0a77c9",
+   "path": "wikimedia-0027.json.gz",
+   "retrieved_utc": "2026-10-07T16:37:21+00:00",
+   "sha256": "0abe6c9be821ac100c604ac4b799faa00c90e39d139c7dccf9491e693b177ed0",
+   "size": 480242750,
+   "upstream_sha256": "0abe6c9be821ac100c604ac4b799faa00c90e39d139c7dccf9491e693b177ed0",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0027.json.gz"
+  },
+  {
+   "git_blob_oid": "16edff5daaa88829568269bb80b50841b211d065",
+   "path": "wikimedia-0028.json.gz",
+   "retrieved_utc": "2026-10-07T16:36:18+00:00",
+   "sha256": "ea570f68c97d9cc537f50be45397214851eb2c9328fe29fa4163d3759a62ef8e",
+   "size": 535493549,
+   "upstream_sha256": "ea570f68c97d9cc537f50be45397214851eb2c9328fe29fa4163d3759a62ef8e",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0028.json.gz"
+  },
+  {
+   "git_blob_oid": "2e7f47a21b850832ff7da5f0dd6328dc8b8e93f8",
+   "path": "wikimedia-0029.json.gz",
+   "retrieved_utc": "2026-10-07T16:37:27+00:00",
+   "sha256": "087d87e7fd0591e6cd48b70d40ae667147336ce182e0038f091e7a586d29faab",
+   "size": 501766955,
+   "upstream_sha256": "087d87e7fd0591e6cd48b70d40ae667147336ce182e0038f091e7a586d29faab",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0029.json.gz"
+  },
+  {
+   "git_blob_oid": "b15aae2dbd6fe4e25b75deaf04861fd3443e983c",
+   "path": "wikimedia-0030.json.gz",
+   "retrieved_utc": "2026-10-07T16:38:19+00:00",
+   "sha256": "7cfc1a6298de519773c7c7e2d476ab764c422a2a5a82e92db3f47d2c12ceee9c",
+   "size": 505616583,
+   "upstream_sha256": "7cfc1a6298de519773c7c7e2d476ab764c422a2a5a82e92db3f47d2c12ceee9c",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0030.json.gz"
+  },
+  {
+   "git_blob_oid": "483a7fb4dbfbfab90b56a5f7ae53c5d8a78786d2",
+   "path": "wikimedia-0031.json.gz",
+   "retrieved_utc": "2026-10-07T16:37:58+00:00",
+   "sha256": "1574cb698c53e5708c13bec1b6555c73e54480ea4a8684b5ec7ec52b1345a0f5",
+   "size": 509697090,
+   "upstream_sha256": "1574cb698c53e5708c13bec1b6555c73e54480ea4a8684b5ec7ec52b1345a0f5",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0031.json.gz"
+  },
+  {
+   "git_blob_oid": "174da644bb24e893c75fd0a747dd90e0add5ddf0",
+   "path": "wikimedia-0032.json.gz",
+   "retrieved_utc": "2026-10-07T16:39:34+00:00",
+   "sha256": "e260599e1269a2e58269f4ca139a9dc5c43f373711dfbefdfc1c0d8055c8847d",
+   "size": 507556260,
+   "upstream_sha256": "e260599e1269a2e58269f4ca139a9dc5c43f373711dfbefdfc1c0d8055c8847d",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0032.json.gz"
+  },
+  {
+   "git_blob_oid": "1c7cad4837975289a12f907325dfa658f9d55986",
+   "path": "wikimedia-0033.json.gz",
+   "retrieved_utc": "2026-10-07T16:39:40+00:00",
+   "sha256": "0dcd656e4c436a9481ff8e5d291a207dbf7507e20231fd0b1df0f6245e9da49b",
+   "size": 528836376,
+   "upstream_sha256": "0dcd656e4c436a9481ff8e5d291a207dbf7507e20231fd0b1df0f6245e9da49b",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0033.json.gz"
+  },
+  {
+   "git_blob_oid": "34a2fc42da8ec1c0c464facd17bb624949502846",
+   "path": "wikimedia-0034.json.gz",
+   "retrieved_utc": "2026-10-07T16:39:43+00:00",
+   "sha256": "c4d16b0f20838f21fa2ec0ac5f57e1cabee5133feb0294c023f143188dd35dc5",
+   "size": 507381405,
+   "upstream_sha256": "c4d16b0f20838f21fa2ec0ac5f57e1cabee5133feb0294c023f143188dd35dc5",
+   "url": "https://huggingface.co/datasets/common-pile/wikimedia_filtered/resolve/0641bb84bd9b7162bcddf8be7836822161a9a342/wikimedia-0034.json.gz"
+  }
+ ],
+ "mechanism": "huggingface",
+ "repo": "common-pile/wikimedia_filtered",
+ "revision": "0641bb84bd9b7162bcddf8be7836822161a9a342",
+ "schema": "j1.acquisition-manifest.v1",
+ "selected_bytes": 21560546833,
+ "selected_file_count": 35,
+ "selection": {
+  "include": [
+   "*.json.gz"
+  ]
+ },
+ "source_id": "wikimedia",
+ "upstream_file_count": 37
+}

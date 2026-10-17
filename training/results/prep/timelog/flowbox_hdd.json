@@ -1,0 +1,57 @@
+{
+ "host": "FLOWBOX",
+ "log_device_path": "/media/cinqic/Cinqic Storage/juniper1-archive/timelogs/qual",
+ "python": "3.12.3",
+ "clock": {
+  "method": "systemd-timesyncd",
+  "synchronized": true,
+  "offset_ms": 0.11900000000000001,
+  "root_distance_ms": 5.699,
+  "server": "2620:2d:4000:1::41 (ntp.ubuntu.com)",
+  "uncertainty_ms": 5.818
+ },
+ "controls": [
+  {
+   "target_s": 0.25,
+   "operation_s": 0.250097,
+   "span_elapsed_s": 0.29455,
+   "start_write_s": 0.044486,
+   "logger_excess_s": 0.044453,
+   "pass": true
+  },
+  {
+   "target_s": 1.0,
+   "operation_s": 1.000077,
+   "span_elapsed_s": 1.043836,
+   "start_write_s": 0.043798,
+   "logger_excess_s": 0.043759,
+   "pass": true
+  },
+  {
+   "target_s": 5.0,
+   "operation_s": 5.000076,
+   "span_elapsed_s": 5.044517,
+   "start_write_s": 0.04451,
+   "logger_excess_s": 0.044441,
+   "pass": true
+  }
+ ],
+ "wrapper": {
+  "elapsed_s": 2.051914,
+  "outer_wall_s": 2.463,
+  "pass": true
+ },
+ "event_cost_ms": {
+  "durable_median": 44.413,
+  "durable_p99": 305.111,
+  "routine_median": 0.185,
+  "routine_p99": 0.366,
+  "durable_mean": 53.55
+ },
+ "audit": {
+  "ok": true,
+  "problems": [],
+  "events": 414
+ },
+ "pass": true
+}

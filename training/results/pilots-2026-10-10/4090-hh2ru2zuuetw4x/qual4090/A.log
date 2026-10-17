@@ -1,0 +1,11 @@
+[ckpt] step 0 -> /root/qual-ckpt8/qual-det-A/ckpt-000000000-da49f08d (116.3 MiB, 0.62s)
+step 1 loss 10.3366 lr 0.0002 910ms
+step 10 loss 8.2249 lr 0.000971 448ms
+[ckpt] step 10 -> /root/qual-ckpt8/qual-det-A/ckpt-000000010-c9f6d7dd (349.0 MiB, 1.70s)
+step 20 loss 7.6883 lr 0.000689 459ms
+[ckpt] step 20 -> /root/qual-ckpt8/qual-det-A/ckpt-000000020-53b3b90f (349.0 MiB, 1.75s)
+step 30 loss 7.4039 lr 0.000302 450ms
+[ckpt] step 30 -> /root/qual-ckpt8/qual-det-A/ckpt-000000030-d2bcf5cb (349.0 MiB, 1.68s)
+step 40 loss 7.5555 lr 0.000102 435ms
+[ckpt] step 40 -> /root/qual-ckpt8/qual-det-A/ckpt-000000040-5fd03ece (349.0 MiB, 1.76s)
+{"steps_run": 40, "final_step": 40, "tokens_per_s_median": 146128.00369927866, "step_ms_median": 448.4835099428892, "peak_vram_gib": 11.507285118103027, "final_param_sha256": "de8ed31dad2f410e711cd8d2551d8ecec15fbf6714e387417e5df6c2a067b7be"}

@@ -1,0 +1,26 @@
+{
+ "schema": "j1.b17-measurement-protocol.v1",
+ "registered_utc": "2026-10-11T04:03:23Z",
+ "authority": "owner order 2026-10-10 section 6 (B17 A100 acceptance): registered before the measurement",
+ "gate": "B17: full-stream trainer startup on the qualified A100, process entry to completed optimizer/scheduler update 1, at most 300 s",
+ "host": "qualified A100 SXM 80GB: pod pncbyxaf2dt2jl (GPU-5c42020f-dc89-fe0f-2a91-a26d0948c4f4) if it restarts on the same GPU; otherwise a new A100 SXM pod re-qualified with tools/pod_bootstrap_v3.sh (host record, MIG/ECC, CUDA/SDPA, FA-1, tests)",
+ "inputs": {
+  "data": "/vol/data/v022-24k-full (shards.json sha256 1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef, verified by --verify-data)",
+  "tokenizer": "/vol/data/tok/tokenizer.json (176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1)",
+  "code": "the deployed Train commit under review (recorded in the evidence record)",
+  "profile": "the profile selected for launch (eager unless the compiled protocol passes and is promoted); a cold eager pass does not qualify a compiled profile"
+ },
+ "trainer_arguments": "the launch COMMON arguments of tools/launch_tranche.sh (preset j1-wide-20x768, seq 2048, micro 16 x accum 2, steps 52034, limit_tokens 3410100225, exact-epoch, lr 0.0016971, warmup 500, min ratio 0.1, wd 0.1 matrices, clip 1.0, fused, bf16, --preload-data --verify-data --eval-set full-split, seed 1) with --run-id b17-qual-r<n> --stage-id b17-qual --ckpt-root /vol/ckpt-qual --stop-at 1 --eval-every 0",
+ "measurement": "the trainer's startup_complete record: process_elapsed_s (wall seconds from process start per /proc/self/stat to the end of update 1), the startup phases with real counters (per-file load/hash bytes, histogram tokens, model/optimizer init, clock check, init checkpoint, first update), peak RSS (VmHWM), bytes read and hashed; the pod's bench_matrix .status start/end; installation, data staging and provider queue recorded separately in the session log",
+ "cold_process": "the first measurement runs in a fresh process after the pod (re)start with the page cache state disclosed (cold for /vol/data after a pod start unless a prior pass read it); a warm repeat is informational",
+ "acceptance": {
+  "process_elapsed_s_max": 300,
+  "final_step": 1,
+  "init_checkpoint": "published and verified (COMPLETE marker, manifest hashes)",
+  "identities": "shards/tokenizer/limit_tokens/preset equal to the launch inputs",
+  "profile": "equals the launch manifest's execution profile"
+ },
+ "record": "docs/fable_2026-10-10/evidence/b17_startup_a100.json produced by tools/b17_record.py from the summary, metrics and status files (outcome STARTUP_QUALIFIED or STARTUP_FAILED)",
+ "on_failure": "stop, locate the remaining cause from the phase durations, repair, repeat only the affected qualification; the stall timer is not extended",
+ "cost": "charged to the qualification allocation of funding contract v5 (not the protected tranche)"
+}

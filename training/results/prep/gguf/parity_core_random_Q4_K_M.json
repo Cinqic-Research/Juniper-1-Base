@@ -1,0 +1,44 @@
+{
+ "gguf": "/tmp/claude-1000/-home-cinqic-Documents-AAA/38c0026a-759d-4bb6-854d-33fe45806cf1/scratchpad/gguf/core-rand-Q4_K_M.gguf",
+ "gguf_bytes": 117574368,
+ "ngl": 0,
+ "rows": [
+  {
+   "prompt_tokens": 1,
+   "top1_llama": 13275,
+   "top1_torch": 13275,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.13503
+  },
+  {
+   "prompt_tokens": 7,
+   "top1_llama": 9904,
+   "top1_torch": 9904,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.15028
+  },
+  {
+   "prompt_tokens": 64,
+   "top1_llama": 25138,
+   "top1_torch": 25138,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.17607
+  },
+  {
+   "prompt_tokens": 300,
+   "top1_llama": 15743,
+   "top1_torch": 15743,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.12509
+  },
+  {
+   "prompt_tokens": 1000,
+   "top1_llama": 18291,
+   "top1_torch": 27636,
+   "top1_agree": false,
+   "max_abs_logprob_diff": 0.17446
+  }
+ ],
+ "gate": "reported only",
+ "pass": null
+}

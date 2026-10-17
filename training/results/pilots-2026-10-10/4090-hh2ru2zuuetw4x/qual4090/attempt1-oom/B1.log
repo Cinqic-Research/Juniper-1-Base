@@ -1,0 +1,27 @@
+[ckpt] step 0 -> /root/qual-ckpt/qual-det-B/ckpt-000000000-cc650f8a (116.3 MiB, 0.61s)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/j1train/j1bench/train.py", line 1142, in <module>
+    main()
+  File "/root/j1train/j1bench/train.py", line 1138, in main
+    Trainer(args).run()
+  File "/root/j1train/j1bench/train.py", line 881, in run
+    summary = self._run_body()
+              ^^^^^^^^^^^^^^^^
+  File "/root/j1train/j1bench/train.py", line 975, in _run_body
+    rec = self.train_step()
+          ^^^^^^^^^^^^^^^^^
+  File "/root/j1train/j1bench/train.py", line 760, in train_step
+    return self._train_step()
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/j1train/j1bench/train.py", line 786, in _train_step
+    (self.scaler.scale(scaled) if self.scaler is not None else scaled).backward()
+  File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 647, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+  File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 829, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.50 GiB. GPU 0 has a total capacity of 23.53 GiB of which 2.64 GiB is free. Including non-PyTorch memory, this process has 20.88 GiB memory in use. Of the allocated memory 18.71 GiB is allocated by PyTorch, and 1.66 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

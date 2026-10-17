@@ -1,0 +1,104 @@
+{
+ "build_identity": "e20847a1edd8452571c279942291f4a2fd64a33fed858a40f2d3994c3106abd9",
+ "bytes_by_stage": {
+  "candidate": 696601628,
+  "contamination": 221011,
+  "privacy": 2813,
+  "quality": 64223172,
+  "selection": 1305685399
+ },
+ "bytes_in": 2066734023,
+ "chars_in": 2059623825,
+ "contamination_benchmarks": {
+  "mmlu": 3
+ },
+ "docs_in": 298282,
+ "kinds": {
+  "math": 4773,
+  "prose": 77788,
+  "technical": 494
+ },
+ "outputs": [
+  {
+   "file": "candidates/wikimedia/wikimedia-0000.parquet",
+   "rows": 83055,
+   "sha256": "2acbde738ddf4320f26207a65e04bb420ceedbf46b964bf99434b5656e08174f"
+  },
+  {
+   "file": "rejects/wikimedia/wikimedia-0000.parquet",
+   "rows": 215227,
+   "sha256": "3e3b436d0e2859167054e6b9e85a33586bcbbe54ac38fa29ccab0717af13b697"
+  },
+  {
+   "file": "signatures/wikimedia/wikimedia-0000.npy",
+   "rows": 83055,
+   "sha256": "b45d3fba77b5e1d599c3801e100699e5f0427730658d2a8da4f299137097a4fb"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "wikimedia-0000.json.gz",
+ "reasons": {
+  "contamination.mmlu": 3,
+  "privacy.pii.us_ssn": 1,
+  "privacy.secret.password_assignment": 1,
+  "quality.binary_or_base64": 1,
+  "quality.corrupt_decoding": 9,
+  "quality.math.alpha_words": 11,
+  "quality.math.bullet_lines": 12,
+  "quality.math.duplicate_lines": 18,
+  "quality.math.duplicate_ngrams": 49,
+  "quality.math.duplicate_paragraphs": 6,
+  "quality.math.ellipsis_lines": 2,
+  "quality.math.mean_word_length": 1,
+  "quality.math.not_english": 27,
+  "quality.math.stopwords": 24,
+  "quality.math.too_short": 102,
+  "quality.math.top_ngram_repetition": 95,
+  "quality.mojibake": 3,
+  "quality.prose.alpha_words": 1019,
+  "quality.prose.bullet_lines": 1806,
+  "quality.prose.duplicate_lines": 452,
+  "quality.prose.duplicate_ngrams": 3398,
+  "quality.prose.duplicate_paragraphs": 233,
+  "quality.prose.ellipsis_lines": 48,
+  "quality.prose.line_length": 1,
+  "quality.prose.mean_word_length": 138,
+  "quality.prose.non_latin_script": 60,
+  "quality.prose.not_english": 3846,
+  "quality.prose.stopwords": 1952,
+  "quality.prose.symbol_ratio": 521,
+  "quality.prose.too_long": 1,
+  "quality.prose.too_short": 7066,
+  "quality.prose.top_ngram_repetition": 2691,
+  "quality.spam_terms": 115,
+  "quality.technical.bullet_lines": 1,
+  "quality.technical.duplicate_lines": 1,
+  "quality.technical.duplicate_ngrams": 21,
+  "quality.technical.stopwords": 5,
+  "quality.technical.too_short": 12,
+  "quality.technical.top_ngram_repetition": 10,
+  "selection.namespace": 66604,
+  "selection.wiki": 134168
+ },
+ "redactions": {
+  "email": 92,
+  "home_path_user": 452,
+  "phone": 77
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 912.23,
+ "slow_documents": [],
+ "source_id": "wikimedia",
+ "stages": {
+  "candidate": 83055,
+  "contamination": 3,
+  "privacy": 2,
+  "quality": 14450,
+  "selection": 200772
+ },
+ "unit_id": "wikimedia-0000"
+}

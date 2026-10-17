@@ -1,0 +1,5 @@
+step 1 loss 10.3854 lr 0.0002 74193ms
+step 10 loss 8.0202 lr 0.000944 794ms
+step 20 loss 7.8042 lr 0.000466 795ms
+step 30 loss 7.6730 lr 0.000104 796ms
+{"steps_run": 30, "final_step": 30, "tokens_per_s_median": 82490.83274168476, "step_ms_median": 794.4640370551497, "peak_vram_gib": 16.743820667266846, "final_param_sha256": "d50dd956a56e0764606114cf078fd26dc41ad5bdb7e59f1015c765359b1785f5"}

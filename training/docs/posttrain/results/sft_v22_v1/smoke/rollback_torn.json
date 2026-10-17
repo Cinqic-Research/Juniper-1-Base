@@ -1,0 +1,23 @@
+{
+ "b_resumed_from_update": 16,
+ "b_stopped_on_signal_at": 16,
+ "batch_fingerprints_match": true,
+ "bitwise": true,
+ "fingerprints_and_losses_match": true,
+ "interruption_evidence_complete": true,
+ "run_a_final": "ckpt-000000030-76b3b910",
+ "run_b_final": "ckpt-000000030-42029d55",
+ "state_sha256_a": {
+  "model": "d0694a32e0ac7dc0c919ed95c5b175cd7b5a5e157f66144509b966c7088f419b",
+  "optim": "3dd6813d1a39e4be427eb265ed24e152be75f3845b1c29c917f9592df36c4110"
+ },
+ "state_sha256_b": {
+  "model": "d0694a32e0ac7dc0c919ed95c5b175cd7b5a5e157f66144509b966c7088f419b",
+  "optim": "3dd6813d1a39e4be427eb265ed24e152be75f3845b1c29c917f9592df36c4110"
+ },
+ "updates": [
+  30,
+  30
+ ],
+ "updates_compared_after_resume": 14
+}

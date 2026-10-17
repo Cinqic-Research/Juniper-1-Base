@@ -1,0 +1,102 @@
+{
+ "checks": {
+  "banned_ids_under_sampling": {
+   "banned_sampled": 0,
+   "seeds": 24,
+   "tokens": 1152
+  },
+  "byte_fallback_ids_returned": {
+   "decoded": "\ud83d\ude42",
+   "forced": [
+    304,
+    223,
+    217,
+    194
+   ],
+   "ok": true,
+   "returned": [
+    304,
+    223,
+    217,
+    194
+   ]
+  },
+  "forged_control_spellings": {
+   "prompts_with_forged_control_ids": 0,
+   "spellings": 64,
+   "turn_outcomes": {
+    "malformed": 64
+   }
+  },
+  "greedy_parity_vs_pytorch_fp32": {
+   "checkpoint": {
+    "checkpoint": "ckpt-000052034-336e5967",
+    "manifest_sha256": "a2f616c714bbad26a2dade682e71e80493ca70d6a4531430c64fdaedf5932e74",
+    "model_state_sha256": "1fd07c0d0c6c6b355460ab82ebe02530047b5682a4e6a41b9e4f0146323076e4",
+    "run_id": "j1-base-r2",
+    "stage": "base-tranche-1",
+    "updates": 52034
+   },
+   "identical_sequences": 48,
+   "median_first_divergence": 24.0,
+   "note": "F16 GGUF vs fp32 PyTorch; near-ties can flip greedy choices; tolerance gate is gguf_parity.py",
+   "prompts": 48
+  },
+  "kv_cache_continuation": {
+   "all_equal": true,
+   "cases": [
+    {
+     "cached_equals_full": true,
+     "generated": 24,
+     "split_at": 11
+    },
+    {
+     "cached_equals_full": true,
+     "generated": 24,
+     "split_at": 11
+    },
+    {
+     "cached_equals_full": true,
+     "generated": 24,
+     "split_at": 11
+    }
+   ]
+  },
+  "malformed_reported": {
+   "final_then_end": "malformed",
+   "no_channel": "malformed"
+  },
+  "regression_200_docs": {
+   "docs": 200,
+   "llama_text_tokenizer_identical": 0,
+   "note": "the client never calls /tokenize; it is called here only to show the unsafe path still diverges",
+   "token_id_path_evaluates_exact_prefix": 200
+  },
+  "self_test": {
+   "1": "limit:[19023, 7333]",
+   "10": "eos:[10]",
+   "11": "eos:[11]",
+   "9": "eos:[9]"
+  },
+  "text_roundtrip_and_prefix": {
+   "multi_turn_stop": "malformed",
+   "roundtrip": {
+    "   leading a": true,
+    "def f(x):\n\ti": true,
+    "na\u00efve caf\u00e9 \u2014": true,
+    "\u2028line\u2029para\u0085n": true,
+    "\uffff\ud83e\uddff\u0000nul": true
+   },
+   "serialization_prefix_stable": true
+  }
+ },
+ "gguf": "/home/cinqic/j1post/gguf/juniper1-base-v1-f16.gguf",
+ "paths_called_by_client": [
+  "/completion"
+ ],
+ "runtime": {
+  "build_info": "b11270-748d4225b",
+  "model_path": "/home/cinqic/j1post/gguf/juniper1-base-v1-f16.gguf"
+ },
+ "schema": "j1.a02-qualification.v1"
+}

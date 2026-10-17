@@ -1,0 +1,44 @@
+{
+ "gguf": "/home/cinqic/j1-audit-2026-10-12/gguf/j1-52034-Q8_0.gguf",
+ "gguf_bytes": 152372064,
+ "ngl": 99,
+ "rows": [
+  {
+   "prompt_tokens": 1,
+   "top1_llama": 334,
+   "top1_torch": 334,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.12192
+  },
+  {
+   "prompt_tokens": 7,
+   "top1_llama": 334,
+   "top1_torch": 334,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.06803
+  },
+  {
+   "prompt_tokens": 64,
+   "top1_llama": 1870,
+   "top1_torch": 1870,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.22183
+  },
+  {
+   "prompt_tokens": 300,
+   "top1_llama": 3373,
+   "top1_torch": 399,
+   "top1_agree": false,
+   "max_abs_logprob_diff": 0.27384
+  },
+  {
+   "prompt_tokens": 1000,
+   "top1_llama": 1850,
+   "top1_torch": 1850,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.07404
+  }
+ ],
+ "gate": "reported only",
+ "pass": null
+}

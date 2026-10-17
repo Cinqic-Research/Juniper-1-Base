@@ -1,0 +1,7 @@
+[ckpt] candidate /root/ckpt-requal/t3/ckpt-000000020-558b6916 step=20: ok
+[resume] restored /root/ckpt-requal/t3/ckpt-000000020-558b6916 at step 20 in 49.28s (lr=0.000600568)
+step 30 loss 7.8094 lr 0.000279 316ms
+[ckpt] step 30 -> /root/ckpt-requal/t3/ckpt-000000030-2f966f9d (1667.7 MiB, 6.38s)
+step 40 loss 7.5574 lr 9.4e-05 315ms
+[ckpt] step 40 -> /root/ckpt-requal/t3/ckpt-000000040-dbef4062 (1667.7 MiB, 6.77s)
+{"steps_run": 20, "final_step": 40, "tokens_per_s_median": 103928.50709079478, "step_ms_median": 315.29366597533226, "peak_vram_gib": 28.859490394592285, "final_param_sha256": "24d7a59a474c6d9a696e273495b99eb418ba9bcafde1008f130cde00c3b7ad5c"}

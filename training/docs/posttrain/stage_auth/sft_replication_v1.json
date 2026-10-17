@@ -1,0 +1,48 @@
+{
+ "schema": "j1.stage-authorization.v1",
+ "stage": "juniper1-sft-v1-replication",
+ "authority": "owner directive 2026-10-13 (Juniper 1 engineering execution directive, sections 2 and 6): two replication runs authorized",
+ "parameter_changing": true,
+ "initial_checkpoint": {
+  "freeze_id": "juniper1-base-v1",
+  "freeze_record_sha256": "ef79b324fff459c8ffce7ac2e1b1542960a254b8383a6e8b19fd20402e92ff55",
+  "checkpoint": "ckpt-000052034-336e5967",
+  "optimizer": "fresh AdamW"
+ },
+ "dataset": {
+  "version": "j1-sft-v1.2",
+  "manifest_sha256": "d3738c507580122c24cc948f9c40b79f7dd84b9a3cd31120d1fa283554dc6526",
+  "eval_bundle_sha256": "f96320150025d0250b5fbe7f5bc44b1f39b56ea836c8dfe842dbfc48c508eea1"
+ },
+ "tokenizer_sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+ "code": {
+  "train_commit": "b0a6845cfe4779cae1e02450e4a11668a882f0bf",
+  "trainer_package_sha256": "f13afbdf0a67d5d8fc8e1d01f2aaa68331155c53f1372e339a06a859e5c2df89",
+  "scorer": "Juniper-1-Data f0399ed"
+ },
+ "protocol": {
+  "path": "docs/posttrain/sft_replication_protocol_v1.json",
+  "sha256": "c5a9d7a9c48e3586b985624497c8d7e8fd96dc1bd9bd08b27bd39dfdf5ec44eb",
+  "parent": "docs/posttrain/sft_pilot_protocol_v3.json",
+  "parent_sha256": "8bda84ea766a2ea0c0fc8205af9401c7f134e3a55719dcde28d89dc91a54dc10"
+ },
+ "runs": {
+  "2": {
+   "run_id": "j1-sft-v1-rep-s2",
+   "contract_sha256": "5a8af04d601afcafe4c904afa84ff33a0b87bf20d239375f89108e1891ae23aa"
+  },
+  "3": {
+   "run_id": "j1-sft-v1-rep-s3",
+   "contract_sha256": "f9b44d8f764491f6f3d5bc912a652d6fb5e0764020e316def52465b9fc135ae7"
+  }
+ },
+ "acceptance": "protocol v3 decision rule per seed plus the replication consistency check; no promotion",
+ "budget": {
+  "runpod_usd": 0.0,
+  "hardware": "FLOWBOX RTX 2060 (local)",
+  "max_wall_hours": 4,
+  "storage": "runs on NVMe ~/j1post/runs (<=10 GB, 32 GB free at start); final candidates preserved to HDD juniper1-archive"
+ },
+ "rollback": "juniper1-base-v1 untouched; replication checkpoints are new identities and are never loaded as a base",
+ "authorized_utc": "2026-10-13"
+}

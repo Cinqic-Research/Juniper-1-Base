@@ -1,0 +1,551 @@
+# Juniper 1 source registry (j1-base v0.1).
+#
+# Every entry is validated against schemas/source.schema.json. Measured
+# quantities (bytes, documents, tokens, rejections) are produced by the
+# pipeline into manifests/ and reports/; they are never typed in here.
+#
+# processing.priority orders duplicate retention: when copies of the same text
+# arrive through several sources, the copy from the source with the lowest
+# priority number is kept. Explicitly licensed, attributable copies are
+# preferred over web-crawled copies.
+
+# ---------------------------------------------------------------- Cinqic ----
+
+[[source]]
+source_id = "cinqic-aaa-docs"
+source_name = "Cinqic AAA public documentation"
+family = "cinqic"
+description = "Cinqic-authored Markdown documentation from the public AAA repository, allowlisted by path; evaluation evidence, ledgers, frozen exams and model-identity text are excluded."
+risks = [
+  "Narrow, self-referential material; kept a small measured component.",
+  "Mutable product and model-identity facts are excluded by rule because they belong in post-training or App retrieval.",
+]
+
+[source.acquisition]
+mechanism = "git"
+repo = "Cinqic-Research/AAA"
+revision = "439f39bc3ae0109204c8313f4efe47ccb231ae93"
+adapter = "cinqic_git"
+[source.acquisition.files]
+include = ["*.md"]
+exclude = [
+  "docs/evidence/*", "results/*", "benchmarks/*", "research/*", "tests/*", "*/data/*",
+  "docs/issue_ledger.md", "docs/final_audit.md", "CHANGELOG.md", "docs/juniper1/*",
+  "*handoff*", "*confirmation*", "*freeze*", "*ledger*", "*audit*", "*review*",
+]
+
+[source.license]
+state = "APPROVED"
+identifiers = ["Apache-2.0"]
+evidence = ["https://github.com/Cinqic-Research/AAA/blob/439f39bc3ae0109204c8313f4efe47ccb231ae93/LICENSE"]
+attribution = "Cinqic-owned; no third-party attribution."
+training_use = "Permitted (Cinqic-owned, Apache-2.0)."
+redistribution = "Permitted under Apache-2.0."
+
+[source.processing]
+priority = 1
+kind = "prose"
+options = { deny_terms = ["juniper 1", "juniper lm", "gpt-oss", "juniper reference", "erudition model"] }
+
+[[source]]
+source_id = "cinqic-juniper-app-docs"
+source_name = "Juniper App public documentation"
+family = "cinqic"
+description = "Cinqic-authored Markdown documentation from the public Juniper-App repository; evaluation cases, qualification records and model-identity text are excluded."
+risks = ["Narrow, self-referential material; kept a small measured component."]
+
+[source.acquisition]
+mechanism = "git"
+repo = "Cinqic-Research/Juniper-App"
+revision = "11225ba7588eea14eef63d8b900c559fd2d5997b"
+adapter = "cinqic_git"
+[source.acquisition.files]
+include = ["*.md"]
+exclude = ["tests/*", "docs/qualification/*", "*eval*", "CHANGELOG.md", "*review*", "*audit*", "node_modules/*", "vendor/*", "third_party/*"]
+
+[source.license]
+state = "APPROVED"
+identifiers = ["Apache-2.0"]
+evidence = ["https://github.com/Cinqic-Research/Juniper-App/blob/11225ba7588eea14eef63d8b900c559fd2d5997b/LICENSE"]
+attribution = "Cinqic-owned; no third-party attribution."
+training_use = "Permitted (Cinqic-owned, Apache-2.0)."
+redistribution = "Permitted under Apache-2.0."
+
+[source.processing]
+priority = 2
+kind = "prose"
+options = { deny_terms = ["juniper 1", "juniper lm", "gpt-oss", "juniper reference", "erudition model"] }
+
+[[source]]
+source_id = "cinqic-calculator-docs"
+source_name = "Cinqic Calculator public documentation"
+family = "cinqic"
+description = "Cinqic-authored Markdown documentation from the public Cinqic-Calculator repository."
+risks = ["Very small; mostly product documentation."]
+
+[source.acquisition]
+mechanism = "git"
+repo = "Cinqic-Research/Cinqic-Calculator"
+revision = "15b765cf98d920efcc018f5bcbcb6af9e9f925c4"
+adapter = "cinqic_git"
+[source.acquisition.files]
+include = ["*.md"]
+exclude = ["tests/*", "CHANGELOG.md", "*review*", "*audit*", "node_modules/*", "vendor/*", "third_party/*"]
+
+[source.license]
+state = "APPROVED"
+identifiers = ["Apache-2.0"]
+evidence = ["https://github.com/Cinqic-Research/Cinqic-Calculator/blob/15b765cf98d920efcc018f5bcbcb6af9e9f925c4/LICENSE"]
+attribution = "Cinqic-owned; no third-party attribution."
+training_use = "Permitted (Cinqic-owned, Apache-2.0)."
+redistribution = "Permitted under Apache-2.0."
+
+[source.processing]
+priority = 3
+kind = "prose"
+
+# ------------------------------------------------------ open textbooks ----
+
+[[source]]
+source_id = "libretexts"
+source_name = "LibreTexts (Common Pile, filtered)"
+family = "textbooks"
+description = "Open-licensed LibreTexts textbook pages across STEM and other subjects, as packaged by the Common Pile v0.1 with per-page license metadata."
+risks = ["Some pages carry heavy LaTeX/MathJax markup.", "Per-page licenses vary; each document's license is checked on ingest."]
+
+[source.acquisition]
+mechanism = "huggingface"
+repo = "common-pile/libretexts_filtered"
+revision = "70388bca52b4a93515e14b1d56618fd7944988fd"
+adapter = "dolma_jsonl"
+[source.acquisition.files]
+include = ["*.json.gz"]
+
+[source.license]
+state = "APPROVED_WITH_ATTRIBUTION"
+identifiers = ["CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-3.0", "CC-BY-SA-3.0", "CC0-1.0", "Public-Domain"]
+evidence = [
+  "https://huggingface.co/datasets/common-pile/libretexts_filtered/tree/70388bca52b4a93515e14b1d56618fd7944988fd",
+  "https://arxiv.org/abs/2506.05209",
+]
+attribution = "Per document: author, title, URL and license are kept in provenance (metadata.author/title/url/license)."
+training_use = "PENDING OWNER DECISION: included documents may carry CC BY-SA terms; record training and any later weight-distribution treatment before use."
+redistribution = "Permitted under each document's license with attribution; ShareAlike documents must stay under CC BY-SA."
+per_document_license_field = "metadata.license"
+allowed_document_licenses = [
+  "Creative Commons - Attribution - *", "Creative Commons - Attribution Share-Alike - *",
+  "Creative Commons Zero*", "Creative Commons - Zero*", "Public Domain*", "GNU Free Documentation License*",
+]
+
+[source.processing]
+priority = 5
+# Site chrome measured on 2026-10-07 (lines repeated across thousands of pages);
+# only exact whole-line matches are removed, and the count is kept per document.
+options = { curated = true, drop_exact_lines = [
+  "-", "- Save as PDF", "- Last updated", "Skip to main content", "selected template will load here",
+  "This action is not available.",
+] }
+
+[[source]]
+source_id = "pressbooks"
+source_name = "Pressbooks open textbooks (Common Pile, filtered)"
+family = "textbooks"
+description = "Openly licensed textbook chapters from the Pressbooks directory, as packaged by the Common Pile v0.1 with per-document license metadata."
+risks = ["Per-document licenses vary; NC/ND licenses are rejected on ingest."]
+
+[source.acquisition]
+mechanism = "huggingface"
+repo = "common-pile/pressbooks_filtered"
+revision = "1a1d3b50d77f834370f8eb4c0d174668dd1676bb"
+adapter = "dolma_jsonl"
+[source.acquisition.files]
+include = ["*.json.gz"]
+
+[source.license]
+state = "APPROVED_WITH_ATTRIBUTION"
+identifiers = ["CC-BY-4.0", "CC-BY-SA-4.0", "CC0-1.0", "Public-Domain"]
+evidence = [
+  "https://huggingface.co/datasets/common-pile/pressbooks_filtered/tree/1a1d3b50d77f834370f8eb4c0d174668dd1676bb",
+  "https://arxiv.org/abs/2506.05209",
+]
+attribution = "Per document: author, title, URL and license are kept in provenance."
+training_use = "PENDING OWNER DECISION: included documents may carry CC BY-SA terms; record training and any later weight-distribution treatment before use."
+redistribution = "Permitted under each document's license with attribution; ShareAlike documents must stay under CC BY-SA."
+per_document_license_field = "metadata.license"
+allowed_document_licenses = [
+  "Creative Commons - Attribution - *", "Creative Commons - Attribution Share-Alike - *",
+  "Creative Commons Zero*", "Creative Commons - Zero*", "Public Domain*",
+]
+
+[source.processing]
+priority = 6
+options = { curated = true }
+
+[[source]]
+source_id = "oercommons"
+source_name = "OER Commons (Common Pile, filtered)"
+family = "textbooks"
+description = "Openly licensed open-educational-resource documents from OER Commons, as packaged by the Common Pile v0.1."
+risks = ["Small; heterogeneous formatting."]
+
+[source.acquisition]
+mechanism = "huggingface"
+repo = "common-pile/oercommons_filtered"
+revision = "506b6159dadcbc0dc67611cea024eedb04232fb2"
+adapter = "dolma_jsonl"
+[source.acquisition.files]
+include = ["*.json.gz"]
+
+[source.license]
+state = "APPROVED_WITH_ATTRIBUTION"
+identifiers = ["CC-BY-4.0", "CC-BY-SA-4.0", "CC0-1.0", "Public-Domain"]
+evidence = [
+  "https://huggingface.co/datasets/common-pile/oercommons_filtered/tree/506b6159dadcbc0dc67611cea024eedb04232fb2",
+  "https://arxiv.org/abs/2506.05209",
+]
+attribution = "Per document: author, title, URL and license are kept in provenance."
+training_use = "PENDING OWNER DECISION: included documents may carry CC BY-SA terms; record training and any later weight-distribution treatment before use."
+redistribution = "Permitted under each document's license with attribution; ShareAlike documents must stay under CC BY-SA."
+per_document_license_field = "metadata.license"
+allowed_document_licenses = [
+  "Creative Commons - Attribution - *", "Creative Commons - Attribution Share-Alike - *",
+  "Creative Commons Zero*", "Creative Commons - Zero*", "Public Domain*",
+]
+
+[source.processing]
+priority = 7
+options = { curated = true }
+
+[[source]]
+source_id = "python-peps"
+source_name = "Python Enhancement Proposals (Common Pile, filtered)"
+family = "documentation"
+description = "Python Enhancement Proposals, which are placed in the public domain or under CC0, as packaged by the Common Pile v0.1."
+risks = ["Very small."]
+
+[source.acquisition]
+mechanism = "huggingface"
+repo = "common-pile/python_enhancement_proposals_filtered"
+revision = "582170907dd303c207770fceacd38e6abf133edc"
+adapter = "dolma_jsonl"
+[source.acquisition.files]
+include = ["*.json.gz"]
+
+[source.license]
+state = "APPROVED"
+identifiers = ["Public-Domain", "CC0-1.0"]
+evidence = [
+  "https://peps.python.org/pep-0001/#pep-header-preamble",
+  "https://huggingface.co/datasets/common-pile/python_enhancement_proposals_filtered/tree/582170907dd303c207770fceacd38e6abf133edc",
+]
+attribution = "Not required; PEP number and URL kept in provenance."
+training_use = "Permitted (public domain / CC0)."
+redistribution = "Permitted."
+per_document_license_field = "metadata.license"
+allowed_document_licenses = ["Public Domain*", "Creative Commons Zero*", "Creative Commons - Zero*", "CC0*"]
+
+[source.processing]
+priority = 8
+kind = "technical"
+
+# ------------------------------------------------------------ reference ----
+
+[[source]]
+source_id = "wikimedia"
+source_name = "English Wikimedia projects (Common Pile, filtered)"
+family = "reference"
+description = "Main-namespace articles from English Wikipedia, Wikibooks, Wikiversity, Wikinews and Wikivoyage (2024 dumps) with per-article author lists, as packaged by the Common Pile v0.1."
+risks = [
+  "CC BY-SA ShareAlike applies to redistributed text; whether it reaches model weights is an open legal question recorded for owner review.",
+  "Wikisource and Wiktionary are excluded by rule (historical or fragmentary text).",
+]
+known_limitations = ["Plain-text extraction drops tables and some math markup."]
+
+[source.acquisition]
+mechanism = "huggingface"
+repo = "common-pile/wikimedia_filtered"
+revision = "0641bb84bd9b7162bcddf8be7836822161a9a342"
+adapter = "dolma_jsonl"
+[source.acquisition.files]
+include = ["*.json.gz"]
+
+[source.license]
+state = "APPROVED_WITH_ATTRIBUTION"
+identifiers = ["CC-BY-SA-4.0", "CC-BY-SA-3.0", "GFDL-1.3"]
+evidence = [
+  "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+  "https://huggingface.co/datasets/common-pile/wikimedia_filtered/tree/0641bb84bd9b7162bcddf8be7836822161a9a342",
+]
+attribution = "Per article: URL and author list kept in provenance (metadata.url, metadata.authors)."
+training_use = "PENDING OWNER DECISION: CC BY-SA training use and any later weight-distribution treatment remain unresolved."
+redistribution = "Text redistribution requires attribution and CC BY-SA ShareAlike; Cinqic does not redistribute corpus text."
+per_document_license_field = "metadata.license"
+allowed_document_licenses = ["Creative Commons - Attribution Share-Alike - *", "Creative Commons - Attribution - *", "Public Domain*"]
+
+[source.processing]
+priority = 10
+options = { allowed_wikis = ["wikipedia.com", "wikibooks.com", "wikiversity.com", "wikinews.com", "wikivoyage.com"], allowed_namespaces = ["0"] }
+
+# --------------------------------------------------------------- papers ----
+
+[[source]]
+source_id = "arxiv-papers"
+source_name = "arXiv papers with open licenses (Common Pile, filtered)"
+family = "papers"
+description = "Full-text arXiv papers whose per-paper license is CC BY, CC BY-SA, CC0 or public domain, converted to Markdown, as packaged by the Common Pile v0.1."
+risks = ["The default arXiv non-exclusive license is not open; only open per-paper licenses are admitted, checked per document on ingest."]
+known_limitations = ["LaTeX-to-Markdown conversion artifacts (footnote markers, broken tables)."]
+
+[source.acquisition]
+mechanism = "huggingface"
+repo = "common-pile/arxiv_papers_filtered"
+revision = "033cf7f53f9b348deec868c1a5a48484f3ee9e52"
+adapter = "dolma_jsonl"
+[source.acquisition.files]
+include = ["*.json.gz"]
+
+[source.license]
+state = "APPROVED_WITH_ATTRIBUTION"
+identifiers = ["CC-BY-4.0", "CC-BY-SA-4.0", "CC0-1.0", "Public-Domain"]
+evidence = ["https://info.arxiv.org/help/license/index.html", "https://arxiv.org/abs/2506.05209"]
+attribution = "Per paper: authors, arXiv URL and license kept in provenance."
+training_use = "PENDING OWNER DECISION: included papers may carry CC BY-SA terms; record training and any later weight-distribution treatment before use."
+redistribution = "Permitted under each paper's license with attribution; ShareAlike papers must stay under CC BY-SA."
+per_document_license_field = "metadata.license"
+allowed_document_licenses = [
+  "Public Domain*", "Creative Commons - Attribution - *", "Creative Commons - Attribution Share-Alike - *",
+  "Creative Commons Zero*", "Creative Commons - Zero*", "CC BY*", "CC0*",
+]
+
+[source.processing]
+priority = 15
+kind = "technical"
+
+# -------------------------------------------------------------- Q and A ----
+
+[[source]]
+source_id = "stackexchange"
+source_name = "Stack Exchange Q&A (Common Pile, filtered)"
+family = "qa"
+description = "Questions with answers and comments from English Stack Exchange sites (meta sites and non-English Stack Overflow sites excluded), with per-post author lists, as packaged by the Common Pile v0.1."
+risks = [
+  "CC BY-SA 2.5/3.0/4.0 by contribution date; ShareAlike applies to redistributed text.",
+  "Newer official dumps carry a no-LLM-training clause for those who accept them; this source derives from community dumps and Cinqic has not accepted that clause.",
+]
+
+[source.acquisition]
+mechanism = "huggingface"
+repo = "common-pile/stackexchange_filtered"
+revision = "c0ac7373830c688a43fc12d1988c4b19ccd884ab"
+adapter = "dolma_jsonl"
+[source.acquisition.files]
+include = ["stackexchange-dolma-*.json.gz"]
+# Files 0011-0041 hold Stack Overflow only; a keyed-hash subset keeps it from dominating.
+[[source.acquisition.files.hash_select]]
+patterns = ["stackexchange-dolma-001[1-9].json.gz", "stackexchange-dolma-00[23]?.json.gz", "stackexchange-dolma-004[01].json.gz"]
+namespace = "j1.select.v1.stackoverflow"
+count = 8
+
+[source.license]
+state = "APPROVED_WITH_ATTRIBUTION"
+identifiers = ["CC-BY-SA-4.0", "CC-BY-SA-3.0", "CC-BY-SA-2.5"]
+evidence = ["https://meta.stackexchange.com/help/licensing", "https://arxiv.org/abs/2506.05209"]
+attribution = "Per question: URL, site and author list kept in provenance."
+training_use = "PENDING OWNER DECISION: CC BY-SA training use and any later weight-distribution treatment remain unresolved."
+redistribution = "Text redistribution requires attribution and CC BY-SA ShareAlike; Cinqic does not redistribute corpus text."
+per_document_license_field = "metadata.license"
+allowed_document_licenses = ["Creative Commons - Attribution Share-Alike - *"]
+
+[source.processing]
+priority = 20
+kind = "technical"
+options = { excluded_sites = ["es.stackoverflow.com", "pt.stackoverflow.com", "ru.stackoverflow.com", "ja.stackoverflow.com", "meta.stackexchange.com", "meta.stackoverflow.com"], exclude_meta_sites = true }
+
+# ----------------------------------------------------------------- code ----
+
+[[source]]
+source_id = "stackv2-edu"
+source_name = "Stack v2 educational code, Blue Oak permissive (Common Pile, filtered)"
+family = "code"
+description = "Educational-classifier-scored source files from The Stack v2 restricted to repositories whose detected licenses are all Blue Oak Council permissive, with per-file repository, path and license metadata, as packaged by the Common Pile v0.1."
+risks = [
+  "Permissive licenses require preserving copyright notices on redistribution; repo, path and license are kept in provenance and Cinqic does not redistribute corpus code.",
+  "Software Heritage asks LLM builders to honor its LLM principles and opt-outs; recorded for owner review.",
+  "The pinned Common Pile release is dated June 2025; public materials reviewed do not establish whether it incorporates later Stack v2 opt-outs or whether the separate BigCode bulk-access agreement applies to this derivative.",
+]
+known_limitations = ["License detection is repository-level and automated (ScanCode); file-level exceptions can be missed."]
+
+[source.acquisition]
+mechanism = "huggingface"
+repo = "common-pile/stackv2_edu_filtered"
+revision = "c354dbe88469a1153e97c6a63ac50591849654de"
+adapter = "dolma_jsonl"
+[source.acquisition.files]
+# Files are grouped by language (first record of each file inspected 2026-10-07):
+# 0000-0017 Markdown, 0018-0019 C, 0020-0027 C++, 0034-0037 Go, 0038-0049 Java,
+# 0050-0064 JavaScript, 0073-0084 Python, 0086 Rust, 0087-0088 Shell, 0091-0094 TypeScript.
+# C#, PHP, Ruby and Swift files are not acquired in v0.1. Python gets the largest share.
+include = [
+  "stack-edu-000?.json.gz",
+  "stack-edu-001[0-7].json.gz",
+  "stack-edu-001[89].json.gz",
+  "stack-edu-002[0-7].json.gz",
+  "stack-edu-003[4-7].json.gz",
+  "stack-edu-003[89].json.gz",
+  "stack-edu-004?.json.gz",
+  "stack-edu-005?.json.gz",
+  "stack-edu-006[0-4].json.gz",
+  "stack-edu-007[3-9].json.gz",
+  "stack-edu-008[0-4].json.gz",
+  "stack-edu-008[78].json.gz",
+  "stack-edu-009[1-4].json.gz",
+  "stack-edu-0086.json.gz",
+]
+
+[[source.acquisition.files.hash_select]]
+patterns = ["stack-edu-000?.json.gz", "stack-edu-001[0-7].json.gz"]
+namespace = "j1.select.v1.markdown"
+count = 2
+
+[[source.acquisition.files.hash_select]]
+patterns = ["stack-edu-001[89].json.gz"]
+namespace = "j1.select.v1.c"
+count = 1
+
+[[source.acquisition.files.hash_select]]
+patterns = ["stack-edu-002[0-7].json.gz"]
+namespace = "j1.select.v1.cpp"
+count = 1
+
+[[source.acquisition.files.hash_select]]
+patterns = ["stack-edu-003[4-7].json.gz"]
+namespace = "j1.select.v1.go"
+count = 1
+
+[[source.acquisition.files.hash_select]]
+patterns = ["stack-edu-003[89].json.gz", "stack-edu-004?.json.gz"]
+namespace = "j1.select.v1.java"
+count = 1
+
+[[source.acquisition.files.hash_select]]
+patterns = ["stack-edu-005?.json.gz", "stack-edu-006[0-4].json.gz"]
+namespace = "j1.select.v1.javascript"
+count = 1
+
+[[source.acquisition.files.hash_select]]
+patterns = ["stack-edu-007[3-9].json.gz", "stack-edu-008[0-4].json.gz"]
+namespace = "j1.select.v1.python"
+count = 4
+
+[[source.acquisition.files.hash_select]]
+patterns = ["stack-edu-008[78].json.gz"]
+namespace = "j1.select.v1.shell"
+count = 1
+
+[[source.acquisition.files.hash_select]]
+patterns = ["stack-edu-009[1-4].json.gz"]
+namespace = "j1.select.v1.typescript"
+count = 1
+
+[source.license]
+state = "APPROVED_WITH_ATTRIBUTION"
+identifiers = ["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC", "Unlicense", "0BSD", "Zlib", "other Blue Oak permissive"]
+evidence = [
+  "https://blueoakcouncil.org/list",
+  "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/tree/c354dbe88469a1153e97c6a63ac50591849654de",
+  "https://arxiv.org/abs/2506.05209",
+]
+attribution = "Per file: repository, path, blob id and detected licenses kept in provenance."
+training_use = "PENDING OWNER DECISION: confirm the Common Pile source chain, per-file license detection, Software Heritage terms and opt-outs before training or distribution decisions."
+redistribution = "Permitted with license and copyright notices; Cinqic does not redistribute corpus code."
+per_document_license_field = "metadata.license_type"
+allowed_document_licenses = ["permissive"]
+
+[source.processing]
+priority = 25
+kind = "code"
+# Markdown files are prose with code: judged by the technical-text rules, not code-file rules.
+# min_int_score = 3 is the published Stack-Edu cut (SmolLM2, arXiv:2502.02737); this release
+# also carries score-2 files, measured at 54-75% of code bytes on 2026-10-07.
+options = { text_languages = ["Markdown"], min_int_score = 3 }
+
+# ------------------------------------------------------- web and math ----
+
+[[source]]
+source_id = "finemath-4plus"
+source_name = "FineMath 4+"
+family = "math"
+description = "Mathematical web pages from Common Crawl re-extracted with LaTeX preserved and kept at math-classifier score 4 or higher (HuggingFaceTB/finemath, finemath-4plus config)."
+risks = [
+  "Underlying pages remain under their authors' copyright; use relies on the ODC-By grant for the compilation, the Common Crawl Terms of Use and the training-use position recorded for owner review.",
+  "Common Crawl's Terms of Use include an indemnity covering claims tied to AI/ML use, including training; implications for this use require owner and legal review.",
+  "Upstream deduplicates with single-band MinHash only and decontaminates against GSM8K, MATH, MMLU and ARC; Juniper's own global dedup and decontamination are applied again.",
+]
+
+[source.acquisition]
+mechanism = "huggingface"
+repo = "HuggingFaceTB/finemath"
+revision = "e92b25a616738fe95dc186b64dfb19f9c8525594"
+adapter = "hf_parquet"
+[source.acquisition.files]
+include = ["finemath-4plus/*.parquet"]
+
+[source.license]
+state = "TRAINING_ONLY_NO_REDISTRIBUTION"
+identifiers = ["ODC-By-1.0", "LicenseRef-CommonCrawl-ToU"]
+evidence = [
+  "https://huggingface.co/datasets/HuggingFaceTB/finemath/blob/e92b25a616738fe95dc186b64dfb19f9c8525594/README.md",
+  "https://opendatacommons.org/licenses/by/1-0/",
+  "https://commoncrawl.org/terms-of-use",
+]
+attribution = "Attribute HuggingFaceTB/finemath (ODC-By) in data notices; page URL kept per document."
+training_use = "PENDING OWNER DECISION: training use of FineMath-derived pages under the recorded ODC-By compilation and Common Crawl terms; page-level copyright remains with authors."
+redistribution = "Cinqic does not redistribute this text. Releasing Juniper 1 weights grants no rights to it."
+
+[source.processing]
+priority = 30
+kind = "math"
+options = { text_column = "text", key_column = "url", meta_columns = ["url", "fetch_time", "warc_filename", "warc_record_offset", "score", "int_score", "crawl", "language_score"] }
+
+[[source]]
+source_id = "fineweb-edu-dedup"
+source_name = "FineWeb-Edu (SmolLM-Corpus deduplicated)"
+family = "web"
+description = "Educational English web pages from Common Crawl (FineWeb-Edu, classifier score 3 or higher) after SmolLM-Corpus deduplication; a keyed-hash subset of 11 of the 234 shards."
+risks = [
+  "Underlying pages remain under their authors' copyright; use relies on the ODC-By grant for the compilation, the Common Crawl Terms of Use and the training-use position recorded for owner review.",
+  "Common Crawl's Terms of Use include an indemnity covering claims tied to AI/ML use, including training; implications for this use require owner and legal review.",
+  "Upstream anonymized e-mail and IP addresses; Juniper's privacy filter runs again.",
+  "Whether the SmolLM-Corpus deduplication is global is not documented; Juniper applies its own global dedup.",
+]
+known_limitations = ["Little code; edu-classifier threshold under-represents commonsense narrative text."]
+
+[source.acquisition]
+mechanism = "huggingface"
+repo = "HuggingFaceTB/smollm-corpus"
+revision = "3ba9d605774198c5868892d7a8deda78031a781f"
+adapter = "hf_parquet"
+[source.acquisition.files]
+include = ["fineweb-edu-dedup/train-*.parquet"]
+
+[[source.acquisition.files.hash_select]]
+patterns = ["fineweb-edu-dedup/train-*.parquet"]
+namespace = "j1.select.v1.fineweb-edu-dedup"
+count = 11
+
+[source.license]
+state = "TRAINING_ONLY_NO_REDISTRIBUTION"
+identifiers = ["ODC-By-1.0", "LicenseRef-CommonCrawl-ToU"]
+evidence = [
+  "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/blob/3ba9d605774198c5868892d7a8deda78031a781f/README.md",
+  "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu",
+  "https://opendatacommons.org/licenses/by/1-0/",
+  "https://commoncrawl.org/terms-of-use",
+]
+attribution = "Attribute HuggingFaceTB/smollm-corpus and HuggingFaceFW/fineweb-edu (ODC-By) in data notices; page URL kept per document."
+training_use = "PENDING OWNER DECISION: training use of FineWeb-Edu-derived pages under the recorded ODC-By compilation and Common Crawl terms; page-level copyright remains with authors."
+redistribution = "Cinqic does not redistribute this text. Releasing Juniper 1 weights grants no rights to it."
+
+[source.processing]
+priority = 40
+options = { text_column = "text", key_column = "id", meta_columns = ["metadata"] }

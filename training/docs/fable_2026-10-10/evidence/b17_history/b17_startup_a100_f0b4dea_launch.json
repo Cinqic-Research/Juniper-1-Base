@@ -1,0 +1,168 @@
+{
+ "schema": "j1.b17-startup-evidence.v1",
+ "outcome": "STARTUP_QUALIFIED",
+ "protocol": {
+  "path": "docs/fable_2026-10-10/b17_measurement_protocol.json",
+  "sha256": "beb2adab5e059b8d7d14c5c37c6f47e7efc0581f61a7dd0515dca92f1d8a7c67"
+ },
+ "code": {
+  "train_commit": "f0b4dea81fb6003ae15ace0f9dbe3f5ecf780d10",
+  "package_sha256": "81a3a277082541068e5a8f61c58749a4673067106d06e7de7451d09380204e99",
+  "summary_git_revision": "f0b4dea81fb6003ae15ace0f9dbe3f5ecf780d10"
+ },
+ "profile": {
+  "compile": false,
+  "name": "eager"
+ },
+ "host": {
+  "device_name": "NVIDIA A100-SXM4-80GB",
+  "deps": {
+   "python": "3.12.3",
+   "torch": "2.8.0+cu128",
+   "numpy": "2.1.2",
+   "cuda_runtime": "12.8",
+   "cudnn": 91002,
+   "device": "NVIDIA A100-SXM4-80GB"
+  }
+ },
+ "cold_process": true,
+ "cache_note": "first trainer process after the pod restart at 2026-10-11T11:57:49Z; no process read the launch inputs between the restart and this run (session prep only armed the controller and built the venv; bootstrap data verification runs after it)",
+ "elapsed_startup_s": 13.03,
+ "limit_s": 300,
+ "within_limit": true,
+ "trainer_init_to_first_update_s": 11.361,
+ "process_elapsed_at_trainer_init_s": 1.67,
+ "startup_timing": {
+  "status_start_utc": "2026-10-11T12:06:22Z",
+  "status_end_utc": "2026-10-11T12:06:49Z",
+  "process_elapsed_at_trainer_init_s": 1.67,
+  "process_elapsed_s": 13.03
+ },
+ "phases": [
+  {
+   "phase": "model-init",
+   "seconds": 2.005,
+   "end_since_init_s": 2.005,
+   "n_params": 142771456,
+   "device": "cuda"
+  },
+  {
+   "phase": "data-verify-load",
+   "seconds": 1.743,
+   "end_since_init_s": 3.748,
+   "files": 7,
+   "tokens": 3410114054,
+   "bytes_read": 6820228108,
+   "bytes_hashed": 6820228108,
+   "verify": true,
+   "preload": true
+  },
+  {
+   "phase": "exact-epoch-truncate",
+   "seconds": 0.001,
+   "end_since_init_s": 3.749,
+   "windows": 1665088,
+   "limit_tokens": 3410100225
+  },
+  {
+   "phase": "exact-epoch-accounting",
+   "seconds": 1.749,
+   "end_since_init_s": 5.498,
+   "target_tokens": 3410100224,
+   "eos_targets": 2954177,
+   "target_bytes": 13076945162,
+   "tokens_histogrammed": 3410100224
+  },
+  {
+   "phase": "optimizer-init",
+   "seconds": 0.77,
+   "end_since_init_s": 6.268,
+   "fused": true
+  },
+  {
+   "phase": "clock-check",
+   "seconds": 0.014,
+   "end_since_init_s": 6.282
+  },
+  {
+   "phase": "init-checkpoint",
+   "seconds": 3.723,
+   "end_since_init_s": 10.005,
+   "trainer_step": 0
+  },
+  {
+   "phase": "first-update",
+   "seconds": 1.355,
+   "end_since_init_s": 11.36,
+   "trainer_step": 1,
+   "step_s": 1.348
+  }
+ ],
+ "counters": {
+  "bytes_read": 6820228108,
+  "bytes_hashed": 6820228108,
+  "tokens_histogrammed": 3410100224,
+  "files_loaded": 7
+ },
+ "peak_rss_gib": 7.816,
+ "first_step_s": 1.3478034036234021,
+ "update_1": {
+  "loss": 10.256263732910156,
+  "lr": 3.3942e-06,
+  "grad_norm": 11.288265228271484,
+  "useful_tokens": 65536,
+  "batch_fp": "1e8ac26a6d49126a",
+  "step_s": 1.3478034036234021
+ },
+ "identities": {
+  "data_identity": {
+   "kind": "token_stream_v1",
+   "shards_json_sha256": "1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef",
+   "tokenizer_json_sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+   "build": "j1-base-v0.2.2",
+   "split": "train",
+   "limit_tokens": 3410100225,
+   "seq_len": 2048,
+   "batch_size": 16,
+   "seed": 1,
+   "shuffle": true,
+   "packing": "EOS-separated documents; cross-document attention allowed; all positions trained",
+   "preload": true
+  },
+  "preset": "j1-wide-20x768",
+  "limit_tokens": 3410100225,
+  "consumed": {
+   "policy": "one epoch over every window of the truncated prefix; all positions trained; EOS targets included",
+   "prefix_stream_tokens": 3410114054,
+   "limit_tokens": 3410100225,
+   "windows": 1665088,
+   "target_tokens": 3410100224,
+   "dropped_tail_tokens": 13829,
+   "eos_targets": 2954177,
+   "target_bytes": 13076945162,
+   "dropped_tail_bytes": 47657,
+   "prefix_bytes": 13076992822,
+   "documents_in_prefix": 2954191,
+   "documents_fully_consumed": 2954177,
+   "documents_partially_consumed": 1
+  }
+ },
+ "init_checkpoint": {
+  "path": "/vol/ckpt-qual/b17-qual-r4/ckpt-000000000-801ac583",
+  "verified": true,
+  "detail": "ok",
+  "manifest_sha256": "73840b9b9fb57c35938a99e6a25c5be3337052d2cac5276e6bfd73933b00b537"
+ },
+ "status_file": {
+  "name": "b17-qual-r4",
+  "args": "--preset j1-wide-20x768 --seq-len 2048 --micro-bs 16 --accum 2 --steps 52034 --limit-tokens 3410100225 --exact-epoch --lr 0.0016971 --warmup 500 --min-lr-ratio 0.1 --wd 0.1 --wd-policy matrices --clip 1.0 --opt fused --precision bf16 --no-compile --data tokens:/vol/data/v022-24k-full --tokenizer /vol/data/tok/tokenizer.json --preload-data --verify-data --eval-set full-split --seed 1 --stage-id b17-qual --stage-dir /root/j1stage --ckpt-every-steps 500 --ckpt-every-seconds 900 --warmup-steps-excluded 10 --stop-at 1 --eval-every 0 --run-id b17-qual-r4 --ckpt-root /vol/ckpt-qual",
+  "start_utc": "2026-10-11T12:06:22Z",
+  "end_utc": "2026-10-11T12:06:49Z",
+  "exit_code": 0
+ },
+ "inputs_sha256": {
+  "summary": "e274987e83901f85886e01623440def4132fe328f27920925aa2a9345964feb5",
+  "metrics": "d8f5a86557e39545457982193d14badced90cb2b24a1ce19f009b2e5eb0e2700"
+ },
+ "problems": []
+}

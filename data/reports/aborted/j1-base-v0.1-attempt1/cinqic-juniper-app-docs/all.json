@@ -1,0 +1,62 @@
+{
+ "build_identity": "e20847a1edd8452571c279942291f4a2fd64a33fed858a40f2d3994c3106abd9",
+ "bytes_by_stage": {
+  "candidate": 124614,
+  "quality": 6905,
+  "selection": 42044
+ },
+ "bytes_in": 173563,
+ "chars_in": 173185,
+ "contamination_benchmarks": {},
+ "docs_in": 67,
+ "kinds": {
+  "prose": 52
+ },
+ "outputs": [
+  {
+   "file": "candidates/cinqic-juniper-app-docs/all.parquet",
+   "rows": 52,
+   "sha256": "96b1ce95d90685d4890832ffbffffaf8ede0af42e5d3d28e99007398ab0ca15b"
+  },
+  {
+   "file": "rejects/cinqic-juniper-app-docs/all.parquet",
+   "rows": 15,
+   "sha256": "958787c1d3ec7dec049b623cb68886682898fe19f28c0b51a160dd954c6066eb"
+  },
+  {
+   "file": "signatures/cinqic-juniper-app-docs/all.npy",
+   "rows": 52,
+   "sha256": "2ec5c3dbcc29deb5a646da5369a589debabce2e225fd2bb105f25787146e37f0"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "",
+ "reasons": {
+  "quality.prose.duplicate_lines": 1,
+  "quality.prose.duplicate_ngrams": 1,
+  "quality.prose.duplicate_paragraphs": 1,
+  "quality.prose.not_english": 6,
+  "quality.prose.stopwords": 1,
+  "quality.prose.symbol_ratio": 3,
+  "quality.prose.too_short": 2,
+  "quality.prose.top_ngram_repetition": 1,
+  "selection.deny_term": 5
+ },
+ "redactions": {
+  "email": 1
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 3.77,
+ "slow_documents": [],
+ "source_id": "cinqic-juniper-app-docs",
+ "stages": {
+  "candidate": 52,
+  "quality": 10,
+  "selection": 5
+ },
+ "unit_id": "all"
+}

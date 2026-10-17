@@ -1,0 +1,102 @@
+{
+ "build_identity": "4f0acb7dd606888b832d09c5ada9c37c3c3f29054ee2a5c67cde713328b763ff",
+ "bytes_by_stage": {
+  "candidate": 2944717086,
+  "contamination": 442095,
+  "privacy": 12088770,
+  "quality": 102583325,
+  "selection": 728587
+ },
+ "bytes_in": 3060559863,
+ "chars_in": 3048372363,
+ "contamination_benchmarks": {
+  "canary:26b5c67b": 7,
+  "humaneval": 20,
+  "humanevalplus": 18,
+  "juniperbench-code": 14,
+  "mbpp": 31,
+  "mbppplus": 5,
+  "mmlu": 1
+ },
+ "docs_in": 640451,
+ "kinds": {
+  "code": 627410
+ },
+ "outputs": [
+  {
+   "file": "candidates/stackv2-edu/stack-edu-0077.parquet",
+   "rows": 627410,
+   "sha256": "89f235c17caf9112e1590f650fefac46a83f1e92f7a535210e5b2a261dd186ea"
+  },
+  {
+   "file": "rejects/stackv2-edu/stack-edu-0077.parquet",
+   "rows": 13041,
+   "sha256": "fa99e0ed3e9a2e8cc3fd4ff9e7d98f87da4a8c1ad13ccee3832a9a3600cf07fc"
+  },
+  {
+   "file": "signatures/stackv2-edu/stack-edu-0077.npy",
+   "rows": 627410,
+   "sha256": "5209be73575705a086266a6a6a57e79f01cba939bc17fb0e88670d4967a686ee"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "stack-edu-0077.json.gz",
+ "reasons": {
+  "contamination.canary": 7,
+  "contamination.humaneval": 20,
+  "contamination.humanevalplus": 18,
+  "contamination.juniperbench-code": 14,
+  "contamination.mbpp": 31,
+  "contamination.mbppplus": 5,
+  "contamination.mmlu": 1,
+  "privacy.pii.payment_card": 37,
+  "privacy.pii.us_ssn": 4,
+  "privacy.secret.auth_header": 7,
+  "privacy.secret.aws_access_key": 29,
+  "privacy.secret.aws_secret_key": 17,
+  "privacy.secret.credential_url": 383,
+  "privacy.secret.github_token": 2,
+  "privacy.secret.google_api_key": 193,
+  "privacy.secret.jwt": 52,
+  "privacy.secret.password_assignment": 1345,
+  "privacy.secret.private_key": 51,
+  "privacy.secret.sendgrid_key": 1,
+  "privacy.secret.slack_token": 24,
+  "privacy.secret.slack_webhook": 7,
+  "privacy.secret.twilio_key": 4,
+  "quality.binary_or_base64": 118,
+  "quality.code.data_heavy": 210,
+  "quality.code.generated": 2501,
+  "quality.code.long_lines": 207,
+  "quality.code.non_latin_script": 2728,
+  "quality.code.too_large": 18,
+  "quality.code.too_short": 953,
+  "quality.code.vendored_or_minified": 2438,
+  "quality.corrupt_decoding": 30,
+  "quality.mojibake": 10,
+  "quality.spam_terms": 1782,
+  "selection.generated_code": 16,
+  "selection.vendored_code": 113
+ },
+ "redactions": {
+  "email": 43030,
+  "home_path_user": 24327,
+  "ipv4": 4599
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 1938.37,
+ "slow_documents": [],
+ "source_id": "stackv2-edu",
+ "stages": {
+  "candidate": 627410,
+  "contamination": 75,
+  "privacy": 2023,
+  "quality": 10814,
+  "selection": 129
+ },
+ "unit_id": "stack-edu-0077"
+}

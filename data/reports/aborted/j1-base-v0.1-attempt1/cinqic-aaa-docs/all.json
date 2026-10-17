@@ -1,0 +1,66 @@
+{
+ "build_identity": "e20847a1edd8452571c279942291f4a2fd64a33fed858a40f2d3994c3106abd9",
+ "bytes_by_stage": {
+  "candidate": 504773,
+  "contamination": 5239,
+  "quality": 121328,
+  "selection": 46057
+ },
+ "bytes_in": 677397,
+ "chars_in": 676329,
+ "contamination_benchmarks": {
+  "aaa-exams": 1
+ },
+ "docs_in": 64,
+ "kinds": {
+  "prose": 52
+ },
+ "outputs": [
+  {
+   "file": "candidates/cinqic-aaa-docs/all.parquet",
+   "rows": 52,
+   "sha256": "e548e35daccbdf61f67efef9e9254eccf0df872138d863da94aecab9e8e0ff7d"
+  },
+  {
+   "file": "rejects/cinqic-aaa-docs/all.parquet",
+   "rows": 12,
+   "sha256": "a6b7e43e7b75517b047178127538590613f439a19f5b11a4717459d1bfaf6654"
+  },
+  {
+   "file": "signatures/cinqic-aaa-docs/all.npy",
+   "rows": 52,
+   "sha256": "0bc5921747c29ed00441f919105df2fbce0299ff58721a80516ecb3095241fee"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "",
+ "reasons": {
+  "contamination.aaa-exams": 1,
+  "quality.prose.alpha_words": 5,
+  "quality.prose.duplicate_lines": 1,
+  "quality.prose.duplicate_ngrams": 3,
+  "quality.prose.not_english": 8,
+  "quality.prose.stopwords": 2,
+  "quality.prose.too_short": 2,
+  "quality.prose.top_ngram_repetition": 2,
+  "selection.deny_term": 2
+ },
+ "redactions": {
+  "ipv4": 3
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 3.88,
+ "slow_documents": [],
+ "source_id": "cinqic-aaa-docs",
+ "stages": {
+  "candidate": 52,
+  "contamination": 1,
+  "quality": 9,
+  "selection": 2
+ },
+ "unit_id": "all"
+}

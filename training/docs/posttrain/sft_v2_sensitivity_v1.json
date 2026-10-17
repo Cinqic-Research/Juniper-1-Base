@@ -1,0 +1,3913 @@
+{
+ "counts": {
+  "if.compose_heldout:functional_trained": 48,
+  "if.compose_heldout:unseen_function": 252,
+  "if.paraphrase:clean": 87,
+  "if.paraphrase:frame_only": 195,
+  "if.paraphrase:same_op_near": 63,
+  "if.paraphrase:sibling_near": 55
+ },
+ "items": {
+  "020e2eabfee73e536228d8d3e3de9484": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "1"
+  },
+  "022a309a1e896fed32140d8ded43061e": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>first"
+  },
+  "028751eb096739014c07f6bfaf728ef9": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "3"
+  },
+  "02cdc97635db9426180d7223f62a6bfe": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>longest"
+  },
+  "02dcd51ae7176ffe787b67519d55feea": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "title>lower"
+  },
+  "0360b1079cefdcff58ae425f94407540": {
+   "class": "frame_only",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "4"
+  },
+  "0370fb8314b6c5c6d3100209e274915b": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "5"
+  },
+  "03a9e8a43bd131f79e1c180d68dc449b": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "5"
+  },
+  "0472a727b5742c7c4225a81382142bde": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "3"
+  },
+  "04d76bf4131ccf0b648d25cedf0732c1": {
+   "class": "clean",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "6"
+  },
+  "063c73fd666339fce8e3e184f2e7c773": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>upper"
+  },
+  "06960afce20980ebb940521ac0b8e328": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>nth"
+  },
+  "06b23edc8e613d9a6783fc376e730fb6": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "0"
+  },
+  "07011c206c69365bb6969c00ec05c531": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "2"
+  },
+  "07018ec4ad1fdb04fc50ed44783482be": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>upper"
+  },
+  "0758bcdce83065b312d78e51cca4f942": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "076e755fec6f912a22a9f860feed338e": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>first"
+  },
+  "078e66c805ca039f2c331c0730121bd9": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "last_k>sort"
+  },
+  "07c8c51c40b983d820801c67186150fe": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "2"
+  },
+  "081717901a9f0fc09140d85ebfd896ce": {
+   "class": "clean",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "2"
+  },
+  "08aa9450aaaad16aa8b46f0470ecf0dc": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "3"
+  },
+  "08c38e4b8174e42324db3032381c41dd": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>sort"
+  },
+  "08cb151df3ec87fa844679bce9f93b2a": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "0"
+  },
+  "091b70596fbb354c454c8a75995b2e10": {
+   "class": "clean",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "2"
+  },
+  "095c02743122ee722476671dcf005483": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "099e9a7f64c6faaa570522b1b3161b63": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>sort"
+  },
+  "09ba1d57dd4a24ab8afdca7a77b1492a": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "0a00882503e4fe82e7e5e087743dd90c": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>last"
+  },
+  "0a11a44ae128638356795a51c156a5c3": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>first_k"
+  },
+  "0a1bcec7a061d92f034835ec583fc5cb": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>reverse"
+  },
+  "0a91225f8e78293d6eb675a6fa2ff224": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "2"
+  },
+  "0ab212b6a4bdc3caf9ed2163c20f7009": {
+   "class": "frame_only",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "0"
+  },
+  "0ab97def9335aaae1320af1c3cadd37e": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "0"
+  },
+  "0bcad10d33de2e77676b8a2463c83da4": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>first_k"
+  },
+  "0c394e81620d01f4a3f97f0f4d9d0d7d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>longest"
+  },
+  "0c474d490bea9721e786fd3c8acafc92": {
+   "class": "frame_only",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "1"
+  },
+  "0c670444ac2162cae845ca0ffa14b3b2": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "3"
+  },
+  "0cae8c7de6945798bccca70c02eeaeca": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>reverse"
+  },
+  "0d354e2fd72fd572fc110e9aadfed674": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_last"
+  },
+  "0dd567541aa666958c9bd77756937d09": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "4"
+  },
+  "0e06f04cf20a74a02daee83add37c057": {
+   "class": "clean",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "4"
+  },
+  "0e4bf32346d6177890c88bc30fd33c6f": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>drop_first"
+  },
+  "0f4ebf3475e92e95c3461feb0ca7eaad": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "longer_than>replace"
+  },
+  "0fb674367ffe8ac9cd96bfe4d442a904": {
+   "class": "frame_only",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "6"
+  },
+  "10e72d952c1c068847337c6974ec8c06": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last"
+  },
+  "11edd7b547c6e9dcc36b8a336fead9fc": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_first"
+  },
+  "120155799fd10b0a663e6ec7a0f3b8f5": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "3"
+  },
+  "12cab0224cc3c69856b88f53682769f2": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>replace"
+  },
+  "12fcba2d7a0525aeafb981bd51f17b70": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "last_k>reverse"
+  },
+  "134ec90c18fdc9c6fe244fbc9ccafe03": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "6"
+  },
+  "1371439ac4825dea0988f20008762ec1": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>replace"
+  },
+  "13b45b7f5c0407d7c48977d2f33ba398": {
+   "class": "frame_only",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "3"
+  },
+  "13b64f7b39f4f774ce091de4e2c56004": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>replace"
+  },
+  "144f228022f7d2011dc6a97d35f65a84": {
+   "class": "clean",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "2"
+  },
+  "14b558d554d5dcfc81d1ba1ff5219d84": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>last"
+  },
+  "15fc0d8042590ed2f6994cc95c62702a": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>sort"
+  },
+  "16116718fd7d04e577dd532189ded41e": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>title"
+  },
+  "166f3eee53ee86ea62f0633d7b59ea4a": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "7"
+  },
+  "170508fc5bce3feb34759bc9ebfd4601": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "5"
+  },
+  "177856e484e3f1f1c88fe69f3ac43037": {
+   "class": "clean",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "2"
+  },
+  "17b8d41104ee87cd51bf73470d27bea6": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>replace"
+  },
+  "17cc77647a22466f44c9b6d42d34902d": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "5"
+  },
+  "17d74762f8b9f3a4a49d1494adc13cee": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>longer_than"
+  },
+  "185ab03b654b1320c4f1dc291358d676": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "6"
+  },
+  "18d83981187f9ebaffc0aad1006492a6": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "3"
+  },
+  "191db79656afeabf105847bf80c20c53": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>replace"
+  },
+  "1aa24a977603aba44aa632847b30e0ce": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "2"
+  },
+  "1aff29af7cab5644646ec3e0e2c42c85": {
+   "class": "frame_only",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "0"
+  },
+  "1b3e59d7dc10fad2b20a2206d3039f4f": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "3"
+  },
+  "1b45c0f2edb9e737799c241ce5a7f6f5": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "1b6112242be8b08fa2f07065dad56b1f": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "5"
+  },
+  "1b8dc5c703ebf576d85ccba55a12d81f": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>first_k"
+  },
+  "1bec0d7baed464b1dbd4a191df6f628c": {
+   "class": "clean",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "3"
+  },
+  "1c475a2cf0cc429614bcad4e71f46142": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "4"
+  },
+  "1c568439d961ba04abbd4b3b05bffe8b": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "0"
+  },
+  "1c9d35763ef206b348747f1035f0e20b": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "replace>last"
+  },
+  "1d7e51d4ad5bbd5edee4dc7bc152a6b6": {
+   "class": "frame_only",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "0"
+  },
+  "1d948f84f82765bed332c063eb712a18": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>replace"
+  },
+  "1d9bd89bc4477b9465a52cf581db4646": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "1dc0490c5e96fe3954f762bd0bbc54e1": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>reverse"
+  },
+  "1e89d69b491dd4811397de38b9d6499f": {
+   "class": "frame_only",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "2"
+  },
+  "1f30ed36687e62dd0722b6e93e409f24": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "0"
+  },
+  "1f75a90e6bd1e647c0ceaf4573257fb2": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "3"
+  },
+  "1f9d85576259ced0b8410da58ca14ffe": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "1fd1a91455af3a8b313d6f51d7893951": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "204222b6e358d32cccc681a11a4f3c21": {
+   "class": "frame_only",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "0"
+  },
+  "2052a0d17cfc0b2e70aba5bc902c9ba8": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "0"
+  },
+  "2083c8c172bc562cc5430288dffc189a": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "4"
+  },
+  "2111ea2c7324a1b34581ec3ecdecb78a": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>longer_than"
+  },
+  "2196ecf245eeac49598a897a0b308703": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "4"
+  },
+  "21bd133f1dcce03d25f2fa7f7caa3de0": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>drop_first"
+  },
+  "21f2650aa2fb4f8240e7f902c554ed9e": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>first_k"
+  },
+  "2253b11497f5d3e38cf1b46295de098c": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "1"
+  },
+  "22891599ef4a2c2524e03598442a344d": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "4"
+  },
+  "233a7b7fa59da51939d77c139c1756e7": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "1"
+  },
+  "234d26fc143cec6923524b1ed91533d6": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>upper"
+  },
+  "23a3e510c76a2150e1c615e55ce647ba": {
+   "class": "clean",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "3"
+  },
+  "23d240b6d9f446bd24ca421cb5b47cbd": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>last"
+  },
+  "245115c208ad1af4bfcca9c643e20387": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>reverse"
+  },
+  "251e55f0b52ecc48332e90ae4f533448": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "7"
+  },
+  "2525df4b1366e9245ac830799427b204": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>last_k"
+  },
+  "253227d7137532482030ae94b36ec2bd": {
+   "class": "clean",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "2"
+  },
+  "25f1e46348bf3625846040bf7a41b378": {
+   "class": "frame_only",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "5"
+  },
+  "26392ac59d389177dbde71d76abbed55": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "263a98922e5d85a90e3a2d7cd3095c60": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "5"
+  },
+  "2658279c30f5370876a8376bd16d94c9": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "26ccf56ea99c05b7620ca9207379480b": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "276c08c1181b0623a50202d8515aee15": {
+   "class": "frame_only",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "0"
+  },
+  "27abc36ebfebbaefd634ad6fbcb58403": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>last_k"
+  },
+  "27cfa388cd5c6a878d32bec122141294": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last_k"
+  },
+  "2818f91bde282715ddcf0f4c180f5504": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>reverse"
+  },
+  "286ec1f9d7702733fc6ae2de2fe4a3b7": {
+   "class": "frame_only",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "0"
+  },
+  "29862e6b3080679db5f149c62b2d25c0": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>longer_than"
+  },
+  "298a36d3744e91a47bcaa46228c5a0cd": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>first_k"
+  },
+  "29a15bb58a09f3af1991d4da370f48a5": {
+   "class": "clean",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "4"
+  },
+  "2a63b5e90b1e228a24e830696b9ea597": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "upper>count"
+  },
+  "2a6b0632b90f5f8630356bf0d7dbf21f": {
+   "class": "clean",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "2"
+  },
+  "2ad702c0ba61a525199553fadfbb55ca": {
+   "class": "clean",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "6"
+  },
+  "2b7f03d8b4065e6b38a6331961db178b": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>last_k"
+  },
+  "2cddc1dd401b6ae32fc40edebf3fb92a": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "2cf3abfd406771a79f79fa0b26f09d44": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>count"
+  },
+  "2d0659d35a379bb378877d8175102515": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "reverse>last"
+  },
+  "2d70015fe2e8872eb4e42b21b6e432ec": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>drop_first"
+  },
+  "2d9182c76c3353cd458073e66d13dd4d": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "2"
+  },
+  "2d9ded9d25eacfb75d5c28530e614f2b": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "last_k>reverse"
+  },
+  "2e01665fbe75f0b6e70f9ad125eabb5e": {
+   "class": "clean",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "1"
+  },
+  "2e3a2d0dc074d673c5355c454504c8c9": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>first"
+  },
+  "2e686c09ac3267b879086ac0f8fac9f1": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>longer_than"
+  },
+  "2fc6afaf591ea8051b2b3ac890db41dc": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>reverse"
+  },
+  "2fd3dc42750f1082b00034353dc2d84a": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "upper>count"
+  },
+  "2fdbab39b2dee1a87969a2ade9ef743d": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "300a3013ab6d2c1bbf74f8c6bfa79fa4": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "3"
+  },
+  "307b8c46a736257a1ccda5eb871c7a71": {
+   "class": "frame_only",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "6"
+  },
+  "308fdef1ae4b6932ea2e183864032667": {
+   "class": "frame_only",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "1"
+  },
+  "30be6a7f58c0f3315e1aa2e1afa7fd49": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>reverse"
+  },
+  "313bf8be93c062c49f21a388a936d182": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "2"
+  },
+  "314accedf1e2ce02374cf52ffef11a3f": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "reverse>last"
+  },
+  "31562ebd48f32ab793e6d9dc8e9678b1": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "4"
+  },
+  "31949c75c7725876a8435309ac9509f0": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "319aea8e85d426605979a80a8aa5b5e3": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "0"
+  },
+  "3215deef16a3b4f0fd4f445244a1cf08": {
+   "class": "clean",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "2"
+  },
+  "329c94a76d1dd0688ccfcc2607614d3b": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "5"
+  },
+  "32a92803c479fc401f27c21dafa5f53b": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "32defa3b98c706dda9097ea360544199": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "5"
+  },
+  "332aaadf64caabd266f6cbbde78762e5": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>upper"
+  },
+  "334109f8bf44c87963a8189e9b903289": {
+   "class": "frame_only",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "3"
+  },
+  "33ecf79094cb326cdbfc26dc9fcd1089": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "3428fbc01384d5aec59dda9d45bb541b": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "7"
+  },
+  "34314226c874013c36f8c2bb3d446ff1": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "3437fbe001924b3d0ab03645252a6863": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "349329c504c5e08610a98ef5a60711bf": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "6"
+  },
+  "352746fe22e4950c1676ba219c130b51": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "2"
+  },
+  "35961b52381b1015e479ff9b6aee8de9": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last"
+  },
+  "37788974924e26a3fc6d86d22bf4160d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>replace"
+  },
+  "38378dd7589662a8d592ef48bd5d302f": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_first"
+  },
+  "387f907306f6dae38a597fd86de3ffeb": {
+   "class": "clean",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "2"
+  },
+  "38df6f0ad014090f9b0f7e1a5eeca37d": {
+   "class": "frame_only",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "0"
+  },
+  "38f19aa3d8625a85dbeaae5cac3adb39": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>reverse"
+  },
+  "3a4baf59d76b326435467959d9d384ae": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "2"
+  },
+  "3a6ea883dd3e54b119737bc20e8a45f9": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>title"
+  },
+  "3aa7b7689e6bf15f160c3f986f775ba1": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "3abe468524d83e6c8faa6f39d07686ff": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>count"
+  },
+  "3ae7ed25711bd5c0b270866522ab32d1": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>shortest"
+  },
+  "3b3605ec875b973b17d88a3c733f3f21": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "replace>last"
+  },
+  "3bbd3b1197fb885c41364bbdd50174e9": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "0"
+  },
+  "3d7e2245ab92c9bc651eb73f53db4bce": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "1"
+  },
+  "3d90392d2658c74547aec7514c44cd85": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "replace>last"
+  },
+  "3d9f8e62c83b6df733f04a9918b9c7c6": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "reverse>count_letters"
+  },
+  "3da31e03641cc33faaf5efed2cfc4fc5": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>last"
+  },
+  "3da80bb2a62f26d32c667281ff179dc7": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "3f212de67b1b72ffb9dc5c4613919893": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "4"
+  },
+  "3f37253c0de4d6281756da40d8649ebf": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_last"
+  },
+  "40a5744598df7073f5c9a14f94bb080d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>drop_first"
+  },
+  "40d2728d43c82b77c0408153cfe2525c": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>replace"
+  },
+  "40d604860f017a2f7c39c232fa604a44": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>sort"
+  },
+  "40e9d5cc613daabbeb2d617cbb07dd29": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "4186a80990077890693fb0a9af494b3f": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>sort"
+  },
+  "41a394de2f7c685ddcff7fa75797eba0": {
+   "class": "clean",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "3"
+  },
+  "41d44b33cbd9719dac5fa35f3e32d908": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>remove"
+  },
+  "41dc7448318c65b3b9bab4f2de8ff599": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "1"
+  },
+  "41e17d8a672db63b309da75a1cd4f453": {
+   "class": "clean",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "6"
+  },
+  "41fc301688e68328790d4c1b00deef5f": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "0"
+  },
+  "4224442488630179668cf264b2163513": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last"
+  },
+  "42e8bbc89c3562726d1ffb7dfddd2b1d": {
+   "class": "clean",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "6"
+  },
+  "43018e0f525e0be748ed496c7a51a384": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>replace"
+  },
+  "43a67cd837ef3418c4df23c062ec6ee5": {
+   "class": "clean",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "2"
+  },
+  "451635c38a0a116d5eb6585b39688397": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "3"
+  },
+  "45960396fa758519f399ac400d3a2fee": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>longer_than"
+  },
+  "465e90be4d00f1c0b8934173b51e5119": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>title"
+  },
+  "47128077ffa8ea75fa86b5bfa10c1ee6": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>last_k"
+  },
+  "475f755b5bf52a2835d9288149013c1e": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>reverse"
+  },
+  "47777b8accaa2aa59bd96ebeff7bfd9e": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last"
+  },
+  "4781ceacd8eb77e9b723b3ea5d1d20cb": {
+   "class": "frame_only",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "7"
+  },
+  "47c8b5ef8bc0cafc556e658a7936ebc5": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "4"
+  },
+  "4826be16342958ca570c0f4c9242050f": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>sort"
+  },
+  "4ac91814cd808883d1f3eeac968262f5": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>reverse"
+  },
+  "4b5ce7dc7b295420749055c3988b0796": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>remove"
+  },
+  "4b5ee74cc2428c7406dcebf62ce87eee": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>sort"
+  },
+  "4b8a2604302cf966749e3b2a1a4918b8": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>starts_with"
+  },
+  "4b8f107cb41d6fcb67269b73dee45a58": {
+   "class": "clean",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "2"
+  },
+  "4bd0283defc1519b05bde2713190a6c1": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "0"
+  },
+  "4bd07bd34452cf3f0553e700bab8e768": {
+   "class": "frame_only",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "0"
+  },
+  "4c19d6e25d9301854463e3881d0d3149": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>last"
+  },
+  "4c5e28b3250d4829a68649284fd6c057": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "5"
+  },
+  "4cf6d48572b71f694f46b9d731a91d3d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>replace"
+  },
+  "4d3fba5c42224f82731fec154cb65528": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>sort"
+  },
+  "4d4041c98f527a89566babf9b50122b4": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>count"
+  },
+  "4d77a8674767dceabff53154f270f08e": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "longer_than>replace"
+  },
+  "4e127aee38ac5e184f412c220b06d859": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>drop_first"
+  },
+  "4e5da974ce7e8019f90464bb567b53d1": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "2"
+  },
+  "4eb74c8d8e301c8f737d4ea2fb993046": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>nth"
+  },
+  "4f5a47f0c56c1f390c6837882ff5d032": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "0"
+  },
+  "5056289a5a6fa1daa26211621a38232e": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "0"
+  },
+  "506c45f61d6404249398d7286fecd663": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>starts_with"
+  },
+  "50da8c02bb24fa6531c7af0d003bbee6": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "5"
+  },
+  "515f0b931d0211bb92fba636d491948a": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "3"
+  },
+  "516a9a980d5a98d5c9ac58211dce013b": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "4"
+  },
+  "5186ba6014186522c2528161ac203ca8": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>first_k"
+  },
+  "51adb101285d9703674c0e24503f816a": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "2"
+  },
+  "51d54f06e954c31dec74e370acb17a0f": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "3"
+  },
+  "52beff728bab5991b0f44a24e09b64f2": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "3"
+  },
+  "52f89254e7b89b7ab18101ef28dcd4fe": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "2"
+  },
+  "5361762f21135dc095d1a653670ddd50": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>first_k"
+  },
+  "537633a14fe6b7a272d06c87ac699059": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "3"
+  },
+  "5419930ac52b499a16a8f2b765e1baf1": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "2"
+  },
+  "5517a25f04687293b91a0ce771c879a5": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>reverse"
+  },
+  "564ce682b58292c8eace9701ac137945": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "56c0b9c9b70875758b34027489cb1a6e": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>upper"
+  },
+  "5726695e0890777b11d3edb8c14eeeab": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>last"
+  },
+  "57fc1f12ff1367be756f53e1ab5a3b10": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>first_k"
+  },
+  "5822292b16ca364d2db78462c2ebe99f": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>first"
+  },
+  "59a7d438e6e1019a5f55bdca1bd6a1c2": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "3"
+  },
+  "5a0aa89b57e1210488764ead63f9bca0": {
+   "class": "clean",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "3"
+  },
+  "5a4b53f9d8ba890557b2dfe948241f85": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "5"
+  },
+  "5b3b10b39093395444ee006334d572e3": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "3"
+  },
+  "5b49abd83065834a72986a9637f16e3f": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "5bb942f0d5e916bfa65d89c190701fef": {
+   "class": "frame_only",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "4"
+  },
+  "5bec8d328c1c4f90cdf411eb2d98ea12": {
+   "class": "clean",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "2"
+  },
+  "5c872109cfd685b2a74e43d6b8bf7fa1": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "replace>last"
+  },
+  "5cbf05f48a040405c59cfa90f0555139": {
+   "class": "frame_only",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "0"
+  },
+  "5d11d8e47a99874b910a09c6230955a5": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>first_k"
+  },
+  "5d257be4b0f1c12cad308e46dfecfac3": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>last"
+  },
+  "5d6584e519a51f7b4cb495e9c8d0d0c5": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "0"
+  },
+  "5dbb2efd1b9a62af371bb7e4333af4ba": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "4"
+  },
+  "5dd5b16b52918c2288b2f0204aed2da9": {
+   "class": "clean",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "4"
+  },
+  "5e3a8c3d9d7dae2472d29c8f8493bda6": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "longer_than>first"
+  },
+  "5e52de82505f5705a969af8a1f170e5d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last_k"
+  },
+  "5e99dea49177d11063fb7fdacd65302f": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>first"
+  },
+  "5ee59223a9ae95acca7d7a23c5e00c03": {
+   "class": "clean",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "2"
+  },
+  "5f16d324c55cb4c5b35025c40c3ceb58": {
+   "class": "clean",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "6"
+  },
+  "5f361ce03c4a965a19cb991d71a15322": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "4"
+  },
+  "5f5ae00a1ea6d43b5ad1b5d50dfe3978": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>sort"
+  },
+  "5f5f0ba9b20ae84812d222ef1643fbc7": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "3"
+  },
+  "5f8f99e1ecb0f83dfbc3cdd9fecd1782": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "2"
+  },
+  "5fc9ccd9e8f4dcd8e597b730b90550c0": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "604833f3461fc0093c8f66c11315b8cc": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>last"
+  },
+  "60a900600a4576b1ce4a1a527b74268a": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "610adbc734dc8630e1673ef0483daccf": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>drop_first"
+  },
+  "61cba2c645c824fec17b3c5c8e658176": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last"
+  },
+  "61da89f85a191e376c2684d60bd9ab10": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_first"
+  },
+  "62e261356e943e592433b39874a08071": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "62f5a76700314f9fa72f5994fd95542c": {
+   "class": "frame_only",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "7"
+  },
+  "633a21bfa4527ac04a2bed549085a4d3": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>title"
+  },
+  "6347797b3875442c37584a1840113a32": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>last_k"
+  },
+  "6357257565793a406c4509b67707d648": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "4"
+  },
+  "63d17334d1b36276484d22ff3b845da1": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "4"
+  },
+  "643d9259b524146ae2f1a5f1fefea9bc": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>longest"
+  },
+  "6475d0325f395655a29a20a6ca1ac817": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "3"
+  },
+  "64aa180d5a133d43869cf3276cda9465": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "0"
+  },
+  "6547eacc62e64ebc01466091b2a925ec": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>reverse"
+  },
+  "655a79e22b0b7546dfb259e9c93f1670": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "last_k>reverse"
+  },
+  "6588cb6bb1021c3e0f9278ac64c54e43": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "1"
+  },
+  "65a184c833e95cb18ea3592c7777ff0e": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_first"
+  },
+  "65b5432cd03eaa58f09077c5d492bfaa": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "0"
+  },
+  "661719542c4dd8938d4fbb5859a43437": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "last_k>sort"
+  },
+  "66549721989d694e524ae82952c77a62": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "5"
+  },
+  "669f931bb5875058db4cb1da3b8923e5": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "4"
+  },
+  "66f5afacf1255e1ab92f16f7250b232c": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "0"
+  },
+  "6720facca65dcd80b9d1d0343ccd96e6": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last_k"
+  },
+  "679f86f06b8e886dc1c7a4d59c8d2915": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "68446cee723a39d05561413614820a5a": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "1"
+  },
+  "685744fc283dc7cf86ad3408a2648b58": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "1"
+  },
+  "6887ede7176e3c621720d93833cd97de": {
+   "class": "clean",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "2"
+  },
+  "696ab860ebb95729e64dedb3a597977c": {
+   "class": "clean",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "6"
+  },
+  "69859f813e310a78b7fac233bcd277bd": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "69903891019f279fa32c804886b9e492": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "0"
+  },
+  "69c90eb32187ad657cf1d0a109912977": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>first"
+  },
+  "69fc5beac0280264f5d9617d5499def9": {
+   "class": "frame_only",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "7"
+  },
+  "6a019de36e4d2bda69058c42b5ed6113": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>starts_with"
+  },
+  "6a5de83a2ea162960ed32390f31e9307": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "1"
+  },
+  "6ac097e1a169b2cd3ff90b20ac968438": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>nth"
+  },
+  "6ad9caca8529bc531c0b9eba659d6629": {
+   "class": "clean",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "6"
+  },
+  "6b17e335196f16ffc739874b5ad33cfa": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "5"
+  },
+  "6b65ce6dbdeaf12817e6a2bf0b4f2c17": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "6c17d7dcbbb613d7e5d66e919c9d5762": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "6c213dc03cb780269b5648179e5981b2": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "6ca5282d077c1aba8addc1a660031e71": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "reverse>last"
+  },
+  "6cc732821ac6815101771a4316febaaf": {
+   "class": "frame_only",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "3"
+  },
+  "6ccc85a122e55b9ce3554f6cef5ca944": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "title>drop_first"
+  },
+  "6ceba2c01165a30c2b4088f1d9d3a770": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "3"
+  },
+  "6d223a0f38323a873eea68f9ce594dc0": {
+   "class": "clean",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "2"
+  },
+  "6d44f5336bb58e108a1b54ce3d564a78": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>longer_than"
+  },
+  "6da9e936b94d346f3d82319d74a46cbf": {
+   "class": "frame_only",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "3"
+  },
+  "6db7dc5911186db5b5721d464abc9c5c": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "1"
+  },
+  "6df75d7893497e7a10fd9660819fa683": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_first"
+  },
+  "6e07ce50f42e6096672edaaa2f9a4751": {
+   "class": "clean",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "4"
+  },
+  "6e39877019edfdc02abd528a48f51d9a": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "title>drop_first"
+  },
+  "6e6946dc931d2232c7847e2f47dc0566": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "6e9f5d100ea3c753375870bb6fb38a15": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "6effa1805646917ad361a640e4bcb194": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>title"
+  },
+  "6f0985d550d972097db610fbdbb82e4b": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>nth"
+  },
+  "6fa12a2d23394f8ddc20272932523701": {
+   "class": "frame_only",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "5"
+  },
+  "700b8a7ebf9f7a502e3c741d787b049f": {
+   "class": "clean",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "2"
+  },
+  "702f1e766d6f716e7636033e6faf9202": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>reverse"
+  },
+  "7049d0bf86b107b9e3e331c31add27ce": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "last_k>sort"
+  },
+  "7083f5ce017c4c5d4d942a27fb6e63d6": {
+   "class": "frame_only",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "4"
+  },
+  "708849b52c0e1f2e7f6e313ceea13f0b": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "1"
+  },
+  "7091f02fe8d0202fc6ec3f206df6305c": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "70c10aaf7e7e4151b1c45d9f7310cdfd": {
+   "class": "clean",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "4"
+  },
+  "70ee87615bee2bacebe223175aa726c5": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>drop_first"
+  },
+  "71205badf8eef9d89a7fef3bf0c2b5a4": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>reverse"
+  },
+  "714a5852a5a982d2988514fa43fb44a2": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "reverse>last"
+  },
+  "7170f75bfd929361dc03d64c2cfc9e29": {
+   "class": "frame_only",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "6"
+  },
+  "71edaa85bdee266c84ed8ef84a5b222c": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "4"
+  },
+  "7200d3095226fdb96ad59b1b974a1d0d": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "721f6239c003d2763b8ca87f0a2e956c": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>nth"
+  },
+  "72230ee5b7bc947f00eed98342297edc": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "72ef29afaacc39c8a3ad0c65b2a37b98": {
+   "class": "clean",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "2"
+  },
+  "730916556677ceb500bb3a9c5ec1686a": {
+   "class": "frame_only",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "1"
+  },
+  "73503fb5b2cb4313fa671e36f5f7f86a": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "2"
+  },
+  "7376cb3c4dff31d04599966ec109ce07": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>title"
+  },
+  "73ac878988b0e3ce4447bab87cbca2fd": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "3"
+  },
+  "74c1aca4457a0858107909cc60f69ae8": {
+   "class": "frame_only",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "0"
+  },
+  "74cef3d19bf2b3c16dad3803a76d607d": {
+   "class": "frame_only",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "2"
+  },
+  "7557c3165422c2639e3622453bac1376": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "7578b7e808afa56674b1010e563143d4": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "3"
+  },
+  "75808c6fbe229033f2a95807b4cc45e0": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "1"
+  },
+  "75c58b3692284566edc4a66842d38bfb": {
+   "class": "clean",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "2"
+  },
+  "75f283d036ecd95def10954385d45c9b": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>replace"
+  },
+  "75ffa5dfea849bbecb20ec6b7b4b72ca": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>nth"
+  },
+  "76297c50c00e949240ddf084c936f83d": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "1"
+  },
+  "764b9f6fe47d8b9954784993db11e594": {
+   "class": "clean",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "2"
+  },
+  "765f824b9ee0c5ac6869cff479c66476": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "1"
+  },
+  "76b9876c6d07e1bc266678c9b72177fa": {
+   "class": "frame_only",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "1"
+  },
+  "76bb99b37e1b49ae45d2a8ea58f9818e": {
+   "class": "clean",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "4"
+  },
+  "76c21d34053d5593eb7d9d61919ee4df": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>first_k"
+  },
+  "772aa9aaa61efdfe5acd03972e0bdb96": {
+   "class": "frame_only",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "5"
+  },
+  "775d56c6752fa2321feb27b219e421ba": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>reverse"
+  },
+  "777c1b6053c505dc8e1e99549795d581": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>last_k"
+  },
+  "77a8e3c02f07ba1339cbb87eb936e33f": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "4"
+  },
+  "77c81da36e945b0c950e90453d1479d3": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "3"
+  },
+  "77eac7d340333ef0b083640900d57a2b": {
+   "class": "clean",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "2"
+  },
+  "7838771772ed53f48b3ee90abd183423": {
+   "class": "frame_only",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "0"
+  },
+  "783c341ff72fed1c5255144e584b074c": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>drop_first"
+  },
+  "7867b81819d7887f7e911708001babf7": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "4"
+  },
+  "7900eb6c619b8db7ab38511d1c642b48": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>title"
+  },
+  "7935a05205f286e6a4b87b3885aa0f97": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>nth"
+  },
+  "7977e6145123d16cb5a0a165ac75b3a0": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>reverse"
+  },
+  "7a0ad7f969fbc85222166bb8be864ddf": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>longest"
+  },
+  "7a2f90b68bbd28c076e966d9abe129fc": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "2"
+  },
+  "7b91a1811609b92c3047af29543ca641": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last_k"
+  },
+  "7c208b029569f0d1d257036c9fef1c89": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>longer_than"
+  },
+  "7c39a8d3128ffbe92c9263ee37486473": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "4"
+  },
+  "7daf14b2759e3818d08f39e330e10386": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "2"
+  },
+  "7e5fe27ee4e53227a1ee90b128a22bcf": {
+   "class": "frame_only",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "0"
+  },
+  "7f0aebcaea9f465e02aab1e2415992b1": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "1"
+  },
+  "7f489fc2270d898e32ae3d1f753dc6d7": {
+   "class": "frame_only",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "2"
+  },
+  "7fe73189c74d7085d0c8f94326af6fc3": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "7fed57992371f1a785b6976a75a9aaf6": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>sort"
+  },
+  "7ff2e6c70caae9ba8b72cbb005d90d2a": {
+   "class": "clean",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "1"
+  },
+  "804a534be099e438f3d9e0ce8cb85a56": {
+   "class": "frame_only",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "1"
+  },
+  "80a7ff9735605c5d11218b86e8916310": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>count"
+  },
+  "80ca99b146ef5afe289646afe7a0b875": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "80dde4b136054ea3749f25a5be2722a8": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "3"
+  },
+  "826c657443c2744abaea953dcc766168": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "5"
+  },
+  "827e3afb373e4da2921da29d3ef59f85": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "6"
+  },
+  "8295e2e64089f331c79ad5c508d95752": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "5"
+  },
+  "834730f103f7be36ecf643de321458d6": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>title"
+  },
+  "835bdc167cc933c2b7b7affd9f7fdd5b": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "4"
+  },
+  "83edaf2f0d253b1ab53e79d35999fd43": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>last"
+  },
+  "84f611c5ad1ccc9ca11380125b9b91b5": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "3"
+  },
+  "850203fadc0a2a09a5649abf25095302": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "6"
+  },
+  "8574d8329d144bd13ccfae54b7926983": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "1"
+  },
+  "85be5fa8e556f85df2848a00d9a739f3": {
+   "class": "frame_only",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "4"
+  },
+  "85fc6c61ebc4005cc91e254eed666746": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "0"
+  },
+  "863ae1760583f616f0358f105eebd9dc": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>nth"
+  },
+  "86b68528c9bcda0e1829ae0819fc6e8e": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>last"
+  },
+  "876510e7e9a084267c7f16513a938fef": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "3"
+  },
+  "878c2f0f94078e3b96aa0d5f928fab27": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "1"
+  },
+  "87b52e27c646ae938b613e7741fbbd28": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "0"
+  },
+  "87fdad86a8cda4fd0a07b73671b584b5": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>replace"
+  },
+  "8856dcbcb6b48ec889f0554ab204a2ef": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "3"
+  },
+  "88f5d49e6a4747aadd6e5dcfadfb1ab8": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>reverse"
+  },
+  "895d3a8cd78528f902dde32aab1dbbc8": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "1"
+  },
+  "897385c675e218b2816e10a3bdddea1c": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>nth"
+  },
+  "8a4651a80fdb85443b6ac1dc8376e039": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "5"
+  },
+  "8a66adc80cd8b0470f300c43252c6b2c": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "8a9b3e812368d4a7d7b633ad1f23ca49": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "1"
+  },
+  "8ade59c97d7998d751ad7dd46eeae3a0": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "0"
+  },
+  "8b070cd7c28e3a60975658a08a2d53db": {
+   "class": "frame_only",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "3"
+  },
+  "8b114786cb9c9f96cac8080b493dd18d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>replace"
+  },
+  "8b5105bf48467ccba327d1655fd411c4": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>first_k"
+  },
+  "8b7e086b30a84c1af8518598079d4007": {
+   "class": "clean",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "3"
+  },
+  "8c2aed4ffa1f1d7c6fc50bf8f9d8501b": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>remove"
+  },
+  "8cfcd25965808b8bbf9fd7c2035f0806": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>nth"
+  },
+  "8dbf4bcdd218f9efa8150508ab60be38": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_first"
+  },
+  "8dd996034136f4c5d16bac4bde0273c9": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>title"
+  },
+  "8efaeea05f55d6643f9e9550228b0d32": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "1"
+  },
+  "8f526e7ab47e9057997945eaf7ae34e7": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>sort"
+  },
+  "8f5805df2ac75baff5f4e8a00cc3b074": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_first"
+  },
+  "8f5a71c7816367f1f5d025f3ffe8974b": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>nth"
+  },
+  "8f65363cfd0c3a3ff70efd751549bf0b": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>replace"
+  },
+  "8faa70f91be545adebf81e4ac1317b64": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_last"
+  },
+  "9001264ab27c42cfca17355283d4f241": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "replace>last"
+  },
+  "9020b09e8fdf5ff18c6d494357f2c575": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "910c7f4e6fee48e4c83f4a2b38cd08c6": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>upper"
+  },
+  "9211add0970e7a57561a41406295908d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>first_k"
+  },
+  "9241f80b51225630ea170b949876e6f3": {
+   "class": "frame_only",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "0"
+  },
+  "9252945c405176103f79c2849889134a": {
+   "class": "frame_only",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "5"
+  },
+  "9260fbdfe6ae1ca057e9424ba6b6f0ab": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>replace"
+  },
+  "934736f61e1e62e8f00423041701cc82": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>reverse"
+  },
+  "93c5c5f383d3ff1ed725860c96039aad": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>longer_than"
+  },
+  "9408a77cf180b9046cdd53ab982553c2": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>shortest"
+  },
+  "941392b3e4cde5698ee377d59394a66d": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "945e17b50f9e5a9329dfdf88511c1814": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "949d9f25bdd67d456473240bc3612c17": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>count"
+  },
+  "956139bdfc4a1b9fb2f66094d55aa974": {
+   "class": "clean",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "4"
+  },
+  "95a1ee3c29a9d4c3fc8a6f44f1aa8365": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>first_k"
+  },
+  "95dc33687f989611e7ffec44bbd394bb": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "longer_than>first"
+  },
+  "96640233979a7d69e8b18322f5f01b52": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>reverse"
+  },
+  "96ccdc5857c067f742da7126bf41551a": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "longer_than>replace"
+  },
+  "970bf26eb861f2bebbd955be5208eb46": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "1"
+  },
+  "970d444bed75febf3b13478e0fafcf70": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "0"
+  },
+  "975bda62205f67e90a315de11f570dfc": {
+   "class": "clean",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "2"
+  },
+  "983ceabb03303ccf6526c16aaf56eccc": {
+   "class": "clean",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "1"
+  },
+  "9874b2407948209bea7d1ee3d93e421a": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "5"
+  },
+  "98755e50692f484f8613dfa31cc36d98": {
+   "class": "clean",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "2"
+  },
+  "98b70c9ad1bd504e30e23fd08cde3bdd": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_first"
+  },
+  "98d5a0dfd41938e9417cb01ceb252327": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>reverse"
+  },
+  "9972c1076a6108340b04848f38cc569c": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "2"
+  },
+  "9980f2e3ccbc901e4a425033cb25c87f": {
+   "class": "clean",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "2"
+  },
+  "99fc70e978803f19ab8b5a85da203c08": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>drop_first"
+  },
+  "9aaab50891addc46b27a5b085ca3bb1e": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>sort"
+  },
+  "9b2bbdf070b2a9b91756492a06622735": {
+   "class": "frame_only",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "6"
+  },
+  "9ba287875c36ec35960d9fbab19bead5": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "0"
+  },
+  "9bc886cbae48dd7dff5a2d93e8036024": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "1"
+  },
+  "9d79733d439641106b3803377e0d5cb8": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "9dc97ee9dfebb6e9d86a5e9e38b45aa3": {
+   "class": "frame_only",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "3"
+  },
+  "9df4540c79a567a880da2f4b2a9ff7b8": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "9e95525b7a97ba839575a77e30f6a0b5": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "9f03737ec53b110dbaeb73be651c70eb": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "9f6ff50a66bb0c9ab2d9710e3ec9431f": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "5"
+  },
+  "9f73809547ce1d71c36a411aa6c7613a": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>sort"
+  },
+  "9fd9789eff78514f694c42d8e6ed72ff": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "a03b89ae063d629648392e8fa4d619de": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>reverse"
+  },
+  "a050727fdcb55a343e8f64cffe293713": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "2"
+  },
+  "a108a908cfbac7dd87808986b62b6c18": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "5"
+  },
+  "a14d99ced56ccfdf32c45e4ae7ccbc2c": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>shortest"
+  },
+  "a168de923a7d06c791825d8fe090b84d": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>title"
+  },
+  "a32ebebfff80314f9b3c59b8736f2420": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "3"
+  },
+  "a334b1495b468f6cc2b37f555ace009b": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "3"
+  },
+  "a3fae2acd838104b9efda3de55b2617a": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "last_k>sort"
+  },
+  "a5cc08fd340445beae954f33ddf01237": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "1"
+  },
+  "a5dbc35ccd45e049d4865aa212f39f02": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>first"
+  },
+  "a5dbf1b1cb8e6bf56e9f35153eafc30a": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "4"
+  },
+  "a5f1ccfc73ae4c45e55d8c9903a32fba": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "3"
+  },
+  "a6090e604728dbd9e48719c0e2be3f9d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_first"
+  },
+  "a76c28448d5ff29a688f0d406cba42b9": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "a7bd031cc4d4df4f429eada129e4c3af": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "7"
+  },
+  "a7e11d7bde7db78db08a0d3a640fb9fc": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>replace"
+  },
+  "a7e2606e386930e8245025e4137569a1": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>nth"
+  },
+  "a7e3689f80eda4fd3c0b0479d4aff72f": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>sort"
+  },
+  "a81788a652d7f5543b808cf2b433c2f5": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "a88cc045148e90102c5b3192a7fc3ab0": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "5"
+  },
+  "a8a955e24a4134b2e75fb53a1cb7e649": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>reverse"
+  },
+  "a8e40dafe2205e313b8482042dcd9329": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "title>drop_first"
+  },
+  "a96288cbc12747e4af51ce5fddc677b6": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "3"
+  },
+  "a97ef8ab33ea8e1b2858bb69b1e1ef4c": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "1"
+  },
+  "a9edab1a1be203cadc1e35b552665a78": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "2"
+  },
+  "aaa0e74a59ac0ff11a6a6d7af94b8474": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>upper"
+  },
+  "ab1be5112dd8fcf2d65ec66632b16dbe": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>sort"
+  },
+  "ac900eaafc52205b119527a47551e94a": {
+   "class": "clean",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "4"
+  },
+  "ac9939fa9274ddb2b0751ac7f7dcc8f0": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_last"
+  },
+  "acbc1e86468624d5e0f8e178c85971b0": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "3"
+  },
+  "ace95b27e763c4ba30909e5ab010d4c8": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "3"
+  },
+  "ad63250edb9c6a6bcd3d96ce2e86b2ea": {
+   "class": "frame_only",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "0"
+  },
+  "ad642c1cf50c2f5dbc0aef157ac62e70": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "5"
+  },
+  "adc095b5da86e2497ab7da2ae6f79f8f": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>drop_first"
+  },
+  "ae536ca19aaf34feb467f6900a1cf633": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>first_k"
+  },
+  "af07c87f35a592b959d125cc0e5fd6ed": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "upper>count"
+  },
+  "af4f95585e8ba122faf15a98bec80d53": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "7"
+  },
+  "afb360187988437268093733b08a6b8c": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>nth"
+  },
+  "b037d523526ef76569aea30b3d2a96c0": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>sort"
+  },
+  "b0f9fb3495fd74c88227c43a3d8f07e9": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "b119ade691ead84f35dc1c4420a99010": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>replace"
+  },
+  "b13295ffe79685ee69ae7734b3f7a6d4": {
+   "class": "clean",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "4"
+  },
+  "b244db5f70684a4ddfc6982f70207300": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>count"
+  },
+  "b270d3650c0043b736b6115d6b81d41d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>replace"
+  },
+  "b307365b511da8f906519c896947501f": {
+   "class": "clean",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "2"
+  },
+  "b3ec967ea36eac3f5a7101dbd78f783b": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>last"
+  },
+  "b3ff98f90b73a3e24c360f90582aa622": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>replace"
+  },
+  "b43878b15909d67d3d3e25a109cfd76d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "last_k>reverse"
+  },
+  "b48eef252d60564e459431363be8ac99": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "2"
+  },
+  "b4d48110c91cbaa2dea47afbf391511d": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "2"
+  },
+  "b55467d3b382fb7c907b5f6c95507988": {
+   "class": "clean",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "3"
+  },
+  "b5e25b9c78e270b08cb77a9a399c05aa": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "2"
+  },
+  "b5f3dfc754a887fadc1277b70dd815e1": {
+   "class": "frame_only",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "3"
+  },
+  "b60fed81ec49d9685d271c1201557feb": {
+   "class": "clean",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "6"
+  },
+  "b615ddbf55532240c242afb48f370986": {
+   "class": "frame_only",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "1"
+  },
+  "b6aa0ce15ba9cf9769af8eb1eff8bd09": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "title>lower"
+  },
+  "b6e4da499924927b5e7a1206ecabccdf": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last"
+  },
+  "b73ededab08a7c46a489a733182fddc0": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_first"
+  },
+  "b75e13a749349a1c4793bdc443cb7336": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>nth"
+  },
+  "b79cb5772c3810e078e383b8be06c3cd": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>replace"
+  },
+  "b7a92d3245dafbf236bd40900c116161": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>sort"
+  },
+  "b7c072bd13e540c37b19e83f04597f9b": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>reverse"
+  },
+  "b7f168a105713fe59abed5f4433fbcb2": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "b7f1c1f04c3b8fce83cba641b28ce6ec": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "3"
+  },
+  "b8479db72839eca38751367803608b88": {
+   "class": "frame_only",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "0"
+  },
+  "b8bf63b53a1f0cce1620abd6840bf68c": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "1"
+  },
+  "b8f762359a4c20b4202fb290f4e50365": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "2"
+  },
+  "b92a945632b3e61cedd5c7edaabb4f1d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>longer_than"
+  },
+  "b944fcc58db722c9a6e7a61b54d39b86": {
+   "class": "clean",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "4"
+  },
+  "ba7f15641d36e8ce0889799cf5821671": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>reverse"
+  },
+  "bb18b2d6fc4a22af4856a1a32760a64f": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "3"
+  },
+  "bb29a20a69d2b8c053192c714b878420": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "2"
+  },
+  "bb341c385637ba1ec0bcf95f5b09bc07": {
+   "class": "clean",
+   "family": "if.paraphrase.longest",
+   "op": "longest",
+   "phrasing": "3"
+  },
+  "bb4b34c0951cfb8bae1b3677bc7de508": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "title>drop_first"
+  },
+  "bc5d4b930c045b86a3db2fe48a3e2d2e": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>longer_than"
+  },
+  "bcc98d6df9b7ae76b893f146406a6435": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "4"
+  },
+  "bccb998cf99d00e2ffc12f1461bd1170": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_last"
+  },
+  "bd1882e5dbfe008c509f31fe287e8610": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>upper"
+  },
+  "bdbb0d356a5840ae3ebe67e8d46f42d5": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>last"
+  },
+  "bee4c9d78b1c9fab7e20fd7680f24847": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>first"
+  },
+  "bfbf70737634f580c8a040ee244e18ee": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "last_k>reverse"
+  },
+  "bfd7fa30c838dc87c89be7331868cf04": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "5"
+  },
+  "c014ff82eb5525e455136c2e1ffa3077": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "0"
+  },
+  "c07b1ec2f2df38f9a55ecedea60821a1": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>sort"
+  },
+  "c08bbf39cd5d57e3e4297cddd7d9c37e": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>title"
+  },
+  "c0930508be7bdd2e918eef16aab1479a": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>remove"
+  },
+  "c0937b04e4d1f9e8727252c267870c05": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "1"
+  },
+  "c13075c15965fedddf0597c38f14f529": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "5"
+  },
+  "c1ae60f2f940246906193046af519df4": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>replace"
+  },
+  "c27bf43291cd47142dce58d9c6db4a58": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "4"
+  },
+  "c2a8a3afd603213310484c3331af2e87": {
+   "class": "frame_only",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "1"
+  },
+  "c2cbd72e80dafa0dee4d89b17200f398": {
+   "class": "clean",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "2"
+  },
+  "c34ac91454fb1d511bba21c49ba4ad2a": {
+   "class": "clean",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "2"
+  },
+  "c3d18921034ef73e1375ee022209a3be": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "reverse>last"
+  },
+  "c4bca155c06d21b55b5e2b1eabe945be": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>reverse"
+  },
+  "c5b54e82f657bf2246680a4d09173ee2": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>sort"
+  },
+  "c6aac4f3f3f23f925544d727d236fb92": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>sort"
+  },
+  "c6e79d3b4974d3f823758f43f2065e83": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "c727876ea409bc785969b220bfef4c46": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "2"
+  },
+  "c7b8a867681ff69a912c5be4247a3284": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "c7ef31e396947220606449460415073c": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>replace"
+  },
+  "c87c92d67fd88b7f58a4ff8d9054023d": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "reverse>last"
+  },
+  "c8854b139986b50790ad109c7afad6ab": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "5"
+  },
+  "c8d9d2d69fc30d298645fdc080fa295c": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "3"
+  },
+  "c8eed4f1e19f05d43e563c8a59f3f1f1": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "replace>last"
+  },
+  "c97f5d9295603856aeae30caade88fb6": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "c9b8e70e8fc3685cdfc35561153226e1": {
+   "class": "clean",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "2"
+  },
+  "ca2426afdba8b0a8ffdb5a4fb859f1e2": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>replace"
+  },
+  "ca29a733f3a73d03d714d86af38d151d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last"
+  },
+  "cb878b9d9db382492eb0546cacfb47ff": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last_k"
+  },
+  "cbaf4111a22b6f69afca3dc84d29a7a1": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>reverse"
+  },
+  "cd25892cf3e2ba59829e8dcac7b15bd4": {
+   "class": "clean",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "4"
+  },
+  "cd40e893638c6e5c8ea81c6ca5950c24": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>remove"
+  },
+  "cd6f9a52d26f3df36ef25ce63639a07a": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>first_k"
+  },
+  "cdd7c7e4f9547b5a522acb5f9a58aa37": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "3"
+  },
+  "ce39955da585d9b1708bca529d8bb4c1": {
+   "class": "frame_only",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "4"
+  },
+  "ce40aa0ce926406b8c81e8c4f5ab5620": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last"
+  },
+  "ce8cebd14e3e75ddd9de9b0694a486f5": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "ce8fe5f2ddf70cdfb1b9dadc72bf9156": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "2"
+  },
+  "ceb6ec52754d1f4aab179237e91ae9fe": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>last"
+  },
+  "cee750bfc69ee890d8e6dfd3a62c4c99": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "cf1b3c0a3823e34e437c3d00d7ad67c0": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>reverse"
+  },
+  "cf766159324eef441864d488f1cf4122": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "cf7ff962892b58471f6a5616c7a7bc3f": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "5"
+  },
+  "cfbe4f74164c6fcd6962882c021be32e": {
+   "class": "frame_only",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "3"
+  },
+  "d032eb93cb7e412379a007089a813450": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>reverse"
+  },
+  "d088fb2b8499730c2638d3d042b54a63": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "4"
+  },
+  "d19e9217e373d7918bddbec41502d601": {
+   "class": "clean",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "6"
+  },
+  "d22f21b385f64c0cc73330670618fa52": {
+   "class": "frame_only",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "2"
+  },
+  "d29e2061d41c3946056066e2c9d77fc8": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "reverse>count_letters"
+  },
+  "d310d3c316813677081246493a462b39": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "d35298f0142d70e1acf4ce588fc8999b": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>drop_first"
+  },
+  "d48a7761fdf0922f0c29f1e3e03367f6": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>last"
+  },
+  "d490f778eb72cc7eaf5520ef56196038": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "5"
+  },
+  "d492eb7ab711d4e366d3d2701a3357e2": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>sort"
+  },
+  "d4e98321d75c037910c3ba0265742498": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "1"
+  },
+  "d57d68a949bd7c8c62d774526e8833ca": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_first"
+  },
+  "d5b6fdd9b5743745b45213c50cf9edd0": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "3"
+  },
+  "d67c20b9f48d26244441c8d491245749": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "d695411ede1738bd15141f533912f550": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_last",
+   "op": "drop_last",
+   "phrasing": "0"
+  },
+  "d723fba29157b6e69005dc1265f20195": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>title"
+  },
+  "d7cb9c7eed45db76d17099f9734db226": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>first"
+  },
+  "d8637d9c9663cab3f4aa7fa5a4ce59f5": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>longer_than"
+  },
+  "d880a870ae83056452eb796db9b394c6": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>reverse"
+  },
+  "d94a18625fc5e7458291fc830005ee9d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>longer_than"
+  },
+  "d9fa4e0583adbec8ed36769f7caf03b0": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "db0f7caf67a802ee5a50897c7409bd6a": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>reverse"
+  },
+  "db3c29f44e5a2165f9f82b58530a2bd0": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "5"
+  },
+  "dbb8ca4d73373f5c539a7d28f42405bc": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "longer_than>replace"
+  },
+  "dc06b7bb653d02d46d43453e13e7c428": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>longer_than"
+  },
+  "dd18d071b4d9bf3c55e3b9596fbaaf51": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>drop_first"
+  },
+  "dd251ebd234cb013e867ea4955de3e31": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "1"
+  },
+  "dd60bd1b6121a3112d1f2205389a54be": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "1"
+  },
+  "dd68081cd2ed9a61443878cad2e287f4": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "ddf2d043a3abb8434d933e59bae82c0f": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "4"
+  },
+  "de737d43d1242428dffad215c1c6edb1": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>drop_first"
+  },
+  "dee5760e463f784c430973d6b4d90b2e": {
+   "class": "clean",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "4"
+  },
+  "df74b86921be696bd3cf66646dc3ec99": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "dfe561d91a5f151a68d9d62c76ba8971": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "5"
+  },
+  "dfea8846ee42992b0eb6f4f1a2435be4": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "4"
+  },
+  "e135b5b027175adea4b9b78913e28bbd": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "e1f6970bcf86910fbc535cb0b411527f": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>sort"
+  },
+  "e266b8af23929459dbc71fe170ba3cb3": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>remove"
+  },
+  "e29779559530ef2ab5c959c0cafa9462": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "2"
+  },
+  "e2aef6083bb117cc18b813f77a4656c5": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>shortest"
+  },
+  "e2e6b08f33a0c66f748a1f10872a02a6": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "e3a5496343fd525cdd0fdcb7148e7a3b": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>last"
+  },
+  "e3ada1dc6da93dd1dd026e9c38f8ef61": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "3"
+  },
+  "e3d036192582c5327957054cbf7467b6": {
+   "class": "frame_only",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "5"
+  },
+  "e3ed19dbb39ff9c4dc2a2eedd485c402": {
+   "class": "frame_only",
+   "family": "if.paraphrase.first",
+   "op": "first",
+   "phrasing": "0"
+  },
+  "e41eed4f31bba3187a9cdf5fa667515c": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "title>last_k"
+  },
+  "e421821969d6c7e12e4b35885442c897": {
+   "class": "frame_only",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "1"
+  },
+  "e49e57a1e9e2127b23ef64369e7ff228": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "3"
+  },
+  "e4b73fb52838791bdbeb7ee91fddcff6": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.remove",
+   "op": "remove",
+   "phrasing": "3"
+  },
+  "e50401d55675d0003d945578894dd180": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "3"
+  },
+  "e6b0ccde9146e94fe972c87cd68ebf7f": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "2"
+  },
+  "e6e47aabc9b68cd46f31fb56c22cf7a0": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>shortest"
+  },
+  "e7d4fd48700e3c7f8be313c87dcaffd7": {
+   "class": "frame_only",
+   "family": "if.paraphrase.longer_than",
+   "op": "longer_than",
+   "phrasing": "4"
+  },
+  "e8d492957862cda6e5397912f5026e7e": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "3"
+  },
+  "e91d28340c01c848494ae3d32780601b": {
+   "class": "clean",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "2"
+  },
+  "e9350371d17c519a29571a7725c63534": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "2"
+  },
+  "e936aac2307b8b13289adf6e8a8ebbf5": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>reverse"
+  },
+  "e9423fc30ab9c21079e0fefbc7f2bb3f": {
+   "class": "frame_only",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "0"
+  },
+  "e95772981e326e2e15435dc89dbb24b8": {
+   "class": "clean",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "2"
+  },
+  "eac14f5e0b903de1e2bbf110d99c64ef": {
+   "class": "frame_only",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "4"
+  },
+  "eac57c2438aef513ebe7fdf20cf6376b": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "eb234a30c6dcec9a2e0ced072a4b8fc7": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>sort"
+  },
+  "eb8f07a17a09c6c1a3a2f1d6189f6394": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "last_k>reverse"
+  },
+  "ebcb510f04222326c76ee8a33745e545": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "reverse>longer_than"
+  },
+  "ec73ec6b21035ec7a9d5866d9fd97196": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>first_k"
+  },
+  "ec9e62d7f7797049152f911465e2385d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_first>first_k"
+  },
+  "ecc33ea0c68b1e676d346cd960bbfe9d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>longer_than"
+  },
+  "ed2a42cf12dd7224784cf93486211656": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "starts_with>last"
+  },
+  "ed3f8da810daed1c5aa0e0a9208cf0e3": {
+   "class": "frame_only",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "4"
+  },
+  "ee497090b18d485e116d2d8f5d6a958b": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "5"
+  },
+  "eed90227b6e5105795740c22aa0e280d": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "5"
+  },
+  "efccaae423208ae70bfb4971f5c1dde0": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "2"
+  },
+  "f001b43cdb4b3653e6d518419d16d482": {
+   "class": "clean",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "4"
+  },
+  "f0a7db76ba845a44a5ff61e29ad0c781": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "f10f20297d3012027640d9fc160683f0": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "last_k>sort"
+  },
+  "f1166142b1588bc5ebb4aeb75073ad55": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "3"
+  },
+  "f1aac06ad31b164f8592ccc4e79a9212": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>sort"
+  },
+  "f1c807c0ff99f52868e2d12779ed0e25": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "1"
+  },
+  "f22cc80d32781fc03927b58ca67ecbce": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "first_k>sort"
+  },
+  "f3245d2d250cd5f8a3316de61f84a9a9": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "f3317107e3b69a1e7b81dce8a8ece950": {
+   "class": "frame_only",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "0"
+  },
+  "f3a381a20e18774c975e20cd702d0b2b": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>replace"
+  },
+  "f48da3643cc7e3926c547e602623dd4d": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>reverse"
+  },
+  "f5096aa116c2038e09ae6922594cd058": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "5"
+  },
+  "f5b3019fcfdabb103952daf7aa19dbb0": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>replace"
+  },
+  "f61ffe169657311da1eda5a9e598cb02": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "2"
+  },
+  "f74e4d081c10410846f7b59104af9437": {
+   "class": "clean",
+   "family": "if.paraphrase.count",
+   "op": "count",
+   "phrasing": "2"
+  },
+  "f81cad9d4739ec42273d797b128c7a20": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>remove"
+  },
+  "f8984f88e069038f78d1975d5803eb64": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "lower>reverse"
+  },
+  "f8e976c4aff74819b44807af27b78a73": {
+   "class": "clean",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "4"
+  },
+  "f90e54709c1a40237da7c397c90ae126": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>starts_with"
+  },
+  "f940653c0ec9d330f15f20a4a1622cc6": {
+   "class": "clean",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "2"
+  },
+  "f9741a4afcdb75701cc3d0b35cefc696": {
+   "class": "frame_only",
+   "family": "if.paraphrase.title",
+   "op": "title",
+   "phrasing": "1"
+  },
+  "f98abe228472ecb003d37e92c2a4a5b5": {
+   "class": "frame_only",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "1"
+  },
+  "f9ca939f240a77bc4c9e508089b674e2": {
+   "class": "same_op_near",
+   "family": "if.paraphrase.upper",
+   "op": "upper",
+   "phrasing": "6"
+  },
+  "fa5986bf3bf6d88bec090292e1b045fd": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last_k",
+   "op": "last_k",
+   "phrasing": "5"
+  },
+  "fa89a1ffa7af55b6ca6dd664e3051b79": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>upper"
+  },
+  "fa9b9a4156d495952691ad99132a2c16": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>sort"
+  },
+  "faf444e3b0de2dbc8e06f6aba4162ba0": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>remove"
+  },
+  "fb4b713096f4f55f696305b4cc193ce7": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>nth"
+  },
+  "fb55e0eab39e94d2968c8b3c5241b828": {
+   "class": "frame_only",
+   "family": "if.paraphrase.shortest",
+   "op": "shortest",
+   "phrasing": "0"
+  },
+  "fb79f572c352b0afd04e65a2d941baa6": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "drop_last>title"
+  },
+  "fb916ee6bccd9643a03897a0610e8681": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.last",
+   "op": "last",
+   "phrasing": "2"
+  },
+  "fbccec9224f7904c49ec7ca60f991b26": {
+   "class": "frame_only",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "2"
+  },
+  "fbd34311427b8ac3e69e3c58c44960a7": {
+   "class": "clean",
+   "family": "if.paraphrase.reverse",
+   "op": "reverse",
+   "phrasing": "3"
+  },
+  "fbe7bbb7f6f88df3b733b0372b88ad16": {
+   "class": "clean",
+   "family": "if.paraphrase.replace",
+   "op": "replace",
+   "phrasing": "2"
+  },
+  "fc3f75c3ea0c2e54aeeeafc88c16e18b": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "upper>first"
+  },
+  "fc4a614756385dbd88a692057f87a53e": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "last_k>reverse"
+  },
+  "fc766de33b4144c63edf92e4fbccfd38": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "2"
+  },
+  "fc9eec1ff65b401d47931ba1d04517a7": {
+   "class": "functional_trained",
+   "family": "if.compose_heldout",
+   "pair": "reverse>last"
+  },
+  "fcb28023d083ada08357234fba86778b": {
+   "class": "clean",
+   "family": "if.paraphrase.count_letters",
+   "op": "count_letters",
+   "phrasing": "2"
+  },
+  "fcf8ea2cea7759613a265e39eddf9dbb": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.first_k",
+   "op": "first_k",
+   "phrasing": "4"
+  },
+  "fcfef13bf933cfed276839fa57ca2ed3": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "dedupe>drop_first"
+  },
+  "fd0ff4386e32e0e9508050d48dc5872a": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "sort>shortest"
+  },
+  "fd29c6a4397134293af859f8cb5d4caf": {
+   "class": "sibling_near",
+   "family": "if.paraphrase.drop_first",
+   "op": "drop_first",
+   "phrasing": "3"
+  },
+  "fe24c654d48d2d747bf381a8d4619eca": {
+   "class": "frame_only",
+   "family": "if.paraphrase.sort",
+   "op": "sort",
+   "phrasing": "3"
+  },
+  "feb37a0ab4c5d54e91c1a548154ec536": {
+   "class": "unseen_function",
+   "family": "if.compose_heldout",
+   "pair": "remove>last_k"
+  },
+  "fed13872a4ba3504f259e12863a297ac": {
+   "class": "frame_only",
+   "family": "if.paraphrase.nth",
+   "op": "nth",
+   "phrasing": "3"
+  },
+  "ff16ec8a9c8e0f8436d4d4c35b0a977b": {
+   "class": "frame_only",
+   "family": "if.paraphrase.dedupe",
+   "op": "dedupe",
+   "phrasing": "3"
+  },
+  "ff452de54f0be19ca9928b5f49046ca4": {
+   "class": "clean",
+   "family": "if.paraphrase.starts_with",
+   "op": "starts_with",
+   "phrasing": "4"
+  },
+  "ffb0c7d5cc16e6cf0847c22c18d641e9": {
+   "class": "frame_only",
+   "family": "if.paraphrase.lower",
+   "op": "lower",
+   "phrasing": "4"
+  }
+ },
+ "schema": "j1.sft-v2-sensitivity.v1"
+}

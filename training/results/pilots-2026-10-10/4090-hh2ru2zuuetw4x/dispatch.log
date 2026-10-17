@@ -1,0 +1,22 @@
+2026-10-10T12:14:21Z dispatched lr-small-6e-4 on GPU 0
+2026-10-10T12:14:21Z dispatched lr-small-1.2e-3 on GPU 1
+2026-10-10T12:14:21Z dispatched lr-small-2.4e-3 on GPU 2
+2026-10-10T12:18:54Z all dispatched runs ended
+2026-10-10T12:18:54Z dispatched tok-j1tok-24k-s1 on GPU 0
+2026-10-10T12:18:54Z dispatched tok-j1tok-28k-s1 on GPU 1
+2026-10-10T12:18:54Z dispatched tok-j1tok-32k-s1 on GPU 2
+2026-10-10T12:18:54Z dispatched tok-j1tok-24k-s2 on GPU 3
+2026-10-10T12:18:54Z dispatched tok-j1tok-28k-s2 on GPU 4
+2026-10-10T12:18:55Z dispatched tok-j1tok-32k-s2 on GPU 5
+2026-10-10T12:29:48Z all dispatched runs ended
+2026-10-10T12:30:31Z dispatched archlr-j1-core-28x640-x0.5 on GPU 0
+2026-10-10T12:30:31Z dispatched archlr-j1-core-28x640-x1 on GPU 1
+2026-10-10T12:30:31Z dispatched archlr-j1-core-28x640-x2 on GPU 2
+2026-10-10T12:30:31Z dispatched archlr-j1-deep-30x576-x0.5 on GPU 3
+2026-10-10T12:30:31Z dispatched archlr-j1-deep-30x576-x1 on GPU 4
+2026-10-10T12:30:31Z dispatched archlr-j1-deep-30x576-x2 on GPU 5
+2026-10-10T12:39:54Z all dispatched runs ended
+2026-10-10T12:39:54Z dispatched archlr-j1-wide-20x768-x0.5 on GPU 0
+2026-10-10T12:39:54Z dispatched archlr-j1-wide-20x768-x1 on GPU 1
+2026-10-10T12:39:54Z dispatched archlr-j1-wide-20x768-x2 on GPU 2
+2026-10-10T12:48:16Z all dispatched runs ended

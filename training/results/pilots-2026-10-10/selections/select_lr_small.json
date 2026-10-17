@@ -1,0 +1,28 @@
+{
+ "rule": "lr-v1.1",
+ "status": "DECIDED",
+ "decision": 0.0024,
+ "rows": [
+  {
+   "run": "lr-small-6e-4",
+   "lr": 0.0006,
+   "val_loss": 4.4155397290233696,
+   "eligible": true,
+   "spiked": false
+  },
+  {
+   "run": "lr-small-1.2e-3",
+   "lr": 0.0012,
+   "val_loss": 3.9966178537049846,
+   "eligible": true,
+   "spiked": false
+  },
+  {
+   "run": "lr-small-2.4e-3",
+   "lr": 0.0024,
+   "val_loss": 3.934655565752265,
+   "eligible": true,
+   "spiked": false
+  }
+ ]
+}

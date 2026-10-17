@@ -1,0 +1,93 @@
+{
+ "build_identity": "e20847a1edd8452571c279942291f4a2fd64a33fed858a40f2d3994c3106abd9",
+ "bytes_by_stage": {
+  "candidate": 574721155,
+  "contamination": 3755,
+  "privacy": 297668,
+  "quality": 65530374,
+  "selection": 1122855458
+ },
+ "bytes_in": 1763408410,
+ "chars_in": 1757347222,
+ "contamination_benchmarks": {
+  "bbh": 1
+ },
+ "docs_in": 492638,
+ "kinds": {
+  "math": 962,
+  "prose": 182482,
+  "technical": 457
+ },
+ "outputs": [
+  {
+   "file": "candidates/wikimedia/wikimedia-0015.parquet",
+   "rows": 183901,
+   "sha256": "1347c0ba6885d3e3265e9474ae31755a2a883200f836bf2ccd74fb073241367e"
+  },
+  {
+   "file": "rejects/wikimedia/wikimedia-0015.parquet",
+   "rows": 308737,
+   "sha256": "e1bbc455744c0edc260b49787aa58fda71638ac0e1f23b673025ad623d65b7f1"
+  },
+  {
+   "file": "signatures/wikimedia/wikimedia-0015.npy",
+   "rows": 183901,
+   "sha256": "99952f8a514d140f1c816fef44b2f8650f37bfae3acf7da3d54725b722d02eb4"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "wikimedia-0015.json.gz",
+ "reasons": {
+  "contamination.bbh": 1,
+  "privacy.pii.payment_card": 4,
+  "privacy.secret.aws_access_key": 2,
+  "quality.math.alpha_words": 1,
+  "quality.math.bullet_lines": 1,
+  "quality.math.duplicate_lines": 1,
+  "quality.math.duplicate_ngrams": 3,
+  "quality.math.too_short": 5,
+  "quality.math.top_ngram_repetition": 4,
+  "quality.prose.alpha_words": 1666,
+  "quality.prose.bullet_lines": 2457,
+  "quality.prose.duplicate_lines": 831,
+  "quality.prose.duplicate_ngrams": 8365,
+  "quality.prose.duplicate_paragraphs": 162,
+  "quality.prose.ellipsis_lines": 15,
+  "quality.prose.mean_word_length": 13,
+  "quality.prose.non_latin_script": 79,
+  "quality.prose.not_english": 11005,
+  "quality.prose.stopwords": 6116,
+  "quality.prose.symbol_ratio": 66,
+  "quality.prose.too_short": 57928,
+  "quality.prose.top_ngram_repetition": 21371,
+  "quality.spam_terms": 225,
+  "quality.technical.bullet_lines": 1,
+  "quality.technical.duplicate_lines": 1,
+  "quality.technical.duplicate_ngrams": 6,
+  "quality.technical.not_english": 2,
+  "quality.technical.stopwords": 34,
+  "quality.technical.too_short": 6,
+  "quality.technical.top_ngram_repetition": 9,
+  "selection.namespace": 232788
+ },
+ "redactions": {
+  "email": 4,
+  "phone": 6
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 698.54,
+ "slow_documents": [],
+ "source_id": "wikimedia",
+ "stages": {
+  "candidate": 183901,
+  "contamination": 1,
+  "privacy": 6,
+  "quality": 75942,
+  "selection": 232788
+ },
+ "unit_id": "wikimedia-0015"
+}

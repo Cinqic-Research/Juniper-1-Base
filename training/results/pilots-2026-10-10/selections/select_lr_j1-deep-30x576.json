@@ -1,0 +1,28 @@
+{
+ "rule": "lr-v1.1",
+ "status": "DECIDED",
+ "decision": 0.0009798,
+ "rows": [
+  {
+   "run": "archlr-j1-deep-30x576-x0.5",
+   "lr": 0.0009798,
+   "val_loss": 5.088427824725949,
+   "eligible": true,
+   "spiked": false
+  },
+  {
+   "run": "archlr-j1-deep-30x576-x1",
+   "lr": 0.0019596,
+   "val_loss": 5.118296021521348,
+   "eligible": true,
+   "spiked": false
+  },
+  {
+   "run": "archlr-j1-deep-30x576-x2",
+   "lr": 0.0039192,
+   "val_loss": 5.259445294801867,
+   "eligible": true,
+   "spiked": false
+  }
+ ]
+}

@@ -1,0 +1,183 @@
+{
+ "inputs": {
+  "accepted_manifest_sha256": "8d00090632bf6ca07f4dd75d3deea89421de823366c8216c6a85c9f003237968",
+  "build_identity": "e7909e40df202f0fb407369802d4d1d0becc02f9f86a777ef50a840d700c765a",
+  "shards_json_sha256": "cb2e2b53d5b4ce26210bca2367c20ea751362bc81d92294c2e81b7f2cda76ef3",
+  "tokenizer_json_sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1"
+ },
+ "pass": true,
+ "phase_a": {
+  "bpe_sample_checked": 29848,
+  "bpe_sample_mismatch": 0,
+  "documents": 2966479,
+  "errors": [],
+  "files": 1345,
+  "inventory_mismatch": [],
+  "literal_control_docs": 22,
+  "literal_control_docs_plain_load_gives_control_ids": 22,
+  "n_errors": 0,
+  "tokens": 3439537823
+ },
+ "schema": "j1.full-recount.v1",
+ "seconds": 1277.8,
+ "splits": {
+  "test": {
+   "by_source": {
+    "arxiv-papers": {
+     "documents": 5,
+     "tokens": 95044
+    },
+    "finemath-4plus": {
+     "documents": 59,
+     "tokens": 97581
+    },
+    "fineweb-edu-dedup": {
+     "documents": 737,
+     "tokens": 779041
+    },
+    "libretexts": {
+     "documents": 149,
+     "tokens": 154913
+    },
+    "oercommons": {
+     "documents": 4,
+     "tokens": 2086
+    },
+    "pressbooks": {
+     "documents": 82,
+     "tokens": 113192
+    },
+    "stackexchange": {
+     "documents": 545,
+     "tokens": 404483
+    },
+    "stackv2-edu": {
+     "documents": 523,
+     "tokens": 526186
+    },
+    "wikimedia": {
+     "documents": 506,
+     "tokens": 484555
+    }
+   },
+   "document_tokens": 2657081,
+   "documents": 2610,
+   "errors": [],
+   "pass": true,
+   "separator_tokens": 2610,
+   "stream_tokens": 2659691
+  },
+  "train": {
+   "by_source": {
+    "arxiv-papers": {
+     "documents": 10499,
+     "tokens": 213548967
+    },
+    "cinqic-aaa-docs": {
+     "documents": 43,
+     "tokens": 103764
+    },
+    "cinqic-calculator-docs": {
+     "documents": 5,
+     "tokens": 6857
+    },
+    "cinqic-juniper-app-docs": {
+     "documents": 52,
+     "tokens": 30660
+    },
+    "finemath-4plus": {
+     "documents": 298504,
+     "tokens": 427675867
+    },
+    "fineweb-edu-dedup": {
+     "documents": 969053,
+     "tokens": 1078540325
+    },
+    "libretexts": {
+     "documents": 35957,
+     "tokens": 78616461
+    },
+    "oercommons": {
+     "documents": 3883,
+     "tokens": 8571686
+    },
+    "pressbooks": {
+     "documents": 43790,
+     "tokens": 106640646
+    },
+    "python-peps": {
+     "documents": 651,
+     "tokens": 2794141
+    },
+    "stackexchange": {
+     "documents": 558932,
+     "tokens": 444815007
+    },
+    "stackv2-edu": {
+     "documents": 551282,
+     "tokens": 600311992
+    },
+    "wikimedia": {
+     "documents": 488635,
+     "tokens": 471997015
+    }
+   },
+   "document_tokens": 3433653388,
+   "documents": 2961286,
+   "errors": [],
+   "pass": true,
+   "separator_tokens": 2961286,
+   "stream_tokens": 3436614674
+  },
+  "validation": {
+   "by_source": {
+    "arxiv-papers": {
+     "documents": 12,
+     "tokens": 216150
+    },
+    "finemath-4plus": {
+     "documents": 181,
+     "tokens": 433962
+    },
+    "fineweb-edu-dedup": {
+     "documents": 832,
+     "tokens": 890604
+    },
+    "libretexts": {
+     "documents": 9,
+     "tokens": 26525
+    },
+    "oercommons": {
+     "documents": 2,
+     "tokens": 9270
+    },
+    "pressbooks": {
+     "documents": 24,
+     "tokens": 257224
+    },
+    "python-peps": {
+     "documents": 1,
+     "tokens": 1983
+    },
+    "stackexchange": {
+     "documents": 524,
+     "tokens": 416047
+    },
+    "stackv2-edu": {
+     "documents": 498,
+     "tokens": 514681
+    },
+    "wikimedia": {
+     "documents": 500,
+     "tokens": 460908
+    }
+   },
+   "document_tokens": 3227354,
+   "documents": 2583,
+   "errors": [],
+   "pass": true,
+   "separator_tokens": 2583,
+   "stream_tokens": 3229937
+  }
+ }
+}

@@ -1,0 +1,219 @@
+{
+ "source": {
+  "repo": "Cinqic-Research/Juniper-App",
+  "commit": "11225ba7588e",
+  "files": [
+   "src-tauri/src/tools.rs",
+   "src-tauri/src/live_gpt_oss.rs",
+   "src/types/index.ts"
+  ]
+ },
+ "protocolVersion": "juniper-tool-protocol-v1",
+ "statuses": [
+  "success",
+  "error",
+  "denied",
+  "unavailable",
+  "unsupported",
+  "cancelled"
+ ],
+ "limits": {
+  "MAX_TOOL_ROUNDS": 4,
+  "MAX_TOOL_CALLS_PER_ROUND": 8,
+  "MAX_PAYLOAD_BYTES": 65536,
+  "MAX_EXPRESSION_BYTES": 256
+ },
+ "tools": [
+  {
+   "name": "calculator.evaluate",
+   "risk": "automatic-safe",
+   "description": "Safely evaluate common arithmetic without executing code.",
+   "schema": {
+    "type": "object",
+    "properties": {
+     "expression": {
+      "type": "string",
+      "maxLength": 256
+     }
+    },
+    "required": [
+     "expression"
+    ],
+    "additionalProperties": false
+   },
+   "example": {
+    "expression": "(17 * 23) - 4 / 2"
+   }
+  },
+  {
+   "name": "datetime.current",
+   "risk": "automatic-safe",
+   "description": "datetime.current",
+   "schema": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false
+   },
+   "example": {}
+  },
+  {
+   "name": "unit.convert",
+   "risk": "automatic-safe",
+   "description": "unit.convert",
+   "schema": {
+    "type": "object",
+    "properties": {
+     "value": {
+      "type": "number"
+     },
+     "from": {
+      "type": "string",
+      "maxLength": 64
+     },
+     "to": {
+      "type": "string",
+      "maxLength": 64
+     }
+    },
+    "required": [
+     "value",
+     "from",
+     "to"
+    ],
+    "additionalProperties": false
+   },
+   "example": {
+    "value": 3.5,
+    "from": "gib",
+    "to": "mb"
+   }
+  },
+  {
+   "name": "memory.list",
+   "risk": "user-data-read",
+   "description": "memory.list",
+   "schema": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false
+   },
+   "example": {}
+  },
+  {
+   "name": "memory.save",
+   "risk": "user-data-write",
+   "description": "Propose a user-curated memory for explicit approval.",
+   "schema": {
+    "type": "object",
+    "properties": {
+     "content": {
+      "type": "string",
+      "maxLength": 1000
+     }
+    },
+    "required": [
+     "content"
+    ],
+    "additionalProperties": false
+   },
+   "example": {
+    "content": "Prefers metric units; uses Python 3.12."
+   }
+  },
+  {
+   "name": "memory.delete",
+   "risk": "user-data-write",
+   "description": "memory.delete",
+   "schema": {
+    "type": "object",
+    "properties": {
+     "id": {
+      "type": "string",
+      "maxLength": 128
+     }
+    },
+    "required": [
+     "id"
+    ],
+    "additionalProperties": false
+   },
+   "example": {
+    "id": "mem-7f3a"
+   }
+  },
+  {
+   "name": "chat.search",
+   "risk": "user-data-read",
+   "description": "Search the local conversation database; unrelated chats are not included automatically.",
+   "schema": {
+    "type": "object",
+    "properties": {
+     "query": {
+      "type": "string",
+      "maxLength": 200
+     }
+    },
+    "required": [
+     "query"
+    ],
+    "additionalProperties": false
+   },
+   "example": {
+    "query": "torch.compile warmup numbers"
+   }
+  },
+  {
+   "name": "file.read",
+   "risk": "filesystem-read",
+   "description": "Read only a user-selected text file, capped at 1 MB.",
+   "schema": {
+    "type": "object",
+    "properties": {
+     "attachmentId": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "attachmentId"
+    ],
+    "additionalProperties": false
+   },
+   "example": {
+    "attachmentId": "att-01"
+   }
+  },
+  {
+   "name": "file.metadata",
+   "risk": "filesystem-read",
+   "description": "file.metadata",
+   "schema": {
+    "type": "object",
+    "properties": {
+     "attachmentId": {
+      "type": "string",
+      "maxLength": 128
+     }
+    },
+    "required": [
+     "attachmentId"
+    ],
+    "additionalProperties": false
+   },
+   "example": {
+    "attachmentId": "att-01"
+   }
+  },
+  {
+   "name": "system.info",
+   "risk": "automatic-safe",
+   "description": "system.info",
+   "schema": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false
+   },
+   "example": {}
+  }
+ ],
+ "notes": "Transcribed from the App sources at the pinned commit. The App validator (tools.rs validate_call) stays authoritative; this fixture tests transport through juniper-chat-v1, not validation."
+}

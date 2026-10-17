@@ -1,0 +1,31 @@
+2026-10-10T11:58:22Z
+Linux c0a3e1896d5b 6.8.0-49-generic #49-Ubuntu SMP PREEMPT_DYNAMIC Mon Nov  4 02:06:24 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+GPU 0: NVIDIA GeForce RTX 4090 (UUID: GPU-af8f9915-b5f7-6307-6c8e-12edca07c0f6)
+GPU 1: NVIDIA GeForce RTX 4090 (UUID: GPU-d8e3d2b3-60b5-92b9-7267-8d22162f1bbf)
+GPU 2: NVIDIA GeForce RTX 4090 (UUID: GPU-cfd96959-dd4d-c4e0-33b9-1be393220dbe)
+GPU 3: NVIDIA GeForce RTX 4090 (UUID: GPU-e90f139c-c65d-fba2-cca5-1d3889fd3247)
+GPU 4: NVIDIA GeForce RTX 4090 (UUID: GPU-a46f1261-5959-5170-d2f8-6eafc2bb6e4b)
+GPU 5: NVIDIA GeForce RTX 4090 (UUID: GPU-5f9dd6b8-dc5d-ac6d-33b6-ea7c9a722987)
+name, uuid, memory.total [MiB], mig.mode.current, driver_version, clocks.max.sm [MHz], power.limit [W], ecc.mode.current
+NVIDIA GeForce RTX 4090, GPU-af8f9915-b5f7-6307-6c8e-12edca07c0f6, 24564 MiB, [N/A], 570.195.03, 3105 MHz, 450.00 W, Disabled
+NVIDIA GeForce RTX 4090, GPU-d8e3d2b3-60b5-92b9-7267-8d22162f1bbf, 24564 MiB, [N/A], 570.195.03, 3105 MHz, 450.00 W, Disabled
+NVIDIA GeForce RTX 4090, GPU-cfd96959-dd4d-c4e0-33b9-1be393220dbe, 24564 MiB, [N/A], 570.195.03, 3105 MHz, 450.00 W, Disabled
+NVIDIA GeForce RTX 4090, GPU-e90f139c-c65d-fba2-cca5-1d3889fd3247, 24564 MiB, [N/A], 570.195.03, 3105 MHz, 450.00 W, Disabled
+NVIDIA GeForce RTX 4090, GPU-a46f1261-5959-5170-d2f8-6eafc2bb6e4b, 24564 MiB, [N/A], 570.195.03, 3105 MHz, 450.00 W, Disabled
+NVIDIA GeForce RTX 4090, GPU-5f9dd6b8-dc5d-ac6d-33b6-ea7c9a722987, 24564 MiB, [N/A], 570.195.03, 3105 MHz, 450.00 W, Disabled
+--- mounts
+Filesystem      Size  Used Avail Use% Mounted on
+overlay         150G   34M  150G   1% /
+overlay         150G   34M  150G   1% /
+overlay         150G   34M  150G   1% /
+overlay on / type overlay (rw,relatime,lowerdir=/var/lib/docker/165536.165536/overlay2/l/AKE7AJLDAXI32Y4ILOD4PK2FPC:/var/lib/docker/165536.165536/overlay2/l/TGHFWGL4Q7YL5FK723GMNONROV:/var/lib/docker/165536.165536/overlay2/l/DVCWA6UDNMPKG5XVDSJYPDBITS:/var/lib/docker/165536.165536/overlay2/l/UV7SRTYQJSJTCHSFO7PAUT7MI6:/var/lib/docker/165536.165536/overlay2/l/FT2QCJCT7SSZPCFTNZUULD4LAE:/var/lib/docker/165536.165536/overlay2/l/DFZGTV7YEQPJBXHETMS6J5H5JO:/var/lib/docker/165536.165536/overlay2/l/CUEEHGBJTRR5UNICVYET3ZAA3D:/var/lib/docker/165536.165536/overlay2/l/ZQFBJL6TBALTYZYSTTVSXGXMPH:/var/lib/docker/165536.165536/overlay2/l/KM7PKWEPUR7K6RKRJ4GYQENGAC:/var/lib/docker/165536.165536/overlay2/l/N7HG6GOTZOJ3KKQUMQNIQR3BBW:/var/lib/docker/165536.165536/overlay2/l/RKZ7Y6XEXWIF3HU6HYSMSNJG43:/var/lib/docker/165536.165536/overlay2/l/M7Q42J46TC76UA33YG7AYCVMZA:/var/lib/docker/165536.165536/overlay2/l/OKQRSW4K4GQUXSVZAC3G66EDQK:/var/lib/docker/165536.165536/overlay2/l/FEF7ZCLDRRR3UEY7OCA74O4BGZ:/var/lib/docker/165536.165536/overlay2/l/YVK667AF5PZPLDEUBUIM4C4U52:/var/lib/docker/165536.165536/overlay2/l/PVQRN6DY4ELWLZRKAZI7EGMMRQ:/var/lib/docker/165536.165536/overlay2/l/WIHVOL5ZJ7KTEN4B6KY7RFBSP2:/var/lib/docker/165536.165536/overlay2/l/VDE3Y6GALSA2R6J6MRRHS72SNB:/var/lib/docker/165536.165536/overlay2/l/UYUPGE6FWJUAXA67INXEN73EGE:/var/lib/docker/165536.165536/overlay2/l/KEC4V6ZTMNKAGWZ35CZRROZO7B:/var/lib/docker/165536.165536/overlay2/l/VU2GND4IKCDXP7BRXT57O43VEO:/var/lib/docker/165536.165536/overlay2/l/YVOJAD6YQU7KZM3OAOZ5B3XXEB:/var/lib/docker/165536.165536/overlay2/l/Z5UPE27LRW3P3R4UFWP6CEPWSU:/var/lib/docker/165536.165536/overlay2/l/3QMO7SY2ERPKFYWPT6OD5SPAH2:/var/lib/docker/165536.165536/overlay2/l/6B2RLUH3XUDOQL3DJZX6HP5CHR:/var/lib/docker/165536.165536/overlay2/l/UQEYHEJUYTZCP2FF6TZ3PESPYU:/var/lib/docker/165536.165536/overlay2/l/Z3ZGMP6OG7VZA7WC6EILVN4ZLO:/var/lib/docker/165536.165536/overlay2/l/QPTYN4U4FJJIPYGBUV4MJCVJZS:/var/lib/docker/165536.165536/overlay2/l/RRIIGVOGFQYNOEO23BLEJH7YWK:/var/lib/docker/165536.165536/overlay2/l/7CX4RWXFVIFLQJ5PPHED6ZU3VG:/var/lib/docker/165536.165536/overlay2/l/ZZNAZSR3MVK6VLC27MWF4QXZJV:/var/lib/docker/165536.165536/overlay2/l/SAVMDRUQWRMYSMBZ52AO233AJR:/var/lib/docker/165536.165536/overlay2/l/H4XAR7OFALMHHZNYPRNGHIYNLI:/var/lib/docker/165536.165536/overlay2/l/Q5CGCL6UND5BHLIG5GG7NGXQGG:/var/lib/docker/165536.165536/overlay2/l/24G4APRLEN7K5UBDPTVW2BWBOH,upperdir=/var/lib/docker/165536.165536/overlay2/1a1247e4a7f467060e509987cc6014eaee5343fc25b8e1789963e5bae62cd669/diff,workdir=/var/lib/docker/165536.165536/overlay2/1a1247e4a7f467060e509987cc6014eaee5343fc25b8e1789963e5bae62cd669/work,nouserxattr)
+--- cpu
+96
+               total        used        free      shared  buff/cache   available
+Mem:             251          21         152           0          79         230
+Swap:              0           0           0
+--- env names
+--- runpodctl
+/usr/bin/runpodctl
+Runpod config file not found, please run `runpodctl config` to create it
+runpodctl 1.14.15-dac76ad

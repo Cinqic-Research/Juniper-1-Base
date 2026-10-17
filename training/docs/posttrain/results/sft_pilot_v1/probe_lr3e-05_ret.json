@@ -1,0 +1,27 @@
+{
+ "bpb": 0.8763584005094007,
+ "bytes": 243587,
+ "device": "NVIDIA GeForce RTX 2060",
+ "input_hashes": {
+  "docs": "42e057d7771fc1223c9f59895edb5d4d2bb8cbfacdca5dabe6a91ec37482f787",
+  "shards": "1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef",
+  "tokenizer": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+  "validation": "03efc04fc4c1bf1b1960f950cf98de229a9494dca786bb9472410bc9d44e13df"
+ },
+ "loss": 2.3017514709732207,
+ "mode": "fixed32",
+ "model": {
+  "checkpoint": "ckpt-000000150-484e1bc2",
+  "kind": "sft_checkpoint",
+  "manifest_sha256": "7ce3383a5b3dbc452f04ad0c5652340055b2be252e488d79a4ebef4af69d23f2",
+  "model_state_sha256": "ec5dc99a1c3a14e949b71e5e522ddeaeae1aba58e28210eab790a95b0eb715fa",
+  "run_id": "j1-sft-v1-probe-lr3e-05",
+  "stage": "juniper1-sft-v1-probe",
+  "updates": 150
+ },
+ "precision": "fp32",
+ "schema": "j1.sft-retention.v1",
+ "seconds": 6.5,
+ "targets": 64284,
+ "windows": 32
+}

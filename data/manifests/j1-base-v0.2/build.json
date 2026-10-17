@@ -1,0 +1,231 @@
+{
+ "build_id": "j1-base-v0.2",
+ "identity": "aa9c4ed9522449521881a64b1dd810006df6249f56d8c1dae8b4e7cc1de8d005",
+ "inputs": {
+  "acquisition_manifests": {
+   "arxiv-papers": "04e1cf55181ec812da17866a99bc83a7d83ade3c9ccfde02f44e96474abe500e",
+   "cinqic-aaa-docs": "d3638a6f3f5a909d37b87cc9bd7bf27cf8ff60bc89bc7cfe8547a084458c0811",
+   "cinqic-calculator-docs": "be8d44e7bd285697abe2712042de8dfcb1c1a653ab1d89422c07a2a5f02c0048",
+   "cinqic-juniper-app-docs": "30f358a793a87a1588ccf0136935031694649def7012c06ae770038dc7e5dac3",
+   "finemath-4plus": "be52807a5e85fcb5a8f7760f933f443c1f76bd00bfed31c5a36d2273b934bafc",
+   "fineweb-edu-dedup": "d359f5e708328b575a6165601961f7a1da51193ae06be0ecde29eceac591e0a3",
+   "libretexts": "5caec5722e748200216aea1efd6db41891d5d989e836b039254ec62e0fa661e2",
+   "oercommons": "c83a9bdcf34c55bf82e6a6acead9222612e42c6ae60186710d38e1310562e118",
+   "pressbooks": "22b80b3e38c99505eeae09870976ee0b027bbc36cee26511bf6c6b32ab0638d5",
+   "python-peps": "fb18bcea4c123092590bcaf7d3364c5c2a6018fb0fea54bd242ec12880ec5072",
+   "stackexchange": "f6449559925f4cee867dda891fe247bcd722115f90d98b8865b808eae16c8dfa",
+   "stackv2-edu": "c8e0da737fa5ccfa42483dcd1aa35fa0e269f91dce5ec93b10df483f0af36d68",
+   "wikimedia": "8d17225e56353cdd25b26587238356f289c2ff05ced59d46d21c202d2906f43a"
+  },
+  "build_code": {
+   "acquire.py": "3013bfbe1cad4fbca93a6550c098297f0f82ba9082f723e8ab76883bb5d69035",
+   "adapters/__init__.py": "cff8c0e8a38eb38f946d6a4c3e0c9275233cfa2f170413d9360f32e5468f0e7e",
+   "build.py": "9e3d6e8ce987f63ff170bc0c6bbee1ec87955e43a146e3f0811dcc93b5cb0857",
+   "cli.py": "ea8546fe30c581466d89ec6260f0fed852aa6c430c2929ceca1492051974a2d4",
+   "code_signatures.py": "e2bfe42eedb6dc8ee225c37fc41695c6d48fa767815a8779a7f630026f0735cf",
+   "contamination.py": "f9a0ae90877269bb6861da2dda835aec22d546b7898cf87ae68e7772e167692a",
+   "dedup.py": "576508f0cc0fa2ec4bd7480ebd02f9dc5871bd1e8de2200fd03a0a11c65e594d",
+   "domains.py": "c55a656de76ea7ebe652a24ef9702b476451d4d137c00e58c180a0cc896f03e7",
+   "exclusions.py": "9499b07caa7394e04cc5e3e0b34d4413934514f30b5cd5fe4fe32969b9097e04",
+   "finalize.py": "a8884f3fea1f51dfaa8bc8511e00ef9cff322dea30fa458043d7e12bbe9fa0be",
+   "hashing.py": "cfd795a5b81a40122ae9d3f8c3629051893cb56a2349d5763e7fdf3c25aec732",
+   "minhash.py": "b49157401fbc68cc976866d95d18e6356f7b7e422c8fa459a4c567a2e7c0e471",
+   "ngrams.py": "079ead7acaa26ed4e66f8d8ab1e618a1c2b4a727bcde908b96a0ddc8a35bf571",
+   "normalize.py": "1906af78ba3a4baff117afe71479b6bedcf4b84bf0767226e5ec9eb330325d16",
+   "paths.py": "0f4301b9c878febaabddfb7e1760fa04cb5cf87bec560c1517bd39264f911131",
+   "privacy.py": "cdf77ba2048ecc9bc60c2a0792a447bf6f745ef35505bc8de71bbc0baa4d86f0",
+   "process.py": "a12067b7b0bb8bbbf8321fddd02e6a2fd70edaf205d90525e681f0b918bb2cdf",
+   "quality.py": "4a723f1327df4b64584b1dc4d270becbce35ce1ab0af56e414486d72c7f5e9c4",
+   "registry.py": "0e2efb5409653e092e572d6829bc36b7008bd0b88e094cf0882c90fadc94d023",
+   "select.py": "0b34124c5765c060a4f002f3e087e7014d8068052a8682a753d0f58b604f869e",
+   "shards.py": "f80a8ea17649cd5183ef982df110b7f39eb7d7b7b101344082f55629f83209ef",
+   "splits.py": "152cc4651ba98c1d06c379ce5d8a43324b5a5fd214dc21dd8ddbb2561a7a2d62",
+   "token_counts.py": "3e296338d8efa2e1fde55428357ebe876a968876bf4baa7922081b47d6898280",
+   "tokenization.py": "3c50b8a27fbf05427c961729854eb4aef8da8573285c1b41e2e1c5382a151f90"
+  },
+  "build_scope_sha256": "f1d620b344c67345d06c78b86f681608a5059721d81947eeb6794ddd67f70a02",
+  "exclusion_index": "6bc49448dc1d75b9b8e6c78c98aa4d1f4293bba972e2f7969e048779837c35d5",
+  "exclusion_sources": "3678b70aceff051aa6df4b1669ed1e67b60abf7e5355c40a6854d168785123ee",
+  "exclusions_config_sha256": "d6a398869d8883c6f29b4810d4723bdd13f5f22e20418ef14ee3ac7e4eca244e",
+  "pipeline": {
+   "build": {
+    "audit_reject_text_rate": 0.01,
+    "id": "j1-base-v0.2",
+    "stage": "base-pretraining"
+   },
+   "contamination": {
+    "min_coverage": 0.5,
+    "min_informative_words": 6,
+    "ngram": 13,
+    "short_min_chars": 48,
+    "short_min_informative_words": 5,
+    "short_min_words": 6,
+    "version": "j1.contamination.v3"
+   },
+   "dedup": {
+    "bands": 14,
+    "rows": 8,
+    "version": "j1.dedup.v1"
+   },
+   "minhash": {
+    "num_perm": 112,
+    "seed": 1,
+    "shingle_words": 5,
+    "version": "j1.minhash.v1"
+   },
+   "normalize": {
+    "version": "j1.normalize.v1"
+   },
+   "privacy": {
+    "version": "j1.privacy.v1"
+   },
+   "quality": {
+    "code": {
+     "max_bytes": 1000000,
+     "max_line_len": 1000,
+     "max_mean_line_len": 100.0,
+     "max_non_latin_letter_frac": 0.3,
+     "max_numeric_token_frac": 0.5,
+     "min_alnum_frac": 0.25,
+     "min_chars": 64,
+     "min_nonblank_lines": 3
+    },
+    "curated": {
+     "max_dup_line_char_frac": 0.3,
+     "max_dup_line_frac": 0.5,
+     "max_dup_ngram_char_frac": {
+      "10": 0.35,
+      "5": 0.35,
+      "6": 0.35,
+      "7": 0.35,
+      "8": 0.35,
+      "9": 0.35
+     },
+     "max_dup_para_char_frac": 0.3,
+     "max_dup_para_frac": 0.4,
+     "max_top_ngram_char_frac": {
+      "2": 0.25,
+      "3": 0.22,
+      "4": 0.2
+     }
+    },
+    "kinds": {
+     "math": {
+      "max_bullet_line_frac": 0.9,
+      "max_dup_line_char_frac": 0.25,
+      "max_dup_line_frac": 0.35,
+      "max_dup_ngram_char_frac": {
+       "10": 0.15,
+       "5": 0.2,
+       "6": 0.19,
+       "7": 0.18,
+       "8": 0.17,
+       "9": 0.16
+      },
+      "max_dup_para_char_frac": 0.2,
+      "max_dup_para_frac": 0.3,
+      "max_ellipsis_line_frac": 0.3,
+      "max_line_len": 50000,
+      "max_mean_word_len": 15.0,
+      "max_non_latin_letter_frac": 0.2,
+      "max_symbol_ratio": 0.25,
+      "max_top_ngram_char_frac": {
+       "2": 0.2,
+       "3": 0.18,
+       "4": 0.16
+      },
+      "max_words": 200000,
+      "min_alpha_word_frac": 0.5,
+      "min_english_function_word_frac": 0.08,
+      "min_mean_word_len": 2.0,
+      "min_stopwords": 2,
+      "min_words": 50
+     },
+     "prose": {
+      "max_bullet_line_frac": 0.9,
+      "max_dup_line_char_frac": 0.2,
+      "max_dup_line_frac": 0.3,
+      "max_dup_ngram_char_frac": {
+       "10": 0.1,
+       "5": 0.15,
+       "6": 0.14,
+       "7": 0.13,
+       "8": 0.12,
+       "9": 0.11
+      },
+      "max_dup_para_char_frac": 0.2,
+      "max_dup_para_frac": 0.3,
+      "max_ellipsis_line_frac": 0.3,
+      "max_line_len": 50000,
+      "max_mean_word_len": 10.0,
+      "max_non_latin_letter_frac": 0.2,
+      "max_symbol_ratio": 0.1,
+      "max_top_ngram_char_frac": {
+       "2": 0.2,
+       "3": 0.18,
+       "4": 0.16
+      },
+      "max_words": 200000,
+      "min_alpha_word_frac": 0.8,
+      "min_english_function_word_frac": 0.15,
+      "min_mean_word_len": 3.0,
+      "min_stopwords": 2,
+      "min_words": 50
+     },
+     "technical": {
+      "max_bullet_line_frac": 0.95,
+      "max_dup_line_char_frac": 0.3,
+      "max_dup_line_frac": 0.5,
+      "max_dup_ngram_char_frac": {
+       "10": 0.2,
+       "5": 0.3,
+       "6": 0.28,
+       "7": 0.26,
+       "8": 0.24,
+       "9": 0.22
+      },
+      "max_dup_para_char_frac": 0.3,
+      "max_dup_para_frac": 0.4,
+      "max_ellipsis_line_frac": 0.3,
+      "max_line_len": 50000,
+      "max_mean_word_len": 20.0,
+      "max_non_latin_letter_frac": 0.2,
+      "max_symbol_ratio": 0.3,
+      "max_top_ngram_char_frac": {
+       "2": 0.25,
+       "3": 0.22,
+       "4": 0.2
+      },
+      "max_words": 200000,
+      "min_alpha_word_frac": 0.4,
+      "min_english_function_word_frac": 0.05,
+      "min_mean_word_len": 2.0,
+      "min_stopwords": 2,
+      "min_words": 30
+     }
+    },
+    "math_latex_per_kword": 8.0,
+    "max_base64_char_frac": 0.2,
+    "max_mojibake_per_kchar": 1.0,
+    "max_replacement_char_frac": 0.001,
+    "max_spam_terms_per_kword": 8.0,
+    "technical_code_line_frac": 0.25,
+    "version": "j1.quality.v1"
+   },
+   "splits": {
+    "leak_fraction": 0.5,
+    "namespace": "j1.split.v1",
+    "test_fraction": 0.001,
+    "validation_fraction": 0.001,
+    "version": "j1.split.v1"
+   }
+  },
+  "selection_config_sha256": "1effe72cf6e989eef016bda7fdbb58e33930d486a46397d676c978edf209a9fb",
+  "sources_sha256": "0bb0ef6a5423c7856ae04d45be1ecfa0cf2d67d2db324128d40d43f6aff8658c"
+ },
+ "started_at_code": {
+  "commit": "e3f243e16f877cfb5431a225f398dfa59058f785",
+  "dirty": false,
+  "package_version": "0.1.0"
+ }
+}

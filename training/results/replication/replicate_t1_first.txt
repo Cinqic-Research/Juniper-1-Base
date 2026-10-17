@@ -1,0 +1,1 @@
+{"checkpoint": "ckpt-000000000-7fa60aad", "status": "VERIFIED", "reason": "ok", "bytes": 593377969, "transfer_s": 47.21625113487244, "MBps": 12.567240192471564, "replication_lag_s": 189.854119}

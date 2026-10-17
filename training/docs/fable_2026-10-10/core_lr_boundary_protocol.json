@@ -1,0 +1,18 @@
+{
+ "schema": "j1.core-lr-boundary-protocol.v1",
+ "registered_utc": "2026-10-11T06:36:03Z",
+ "authority": "owner order 2026-10-10 section 9 (core LR boundary): optional, separate cap (funding contract v5 OPTIONAL_CORE_LR, hard 2.00), admitted only after QUAL, CE2 and LAUNCH are closed within their caps",
+ "question": "Protocol 18b selected core's LR at the upper grid edge (x2 = 1.859e-3, val 3.4424 vs x1 3.4503, +0.23 %); the registered budget cut order skipped the x4 extension for both shapes. Does a core x4 screening point change the frozen core LR, and could it overturn architecture-v2?",
+ "experiment": {
+  "run": "scr-j1-core-28x640-x4 (one run, identical arguments to the committed 18b screening runs: seed 11, 1,396 updates, 18b prefix shards.json 2a9555a08843f3a2ea0762a95bd4b9594ee52b66ffdbc6618b1dd0798a1e917d, stage fu3-lr-screen, same host class A100)",
+  "lr": "4 x 9.295e-4 = 3.718e-3 (the grid's x4 point)",
+  "cost_estimate_usd": 0.5,
+  "deadline": "after the 2,000-update tranche report"
+ },
+ "decision_rule": {
+  "lr_selection": "apply tools/select_rule.py lr to the five core screening points {x0.25, x0.5, x1, x2, x4}; if the selected point is still x2 (x4 not lower by more than the 18b screening noise rule), the boundary is RESOLVED-UNCHANGED and the frozen LR stands",
+  "confirmation_trigger": "if x4 is selected for core, architecture-v2 would need core's ET/EC confirmation rerun at x4 (3 seeds x 2 runs, about 2.6 h, about $5): this exceeds the OPTIONAL cap, so the outcome is reported as 'core LR boundary MOVED; selection not re-confirmed' and escalated to the owner for a funding decision; the selected wide baseline is retained meanwhile",
+  "sensitivity": "from the numerics review N-11: to overturn rule 2 core would need >= 0.94 % lower EC bpb (lower90 of wide's EC gain) or >= 0.61 % lower ET bpb"
+ },
+ "status": "REGISTERED; NOT RUN (funds reserved for essential gates and the protected tranche first)"
+}

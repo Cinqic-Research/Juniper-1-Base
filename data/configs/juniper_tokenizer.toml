@@ -1,0 +1,12 @@
+# Juniper 1 tokenizer candidates (j1.tokenizer.v1; src/j1data/jtok.py).
+#
+# total_vocab counts everything: 64 control IDs (named protocol tokens plus
+# reserved), 256 byte-fallback tokens, and learned BPE tokens. All sizes are
+# multiples of 64. The training sample is drawn from the train split only; the
+# evaluation set is the whole validation split.
+
+[sample]
+rate = 0.03          # keyed hash of doc id (j1.tokenizer-train-sample.v1)
+
+[candidates]
+total_vocab = [24576, 28672, 32768]

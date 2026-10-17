@@ -1,0 +1,9 @@
+{
+ "schema": "j1.validation-record.v1",
+ "split": "validation",
+ "build": "j1-base-v0.2.2",
+ "validation_doc_index_sha256": "42e057d7771fc1223c9f59895edb5d4d2bb8cbfacdca5dabe6a91ec37482f787",
+ "documents": 2576,
+ "scored_bytes": 12311466,
+ "source": "protocol-18b ET runs (selection_18b/et_reference_summary.json); equals the registered VAL_DOCS/VAL_BYTES in tools/select_rule.py"
+}

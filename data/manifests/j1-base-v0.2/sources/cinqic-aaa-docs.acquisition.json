@@ -1,0 +1,357 @@
+{
+ "acquire_version": "j1.acquire.v1",
+ "acquired_utc": "2026-10-07T15:31:00+00:00",
+ "files": [
+  {
+   "git_blob_oid": "99753bb03ba7797b936a23305fce4d07707a1b8d",
+   "path": "AGENTS.md",
+   "size": 318
+  },
+  {
+   "git_blob_oid": "99753bb03ba7797b936a23305fce4d07707a1b8d",
+   "path": "CLAUDE.md",
+   "size": 318
+  },
+  {
+   "git_blob_oid": "848c0d1f49c6f9444c08633ee4c890e67efe4c10",
+   "path": "CONTRIBUTING.md",
+   "size": 10620
+  },
+  {
+   "git_blob_oid": "de55478e13a05f79292b4b262bd0162f2914d2b9",
+   "path": "README.md",
+   "size": 34454
+  },
+  {
+   "git_blob_oid": "406ef349bfa7b89162903449310ab850f4351430",
+   "path": "SECURITY.md",
+   "size": 6236
+  },
+  {
+   "git_blob_oid": "726979c9dece32101894e6804f3938448f683718",
+   "path": "docs/aaa_1k_architecture.md",
+   "size": 15447
+  },
+  {
+   "git_blob_oid": "1f6263c3b71ef120916ea6bac47723ecbdc87277",
+   "path": "docs/aaa_1k_decisions.md",
+   "size": 17578
+  },
+  {
+   "git_blob_oid": "42a602540d26698cc4ebe685fa3b88a3b986c3b6",
+   "path": "docs/aaa_1k_report.md",
+   "size": 14220
+  },
+  {
+   "git_blob_oid": "9c9492efb0f6510884a5e1a65ead6e3a9eaed524",
+   "path": "docs/aaa_1k_report_round1_superseded.md",
+   "size": 12355
+  },
+  {
+   "git_blob_oid": "acc3fc53cdb19af268435f3a848e602ba8c5d63e",
+   "path": "docs/aaa_1k_report_round2_superseded.md",
+   "size": 13616
+  },
+  {
+   "git_blob_oid": "06a5696b0c11f72bfd9d0ac90a6acdebaa90a9a1",
+   "path": "docs/aaa_1k_v2_architecture.md",
+   "size": 7501
+  },
+  {
+   "git_blob_oid": "82b31ef63dba54957b71e43ef0a9228be119c4c5",
+   "path": "docs/aaa_1k_v2_benchmark_protocol.md",
+   "size": 9395
+  },
+  {
+   "git_blob_oid": "0e65edabc297c75dfe2872197a35bee074bc9d36",
+   "path": "docs/aaa_1k_v2_compute_report.md",
+   "size": 7023
+  },
+  {
+   "git_blob_oid": "50e19a1f65464742377c6697cb4c3ea4c83a7e70",
+   "path": "docs/aaa_1k_v2_compute_strategy.md",
+   "size": 6607
+  },
+  {
+   "git_blob_oid": "10b2bf98b2094aa490e04d262c6234fde91e5742",
+   "path": "docs/aaa_1k_v2_decisions.md",
+   "size": 16488
+  },
+  {
+   "git_blob_oid": "868c42b47600c1292857278cfffcd1d46820f9dc",
+   "path": "docs/aaa_1k_v2_external_benchmarks.md",
+   "size": 9848
+  },
+  {
+   "git_blob_oid": "00882ce0b9d1f39f354d8800e7fa62cd2f132f22",
+   "path": "docs/aaa_1k_v2_report.md",
+   "size": 22713
+  },
+  {
+   "git_blob_oid": "1e58b8d49677d5b87c56e1f25fa8fc7afc22e70c",
+   "path": "docs/aaa_1k_v2_research_brief.md",
+   "size": 8634
+  },
+  {
+   "git_blob_oid": "a7422264d96482d0124521c9093e2ea7d4ac211e",
+   "path": "docs/aaa_charter.md",
+   "size": 5896
+  },
+  {
+   "git_blob_oid": "80ae23f5a0242ddec9ace62b5a41e332b25cceb2",
+   "path": "docs/aaa_python_architecture.md",
+   "size": 5075
+  },
+  {
+   "git_blob_oid": "5d5c555b33e7cd2daae1b7943c2f48ebf231696d",
+   "path": "docs/aaa_python_development_report.md",
+   "size": 13434
+  },
+  {
+   "git_blob_oid": "fedc432eae9ea01b85ca24bb35c02c13d963da30",
+   "path": "docs/aaa_python_protocol.md",
+   "size": 11309
+  },
+  {
+   "git_blob_oid": "a0302d55c539080d150e70ebf8b68d4de00a3449",
+   "path": "docs/aaa_python_research_brief.md",
+   "size": 5239
+  },
+  {
+   "git_blob_oid": "1db4779c7fb83bcf206317aec3e50cf84e4c6d01",
+   "path": "docs/aaa_python_v1_architecture.md",
+   "size": 6466
+  },
+  {
+   "git_blob_oid": "a6466497b7fe1d4f5aa0bceb1b7453563ec2c0f2",
+   "path": "docs/aaa_python_v1_compute_report.md",
+   "size": 2720
+  },
+  {
+   "git_blob_oid": "8d8cfba40d29a3963aa001670bb4af05d59f5163",
+   "path": "docs/aaa_python_v1_development_report.md",
+   "size": 46903
+  },
+  {
+   "git_blob_oid": "0b8d217d89aa25e4bf916e9006d99ff48d2c95a6",
+   "path": "docs/aaa_python_v1_protocol.md",
+   "size": 8236
+  },
+  {
+   "git_blob_oid": "bafb6c3afa1b8a2efabf72403dc4ee99a4ab05ef",
+   "path": "docs/aaa_python_v1_research_brief.md",
+   "size": 11821
+  },
+  {
+   "git_blob_oid": "4abf89a3081d0593352ffea67ab700f199805e97",
+   "path": "docs/agent_work_policy.md",
+   "size": 3057
+  },
+  {
+   "git_blob_oid": "9324b0e380faad0d194d20c85ab7837157740bd5",
+   "path": "docs/backup_policy.md",
+   "size": 3747
+  },
+  {
+   "git_blob_oid": "e799e26e2567106c0cf091b69627ac511cd51664",
+   "path": "docs/benchmark_protocol.md",
+   "size": 18695
+  },
+  {
+   "git_blob_oid": "66cfcdcde25da77b0d35d74ce749a27a22385823",
+   "path": "docs/benchmark_v2_superseded.md",
+   "size": 4236
+  },
+  {
+   "git_blob_oid": "fb7f88131d734ee56b2800f0af3fcb59be01f9f2",
+   "path": "docs/candidate_selection.md",
+   "size": 12531
+  },
+  {
+   "git_blob_oid": "aec650f14805ec3392419fe9e42bb27b92217601",
+   "path": "docs/dependencies.md",
+   "size": 3607
+  },
+  {
+   "git_blob_oid": "6b4a57d64532a9f388c25fccb747322afbf202ab",
+   "path": "docs/diagnosis.md",
+   "size": 2688
+  },
+  {
+   "git_blob_oid": "71cd2e53788a1bef62b874141b9956acd8d5b029",
+   "path": "docs/dot_benchmark_archive.md",
+   "size": 9870
+  },
+  {
+   "git_blob_oid": "92b99a770cdd8afe1965b725796804df861165f9",
+   "path": "docs/errata.md",
+   "size": 18588
+  },
+  {
+   "git_blob_oid": "2d1cc515719f1e6f692506e8886d692d05b679ed",
+   "path": "docs/evidence_policy.md",
+   "size": 15918
+  },
+  {
+   "git_blob_oid": "58fa9ae56ab221ba73058d3cf3fcd6599f5a5fc1",
+   "path": "docs/experiment_registry.md",
+   "size": 5030
+  },
+  {
+   "git_blob_oid": "22b0f1c427db06f858b1c7c1a9afa9090fb38aa3",
+   "path": "docs/hardware.md",
+   "size": 17276
+  },
+  {
+   "git_blob_oid": "41889fe8c68470bc5253a01035c094bbe80c3d8c",
+   "path": "docs/limitations.md",
+   "size": 23002
+  },
+  {
+   "git_blob_oid": "546fddeee36af418e14a5095383b129234c0e9b8",
+   "path": "docs/loop_pilot_report.md",
+   "size": 21434
+  },
+  {
+   "git_blob_oid": "7decd53aa3edcd6b39e2a96b6d2bcbb39f5b487c",
+   "path": "docs/loop_protocol.md",
+   "size": 13654
+  },
+  {
+   "git_blob_oid": "33cf71744b6a6b905b12403745a46e67c93cb883",
+   "path": "docs/loop_report_0004_0006.md",
+   "size": 15623
+  },
+  {
+   "git_blob_oid": "10385d41d0a284992310ed64e090ec8cb7f43dbd",
+   "path": "docs/observation_noise_protocol.md",
+   "size": 12059
+  },
+  {
+   "git_blob_oid": "c6de76079d12d739508efbcc14d405e75de3d38d",
+   "path": "docs/phase_closure_decisions.md",
+   "size": 15414
+  },
+  {
+   "git_blob_oid": "2d08ffc3703cc2141da6c35d7e5a442119b7363d",
+   "path": "docs/promotion_contract.md",
+   "size": 6133
+  },
+  {
+   "git_blob_oid": "20f09a507cce7985fef0cc867b401cd21daa4c0f",
+   "path": "docs/reproduction.md",
+   "size": 22891
+  },
+  {
+   "git_blob_oid": "b9d9385a40f39c9b0a6f7b8e3a5197601f5693cb",
+   "path": "docs/research_direction.md",
+   "size": 11603
+  },
+  {
+   "git_blob_oid": "acc0e1e657cd17974dad90cf4554d8583a6a1d6f",
+   "path": "docs/scaling_readiness.md",
+   "size": 12341
+  },
+  {
+   "git_blob_oid": "0d8019ad20f9e4a5c9246476720e1d4fb52b47f6",
+   "path": "docs/wm_program/README.md",
+   "size": 4576
+  },
+  {
+   "git_blob_oid": "5b1abeec734b77913cd489dd50e4094599bd5773",
+   "path": "docs/wm_program/compute.md",
+   "size": 4897
+  },
+  {
+   "git_blob_oid": "babb1bb3def7ae8ca99abc9fa8f6904f25bc823f",
+   "path": "docs/wm_program/diagnosis.md",
+   "size": 6622
+  },
+  {
+   "git_blob_oid": "8d39756157ad0d323fd717a7fe6e55dd53f1b3d1",
+   "path": "docs/wm_program/jepa_result.md",
+   "size": 2412
+  },
+  {
+   "git_blob_oid": "0a5e0fcbc635a85f0c7c24eb71255f1092cbe8c2",
+   "path": "docs/wm_program/language_factorial_dev.md",
+   "size": 4199
+  },
+  {
+   "git_blob_oid": "56c4cc467485c5167cfb5c48ecf4adbe5ee840f1",
+   "path": "docs/wm_program/language_track_design.md",
+   "size": 9401
+  },
+  {
+   "git_blob_oid": "00146ba86302365fd040c823a46e460b9e8ee45a",
+   "path": "docs/wm_program/opaque_adaptation_dev.md",
+   "size": 2484
+  },
+  {
+   "git_blob_oid": "2e229da3b339acb43e28a7572c49f15d08e9da50",
+   "path": "docs/wm_program/opaque_attack.md",
+   "size": 1839
+  },
+  {
+   "git_blob_oid": "a00f8d3cc63889170db41831f31a777a22d850e5",
+   "path": "docs/wm_program/opaque_benchmark_design.md",
+   "size": 8485
+  },
+  {
+   "git_blob_oid": "af9fe0ccd56a30d5594c70c65e8502b3a6782ca8",
+   "path": "docs/wm_program/opaque_evaluate_stage.md",
+   "size": 2674
+  },
+  {
+   "git_blob_oid": "f261536068892b6a9e2dff7dcff09c504c14a992",
+   "path": "docs/wm_program/opaque_tune_decisions.md",
+   "size": 7934
+  },
+  {
+   "git_blob_oid": "c2a5a7977f1f70026b02fe14431dadf61bd8b00c",
+   "path": "docs/wm_program/sequential_benchmark_design.md",
+   "size": 8017
+  },
+  {
+   "git_blob_oid": "db8daec1e4d775f1f9d089382b877546fc99fdde",
+   "path": "docs/wm_program/timeline.md",
+   "size": 9328
+  },
+  {
+   "git_blob_oid": "3fd805c6738689b0f993bdc4926e1ada32c21c44",
+   "path": "docs/wm_program/wm0_v1_result.md",
+   "size": 4662
+  }
+ ],
+ "mechanism": "git",
+ "repo": "Cinqic-Research/AAA",
+ "revision": "439f39bc3ae0109204c8313f4efe47ccb231ae93",
+ "schema": "j1.acquisition-manifest.v1",
+ "selected_bytes": 677397,
+ "selected_file_count": 64,
+ "selection": {
+  "exclude": [
+   "docs/evidence/*",
+   "results/*",
+   "benchmarks/*",
+   "research/*",
+   "tests/*",
+   "*/data/*",
+   "docs/issue_ledger.md",
+   "docs/final_audit.md",
+   "CHANGELOG.md",
+   "docs/juniper1/*",
+   "*handoff*",
+   "*confirmation*",
+   "*freeze*",
+   "*ledger*",
+   "*audit*",
+   "*review*"
+  ],
+  "include": [
+   "*.md"
+  ]
+ },
+ "source_id": "cinqic-aaa-docs",
+ "upstream_file_count": 894
+}

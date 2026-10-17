@@ -1,0 +1,219 @@
+{
+ "acquire_version": "j1.acquire.v1",
+ "acquired_utc": "2026-10-07T16:10:17+00:00",
+ "files": [
+  {
+   "git_blob_oid": "9b459ead0a1156036f0f5937ffc4b7bd4fda2446",
+   "path": "stackexchange-dolma-0000.json.gz",
+   "retrieved_utc": "2026-10-07T15:55:09+00:00",
+   "sha256": "1bbe8be14c2b37aacd33eea6c9dc5562f270d5c4458d0be87f26a35a4e81ebe8",
+   "size": 950628341,
+   "upstream_sha256": "1bbe8be14c2b37aacd33eea6c9dc5562f270d5c4458d0be87f26a35a4e81ebe8",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0000.json.gz"
+  },
+  {
+   "git_blob_oid": "4e767f8b4a146671a3d24827ad3deb036c0b0405",
+   "path": "stackexchange-dolma-0001.json.gz",
+   "retrieved_utc": "2026-10-07T15:53:32+00:00",
+   "sha256": "0a4f37b031c324fa34f25a6d8d49691501237408647227eac224e8b3bc9115d7",
+   "size": 960926742,
+   "upstream_sha256": "0a4f37b031c324fa34f25a6d8d49691501237408647227eac224e8b3bc9115d7",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0001.json.gz"
+  },
+  {
+   "git_blob_oid": "96f8382775534d9d8aa7b3844991599db3a8b134",
+   "path": "stackexchange-dolma-0002.json.gz",
+   "retrieved_utc": "2026-10-07T15:54:01+00:00",
+   "sha256": "f3f7a310d9e3fac106b533988b73a4d22133128675bec87aaeeee079c6d87918",
+   "size": 932760280,
+   "upstream_sha256": "f3f7a310d9e3fac106b533988b73a4d22133128675bec87aaeeee079c6d87918",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0002.json.gz"
+  },
+  {
+   "git_blob_oid": "82657d2b8d09a932c1469d7ab2bf9ade8f80124e",
+   "path": "stackexchange-dolma-0003.json.gz",
+   "retrieved_utc": "2026-10-07T15:54:30+00:00",
+   "sha256": "124c3c96f23f6265e2a4b48d7fe846282b445dbdb99a46b18d720678975963cb",
+   "size": 699930780,
+   "upstream_sha256": "124c3c96f23f6265e2a4b48d7fe846282b445dbdb99a46b18d720678975963cb",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0003.json.gz"
+  },
+  {
+   "git_blob_oid": "16828d7532d25130f7435dc1cead7d51cb7232be",
+   "path": "stackexchange-dolma-0004.json.gz",
+   "retrieved_utc": "2026-10-07T15:55:54+00:00",
+   "sha256": "533d2590bd4c3e201be4367e361614c4a864aba722ae2ff78ecfb10cc39cfa3a",
+   "size": 638861203,
+   "upstream_sha256": "533d2590bd4c3e201be4367e361614c4a864aba722ae2ff78ecfb10cc39cfa3a",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0004.json.gz"
+  },
+  {
+   "git_blob_oid": "eff633af1c1fa9d2c3284d1afd0c6ef62c80edfd",
+   "path": "stackexchange-dolma-0005.json.gz",
+   "retrieved_utc": "2026-10-07T15:59:08+00:00",
+   "sha256": "99e72f5b41c86cec306e5d0e90205e116d8d3025536d95b519e38efac99ff611",
+   "size": 886854056,
+   "upstream_sha256": "99e72f5b41c86cec306e5d0e90205e116d8d3025536d95b519e38efac99ff611",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0005.json.gz"
+  },
+  {
+   "git_blob_oid": "3f41e73318ccda90e4a5c04199d5b0edf4384603",
+   "path": "stackexchange-dolma-0006.json.gz",
+   "retrieved_utc": "2026-10-07T16:00:08+00:00",
+   "sha256": "6e6d4fd151f6e1c2802902ff61698c2af47074aecbed96bbabecff115e531896",
+   "size": 977768617,
+   "upstream_sha256": "6e6d4fd151f6e1c2802902ff61698c2af47074aecbed96bbabecff115e531896",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0006.json.gz"
+  },
+  {
+   "git_blob_oid": "20e8e7006277dfc9f5f27d6b3d9ed63daf86312c",
+   "path": "stackexchange-dolma-0007.json.gz",
+   "retrieved_utc": "2026-10-07T15:58:37+00:00",
+   "sha256": "c7df5ebf0344dfd3c25523fa7f6296491a3f8ad67b99f31076387e589f91fe45",
+   "size": 887598644,
+   "upstream_sha256": "c7df5ebf0344dfd3c25523fa7f6296491a3f8ad67b99f31076387e589f91fe45",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0007.json.gz"
+  },
+  {
+   "git_blob_oid": "33a9b8d28a6007a00731c462eb3723caab1603fe",
+   "path": "stackexchange-dolma-0008.json.gz",
+   "retrieved_utc": "2026-10-07T15:57:28+00:00",
+   "sha256": "988635dec1797dada613bd719cd8699cea5969fb4d52ac554bf8571abef28882",
+   "size": 332828922,
+   "upstream_sha256": "988635dec1797dada613bd719cd8699cea5969fb4d52ac554bf8571abef28882",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0008.json.gz"
+  },
+  {
+   "git_blob_oid": "a204a97dd7a1d7479423f02d88e1506c407c491f",
+   "path": "stackexchange-dolma-0009.json.gz",
+   "retrieved_utc": "2026-10-07T16:00:58+00:00",
+   "sha256": "ac94373038cd443eb832076ffbdccf4dc0cd9749c12cebffe4a488f35f5ce4e9",
+   "size": 825372966,
+   "upstream_sha256": "ac94373038cd443eb832076ffbdccf4dc0cd9749c12cebffe4a488f35f5ce4e9",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0009.json.gz"
+  },
+  {
+   "git_blob_oid": "554b74f2d98e9860ed966f57ee963a97e020dc00",
+   "path": "stackexchange-dolma-0010.json.gz",
+   "retrieved_utc": "2026-10-07T16:02:34+00:00",
+   "sha256": "7c54f3a17da448dbd2dc782e9b6aa83de076a8c1080cafe30a0ae7a2bbed0847",
+   "size": 921745252,
+   "upstream_sha256": "7c54f3a17da448dbd2dc782e9b6aa83de076a8c1080cafe30a0ae7a2bbed0847",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0010.json.gz"
+  },
+  {
+   "git_blob_oid": "dcedff0e6664d17884342028b08b3843078ddf56",
+   "path": "stackexchange-dolma-0021.json.gz",
+   "retrieved_utc": "2026-10-07T16:02:28+00:00",
+   "sha256": "2c2e9dbe2424dbbbfbb24a12c5e83b624df3b6071d5e9692d4496cce241be1be",
+   "size": 778070659,
+   "upstream_sha256": "2c2e9dbe2424dbbbfbb24a12c5e83b624df3b6071d5e9692d4496cce241be1be",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0021.json.gz"
+  },
+  {
+   "git_blob_oid": "f44abf018925c2f5719b9a971585cbaacb4a0af4",
+   "path": "stackexchange-dolma-0028.json.gz",
+   "retrieved_utc": "2026-10-07T16:04:33+00:00",
+   "sha256": "cdc7d1dcbb73a89227d7f8e04a577172ee4a55b2bddcd85eb13e57a99bb0735d",
+   "size": 763978125,
+   "upstream_sha256": "cdc7d1dcbb73a89227d7f8e04a577172ee4a55b2bddcd85eb13e57a99bb0735d",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0028.json.gz"
+  },
+  {
+   "git_blob_oid": "ddd272029170e4a23748412aec13be88d06a2a0c",
+   "path": "stackexchange-dolma-0030.json.gz",
+   "retrieved_utc": "2026-10-07T16:04:51+00:00",
+   "sha256": "55b44f03cf21a6cbe8507d027e844bb8ec8f86e6e7f98c223be0282a3b4b1908",
+   "size": 767620686,
+   "upstream_sha256": "55b44f03cf21a6cbe8507d027e844bb8ec8f86e6e7f98c223be0282a3b4b1908",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0030.json.gz"
+  },
+  {
+   "git_blob_oid": "af683a1e2a58711e77a693c15b3a7877358845da",
+   "path": "stackexchange-dolma-0032.json.gz",
+   "retrieved_utc": "2026-10-07T16:06:18+00:00",
+   "sha256": "458c7b82e53cb0c9003f4503c34768f769b42759a7e07855f3c69e970aeb922a",
+   "size": 765830915,
+   "upstream_sha256": "458c7b82e53cb0c9003f4503c34768f769b42759a7e07855f3c69e970aeb922a",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0032.json.gz"
+  },
+  {
+   "git_blob_oid": "7fc7034a9beb2138f4f524eb5e225b45b6053abf",
+   "path": "stackexchange-dolma-0034.json.gz",
+   "retrieved_utc": "2026-10-07T16:05:38+00:00",
+   "sha256": "ad7efe992e0298d31a2f3221cead1019df773094e9ff09a43ed2736045cc39d9",
+   "size": 752303766,
+   "upstream_sha256": "ad7efe992e0298d31a2f3221cead1019df773094e9ff09a43ed2736045cc39d9",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0034.json.gz"
+  },
+  {
+   "git_blob_oid": "dca6d5423f8c108b812591e75ac7146a99b2a035",
+   "path": "stackexchange-dolma-0037.json.gz",
+   "retrieved_utc": "2026-10-07T16:07:24+00:00",
+   "sha256": "d2c8a360edcfe9c59bf04a11987131ded45a4880c2e3465784b4b82e6e380914",
+   "size": 752692378,
+   "upstream_sha256": "d2c8a360edcfe9c59bf04a11987131ded45a4880c2e3465784b4b82e6e380914",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0037.json.gz"
+  },
+  {
+   "git_blob_oid": "5783ef1d611e8d45fb497b530c88676c6a3645f3",
+   "path": "stackexchange-dolma-0040.json.gz",
+   "retrieved_utc": "2026-10-07T16:09:11+00:00",
+   "sha256": "2b27365390b42b83dfd085c147276370c2384b53b9645d11474d7d9bf0f630fc",
+   "size": 769045873,
+   "upstream_sha256": "2b27365390b42b83dfd085c147276370c2384b53b9645d11474d7d9bf0f630fc",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0040.json.gz"
+  },
+  {
+   "git_blob_oid": "5e5b5925b14c8dda8ee23f5be887f4398deba88f",
+   "path": "stackexchange-dolma-0041.json.gz",
+   "retrieved_utc": "2026-10-07T16:08:56+00:00",
+   "sha256": "6bcd1ce6e853cec46e2657913f8762fa24d8f2fcc13345b74798e6d0b98ad2af",
+   "size": 666572101,
+   "upstream_sha256": "6bcd1ce6e853cec46e2657913f8762fa24d8f2fcc13345b74798e6d0b98ad2af",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0041.json.gz"
+  },
+  {
+   "git_blob_oid": "295f2e12ec520d497fdb48c170c526d5c7a04d3d",
+   "path": "stackexchange-dolma-0042.json.gz",
+   "retrieved_utc": "2026-10-07T16:09:58+00:00",
+   "sha256": "854f6f7d42eb52c4c9b4ad025fb981a6e955451f3c7449585e7ed7148259ebe6",
+   "size": 902417767,
+   "upstream_sha256": "854f6f7d42eb52c4c9b4ad025fb981a6e955451f3c7449585e7ed7148259ebe6",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0042.json.gz"
+  },
+  {
+   "git_blob_oid": "023ba51e2a15796ec1f2b55ad03f7e3c8872c822",
+   "path": "stackexchange-dolma-0043.json.gz",
+   "retrieved_utc": "2026-10-07T16:10:17+00:00",
+   "sha256": "a69a6928fa23cecdb79e81ac8b57e1c325fc6363d1fbfb776b3b9064c7ef1f81",
+   "size": 858183203,
+   "upstream_sha256": "a69a6928fa23cecdb79e81ac8b57e1c325fc6363d1fbfb776b3b9064c7ef1f81",
+   "url": "https://huggingface.co/datasets/common-pile/stackexchange_filtered/resolve/c0ac7373830c688a43fc12d1988c4b19ccd884ab/stackexchange-dolma-0043.json.gz"
+  }
+ ],
+ "mechanism": "huggingface",
+ "repo": "common-pile/stackexchange_filtered",
+ "revision": "c0ac7373830c688a43fc12d1988c4b19ccd884ab",
+ "schema": "j1.acquisition-manifest.v1",
+ "selected_bytes": 16791991276,
+ "selected_file_count": 21,
+ "selection": {
+  "hash_select": [
+   {
+    "count": 8,
+    "namespace": "j1.select.v1.stackoverflow",
+    "patterns": [
+     "stackexchange-dolma-001[1-9].json.gz",
+     "stackexchange-dolma-00[23]?.json.gz",
+     "stackexchange-dolma-004[01].json.gz"
+    ]
+   }
+  ],
+  "include": [
+   "stackexchange-dolma-*.json.gz"
+  ]
+ },
+ "source_id": "stackexchange",
+ "upstream_file_count": 46
+}

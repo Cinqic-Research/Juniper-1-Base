@@ -1,0 +1,299 @@
+{
+ "positive": {
+  "aaa-erudition": {
+   "verbatim": {
+    "planted": 18,
+    "detected": 18
+   },
+   "case_space": {
+    "planted": 18,
+    "detected": 18
+   },
+   "reindent": {
+    "planted": 18,
+    "detected": 18
+   },
+   "embedded": {
+    "planted": 18,
+    "detected": 18
+   }
+  },
+  "aaa-exams": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 200
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 200
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 200
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 200
+   }
+  },
+  "arc": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 200
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 200
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 200
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 200
+   }
+  },
+  "bbh": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 200
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 200
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 200
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 200
+   }
+  },
+  "gptoss-qualification": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 199
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 199
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 199
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 199
+   }
+  },
+  "gsm8k": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 200
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 200
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 200
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 200
+   }
+  },
+  "hellaswag": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 200
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 200
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 200
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 200
+   }
+  },
+  "humaneval": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 200
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 200
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 200
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 200
+   }
+  },
+  "humanevalplus": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 200
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 200
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 200
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 200
+   }
+  },
+  "juniper-app-wrapper-eval": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 200
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 200
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 200
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 200
+   }
+  },
+  "juniper-reference-eval": {
+   "verbatim": {
+    "planted": 182,
+    "detected": 182
+   },
+   "case_space": {
+    "planted": 182,
+    "detected": 182
+   },
+   "reindent": {
+    "planted": 182,
+    "detected": 182
+   },
+   "embedded": {
+    "planted": 182,
+    "detected": 182
+   }
+  },
+  "juniperbench-code": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 200
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 200
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 200
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 200
+   }
+  },
+  "math": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 200
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 200
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 200
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 200
+   }
+  },
+  "mbpp": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 200
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 200
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 200
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 200
+   }
+  },
+  "mbppplus": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 200
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 200
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 200
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 200
+   }
+  },
+  "mmlu": {
+   "verbatim": {
+    "planted": 200,
+    "detected": 200
+   },
+   "case_space": {
+    "planted": 200,
+    "detected": 200
+   },
+   "reindent": {
+    "planted": 200,
+    "detected": 200
+   },
+   "embedded": {
+    "planted": 200,
+    "detected": 200
+   }
+  }
+ },
+ "negative": {
+  "documents": 3000,
+  "flagged": 8,
+  "flagged_rate": 0.0026666666666666666
+ },
+ "common_sha256": "f87d0902e97abe326ca56807531c1045399f7d636e74e133162a3da2fef9ad4f",
+ "index_identity": "eddb2f37fae2421b42be9244d4a39f3dc5bb4b0a9205ad7c57f52de3060ac049"
+}

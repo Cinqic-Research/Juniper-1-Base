@@ -1,0 +1,106 @@
+{
+ "bundle_sha256": "935e12edb42a0a39cb75839ffbb74fcb5e01e034746f2725e9ff985ecdb89906",
+ "generations_sha256": "9c955f450e11bc0bc60921967db97e9cdd398ce09647aff93b2a12e8e5549de1",
+ "model": {
+  "checkpoint": "ckpt-000001226-33333871",
+  "kind": "sft_checkpoint",
+  "manifest_sha256": "9abe3519703932cd07b095e5fa59cd59c6738a7cf27a4ff9de6fde47c2546f1c",
+  "model_state_sha256": "c3f9a77c2f73befc45fff729dc144d42324e0cdb9ce95b36fadbe22d5ed522c3",
+  "run_id": "j1-sft-v2-s3",
+  "stage": "juniper1-sft-v2",
+  "updates": 1226
+ },
+ "report_sha256": "e64f6f88b8bec6c0b1b42d6d141c9d926c3a7623df7cc9b2cb6a034880134f3f",
+ "schema": "j1.sft-scores.v1",
+ "scorer": "j1.sfteval.v2",
+ "summary": {
+  "test/base_fewshot/all": {
+   "abstained": 0.0,
+   "lenient": 0.24431818181818182,
+   "n": 176,
+   "protocol_valid": 1.0,
+   "strict": 0.24431818181818182,
+   "strict_ci95": [
+    0.1867438871744886,
+    0.31281533259694166
+   ]
+  },
+  "test/base_fewshot/category/factuality": {
+   "abstained": 0.0,
+   "lenient": 0.24431818181818182,
+   "n": 176,
+   "protocol_valid": 1.0,
+   "strict": 0.24431818181818182,
+   "strict_ci95": [
+    0.1867438871744886,
+    0.31281533259694166
+   ]
+  },
+  "test/base_fewshot/family/facts.country_capital": {
+   "abstained": 0.0,
+   "lenient": 0.25,
+   "n": 40,
+   "protocol_valid": 1.0,
+   "strict": 0.25,
+   "strict_ci95": [
+    0.1418711857438798,
+    0.40193961548535195
+   ]
+  },
+  "test/base_fewshot/family/facts.country_continent": {
+   "abstained": 0.0,
+   "lenient": 0.5476190476190477,
+   "n": 42,
+   "protocol_valid": 1.0,
+   "strict": 0.5476190476190477,
+   "strict_ci95": [
+    0.39949118924719623,
+    0.6877660686502409
+   ]
+  },
+  "test/base_fewshot/family/facts.country_currency": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 35,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.0989009937303319
+   ]
+  },
+  "test/base_fewshot/family/facts.element_number": {
+   "abstained": 0.0,
+   "lenient": 0.0,
+   "n": 24,
+   "protocol_valid": 1.0,
+   "strict": 0.0,
+   "strict_ci95": [
+    0.0,
+    0.13797620655132792
+   ]
+  },
+  "test/base_fewshot/family/facts.element_symbol": {
+   "abstained": 0.0,
+   "lenient": 0.375,
+   "n": 24,
+   "protocol_valid": 1.0,
+   "strict": 0.375,
+   "strict_ci95": [
+    0.21159367459047676,
+    0.5729003770473553
+   ]
+  },
+  "test/base_fewshot/family/facts.us_state_capital": {
+   "abstained": 0.0,
+   "lenient": 0.09090909090909091,
+   "n": 11,
+   "protocol_valid": 1.0,
+   "strict": 0.09090909090909091,
+   "strict_ci95": [
+    0.016232172705325593,
+    0.3773584391082959
+   ]
+  }
+ }
+}

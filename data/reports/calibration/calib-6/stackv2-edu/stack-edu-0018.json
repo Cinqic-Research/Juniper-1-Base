@@ -1,0 +1,83 @@
+{
+ "build_identity": "4f0acb7dd606888b832d09c5ada9c37c3c3f29054ee2a5c67cde713328b763ff",
+ "bytes_by_stage": {
+  "candidate": 3099575477,
+  "contamination": 13824,
+  "privacy": 1176741,
+  "quality": 200988639,
+  "selection": 290477
+ },
+ "bytes_in": 3302045158,
+ "chars_in": 3282527503,
+ "contamination_benchmarks": {
+  "humaneval": 4
+ },
+ "docs_in": 600090,
+ "kinds": {
+  "code": 590080
+ },
+ "outputs": [
+  {
+   "file": "candidates/stackv2-edu/stack-edu-0018.parquet",
+   "rows": 590080,
+   "sha256": "ed8b5b9862f6440f7bd5e5a7c34652fe1f9d59e23b43afc49b3ca3b5d4342710"
+  },
+  {
+   "file": "rejects/stackv2-edu/stack-edu-0018.parquet",
+   "rows": 10010,
+   "sha256": "43b92a11dc55c405c07c4c66ea9b6ec4de163b45b8612abf49f74fee29930f15"
+  },
+  {
+   "file": "signatures/stackv2-edu/stack-edu-0018.npy",
+   "rows": 590080,
+   "sha256": "1c334980c2d8130a78f64fd8d3c190e0b8ac0974d59adae752414578e1541333"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "stack-edu-0018.json.gz",
+ "reasons": {
+  "contamination.humaneval": 4,
+  "privacy.pii.payment_card": 19,
+  "privacy.pii.us_ssn": 1,
+  "privacy.secret.auth_header": 4,
+  "privacy.secret.credential_url": 10,
+  "privacy.secret.google_api_key": 4,
+  "privacy.secret.jwt": 3,
+  "privacy.secret.password_assignment": 28,
+  "privacy.secret.private_key": 25,
+  "quality.binary_or_base64": 95,
+  "quality.code.data_heavy": 168,
+  "quality.code.generated": 2327,
+  "quality.code.long_lines": 78,
+  "quality.code.low_alnum": 23,
+  "quality.code.non_latin_script": 4155,
+  "quality.code.too_large": 37,
+  "quality.code.too_short": 41,
+  "quality.code.vendored_or_minified": 1531,
+  "quality.corrupt_decoding": 372,
+  "quality.mojibake": 46,
+  "quality.spam_terms": 1058,
+  "selection.generated_code": 36
+ },
+ "redactions": {
+  "email": 58256,
+  "home_path_user": 4794,
+  "ipv4": 2451
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 1821.8,
+ "slow_documents": [],
+ "source_id": "stackv2-edu",
+ "stages": {
+  "candidate": 590080,
+  "contamination": 4,
+  "privacy": 92,
+  "quality": 9878,
+  "selection": 36
+ },
+ "unit_id": "stack-edu-0018"
+}

@@ -1,0 +1,172 @@
+[
+ {
+  "test": "save_restore_exact_continuation",
+  "expected": "fresh process resumes at step 15; next batch, LR, counters, per-step loss bits and final parameter/optimizer hashes equal the uninterrupted run",
+  "observed": {
+   "rc": [
+    0,
+    0
+   ],
+   "resumed_from": "ckpt-000000015-20654228",
+   "resumed_step": 15,
+   "manifest_tokens_useful": 491520,
+   "ref_tokens_useful_at_15": 491520,
+   "restore_s": 41.93399571022019,
+   "lr_after_restore": 0.0007672477227142607,
+   "ref_lr_step16": 0.0007672477227142607,
+   "final_param_equal": true,
+   "final_optim_equal": true,
+   "compared_steps": [
+    1,
+    40
+   ],
+   "mismatches": [],
+   "n_mismatches": 0,
+   "max_abs_loss_diff": 0.0
+  },
+  "result": "PASS",
+  "utc": "2026-10-10T07:10:56Z"
+ },
+ {
+  "test": "abrupt_process_termination",
+  "expected": "SIGKILL loses only uncheckpointed updates; resume from latest valid (step 20) replays 21.. with identical batches and reaches the reference final state",
+  "observed": {
+   "killed_after_step": 26,
+   "resumed_from_step": 20,
+   "first_step_after_resume": 21,
+   "replayed_steps": 6,
+   "rc_resume": 0,
+   "final_param_equal": true,
+   "compared_steps": [
+    21,
+    40
+   ],
+   "mismatches": [],
+   "n_mismatches": 0,
+   "max_abs_loss_diff": 0.0
+  },
+  "result": "PASS",
+  "utc": "2026-10-10T07:16:57Z"
+ },
+ {
+  "test": "interrupted_serialization_mid_file",
+  "expected": "process dies during the step-20 save; the incomplete directory is rejected, step 10 is selected, and the resumed run reaches the reference final state",
+  "observed": {
+   "rc_faulted": 137,
+   "dirs": [
+    "ckpt-000000020-940280e7",
+    "ckpt-000000010-679d33e7",
+    "ckpt-000000000-f1a3c57f"
+   ],
+   "invalid_dirs": [
+    [
+     "ckpt-000000020-940280e7",
+     "manifest missing or unparseable (incomplete checkpoint)"
+    ]
+   ],
+   "selected_after_fault": "ckpt-000000010-679d33e7",
+   "selected_step": 10,
+   "rc_resume": 0,
+   "final_param_equal": true
+  },
+  "result": "PASS",
+  "utc": "2026-10-10T07:25:34Z"
+ },
+ {
+  "test": "interrupted_before_completion_marker",
+  "expected": "process dies during the step-20 save; the incomplete directory is rejected, step 10 is selected, and the resumed run reaches the reference final state",
+  "observed": {
+   "rc_faulted": 137,
+   "dirs": [
+    "ckpt-000000020-ca6fa3c7",
+    "ckpt-000000010-eb2e01e5",
+    "ckpt-000000000-316c0a5c"
+   ],
+   "invalid_dirs": [
+    [
+     "ckpt-000000020-ca6fa3c7",
+     "completion marker missing (unpublished checkpoint)"
+    ]
+   ],
+   "selected_after_fault": "ckpt-000000010-eb2e01e5",
+   "selected_step": 10,
+   "rc_resume": 0,
+   "final_param_equal": true
+  },
+  "result": "PASS",
+  "utc": "2026-10-10T07:34:19Z"
+ },
+ {
+  "test": "corrupted_checkpoint_detection",
+  "expected": "damaged step-20 checkpoint is rejected with a specific reason; step 10 is selected; resumed run matches the reference",
+  "observed": {
+   "damaged": "ckpt-000000020-7ae2bece",
+   "verify": "sha256 mismatch model.pt",
+   "selected_step": 10,
+   "rc_resume": 0,
+   "final_param_equal": true,
+   "compared_steps": [
+    11,
+    40
+   ],
+   "mismatches": [],
+   "n_mismatches": 0,
+   "max_abs_loss_diff": 0.0
+  },
+  "result": "PASS",
+  "utc": "2026-10-10T07:41:55Z"
+ },
+ {
+  "test": "missing_checkpoint_file_detection",
+  "expected": "damaged step-20 checkpoint is rejected with a specific reason; step 10 is selected; resumed run matches the reference",
+  "observed": {
+   "damaged": "ckpt-000000020-ad6f5c3a",
+   "verify": "missing file optim.pt",
+   "selected_step": 10,
+   "rc_resume": 0,
+   "final_param_equal": true,
+   "compared_steps": [
+    11,
+    40
+   ],
+   "mismatches": [],
+   "n_mismatches": 0,
+   "max_abs_loss_diff": 0.0
+  },
+  "result": "PASS",
+  "utc": "2026-10-10T07:49:31Z"
+ },
+ {
+  "test": "simulated_storage_exhaustion",
+  "expected": "the step-20 save fails with ENOSPC twice; training stops (exit 3) at that boundary, does not advance past it, and step 10 remains latest-valid",
+  "observed": {
+   "rc": 3,
+   "failed_attempts": 2,
+   "abort": "checkpoint_failed",
+   "last_trained_step": 20,
+   "latest_valid_step": 10,
+   "invalid_dirs": [
+    "ckpt-000000020-fd58c1e8",
+    "ckpt-000000020-0791ddb7"
+   ]
+  },
+  "result": "PASS",
+  "utc": "2026-10-10T07:53:49Z"
+ },
+ {
+  "test": "incompatible_contract_handling",
+  "expected": "auto-resume with a changed learning rate refuses (no silent fresh start over incompatible history); with --corrective-continuation under a new run id it restores and records parent run and contract change",
+  "observed": {
+   "rc_exact": 1,
+   "rc_corrective": 1,
+   "lineage": {
+    "corrective_continuation": "qualification: lr change",
+    "parent_run": "t1",
+    "from_contract": "4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59",
+    "to_contract": "cd90cc717e8b6b3265c260f064f29a5ea08a473f39d886157b821d2f38280ec4"
+   }
+  },
+  "result": "FAIL",
+  "utc": "2026-10-10T07:54:59Z"
+ }
+]

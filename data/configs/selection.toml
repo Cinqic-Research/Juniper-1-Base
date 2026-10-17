@@ -1,0 +1,88 @@
+# Accepted-corpus selection for j1-base-v0.2 (owner directive 2026-10-08).
+#
+# Target: about 3.4B provisional tokens, cleanly above the 3B objective; 15B is a
+# hard ceiling, not a goal. Budgets are provisional tokens converted to bytes
+# with bytes_per_token; after provisional counting the measured ratios replace
+# these initial estimates and selection is re-run once.
+#
+# Rationale (measured pool sizes are in reports/; capability emphasis from the
+# design specification: educational English foundation, more code, mathematics,
+# science and technical text):
+# - FineWeb-Edu is the educational-English foundation and the largest single
+#   component; documents are taken in order of the upstream educational score.
+# - Code is about a sixth of the corpus, weighted to Python (the design's primary
+#   language for tool use) with breadth across other languages and Markdown.
+# - Stack Exchange (technical Q&A), FineMath (ranked by math score) and Wikimedia
+#   (reference knowledge) each take roughly an eighth.
+# - arXiv open-license papers add research-level science and mathematics at a
+#   small share, because LaTeX-heavy text tokenizes poorly and reads unlike the
+#   target usage.
+# - Open textbooks, PEPs and the Cinqic documentation are small, curated and
+#   kept whole. Cinqic material is never duplicated.
+# These shares are a provisional mixture to be revised from pilot domain losses.
+
+[selection]
+version = "j1.selection.v1"
+namespace = "j1.select-docs.v1"
+target_tokens = 3_400_000_000
+
+[[quota]]
+source = "fineweb-edu-dedup"
+tokens = 1_100_000_000
+bytes_per_token = 4.3
+rank = "score"
+
+[[quota]]
+source = "stackv2-edu"
+group_field = "language"
+groups = { Python = 330_000_000, Markdown = 50_000_000, "*" = 220_000_000 }
+bytes_per_token = 3.4
+
+[[quota]]
+source = "stackexchange"
+tokens = 420_000_000
+bytes_per_token = 3.9
+
+[[quota]]
+source = "finemath-4plus"
+tokens = 420_000_000
+bytes_per_token = 3.5
+rank = "score"
+
+[[quota]]
+source = "wikimedia"
+tokens = 420_000_000
+bytes_per_token = 4.3
+
+[[quota]]
+source = "arxiv-papers"
+tokens = 200_000_000
+bytes_per_token = 3.4
+
+[[quota]]
+source = "libretexts"
+all = true
+
+[[quota]]
+source = "pressbooks"
+all = true
+
+[[quota]]
+source = "oercommons"
+all = true
+
+[[quota]]
+source = "python-peps"
+all = true
+
+[[quota]]
+source = "cinqic-aaa-docs"
+all = true
+
+[[quota]]
+source = "cinqic-juniper-app-docs"
+all = true
+
+[[quota]]
+source = "cinqic-calculator-docs"
+all = true

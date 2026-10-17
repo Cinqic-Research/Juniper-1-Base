@@ -1,0 +1,6 @@
+[ckpt] step 0 -> /root/ckpt-requal/t1/ckpt-000000000-494e33b9 (555.9 MiB, 2.14s)
+step 1 loss 10.3509 lr 0.000185 4965ms
+step 10 loss 7.8801 lr 0.000897 315ms
+[ckpt] step 10 -> /root/ckpt-requal/t1/ckpt-000000010-45e3844c (1667.7 MiB, 6.64s)
+[ckpt] step 15 -> /root/ckpt-requal/t1/ckpt-000000015-6596fe5c (1667.7 MiB, 6.87s)
+{"steps_run": 15, "final_step": 15, "tokens_per_s_median": 104075.32307018648, "step_ms_median": 314.84889052808285, "peak_vram_gib": 28.861260414123535, "final_param_sha256": "137be52c510a0690fa711e3f5fa0b9facd4ead3fd634be7377e94509bbeed5bb"}

@@ -1,0 +1,99 @@
+{
+ "build_identity": "07c062463b406a7cc508cfac0a96be9fd6daf44cf4522f30b83e7c8ef94d9556",
+ "bytes_by_stage": {
+  "candidate": 1440718514,
+  "contamination": 243559,
+  "license": 169700015,
+  "privacy": 8885073,
+  "quality": 987491893
+ },
+ "bytes_in": 2607039054,
+ "chars_in": 2599902486,
+ "contamination_benchmarks": {
+  "arc": 3,
+  "hellaswag": 1
+ },
+ "docs_in": 42706,
+ "kinds": {
+  "math": 13492,
+  "technical": 14230
+ },
+ "outputs": [
+  {
+   "file": "candidates/arxiv-papers/arxiv-papers-0000.parquet",
+   "rows": 27722,
+   "sha256": "9172f8033c293437b7cce5f0fae6e5bb561688724ee5379d6a29ea6b86a6e572"
+  },
+  {
+   "file": "rejects/arxiv-papers/arxiv-papers-0000.parquet",
+   "rows": 14984,
+   "sha256": "cc4222f43f6a550cb2f90b04bb2ae2dac41285d15746023196e442b02d534c7a"
+  },
+  {
+   "file": "signatures/arxiv-papers/arxiv-papers-0000.npy",
+   "rows": 27722,
+   "sha256": "faf4deb2161e04fd946884e4a29e2c6cbd79646e6ddd133232e0cf9830e3aa10"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "arxiv-papers-0000.json.gz",
+ "reasons": {
+  "contamination.arc": 3,
+  "contamination.hellaswag": 1,
+  "license.document_not_allowed": 3108,
+  "privacy.pii.payment_card": 134,
+  "privacy.secret.aws_access_key": 1,
+  "quality.math.alpha_words": 12,
+  "quality.math.duplicate_lines": 88,
+  "quality.math.duplicate_ngrams": 11332,
+  "quality.math.duplicate_paragraphs": 30,
+  "quality.math.mean_word_length": 74,
+  "quality.math.non_latin_script": 1,
+  "quality.math.not_english": 13,
+  "quality.math.top_ngram_repetition": 91,
+  "quality.mojibake": 1,
+  "quality.spam_terms": 22,
+  "quality.technical.alpha_words": 9,
+  "quality.technical.duplicate_lines": 9,
+  "quality.technical.duplicate_ngrams": 264,
+  "quality.technical.duplicate_paragraphs": 17,
+  "quality.technical.mean_word_length": 2,
+  "quality.technical.not_english": 13,
+  "quality.technical.stopwords": 67,
+  "quality.technical.too_short": 73,
+  "quality.technical.top_ngram_repetition": 13
+ },
+ "redactions": {
+  "email": 1170,
+  "home_path_user": 120,
+  "ipv4": 246,
+  "phone": 124
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 1475.32,
+ "slow_documents": [
+  {
+   "bytes": 54479,
+   "doc_id": "a1e07a4d3be648727e95efdb43778c86",
+   "seconds": 2.04
+  },
+  {
+   "bytes": 30035,
+   "doc_id": "231cb1b4e1bc20d6d2618d212f99f5ba",
+   "seconds": 2.82
+  }
+ ],
+ "source_id": "arxiv-papers",
+ "stages": {
+  "candidate": 27722,
+  "contamination": 4,
+  "license": 3108,
+  "privacy": 135,
+  "quality": 11737
+ },
+ "unit_id": "arxiv-papers-0000"
+}

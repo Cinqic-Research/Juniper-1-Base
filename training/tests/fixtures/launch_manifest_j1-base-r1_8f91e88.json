@@ -1,0 +1,114 @@
+{
+ "schema": "j1.launch-manifest.v2",
+ "run_id": "j1-base-r1",
+ "built_utc": "2026-10-11T01:31:24Z",
+ "authority": "owner work order 2026-10-10 \u00a712 (conditional limited launch); engineer-selected under that order",
+ "code": {
+  "train_commit": "f832c0ecb27a53d58ee8e996c6f4e65bae16a8e0",
+  "data_commit": "e49b7a3ee586a7d2e21484ae89cbccce7e3618ee",
+  "deploy_tar_sha256": "6b15638bbc792d22480ef0c68270e3635eb34aa7b9574862e5c8bd3fe43aa774"
+ },
+ "data": {
+  "dir": "/vol/data/v022-24k-full",
+  "build": "j1-base-v0.2.2",
+  "accepted_manifest_sha256": "54a3adb9650c96bf67b44b721386722383caeb774b48b0bf970ad6f9634d4185",
+  "shards_json_sha256": "1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef",
+  "train_stream_tokens": 3410114054,
+  "train_documents": 2954191
+ },
+ "tokenizer": {
+  "path": "/vol/data/tok/tokenizer.json",
+  "sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+  "total_vocab": 24576
+ },
+ "validation": {
+  "documents": 2576,
+  "scored_bytes": 12311466
+ },
+ "model": {
+  "preset": "j1-wide-20x768",
+  "n_params": 142771456,
+  "selection": {
+   "status": "SELECTED",
+   "basis": "equal-token noninferiority, domain gates, material equal-compute improvement"
+  }
+ },
+ "trainer_config": {
+  "preset": "j1-wide-20x768",
+  "seq_len": 2048,
+  "micro_bs": 16,
+  "accum": 2,
+  "steps": 52034,
+  "limit_tokens": 3410100225,
+  "lr": 0.0016971,
+  "warmup": 500,
+  "min_lr_ratio": 0.1,
+  "wd": 0.1,
+  "wd_policy": "matrices",
+  "clip": 1.0,
+  "opt": "fused",
+  "precision": "bf16",
+  "compile": false,
+  "seed": 1,
+  "exact_epoch": true,
+  "eval_set": "full-split"
+ },
+ "execution_profile": {
+  "compile": false,
+  "basis": "eager/compiled equivalence FAIL",
+  "compile_equivalence_sha256": "76139ec77d5b8b2fa7d22d99b746c99d214095829ef733a7e2952fe258aa8c41"
+ },
+ "schedule": {
+  "peak_lr": 0.0016971,
+  "warmup_updates": 500,
+  "min_lr_ratio": 0.1,
+  "horizon_updates": 52034,
+  "limit_tokens": 3410100225,
+  "dropped_tail_windows": 6,
+  "tokens_per_update": 65536,
+  "tranche_stop_update": 2000,
+  "tranche_valid_targets": 131072000,
+  "canary_updates": 50,
+  "eval_every_updates": 500,
+  "seed": 1,
+  "data_order": "one exact epoch; window permutation seeded by (seed, epoch); the tranche is a prefix"
+ },
+ "checkpoints": {
+  "root": "/vol/ckpt",
+  "every_updates": 500,
+  "every_active_seconds": 900,
+  "retention": "all tranche checkpoints kept (init, canary, periodic, best, planned stop, final)"
+ },
+ "acceptance": {
+  "reference_tokens_per_s": 65194.47842392455,
+  "reference_basis": "compiled: median of the selected shape's protocol-18b ET confirmation runs; eager: the eager run of the equivalence check; the canary must reach 90 %",
+  "instability_after_update": 1000,
+  "instability_rel": 0.02
+ },
+ "limits": {
+  "usd_soft": 2.1,
+  "usd_hard": 2.4,
+  "runtime_hours_max": 1.4,
+  "volume_bytes_max": 45000000000,
+  "max_replica_lag_updates": 1000,
+  "max_replica_lag_seconds": 600,
+  "rate_usd_h": 1.9,
+  "spent_before_usd": 0.15,
+  "session_start_utc": "2026-10-10T17:45:58Z",
+  "launch_start_estimate_usd": 14.97,
+  "usd_soft_abs": 17.07,
+  "usd_hard_abs": 17.37,
+  "deadline_utc": "2026-10-11T02:55:24Z"
+ },
+ "host": {
+  "gpu_uuid": "GPU-5c42020f-dc89-fe0f-2a91-a26d0948c4f4",
+  "pod_id": "pncbyxaf2dt2jl"
+ },
+ "inputs_sha256": {
+  "selection": "9b29f75a016812146f1685636a78ed0fb0191bbda98720b342c3325c729c7a26",
+  "amendment": "5b289e422007df620872a1f2f2c6e2f9caf60c18f49d99fc6dee4cfd180fb209",
+  "policy": "1e2ff32910308560173b0e1a2986f9cdaf61701705757c9ab300762296686a15",
+  "host_record": "55c72e7360795da287300e96997e468d026d5e956c485bdf3238e8fbc11caa4c",
+  "validation_record": "53dc8096f88027111173a742f90e61ad9b983791f80a3c8aae1c2b9d201e8914"
+ }
+}

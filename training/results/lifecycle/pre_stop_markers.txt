@@ -1,0 +1,7 @@
+8756bac04ed6d70569e102b13b955d80ccbf45b21c2bd8dae1e97cccff329433  /root/marker_container.bin
+8756bac04ed6d70569e102b13b955d80ccbf45b21c2bd8dae1e97cccff329433  /workspace/qual-evidence/marker_volume.bin
+266
+2026-10-08T17:49:21Z
+FLOWBOX copy of runs matches pod manifest: OK
+{"checkpoint": "ckpt-000000040-fd8f7ce3", "status": "VERIFIED", "reason": "ok", "bytes": 1780119361, "transfer_s": 136.48020672798157, "MBps": 13.043058797148165, "replication_lag_s": 2667.406224}
+{"audit_chain_ok": true, "audit_lines": 4, "failed": 0}

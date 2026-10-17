@@ -1,0 +1,14 @@
+{
+ "schema": "j1.contract-limitations.v1",
+ "purpose": "known_limitations input of tools/build_contract_v2.py (review T-18: limitations are a committed, versioned input rather than prose hard-coded in the builder)",
+ "limitations": [
+  "LR tuned at a 91M-target screening horizon; the full horizon is ~3.4B targets",
+  "three seeds per shape: decision intervals are wide (protocol 18 §5)",
+  "base-LM bpb does not measure agent capability",
+  "the balance was owner-reported at freeze time; the provider console later showed $8.53 at 2026-10-11T01:38Z (the 16:47Z figure was ~$4.36 too high; budget contract v4, BC-5)",
+  "core 28x640 LR at the upper grid edge (unresolved boundary; extension skipped by the registered budget cut order), so part of wide's margin may be core under-tuning",
+  "the core LR boundary remains unresolved: the architecture selection (B07) stands as an engineering decision under that uncertainty and no further LR extension is funded",
+  "eager/compiled equivalence FAIL (bpb 0.326% > 0.3%): the frozen profile is eager (half the compiled speed)",
+  "launch attempt j1-base-r1 stopped before update 1: full-stream trainer startup exceeded the 15-minute stall rule (readiness B17); FROZEN_LAUNCH_BLOCKED until fixed, reviewed and measured"
+ ]
+}

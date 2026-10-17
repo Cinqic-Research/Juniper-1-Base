@@ -1,0 +1,49 @@
+{
+ "schema": "j1.source-permissions.v1",
+ "build": "j1-base-v0.2.2",
+ "build_identity": "89b08d5754c46dfd18ec239fdacb21ae899c1cf9d7606392401b5224c54bffc5",
+ "sources": {
+  "arxiv-papers": {
+   "training_approved": true,
+   "basis": "owner decision cc-by-sa-training-and-weights-treatment: APPROVED"
+  },
+  "finemath-4plus": {
+   "training_approved": true,
+   "basis": "owner decision finemath-training-use: APPROVED"
+  },
+  "fineweb-edu-dedup": {
+   "training_approved": true,
+   "basis": "owner decision fineweb-edu-training-use: APPROVED"
+  },
+  "libretexts": {
+   "training_approved": true,
+   "basis": "owner decision cc-by-sa-training-and-weights-treatment: APPROVED"
+  },
+  "oercommons": {
+   "training_approved": true,
+   "basis": "owner decision cc-by-sa-training-and-weights-treatment: APPROVED"
+  },
+  "pressbooks": {
+   "training_approved": true,
+   "basis": "owner decision cc-by-sa-training-and-weights-treatment: APPROVED"
+  },
+  "python-peps": {
+   "training_approved": true,
+   "basis": "source license ['Public-Domain', 'CC0-1.0'] (APPROVED): Permitted (public domain / CC0)."
+  },
+  "stackexchange": {
+   "training_approved": true,
+   "basis": "owner decision cc-by-sa-training-and-weights-treatment: APPROVED"
+  },
+  "stackv2-edu": {
+   "training_approved": true,
+   "basis": "owner decision stackv2-license-and-provenance: APPROVED"
+  },
+  "wikimedia": {
+   "training_approved": true,
+   "basis": "owner decision cc-by-sa-training-and-weights-treatment: APPROVED"
+  }
+ },
+ "all_sources_training_approved": true,
+ "release_decisions": "PENDING (weights license treatment, dataset redistribution): not training gates"
+}

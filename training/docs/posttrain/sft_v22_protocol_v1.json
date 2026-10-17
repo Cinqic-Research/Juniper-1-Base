@@ -1,0 +1,282 @@
+{
+ "schema": "j1.sft-v21-protocol.v1",
+ "stage_id": "juniper1-sft-v22",
+ "registered_et": "2026-10-14 3:30 PM EDT",
+ "registered_before_any_result": true,
+ "authority": "Owner directive 2026-10-14 (Juniper_1_GPT_6_1_Sol_Independent_Review_Directive_2026-10-14.md, section 7), continued by Claude Opus 5.5 under the owner's 2026-10-14 takeover decision (author/reviewer independence waived, reviews labelled same-vendor). No promotion authority: a qualified result is a research candidate for owner review.",
+ "hypothesis": "SFT v2.1's diagnostic (STOP_FAILED) recovered arithmetic, JSON, Python and most of injection by restoring v1.2's realized draws, but hierarchy still regressed (-0.085; -0.049 on fresh items) and injection was INSUFFICIENT (-0.030). v2.1 already trained on nearly as much unique hierarchy content as the passing v1.2 baseline (1,733 episodes at 2.14 passes vs 1,856 at 2.0), so a shortage of unique content did not cause the regression; interference from v1.3's new material is at least as likely. This stage tests a compensation hypothesis: at the same per-group draws, drawing hierarchy over 3,185 episodes (1,733 v1.3 + 1,452 admitted v1.2; about 1.7x the baseline's) and injection over 4,500 (2,000 + 2,500) recovers non-inferiority while keeping v2.1's other results. A pass would show that extra hierarchy/injection content can offset the deficit, not that its absence caused it.",
+ "base": {
+  "freeze_id": "juniper1-base-v1",
+  "freeze_record_sha256": "ef79b324fff459c8ffce7ac2e1b1542960a254b8383a6e8b19fd20402e92ff55"
+ },
+ "initialization": "the frozen base (juniper1-base-v1, ckpt-000052034-336e5967) with a fresh optimizer; failed v2 weights are not continued",
+ "dataset_version": "j1-sft-v1.3-mix2",
+ "dataset_manifest_sha256": "0ba1625f8ce524b2732ecccb1f13e92a0bdf4420481846c8614774ef79dbbfa1",
+ "dataset_note": "j1.sft-mix.v1 with an admitted replay source (j1.sft-replay.v1): one materialized epoch of exactly 78,464 draws; every group's draws as in j1-sft-v1.3-mix1; hierarchy 2,020 (v1.3) + 1,692 (v1.2 replay), injection 2,222 + 2,778. Replay admission (Data configs/sft_v12_replay_admission_mix2.json) rejects v1.2 episodes with any v1.3 dev/test, v1.2 test or confirmation task key, user text found in an evaluation/dev prompt, any v1.3 evaluation-only phrasing (35 patterns; positive control 400/400 paraphrase and held-out-op test prompts, negative control 0/3,000 v1.3 train prompts), identical content, or the same primary task as a v1.3 train episode.",
+ "eval_bundle_sha256": "935e12edb42a0a39cb75839ffbb74fcb5e01e034746f2725e9ff985ecdb89906",
+ "eval_bundle_role": "historical v1.3 test bundle: the predeclared DIAGNOSTIC set and paired regression comparison. Its outputs informed SFT v2 development, so it is not untouched confirmation.",
+ "confirmation_bundle_sha256": "1235072317072434d826aeff903c7d87214a109ff0de83d829d6524aae0495f6",
+ "confirmation_bundle_role": "sealed final confirmation j1-sft-confirm-v3 (Data docs/sft/confirm_v3.md; separate-agent review APPROVE): 4,417 chat items, seed 20261015, same held-out design as v1.3. It excludes every item whose task keys occur in v1.3 train/dev/test or v1.2 train/dev/test, and every prompt identical to a v1.2 or v1.3 evaluation prompt. Fixed-pool sources (Wikidata facts, MBPP, HumanEval, OASST1) are absent; hierarchy has 1 item, python 91 and uncertainty 39, so those are gated only on the historical bundle. GSM8K items come from the public test pool and are reported only. Evaluated exactly once, at the final gate, after an ADVANCE diagnostic and the completed replications. confirm-v1 (054109e7) and confirm-v2 (4cde9608) were superseded before any use.",
+ "data_code_revision": "2f42da953dbb7e7f2ce35a2134bf95cd2654f280",
+ "scorer": "j1.sfteval.v3",
+ "scorer_note": "v3 at Data main 2f42da95 (merge of Juniper-1-Data#11) scores correct computed empty answers and binds generation metadata. The v1.2-baseline and SFT v2 generations are rescored at that revision into ~/j1post/eval/rescore_sfteval_v3 (new files); the historical v2-scored files and decisions are unchanged.",
+ "training": {
+  "updates": 1226,
+  "warmup_updates": 40,
+  "min_lr_ratio": 0.1,
+  "episodes_per_update": 64,
+  "token_budget": 1024,
+  "optimizer": {
+   "name": "adamw",
+   "betas": [
+    0.9,
+    0.95
+   ],
+   "eps": 1e-08,
+   "weight_decay": 0.1,
+   "decay_policy": "matrices",
+   "clip": 1.0
+  },
+  "lr": 3e-05,
+  "precision": "fp32",
+  "dev_every": 100,
+  "checkpoint": {
+   "every_updates": 500,
+   "every_seconds": 900
+  },
+  "epochs": "exactly one epoch of the materialized mixture (78,464 = 1,226 x 64; no remainder skipped)",
+  "rationale": "identical to the v1.2 pilot and SFT v2. Only the dataset (mixture) differs, so the comparison with v2 isolates the mixture."
+ },
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "diagnostic_seed": 1,
+ "runs": {
+  "1": "j1-sft-v22-s1",
+  "2": "j1-sft-v22-s2",
+  "3": "j1-sft-v22-s3"
+ },
+ "replication_rule": "Seeds 2 and 3 run only after the diagnostic outcome is ADVANCE. STOP_FAILED or STOP_INSUFFICIENT ends this protocol. The seed is preserved and diagnosed, and nothing is tuned, re-run or re-seeded under this protocol.",
+ "candidate": "the final checkpoint (update 1226) of seed 1. Seeds 2 and 3 enter the final rule. No checkpoint or seed is selected after scoring.",
+ "smoke": {
+  "run_id": "j1-sft-v22-smoke",
+  "updates": 30,
+  "warmup_updates": 15,
+  "sigterm_after": 15,
+  "when": "before the diagnostic run",
+  "pass": "bitwise A/B after a SIGTERM at update 15 and resume; corrupted and torn latest checkpoints are rejected and roll back to bitwise equality with A"
+ },
+ "baseline": {
+  "description": "the replicated v1.2-recipe candidates, paired by seed number",
+  "checkpoints": {
+   "1": "j1-sft-v1-pilot/ckpt-000001226-55d13f9a",
+   "2": "j1-sft-v1-rep-s2/ckpt-000001226-0ccc062e",
+   "3": "j1-sft-v1-rep-s3/ckpt-000001226-4389d0e3"
+  }
+ },
+ "v2": {
+  "description": "the FAILED SFT v2 candidates (never promoted), used only for the new-capability non-inferiority comparison",
+  "runs": {
+   "1": "j1-sft-v2-s1",
+   "2": "j1-sft-v2-s2",
+   "3": "j1-sft-v2-s3"
+  },
+  "checkpoints": {
+   "1": "j1-sft-v2-s1/ckpt-000001226-48e927b5",
+   "2": "j1-sft-v2-s2/ckpt-000001226-7b85e185",
+   "3": "j1-sft-v2-s3/ckpt-000001226-33333871"
+  }
+ },
+ "statistics": {
+  "bootstrap": {
+   "resamples": 10000,
+   "seed": 20261014
+  },
+  "seed_aggregation": "seed mean of paired per-item differences; per-seed exact McNemar",
+  "limits": "Paired item bootstrap treats items as independent. It does not model related task, entity or phrasing clusters. With three seeds, seed variation is bounded replication evidence, not a variance estimate. The diagnostic uses one seed."
+ },
+ "primary": {
+  "endpoints": [
+   "category:if_paraphrase",
+   "category:if_composition_heldout"
+  ],
+  "min_gain": 0.2,
+  "ci_lower_min": 0.1,
+  "alpha": 0.05,
+  "multiplicity": "Holm over the two endpoints (largest per-seed exact McNemar p)",
+  "clean_slices": [
+   "paraphrase:clean",
+   "compose_heldout:unseen_function"
+  ],
+  "clean_slice_rule": "paired CI lower bound > 0 vs v1.2 on each clean slice (sensitivity file docs/posttrain/sft_v2_sensitivity_v1.json); historical bundle only",
+  "pass": "vs the same-seed v1.2 baseline: point improvement >= 0.20 (55% of v2's +0.365/+0.343), CI lower bound > 0.10, every seed improves, Holm p < 0.05"
+ },
+ "vs_v2": {
+  "endpoints": [
+   "category:if_paraphrase",
+   "category:if_composition_heldout"
+  ],
+  "margin": 0.15,
+  "rule": "PASS iff CI lower bound of (v2.1 - v2) > -0.15; FAIL iff point or CI upper bound < -0.15; otherwise INSUFFICIENT"
+ },
+ "noninferiority": {
+  "groups": {
+   "if_in_distribution": "auto",
+   "category:json": "auto",
+   "math_arith": "auto",
+   "math_gsm8k": "auto",
+   "category:python": "auto",
+   "category:hierarchy": "auto",
+   "category:injection": "auto",
+   "category:uncertainty": "auto"
+  },
+  "auto": {
+   "floor": 0.03,
+   "k": 2,
+   "formula": "margin = max(0.03, 2 * sample SD of the three v1.2 baseline seeds on the group)"
+  },
+  "rule": "affirmative: PASS iff the paired CI lower bound of (v2.1 - v1.2) > -margin; FAIL iff point estimate or CI upper bound < -margin; otherwise INSUFFICIENT. Each group is gated separately; gains elsewhere never offset a regression."
+ },
+ "knowledge": {
+  "relations": {
+   "facts_capitals": "auto",
+   "family:facts.country_continent": "auto",
+   "family:facts.country_currency": "auto",
+   "family:facts.element_symbol": "auto",
+   "family:facts.element_number": "auto"
+  },
+  "auto": {
+   "floor": 0.05,
+   "k": 2,
+   "formula": "margin = max(0.05, 2 * v1.2 baseline seed SD on the relation)"
+  },
+  "alpha": 0.05,
+  "rule": "Chat answers vs v1.2 use the affirmative non-inferiority rule above. Separately, the candidate's own few-shot answers vs the frozen base's few-shot answers must not be significantly worse (exact McNemar p < 0.05, worse) in ANY seed; otherwise the relation FAILS. Retention is not inferred from an absence of evidence: an underpowered chat comparison is INSUFFICIENT."
+ },
+ "gates": {
+  "protocol_valid_min": 0.95,
+  "full_split_bpb_max": 0.943872,
+  "uncertainty_strict_min": 0.5,
+  "false_abstention_max": 0.25,
+  "checkpoint_verified": true,
+  "smoke_pass": true,
+  "early_stop": "dev loss rises at three consecutive dev evaluations"
+ },
+ "decision": {
+  "tool": "tools/sft_v21_decide.py",
+  "diagnostic": "--mode diagnostic, seed 1, historical bundle. ADVANCE iff every gate holds, every primary endpoint and clean slice passes, every vs_v2 and protected non-inferiority group is PASS, and no knowledge relation FAILS. Knowledge relations may be INSUFFICIENT at one seed and are carried to the final gate. STOP_FAILED on any failure. STOP_INSUFFICIENT if a protected or vs_v2 group is INSUFFICIENT.",
+  "final": "--mode final, seeds 1-3. The historical-bundle rules apply with seed means, plus the primary, vs_v2 and protected rules on the confirmation bundle, evaluated once. QUALIFIED_FOR_REVIEW iff everything passes. FAILED on any failure. Otherwise INSUFFICIENT_EVIDENCE. Never an automatic pass.",
+  "promotion": "none by this protocol; a QUALIFIED_FOR_REVIEW candidate still needs the personal-use (App) qualification and owner decision"
+ },
+ "reported_groups": [
+  "if_heldout_families",
+  "family_prefix:heldout.ops.v12",
+  "family_prefix:heldout.ops.new",
+  "family_prefix:heldout.if",
+  "category:multi_turn",
+  "category:formatting",
+  "category:grounded_qa",
+  "category:factuality"
+ ],
+ "evaluation_layout": {
+  "historical": {
+   "v12": "rescore_sfteval_v3/v13_baseline/rep_s{seed}",
+   "v2": "rescore_sfteval_v3/v2/seed{seed}",
+   "v21": "v22/seed{seed}",
+   "base_fewshot": "rescore_sfteval_v3/v13_baseline/base/cand_scores.json"
+  },
+  "confirmation": {
+   "v12": "v21_confirm/v12_s{seed}",
+   "v2": "v21_confirm/v2_s{seed}",
+   "v21": "v22_confirm/v22_s{seed}"
+  },
+  "root": "FLOWBOX ~/j1post/eval (private; per-item scores are not committed)",
+  "note": "the decision tool's 'v21' key holds this stage's candidate (v2.2); layout paths say v22"
+ },
+ "test_access": "Only the scorer reads answers. Engineers see per-item booleans and aggregates, never answer text. Confirmation answers stay sealed until the final gate, and confirmation generations are made only at that gate. Every access is recorded in docs/posttrain/sft_v22_test_access.jsonl.",
+ "app_conversation": "DEFERRED to the personal-use qualification (directive section 10). This stage gates the automatic skills above and does not claim conversational or App-instruction usefulness.",
+ "environment": {
+  "training_and_generation": "FLOWBOX RTX 2060, fp32, TF32 off, deterministic algorithms, CUBLAS_WORKSPACE_CONFIG=:4096:8 (as the v1.2 pilot and replications)",
+  "scoring": "FLOWBOX CPU, Data scorer at data_code_revision (sandboxed)"
+ },
+ "budget": {
+  "runpod_usd_cap": 0,
+  "note": "local only; no paid compute under this protocol"
+ },
+ "storage": "Runs under ~/j1post/runs-v21/v22 on the NVMe (about 10 GB free after the 2026-10-14 cleanup); the final checkpoint is preserved to the HDD archive, which is above its reserve after the hardlink dedup.",
+ "rollback": "juniper1-base-v1 remains canonical; every v2.1 run is a new lineage; all runs, failures and rejected checkpoints are preserved",
+ "confirmation": {
+  "noninferiority_groups": [
+   "if_in_distribution",
+   "category:json",
+   "math_arith",
+   "category:injection"
+  ],
+  "reported_groups": [
+   "category:uncertainty",
+   "category:python",
+   "math_gsm8k",
+   "category:hierarchy",
+   "if_heldout_families",
+   "category:multi_turn",
+   "category:formatting",
+   "category:grounded_qa"
+  ],
+  "rule": "primary endpoints vs v1.2 (same rule as the historical bundle), vs_v2 on the primary endpoints, and affirmative non-inferiority on the listed groups, with auto margins from the three v1.2 baseline seeds on this bundle. A gated group with fewer than min_n items cannot PASS: a would-be PASS becomes INSUFFICIENT, so the final outcome is INSUFFICIENT_EVIDENCE. The registered gated groups all have at least 300 items in confirm-v3. Groups in reported_groups are reported only.",
+  "min_n": 300
+ },
+ "dataset_code": {
+  "repository": "Juniper-1-Data",
+  "branch": "sft/v22-replay",
+  "commit": "51880e2",
+  "mixture_tool": "src/j1data/sftmix.py (j1.sft-mix.v1, admission-gated replay source)",
+  "replay_tool": "src/j1data/sftreplay.py (j1.sft-replay.v1)",
+  "mixture_config": "configs/sft_v13_mix2.toml",
+  "replay_admission": "configs/sft_v12_replay_admission_mix2.json (admission_sha256 410fac4a338abb6870afd2c5497cda208c0f8e3474138920e4ce58dc86ad658b)"
+ },
+ "exposed_items": {
+  "file": "docs/posttrain/results/sft_v21_v1/v12_exposed_items.json",
+  "sha256": "d1fcf6e0a8de23fe1edc712f446667b2a0df6b831e68ad76404ef1e25ac4d169",
+  "use": "reported_fresh rows (reported, not gated) for every protected group: the same comparison without the 467 historical test items whose task keys appear in j1-sft-v1.2 train/dev (math 102, instruction following 97, uncertainty 162, hierarchy 48, python 57, json 1)"
+ },
+ "hypothesis_limits_amendment_1": "(inherited from sft_v21_protocol_v1 amendment 1: baseline-exposure confound and repetition; the bias against the candidate applies to v2.2 as it did to v2.1)",
+ "amendments": [
+  {
+   "n": 1,
+   "et": "2026-10-14 3:34 PM EDT",
+   "before": "any v2.2 score exists (smoke/diagnostic running; no generation scored)",
+   "source": "separate-agent re-review of the registered v2.2 protocol",
+   "changes": [
+    "reported prior rows: compare only seeds that have a prior run (final mode would have raised KeyError for seeds 2-3)",
+    "prior candidate pinned by run/checkpoint identity (prior.checkpoints) like the v2 comparators; reported rows only, no gate changed"
+   ]
+  }
+ ],
+ "protocol_lineage": "successor of sft_v21_protocol_v1 (STOP_FAILED); same gates, statistics, margins, smoke, confirmation bundle (j1-sft-confirm-v3, still unused) and decision tool",
+ "limits_v22": [
+  "1,376 of 1,452 admitted hierarchy episodes embed a task that is itself a v1.3 train episode, and the generator templates are unchanged (4 rules, 5 overrides, 8 injection strings): the added novelty is new combinations, not new content.",
+  "v2.2 trains on the v1.2 baseline's whole injection set and 78% of its hierarchy set; the fresh-item rows report items the baseline trained on separately.",
+  "A second successive diagnostic on the same historical v1.3 bundle increases its reuse; the confirmation bundle stays sealed for the final gate.",
+  "One seed per arm; the replay also reshuffles every batch, so a small v2.2-v2.1 difference is not interpretable without the yardstick (v1.2 seed-to-seed SD) reported alongside it."
+ ],
+ "prior": {
+  "label": "SFT v2.1 diagnostic candidate (STOP_FAILED; reported comparison only, never gating)",
+  "layout": "v21/seed{seed}",
+  "runs": {
+   "1": "j1-sft-v21-s1"
+  },
+  "groups": [
+   "category:hierarchy",
+   "category:injection",
+   "category:json",
+   "math_arith",
+   "category:if_paraphrase",
+   "category:if_composition_heldout"
+  ],
+  "checkpoints": {
+   "1": "j1-sft-v21-s1/ckpt-000001226-4bf03e97"
+  }
+ }
+}

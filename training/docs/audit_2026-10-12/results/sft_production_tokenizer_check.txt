@@ -1,0 +1,4 @@
+tokenizer sha256 176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1
+control sequence ['<|system|>', '<|end|>', '<|user|>', '<|end|>', '<|assistant|>', '<|final|>', '<|eot|>', '<|user|>', '<|end|>', '<|assistant|>', '<|final|>', '<|eot|>']
+trained text '<|final|>Second answer.<|eot|>'
+rows 1 len 2048 targets trained 10 shift ok True boundary target True second ep first input True

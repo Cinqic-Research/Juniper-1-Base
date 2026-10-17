@@ -1,0 +1,49 @@
+{
+ "decision": "PILOT_CANDIDATE_QUALIFIED",
+ "gates": {
+  "EARLY-STOP": {
+   "pass": true,
+   "pilot_updates": 1226,
+   "registered_updates": 1226,
+   "rule": "dev loss rises at three consecutive dev evaluations",
+   "triggered": false
+  },
+  "G-PROTO": {
+   "candidate": 0.9567682494684621,
+   "pass": true
+  },
+  "G-REC": {
+   "ab_bitwise": true,
+   "ab_numerical_only_with_full_evidence": false,
+   "pass": true,
+   "pilot_checkpoint_reproduces_dev_loss": true,
+   "pilot_checkpoint_verified": true
+  },
+  "G-REG": {
+   "pass": true,
+   "significant_regressions_vs_fewshot": []
+  },
+  "G-RET": {
+   "candidate_bpb": 0.9407260715888013,
+   "max": 0.943872,
+   "pass": true
+  },
+  "G-UNC": {
+   "false_abstention_on_facts": 0.07386363636363637,
+   "pass": true,
+   "uncertainty_strict": 0.9933333333333333
+  },
+  "P1": {
+   "candidate": 0.648,
+   "pass": true,
+   "versus_fewshot_ci95": [
+    0.488,
+    0.578
+   ],
+   "versus_fewshot_difference": 0.534,
+   "wilson_lower": 0.6051540367696648
+  }
+ },
+ "note": "not production; base remains canonical",
+ "protocol": "j1.sft-pilot-protocol.v3"
+}

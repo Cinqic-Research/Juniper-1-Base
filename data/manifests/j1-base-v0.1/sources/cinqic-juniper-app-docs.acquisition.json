@@ -1,0 +1,365 @@
+{
+ "acquire_version": "j1.acquire.v1",
+ "acquired_utc": "2026-10-07T15:31:00+00:00",
+ "files": [
+  {
+   "git_blob_oid": "38d72e74769c4158dd700a538215d0faebeda702",
+   "path": "CONTRIBUTING.md",
+   "size": 750
+  },
+  {
+   "git_blob_oid": "02c49009105cba02ca8b9307667edfead0d0ca39",
+   "path": "PRIVACY.md",
+   "size": 992
+  },
+  {
+   "git_blob_oid": "8d77429135547598269eba9487b13f4320db5b33",
+   "path": "README.md",
+   "size": 12756
+  },
+  {
+   "git_blob_oid": "ceab628ca3cf25b8cf88bfccc49dd89b64886af1",
+   "path": "SECURITY.md",
+   "size": 740
+  },
+  {
+   "git_blob_oid": "1c98a8a634e04d1abe409f8f9e9f347b821664d0",
+   "path": "THIRD_PARTY_NOTICES.md",
+   "size": 4302
+  },
+  {
+   "git_blob_oid": "3f3dfdd3f1d78d9c7f59daf23d7a2e2f041ae23e",
+   "path": "docs/adr/0001-cross-platform-framework.md",
+   "size": 740
+  },
+  {
+   "git_blob_oid": "0a649c1cabea9e25bb0e5dbc7357cdc4fd40ec00",
+   "path": "docs/adr/0002-frontend-stack.md",
+   "size": 480
+  },
+  {
+   "git_blob_oid": "a710130746609843e415354a505c82e2c6bec052",
+   "path": "docs/adr/0003-provider-abstraction.md",
+   "size": 583
+  },
+  {
+   "git_blob_oid": "1b7347d9a91dc7d9898f3a12727169b177fb0441",
+   "path": "docs/adr/0004-local-inference-strategy.md",
+   "size": 925
+  },
+  {
+   "git_blob_oid": "2ca71068b6111889fff418b5b728019c2f279490",
+   "path": "docs/adr/0005-persistence-and-migrations.md",
+   "size": 611
+  },
+  {
+   "git_blob_oid": "89399300bb7f074391052d3d757d4b52a9581cc5",
+   "path": "docs/adr/0006-assistant-template-format.md",
+   "size": 478
+  },
+  {
+   "git_blob_oid": "f670a2139603fc39fd4c83e8e785f4b3b687766c",
+   "path": "docs/adr/0007-tool-runtime-and-trust-boundary.md",
+   "size": 604
+  },
+  {
+   "git_blob_oid": "251de8869cecfddadedc6ae785b142fb4f74e981",
+   "path": "docs/adr/0008-privacy-and-network-policy.md",
+   "size": 564
+  },
+  {
+   "git_blob_oid": "9fd92b52198f9f56839a6967b58f7ae61dce97f6",
+   "path": "docs/adr/0009-mobile-runtime-strategy.md",
+   "size": 1120
+  },
+  {
+   "git_blob_oid": "a4bb9f7503f9e8fbe681938180c770bef6813020",
+   "path": "docs/adr/0010-mcp-integration.md",
+   "size": 632
+  },
+  {
+   "git_blob_oid": "4d0cad3b89891c2af234bbec776c6ff3e38f94db",
+   "path": "docs/adr/0011-model-agnostic-runtime.md",
+   "size": 598
+  },
+  {
+   "git_blob_oid": "969e180acdfefaff1ecdc6461b128a3344a3f741",
+   "path": "docs/adr/0012-native-ollama-model-management.md",
+   "size": 668
+  },
+  {
+   "git_blob_oid": "5719742aec722b7087f7f6283bc7416aa9f023d8",
+   "path": "docs/adr/0013-native-sqlite-application-repository.md",
+   "size": 459
+  },
+  {
+   "git_blob_oid": "3ca1ae2de44e1e46c5a4a820ee852133e889ffe1",
+   "path": "docs/adr/0014-execution-location-and-privacy.md",
+   "size": 349
+  },
+  {
+   "git_blob_oid": "50b19b56c1c6b05a91c37390d0dd83d6493d623b",
+   "path": "docs/adr/0015-model-capability-and-tool-compatibility.md",
+   "size": 500
+  },
+  {
+   "git_blob_oid": "09a048f5231e4bceeba18f69ca8055552cc14138",
+   "path": "docs/adr/0016-standalone-local-runtime.md",
+   "size": 2874
+  },
+  {
+   "git_blob_oid": "6774c25da1e61fd3ee3ef9906f6ebe077dccb1d1",
+   "path": "docs/adr/0017-runtime-registry-and-maturity.md",
+   "size": 638
+  },
+  {
+   "git_blob_oid": "9e1922b90a80decedbc27e25b94d8adc058b4946",
+   "path": "docs/adr/0018-artifact-centric-catalog.md",
+   "size": 507
+  },
+  {
+   "git_blob_oid": "4f19f12c34f4f65eb315fe3745ea1cb017ae5de9",
+   "path": "docs/adr/0019-device-link-security.md",
+   "size": 1137
+  },
+  {
+   "git_blob_oid": "df0043510763757a010b9b5008523508eb84faf9",
+   "path": "docs/adr/0020-android-keystore-credentials.md",
+   "size": 663
+  },
+  {
+   "git_blob_oid": "7219a9e9b5a4e16ab37cd13f6ff3a00e2992b9f8",
+   "path": "docs/adr/0021-chat-first-interface-and-appearance-tokens.md",
+   "size": 8328
+  },
+  {
+   "git_blob_oid": "9640b947a20adc5d51549ca8491b87bd4ee00c87",
+   "path": "docs/adr/0022-constitution-and-model-distrust.md",
+   "size": 6686
+  },
+  {
+   "git_blob_oid": "a43ebe37a815e3b1ac1703d4e7569b62126b0932",
+   "path": "docs/adr/0023-gpt-oss-backend-and-resident-runtime.md",
+   "size": 6871
+  },
+  {
+   "git_blob_oid": "4cfb9e302291d4d8f2142c4d6fe8372ff496ea43",
+   "path": "docs/adr/README.md",
+   "size": 176
+  },
+  {
+   "git_blob_oid": "26fbde8537fbb35c48048864ccd2b3294d1fe8a9",
+   "path": "docs/architecture/artifact-catalog.md",
+   "size": 1000
+  },
+  {
+   "git_blob_oid": "ebdf772a98e9cba5bebdd9fa40e06b294e771cd3",
+   "path": "docs/architecture/model-market.md",
+   "size": 2540
+  },
+  {
+   "git_blob_oid": "385ec2f62ce7117e83ab3d8417482d6bc001a108",
+   "path": "docs/architecture/overview.md",
+   "size": 2559
+  },
+  {
+   "git_blob_oid": "ea871755ca53b08693f0082c89331713fb9cd416",
+   "path": "docs/architecture/permissions.md",
+   "size": 1645
+  },
+  {
+   "git_blob_oid": "9237b821a933ee865d64c215aefafb7de4fe8c93",
+   "path": "docs/architecture/provider-contract.md",
+   "size": 1315
+  },
+  {
+   "git_blob_oid": "235705c77b600f249879762ca7d9043bcbe9c4ea",
+   "path": "docs/architecture/runtime-registry.md",
+   "size": 2438
+  },
+  {
+   "git_blob_oid": "7017ffa6489325a086416b3bbd3941360c2f01ed",
+   "path": "docs/architecture/wrapper.md",
+   "size": 11749
+  },
+  {
+   "git_blob_oid": "f865e63f051319efd71849944d2e18751c5a397b",
+   "path": "docs/phases/README.md",
+   "size": 983
+  },
+  {
+   "git_blob_oid": "a45159b26c24890861eab3e7480a76b76a3585e2",
+   "path": "docs/phases/juniper-v0.2-release-candidate.md",
+   "size": 7634
+  },
+  {
+   "git_blob_oid": "55c4174cb9b92e4df48e0954d9fe8ad734fce7a9",
+   "path": "docs/phases/phase-0-foundation.md",
+   "size": 799
+  },
+  {
+   "git_blob_oid": "cfe7209a179d67b7e85cceb284c0f9b237137aa4",
+   "path": "docs/phases/phase-1-shell.md",
+   "size": 649
+  },
+  {
+   "git_blob_oid": "5516f4a1c84b2d17b088dbc3602439de68e33427",
+   "path": "docs/phases/phase-10-release-candidate.md",
+   "size": 2928
+  },
+  {
+   "git_blob_oid": "73a8a9cddeb7deeccd423f07a6206d192636240e",
+   "path": "docs/phases/phase-11-model-agnostic-completion.md",
+   "size": 3680
+  },
+  {
+   "git_blob_oid": "be2bd46daf25832f6fc104108618381bd6cd4c53",
+   "path": "docs/phases/phase-2-persistence-assistants.md",
+   "size": 630
+  },
+  {
+   "git_blob_oid": "217fd93147bcb8ac2024e4d3b8d5ed46e9ffb8d3",
+   "path": "docs/phases/phase-3-providers.md",
+   "size": 593
+  },
+  {
+   "git_blob_oid": "b40fd789329a5ec705aa5ea7fd3c32c2a478a994",
+   "path": "docs/phases/phase-4-orchestration.md",
+   "size": 470
+  },
+  {
+   "git_blob_oid": "d9d803197c740e3342a00dce880371bcabb689c5",
+   "path": "docs/phases/phase-5-tools.md",
+   "size": 579
+  },
+  {
+   "git_blob_oid": "4776d7bc9d1e1580f4987c52966637d8c8170ad8",
+   "path": "docs/phases/phase-6-model-management.md",
+   "size": 467
+  },
+  {
+   "git_blob_oid": "007cc8b4173d963d8d3c5d46f2d461a11d4f6e30",
+   "path": "docs/phases/phase-7-customization-privacy.md",
+   "size": 408
+  },
+  {
+   "git_blob_oid": "a25c6394a5adb727bd3795a113286a06b6f43ff9",
+   "path": "docs/phases/phase-8-mobile.md",
+   "size": 651
+  },
+  {
+   "git_blob_oid": "1c92e53a4849b2d08283552dc52ad598e23611aa",
+   "path": "docs/phases/phase-9-hardening.md",
+   "size": 514
+  },
+  {
+   "git_blob_oid": "065aba384fa507c350a065228c61bd9ec07aded2",
+   "path": "docs/phases/phase-report-template.md",
+   "size": 365
+  },
+  {
+   "git_blob_oid": "97564be5da0f7f054b56630bf938c8e49e737352",
+   "path": "docs/privacy/network-policy.md",
+   "size": 1496
+  },
+  {
+   "git_blob_oid": "013975359941f8cb1236281017e0940bc622f918",
+   "path": "docs/product/interface.md",
+   "size": 11216
+  },
+  {
+   "git_blob_oid": "26d814a13a976d5fea1fceca91700e358c85b81a",
+   "path": "docs/product/principles.md",
+   "size": 392
+  },
+  {
+   "git_blob_oid": "824fa3f1d47a50901b703586c6e5213c5bda4b71",
+   "path": "docs/recovery/README.md",
+   "size": 1756
+  },
+  {
+   "git_blob_oid": "831d07a6579f8ccc4e95de9b16fbe4f2036f2ebb",
+   "path": "docs/recovery/local-remote-reconciliation-2026-09-02.md",
+   "size": 3577
+  },
+  {
+   "git_blob_oid": "2c0e66f09ae34460d2f30aba585b305b0a1b8ff9",
+   "path": "docs/release/android-native-runtime.md",
+   "size": 4888
+  },
+  {
+   "git_blob_oid": "f64b0fc36963c8d161f13128123e55fa621642a9",
+   "path": "docs/release/android-signing-runbook.md",
+   "size": 4595
+  },
+  {
+   "git_blob_oid": "fca27123b4aa7c592eb5dc866fcdd7da5507e661",
+   "path": "docs/release/linux-troubleshooting.md",
+   "size": 6990
+  },
+  {
+   "git_blob_oid": "215d9c201f8c522133fdf36858df8fd8aabdfa6b",
+   "path": "docs/release/rc33-publication.md",
+   "size": 5751
+  },
+  {
+   "git_blob_oid": "aee03c35673f85fdbc8559987dc56d257cec9316",
+   "path": "docs/research/dependency-research.md",
+   "size": 4900
+  },
+  {
+   "git_blob_oid": "95c702e59dbd5cec16cd4d9fdff0d17971a65ee0",
+   "path": "docs/security/device-link-threat-model.md",
+   "size": 3330
+  },
+  {
+   "git_blob_oid": "7b04bcf0a3b9533d1c0011843e5b967c21e4c6bb",
+   "path": "docs/security/threat-model.md",
+   "size": 6000
+  },
+  {
+   "git_blob_oid": "eef69564e3ea2a8a607a5149a05e48227683fc08",
+   "path": "docs/testing/strategy.md",
+   "size": 12436
+  },
+  {
+   "git_blob_oid": "7519099a140754f3e63113f4c93b3a8d52868e29",
+   "path": "src-tauri/icons/README.md",
+   "size": 1558
+  },
+  {
+   "git_blob_oid": "e295dcec5176510d4526c5f7f9fae29745ab085b",
+   "path": "src-tauri/plugins/juniper-local/permissions/autogenerated/reference.md",
+   "size": 2081
+  },
+  {
+   "git_blob_oid": "b4fa1c11621ce40d203e1aa9006205b2e2f6e4cb",
+   "path": "src-tauri/runtime/README.md",
+   "size": 1270
+  }
+ ],
+ "mechanism": "git",
+ "repo": "Cinqic-Research/Juniper-App",
+ "revision": "11225ba7588eea14eef63d8b900c559fd2d5997b",
+ "schema": "j1.acquisition-manifest.v1",
+ "selected_bytes": 173563,
+ "selected_file_count": 67,
+ "selection": {
+  "exclude": [
+   "tests/*",
+   "docs/qualification/*",
+   "*eval*",
+   "CHANGELOG.md",
+   "*review*",
+   "*audit*",
+   "node_modules/*",
+   "vendor/*",
+   "third_party/*"
+  ],
+  "include": [
+   "*.md"
+  ]
+ },
+ "source_id": "cinqic-juniper-app-docs",
+ "upstream_file_count": 328
+}

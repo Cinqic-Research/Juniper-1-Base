@@ -1,0 +1,29 @@
+# Teacher configuration (j1.teacher.v1). GPT-OSS-20B is a teacher and reference
+# for Juniper 1, never its initialization. Identities are copied from the
+# Juniper LM 1.1 qualification manifests (derived/gpt-oss-20b-6cee5e81ee83.json,
+# runtime/llama.cpp-b11270.json).
+
+[teacher]
+model = "openai/gpt-oss-20b"
+upstream_revision = "6cee5e81ee83917806bbde320786a8fb61efebee"
+artifact = "gpt-oss-20b-6cee5e81ee83-MXFP4_MOE.gguf"
+artifact_sha256 = "9d7364f02d9952e158ab462629e72401bec844d2243cc3854b271bb35d33d23d"
+runtime = "llama.cpp b11270 (748d4225b9016b17ce4bcfa69fdc2c39f473a965), CUDA sm_75, FLOWBOX"
+endpoint = "http://127.0.0.1:8080"
+temperature = 0.6
+top_p = 0.95
+max_tokens = 1536
+reasoning_effort = "low"
+candidates = 3
+base_seed = 1000
+
+[template]
+version = "j1.teacher-template.v1"
+system = "You are a careful assistant. Answer correctly and concisely."
+developer = "Solve the problem. Show only the essential steps, then give the final answer on its own line as '#### <answer>'."
+
+[prompts.gsm8k-train]
+repo = "openai/gsm8k"
+revision = "740312add88f781978c0658806c59bc2815b9866"
+file = "main/train-00000-of-00001.parquet"
+license = "MIT"

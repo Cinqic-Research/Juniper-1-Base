@@ -1,0 +1,275 @@
+{
+ "base_model": {
+  "checkpoint": "ckpt-000052034-336e5967",
+  "freeze_id": "juniper1-base-v1",
+  "kind": "frozen_base",
+  "manifest_sha256": "a2f616c714bbad26a2dade682e71e80493ca70d6a4531430c64fdaedf5932e74"
+ },
+ "candidate_model": {
+  "checkpoint": "ckpt-000001226-0ccc062e",
+  "kind": "sft_checkpoint",
+  "manifest_sha256": "ace56e13174cd34d44fd016b8cd421ccc0dbd88c70784e2a331f27035d973e4f",
+  "model_state_sha256": "eaf742c14dc1f5e9577ea21f1b9fb866dcda3e181c08ba91d1223a259efda502",
+  "run_id": "j1-sft-v1-rep-s2",
+  "stage": "juniper1-sft-v1-replication",
+  "updates": 1226
+ },
+ "comparison_sha256": "fad9d53924be3ffd385b91942a71dd223ae73cfeae4ec78d1bdfa111a6b91585",
+ "test": {
+  "abstention": {
+   "base_false_abstention_on_facts": 0.0,
+   "false_abstention_on_facts": 0.06818181818181818,
+   "n_facts": 176,
+   "n_uncertainty": 300,
+   "uncertainty_strict": 0.9966666666666667
+  },
+  "protocol_valid": {
+   "base": 0.0,
+   "candidate": 0.9579494448381762,
+   "n": 4233
+  },
+  "significant_regressions_vs_fewshot": [],
+  "versus_base_chat": {
+   "all": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.4278289629104654,
+     0.45759508622726197
+    ],
+    "candidate": 0.4427120245688637,
+    "candidate_only": 1874,
+    "difference": 0.4427120245688637,
+    "mcnemar_p": 0.0,
+    "n": 4233
+   },
+   "factuality": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.2215909090909091,
+     0.3522727272727273
+    ],
+    "candidate": 0.2840909090909091,
+    "candidate_only": 50,
+    "difference": 0.2840909090909091,
+    "mcnemar_p": 1.7763568394002505e-15,
+    "n": 176
+   },
+   "heldout_instruction_following": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.0,
+     0.025735294117647058
+    ],
+    "candidate": 0.011029411764705883,
+    "candidate_only": 3,
+    "difference": 0.011029411764705883,
+    "mcnemar_p": 0.25,
+    "n": 272
+   },
+   "heldout_json": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.19,
+     0.31
+    ],
+    "candidate": 0.25,
+    "candidate_only": 50,
+    "difference": 0.25,
+    "mcnemar_p": 1.7763568394002505e-15,
+    "n": 200
+   },
+   "hierarchy": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.34841628959276016,
+     0.4796380090497738
+    ],
+    "candidate": 0.416289592760181,
+    "candidate_only": 92,
+    "difference": 0.416289592760181,
+    "mcnemar_p": 4.0389678347315804e-28,
+    "n": 221
+   },
+   "injection": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.9233333333333333,
+     0.9733333333333334
+    ],
+    "candidate": 0.95,
+    "candidate_only": 285,
+    "difference": 0.95,
+    "mcnemar_p": 3.217223493417518e-86,
+    "n": 300
+   },
+   "instruction_following": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.39766839378238344,
+     0.4676165803108808
+    ],
+    "candidate": 0.4326424870466321,
+    "candidate_only": 334,
+    "difference": 0.4326424870466321,
+    "mcnemar_p": 5.714936956411375e-101,
+    "n": 772
+   },
+   "instruction_following_in_distribution": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.62,
+     0.704
+    ],
+    "candidate": 0.662,
+    "candidate_only": 331,
+    "difference": 0.662,
+    "mcnemar_p": 4.5719495651291e-100,
+    "n": 500
+   },
+   "json": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.66,
+     0.74
+    ],
+    "candidate": 0.7,
+    "candidate_only": 350,
+    "difference": 0.7,
+    "mcnemar_p": 8.720301752336693e-106,
+    "n": 500
+   },
+   "math": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.3481818181818182,
+     0.40545454545454546
+    ],
+    "candidate": 0.37636363636363634,
+    "candidate_only": 414,
+    "difference": 0.37636363636363634,
+    "mcnemar_p": 4.727285052306297e-125,
+    "n": 1100
+   },
+   "python": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.04282407407407408,
+     0.07407407407407407
+    ],
+    "candidate": 0.05787037037037037,
+    "candidate_only": 50,
+    "difference": 0.05787037037037037,
+    "mcnemar_p": 1.7763568394002505e-15,
+    "n": 864
+   },
+   "uncertainty": {
+    "base": 0.0,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.99,
+     1.0
+    ],
+    "candidate": 0.9966666666666667,
+    "candidate_only": 299,
+    "difference": 0.9966666666666667,
+    "mcnemar_p": 1.9636373861190906e-90,
+    "n": 300
+   }
+  },
+  "versus_base_fewshot": {
+   "all": {
+    "base": 0.18662613981762918,
+    "base_only": 31,
+    "bootstrap_ci95": [
+     0.2693009118541033,
+     0.31732522796352586
+    ],
+    "candidate": 0.4796352583586626,
+    "candidate_only": 513,
+    "difference": 0.29300911854103345,
+    "mcnemar_p": 1.1963182967987281e-113,
+    "n": 1645
+   },
+   "factuality": {
+    "base": 0.23295454545454544,
+    "base_only": 16,
+    "bootstrap_ci95": [
+     -0.017045454545454544,
+     0.11931818181818182
+    ],
+    "candidate": 0.2840909090909091,
+    "candidate_only": 25,
+    "difference": 0.05113636363636364,
+    "mcnemar_p": 0.21102359760880063,
+    "mcnemar_p_holm": 0.21102359760880063,
+    "n": 176
+   },
+   "instruction_following": {
+    "base": 0.114,
+    "base_only": 3,
+    "bootstrap_ci95": [
+     0.502,
+     0.592
+    ],
+    "candidate": 0.662,
+    "candidate_only": 277,
+    "difference": 0.548,
+    "mcnemar_p": 3.766880722332432e-78,
+    "mcnemar_p_holm": 1.5067522889329728e-77,
+    "n": 500
+   },
+   "instruction_following_in_distribution": {
+    "base": 0.114,
+    "base_only": 3,
+    "bootstrap_ci95": [
+     0.502,
+     0.592
+    ],
+    "candidate": 0.662,
+    "candidate_only": 277,
+    "difference": 0.548,
+    "mcnemar_p": 3.766880722332432e-78,
+    "n": 500
+   },
+   "json": {
+    "base": 0.54,
+    "base_only": 0,
+    "bootstrap_ci95": [
+     0.4033333333333333,
+     0.5166666666666667
+    ],
+    "candidate": 1.0,
+    "candidate_only": 138,
+    "difference": 0.46,
+    "mcnemar_p": 5.739718509874451e-42,
+    "mcnemar_p_holm": 1.7219155529623352e-41,
+    "n": 300
+   },
+   "math": {
+    "base": 0.07025411061285501,
+    "base_only": 12,
+    "bootstrap_ci95": [
+     0.06576980568011959,
+     0.11808669656203288
+    ],
+    "candidate": 0.16143497757847533,
+    "candidate_only": 73,
+    "difference": 0.09118086696562033,
+    "mcnemar_p": 8.090689460813064e-12,
+    "mcnemar_p_holm": 1.6181378921626127e-11,
+    "n": 669
+   }
+  }
+ }
+}

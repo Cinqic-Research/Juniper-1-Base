@@ -1,0 +1,84 @@
+{
+ "build_identity": "e20847a1edd8452571c279942291f4a2fd64a33fed858a40f2d3994c3106abd9",
+ "bytes_by_stage": {
+  "candidate": 660280603,
+  "privacy": 52207,
+  "quality": 68781341,
+  "selection": 1160339800
+ },
+ "bytes_in": 1889453951,
+ "chars_in": 1883663009,
+ "contamination_benchmarks": {},
+ "docs_in": 529576,
+ "kinds": {
+  "math": 969,
+  "prose": 208549,
+  "technical": 362
+ },
+ "outputs": [
+  {
+   "file": "candidates/wikimedia/wikimedia-0013.parquet",
+   "rows": 209880,
+   "sha256": "645cddf524b5a2102c2d349ce18cfcc61be06efb03826b48a7756059fcab4ba6"
+  },
+  {
+   "file": "rejects/wikimedia/wikimedia-0013.parquet",
+   "rows": 319696,
+   "sha256": "3d35ab02699385b3c9b6cfd601ff0fdcea7b2bbbc30fa7c75198b7b5145b87f0"
+  },
+  {
+   "file": "signatures/wikimedia/wikimedia-0013.npy",
+   "rows": 209880,
+   "sha256": "2de412b6460d86b91807fe30c06f1558a508a668669cb3de87db8dc5bd2d2a90"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "wikimedia-0013.json.gz",
+ "reasons": {
+  "privacy.pii.payment_card": 6,
+  "quality.math.duplicate_lines": 1,
+  "quality.math.duplicate_ngrams": 1,
+  "quality.math.stopwords": 1,
+  "quality.math.too_short": 5,
+  "quality.math.top_ngram_repetition": 10,
+  "quality.prose.alpha_words": 1831,
+  "quality.prose.bullet_lines": 2733,
+  "quality.prose.duplicate_lines": 858,
+  "quality.prose.duplicate_ngrams": 7438,
+  "quality.prose.duplicate_paragraphs": 121,
+  "quality.prose.ellipsis_lines": 7,
+  "quality.prose.mean_word_length": 13,
+  "quality.prose.non_latin_script": 39,
+  "quality.prose.not_english": 9642,
+  "quality.prose.stopwords": 4988,
+  "quality.prose.symbol_ratio": 29,
+  "quality.prose.too_short": 45586,
+  "quality.prose.top_ngram_repetition": 26252,
+  "quality.spam_terms": 400,
+  "quality.technical.duplicate_ngrams": 11,
+  "quality.technical.stopwords": 5,
+  "quality.technical.too_short": 6,
+  "quality.technical.top_ngram_repetition": 7,
+  "selection.namespace": 255698
+ },
+ "redactions": {
+  "email": 2,
+  "home_path_user": 9,
+  "phone": 5
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 1104.43,
+ "slow_documents": [],
+ "source_id": "wikimedia",
+ "stages": {
+  "candidate": 209880,
+  "privacy": 6,
+  "quality": 63992,
+  "selection": 255698
+ },
+ "unit_id": "wikimedia-0013"
+}

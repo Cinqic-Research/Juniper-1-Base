@@ -1,0 +1,18 @@
+owner-approved cleanup (Markus, chat 2026-10-08): delete recomputable fixture checkpoints and storage-test files; keep j1ckpt/t1, j1code, qual-evidence
+2026-10-08T18:14:55Z deleted j1ckpt/t3 files=26 bytes=7713855336
+2026-10-08T18:14:55Z deleted j1ckpt/t9corr files=6 bytes=1780119867
+2026-10-08T18:14:55Z deleted j1ckpt/t_delete files=30 bytes=8307231365
+2026-10-08T18:14:55Z deleted j1ckpt/t_die_before_complete files=30 bytes=9493975528
+2026-10-08T18:14:55Z deleted j1ckpt/t_die_mid_file files=27 bytes=7730633118
+2026-10-08T18:14:55Z deleted j1ckpt/t_enospc files=13 bytes=2440606273
+2026-10-08T18:14:55Z deleted j1ckpt/t_flip files=31 bytes=9493974847
+2026-10-08T18:14:55Z deleted qual files=408 bytes=2147493236
+--- post-deletion reconciliation
+/workspace:
+j1ckpt
+j1code
+qual-evidence
+
+/workspace/j1ckpt:
+t1
+9497057415	/workspace

@@ -1,0 +1,10 @@
+[ckpt] candidate /root/ckpt-recovery/t_flip/ckpt-000000020-7ae2bece step=20: sha256 mismatch model.pt
+[ckpt] candidate /root/ckpt-recovery/t_flip/ckpt-000000010-fee224fd step=10: ok
+[resume] restored /root/ckpt-recovery/t_flip/ckpt-000000010-fee224fd at step 10 in 42.07s (lr=0.000882594)
+step 20 loss 7.7968 lr 0.000637 319ms
+[ckpt] step 20 -> /root/ckpt-recovery/t_flip/ckpt-000000020-6f7ca37f (1667.7 MiB, 6.33s)
+step 30 loss 7.7896 lr 0.000279 318ms
+[ckpt] step 30 -> /root/ckpt-recovery/t_flip/ckpt-000000030-f385c450 (1667.7 MiB, 6.32s)
+step 40 loss 8.0218 lr 9.4e-05 318ms
+[ckpt] step 40 -> /root/ckpt-recovery/t_flip/ckpt-000000040-6847f553 (1667.7 MiB, 6.45s)
+{"steps_run": 30, "final_step": 40, "tokens_per_s_median": 102904.94327122868, "step_ms_median": 318.4297950938344, "peak_vram_gib": 28.859490394592285, "final_param_sha256": "0a2eecdd5245175ded97187c5d7a10b6114e579b43cef84f2941eb460374caec"}

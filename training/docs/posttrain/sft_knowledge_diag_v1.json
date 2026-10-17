@@ -1,0 +1,65 @@
+{
+ "schema": "j1.sft-diagnostic-protocol.v1",
+ "registered_before_any_result": true,
+ "registered_utc": "2026-10-13",
+ "authority": "owner directive 2026-10-13, section 7 B3 (diagnose the capitals regression with controlled development comparisons)",
+ "question": "Why did the v1.2 pilot candidate answer country/US-state capitals worse than the base's few-shot answers?",
+ "observation_motivating": "test-split exploratory analysis (already reported, not reused for decisions): 26 of 49 wrong candidate capital answers are training-split capital labels",
+ "hypotheses": {
+  "H1": "label capture: supervised bare-label fact targets (facts.* plus facts embedded in hierarchy/user-format items; 2,887 VERIFIED_SOURCE train episodes) teach the model to answer with training labels",
+  "H2": "general drift: instruction SFT degrades recall regardless of fact data",
+  "H3": "elicitation: knowledge is intact but the chat format elicits it worse than few-shot prompting"
+ },
+ "split": "dev only (bundle f9632015 dev chat facts items; few-shot prompts built from train-split shots of the same relation, as the builder builds test few-shot prompts). The test split is not used.",
+ "models": {
+  "base": "juniper1-base-v1",
+  "pilot_s1_u500": "j1-sft-v1-pilot/ckpt-000000500-2a36e236",
+  "pilot_s1_final": "j1-sft-v1-pilot/ckpt-000001226-55d13f9a",
+  "arm_full": "300 updates on j1-sft-v1.2 (d3738c50)",
+  "arm_nofacts": "300 updates on j1-sft-v1.2-diag-nofacts (7f5a31aa: every facts.* and VERIFIED_SOURCE train episode removed)"
+ },
+ "arms": {
+  "contract": "pilot recipe of protocol v3 except: total_updates 300, warmup 15, min_lr_ratio 1.0 (constant after warmup), dev_every 300; seed 1; lr 3e-5",
+  "identity": "the two arms differ only in the dataset manifest; both are diagnostic (never candidates)",
+  "run_ids": {
+   "full": "j1-sft-diag-kn-full",
+   "nofacts": "j1-sft-diag-kn-nofacts"
+  },
+  "schedule": {
+   "total_updates": 300,
+   "warmup_updates": 15,
+   "min_lr_ratio": 1.0,
+   "dev_every": 300,
+   "seed": 1,
+   "lr": 3e-05
+  }
+ },
+ "metrics": [
+  "accuracy per relation and overall on dev facts, chat (strict) and few-shot",
+  "capture rate: wrong answers equal to a training-split label of the same relation / wrong answers",
+  "abstention rate on dev facts (false abstention)"
+ ],
+ "interpretation": {
+  "H1_supported_if": "arm_full capture rate exceeds arm_nofacts capture rate by >= 0.15 AND arm_nofacts chat accuracy on capitals (country+US state) >= arm_full's",
+  "H2_supported_if": "few-shot accuracy of arm_nofacts or pilot_s1_final is below the base's by >= 3 items overall",
+  "H3_supported_if": "pilot_s1_final few-shot accuracy is within 2 items of the base few-shot while its chat accuracy is lower by >= 3 items",
+  "n_caveat": "about 85 dev items (24 capitals): descriptive and exploratory; hypotheses are not mutually exclusive; no significance claim"
+ },
+ "use": "chooses the v1.3 fact-target framing and mixture (dataset v1.3 B3) before any v1.3 training; recorded with all arm outputs",
+ "budget": {
+  "runpod_usd": 0.0,
+  "hardware": "FLOWBOX RTX 2060",
+  "estimate_minutes": 25
+ },
+ "arm_datasets": {
+  "full": {
+   "version": "j1-sft-v1.2",
+   "manifest_sha256": "d3738c507580122c24cc948f9c40b79f7dd84b9a3cd31120d1fa283554dc6526"
+  },
+  "nofacts": {
+   "version": "j1-sft-v1.2-diag-nofacts",
+   "manifest_sha256": "7f5a31aad0417de6c2774f41be6e80c10049167ebf98c2c4b95b454f0a15717d",
+   "built_by": "Juniper-1-Data j1data.sftsubset --exclude-family facts --exclude-factuality VERIFIED_SOURCE"
+  }
+ }
+}

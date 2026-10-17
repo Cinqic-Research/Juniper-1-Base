@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cinqic.com/schemas/j1data/teacher-record.v1.json",
+  "title": "Juniper 1 teacher generation record",
+  "description": "One prompt sent to a teacher model, every candidate it produced, every check applied, and the decision. Accepted and rejected records share this schema; rejected records are never used as positive targets.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "record_id", "created_utc", "prompt", "teacher", "decontamination", "candidates", "decision"],
+  "properties": {
+    "schema": {"const": "j1.teacher-record.v1"},
+    "record_id": {"type": "string", "pattern": "^[0-9a-f]{32}$"},
+    "created_utc": {"type": "string"},
+    "prompt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prompt_id", "source", "source_license", "template_version", "system", "developer", "user", "oracle"],
+      "properties": {
+        "prompt_id": {"type": "string"},
+        "source": {"type": "string"},
+        "source_license": {"type": "string"},
+        "template_version": {"type": "string"},
+        "system": {"type": "string"},
+        "developer": {"type": "string"},
+        "user": {"type": "string"},
+        "oracle": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind"],
+          "properties": {
+            "kind": {"enum": ["python_tests", "known_answer", "json_schema", "none"]},
+            "tests": {"type": "string"},
+            "entry_point": {"type": "string"},
+            "answer": {"type": "string"},
+            "json_schema": {"type": "object"}
+          }
+        }
+      }
+    },
+    "teacher": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model", "upstream_revision", "artifact_sha256", "runtime", "sampling", "reasoning_effort"],
+      "properties": {
+        "model": {"type": "string"},
+        "upstream_revision": {"type": "string"},
+        "artifact_sha256": {"type": ["string", "null"]},
+        "runtime": {"type": "string"},
+        "sampling": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["temperature", "top_p", "max_tokens", "seed"],
+          "properties": {
+            "temperature": {"type": "number"},
+            "top_p": {"type": "number"},
+            "max_tokens": {"type": "integer"},
+            "seed": {"type": "integer"}
+          }
+        },
+        "reasoning_effort": {"enum": ["low", "medium", "high"]}
+      }
+    },
+    "decontamination": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["index_identity", "best_coverage", "passed"],
+      "properties": {
+        "index_identity": {"type": "string"},
+        "best_coverage": {"type": "number"},
+        "passed": {"type": "boolean"}
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["index", "seed", "reasoning", "output", "finish_reason", "latency_seconds", "checks"],
+        "properties": {
+          "index": {"type": "integer"},
+          "seed": {"type": "integer"},
+          "reasoning": {"type": "string"},
+          "output": {"type": "string"},
+          "finish_reason": {"type": "string"},
+          "latency_seconds": {"type": "number"},
+          "checks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["name", "oracle", "passed"],
+              "properties": {
+                "name": {"type": "string"},
+                "oracle": {"type": "string"},
+                "passed": {"type": "boolean"},
+                "detail": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "selected_index", "factuality", "reason", "validator_version"],
+      "properties": {
+        "status": {"enum": ["accepted", "rejected"]},
+        "selected_index": {"type": ["integer", "null"]},
+        "factuality": {"enum": ["VERIFIED_EXECUTION", "VERIFIED_KNOWN_ANSWER", "SCHEMA_VALID_ONLY", "NOT_VERIFIED"]},
+        "reason": {"type": "string"},
+        "validator_version": {"type": "string"}
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+ "schema": "j1.training-contract.v1",
+ "status": "PROPOSED_FOR_OWNER_FREEZE",
+ "launch_authorized": false,
+ "authority": {
+  "owner_spec": "Juniper 1 Design Specification v0.7 — Four Destination Backup (2026-10-09)",
+  "owner_spec_docx_sha256": "121fcb1de0dc927ce0d8d725c10bb68d199e28185f699d786472191418292ee3",
+  "work_order": "Claude_Opus_5.5_Juniper_1_Overnight_Instructions_2026-10-10.md + Opus_RunPod_Acceleration_Addendum_40_USD.md"
+ },
+ "identities": {
+  "juniper_1_train_commit": "776d6a5fcd4bd4b6ae82861ee68f5b7ac1267205",
+  "juniper_1_data_commit": "a8a8cc1cb47daadd384d77a09cb7d197b766e65e",
+  "accepted_corpus": {
+   "build_id": "j1-base-v0.2.1",
+   "build_identity": "e7909e40df202f0fb407369802d4d1d0becc02f9f86a777ef50a840d700c765a",
+   "manifest_sha256": "8d00090632bf6ca07f4dd75d3deea89421de823366c8216c6a85c9f003237968",
+   "successor_of": {
+    "build_id": "j1-base-v0.2",
+    "build_identity": "aa9c4ed9522449521881a64b1dd810006df6249f56d8c1dae8b4e7cc1de8d005",
+    "criteria_commit": "34ce84b655f48c20dccf3448b8347fe843be8ef5",
+    "excluded_documents": 555,
+    "exclusion_list_sha256": "855624da2d8259e9e29375d2162b27b931b2cfd6579f5c7e3c48582b173851a2",
+    "manifest_sha256": "1a99ef755084dcfb1af3b207a476cc009c2bed99694e648fbc2eb8c3a54f37b3",
+    "removed_by_split": {
+     "train": 555
+    },
+    "rule": "docs/contamination_adjudication_criteria_v2.md (corpus-scale successor rule)"
+   },
+   "documents_by_split": {
+    "test": 2610,
+    "train": 2961286,
+    "validation": 2583
+   }
+  },
+  "contamination_index": {
+   "v3": "6bc49448dc1d75b9b8e6c78c98aa4d1f4293bba972e2f7969e048779837c35d5",
+   "layers_v1": "eddb2f37fae2421b42be9244d4a39f3dc5bb4b0a9205ad7c57f52de3060ac049"
+  },
+  "model_ready_shards": {
+   "path": "token_shards/j1-base-v0.2.1/cand5-j1tok-24k",
+   "shards_json_sha256": "cb2e2b53d5b4ce26210bca2367c20ea751362bc81d92294c2e81b7f2cda76ef3",
+   "independent_count_check_ok": true
+  },
+  "container_image": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+  "framework": {
+   "torch": "2.8.0+cu128",
+   "cuda_runtime": "12.8",
+   "cudnn": 91002,
+   "driver": "580.126.16"
+  }
+ },
+ "tokenizer": {
+  "proposed": "j1tok-24k (clean-sample candidate v5, frozen record cand5-j1tok-24k)",
+  "tokenizer_json_sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+  "total_vocab": 24576,
+  "layout": "IDs 0-63 control (12 named, 52 reserved), 64-319 byte fallback, then learned",
+  "selection": {
+   "rule": "tokenizer-v1.2",
+   "status": "DECIDED",
+   "decision": "tok-j1tok-24k",
+   "best_bpb": 1.2262263611876822,
+   "tied": [
+    "tok-j1tok-24k",
+    "tok-j1tok-28k",
+    "tok-j1tok-32k"
+   ],
+   "pooled_rel_seed_sd": 0.002851370694139295
+  },
+  "status": "PROVISIONAL (all candidates within the 0.5 % tie band; short single-scale pilots)"
+ },
+ "data_and_tokens": {
+  "unique_accepted_train_document_tokens": 3433653388,
+  "train_stream_tokens_with_eos": 3436614674,
+  "validation_document_tokens": 3227354,
+  "test_document_tokens_unopened": 2657081,
+  "proposed_exposure": {
+   "epochs": 1,
+   "exposure_tokens": 3436614674,
+   "repetition": "none"
+  },
+  "supervised_target_tokens": 0,
+  "initial_target_and_ceiling": "≈3B initial (met at ≈3.44B unique tokens); 15B ceiling is not a target",
+  "stages": "base pretraining only in this contract; continuation/distillation/SFT/refinement are separate, later, explicitly allocated stages"
+ },
+ "architecture": {
+  "proposed": "j1-core-28x640",
+  "status": "INCONCLUSIVE (provisional)",
+  "instantiated_params": 143072384,
+  "selection": {
+   "rule": "architecture-v1",
+   "status": "INCONCLUSIVE",
+   "decision": "j1-core-28x640",
+   "noise_band_rel": 0.00570274138827859,
+   "equal_compute_seconds": 1418.216870713979,
+   "reason": "an alternative clears the band on only one comparison; core retained provisionally"
+  },
+  "model_config": {
+   "vocab_size": 24576,
+   "n_layer": 28,
+   "d_model": 640,
+   "n_head": 10,
+   "n_kv_head": 5,
+   "head_dim": 64,
+   "d_ff": 1728,
+   "max_seq_len": 2048,
+   "rope_theta": 100000.0,
+   "norm_eps": 1e-05,
+   "qk_norm": "rmsnorm_per_head",
+   "tie_embeddings": true,
+   "init_std": 0.02
+  },
+  "qk_norm": "learnable RMSNorm over head_dim, one weight per layer for queries and one for keys (shared across heads), before RoPE",
+  "seeds_run": [
+   1
+  ]
+ },
+ "optimization": {
+  "optimizer": "AdamW betas (0.9, 0.95), eps 1e-8, weight decay 0.1 on 2-D matrices only, clip 1.0",
+  "pilot_peak_lr": 0.0009295,
+  "canonical_peak_lr": "PROPOSED = pilot value; provisional until a longer run confirms (08 §3.4); grid-edge selections recorded",
+  "global_batch_tokens": 65536,
+  "micro_batch_x_accum": "16 x 2",
+  "schedule": "linear warmup 100 updates (pilot); canonical proposal: warmup 1 % of updates, cosine to 10 %",
+  "precision": "BF16 autocast; fp32 reductions",
+  "context": 2048,
+  "packing": "EOS-separated, cross-document attention allowed, all positions trained (recorded policy)"
+ },
+ "execution_profile": {
+  "hardware": "1x NVIDIA A100-SXM4-80GB (RunPod Secure, $1.79/h listed)",
+  "reference_profile": "eager BF16 (core shape, 28K-vocab real-data prefix: 56.2K tokens/s)",
+  "optimized_profile": "torch.compile default (same basis: 114.4K tokens/s); EXPERIMENTAL, no owner-approved promotion threshold",
+  "measured_tokens_per_s_proposed_shape": 117741.07413644408,
+  "peak_vram_gib": 28.584765911102295,
+  "qualification": "two A100 hosts: CUDA/SDPA/test suite; recovery suite 8/8 on host 1 (real data, bitwise; 7 passed first time, T9 failed closed, fixed in cb2a74d, rerun PASS); exact continuation + SIGKILL bitwise (host 2)"
+ },
+ "proposed_launch_budget": {
+  "training_hours_measured_rate": 8.11,
+  "overhead_fraction": 0.15,
+  "overhead_basis": "assumption; arch pilot runs spent ~21 % of wall time outside training (short runs, frequent eval)",
+  "paid_hours": 9.32,
+  "compute_usd": 16.69,
+  "uncertainty": "throughput measured over one 183M-token epoch (v5 prefix) on one host; ±10 % assumed for host variance",
+  "proposed_cap_usd": 26,
+  "profile": "torch.compile (the measured rate above comes from compiled runs; EXPERIMENTAL profile)",
+  "eager_reference_fallback": {
+   "eager_to_compiled_throughput_ratio": 0.4912,
+   "ratio_basis": "core shape on the 28K-vocab prefix (profile runs), applied to the proposed 24K shards",
+   "paid_hours": 18.98,
+   "compute_usd": 33.98,
+   "proposed_cap_usd": 48
+  },
+  "note": "separate from the $40 preparation authorization; requires owner approval",
+  "stop_conditions": "non-finite loss/grad; loss spike > 1.5x running min after warmup; checkpoint or replica failure; budget soft limit; controller idle/deadline"
+ },
+ "checkpointing": {
+  "cadence": "init; earlier of 500 updates or 15 active minutes; stage boundaries; planned stops; best eval",
+  "retention": "v0.7 §6 (latest 3, hourly for 24 active h, daily, stage, best, release lineage)",
+  "primary_replica": "OPEN: HF private primary + Drive replica qualified for size/latency"
+ },
+ "evaluation": {
+  "validation": "full validation split, 2,583 docs, bits per byte by source",
+  "test_split": "unopened",
+  "capability_thresholds": "OWNER_DECISION_REQUIRED (none approved)",
+  "contamination": "Juniper-1-Data docs/qualification_2026-10-10.md (coverage and blind spots)"
+ },
+ "owner_decisions_required": [
+  "freeze tokenizer j1tok-24k (or order more seeds)",
+  "freeze architecture j1-core-28x640 (provisional)",
+  "approve successor corpus j1-base-v0.2.1 and one-epoch exposure",
+  "approve optimized (compiled) profile or the eager reference",
+  "approve canonical launch budget and stop conditions",
+  "evaluation thresholds; release rights; Drive key custody; checkpoint primary/replica"
+ ]
+}

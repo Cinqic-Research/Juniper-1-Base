@@ -1,0 +1,9 @@
+[PASS] save_restore_exact_continuation
+[PASS] abrupt_process_termination
+[PASS] interrupted_serialization_mid_file
+[PASS] interrupted_before_completion_marker
+[PASS] corrupted_checkpoint_detection
+[PASS] missing_checkpoint_file_detection
+[PASS] simulated_storage_exhaustion
+[FAIL] incompatible_contract_handling
+{"passed": 7, "total": 8}

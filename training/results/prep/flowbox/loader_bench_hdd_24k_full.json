@@ -1,0 +1,23 @@
+{
+ "shards": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-24k",
+ "stream_tokens": 3438793874,
+ "windows": 1679098,
+ "open_s": 0.142,
+ "cold": {
+  "batches": 200,
+  "seconds": 180.383,
+  "tokens_per_s": 36332,
+  "batch_ms_median": 517.142,
+  "batch_ms_p99": 3132.568
+ },
+ "warm": {
+  "batches": 200,
+  "seconds": 5.115,
+  "tokens_per_s": 1281303,
+  "batch_ms_median": 0.234,
+  "batch_ms_p99": 320.003
+ },
+ "target_tokens_per_s": 115249.0,
+ "a100_step_ms_core_mb16": 284,
+ "pass": false
+}

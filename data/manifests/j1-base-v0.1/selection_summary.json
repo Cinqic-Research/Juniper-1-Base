@@ -1,0 +1,300 @@
+{
+ "code": {
+  "commit": "20a8c0d3272481d58e31ffa61feac03d27be2ee1",
+  "dirty": false,
+  "package_version": "0.1.0"
+ },
+ "config": {
+  "quota": [
+   {
+    "bytes_per_token": 4.3,
+    "rank": "score",
+    "source": "fineweb-edu-dedup",
+    "tokens": 1100000000
+   },
+   {
+    "bytes_per_token": 3.4,
+    "group_field": "language",
+    "groups": {
+     "*": 220000000,
+     "Markdown": 50000000,
+     "Python": 330000000
+    },
+    "source": "stackv2-edu"
+   },
+   {
+    "bytes_per_token": 3.9,
+    "source": "stackexchange",
+    "tokens": 420000000
+   },
+   {
+    "bytes_per_token": 3.5,
+    "rank": "score",
+    "source": "finemath-4plus",
+    "tokens": 420000000
+   },
+   {
+    "bytes_per_token": 4.3,
+    "source": "wikimedia",
+    "tokens": 420000000
+   },
+   {
+    "bytes_per_token": 3.4,
+    "source": "arxiv-papers",
+    "tokens": 200000000
+   },
+   {
+    "all": true,
+    "source": "libretexts"
+   },
+   {
+    "all": true,
+    "source": "pressbooks"
+   },
+   {
+    "all": true,
+    "source": "oercommons"
+   },
+   {
+    "all": true,
+    "source": "python-peps"
+   },
+   {
+    "all": true,
+    "source": "cinqic-aaa-docs"
+   },
+   {
+    "all": true,
+    "source": "cinqic-juniper-app-docs"
+   },
+   {
+    "all": true,
+    "source": "cinqic-calculator-docs"
+   }
+  ],
+  "selection": {
+   "namespace": "j1.select-docs.v1",
+   "target_tokens": 3400000000,
+   "version": "j1.selection.v1"
+  }
+ },
+ "schema": "j1.selection-summary.v1",
+ "selection_version": "j1.selection.v1",
+ "sources": {
+  "arxiv-papers": {
+   "available_bytes_after_dedup": {
+    "*": 18676779954
+   },
+   "budget_bytes": {
+    "*": 680000000
+   },
+   "bytes_per_token": 3.4,
+   "mode": "quota",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 680086090
+   },
+   "selected_documents": {
+    "*": 10525
+   }
+  },
+  "cinqic-aaa-docs": {
+   "available_bytes_after_dedup": {
+    "*": 504722
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 504722
+   },
+   "selected_documents": {
+    "*": 52
+   }
+  },
+  "cinqic-calculator-docs": {
+   "available_bytes_after_dedup": {
+    "*": 25299
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 25299
+   },
+   "selected_documents": {
+    "*": 5
+   }
+  },
+  "cinqic-juniper-app-docs": {
+   "available_bytes_after_dedup": {
+    "*": 124556
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 124556
+   },
+   "selected_documents": {
+    "*": 52
+   }
+  },
+  "finemath-4plus": {
+   "available_bytes_after_dedup": {
+    "*": 3664044387
+   },
+   "budget_bytes": {
+    "*": 1470000000
+   },
+   "bytes_per_token": 3.5,
+   "mode": "quota",
+   "rank": "score",
+   "selected_bytes": {
+    "*": 1470120001
+   },
+   "selected_documents": {
+    "*": 298953
+   }
+  },
+  "fineweb-edu-dedup": {
+   "available_bytes_after_dedup": {
+    "*": 11979724205
+   },
+   "budget_bytes": {
+    "*": 4730000000
+   },
+   "bytes_per_token": 4.3,
+   "mode": "quota",
+   "rank": "score",
+   "selected_bytes": {
+    "*": 4730002070
+   },
+   "selected_documents": {
+    "*": 970641
+   }
+  },
+  "libretexts": {
+   "available_bytes_after_dedup": {
+    "*": 321959108
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 321959108
+   },
+   "selected_documents": {
+    "*": 36144
+   }
+  },
+  "oercommons": {
+   "available_bytes_after_dedup": {
+    "*": 37642070
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 37642070
+   },
+   "selected_documents": {
+    "*": 3890
+   }
+  },
+  "pressbooks": {
+   "available_bytes_after_dedup": {
+    "*": 455991906
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 455991906
+   },
+   "selected_documents": {
+    "*": 43946
+   }
+  },
+  "python-peps": {
+   "available_bytes_after_dedup": {
+    "*": 11244605
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 11244605
+   },
+   "selected_documents": {
+    "*": 653
+   }
+  },
+  "stackexchange": {
+   "available_bytes_after_dedup": {
+    "*": 20293550765
+   },
+   "budget_bytes": {
+    "*": 1638000000
+   },
+   "bytes_per_token": 3.9,
+   "mode": "quota",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 1638001252
+   },
+   "selected_documents": {
+    "*": 560132
+   }
+  },
+  "stackv2-edu": {
+   "available_bytes_after_dedup": {
+    "*": 9097593443,
+    "Markdown": 1790704295,
+    "Python": 4448500936
+   },
+   "budget_bytes": {
+    "*": 748000000,
+    "Markdown": 170000000,
+    "Python": 1122000000
+   },
+   "bytes_per_token": 3.4,
+   "mode": "quota",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 748000300,
+    "Markdown": 170000182,
+    "Python": 1122003610
+   },
+   "selected_documents": {
+    "*": 222616,
+    "Markdown": 47757,
+    "Python": 282141
+   }
+  },
+  "wikimedia": {
+   "available_bytes_after_dedup": {
+    "*": 18846052350
+   },
+   "budget_bytes": {
+    "*": 1806000000
+   },
+   "bytes_per_token": 4.3,
+   "mode": "quota",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 1806001899
+   },
+   "selected_documents": {
+    "*": 489655
+   }
+  }
+ }
+}

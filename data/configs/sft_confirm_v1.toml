@@ -1,0 +1,138 @@
+# Juniper 1 SFT v2.1 confirmation evaluation build (j1.sft-build.v1), seed-only successor of
+# configs/sft_v13.toml. Purpose: a scratch build whose eval bundle is filtered by j1data.sftconfirm into a
+# sealed confirmation bundle (j1-sft-confirm-v1) of test items never seen in v1.2 test, v1.3 train/dev
+# or v1.3 test. Its train/dev splits are never trained on and are not published.
+#
+# Differences from sft_v13.toml, and nothing else: version, seed, and approved_licenses without
+# Apache-2.0 (OASST1 stays rejected for training; review L1). Held-out phrasings, operations, frames and
+# compose pairs are fixed by hash in j1data.sftops, so the new seed draws new instances of the same
+# held-out design. Fixed-pool sources (Wikidata, GSM8K, MBPP, HumanEval) cannot be renewed by a seed.
+#
+# A changed count, seed, source, split rule or scorer is a new dataset version.
+# Rights decisions: docs/sft_rights_v1.md and configs/sft_rights_v1.json (one entry per source).
+
+[build]
+version = "j1-sft-confirm-v1"
+seed = 20261015
+max_tokens = 1025          # rows <= 1024 inputs: keeps the qualified 1,024-token micro-batch contract (3 longer OASST1 conversations rejected)
+tokenizer_sha256 = "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1"
+approved_licenses = ["Cinqic-generated", "MIT", "CC-BY-4.0", "CC0-1.0"]
+default_system_probability = 0.5
+
+# Historical v1.2 test items (inspected during v1.2 scoring) never enter train or dev.
+[build.protected_test_records]
+path = "sft/build/j1-sft-v1.2/eval/test_records.jsonl"
+sha256 = "24333805c76d0d66bdcb4a5c7d5c3289231f045abc38c5b7b04319ba5d162992"
+
+[sources.gsm8k]
+repo = "openai/gsm8k"
+revision = "740312add88f781978c0658806c59bc2815b9866"
+train_file = "main/train-00000-of-00001.parquet"
+test_file = "main/test-00000-of-00001.parquet"
+dev_fraction = 0.04
+train_cap = 2000          # mix decision: GSM8K was 31% of v1.2 target tokens; capped lower in v1.3
+test_eval_items = 500      # deterministic subsample of the 1,319 test problems (seeded)
+
+[sources.mbpp]
+repo = "google-research-datasets/mbpp"
+revision = "4bb6404fdc6cacfda99d4ac4205087b89d32030c"
+train_files = ["full/train-00000-of-00001.parquet", "full/prompt-00000-of-00001.parquet"]
+dev_file = "full/validation-00000-of-00001.parquet"
+test_file = "full/test-00000-of-00001.parquet"
+
+[sources.humaneval]
+repo = "openai/openai_humaneval"
+revision = "7dce6050a7d6d172f3cc5c32aa97f52fa1a2e544"
+test_file = "openai_humaneval/test-00000-of-00001.parquet"
+
+# Upstream bytes pinned by SHA-256 (also the upstream LFS object IDs). With every file present
+# locally and matching, the build needs no network.
+[sources.lock]
+"gsm8k/main/test-00000-of-00001.parquet" = "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59"
+"gsm8k/main/train-00000-of-00001.parquet" = "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d"
+"humaneval/openai_humaneval/test-00000-of-00001.parquet" = "2f2871a15fbc95b6c683043359f4ed8e144c5a1c4f24f25f66bc51f598dfcfb6"
+"mbpp/full/prompt-00000-of-00001.parquet" = "a053e4bb85ceb77430ae80592addb4ca4dc6ba087592f9e04537800ee88b7431"
+"mbpp/full/test-00000-of-00001.parquet" = "566fd53060ffba5766dace1d1e2f4c38906781526de222b0dfbdbc325b696c77"
+"mbpp/full/train-00000-of-00001.parquet" = "09d125ca31edacb7800be8c67c45abff618faf0214ff551291817d06bdb914ae"
+"mbpp/full/validation-00000-of-00001.parquet" = "3f0ec060987432d99fe8fb409d31e6c67445b208a01741c5583517c80a10fe80"
+
+# OASST1 filtered human conversations (rights R07; filters and rubric in docs/sft/oasst_v1.md).
+# The independent blinded rubric review (sft/review/oasst1/v1/independent_review_v1_summary.json) failed
+# the predeclared source gate (REJECT_SOURCE: model-pasted text in admitted rows), so v1.3 trains on
+# none of it; its test prompts remain evaluation-only for the reported writing-quality review.
+[sources.oasst1]
+config = "configs/sft_oasst_v1.toml"
+admit_train = false
+train_rejection = "oasst1: source failed the independent rubric gate (review v1: REJECT_SOURCE)"
+
+[sources.wikidata]
+# Immutable snapshot written by `j1data sft fetch-wikidata`; its SHA-256 pins the content.
+snapshot = "sft/raw/wikidata/wikidata_snapshot_v1.json"
+split_train = 0.70
+split_dev = 0.80           # [0.70, 0.80) dev, [0.80, 1) test, by subject QID
+
+# MBPP functional-twin quarantine and stronger coding evaluation (docs/sft/codecheck_v1.md).
+[codecheck]
+twin_report = "manifests/sft/codecheck_v1/twins.json"
+twin_report_sha256 = "95b20d840135079c208b27ba9b8debe6de613fae77c26139de91f5b729e01e0a"
+strong_suites = "sft/codecheck/v1/strong_suites_v1.jsonl"
+strong_suites_sha256 = "0b0fbeaaf7c7b0b2bf6a94dead3793386b466a78ded797ab99bb588f50c6f191"
+graded_tiers = ["own", "plus", "mut"]   # holdout inputs only demonstrate errors; never graded
+
+# Items per split for the generated families (unique task keys per split). Mix limits were set from
+# measured loss-bearing target tokens, not only episode counts (docs/sft/dataset_v1.3.md).
+[families.train]
+"arith.basic" = 3000
+"arith.multi" = 1000
+"arith.word" = 1000
+"if.transform" = 4000
+"if.op" = 14000
+"if.compose" = 8000
+"if.user_format" = 2000
+"fmt" = 4000
+"conv" = 6000
+"qa.context" = 5000
+"json" = 3000
+"uncertainty.abstain" = 1500
+"hierarchy.system" = 3000
+"injection.document" = 2000
+"python.output" = 4000
+
+[families.dev]
+"arith.basic" = 100
+"arith.multi" = 60
+"arith.word" = 60
+"if.transform" = 100
+"if.op" = 200
+"if.compose" = 100
+"if.user_format" = 60
+"fmt" = 80
+"conv" = 100
+"qa.context" = 100
+"json" = 100
+"uncertainty.abstain" = 80
+"hierarchy.system" = 80
+"injection.document" = 60
+"python.output" = 80
+
+[families.test]
+"arith.basic" = 200
+"arith.multi" = 200
+"arith.word" = 200
+"if.transform" = 200
+"if.op" = 300
+"if.compose" = 200
+"if.user_format" = 200
+"fmt" = 300
+"conv" = 300
+"qa.context" = 300
+"json" = 300
+"uncertainty.abstain" = 300
+"hierarchy.system" = 300
+"injection.document" = 300
+"python.output" = 200
+"heldout.if" = 300
+"heldout.json" = 200
+"if.paraphrase" = 400
+"if.compose_heldout" = 300
+"heldout.ops" = 400

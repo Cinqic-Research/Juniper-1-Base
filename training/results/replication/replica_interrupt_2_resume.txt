@@ -1,0 +1,4 @@
+{"checkpoint": "ckpt-000000010-80a06d95", "status": "VERIFIED", "reason": "ok", "bytes": 1780119345, "transfer_s": 85.97513914108276, "MBps": 20.705047561235983, "replication_lag_s": 312.748652}
+{"checkpoint": "ckpt-000000015-7e9d30eb", "status": "VERIFIED", "reason": "ok", "bytes": 1780119355, "transfer_s": 137.4622015953064, "MBps": 12.949882471988442, "replication_lag_s": 429.578479}
+{"audit_chain_ok": true, "audit_lines": 3, "failed": 0}
+elapsed 237s

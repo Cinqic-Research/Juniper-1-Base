@@ -1,0 +1,87 @@
+{
+ "build_identity": "e20847a1edd8452571c279942291f4a2fd64a33fed858a40f2d3994c3106abd9",
+ "bytes_by_stage": {
+  "candidate": 544524082,
+  "privacy": 41631,
+  "quality": 63020577,
+  "selection": 1066181902
+ },
+ "bytes_in": 1673768192,
+ "chars_in": 1667836152,
+ "contamination_benchmarks": {},
+ "docs_in": 479322,
+ "kinds": {
+  "math": 887,
+  "prose": 181913,
+  "technical": 312
+ },
+ "outputs": [
+  {
+   "file": "candidates/wikimedia/wikimedia-0016.parquet",
+   "rows": 183112,
+   "sha256": "abb44062ee92751a093faa8072cf3ff7c2060acc1f9d7bb76885829dc3428c15"
+  },
+  {
+   "file": "rejects/wikimedia/wikimedia-0016.parquet",
+   "rows": 296210,
+   "sha256": "01888938aeef2ca2dd075268c1cf5b78cbf46dd31ff6a1a1aa5ea9e8975b231e"
+  },
+  {
+   "file": "signatures/wikimedia/wikimedia-0016.npy",
+   "rows": 183112,
+   "sha256": "3921e93d7e58bc4dfce5b4dc70a9cf23911bb22ba6675e7990cea5b3fff76761"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "wikimedia-0016.json.gz",
+ "reasons": {
+  "privacy.pii.payment_card": 5,
+  "privacy.pii.us_ssn": 1,
+  "quality.corrupt_decoding": 2,
+  "quality.math.alpha_words": 2,
+  "quality.math.stopwords": 1,
+  "quality.math.too_short": 6,
+  "quality.math.top_ngram_repetition": 3,
+  "quality.mojibake": 1,
+  "quality.prose.alpha_words": 1965,
+  "quality.prose.bullet_lines": 1849,
+  "quality.prose.duplicate_lines": 697,
+  "quality.prose.duplicate_ngrams": 8231,
+  "quality.prose.duplicate_paragraphs": 166,
+  "quality.prose.ellipsis_lines": 12,
+  "quality.prose.mean_word_length": 17,
+  "quality.prose.non_latin_script": 67,
+  "quality.prose.not_english": 10185,
+  "quality.prose.stopwords": 6517,
+  "quality.prose.symbol_ratio": 260,
+  "quality.prose.too_short": 55815,
+  "quality.prose.top_ngram_repetition": 21629,
+  "quality.spam_terms": 209,
+  "quality.technical.duplicate_ngrams": 4,
+  "quality.technical.non_latin_script": 3,
+  "quality.technical.not_english": 1,
+  "quality.technical.too_short": 7,
+  "quality.technical.top_ngram_repetition": 7,
+  "selection.namespace": 222078
+ },
+ "redactions": {
+  "email": 3,
+  "home_path_user": 2,
+  "phone": 14
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 809.22,
+ "slow_documents": [],
+ "source_id": "wikimedia",
+ "stages": {
+  "candidate": 183112,
+  "privacy": 6,
+  "quality": 74126,
+  "selection": 222078
+ },
+ "unit_id": "wikimedia-0016"
+}

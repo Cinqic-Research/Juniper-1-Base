@@ -1,0 +1,42 @@
+{
+ "rule": "lr-v1.1",
+ "status": "DECIDED",
+ "decision": 0.0016971,
+ "rows": [
+  {
+   "run": "scr-j1-wide-20x768-x0.25",
+   "lr": 0.00042427,
+   "val_loss": 3.5723809317103803,
+   "eligible": true,
+   "spiked": false
+  },
+  {
+   "run": "scr-j1-wide-20x768-x0.5",
+   "lr": 0.00084855,
+   "val_loss": 3.45618554727233,
+   "eligible": true,
+   "spiked": false
+  },
+  {
+   "run": "scr-j1-wide-20x768-x1",
+   "lr": 0.0016971,
+   "val_loss": 3.4007230606645744,
+   "eligible": true,
+   "spiked": false
+  },
+  {
+   "run": "scr-j1-wide-20x768-x2",
+   "lr": 0.0033942,
+   "val_loss": 3.5095292167231764,
+   "eligible": true,
+   "spiked": false
+  }
+ ],
+ "grid_multipliers": [
+  0.25,
+  0.5,
+  1.0,
+  2.0
+ ],
+ "unresolved_boundary": false
+}

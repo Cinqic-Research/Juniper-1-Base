@@ -1,0 +1,1843 @@
+{
+ "docs": 200,
+ "identical_docs": 0,
+ "j1_tokens": 258932,
+ "llama_tokens": 258594,
+ "forged_parse_special_false": [
+  2499,
+  414,
+  13384,
+  414,
+  352,
+  2954,
+  9160,
+  350,
+  414,
+  391,
+  1883,
+  414,
+  352
+ ],
+ "forged_parse_special_true": [
+  1,
+  17638,
+  11
+ ],
+ "forged_j1": [
+  350,
+  414,
+  13384,
+  414,
+  352,
+  2954,
+  9160,
+  350,
+  414,
+  391,
+  1883,
+  414,
+  352
+ ],
+ "rows": [
+  {
+   "doc": 0,
+   "source": "stackexchange",
+   "j1_tokens": 887,
+   "llama_tokens": 887,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "distribution of"
+  },
+  {
+   "doc": 12,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 593,
+   "llama_tokens": 593,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "What do you"
+  },
+  {
+   "doc": 25,
+   "source": "wikimedia",
+   "j1_tokens": 718,
+   "llama_tokens": 718,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Stealth j"
+  },
+  {
+   "doc": 38,
+   "source": "stackv2-edu",
+   "j1_tokens": 360,
+   "llama_tokens": 361,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import numpy as"
+  },
+  {
+   "doc": 51,
+   "source": "stackv2-edu",
+   "j1_tokens": 240,
+   "llama_tokens": 241,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import { logger"
+  },
+  {
+   "doc": 64,
+   "source": "wikimedia",
+   "j1_tokens": 1199,
+   "llama_tokens": 1199,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Displacer"
+  },
+  {
+   "doc": 77,
+   "source": "wikimedia",
+   "j1_tokens": 629,
+   "llama_tokens": 628,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Peter H"
+  },
+  {
+   "doc": 90,
+   "source": "wikimedia",
+   "j1_tokens": 336,
+   "llama_tokens": 335,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Alpha Reg"
+  },
+  {
+   "doc": 103,
+   "source": "wikimedia",
+   "j1_tokens": 336,
+   "llama_tokens": 335,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Chris the"
+  },
+  {
+   "doc": 116,
+   "source": "stackv2-edu",
+   "j1_tokens": 224,
+   "llama_tokens": 226,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "#/bin"
+  },
+  {
+   "doc": 129,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 575,
+   "llama_tokens": 575,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "A demonstration of"
+  },
+  {
+   "doc": 142,
+   "source": "stackv2-edu",
+   "j1_tokens": 766,
+   "llama_tokens": 753,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "#!/usr/bin"
+  },
+  {
+   "doc": 155,
+   "source": "stackexchange",
+   "j1_tokens": 375,
+   "llama_tokens": 375,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Kali Linux"
+  },
+  {
+   "doc": 168,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 958,
+   "llama_tokens": 958,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Main Cause"
+  },
+  {
+   "doc": 181,
+   "source": "finemath-4plus",
+   "j1_tokens": 1196,
+   "llama_tokens": 1196,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "# Stuck"
+  },
+  {
+   "doc": 194,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 154,
+   "llama_tokens": 154,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Our class began"
+  },
+  {
+   "doc": 206,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1220,
+   "llama_tokens": 1220,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "NBC1"
+  },
+  {
+   "doc": 219,
+   "source": "wikimedia",
+   "j1_tokens": 1033,
+   "llama_tokens": 1033,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "JoAnn"
+  },
+  {
+   "doc": 232,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 592,
+   "llama_tokens": 592,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Headlines about"
+  },
+  {
+   "doc": 245,
+   "source": "stackv2-edu",
+   "j1_tokens": 2886,
+   "llama_tokens": 2870,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "-- SCRIPT"
+  },
+  {
+   "doc": 258,
+   "source": "stackexchange",
+   "j1_tokens": 581,
+   "llama_tokens": 571,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "redirect dr"
+  },
+  {
+   "doc": 271,
+   "source": "stackv2-edu",
+   "j1_tokens": 646,
+   "llama_tokens": 649,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import discord"
+  },
+  {
+   "doc": 284,
+   "source": "stackexchange",
+   "j1_tokens": 1712,
+   "llama_tokens": 1701,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Strange dependency"
+  },
+  {
+   "doc": 297,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1080,
+   "llama_tokens": 1080,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "The Brothers"
+  },
+  {
+   "doc": 310,
+   "source": "stackv2-edu",
+   "j1_tokens": 668,
+   "llama_tokens": 671,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "//=================================================================="
+  },
+  {
+   "doc": 323,
+   "source": "stackexchange",
+   "j1_tokens": 363,
+   "llama_tokens": 364,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "I have dual"
+  },
+  {
+   "doc": 336,
+   "source": "stackexchange",
+   "j1_tokens": 776,
+   "llama_tokens": 776,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Minimum number"
+  },
+  {
+   "doc": 349,
+   "source": "wikimedia",
+   "j1_tokens": 212,
+   "llama_tokens": 212,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Investment Business"
+  },
+  {
+   "doc": 362,
+   "source": "stackv2-edu",
+   "j1_tokens": 248,
+   "llama_tokens": 249,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "\"\"\"\nTests"
+  },
+  {
+   "doc": 375,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 719,
+   "llama_tokens": 719,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "During the "
+  },
+  {
+   "doc": 388,
+   "source": "stackv2-edu",
+   "j1_tokens": 1107,
+   "llama_tokens": 1106,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "package com.e"
+  },
+  {
+   "doc": 400,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1448,
+   "llama_tokens": 1448,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "This plastic is"
+  },
+  {
+   "doc": 413,
+   "source": "wikimedia",
+   "j1_tokens": 1173,
+   "llama_tokens": 1172,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Brian M"
+  },
+  {
+   "doc": 426,
+   "source": "stackv2-edu",
+   "j1_tokens": 450,
+   "llama_tokens": 445,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "package filest"
+  },
+  {
+   "doc": 439,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1370,
+   "llama_tokens": 1370,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "As technology transforms"
+  },
+  {
+   "doc": 452,
+   "source": "wikimedia",
+   "j1_tokens": 1232,
+   "llama_tokens": 1232,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Arno All"
+  },
+  {
+   "doc": 465,
+   "source": "stackexchange",
+   "j1_tokens": 197,
+   "llama_tokens": 197,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Unable to"
+  },
+  {
+   "doc": 478,
+   "source": "stackexchange",
+   "j1_tokens": 1474,
+   "llama_tokens": 1472,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Find the rational"
+  },
+  {
+   "doc": 491,
+   "source": "stackv2-edu",
+   "j1_tokens": 1190,
+   "llama_tokens": 1191,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Hipache"
+  },
+  {
+   "doc": 504,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 772,
+   "llama_tokens": 770,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Arizona"
+  },
+  {
+   "doc": 517,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 738,
+   "llama_tokens": 738,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Genetically modified"
+  },
+  {
+   "doc": 530,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 443,
+   "llama_tokens": 443,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Shear stress"
+  },
+  {
+   "doc": 543,
+   "source": "stackv2-edu",
+   "j1_tokens": 603,
+   "llama_tokens": 625,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import { expect"
+  },
+  {
+   "doc": 556,
+   "source": "stackexchange",
+   "j1_tokens": 3479,
+   "llama_tokens": 3477,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Kinemat"
+  },
+  {
+   "doc": 569,
+   "source": "wikimedia",
+   "j1_tokens": 700,
+   "llama_tokens": 701,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "289"
+  },
+  {
+   "doc": 582,
+   "source": "stackexchange",
+   "j1_tokens": 771,
+   "llama_tokens": 771,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Why financing"
+  },
+  {
+   "doc": 594,
+   "source": "stackv2-edu",
+   "j1_tokens": 164,
+   "llama_tokens": 163,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "// COPY"
+  },
+  {
+   "doc": 607,
+   "source": "finemath-4plus",
+   "j1_tokens": 492,
+   "llama_tokens": 491,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "# Find the"
+  },
+  {
+   "doc": 620,
+   "source": "stackexchange",
+   "j1_tokens": 1191,
+   "llama_tokens": 1197,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Call / Trig"
+  },
+  {
+   "doc": 633,
+   "source": "pressbooks",
+   "j1_tokens": 19152,
+   "llama_tokens": 19154,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Part II:"
+  },
+  {
+   "doc": 646,
+   "source": "stackv2-edu",
+   "j1_tokens": 294,
+   "llama_tokens": 295,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "# [S"
+  },
+  {
+   "doc": 659,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1116,
+   "llama_tokens": 1115,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Government Argentina"
+  },
+  {
+   "doc": 672,
+   "source": "stackexchange",
+   "j1_tokens": 953,
+   "llama_tokens": 953,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "When do I"
+  },
+  {
+   "doc": 685,
+   "source": "finemath-4plus",
+   "j1_tokens": 2723,
+   "llama_tokens": 2720,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "# Straight"
+  },
+  {
+   "doc": 698,
+   "source": "stackexchange",
+   "j1_tokens": 378,
+   "llama_tokens": 378,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "preposition problem"
+  },
+  {
+   "doc": 711,
+   "source": "wikimedia",
+   "j1_tokens": 159,
+   "llama_tokens": 158,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Peter E"
+  },
+  {
+   "doc": 724,
+   "source": "stackv2-edu",
+   "j1_tokens": 547,
+   "llama_tokens": 546,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "#!/usr/bin"
+  },
+  {
+   "doc": 737,
+   "source": "finemath-4plus",
+   "j1_tokens": 4299,
+   "llama_tokens": 4300,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "# Discount"
+  },
+  {
+   "doc": 750,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 885,
+   "llama_tokens": 885,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "An important new"
+  },
+  {
+   "doc": 763,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 122,
+   "llama_tokens": 122,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "AP PSY"
+  },
+  {
+   "doc": 776,
+   "source": "stackv2-edu",
+   "j1_tokens": 615,
+   "llama_tokens": 615,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import math\n\n"
+  },
+  {
+   "doc": 789,
+   "source": "stackv2-edu",
+   "j1_tokens": 3564,
+   "llama_tokens": 3419,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import struct\n"
+  },
+  {
+   "doc": 801,
+   "source": "stackexchange",
+   "j1_tokens": 284,
+   "llama_tokens": 284,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "What does this"
+  },
+  {
+   "doc": 814,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1020,
+   "llama_tokens": 1020,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Most workers are"
+  },
+  {
+   "doc": 827,
+   "source": "wikimedia",
+   "j1_tokens": 308,
+   "llama_tokens": 308,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Primary (fil"
+  },
+  {
+   "doc": 840,
+   "source": "stackexchange",
+   "j1_tokens": 314,
+   "llama_tokens": 314,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "What dialect is"
+  },
+  {
+   "doc": 853,
+   "source": "wikimedia",
+   "j1_tokens": 124,
+   "llama_tokens": 125,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "201"
+  },
+  {
+   "doc": 866,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 202,
+   "llama_tokens": 202,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "At least "
+  },
+  {
+   "doc": 879,
+   "source": "wikimedia",
+   "j1_tokens": 927,
+   "llama_tokens": 926,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Greg Anderson"
+  },
+  {
+   "doc": 892,
+   "source": "finemath-4plus",
+   "j1_tokens": 970,
+   "llama_tokens": 969,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "# Motion Graph"
+  },
+  {
+   "doc": 905,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 275,
+   "llama_tokens": 275,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "To read from"
+  },
+  {
+   "doc": 918,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 513,
+   "llama_tokens": 513,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Benign curiosity"
+  },
+  {
+   "doc": 931,
+   "source": "stackexchange",
+   "j1_tokens": 886,
+   "llama_tokens": 896,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Prevent conn"
+  },
+  {
+   "doc": 944,
+   "source": "stackv2-edu",
+   "j1_tokens": 198,
+   "llama_tokens": 200,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import * as"
+  },
+  {
+   "doc": 957,
+   "source": "stackexchange",
+   "j1_tokens": 484,
+   "llama_tokens": 484,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "When was the"
+  },
+  {
+   "doc": 970,
+   "source": "stackv2-edu",
+   "j1_tokens": 62,
+   "llama_tokens": 62,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "# noins"
+  },
+  {
+   "doc": 983,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 4224,
+   "llama_tokens": 4224,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "At times in"
+  },
+  {
+   "doc": 995,
+   "source": "stackv2-edu",
+   "j1_tokens": 659,
+   "llama_tokens": 659,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import cv2"
+  },
+  {
+   "doc": 1008,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 466,
+   "llama_tokens": 465,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Meaning of"
+  },
+  {
+   "doc": 1021,
+   "source": "stackexchange",
+   "j1_tokens": 449,
+   "llama_tokens": 449,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "What is the"
+  },
+  {
+   "doc": 1034,
+   "source": "wikimedia",
+   "j1_tokens": 202,
+   "llama_tokens": 201,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Ram In"
+  },
+  {
+   "doc": 1047,
+   "source": "wikimedia",
+   "j1_tokens": 215,
+   "llama_tokens": 214,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Robert Bruce"
+  },
+  {
+   "doc": 1060,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1012,
+   "llama_tokens": 1012,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "- What is"
+  },
+  {
+   "doc": 1073,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 719,
+   "llama_tokens": 719,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "There are many"
+  },
+  {
+   "doc": 1086,
+   "source": "stackv2-edu",
+   "j1_tokens": 471,
+   "llama_tokens": 475,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "jogador"
+  },
+  {
+   "doc": 1099,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 2228,
+   "llama_tokens": 2228,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "A battery acid"
+  },
+  {
+   "doc": 1112,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 957,
+   "llama_tokens": 957,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "It all started"
+  },
+  {
+   "doc": 1125,
+   "source": "stackexchange",
+   "j1_tokens": 529,
+   "llama_tokens": 529,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Convert week.y"
+  },
+  {
+   "doc": 1138,
+   "source": "stackexchange",
+   "j1_tokens": 831,
+   "llama_tokens": 833,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Strugg"
+  },
+  {
+   "doc": 1151,
+   "source": "stackexchange",
+   "j1_tokens": 685,
+   "llama_tokens": 685,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Does the fo"
+  },
+  {
+   "doc": 1164,
+   "source": "wikimedia",
+   "j1_tokens": 181,
+   "llama_tokens": 181,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Pulchr"
+  },
+  {
+   "doc": 1177,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 482,
+   "llama_tokens": 482,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "In recent news"
+  },
+  {
+   "doc": 1189,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 525,
+   "llama_tokens": 525,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "World Population Day"
+  },
+  {
+   "doc": 1202,
+   "source": "wikimedia",
+   "j1_tokens": 695,
+   "llama_tokens": 695,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Dazh"
+  },
+  {
+   "doc": 1215,
+   "source": "wikimedia",
+   "j1_tokens": 823,
+   "llama_tokens": 823,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Polynes"
+  },
+  {
+   "doc": 1228,
+   "source": "wikimedia",
+   "j1_tokens": 782,
+   "llama_tokens": 782,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Tasha S"
+  },
+  {
+   "doc": 1241,
+   "source": "wikimedia",
+   "j1_tokens": 2848,
+   "llama_tokens": 2848,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "The Boys ("
+  },
+  {
+   "doc": 1254,
+   "source": "stackv2-edu",
+   "j1_tokens": 85,
+   "llama_tokens": 85,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "n = float"
+  },
+  {
+   "doc": 1267,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 987,
+   "llama_tokens": 986,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Professor Nick"
+  },
+  {
+   "doc": 1280,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1455,
+   "llama_tokens": 1455,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Tourett"
+  },
+  {
+   "doc": 1293,
+   "source": "wikimedia",
+   "j1_tokens": 726,
+   "llama_tokens": 726,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Claire Cam"
+  },
+  {
+   "doc": 1306,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 12930,
+   "llama_tokens": 12929,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "by COL Scott"
+  },
+  {
+   "doc": 1319,
+   "source": "stackexchange",
+   "j1_tokens": 677,
+   "llama_tokens": 679,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Is there a"
+  },
+  {
+   "doc": 1332,
+   "source": "finemath-4plus",
+   "j1_tokens": 329,
+   "llama_tokens": 319,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "# Solve for"
+  },
+  {
+   "doc": 1345,
+   "source": "stackv2-edu",
+   "j1_tokens": 469,
+   "llama_tokens": 473,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import explorer"
+  },
+  {
+   "doc": 1358,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 3244,
+   "llama_tokens": 3242,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Future Develop"
+  },
+  {
+   "doc": 1371,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1297,
+   "llama_tokens": 1297,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "The Ancient Egypt"
+  },
+  {
+   "doc": 1384,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 405,
+   "llama_tokens": 405,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Print Letter recognition"
+  },
+  {
+   "doc": 1396,
+   "source": "stackexchange",
+   "j1_tokens": 485,
+   "llama_tokens": 485,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "How can I"
+  },
+  {
+   "doc": 1409,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 677,
+   "llama_tokens": 677,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Newts and"
+  },
+  {
+   "doc": 1422,
+   "source": "wikimedia",
+   "j1_tokens": 2265,
+   "llama_tokens": 2265,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Våle"
+  },
+  {
+   "doc": 1435,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1545,
+   "llama_tokens": 1545,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "The Arming"
+  },
+  {
+   "doc": 1448,
+   "source": "stackv2-edu",
+   "j1_tokens": 176,
+   "llama_tokens": 176,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "from .met"
+  },
+  {
+   "doc": 1461,
+   "source": "wikimedia",
+   "j1_tokens": 738,
+   "llama_tokens": 737,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Philip Hope"
+  },
+  {
+   "doc": 1474,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 689,
+   "llama_tokens": 689,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Did you know"
+  },
+  {
+   "doc": 1487,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 435,
+   "llama_tokens": 435,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "“Milk"
+  },
+  {
+   "doc": 1500,
+   "source": "stackexchange",
+   "j1_tokens": 306,
+   "llama_tokens": 305,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "family visit"
+  },
+  {
+   "doc": 1513,
+   "source": "stackexchange",
+   "j1_tokens": 191,
+   "llama_tokens": 191,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "How to set"
+  },
+  {
+   "doc": 1526,
+   "source": "wikimedia",
+   "j1_tokens": 312,
+   "llama_tokens": 311,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Renato"
+  },
+  {
+   "doc": 1539,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 845,
+   "llama_tokens": 845,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "If your child"
+  },
+  {
+   "doc": 1552,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 239,
+   "llama_tokens": 239,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "There are many"
+  },
+  {
+   "doc": 1565,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1351,
+   "llama_tokens": 1351,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "It was the"
+  },
+  {
+   "doc": 1578,
+   "source": "wikimedia",
+   "j1_tokens": 266,
+   "llama_tokens": 266,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Stanton"
+  },
+  {
+   "doc": 1590,
+   "source": "wikimedia",
+   "j1_tokens": 524,
+   "llama_tokens": 524,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Self-Port"
+  },
+  {
+   "doc": 1603,
+   "source": "finemath-4plus",
+   "j1_tokens": 1977,
+   "llama_tokens": 1975,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "GCSEKS"
+  },
+  {
+   "doc": 1616,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 671,
+   "llama_tokens": 671,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "In their early"
+  },
+  {
+   "doc": 1629,
+   "source": "stackexchange",
+   "j1_tokens": 216,
+   "llama_tokens": 216,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "There is a"
+  },
+  {
+   "doc": 1642,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1187,
+   "llama_tokens": 1188,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "4-H C"
+  },
+  {
+   "doc": 1655,
+   "source": "wikimedia",
+   "j1_tokens": 147,
+   "llama_tokens": 147,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Sürm"
+  },
+  {
+   "doc": 1668,
+   "source": "libretexts",
+   "j1_tokens": 5748,
+   "llama_tokens": 5750,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "1.2"
+  },
+  {
+   "doc": 1681,
+   "source": "wikimedia",
+   "j1_tokens": 261,
+   "llama_tokens": 260,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Washington Historic"
+  },
+  {
+   "doc": 1694,
+   "source": "pressbooks",
+   "j1_tokens": 18988,
+   "llama_tokens": 18987,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Part IV:"
+  },
+  {
+   "doc": 1707,
+   "source": "wikimedia",
+   "j1_tokens": 110,
+   "llama_tokens": 110,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Hours of"
+  },
+  {
+   "doc": 1720,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 306,
+   "llama_tokens": 306,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Research Article Open"
+  },
+  {
+   "doc": 1733,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 381,
+   "llama_tokens": 381,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "The basic concept"
+  },
+  {
+   "doc": 1746,
+   "source": "wikimedia",
+   "j1_tokens": 2238,
+   "llama_tokens": 2237,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Richard D"
+  },
+  {
+   "doc": 1759,
+   "source": "stackexchange",
+   "j1_tokens": 645,
+   "llama_tokens": 645,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "$L=\\"
+  },
+  {
+   "doc": 1772,
+   "source": "stackv2-edu",
+   "j1_tokens": 369,
+   "llama_tokens": 374,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "#!/usr/bin"
+  },
+  {
+   "doc": 1784,
+   "source": "stackv2-edu",
+   "j1_tokens": 1810,
+   "llama_tokens": 1804,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "-- JK"
+  },
+  {
+   "doc": 1797,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 4431,
+   "llama_tokens": 4431,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "In the journey"
+  },
+  {
+   "doc": 1810,
+   "source": "stackexchange",
+   "j1_tokens": 1556,
+   "llama_tokens": 1556,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Installing X"
+  },
+  {
+   "doc": 1823,
+   "source": "arxiv-papers",
+   "j1_tokens": 14501,
+   "llama_tokens": 14451,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "# Adaptive"
+  },
+  {
+   "doc": 1836,
+   "source": "stackv2-edu",
+   "j1_tokens": 663,
+   "llama_tokens": 663,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import socket\n"
+  },
+  {
+   "doc": 1849,
+   "source": "stackv2-edu",
+   "j1_tokens": 1534,
+   "llama_tokens": 1485,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import os\n"
+  },
+  {
+   "doc": 1862,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 854,
+   "llama_tokens": 854,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "No its False"
+  },
+  {
+   "doc": 1875,
+   "source": "stackv2-edu",
+   "j1_tokens": 766,
+   "llama_tokens": 768,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import itertools"
+  },
+  {
+   "doc": 1888,
+   "source": "stackexchange",
+   "j1_tokens": 632,
+   "llama_tokens": 644,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Why is P"
+  },
+  {
+   "doc": 1901,
+   "source": "wikimedia",
+   "j1_tokens": 685,
+   "llama_tokens": 684,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Australia"
+  },
+  {
+   "doc": 1914,
+   "source": "stackexchange",
+   "j1_tokens": 234,
+   "llama_tokens": 233,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "How to prove"
+  },
+  {
+   "doc": 1927,
+   "source": "stackv2-edu",
+   "j1_tokens": 440,
+   "llama_tokens": 440,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "package com.ex"
+  },
+  {
+   "doc": 1940,
+   "source": "wikimedia",
+   "j1_tokens": 744,
+   "llama_tokens": 743,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Rick Price"
+  },
+  {
+   "doc": 1953,
+   "source": "wikimedia",
+   "j1_tokens": 827,
+   "llama_tokens": 827,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "MARA"
+  },
+  {
+   "doc": 1966,
+   "source": "stackexchange",
+   "j1_tokens": 1128,
+   "llama_tokens": 1127,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "A different way"
+  },
+  {
+   "doc": 1979,
+   "source": "stackexchange",
+   "j1_tokens": 502,
+   "llama_tokens": 495,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "PHP echo"
+  },
+  {
+   "doc": 1991,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1856,
+   "llama_tokens": 1856,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "They need to"
+  },
+  {
+   "doc": 2004,
+   "source": "stackv2-edu",
+   "j1_tokens": 231,
+   "llama_tokens": 231,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "class TableF"
+  },
+  {
+   "doc": 2017,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 534,
+   "llama_tokens": 534,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Include More"
+  },
+  {
+   "doc": 2030,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 4798,
+   "llama_tokens": 4798,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Bell's"
+  },
+  {
+   "doc": 2043,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 785,
+   "llama_tokens": 785,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Thanks to a"
+  },
+  {
+   "doc": 2056,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 8492,
+   "llama_tokens": 8490,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "The American Continental"
+  },
+  {
+   "doc": 2069,
+   "source": "stackexchange",
+   "j1_tokens": 1049,
+   "llama_tokens": 1049,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Trouble understanding"
+  },
+  {
+   "doc": 2082,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 7835,
+   "llama_tokens": 7835,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "How much feed"
+  },
+  {
+   "doc": 2095,
+   "source": "stackexchange",
+   "j1_tokens": 696,
+   "llama_tokens": 691,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Accessing pred"
+  },
+  {
+   "doc": 2108,
+   "source": "libretexts",
+   "j1_tokens": 2061,
+   "llama_tokens": 2062,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "9.3"
+  },
+  {
+   "doc": 2121,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1538,
+   "llama_tokens": 1538,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Wounds often"
+  },
+  {
+   "doc": 2134,
+   "source": "finemath-4plus",
+   "j1_tokens": 792,
+   "llama_tokens": 791,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "KPIT"
+  },
+  {
+   "doc": 2147,
+   "source": "stackexchange",
+   "j1_tokens": 1669,
+   "llama_tokens": 1669,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Why little holes"
+  },
+  {
+   "doc": 2160,
+   "source": "stackv2-edu",
+   "j1_tokens": 896,
+   "llama_tokens": 894,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import socket\n"
+  },
+  {
+   "doc": 2173,
+   "source": "stackexchange",
+   "j1_tokens": 280,
+   "llama_tokens": 280,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Unwanted"
+  },
+  {
+   "doc": 2185,
+   "source": "stackv2-edu",
+   "j1_tokens": 253,
+   "llama_tokens": 255,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "if __name"
+  },
+  {
+   "doc": 2198,
+   "source": "wikimedia",
+   "j1_tokens": 940,
+   "llama_tokens": 940,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Lost Contin"
+  },
+  {
+   "doc": 2211,
+   "source": "wikimedia",
+   "j1_tokens": 114,
+   "llama_tokens": 114,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Line 9"
+  },
+  {
+   "doc": 2224,
+   "source": "stackv2-edu",
+   "j1_tokens": 171,
+   "llama_tokens": 171,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "from js"
+  },
+  {
+   "doc": 2237,
+   "source": "stackv2-edu",
+   "j1_tokens": 221,
+   "llama_tokens": 223,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import pytt"
+  },
+  {
+   "doc": 2250,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 2067,
+   "llama_tokens": 2067,
+   "identical": false,
+   "first_divergence": 0,
+   "context": ".. ensations"
+  },
+  {
+   "doc": 2263,
+   "source": "stackexchange",
+   "j1_tokens": 670,
+   "llama_tokens": 635,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Multiplying a"
+  },
+  {
+   "doc": 2276,
+   "source": "wikimedia",
+   "j1_tokens": 115,
+   "llama_tokens": 115,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Malvern"
+  },
+  {
+   "doc": 2289,
+   "source": "stackexchange",
+   "j1_tokens": 642,
+   "llama_tokens": 642,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Group of deck"
+  },
+  {
+   "doc": 2302,
+   "source": "stackexchange",
+   "j1_tokens": 405,
+   "llama_tokens": 406,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Avoid JS"
+  },
+  {
+   "doc": 2315,
+   "source": "stackexchange",
+   "j1_tokens": 582,
+   "llama_tokens": 584,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Pika &"
+  },
+  {
+   "doc": 2328,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 488,
+   "llama_tokens": 487,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Alfred T"
+  },
+  {
+   "doc": 2341,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 1709,
+   "llama_tokens": 1709,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "The two sides"
+  },
+  {
+   "doc": 2354,
+   "source": "finemath-4plus",
+   "j1_tokens": 598,
+   "llama_tokens": 598,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "# Geometry Problem"
+  },
+  {
+   "doc": 2367,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 158,
+   "llama_tokens": 158,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Reporter:"
+  },
+  {
+   "doc": 2379,
+   "source": "wikimedia",
+   "j1_tokens": 204,
+   "llama_tokens": 203,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Kim So"
+  },
+  {
+   "doc": 2392,
+   "source": "stackv2-edu",
+   "j1_tokens": 367,
+   "llama_tokens": 367,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "import os\n"
+  },
+  {
+   "doc": 2405,
+   "source": "stackv2-edu",
+   "j1_tokens": 1015,
+   "llama_tokens": 985,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "package arenav"
+  },
+  {
+   "doc": 2418,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 2186,
+   "llama_tokens": 2186,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Cocaine"
+  },
+  {
+   "doc": 2431,
+   "source": "finemath-4plus",
+   "j1_tokens": 854,
+   "llama_tokens": 854,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "# Standard Form"
+  },
+  {
+   "doc": 2444,
+   "source": "stackv2-edu",
+   "j1_tokens": 1963,
+   "llama_tokens": 1964,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "[![Build"
+  },
+  {
+   "doc": 2457,
+   "source": "stackexchange",
+   "j1_tokens": 582,
+   "llama_tokens": 582,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "What is the"
+  },
+  {
+   "doc": 2470,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 334,
+   "llama_tokens": 334,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "At the turn"
+  },
+  {
+   "doc": 2483,
+   "source": "stackv2-edu",
+   "j1_tokens": 573,
+   "llama_tokens": 573,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "'''\nExport"
+  },
+  {
+   "doc": 2496,
+   "source": "wikimedia",
+   "j1_tokens": 1110,
+   "llama_tokens": 1110,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Vaqu"
+  },
+  {
+   "doc": 2509,
+   "source": "wikimedia",
+   "j1_tokens": 343,
+   "llama_tokens": 343,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Chico ("
+  },
+  {
+   "doc": 2522,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 512,
+   "llama_tokens": 512,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "The fresh water"
+  },
+  {
+   "doc": 2535,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 4362,
+   "llama_tokens": 4362,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "In this article"
+  },
+  {
+   "doc": 2548,
+   "source": "fineweb-edu-dedup",
+   "j1_tokens": 861,
+   "llama_tokens": 860,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Mind Map"
+  },
+  {
+   "doc": 2561,
+   "source": "wikimedia",
+   "j1_tokens": 81,
+   "llama_tokens": 81,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "Old Dad"
+  },
+  {
+   "doc": 2574,
+   "source": "wikimedia",
+   "j1_tokens": 108,
+   "llama_tokens": 108,
+   "identical": false,
+   "first_divergence": 0,
+   "context": "The Bell Hop"
+  }
+ ]
+}

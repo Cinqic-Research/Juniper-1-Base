@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cinqic.com/schemas/j1data/source.v1.json",
+  "title": "Juniper 1 data source registry entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_id", "source_name", "family", "description", "acquisition", "license", "processing", "risks"],
+  "properties": {
+    "source_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,63}$"},
+    "source_name": {"type": "string", "minLength": 3},
+    "family": {"enum": ["web", "math", "reference", "code", "qa", "papers", "textbooks", "documentation", "cinqic"]},
+    "description": {"type": "string", "minLength": 10},
+    "acquisition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mechanism", "repo", "revision", "adapter", "files"],
+      "properties": {
+        "mechanism": {"enum": ["huggingface", "git"]},
+        "repo": {"type": "string"},
+        "revision": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "adapter": {"enum": ["hf_parquet", "dolma_jsonl", "cinqic_git"]},
+        "files": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["include"],
+          "properties": {
+            "include": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+            "exclude": {"type": "array", "items": {"type": "string"}},
+            "hash_select": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["patterns", "namespace", "count"],
+                "properties": {
+                  "patterns": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+                  "namespace": {"type": "string"},
+                  "count": {"type": "integer", "minimum": 1}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "identifiers", "evidence", "attribution", "training_use", "redistribution"],
+      "properties": {
+        "state": {"enum": ["APPROVED", "APPROVED_WITH_ATTRIBUTION", "TRAINING_ONLY_NO_REDISTRIBUTION", "REVIEW_REQUIRED", "REJECTED"]},
+        "identifiers": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "evidence": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "attribution": {"type": "string"},
+        "training_use": {"type": "string"},
+        "redistribution": {"type": "string"},
+        "per_document_license_field": {"type": "string"},
+        "allowed_document_licenses": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "processing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["priority"],
+      "properties": {
+        "priority": {"type": "integer", "minimum": 0},
+        "kind": {"enum": ["prose", "math", "technical", "code"]},
+        "options": {"type": "object"}
+      }
+    },
+    "risks": {"type": "array", "items": {"type": "string"}},
+    "known_limitations": {"type": "array", "items": {"type": "string"}}
+  }
+}

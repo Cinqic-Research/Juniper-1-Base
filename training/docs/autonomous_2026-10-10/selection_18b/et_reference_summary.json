@@ -1,0 +1,90 @@
+{
+ "schema": "j1.et-reference-summary.v1",
+ "runs": [
+  {
+   "run_id": "et-j1-core-28x640-s21",
+   "preset": "j1-core-28x640",
+   "seed": 21,
+   "updates": 2792,
+   "trained_targets": 182976512,
+   "data": "tokens:/vol/data/prefix_v022",
+   "eval_split": "validation",
+   "eval_documents": 2576,
+   "eval_scored_bytes": 12311466,
+   "eval_doc_index_sha256": "42e057d7771fc1223c9f59895edb5d4d2bb8cbfacdca5dabe6a91ec37482f787",
+   "problems": []
+  },
+  {
+   "run_id": "et-j1-core-28x640-s22",
+   "preset": "j1-core-28x640",
+   "seed": 22,
+   "updates": 2792,
+   "trained_targets": 182976512,
+   "data": "tokens:/vol/data/prefix_v022",
+   "eval_split": "validation",
+   "eval_documents": 2576,
+   "eval_scored_bytes": 12311466,
+   "eval_doc_index_sha256": "42e057d7771fc1223c9f59895edb5d4d2bb8cbfacdca5dabe6a91ec37482f787",
+   "problems": []
+  },
+  {
+   "run_id": "et-j1-core-28x640-s23",
+   "preset": "j1-core-28x640",
+   "seed": 23,
+   "updates": 2792,
+   "trained_targets": 182976512,
+   "data": "tokens:/vol/data/prefix_v022",
+   "eval_split": "validation",
+   "eval_documents": 2576,
+   "eval_scored_bytes": 12311466,
+   "eval_doc_index_sha256": "42e057d7771fc1223c9f59895edb5d4d2bb8cbfacdca5dabe6a91ec37482f787",
+   "problems": []
+  },
+  {
+   "run_id": "et-j1-wide-20x768-s21",
+   "preset": "j1-wide-20x768",
+   "seed": 21,
+   "updates": 2792,
+   "trained_targets": 182976512,
+   "data": "tokens:/vol/data/prefix_v022",
+   "eval_split": "validation",
+   "eval_documents": 2576,
+   "eval_scored_bytes": 12311466,
+   "eval_doc_index_sha256": "42e057d7771fc1223c9f59895edb5d4d2bb8cbfacdca5dabe6a91ec37482f787",
+   "problems": []
+  },
+  {
+   "run_id": "et-j1-wide-20x768-s22",
+   "preset": "j1-wide-20x768",
+   "seed": 22,
+   "updates": 2792,
+   "trained_targets": 182976512,
+   "data": "tokens:/vol/data/prefix_v022",
+   "eval_split": "validation",
+   "eval_documents": 2576,
+   "eval_scored_bytes": 12311466,
+   "eval_doc_index_sha256": "42e057d7771fc1223c9f59895edb5d4d2bb8cbfacdca5dabe6a91ec37482f787",
+   "problems": []
+  },
+  {
+   "run_id": "et-j1-wide-20x768-s23",
+   "preset": "j1-wide-20x768",
+   "seed": 23,
+   "updates": 2792,
+   "trained_targets": 182976512,
+   "data": "tokens:/vol/data/prefix_v022",
+   "eval_split": "validation",
+   "eval_documents": 2576,
+   "eval_scored_bytes": 12311466,
+   "eval_doc_index_sha256": "42e057d7771fc1223c9f59895edb5d4d2bb8cbfacdca5dabe6a91ec37482f787",
+   "problems": []
+  }
+ ],
+ "n_runs": 6,
+ "exact_epoch_all": true,
+ "eval_split": "validation",
+ "eval_documents": 2576,
+ "eval_scored_bytes": 12311466,
+ "eval_doc_index_sha256": "42e057d7771fc1223c9f59895edb5d4d2bb8cbfacdca5dabe6a91ec37482f787",
+ "test_split_read": false
+}

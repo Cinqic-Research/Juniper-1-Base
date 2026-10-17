@@ -1,0 +1,30 @@
+{
+ "schema": "j1.contamination-adjudication.v1",
+ "decided_utc": "2026-10-10T07:15:00Z",
+ "scope": "pilot inputs: v0.2 tokenizer training sample (89,016 docs), 700 MB pilot prefix train docs (156,588), validation split (2,583); union 243,331",
+ "index_identity": "eddb2f37fae2421b42be9244d4a39f3dc5bb4b0a9205ad7c57f52de3060ac049",
+ "calibration": "pre-registered before pass-2 results: 10-grams need >= 3 alphanumeric tokens; grams in >= 10 corpus documents (full-corpus pass 1) are common and excluded from coverage; match = coverage >= 0.6 of an item's non-common grams, or any protected identifier",
+ "uncalibrated_first_pass": {"index": "060fb0f1...", "hit_documents": 2534, "dominated_by": "boilerplate (if __name__ == '__main__': main()) and punctuation runs; preserved as scan_pilot_inputs_uncalibrated_060fb0f1.json"},
+ "calibrated_pass2": {"hit_documents": 86, "layer_a_documents": 9, "layer_c_only_documents": 77},
+ "criteria": {
+   "PROHIBITED": "the document reproduces protected item content beyond generic phrasing, e.g. a benchmark task statement together with its solution, a question with its answer choices or answer, or a test/solution body",
+   "NOT_PROHIBITED": "only generic short phrasing (<= ~12 tokens) that occurs naturally, file paths, public API names, trivial code idioms, chemical/systematic names, platform triples, or public constants (digest of the empty string, documented example keys)"
+ },
+ "layer_c_identifiers": {"distinct": 15, "disposition": "NOT_PROHIBITED (all generic)", "values": ["x86_64-linux-gnu", "glucose-6-phosphate", "adaptiveavgpool2d", "25-hydroxyvitamin", "3-dimethylbutane", "glucose-1-phosphate", "2-dichlorobenzene", "glucose-6-phosphatase", "3-dichlorobenzene", "4-dichlorobenzene", "6-trichloroanisole", "sha256('') e3b0c442...", "AWS documented example key", "123456789abcdef0", "md5('password') 5f4dcc3b..."], "follow_up": "Layer C v2 must drop hyphenated systematic names and public constants and add a document-frequency rule before it is used for exclusion"},
+ "layer_a": [
+  {"doc_id": "140f657343d2b9135d3856767c1d2018", "set": "tokenizer_sample", "source": "cinqic-aaa-docs", "item": "aaa-exams: path string 'aaa/benchmark/data/benchmark_v2_1.json'", "disposition": "NOT_PROHIBITED", "reason": "file path mention in developer documentation; no exam content"},
+  {"doc_id": "da2838c962a33d93af6e80319f2861c1", "set": "prefix_train", "source": "finemath-4plus", "item": "mmlu question-only field 'What is the greatest common factor of 42 and 84?'", "disposition": "NOT_PROHIBITED", "reason": "generic short arithmetic question on a GCF tutorial page; no MMLU choices"},
+  {"doc_id": "7b51efbead47097e2e925f9b65cd79ca", "set": "prefix_train", "source": "finemath-4plus", "item": "mmlu 'How do you express 3/4 as a decimal?'", "disposition": "NOT_PROHIBITED", "reason": "generic phrasing"},
+  {"doc_id": "5ce4a709e7fe8003e27173f9df240f09", "set": "prefix_train", "source": "finemath-4plus", "item": "mmlu 'Which of the following is the odd one out?'", "disposition": "NOT_PROHIBITED", "reason": "generic quiz phrasing with different content"},
+  {"doc_id": "af11419c56498a94f3e59058c7ac86b8", "set": "tokenizer_sample", "source": "fineweb-edu-dedup", "item": "mmlu choice 'S(s) + O2(g) -> SO2(g)'", "disposition": "NOT_PROHIBITED", "reason": "standard chemical equation in an unrelated school exercise"},
+  {"doc_id": "64f9e991e01cf178257a3bd32b8af14d", "set": "tokenizer_sample", "source": "stackv2-edu", "item": "mbpp 'Write a function to group a sequence of key-value pairs into a dictionary of lists.' (coverage 0.67)", "disposition": "PROHIBITED", "reason": "the script states the same task and implements its solution; benchmark task/solution overlap"},
+  {"doc_id": "b8d47032a865e47d723dd07e6b0c4c66", "set": "prefix_train", "source": "stackv2-edu", "item": "juniperbench-code 'torch.nn.functional.binary_cross_entropy_with_logits'", "disposition": "NOT_PROHIBITED", "reason": "public API name"},
+  {"doc_id": "6ec4aebbfcff9f200f0a2f7cc7c9769e", "set": "tokenizer_sample", "source": "stackv2-edu", "item": "juniperbench-code two-line clear() method", "disposition": "NOT_PROHIBITED", "reason": "trivial code idiom"},
+  {"doc_id": "147a156b0197496be069ee3e06b98eb3", "set": "prefix_train", "source": "stackv2-edu", "item": "mbppplus trivial maximum/minimum functions (coverage 0.67)", "disposition": "NOT_PROHIBITED", "reason": "trivial idiom; the document's code is unrelated"}
+ ],
+ "consequence": {
+   "pilot_prefix_and_validation": "no prohibited document; prefix documents unchanged",
+   "tokenizer_sample": "1 prohibited document -> v3 candidates quarantined for selection; clean-sample v4 candidates (sample 89,015 docs, exclusion recorded) retrained and re-sharded; pilots use v4 only",
+   "observation": "retraining v3 on its own recorded sample was not byte-reproducible (2-6 vocabulary entries differ), the same order as the clean-sample effect (4-6 entries)"
+ }
+}

@@ -1,0 +1,174 @@
+{
+ "amendment": "18.1",
+ "written_utc": "2026-10-10T20:35:20.560683+00:00",
+ "ec_budget": {
+  "rule": "ec-budget-v1",
+  "status": "DECIDED",
+  "decision": 3055,
+  "faster": "j1-wide-20x768",
+  "slower": "j1-core-28x640",
+  "ratio": 1.0943323790528345,
+  "ratio_basis": "median updates per second over training seconds excluding the first (compile) update",
+  "updates_per_s_median": {
+   "j1-core-28x640": 1.7997170660168016,
+   "j1-wide-20x768": 1.9694886584761537
+  },
+  "et_updates": 2792,
+  "host": {
+   "gpu_uuid": "GPU-5c42020f-dc89-fe0f-2a91-a26d0948c4f4",
+   "pod_id": "pncbyxaf2dt2jl"
+  }
+ },
+ "selected_lr": {
+  "j1-core-28x640": 0.001859,
+  "j1-wide-20x768": 0.0016971
+ },
+ "unresolved_boundary": {
+  "j1-core-28x640": true,
+  "j1-wide-20x768": false
+ },
+ "lr_records": {
+  "j1-core-28x640": {
+   "rule": "lr-v1.1",
+   "status": "DECIDED",
+   "decision": 0.001859,
+   "rows": [
+    {
+     "run": "scr-j1-core-28x640-x0.25",
+     "lr": 0.00023237,
+     "val_loss": 3.902798483191246,
+     "eligible": true,
+     "spiked": false
+    },
+    {
+     "run": "scr-j1-core-28x640-x0.5",
+     "lr": 0.00046475,
+     "val_loss": 3.588646524514299,
+     "eligible": true,
+     "spiked": false
+    },
+    {
+     "run": "scr-j1-core-28x640-x1",
+     "lr": 0.0009295,
+     "val_loss": 3.450309968996123,
+     "eligible": true,
+     "spiked": false
+    },
+    {
+     "run": "scr-j1-core-28x640-x2",
+     "lr": 0.001859,
+     "val_loss": 3.44244305214803,
+     "eligible": true,
+     "spiked": false
+    }
+   ],
+   "grid_multipliers": [
+    0.25,
+    0.5,
+    1.0,
+    2.0
+   ],
+   "unresolved_boundary": true
+  },
+  "j1-wide-20x768": {
+   "rule": "lr-v1.1",
+   "status": "DECIDED",
+   "decision": 0.0016971,
+   "rows": [
+    {
+     "run": "scr-j1-wide-20x768-x0.25",
+     "lr": 0.00042427,
+     "val_loss": 3.5723809317103803,
+     "eligible": true,
+     "spiked": false
+    },
+    {
+     "run": "scr-j1-wide-20x768-x0.5",
+     "lr": 0.00084855,
+     "val_loss": 3.45618554727233,
+     "eligible": true,
+     "spiked": false
+    },
+    {
+     "run": "scr-j1-wide-20x768-x1",
+     "lr": 0.0016971,
+     "val_loss": 3.4007230606645744,
+     "eligible": true,
+     "spiked": false
+    },
+    {
+     "run": "scr-j1-wide-20x768-x2",
+     "lr": 0.0033942,
+     "val_loss": 3.5095292167231764,
+     "eligible": true,
+     "spiked": false
+    }
+   ],
+   "grid_multipliers": [
+    0.25,
+    0.5,
+    1.0,
+    2.0
+   ],
+   "unresolved_boundary": false
+  }
+ },
+ "screening_record_sha256": {
+  "scr-j1-core-28x640-x0.25.gpu.csv": "18d15cbf8ff6fce74dc54c2687b796dd0f60132ec0b5e6c4d0d4981637a560f6",
+  "scr-j1-core-28x640-x0.25.host.json": "2f2c49e291b6e25c2404aecf0bb46dc9fc9525f39eac67150dd26359f8ebfbd7",
+  "scr-j1-core-28x640-x0.25.host.txt": "9132719942fd8c35f87837a129e0eb68f59f4f10d6f6e8b46a9ef0a64a279f22",
+  "scr-j1-core-28x640-x0.25.json": "9a60b626db2906bf4cfd0f2eeb00ca3cb28f2ba97cacfb0b413e9a953eba408f",
+  "scr-j1-core-28x640-x0.25.jsonl": "b2616a07a14f71ba8ce8bdefa3f7466f1714443f356e0b42a456d82965813faf",
+  "scr-j1-core-28x640-x0.25.log": "167a9c36db4ce79045c3ab3821099a27d452535f5ad351f2cde3b031b4538b70",
+  "scr-j1-core-28x640-x0.25.status": "aeb484d30269eaed61e2d58a350d23c0377bc28c540cc411d1ea59caa9e365b7",
+  "scr-j1-core-28x640-x0.5.gpu.csv": "a70b59850676d0e2e9b5d561488521da49790faa987ca450a6be9f68d6398c52",
+  "scr-j1-core-28x640-x0.5.host.json": "dfb364b63fe098708eae7659cedd1946bdb5975fab3b07e7677330924bfc8c8d",
+  "scr-j1-core-28x640-x0.5.host.txt": "05632282a10122b54125bfc1354cfe4153bb8106bcbfbdeb2225953d80d98c75",
+  "scr-j1-core-28x640-x0.5.json": "0b964bfdcdfca5e3bad66638ac577b7ad4f898288afac3f7505161c7a44c2ea7",
+  "scr-j1-core-28x640-x0.5.jsonl": "12562ad12850313dd221952127c2ccc5f03861dbc08a359d32c55472c3780d53",
+  "scr-j1-core-28x640-x0.5.log": "0b0376b694f610729f89e8f7fd4a19da0bab4e99c9f1c605e9ce89da82e5a39b",
+  "scr-j1-core-28x640-x0.5.status": "ff6f136b3709883d3c18bad67a91e82e31bbca74100c8c27e6195ec4506dd56b",
+  "scr-j1-core-28x640-x1.gpu.csv": "18cc55925ef9c15d65357be770a362c32d4de9509e48819ddffb1f7bb08eb4a0",
+  "scr-j1-core-28x640-x1.host.json": "e8f85c92c2e41624a6f2900b976fdd816c1c0acb0f8dafd715bcd56a134af0bc",
+  "scr-j1-core-28x640-x1.host.txt": "6cb9ad883a54cb961ade2886582f40f9875493b7fc51b311ba941426146fbf7b",
+  "scr-j1-core-28x640-x1.json": "c5ec265fb9f72dfebade0e3b5b6b58aa2313ef716935151036dbd528b1beccf9",
+  "scr-j1-core-28x640-x1.jsonl": "a96f7163d5ecf053658f15fbf36f47a09f5cc130fc9a26ea816e11dab68eb727",
+  "scr-j1-core-28x640-x1.log": "8b38e047e0c655083df205e4edef766f2460390236f83b7b0470d62f12faab01",
+  "scr-j1-core-28x640-x1.status": "806588ba9a87ea9912fd7099a7a9c6b43093903f583db266187001551e2a9d25",
+  "scr-j1-core-28x640-x2.gpu.csv": "459119b694c960f21067b22cc3121693217d598dac2fd6cd8d64af704246afb7",
+  "scr-j1-core-28x640-x2.host.json": "d99268c223d479d0772b1c6eab95dc1cf577fd2630a0e26bd90c37e7e76f6e01",
+  "scr-j1-core-28x640-x2.host.txt": "c964620bf37e62785ad2e8fa16d369d70cfbef02d8079e0bb9a2b2b40ce7b8dd",
+  "scr-j1-core-28x640-x2.json": "5e02565729e01bec8ff20a5c4be526c81b0ff5d68dd3a197303b71388244ee17",
+  "scr-j1-core-28x640-x2.jsonl": "ebfea24bc244bb174c915091863ee7d9161bb28be9c0c5eebf2e6f980aeca275",
+  "scr-j1-core-28x640-x2.log": "a5bb52debb3aef9b719f0e9a707bd9510e5150c262162f6ba6f88bfa7c5bef2d",
+  "scr-j1-core-28x640-x2.status": "8e535662254faf668eca4429396383904aceeff71fd7962a0e721336334f0002",
+  "scr-j1-wide-20x768-x0.25.gpu.csv": "3e1a540bba548c111369557367704570f6148f1581160c1cb3ecade5fec8384f",
+  "scr-j1-wide-20x768-x0.25.host.json": "77a83f1b66799fef2bc37df56ddc85a03a0497d8a28b2bd3fd5fa99758e26955",
+  "scr-j1-wide-20x768-x0.25.host.txt": "48828be3b0f0cb55e12495190794030b3ef062dee39c36d50b8f838707444309",
+  "scr-j1-wide-20x768-x0.25.json": "f7303e87a08860182d770ced81c235db73630cf02ae240f533555dc59c87b305",
+  "scr-j1-wide-20x768-x0.25.jsonl": "ecd84040b80f51e0e04660084d3969f61507d3dd059bd23cd03c832b6eea6d3f",
+  "scr-j1-wide-20x768-x0.25.log": "6ae5dd1ea00a57aba37b1c58f90b95e19c3e1fe14d6468181200d0450bd32eaa",
+  "scr-j1-wide-20x768-x0.25.status": "c0cdf803179dca5f37d16229be92011766434d0131f92eac4577cd30d2e6dbd0",
+  "scr-j1-wide-20x768-x0.5.gpu.csv": "02b63d462e190b7e857a475b397419e1967c727ea710f530a64d513aac1e4a3f",
+  "scr-j1-wide-20x768-x0.5.host.json": "b7ff6221b52db081d48addd147d0a9d0087119ab255ad366534f8e651487ce6f",
+  "scr-j1-wide-20x768-x0.5.host.txt": "3450ff26d04d5fa9d9a13fab5db726932e2e915166ffb00a194c02da05651247",
+  "scr-j1-wide-20x768-x0.5.json": "6299765cf1a3b15ef2a29291dc36bff19f89f936c2b6cf8e52e1b2f12e0deb01",
+  "scr-j1-wide-20x768-x0.5.jsonl": "215588cc953c9ef4f87de6159cc0343c011a19f96a72ec2a62056eae1d378797",
+  "scr-j1-wide-20x768-x0.5.log": "2bcb97150862e2790cfe30999cfc44ee875751cfd1f4c6887a9c76a7178a86d2",
+  "scr-j1-wide-20x768-x0.5.status": "b1649fd59336fa64bb61c245689cc25f8e8191cf4d139b2910aa5ffdb5523dfd",
+  "scr-j1-wide-20x768-x1.gpu.csv": "85f94ca326c62c293b59f2090719197aff1305cbacc98e82697df60d4816eae2",
+  "scr-j1-wide-20x768-x1.host.json": "299d3141b1413527aba0568b64a4cd39ee98c0c3bf8d43f98275acf818244949",
+  "scr-j1-wide-20x768-x1.host.txt": "3142b1057a0548152b10ea7b703bd5906e5b650df1c9815ab577f62411e3938a",
+  "scr-j1-wide-20x768-x1.json": "a508d95b7b0d995c5917e8e1f6bc36a0c0dd4f92e543859849e282182fa755f2",
+  "scr-j1-wide-20x768-x1.jsonl": "e34ebc99f3fd5ef5fcec471012d2cb9db75a65e96c74ef71fb3a9121f94b3546",
+  "scr-j1-wide-20x768-x1.log": "ed3f5a6932df12f84e9d2a7c72057c1648eea60e01fc10a7bdab90716a67ae5d",
+  "scr-j1-wide-20x768-x1.status": "c44e23bbef71929351a9dbcb7300580352fe48c45ef72dd33c57ec546af11a6e",
+  "scr-j1-wide-20x768-x2.gpu.csv": "bc0b3a9835c3394a13b497f01924dd2fc93a835539911230d61b8096a11b1075",
+  "scr-j1-wide-20x768-x2.host.json": "b657021e116689781bbedd2bf72ce9136c88a55cffdf81f4789f9a6b42fd47a7",
+  "scr-j1-wide-20x768-x2.host.txt": "aa5ef6cdc0b0ee2478213034c8e8e897b74a39aa4c9d797fd93edeea86d7b9fb",
+  "scr-j1-wide-20x768-x2.json": "b83a4ed80ff5f6baaca01009eaf2da2b6e93b7e0baca73de460a7b22358222d0",
+  "scr-j1-wide-20x768-x2.jsonl": "1727b390f6cb10ad8159c4f11c440530a5e85ae4b0931325be53c4d13f25b2b8",
+  "scr-j1-wide-20x768-x2.log": "0fd05edd45da93a61ac7997ef1becdc950c5e43fd480b3010f7e85b5bd064395",
+  "scr-j1-wide-20x768-x2.status": "1fcb968cc80192c887455123539c2984c4c95e6789a9a5325def00fe0ff62b0c"
+ }
+}

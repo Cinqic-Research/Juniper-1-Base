@@ -1,0 +1,3 @@
+[ckpt] candidate /root/ckpt-recovery/t_die_before_complete/ckpt-000000010-eb2e01e5 step=10: ok
+[resume] restored /root/ckpt-recovery/t_die_before_complete/ckpt-000000010-eb2e01e5 at step 10 in 42.92s (lr=0.000882594)
+step 20 loss 7.7968 lr 0.000637 320ms

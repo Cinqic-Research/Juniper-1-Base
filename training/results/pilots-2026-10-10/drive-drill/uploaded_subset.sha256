@@ -1,0 +1,15 @@
+224b0b783c00a338d3f42e02e13239b9360a5f8a63a9946f60a80d2b9d7caf89  ./checkpoint/ckpt-000000025-b2150637/COMPLETE
+2213eef4aad48b8e279a0bff5cdf6bc40996ed5af101cfc51ff54686b670e83f  ./checkpoint/ckpt-000000025-b2150637/manifest.json
+99ef3d681da4444b380e9583b9a0f75cbc0dcf56dc21355ef1be4ccdccf5f586  ./checkpoint/ckpt-000000025-b2150637/model.pt
+112d30b0979abe9dd4c59a9402c05d0a7c55b1e7c7abe0f17c6bfff665ccf2aa  ./checkpoint/ckpt-000000025-b2150637/optim.pt
+9c7eb8c10b0f9299f012859e3191bde7a0f4bf5c3b0b1d8c300afa713338ff53  ./checkpoint/ckpt-000000025-b2150637/trainer.pt
+d33126109d9cdf2cb7c38dcfc5baaa9d6fff045389d47d26b32f6b5fe40f7c82  ./checkpoint/ref.json
+d8ba27f11d596a6c2827e042a50bc180d3f33e82054591871aa791dd4749334e  ./checkpoint/ref.jsonl
+1fb62d9fa8baac28c7fdba9936b4f65551c41e2c63b37341f2abd1d5ec2b7946  ./checkpoint/results.json
+12bd15d58581166d725fd6707a9982753e9a9bf0606362efc6e63668156ee95e  ./checkpoint/t1_b.jsonl
+c2e6f6f78f87dac9d0c9f1069e474ec0d34f503d8fff5a40a116e8ac0be6a390  ./cand-j1tok-28k-prefix-700MB/shards.json
+e89c2d4058d30c1bade0718555007194beaf925a860e47210b6e15a49d2bd7ae  ./cand-j1tok-28k-prefix-700MB/train-docs.parquet
+30d3f5827e173fac7606d6f2701d0b2466d6c60e1f4e6f9134a377e0c2e027ce  ./cand-j1tok-28k-prefix-700MB/train-tokens-00000.bin
+8b382217844608290b4fde8ec5ea52df7a69006b6fdab5a3243718ffb0dacfa4  ./cand-j1tok-28k-prefix-700MB/validation-docs.parquet
+a4a3bd247c240bbbd26878a504faef193363e24c259595b9b42b7c4f9ba13782  ./cand-j1tok-28k-prefix-700MB/validation-tokens-00000.bin
+a50ee49930006f9b4ff7af091081c860b8e9ba4f4d46f7babf9e0d519324f04e  ./j1tok-28k.tokenizer.json

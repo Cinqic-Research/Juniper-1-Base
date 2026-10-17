@@ -1,0 +1,3 @@
+[resume] restored /root/drive-drill/checkpoint/ckpt-000000025-b2150637 at step 25 in 47.22s (lr=0.000415568)
+[ckpt] step 27 -> /root/drive-drill/verify/ckpt/t1/ckpt-000000027-cf2453f1 (1667.7 MiB, 6.19s)
+{"steps_run": 2, "final_step": 27, "tokens_per_s_median": 12635.044103695622, "step_ms_median": 2593.421893194318, "peak_vram_gib": 28.859490394592285, "final_param_sha256": "c6c906589f56daa660137152d399af662e9dd44f10280b1ac6a964bb54582452"}

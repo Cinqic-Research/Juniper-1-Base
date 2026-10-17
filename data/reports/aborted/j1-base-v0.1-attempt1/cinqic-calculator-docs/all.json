@@ -1,0 +1,46 @@
+{
+ "build_identity": "e20847a1edd8452571c279942291f4a2fd64a33fed858a40f2d3994c3106abd9",
+ "bytes_by_stage": {
+  "candidate": 25304
+ },
+ "bytes_in": 25304,
+ "chars_in": 25223,
+ "contamination_benchmarks": {},
+ "docs_in": 5,
+ "kinds": {
+  "prose": 5
+ },
+ "outputs": [
+  {
+   "file": "candidates/cinqic-calculator-docs/all.parquet",
+   "rows": 5,
+   "sha256": "181285eb1fbafd7572c2f49570e733a7c57bcd4fe955677fbd80f70e762cfc3f"
+  },
+  {
+   "file": "rejects/cinqic-calculator-docs/all.parquet",
+   "rows": 0,
+   "sha256": "e67d20fa390b7ec1daca3ecc9e280916b116b6749ba80d6645eee5358fee76a2"
+  },
+  {
+   "file": "signatures/cinqic-calculator-docs/all.npy",
+   "rows": 5,
+   "sha256": "ee07b3924dbe9e621d749394324cb88cdb06a8d8801ff982fcda66b3fca7d3a0"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "",
+ "reasons": {},
+ "redactions": {},
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 3.61,
+ "slow_documents": [],
+ "source_id": "cinqic-calculator-docs",
+ "stages": {
+  "candidate": 5
+ },
+ "unit_id": "all"
+}

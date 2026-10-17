@@ -1,0 +1,92 @@
+[
+ {
+  "evidence": "13 admissible sources validated against the schema; missing acquisition manifests: []",
+  "gate": "source registry complete",
+  "status": "PASS"
+ },
+ {
+  "evidence": "only APPROVED / APPROVED_WITH_ATTRIBUTION / TRAINING_ONLY_NO_REDISTRIBUTION sources load; per-document license allowlists enforced on ingest (license.document_not_allowed)",
+  "gate": "unresolved or rejected licenses excluded",
+  "status": "PASS"
+ },
+ {
+  "evidence": "pinned revisions; per-file SHA-256 verified against upstream LFS hashes; git sources pinned by commit and blob id",
+  "gate": "raw source identity recorded",
+  "status": "PASS"
+ },
+ {
+  "evidence": "build identity 13acc9a46f940b393ca950b21fe147911cd3a9307acd7c311f58e7b459ff2e86",
+  "gate": "normalization, quality, privacy and contamination configuration frozen",
+  "status": "PASS"
+ },
+ {
+  "evidence": "planted-credential and PII tests in the recorded test run",
+  "gate": "secrets/PII filter validated",
+  "status": "PASS"
+ },
+ {
+  "evidence": "dedup saw 20196733 of 20196733 candidates",
+  "gate": "global exact deduplication complete",
+  "status": "PASS"
+ },
+ {
+  "evidence": "MinHash-LSH {'bands': 14, 'rows': 8, 'threshold_at_half_detection': 0.719}",
+  "gate": "near deduplication complete",
+  "status": "PASS"
+ },
+ {
+  "evidence": "129 units scanned under exclusion index 63a50e5ab358a26f",
+  "gate": "benchmark contamination scan complete",
+  "status": "PASS"
+ },
+ {
+  "evidence": "held-out 13-gram leakage removal in finalize; independent split recomputation in verify",
+  "gate": "split leakage checks complete",
+  "status": "PASS"
+ },
+ {
+  "evidence": "reports/accepted_statistics.json",
+  "gate": "source/domain mixture measured",
+  "status": "PASS"
+ },
+ {
+  "evidence": "unbatched re-encoding of a keyed-hash sample against count tables",
+  "gate": "token count independently verified (provisional measurement tokenizers)",
+  "status": "PASS"
+ },
+ {
+  "evidence": "out of scope by owner decision: the Juniper 1 tokenizer is designed and frozen in a later stage",
+  "gate": "canonical tokenizer identity recorded",
+  "status": "NOT APPLICABLE"
+ },
+ {
+  "evidence": "357 shards re-hashed",
+  "gate": "accepted shard hashes complete",
+  "status": "PASS"
+ },
+ {
+  "evidence": "raw = rejections + candidates; candidates = duplicates + leakage + accepted",
+  "gate": "document accounting closes",
+  "status": "PASS"
+ },
+ {
+  "evidence": "docs/data_card.md names the build identity",
+  "gate": "data card complete",
+  "status": "PASS"
+ },
+ {
+  "evidence": "docs/data_card.md#known-limitations",
+  "gate": "known limitations documented",
+  "status": "PASS"
+ },
+ {
+  "evidence": "tests/test_end_to_end.py rebuilds the fixture byte-identically",
+  "gate": "pipeline smoke rebuild passes",
+  "status": "PASS"
+ },
+ {
+  "evidence": "git status clean",
+  "gate": "review branch clean",
+  "status": "PASS"
+ }
+]

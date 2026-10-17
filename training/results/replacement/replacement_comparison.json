@@ -1,0 +1,24 @@
+{
+ "test": "replacement_pod_recovery_from_flowbox_replica",
+ "replacement_pod": "qp11wt2e84lnyx (US-WA-1)",
+ "gpu": "GPU-d7326183-f93c-fbbd-8361-ae78f8cc0647 driver 595.91.07",
+ "original_gpu": "GPU-7528250f-6ccc-2d13-7f10-a1d3f4d128ab driver 580.126.16",
+ "source": "FLOWBOX archive t1/ckpt-000000015-7e9d30eb (VERIFIED receipt)",
+ "upload_s": 706,
+ "restore_s": 2.779327614000067,
+ "steps_compared": [
+  16,
+  40
+ ],
+ "bitwise_mismatched_steps": [],
+ "n_mismatched": 0,
+ "max_abs_loss_diff": 0.0,
+ "batch_identity_equal": true,
+ "lr_equal": true,
+ "final_param_equal_to_uninterrupted_reference": true,
+ "final_optim_equal": true,
+ "tokens_useful": [
+  1310720,
+  1310720
+ ]
+}

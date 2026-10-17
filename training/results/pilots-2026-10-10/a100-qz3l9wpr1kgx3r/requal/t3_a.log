@@ -1,0 +1,6 @@
+[ckpt] step 0 -> /root/ckpt-requal/t3/ckpt-000000000-cd2c9c0a (555.9 MiB, 2.10s)
+step 1 loss 10.3509 lr 0.000185 4912ms
+step 10 loss 7.8801 lr 0.000897 315ms
+[ckpt] step 10 -> /root/ckpt-requal/t3/ckpt-000000010-e7466df7 (1667.7 MiB, 6.25s)
+step 20 loss 7.9075 lr 0.000637 316ms
+[ckpt] step 20 -> /root/ckpt-requal/t3/ckpt-000000020-558b6916 (1667.7 MiB, 6.52s)

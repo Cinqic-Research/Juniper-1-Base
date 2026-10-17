@@ -1,0 +1,2 @@
+download_100MB_s 8.64 MBps 11.6 remote=d31f245f00212ee1707d4ce36457f4707d760f10aaa0db67de72423437b3d7dd local=d31f245f00212ee1707d4ce36457f4707d760f10aaa0db67de72423437b3d7dd match=yes
+upload_100MB_s 41.04 MBps 2.4 roundtrip_match=yes

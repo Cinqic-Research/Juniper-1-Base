@@ -1,0 +1,28 @@
+{
+ "schema": "j1.successor-lineage-check.v1",
+ "build": "j1-base-v0.2.2",
+ "build_identity": "89b08d5754c46dfd18ec239fdacb21ae899c1cf9d7606392401b5224c54bffc5",
+ "manifest_sha256": "54a3adb9650c96bf67b44b721386722383caeb774b48b0bf970ad6f9634d4185",
+ "parent": {
+  "build_id": "j1-base-v0.2.1",
+  "build_identity": "e7909e40df202f0fb407369802d4d1d0becc02f9f86a777ef50a840d700c765a",
+  "manifest_sha256": "8d00090632bf6ca07f4dd75d3deea89421de823366c8216c6a85c9f003237968"
+ },
+ "criteria_commit": "869a208",
+ "exclusion_list_sha256": "4bd2e8ef7f5f95c1c2541d1e1c6945a563eece4b3726ed6d80c6a743e0af4ca1",
+ "exclusion_list_sha256_recomputed": "4bd2e8ef7f5f95c1c2541d1e1c6945a563eece4b3726ed6d80c6a743e0af4ca1",
+ "excluded_documents": 7108,
+ "removed_by_split": {
+  "test": 6,
+  "train": 7095,
+  "validation": 7
+ },
+ "accepted_by_split": {
+  "test": 2604,
+  "train": 2954191,
+  "validation": 2576
+ },
+ "documents_checked": 2959371,
+ "exclusions_absent_from_successor": true,
+ "exclusion_hash_consistent": true
+}

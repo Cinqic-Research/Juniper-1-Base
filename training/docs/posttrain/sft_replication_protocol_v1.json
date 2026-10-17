@@ -1,0 +1,81 @@
+{
+ "schema": "j1.sft-replication-protocol.v1",
+ "registered_before_any_result": true,
+ "registered_utc": "2026-10-13",
+ "authority": "owner directive 'Juniper 1 engineering execution directive' (2026-10-13), section 6",
+ "parent_protocol": {
+  "path": "docs/posttrain/sft_pilot_protocol_v3.json",
+  "schema": "j1.sft-pilot-protocol.v3"
+ },
+ "purpose": "seed replication of the v3 pilot recipe; changes only the seed and the run identity",
+ "lr": 3e-05,
+ "lr_source": "docs/posttrain/results/sft_pilot_v1/lr_selection.json (stage-1 rule of protocol v3; not re-selected per seed)",
+ "seeds": {
+  "used_before": [1],
+  "registered": [2, 3]
+ },
+ "runs": {
+  "2": "j1-sft-v1-rep-s2",
+  "3": "j1-sft-v1-rep-s3"
+ },
+ "stage_id": "juniper1-sft-v1-replication",
+ "trainer_package_sha256": "f13afbdf0a67d5d8fc8e1d01f2aaa68331155c53f1372e339a06a859e5c2df89",
+ "unchanged_from_parent": [
+  "base", "dataset_manifest_sha256", "eval_bundle_sha256", "data_code_revision", "pilot.updates",
+  "pilot.warmup_updates", "pilot.min_lr_ratio", "pilot.episodes_per_update", "pilot.token_budget",
+  "pilot.optimizer", "pilot.precision", "pilot.dev_every", "pilot.checkpoint", "pilot.early_stop",
+  "evaluation", "primary", "gates"
+ ],
+ "candidate": "the final checkpoint of each run (update 1226); no other checkpoint is scored",
+ "evaluation": {
+  "same_as_parent": true,
+  "steps": [
+   "final checkpoint verify + exact dev-loss reproduction (pilot_recovery_check)",
+   "chat generations on all splits of bundle f9632015 (greedy)",
+   "score with Juniper-1-Data f0399ed (j1data.sfteval score)",
+   "compare with the preserved v1.2 base scores (j1data.sfteval compare)",
+   "held-out JSON determinism re-run",
+   "full-split fp32 retention"
+  ],
+  "base_scores": "preserved v1.2 base_scores.json (same bundle, same scorer, deterministic base generations)",
+  "recovery_ab": "the protocol-v3 stage-3 result (recovery_ab.json) for trainer package f13afbdf; valid for a replication only while its run reports the same package digest"
+ },
+ "decision": {
+  "rule": "protocol v3 decision rule applied per seed (tools/sft_decide.py)",
+  "labels": "PILOT_CANDIDATE_QUALIFIED / NOT_PROMOTED as in v3; a replication decision never promotes",
+  "seed_1": "the original pilot result and its scoring are kept unchanged and reported alongside"
+ },
+ "variance_report": {
+  "per_seed": [
+   "every v3 category (strict) and slice, protocol validity, uncertainty, false abstention, full-split bpb, final dev loss",
+   "factuality per relation; held-out instruction families per family; Python slices"
+  ],
+  "summary": "min, max, mean and sample standard deviation over the three seeds (n=3: descriptive only)",
+  "paired": [
+   "each seed versus base few-shot on the same items (exact McNemar, as in v3)",
+   "each pair of seeds on the same items (exact McNemar per category; Holm over the 3 pairs within a category)"
+  ],
+  "item_vs_seed_uncertainty": "item-level intervals (Wilson/bootstrap per seed) are reported separately from between-seed spread; pooled items are not treated as independent training replications",
+  "consistency_check": {
+   "inconsistent_if_any": [
+    "the three seeds do not all reach the same v3 decision",
+    "P1 (instruction following in distribution) differs between any two seeds with Holm-adjusted exact McNemar p < 0.05",
+    "any seed fails G-RET"
+   ],
+   "consequence": "diagnose the cause before seed 1's scores are used as a stable baseline for SFT v2 thresholds"
+  }
+ },
+ "corrected_rescoring": {
+  "registered": "after the successor scorer (finding S-09) is versioned in Juniper-1-Data",
+  "inputs": "the preserved raw generations of seeds 1, 2 and 3 (unchanged)",
+  "label": "CORRECTED_RESCORING_VIEW; never merged with original-scorer numbers in one comparison and not a replication of the unchanged evaluation"
+ },
+ "environment": {
+  "planned": "FLOWBOX RTX 2060, torch 2.8.0+cu128, fp32, TF32 off, deterministic algorithms, CUBLAS_WORKSPACE_CONFIG=:4096:8 (same as seed 1)",
+  "differences": "recorded per run from the trainer's deps identity"
+ },
+ "budget": {
+  "runpod_usd": 0.0,
+  "reason": "local GPU reproduces the seed-1 environment exactly; ~1 h per seed measured on the pilot"
+ }
+}

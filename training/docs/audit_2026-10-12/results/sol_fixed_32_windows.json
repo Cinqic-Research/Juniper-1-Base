@@ -1,0 +1,240 @@
+{
+  "protocol": "base_evaluation_protocol_v1",
+  "mode": "fixed_32_window_sample",
+  "input_hashes": {
+    "shards": "1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef",
+    "tokenizer": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+    "validation": "03efc04fc4c1bf1b1960f950cf98de229a9494dca786bb9472410bc9d44e13df",
+    "docs": "42e057d7771fc1223c9f59895edb5d4d2bb8cbfacdca5dabe6a91ec37482f787"
+  },
+  "device": "NVIDIA GeForce RTX 2060",
+  "torch": "2.8.0+cu128",
+  "numerics": "cuda_autocast_fp16",
+  "gqa_kernel": "expand",
+  "windows": [
+    0,
+    50,
+    101,
+    152,
+    202,
+    253,
+    304,
+    354,
+    405,
+    456,
+    506,
+    557,
+    608,
+    658,
+    709,
+    760,
+    810,
+    861,
+    912,
+    962,
+    1013,
+    1064,
+    1114,
+    1165,
+    1216,
+    1266,
+    1317,
+    1368,
+    1418,
+    1469,
+    1520,
+    1571
+  ],
+  "targets": 64284,
+  "source_tokens": {
+    "arxiv-papers": 4096,
+    "finemath-4plus": 10477,
+    "fineweb-edu-dedup": 11124,
+    "libretexts": 605,
+    "oercommons": 0,
+    "pressbooks": 6144,
+    "python-peps": 0,
+    "stackexchange": 9323,
+    "stackv2-edu": 13502,
+    "wikimedia": 9013
+  },
+  "source_bytes": {
+    "arxiv-papers": 11525,
+    "finemath-4plus": 40106,
+    "fineweb-edu-dedup": 49393,
+    "libretexts": 2794,
+    "oercommons": 0,
+    "pressbooks": 24555,
+    "python-peps": 0,
+    "stackexchange": 36994,
+    "stackv2-edu": 44885,
+    "wikimedia": 33335
+  },
+  "candidates": [
+    {
+      "name": "ckpt-000050000-e4775a69",
+      "step": 50000,
+      "manifest_sha256": "5e150abcf28ffc3d81b8281727278dd4bb3f4d2373c654cb4b706df61078b2c3",
+      "model_file_sha256": "9ad07fbed6b5c6b45b083e197edf27cc4a06c9973d9fd60c5fd0e45329f0ebc3",
+      "model_state_sha256": "c222f7771d7bb1dabd206726dbe420dac003eb860c720b1ef17a89e0da3dcea5",
+      "loss": 2.28375462716491,
+      "perplexity": 9.813457197736975,
+      "bpb": 0.8695063639394401,
+      "nll_sum": 146808.88245266906,
+      "by_source": {
+        "arxiv-papers": {
+          "tokens": 4096,
+          "bytes": 11525,
+          "nll_sum": 6532.28153863074
+        },
+        "finemath-4plus": {
+          "tokens": 10477,
+          "bytes": 40106,
+          "nll_sum": 23483.904231341337
+        },
+        "fineweb-edu-dedup": {
+          "tokens": 11124,
+          "bytes": 49393,
+          "nll_sum": 30941.21029876914
+        },
+        "libretexts": {
+          "tokens": 605,
+          "bytes": 2794,
+          "nll_sum": 1527.7619888300396
+        },
+        "pressbooks": {
+          "tokens": 6144,
+          "bytes": 24555,
+          "nll_sum": 14966.161762186117
+        },
+        "stackexchange": {
+          "tokens": 9323,
+          "bytes": 36994,
+          "nll_sum": 26308.880990249283
+        },
+        "stackv2-edu": {
+          "tokens": 13502,
+          "bytes": 44885,
+          "nll_sum": 20656.802010031523
+        },
+        "wikimedia": {
+          "tokens": 9013,
+          "bytes": 33335,
+          "nll_sum": 22391.879632630887
+        }
+      },
+      "elapsed_s": 16.09,
+      "nonfinite_logits": 0
+    },
+    {
+      "name": "ckpt-000052000-6b13028e",
+      "step": 52000,
+      "manifest_sha256": "7a3823f4902553f503e25d41d1e346e78ce78ccfc56d751cbccfb1aa399c578a",
+      "model_file_sha256": "0a8526fffc1384422a2600f8461da02d5bd03693caab9085feff6c00db0a8b33",
+      "model_state_sha256": "bc90c565f0ba235a5d07047cb80a5e25f6cd0bb6ce05f4c87cf7d6b494c1c705",
+      "loss": 2.2769756086889137,
+      "perplexity": 9.747156570572464,
+      "bpb": 0.8669253512351729,
+      "nll_sum": 146373.1000289581,
+      "by_source": {
+        "arxiv-papers": {
+          "tokens": 4096,
+          "bytes": 11525,
+          "nll_sum": 6490.086032210263
+        },
+        "finemath-4plus": {
+          "tokens": 10477,
+          "bytes": 40106,
+          "nll_sum": 23348.876613036224
+        },
+        "fineweb-edu-dedup": {
+          "tokens": 11124,
+          "bytes": 49393,
+          "nll_sum": 30915.482829173197
+        },
+        "libretexts": {
+          "tokens": 605,
+          "bytes": 2794,
+          "nll_sum": 1500.777347270472
+        },
+        "pressbooks": {
+          "tokens": 6144,
+          "bytes": 24555,
+          "nll_sum": 14876.956436555141
+        },
+        "stackexchange": {
+          "tokens": 9323,
+          "bytes": 36994,
+          "nll_sum": 26242.24650349719
+        },
+        "stackv2-edu": {
+          "tokens": 13502,
+          "bytes": 44885,
+          "nll_sum": 20668.55376567067
+        },
+        "wikimedia": {
+          "tokens": 9013,
+          "bytes": 33335,
+          "nll_sum": 22330.120501544963
+        }
+      },
+      "elapsed_s": 23.19,
+      "nonfinite_logits": 0
+    },
+    {
+      "name": "ckpt-000052034-336e5967",
+      "step": 52034,
+      "manifest_sha256": "a2f616c714bbad26a2dade682e71e80493ca70d6a4531430c64fdaedf5932e74",
+      "model_file_sha256": "71773e46db2511332af97891b6485b04bf414a448dab9c4b050988e0b532649c",
+      "model_state_sha256": "1fd07c0d0c6c6b355460ab82ebe02530047b5682a4e6a41b9e4f0146323076e4",
+      "loss": 2.2789957150196742,
+      "perplexity": 9.766866764908944,
+      "bpb": 0.8676944773442293,
+      "nll_sum": 146502.96054432474,
+      "by_source": {
+        "arxiv-papers": {
+          "tokens": 4096,
+          "bytes": 11525,
+          "nll_sum": 6526.976869633415
+        },
+        "finemath-4plus": {
+          "tokens": 10477,
+          "bytes": 40106,
+          "nll_sum": 23370.223644386653
+        },
+        "fineweb-edu-dedup": {
+          "tokens": 11124,
+          "bytes": 49393,
+          "nll_sum": 30978.19966652293
+        },
+        "libretexts": {
+          "tokens": 605,
+          "bytes": 2794,
+          "nll_sum": 1507.4302860604002
+        },
+        "pressbooks": {
+          "tokens": 6144,
+          "bytes": 24555,
+          "nll_sum": 14898.756412797295
+        },
+        "stackexchange": {
+          "tokens": 9323,
+          "bytes": 36994,
+          "nll_sum": 26260.18500302807
+        },
+        "stackv2-edu": {
+          "tokens": 13502,
+          "bytes": 44885,
+          "nll_sum": 20636.97118194358
+        },
+        "wikimedia": {
+          "tokens": 9013,
+          "bytes": 33335,
+          "nll_sum": 22324.21747995242
+        }
+      },
+      "elapsed_s": 24.37,
+      "nonfinite_logits": 0
+    }
+  ]
+}

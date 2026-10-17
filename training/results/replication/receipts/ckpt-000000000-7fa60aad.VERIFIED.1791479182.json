@@ -1,0 +1,60 @@
+{
+ "artifact": "checkpoint",
+ "run_id": "t1",
+ "checkpoint": "ckpt-000000000-7fa60aad",
+ "source": "j1pod:/workspace/j1ckpt/t1/ckpt-000000000-7fa60aad",
+ "local_path": "/media/cinqic/Cinqic Storage/juniper1-archive/checkpoints/t1/ckpt-000000000-7fa60aad",
+ "storage_class": "flowbox_hdd_archive",
+ "host_identity": {
+  "host": "FLOWBOX",
+  "mount_source": "/dev/sda1",
+  "fs_uuid": "3b337640-5967-4ef8-b7bb-44331c5bbbf4",
+  "fstype": "ext4",
+  "archive_root": "/media/cinqic/Cinqic Storage/juniper1-archive"
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "rc": 0,
+   "stderr": "",
+   "utc": "2026-10-08T17:06:21.266054+00:00"
+  }
+ ],
+ "transfer_s": 47.21625113487244,
+ "bytes": 593377969,
+ "MBps": 12.567240192471564,
+ "expected": {
+  "model.pt": {
+   "sha256": "2b460b37c28feec96634f4d21420bbd3a961e7ea85dcb3bed56be660bb2960ce",
+   "size": 593355099
+  },
+  "optim.pt": {
+   "sha256": "c5e8c46453ca76f23606375e1b3a2e56cbce64d1c31fc6a490bf81c301723b0f",
+   "size": 2209
+  },
+  "trainer.pt": {
+   "sha256": "5dcf6f6d42eaae441b13e08b76e07ccafbab6812746c6d30c7ad90cf525e8ae8",
+   "size": 16165
+  }
+ },
+ "observed": {
+  "model.pt": {
+   "size": 593355099,
+   "sha256": "2b460b37c28feec96634f4d21420bbd3a961e7ea85dcb3bed56be660bb2960ce"
+  },
+  "optim.pt": {
+   "size": 2209,
+   "sha256": "c5e8c46453ca76f23606375e1b3a2e56cbce64d1c31fc6a490bf81c301723b0f"
+  },
+  "trainer.pt": {
+   "size": 16165,
+   "sha256": "5dcf6f6d42eaae441b13e08b76e07ccafbab6812746c6d30c7ad90cf525e8ae8"
+  }
+ },
+ "manifest_sha256": "0aa3e804fbf6c42a428681999ff70e0638caf2bf4342137af404cc91f8916878",
+ "step": 0,
+ "replication_lag_s": 189.854119,
+ "status": "VERIFIED",
+ "reason": "ok",
+ "verified_utc": "2026-10-08T17:06:22.201739+00:00"
+}

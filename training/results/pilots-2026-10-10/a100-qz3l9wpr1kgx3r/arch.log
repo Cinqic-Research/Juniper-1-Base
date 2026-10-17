@@ -1,0 +1,10 @@
+2026-10-10T12:48:49Z arch-j1-core-28x640-s1 lr 0.0009295 tok j1tok-24k
+2026-10-10T12:48:49Z dispatched arch-j1-core-28x640-s1 on GPU 0
+2026-10-10T13:21:29Z all dispatched runs ended
+2026-10-10T13:21:29Z arch-j1-deep-30x576-s1 lr 0.0009798 tok j1tok-24k
+2026-10-10T13:21:29Z dispatched arch-j1-deep-30x576-s1 on GPU 0
+2026-10-10T13:55:03Z all dispatched runs ended
+2026-10-10T13:55:03Z arch-j1-wide-20x768-s1 lr 0.0016971 tok j1tok-24k
+2026-10-10T13:55:03Z dispatched arch-j1-wide-20x768-s1 on GPU 0
+2026-10-10T14:24:43Z all dispatched runs ended
+2026-10-10T14:24:43Z arch runs done

@@ -1,0 +1,19 @@
+== A: archive root unavailable (unmounted path) 2026-10-08T17:34:32Z
+archive root /media/cinqic/NotMounted/juniper1-archive is not mounted or missing; refusing to create it implicitly
+rc=1
+dir created implicitly: no
+== B: source pod unreachable
+RuntimeError: remote listing failed: ssh: Could not resolve hostname j1pod-unreachable: Name or service not known
+rc=1
+== C: idempotent re-run on archived checkpoints (no overwrite)
+{"checkpoint": "ckpt-000000015-7e9d30eb", "status": "ALREADY_ARCHIVED_VERIFIED", "reason": "ok", "bytes": null, "transfer_s": null, "MBps": null, "replication_lag_s": null}
+{"audit_chain_ok": true, "audit_lines": 3, "failed": 0}
+rc=0
+== D: resume with replica root missing uses primary (CPU, tiny)
+/media/cinqic/Cinqic Storage/AAA/juniper1/venv-torch/lib/python3.12/site-packages/torch/cuda/__init__.py:1174: UserWarning: Can't initialize NVML
+  raw_cnt = _raw_device_count_nvml()
+[resume] restored /tmp/tmp.EZQxgfX1PU/p/d/ckpt-000000003-e469c24b at step 3 in 0.01s (lr=0.00012)
+{"steps_run": 3, "final_step": 6, "tokens_per_s_median": 6426.222200735469, "step_ms_median": 9.959194998373277, "peak_vram_gib": 0.0, "final_param_sha256": "d4b8d5411efb5f3ed57a875c8d7b7b8cc398f6d42b8149eff787c15255f80f1a"}
+== E: primary missing, replica present -> resume from replica
+[resume] restored /tmp/tmp.EZQxgfX1PU/replica/d/ckpt-000000006-770ff7bc at step 6 in 0.01s (lr=0.00021)
+{"steps_run": 0, "final_step": 6, "tokens_per_s_median": null, "step_ms_median": null, "peak_vram_gib": 0.0, "final_param_sha256": "d4b8d5411efb5f3ed57a875c8d7b7b8cc398f6d42b8149eff787c15255f80f1a"}

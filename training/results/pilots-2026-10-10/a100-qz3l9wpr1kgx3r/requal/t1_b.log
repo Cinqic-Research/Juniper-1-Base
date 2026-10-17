@@ -1,0 +1,9 @@
+[ckpt] candidate /root/ckpt-requal/t1/ckpt-000000015-6596fe5c step=15: ok
+[resume] restored /root/ckpt-requal/t1/ckpt-000000015-6596fe5c at step 15 in 48.68s (lr=0.000767248)
+step 20 loss 7.9075 lr 0.000637 315ms
+[ckpt] step 25 -> /root/ckpt-requal/t1/ckpt-000000025-37a0621b (1667.7 MiB, 6.38s)
+step 30 loss 7.8094 lr 0.000279 314ms
+[ckpt] step 35 -> /root/ckpt-requal/t1/ckpt-000000035-172422c0 (1667.7 MiB, 6.48s)
+step 40 loss 7.5574 lr 9.4e-05 316ms
+[ckpt] step 40 -> /root/ckpt-requal/t1/ckpt-000000040-7cefeecb (1667.7 MiB, 6.68s)
+{"steps_run": 25, "final_step": 40, "tokens_per_s_median": 103904.9579518116, "step_ms_median": 315.36512449383736, "peak_vram_gib": 28.859490394592285, "final_param_sha256": "24d7a59a474c6d9a696e273495b99eb418ba9bcafde1008f130cde00c3b7ad5c"}

@@ -1,0 +1,39 @@
+{
+ "accounting": {
+  "candidates_equal_candidate_rows": true,
+  "candidates_equal_removed_plus_unselected_plus_leaked_plus_accepted": true,
+  "dedup_saw_all_candidates": true,
+  "finalize_dedup_agree": true,
+  "raw_documents": 37282242,
+  "raw_equals_stage_total": true
+ },
+ "contamination": {
+  "contaminated_documents_found": 0,
+  "scanned_documents": 5793
+ },
+ "provisional_token_counts": {
+  "problems": [],
+  "reencoded_sample_documents": 1557,
+  "token_totals": {
+   "measure-24k": 3442113805,
+   "measure-28k": 3393020202,
+   "measure-32k": 3354619004
+  }
+ },
+ "shards": {
+  "problems": [],
+  "rows_by_split_from_parquet": {
+   "test": 2610,
+   "train": 2961724,
+   "validation": 2583
+  },
+  "shards": 357
+ },
+ "uniqueness_and_splits": {
+  "duplicate_doc_ids": 0,
+  "duplicate_signature_hashes": 0,
+  "duplicate_text_hashes": 0,
+  "groups_spanning_splits": 0,
+  "split_mismatches": 0
+ }
+}

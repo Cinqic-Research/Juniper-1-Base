@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "juniper1"
+version = "1.0.0"
+description = "Juniper 1 Base: Cinqic's from-scratch 142.77M-parameter base language model (loader, tokenizer, completion CLI)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Cinqic" }]
+dependencies = [
+  "torch>=2.4",
+  "numpy>=1.26",
+  "tokenizers>=0.20",
+  "safetensors>=0.4",
+]
+
+[project.optional-dependencies]
+hub = ["huggingface_hub>=0.25"]
+dev = ["pytest>=8", "ruff>=0.6", "huggingface_hub>=0.25"]
+
+[project.scripts]
+juniper1 = "juniper1.cli:main"
+
+[tool.setuptools]
+packages = ["juniper1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"

@@ -1,0 +1,6 @@
+{"ts_utc": "2026-10-10T06:42:38.666Z", "mono_s": 3703920.775849325, "producer": "pod_controller", "seq": 11, "event": "poll", "provider": {"desired_status": "RUNNING", "cost_per_hr": 1.79, "uptime_s": 632, "last_status_change": "Rented by User: Sat Oct 10 2026 06:31:48 GMT+0000 (Coordinated Universal Time)"}, "billed_s_est": 780.0, "spend_est_usd": 0.4008, "rate_usd_h": 1.85, "gpu_util": 0.0, "idle_s": 0.0, "phase": "running", "training_pids": []}
+{"ts_utc": "2026-10-10T06:43:08.860Z", "mono_s": 3703950.970090251, "producer": "pod_controller", "seq": 12, "event": "poll", "provider": {"desired_status": "RUNNING", "cost_per_hr": 1.79, "uptime_s": 671, "last_status_change": "Rented by User: Sat Oct 10 2026 06:31:48 GMT+0000 (Coordinated Universal Time)"}, "billed_s_est": 840.0, "spend_est_usd": 0.4317, "rate_usd_h": 1.85, "gpu_util": 0.0, "idle_s": 0.0, "phase": "running", "training_pids": []}
+data OK
+bootstrap done 2026-10-10T06:44:01Z
+pytest rc=2
+overlay             250G    2G      249G   1% /

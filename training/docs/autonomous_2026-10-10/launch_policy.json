@@ -1,0 +1,268 @@
+{
+ "schema": "j1.launch-policy.v1",
+ "frozen_before": "any launch run; values chosen under the owner work order 2026-10-10 delegation",
+ "run_id": "j1-base-r2",
+ "seed": 1,
+ "warmup_updates": 500,
+ "min_lr_ratio": 0.1,
+ "tranche_max_targets": 3410100224,
+ "canary_updates": 50,
+ "eval_every_updates": 500,
+ "checkpoint_root": "/vol/ckpt",
+ "checkpoint_every_updates": 500,
+ "checkpoint_every_active_seconds": 900,
+ "validation_scored_bytes": 12311466,
+ "instability_after_update": 1000,
+ "instability_rel": 0.02,
+ "limits": {
+  "usd_soft": 26.0,
+  "usd_hard": 29.0,
+  "runtime_hours_max": 15.2,
+  "volume_bytes_max": 45000000000,
+  "max_replica_lag_updates": 1000,
+  "max_replica_lag_seconds": 600
+ },
+ "amendments": [
+  {
+   "id": "LP-1",
+   "utc": "2026-10-11T01:30Z",
+   "before": "any launch run (no manifest built, nothing authorized)",
+   "changes": {
+    "tranche_max_targets": [
+     250000000,
+     131072000
+    ],
+    "validation_scored_bytes": [
+     12348996,
+     12311466
+    ]
+   },
+   "reason": "The registered eager/compiled equivalence check FAILED on the final-bpb criterion (0.326% vs 0.3%; loss criterion passed 0.33% vs 0.5%), so per the launch plan the tranche uses the eager reference profile (65,194 tok/s, ~1.005 s/update, half the compiled speed). At 250M targets (3,814 updates) the eager tranche needs ~85 min (~$2.54), exceeding the 1.4 h runtime limit and the $2.40 hard cap. 2,000 updates (131,072,000 targets, a checkpoint boundary) gives ~61 min (~$1.81) with the measured overheads (process start, canary, replica waits, 27 s evals, checkpoints), ~10 min below the $2.10 soft limit. validation_scored_bytes corrected to the v0.2.2 value (field unused by the tooling; the manifest takes it from validation_record.json).",
+   "unchanged": "all limits, schedule (full-epoch horizon), seed, LR, warmup, eval/checkpoint cadence, acceptance criteria"
+  },
+  {
+   "id": "LP-2",
+   "utc": "2026-10-11T00:20:44-04:00",
+   "before": "any relaunch (attempt j1-base-r1 stopped before update 1; no new manifest built, nothing authorized)",
+   "changes": {
+    "required_base_gate_ids": [
+     null,
+     [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B07",
+      "B08",
+      "B09",
+      "B10",
+      "B11",
+      "B12",
+      "B13a",
+      "B13b",
+      "B13c",
+      "B14",
+      "B15",
+      "B16",
+      "B17"
+     ]
+    ],
+    "stall_s": [
+     null,
+     900
+    ],
+    "acceptance.throughput_allowance": [
+     null,
+     0.9
+    ],
+    "supervision.runs_dir": [
+     null,
+     "/vol/runs"
+    ],
+    "supervision.stop_file": [
+     null,
+     "/vol/runs/STOP_REQUESTED"
+    ]
+   },
+   "reason": "Independent review of the launch chain (findings T-01, T-10, T-13, T-15): the readiness matrix was not bound to the gate-definition file, so a matrix evaluated from a trimmed gate set (the committed 16-gate matrix predates B17) could authorize a launch; the policy now names the base gate ids every authorizing matrix must contain (B13 split into B13a timing / B13b shutdown drills / B13c funding, plus B17 startup qualification). The reviewed 900 s stall rule, the 90 % canary throughput allowance and the volume paths both supervisors must target were constants in code or prose; they are registered here so launch_guard.py compares the armed controllers and the canary against the policy instead of literals. No limit, schedule, seed, LR, cadence or acceptance threshold changes.",
+   "unchanged": "all limits, tranche_max_targets (LP-1), schedule, seed, LR, warmup, eval/checkpoint cadence, acceptance criteria",
+   "utc_recorded_in_error": "2026-10-11T12:00Z",
+   "utc_note": "the utc field was written as 2026-10-11T12:00Z (a future time) by the implementer; corrected to the commit time of d6f1d5f on 2026-10-11 (LP-3)"
+  },
+  {
+   "id": "LP-3",
+   "utc": "2026-10-11T06:22Z",
+   "before": "any relaunch (no manifest built for the new attempt; nothing authorized)",
+   "changes": {
+    "run_id": [
+     "j1-base-r1",
+     "j1-base-r2"
+    ],
+    "limits.usd_soft": [
+     2.1,
+     3.0
+    ],
+    "limits.usd_hard": [
+     2.4,
+     3.5
+    ],
+    "limits.runtime_hours_max": [
+     1.4,
+     1.8
+    ],
+    "preservation.offsite_deadline_seconds": [
+     null,
+     14400
+    ],
+    "preservation.offsite_destinations": [
+     null,
+     [
+      "drive",
+      "hf"
+     ]
+    ],
+    "preservation.retain_on_volume_until_offsite_verified": [
+     null,
+     true
+    ],
+    "preservation.measured_bandwidth_mb_s": [
+     null,
+     {
+      "pod_to_flowbox": 13.0,
+      "flowbox_to_drive": 1.7,
+      "flowbox_to_hf": 2.2,
+      "basis": "571 MB init checkpoint of b17-qual-r1, 2026-10-11 04:3xZ..05:0xZ"
+     }
+    ]
+   },
+   "reason": "New attempt identity after the stopped j1-base-r1 (old LAUNCH_AUTHORIZED/CANARY_ACCEPTED markers are not reusable). Launch limits amended under funding contract v5 (LAUNCH allocation hard 3.50 / soft 3.00, 1.8 h) using the measured all-in eager cost (65,194 tok/s reference; 2,000 updates about 34 min of updates plus startup, evaluations, checkpoints and replica waits); the training scope stays 2,000 updates / 131,072,000 targets. Off-site delivery: measured FLOWBOX upload bandwidth (1.7-2.2 MB/s) makes immediate Drive/HF replication of each 1.63 GiB checkpoint impossible within the checkpoint interval; the frozen rule is: HDD replica within 600 s / 1,000 updates (guard-enforced, unchanged), Drive and HF receipts within 14,400 s of the HDD verification (tools/preserve_ckpts.py queue), every checkpoint retained on the network-volume primary until both off-site receipts exist, compute may stop once the primary and the HDD replica are verified (two pod-independent destinations).",
+   "unchanged": "schedule (full-epoch horizon 52,034, warmup 500, LR 0.0016971, min ratio 0.1), seed 1, tokens per update, canary 50, tranche stop 2,000, eval/checkpoint cadence, acceptance criteria, instability rule, stall rule, required base gates"
+  },
+  {
+   "id": "LP-4",
+   "utc": "2026-10-11T16:10Z",
+   "before": "any continuation run (j1-base-r2 stopped by design at update 2,000; both pods EXITED; no manifest built for the continuation; nothing authorized)",
+   "changes": {
+    "tranche_max_targets": [
+     131072000,
+     3410100224
+    ],
+    "limits.usd_soft": [
+     3.0,
+     30.0
+    ],
+    "limits.usd_hard": [
+     3.5,
+     33.0
+    ],
+    "limits.runtime_hours_max": [
+     1.8,
+     17.5
+    ],
+    "continuation": [
+     null,
+     "from_update 2000 (ckpt-000002000-ca0a2f88)"
+    ],
+    "retention": [
+     null,
+     "keep every 5,000 updates + {0, 2000, final 52034}; prune the rest after replica/off-site verification"
+    ]
+   },
+   "reason": "Owner continuation decision after the limited tranche (report launch_r2_report.md: 1.2228 bpb at 2,000; canary C1-C9 accepted; all six checkpoints preserved). The remaining 50,034 updates at the measured 1.00 s/update (13.9 h) plus the measured evaluation/checkpoint overhead (27.3 s per 500-update cycle in the r2 tranche: ~0.8 h) and startup need about 14.8 h, about $28.1 at the declared $1.90/h session rate ($1.79 GPU + $0.028 disk observed); the limits carry a margin (soft 30.0 / hard 33.0 / 17.5 h) inside funding contract v7. The tranche stop becomes the full horizon (a continuation may end at the horizon; a fresh run still needs a strict prefix). Every-500-update checkpoints (100 x 1.63 GiB) exceed the 50 GB volume and the HDD, so retention keeps every 10th off-site as the owner chose (13 keepers: 0, 2000, 5000..50000, 52034). Canary rule unchanged: the continuation reuses the accepted canary of this run (its acceptance record is bound by hash) and resumes from exactly the declared verified checkpoint; a newer valid checkpoint on the volume stops the runner for an operator decision.",
+   "unchanged": "run_id, seed, LR, warmup, min_lr_ratio, horizon, data order, eval/checkpoint cadence (500), canary_updates, instability rule, stall rule, throughput allowance, replica lag limits, volume cap, supervision paths, preservation deadline/destinations"
+  },
+  {
+   "id": "LP-5",
+   "utc": "2026-10-12T00:40Z",
+   "before": "any relaunch of the continuation (run stopped by the launch guard at update 8585 on 2026-10-11 18:37Z; pod EXITED; nothing authorized)",
+   "changes": {
+    "continuation.from_update": [
+     2000,
+     8500
+    ],
+    "continuation.checkpoint": [
+     "ckpt-000002000-ca0a2f88",
+     "ckpt-000008500-205ec566"
+    ],
+    "limits.usd_soft": [
+     30.0,
+     26.0
+    ],
+    "limits.usd_hard": [
+     33.0,
+     29.0
+    ],
+    "limits.runtime_hours_max": [
+     17.5,
+     15.2
+    ]
+   },
+   "reason": "FLOWBOX (the HDD replica host) lost power at ~18:27Z; the launch guard stopped the run as designed when the replica lag exceeded 1,000 updates for 600 s; both controllers stopped the pod (verified EXITED). Remaining 43,534 updates from 8500 need ~12.1 h + ~0.7 h overhead at $1.90/h = ~24.3; limits 26.0/29.0/15.2 h keep the margin inside funding contract v7 (CONTINUATION allocation 33.0 minus the 3.93 actual of the stopped job). The 85 updates after 8500 are re-trained (deterministic data order; ~1.5 min).",
+   "unchanged": "run_id, seed, LR, warmup, horizon, data order, cadence, canary acceptance (reused), retention, stall/replica/instability rules, supervision paths"
+  }
+ ],
+ "required_base_gate_ids": [
+  "B01",
+  "B02",
+  "B03",
+  "B04",
+  "B05",
+  "B06",
+  "B07",
+  "B08",
+  "B09",
+  "B10",
+  "B11",
+  "B12",
+  "B13a",
+  "B13b",
+  "B13c",
+  "B14",
+  "B15",
+  "B16",
+  "B17"
+ ],
+ "stall_s": 900,
+ "acceptance": {
+  "throughput_allowance": 0.9
+ },
+ "supervision": {
+  "runs_dir": "/vol/runs",
+  "stop_file": "/vol/runs/STOP_REQUESTED"
+ },
+ "preservation": {
+  "offsite_deadline_seconds": 14400,
+  "offsite_destinations": [
+   "drive",
+   "hf"
+  ],
+  "retain_on_volume_until_offsite_verified": true,
+  "measured_bandwidth_mb_s": {
+   "pod_to_flowbox": 13.0,
+   "flowbox_to_drive": 1.7,
+   "flowbox_to_hf": 2.2,
+   "basis": "571 MB init checkpoint of b17-qual-r1, 2026-10-11 04:3xZ..05:0xZ"
+  }
+ },
+ "continuation": {
+  "from_update": 8500,
+  "checkpoint": "ckpt-000008500-205ec566",
+  "checkpoint_manifest_sha256": "85eb6685d9e4405724a7f6733d6571c3e9f6037739401b350e9b584f984be333",
+  "canary_acceptance_sha256": "79b546e9e51c23ae0f2bb3c56460aa7bd106c9d33927eee11fcf8d773007b5d1",
+  "stage_id": "base-tranche-1",
+  "authority": "owner decision 2026-10-11 ~15:55Z (chat, after the LIMITED_TRANCHE_COMPLETE report and a $30 reload read at $42.26): continue the full epoch in one supervised session, eager profile, keep every 10th checkpoint off-site and prune the rest | LP-5: resume after the guard stop of 2026-10-11 18:37:39Z (FLOWBOX power-off -> replica lag; planned_shutdown checkpoint 8585 archived to /vol/ckpt/attempts as an operator decision because the resume point must be a 500-update checkpoint boundary; the eval checkpoint 8500 (best) is the resume point); owner directive 2026-10-11 (autonomous continuation) applies"
+ },
+ "retention": {
+  "keep_every_updates": 5000,
+  "keep_steps": [
+   0,
+   2000,
+   52034
+  ],
+  "volume": "the launch guard deletes non-keepers once their HDD replica is verified, always keeping the two newest valid checkpoints; keepers stay on the volume until the run ends",
+  "hdd": "the replicator deletes non-keepers after a newer verified replica (two newest kept); the preserver releases keepers after both off-site receipts, keeping the two newest preserved keepers",
+  "offsite": "keepers only (Drive + HF), each within preservation.offsite_deadline_seconds of its HDD verification"
+ }
+}

@@ -1,0 +1,370 @@
+{
+ "schema": "j1.readiness-gates-source.v1",
+ "gates": [
+  {
+   "id": "P01",
+   "requirement": "Current specification and repository context reconciled",
+   "status": "PASS",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/prep/16_v0.7_reconciliation.md"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/review_2026-10-10/REVIEW_REPORT.md"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/prep/00_investigation_report.md"
+    }
+   ],
+   "verification_method": "owner-issued v0.7 located and hash-verified; live inventory of all ten repositories and open PR heads; differences recorded in 16",
+   "remaining_problem": null,
+   "critical": true
+  },
+  {
+   "id": "P02",
+   "requirement": "Model purpose and deployment constraints defined",
+   "status": "PASS",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/prep/01_model_definition.md"
+    }
+   ],
+   "verification_method": "document review against directive section 3",
+   "remaining_problem": null,
+   "critical": true
+  },
+  {
+   "id": "P03",
+   "requirement": "Language, parameter, context and latency objectives defined",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/prep/01_model_definition.md"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "results/pilots-2026-10-10/selections/select_architecture.json"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "latency objectives L1-L4 remain provisional and unmeasured on a trained model; the architecture (and so the parameter count, 143,072,384 for core 28x640) is provisional (rule outcome INCONCLUSIVE)",
+   "critical": true
+  },
+  {
+   "id": "P04",
+   "requirement": "Source licensing and training-use decisions resolved",
+   "status": "PASS",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Data",
+     "path": "configs/owner_decisions.toml"
+    },
+    {
+     "repo": "Juniper-1-Data",
+     "path": "docs/owner_decision_brief_v0.3.md"
+    },
+    {
+     "note": "Juniper-1-Data evidence pinned at commit 1e99b543f3ce55d5b76270e2cd721de29ba36ccd (opus/pretraining-prep) unless the generated matrix records another --repo commit"
+    }
+   ],
+   "verification_method": "owner approval recorded 2026-10-08; gates read the decisions file",
+   "remaining_problem": "weight-release treatment and dataset redistribution remain PENDING (release, not training)",
+   "critical": true
+  },
+  {
+   "id": "P05",
+   "requirement": "Corrected accepted corpus has immutable build identity and all data gates pass",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Data",
+     "path": "docs/qualification_2026-10-10.md"
+    },
+    {
+     "repo": "Juniper-1-Data",
+     "path": "tools/successor_manifest.py"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "successor j1-base-v0.2.1 has its own lineage-derived identity (review H1 fixed) and passes the re-run successor checks; v0.2 gates remain 19 PASS / 3 NOT VERIFIED (incl. transactional recovery J1-13); owner approval of the successor is required",
+   "critical": true
+  },
+  {
+   "id": "P06",
+   "requirement": "Evaluation exclusions and contamination coverage support held-out claims",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Data",
+     "path": "docs/qualification_2026-10-10.md"
+    },
+    {
+     "repo": "Juniper-1-Data",
+     "path": "docs/contamination_adjudication_criteria_v2.md"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "strengthened layers give 0.94-1.00 item coverage on public suites and removed 555 documents; internal AAA/App suites stay at 0.06-0.41 Layer A coverage; paraphrase/answer-only/short-item blind spots recorded; held-out claims must stay scoped",
+   "critical": true
+  },
+  {
+   "id": "P07",
+   "requirement": "Initial approximately 3B accepted tokens and exposure schedule use the frozen tokenizer",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Data",
+     "path": "docs/qualification_2026-10-10.md"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/contract/training_contract_v1.json"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "proposed shards (j1tok-24k over v0.2.1): 3,433,653,388 train document tokens, sampled independent count check PASS (not a full recount); tokenizer and one-epoch exposure await owner freeze",
+   "critical": true
+  },
+  {
+   "id": "P08",
+   "requirement": "Tokenizer vocabulary, control IDs, round trips, chat template and hashes are frozen",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/prep/17_pilot_results_2026-10-10.md"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "results/pilots-2026-10-10/selections/select_tokenizer.json"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/prep/04_protocol_juniper_chat_v1.md"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "rule selects j1tok-24k inside the tie band (provisional); owner freeze pending; juniper-chat-v1 template has no App-side parser yet (A1)",
+   "critical": true
+  },
+  {
+   "id": "P09",
+   "requirement": "Architecture is selected after controlled comparison and exact parameter accounting",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/prep/17_pilot_results_2026-10-10.md"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "results/pilots-2026-10-10/selections/select_architecture.json"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "architecture-v1 rule INCONCLUSIVE: wide 20x768 clears the 0.57 % band only on equal compute; core 28x640 retained provisionally; one seed per shape; LR grid edges",
+   "critical": true
+  },
+  {
+   "id": "P10",
+   "requirement": "Native protocol grammar, escaping, role boundaries and host adapter are frozen",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/prep/04_protocol_juniper_chat_v1.md"
+    }
+   ],
+   "verification_method": "Independent evidence review against owner-issued v0.7; require exact identities and direct gate results before PASS",
+   "remaining_problem": "juniper-chat-v1 is proposed; final token/turn semantics and App adapter contract lack end-to-end qualification",
+   "critical": true
+  },
+  {
+   "id": "P11",
+   "requirement": "Model numerics, causal and document masks, loss normalization and optimizer exclusions pass reference checks",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/prep/13_a100_runbook.md"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "results/pilots-2026-10-10/a100-ixxkq50q949bhl/profile/compiled.json"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "CPU tests and A100 qualification pass; final shape and kernel policy (eager vs compiled) not frozen",
+   "critical": true
+  },
+  {
+   "id": "P12",
+   "requirement": "Real-data loader, deterministic packing, shuffle state and split isolation are qualified",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "results/pilots-2026-10-10/a100-ixxkq50q949bhl/recovery/results.json"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "j1bench/data.py"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "exact-epoch consumption, full-split evaluation and bitwise batch replay qualified on the v5 real-data prefix; not yet exercised on the final v0.2.1 shards",
+   "critical": true
+  },
+  {
+   "id": "P13",
+   "requirement": "Complete checkpoint cadence, retention, corruption rejection and exact restore are qualified",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "results/pilots-2026-10-10/a100-ixxkq50q949bhl/recovery/results.json"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "results/pilots-2026-10-10/a100-qz3l9wpr1kgx3r/requal/result.json"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "results/pilots-2026-10-10/drive-drill/README.md"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "trainer recovery suite 8/8 on A100 real data (bitwise; T9 failed closed first, fixed in cb2a74d, rerun PASS) and Drive-only resume PASS; Data-stage transactional recovery (J1-13) and the full v0.7 retention policy are not qualified",
+   "critical": true
+  },
+  {
+   "id": "P14",
+   "requirement": "Actual single A100 SXM 80GB stack, storage class and BF16 reference profile are qualified",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "results/pilots-2026-10-10/a100-qz3l9wpr1kgx3r/requal/result.json"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "results/pilots-2026-10-10/a100-ixxkq50q949bhl/profile/eager.json"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "two A100 SXM 80GB hosts qualified (stack, SDPA, tests, bitwise continuation, SIGKILL); eager BF16 reference profile measured; checkpoint storage class/replica for the canonical run not qualified; launch host must be re-qualified at launch",
+   "critical": true
+  },
+  {
+   "id": "P15",
+   "requirement": "Controlled throughput and equal-token learning pilots justify any optimized profile",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "results/pilots-2026-10-10/a100-ixxkq50q949bhl/profile/compiled.json"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "results/pilots-2026-10-10/a100-ixxkq50q949bhl/profile/eager.json"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "compiled profile 114.4K vs eager 56.2K tokens/s on real data; no equal-token learning equivalence run and no owner-approved promotion threshold",
+   "critical": true
+  },
+  {
+   "id": "P16",
+   "requirement": "Automatic lifecycle timing, clock, fault and billing evidence meet section 8",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/review_2026-10-10/PRESERVATION_AND_BILLING.md"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/prep/11_time_logging.md"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "per-pod ledgers, controller stops and provider billing reconciled for preparation; full section 8 fault matrix not exercised",
+   "critical": true
+  },
+  {
+   "id": "P17",
+   "requirement": "Juniper App native adapter, model export and deployment contract are qualified",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/prep/04_protocol_juniper_chat_v1.md"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/prep/07_inference_benchmark.md"
+    }
+   ],
+   "verification_method": "Independent evidence review against owner-issued v0.7; require exact identities and direct gate results before PASS",
+   "remaining_problem": "App GPT-OSS backend and random-weight inference probes do not establish native Juniper 1 integration or final export parity",
+   "critical": true
+  },
+  {
+   "id": "P18",
+   "requirement": "Evaluation prompts, metrics and pass thresholds are frozen before canonical run",
+   "status": "OWNER_DECISION_REQUIRED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/prep/08_evaluation_framework.md"
+    }
+   ],
+   "verification_method": "Independent evidence review against owner-issued v0.7; require exact identities and direct gate results before PASS",
+   "remaining_problem": "evaluation framework is proposed; project-approved accuracy, regression and deployment thresholds are not frozen",
+   "critical": true
+  },
+  {
+   "id": "P19",
+   "requirement": "HDD, Drive, GitHub and Hugging Face inventories, byte receipts and Drive-only recovery pass",
+   "status": "NOT_VERIFIED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "results/pilots-2026-10-10/drive-drill/README.md"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/review_2026-10-10/PRESERVATION_AND_BILLING.md"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "Drive-only drill PASS (repositories, representative shards, tokenizers, checkpoint resume bitwise) but representative only; complete Drive coverage of every PRESERVE artifact, encryption key custody and HDD capacity remain open",
+   "critical": true
+  },
+  {
+   "id": "P20",
+   "requirement": "Exact-head integration, resource budget and owner launch decision are complete",
+   "status": "OWNER_DECISION_REQUIRED",
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/contract/training_contract_v1.json"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/review_2026-10-10/REVIEW_REPORT.md"
+    }
+   ],
+   "verification_method": "independent evidence review 2026-10-10 against owner-issued v0.7 (DOCX SHA-256 121fcb1d…92ee3)",
+   "remaining_problem": "contract is PROPOSED_FOR_OWNER_FREEZE; launch budget, tokenizer, architecture, successor corpus and profile need owner decisions; canonical launch not authorized",
+   "critical": true
+  }
+ ],
+ "mapping_note": "P01-P04 are inherited preparation labels; P05-P20 are reviewer-defined operational gates mapped to owner-issued v0.7, not numbered clauses in that specification.",
+ "owner_spec_sha256": "121fcb1de0dc927ce0d8d725c10bb68d199e28185f699d786472191418292ee3"
+}

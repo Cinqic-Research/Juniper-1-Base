@@ -1,0 +1,227 @@
+{
+ "acquire_version": "j1.acquire.v1",
+ "acquired_utc": "2026-10-07T15:49:48+00:00",
+ "files": [
+  {
+   "git_blob_oid": "0974057d4a13e9580be0579d305dc788b4767921",
+   "path": "stack-edu-0007.json.gz",
+   "retrieved_utc": "2026-10-07T15:34:01+00:00",
+   "sha256": "313da4aa3f1ee4b53af2bc5a16ff849e524908f8c69e5e8595f791b48fe6ac41",
+   "size": 500909518,
+   "upstream_sha256": "313da4aa3f1ee4b53af2bc5a16ff849e524908f8c69e5e8595f791b48fe6ac41",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0007.json.gz"
+  },
+  {
+   "git_blob_oid": "e604ca936cbd1c82e2ceab4b66fd9d4e3cb453b6",
+   "path": "stack-edu-0011.json.gz",
+   "retrieved_utc": "2026-10-07T15:36:35+00:00",
+   "sha256": "a5f93c9ddda5cee3b264e6ac28f04908c3a5547efa45a23c6c60e4c72bf7a0ba",
+   "size": 503194768,
+   "upstream_sha256": "a5f93c9ddda5cee3b264e6ac28f04908c3a5547efa45a23c6c60e4c72bf7a0ba",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0011.json.gz"
+  },
+  {
+   "git_blob_oid": "474b1159fe0db85c92d1e3b5ba43670752c9d536",
+   "path": "stack-edu-0018.json.gz",
+   "retrieved_utc": "2026-10-07T15:38:26+00:00",
+   "sha256": "b876986af4759f761e6cace36601512ec3e0c184a362006adf6bd0cf2713e49a",
+   "size": 985022586,
+   "upstream_sha256": "b876986af4759f761e6cace36601512ec3e0c184a362006adf6bd0cf2713e49a",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0018.json.gz"
+  },
+  {
+   "git_blob_oid": "e391710e2e0708511b9971ea79a56e209073e55a",
+   "path": "stack-edu-0026.json.gz",
+   "retrieved_utc": "2026-10-07T15:39:55+00:00",
+   "sha256": "40510d410c834fdd7d482d21e42e8170fd5e760fae29d13e1f389b0317a123aa",
+   "size": 990986395,
+   "upstream_sha256": "40510d410c834fdd7d482d21e42e8170fd5e760fae29d13e1f389b0317a123aa",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0026.json.gz"
+  },
+  {
+   "git_blob_oid": "2adfd43fd5ed0d485da68eb2abf20c2f6a131cac",
+   "path": "stack-edu-0036.json.gz",
+   "retrieved_utc": "2026-10-07T15:40:45+00:00",
+   "sha256": "51213f93adbe7e84c723fba9157c1d615dd0d83c142ced19456fdfd324dd45dd",
+   "size": 969833070,
+   "upstream_sha256": "51213f93adbe7e84c723fba9157c1d615dd0d83c142ced19456fdfd324dd45dd",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0036.json.gz"
+  },
+  {
+   "git_blob_oid": "474f9ee0d45602e8ef2813a9b0038b0dffbb244c",
+   "path": "stack-edu-0047.json.gz",
+   "retrieved_utc": "2026-10-07T15:41:41+00:00",
+   "sha256": "cb26c7519a343fc2a2f1004348b14ae0d3e7d19effe70bfe41f5a6125c650840",
+   "size": 932971390,
+   "upstream_sha256": "cb26c7519a343fc2a2f1004348b14ae0d3e7d19effe70bfe41f5a6125c650840",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0047.json.gz"
+  },
+  {
+   "git_blob_oid": "4e071629d5c90ca615a27ba32f8c4cbe2f7e6fe0",
+   "path": "stack-edu-0055.json.gz",
+   "retrieved_utc": "2026-10-07T15:43:59+00:00",
+   "sha256": "aaae483c2830196e72dbcee96b3f94c416e83b879c39db113c2982a33e024e8c",
+   "size": 964345436,
+   "upstream_sha256": "aaae483c2830196e72dbcee96b3f94c416e83b879c39db113c2982a33e024e8c",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0055.json.gz"
+  },
+  {
+   "git_blob_oid": "d6a531ca93526aeaec3475e8a71cc9da194f68c4",
+   "path": "stack-edu-0077.json.gz",
+   "retrieved_utc": "2026-10-07T15:43:52+00:00",
+   "sha256": "d0ca3bcfb871b717855383bfef6500b0c5ba5333b739b5acae94ca12ce5fb36d",
+   "size": 971788667,
+   "upstream_sha256": "d0ca3bcfb871b717855383bfef6500b0c5ba5333b739b5acae94ca12ce5fb36d",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0077.json.gz"
+  },
+  {
+   "git_blob_oid": "be117618173dbf69e6c56e55b4aa9bf0772be316",
+   "path": "stack-edu-0079.json.gz",
+   "retrieved_utc": "2026-10-07T15:44:51+00:00",
+   "sha256": "7eeb9e77151c3766af1b611e3230869cde9833a47ea8c06749187b295b863dc4",
+   "size": 970216639,
+   "upstream_sha256": "7eeb9e77151c3766af1b611e3230869cde9833a47ea8c06749187b295b863dc4",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0079.json.gz"
+  },
+  {
+   "git_blob_oid": "93e3849433af47e2c17f0088265faea709b0ab16",
+   "path": "stack-edu-0082.json.gz",
+   "retrieved_utc": "2026-10-07T15:47:18+00:00",
+   "sha256": "65a78e66c9548fa2f2668c560d37cc4576f4307183582d345e3aa8ef88a1656b",
+   "size": 974994520,
+   "upstream_sha256": "65a78e66c9548fa2f2668c560d37cc4576f4307183582d345e3aa8ef88a1656b",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0082.json.gz"
+  },
+  {
+   "git_blob_oid": "f8ee8f8b5ee0994fb5edbccee8ac156fe957bffa",
+   "path": "stack-edu-0084.json.gz",
+   "retrieved_utc": "2026-10-07T15:49:48+00:00",
+   "sha256": "5e2ad7d634976f90694a2f644922a6fc92b54d624958440eea532a7ae2bda3b8",
+   "size": 987435422,
+   "upstream_sha256": "5e2ad7d634976f90694a2f644922a6fc92b54d624958440eea532a7ae2bda3b8",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0084.json.gz"
+  },
+  {
+   "git_blob_oid": "2a0d9c8b6defae5d2a84e83d2428a7e0fc31ce44",
+   "path": "stack-edu-0086.json.gz",
+   "retrieved_utc": "2026-10-07T15:48:35+00:00",
+   "sha256": "ec8fd68e8917d13050e94de64166ef1784af9e7654e1ce4b3d7c1e971401db65",
+   "size": 992679420,
+   "upstream_sha256": "ec8fd68e8917d13050e94de64166ef1784af9e7654e1ce4b3d7c1e971401db65",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0086.json.gz"
+  },
+  {
+   "git_blob_oid": "b1e21359c12a2fb28c00dbf0280ee780f1a859d0",
+   "path": "stack-edu-0088.json.gz",
+   "retrieved_utc": "2026-10-07T15:48:34+00:00",
+   "sha256": "6cb1dda1f1ed3752d5e28c8a587661bdcbd69ec7a323e5cc6ac0f2a105b30956",
+   "size": 985136348,
+   "upstream_sha256": "6cb1dda1f1ed3752d5e28c8a587661bdcbd69ec7a323e5cc6ac0f2a105b30956",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0088.json.gz"
+  },
+  {
+   "git_blob_oid": "e8b5d9674df3176a01b41a5c34d0519dc62fe0ad",
+   "path": "stack-edu-0092.json.gz",
+   "retrieved_utc": "2026-10-07T15:49:48+00:00",
+   "sha256": "f31606e495073873a2f688abc09c266f327cdd8fefbd263958dd3b922655a1b0",
+   "size": 979217647,
+   "upstream_sha256": "f31606e495073873a2f688abc09c266f327cdd8fefbd263958dd3b922655a1b0",
+   "url": "https://huggingface.co/datasets/common-pile/stackv2_edu_filtered/resolve/c354dbe88469a1153e97c6a63ac50591849654de/stack-edu-0092.json.gz"
+  }
+ ],
+ "mechanism": "huggingface",
+ "repo": "common-pile/stackv2_edu_filtered",
+ "revision": "c354dbe88469a1153e97c6a63ac50591849654de",
+ "schema": "j1.acquisition-manifest.v1",
+ "selected_bytes": 12708731826,
+ "selected_file_count": 14,
+ "selection": {
+  "hash_select": [
+   {
+    "count": 2,
+    "namespace": "j1.select.v1.markdown",
+    "patterns": [
+     "stack-edu-000?.json.gz",
+     "stack-edu-001[0-7].json.gz"
+    ]
+   },
+   {
+    "count": 1,
+    "namespace": "j1.select.v1.c",
+    "patterns": [
+     "stack-edu-001[89].json.gz"
+    ]
+   },
+   {
+    "count": 1,
+    "namespace": "j1.select.v1.cpp",
+    "patterns": [
+     "stack-edu-002[0-7].json.gz"
+    ]
+   },
+   {
+    "count": 1,
+    "namespace": "j1.select.v1.go",
+    "patterns": [
+     "stack-edu-003[4-7].json.gz"
+    ]
+   },
+   {
+    "count": 1,
+    "namespace": "j1.select.v1.java",
+    "patterns": [
+     "stack-edu-003[89].json.gz",
+     "stack-edu-004?.json.gz"
+    ]
+   },
+   {
+    "count": 1,
+    "namespace": "j1.select.v1.javascript",
+    "patterns": [
+     "stack-edu-005?.json.gz",
+     "stack-edu-006[0-4].json.gz"
+    ]
+   },
+   {
+    "count": 4,
+    "namespace": "j1.select.v1.python",
+    "patterns": [
+     "stack-edu-007[3-9].json.gz",
+     "stack-edu-008[0-4].json.gz"
+    ]
+   },
+   {
+    "count": 1,
+    "namespace": "j1.select.v1.shell",
+    "patterns": [
+     "stack-edu-008[78].json.gz"
+    ]
+   },
+   {
+    "count": 1,
+    "namespace": "j1.select.v1.typescript",
+    "patterns": [
+     "stack-edu-009[1-4].json.gz"
+    ]
+   }
+  ],
+  "include": [
+   "stack-edu-000?.json.gz",
+   "stack-edu-001[0-7].json.gz",
+   "stack-edu-001[89].json.gz",
+   "stack-edu-002[0-7].json.gz",
+   "stack-edu-003[4-7].json.gz",
+   "stack-edu-003[89].json.gz",
+   "stack-edu-004?.json.gz",
+   "stack-edu-005?.json.gz",
+   "stack-edu-006[0-4].json.gz",
+   "stack-edu-007[3-9].json.gz",
+   "stack-edu-008[0-4].json.gz",
+   "stack-edu-008[78].json.gz",
+   "stack-edu-009[1-4].json.gz",
+   "stack-edu-0086.json.gz"
+  ]
+ },
+ "source_id": "stackv2-edu",
+ "upstream_file_count": 97
+}

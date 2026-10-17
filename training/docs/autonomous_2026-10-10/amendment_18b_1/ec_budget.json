@@ -1,0 +1,18 @@
+{
+ "rule": "ec-budget-v1",
+ "status": "DECIDED",
+ "decision": 3055,
+ "faster": "j1-wide-20x768",
+ "slower": "j1-core-28x640",
+ "ratio": 1.0943323790528345,
+ "ratio_basis": "median updates per second over training seconds excluding the first (compile) update",
+ "updates_per_s_median": {
+  "j1-core-28x640": 1.7997170660168016,
+  "j1-wide-20x768": 1.9694886584761537
+ },
+ "et_updates": 2792,
+ "host": {
+  "gpu_uuid": "GPU-5c42020f-dc89-fe0f-2a91-a26d0948c4f4",
+  "pod_id": "pncbyxaf2dt2jl"
+ }
+}

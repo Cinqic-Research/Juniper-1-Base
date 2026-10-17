@@ -1,0 +1,101 @@
+{
+ "schema": "juniper1.posttrain-preparation-readiness.v1",
+ "as_of_utc": "2026-10-13T06:00Z",
+ "disposition": "SFT_PILOT_QUALIFIED_NON_PRODUCTION",
+ "parameter_changing_training_executed_for_this_preparation": false,
+ "gates": [
+  {
+   "id": "PT-BASE",
+   "status": "PASSED",
+   "evidence": [
+    "docs/freeze/juniper1-base-v1.json",
+    "docs/audit_2026-10-12/base_checkpoint_selection_report.md",
+    "docs/audit_2026-10-12/results/restore_52034_receipts.jsonl",
+    "j1bench/frozen.py"
+   ],
+   "required": "Approved immutable base ID, original checkpoint and tokenizer hashes, independent evaluation, and restored replica"
+  },
+  {
+   "id": "PT-DATA",
+   "status": "PASSED",
+   "evidence": [
+    "Juniper-1-Data/schemas/episode.schema.json",
+    "Juniper-1-Data/src/j1data/episodes.py",
+    "Juniper-1-Data/src/j1data/sft.py (encode_text_episode: fail-closed admission, Juniper-1-Data#8)",
+    "Juniper-1-Data manifests/sft/j1-sft-v1.2 (manifest d3738c50); docs/sft/dataset_v1.md"
+   ],
+   "required": "Versioned admitted dataset with rights, provenance, decontamination, dedup, oracle checks, and reject ledger"
+  },
+  {
+   "id": "PT-MASK",
+   "status": "PASSED",
+   "evidence": [
+    "Juniper-1-Data/src/j1data/sft.py (causal_rows: in-episode shift for the unshifted Train forward, no truncation, one episode per row by default)",
+    "Juniper-1-Data/tests/test_sft.py",
+    "docs/audit_2026-10-12/results/sft_production_tokenizer_check.txt",
+    "j1bench.sftdata.check_alignment; Data verify independent re-rendering; tests/test_sft.py"
+   ],
+   "required": "Episode-to-token bridge binds acceptance and per-message train flags to labels with analysis off by default; boundary and truncation tests pass"
+  },
+  {
+   "id": "PT-APP",
+   "status": "PARTIAL",
+   "evidence": [
+    "docs/audit_2026-10-12/results/gguf_text_tokenizer_parity.json (0/200 documents tokenized identically; parse_special maps forged delimiters to control IDs)",
+    "docs/audit_2026-10-12/results/gguf_parity_52034_f16_gpu.json (token-ID path passes)",
+    "text path isolated (Juniper-App#45 merged); host token-ID path qualified (docs/posttrain/a02_token_id_qualification.md); native adapter not built"
+   ],
+   "required": "Native App adapter and host enforcement tested on the actual text-in/text-out runtime"
+  },
+  {
+   "id": "PT-EVAL",
+   "status": "PASSED",
+   "evidence": [
+    "docs/audit_2026-10-12/base_evaluation_protocol_v1.md",
+    "tools/audit_base_candidates.py",
+    "tools/audit_base_behavior.py",
+    "docs/prep/08_evaluation_framework.md",
+    "bundle f9632015; docs/posttrain/sft_pilot_protocol_v3.md; base baselines in results/sft_pilot_v1"
+   ],
+   "required": "Prospective versioned test suites, scorers, negative controls, and acceptance thresholds"
+  },
+  {
+   "id": "PT-RECOVERY",
+   "status": "PASSED",
+   "evidence": [
+    "docs/audit_2026-10-12/results/restore_52034_receipts.jsonl",
+    "j1bench/frozen.py",
+    "tests/test_frozen.py",
+    "tests/test_ckpt.py",
+    "synthetic fault injection + real-model bitwise A/B (results/sft_pilot_v1/recovery_ab.json); cadence enforced by j1bench.sft"
+   ],
+   "required": "Synthetic full-state atomic save and exact restore drill with <=500 updates or <=15 minute cadence enforced"
+  },
+  {
+   "id": "PT-CONTEXT",
+   "status": "BASE_2048_ONLY",
+   "evidence": [
+    "docs/contract/training_contract_v2.json"
+   ],
+   "required": "Later authorized genuine 4096-token exposure and long-context plus 2048-token regression evaluation"
+  },
+  {
+   "id": "PT-BUDGET",
+   "status": "PASSED",
+   "evidence": [
+    "$0 new RunPod charges; pilot on FLOWBOX RTX 2060"
+   ],
+   "required": "Future-stage compute/storage scenario, verified available funds, enforceable spend guard, and shutdown/recovery plan"
+  },
+  {
+   "id": "PT-OWNER",
+   "status": "AUTHORIZED",
+   "evidence": [
+    "owner order 2026-10-12 authorized one bounded SFT qualification run"
+   ],
+   "required": "Explicit owner authorization of a prospective parameter-changing stage contract"
+  }
+ ],
+ "base_freeze_id": "juniper1-base-v1",
+ "superseding_record": "docs/posttrain/final_report_2026-10-13.md"
+}

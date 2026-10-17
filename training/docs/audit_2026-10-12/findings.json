@@ -1,0 +1,140 @@
+{
+  "schema": "juniper1.audit-findings.v1",
+  "review": "Independent end-to-end audit, base freeze and post-training preparation (owner instruction 2026-10-12)",
+  "reviewers": [
+    "GPT-6 Sol (2026-10-12T17:34-17:49Z, stopped at usage limit)",
+    "Claude Opus 5.5 (continuation)"
+  ],
+  "findings": [
+    {
+      "id": "A-01",
+      "severity": "HIGH",
+      "repo": "Juniper-1-Data + Juniper-1-Train",
+      "revision": "Data 47cd1dd / Train 82b2d14",
+      "evidence": "j1data.protocol.Encoded.labels are aligned with ids; j1bench.model.Transformer.forward(idx, labels) scores logits[t] against labels[t] without shifting",
+      "impact": "A future SFT trainer passing Encoded.labels to forward would train each position to copy its own input token (silent, loss falls quickly)",
+      "reproduction": "compare protocol.serialize output with model.forward loss definition",
+      "correction": "j1data.sft.causal_rows shifts inside each episode, never crosses an episode boundary, rejects over-length/misaligned/empty examples; documented in docs/sft_admission.md",
+      "regression_test": "tests/test_sft.py::test_causal_rows_*; production-tokenizer check in results/sft_production_tokenizer_check.txt",
+      "status": "FIXED_IN_PREPARATION_TOOLING",
+      "pr": "Cinqic-Research/Juniper-1-Data#8 (merged fee7003)",
+      "reverification": "independent subagent review + 325-test Data suite at exact head"
+    },
+    {
+      "id": "A-02",
+      "severity": "HIGH",
+      "repo": "Juniper-1-Train",
+      "revision": "tools/export_gguf.py @ 82b2d14",
+      "evidence": "results/gguf_text_tokenizer_parity.json",
+      "impact": "llama.cpp text tokenization of the exported GGUF differs from j1tok on 200/200 validation documents (first divergence at token 0); with parse_special=true literal '<|system|>'/'<|eot|>' become control IDs 1/11 (role-injection hazard)",
+      "reproduction": "qual/gguf_text_tokenizer_parity.py against llama-server with the F16 export",
+      "correction": "Required before App integration: the host tokenizes with j1data.jtok.load and sends token IDs (parse_special off for any text path), or a Juniper pre-tokenizer is implemented in the runtime and parity-tested. Token-ID inference is parity-qualified (results/gguf_parity_52034_f16_cpu.json: top-1 agree, max |dlogp| 0.0146 <= 0.05)",
+      "regression_test": "qual/gguf_text_tokenizer_parity.py; qual/gguf_parity.py --gate",
+      "status": "OPEN_INTEGRATION_BLOCKER",
+      "pr": null,
+      "reverification": "measured on FLOWBOX CPU, 2026-10-12"
+    },
+    {
+      "id": "A-03",
+      "severity": "MEDIUM",
+      "repo": "Juniper-1-Data",
+      "revision": "Sol draft (uncommitted) on audit/posttrain-sft-20261012",
+      "evidence": "12 tests in tests/test_sft.py raised TypeError (missing expected_decontamination_index); the shared venv's editable install imports another checkout unless PYTHONPATH=src",
+      "impact": "inherited work looked complete but its tests could not pass; local runs could silently test different code",
+      "correction": "tests repaired and extended; all local runs use PYTHONPATH=src",
+      "regression_test": "tests/test_sft.py (21 tests)",
+      "status": "FIXED",
+      "pr": "Cinqic-Research/Juniper-1-Data#8",
+      "reverification": "pytest at exact head"
+    },
+    {
+      "id": "A-04",
+      "severity": "MEDIUM",
+      "repo": "FLOWBOX archive",
+      "revision": "j1-base-r2 retention (LP-4)",
+      "evidence": "offsite_receipts.jsonl has no ckpt-000052000-6b13028e entry; preservation_status.json lists it HDD-only",
+      "impact": "the lowest-validation-loss authentic checkpoint had a single copy",
+      "correction": "copied to Drive (rclone copy --immutable + check, 0 differences) and private HF (fresh download SHA-256 match); receipts in juniper1-archive/audit-2026-10-12 and results/; original receipts untouched",
+      "status": "FIXED",
+      "pr": null,
+      "reverification": "results/preserve_52000_receipts.jsonl"
+    },
+    {
+      "id": "A-05",
+      "severity": "LOW",
+      "repo": "Juniper-1-Train",
+      "revision": "docs/fable_2026-10-10/launch_r2_report.md @ 82b2d14",
+      "evidence": "5,000/7,500/8,500 bpb transcribed as 1.1234/1.0795/1.0680; raw eval records give 1.11383/1.08064/1.07076",
+      "status": "FIXED",
+      "pr": "Cinqic-Research/Juniper-1-Train#23",
+      "reverification": "recomputed from tranche.jsonl"
+    },
+    {
+      "id": "A-06",
+      "severity": "LOW",
+      "repo": "Juniper-1-Train / AAA",
+      "evidence": "README status text predated the completed epoch (Train) and named gpt-oss-20b as Juniper 1's Language Model (AAA)",
+      "status": "FIXED",
+      "pr": "Cinqic-Research/Juniper-1-Train#22 (e39dc5f); Cinqic-Research/AAA#37 (1aa0e38)"
+    },
+    {
+      "id": "A-07",
+      "severity": "LOW",
+      "repo": "j1-base-r2 checkpoint manifests",
+      "evidence": "final artifact labelled stage 'base-tranche-1', non_production=true; updates 50,000 and 52,000 tagged 'best' by running minimum",
+      "impact": "labels are ambiguous for downstream selection",
+      "correction": "freeze record juniper1-base-v1 is the canonical identity; j1bench.frozen refuses latest/best/unversioned IDs; historical manifests unchanged",
+      "status": "MITIGATED",
+      "pr": "this audit PR"
+    },
+    {
+      "id": "A-08",
+      "severity": "LOW",
+      "repo": "owner brief",
+      "evidence": "brief calls 3,413,019,479 'stream tokens across splits'; it is the document-token total (full_recount report phase_a); stream tokens incl. EOS = 3,415,978,850; train stream 3,410,114,054 is correct",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "A-09",
+      "severity": "LOW",
+      "repo": "selection protocol",
+      "evidence": "base_evaluation_protocol_v1 was registered after the logged validation values were visible",
+      "impact": "tie threshold not blind",
+      "correction": "disclosed; outcome unchanged under the brief's recoverability tie-break",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "A-10",
+      "severity": "LOW",
+      "repo": "j1-base-r2 run record",
+      "evidence": "updates 8,501-8,585 executed twice (power-loss stop at 8,585, resume from 8,500 on another A100); batch fingerprints identical, losses differ by <= 2.7e-4",
+      "impact": "re-execution is not bitwise; the canonical lineage is the second execution",
+      "status": "VERIFIED_CONSISTENT"
+    },
+    {
+      "id": "A-11",
+      "severity": "MEDIUM",
+      "repo": "RunPod account (owner resource)",
+      "evidence": "list-pods shows JUPYTER_PASSWORD values in plaintext pod env for three exited pods (k3mul4cjkmiong, dxl7jz3zezlz0m, 4i13u1p447t6e7)",
+      "impact": "credential readable by any holder of the account API key",
+      "correction": "owner decision: terminate or rotate; not changed by this review (not assignment-created)",
+      "status": "OPEN_OWNER"
+    },
+    {
+      "id": "A-13",
+      "severity": "HIGH",
+      "repo": "AAA",
+      "revision": "PR #34 head 7150cd70",
+      "evidence": "recorded user-info URL bypass and Authorization forwarded on redirect in the v0 LlamaServer runner; hidden-label/label-conditioned surrogate concern unresolved",
+      "correction": "PR #36 LoopbackRuntime: 3/3 transport tests pass at exact head 8b36f19c (misleading URLs refused, redirect cannot forward the bearer header); prospective only, does not repair v0 or the science",
+      "status": "OPEN (both unmerged; cinqic.com#22 stays blocked)",
+      "pr": "Cinqic-Research/AAA#34, #36; Cinqic-Research/cinqic.com#22"
+    }
+  ],
+  "withdrawn": [
+    {
+      "id": "A-12",
+      "reason": "The 'Markus Gillyard <[owner-email-redacted]>' author identity on Sol's commits is also used throughout existing AAA and Data history; no misattribution is established."
+    }
+  ]
+}

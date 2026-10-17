@@ -1,0 +1,6 @@
+[ckpt] step 0 -> /root/ckpt-recovery/t3/ckpt-000000000-350901a7 (555.9 MiB, 2.19s)
+step 1 loss 10.3499 lr 0.000185 4832ms
+step 10 loss 7.9697 lr 0.000897 320ms
+[ckpt] step 10 -> /root/ckpt-recovery/t3/ckpt-000000010-e2b0610f (1667.7 MiB, 6.51s)
+step 20 loss 7.7968 lr 0.000637 320ms
+[ckpt] step 20 -> /root/ckpt-recovery/t3/ckpt-000000020-ebe4f12d (1667.7 MiB, 6.28s)

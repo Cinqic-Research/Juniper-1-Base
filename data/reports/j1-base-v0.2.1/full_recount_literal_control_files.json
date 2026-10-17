@@ -1,0 +1,72 @@
+[
+ {
+  "file": "train/arxiv-papers/arxiv-papers-0002~part-000000.parquet",
+  "literal_control_docs": 1,
+  "split": "train"
+ },
+ {
+  "file": "train/arxiv-papers/arxiv-papers-0006~part-000007.parquet",
+  "literal_control_docs": 2,
+  "split": "train"
+ },
+ {
+  "file": "train/arxiv-papers/arxiv-papers-0007~part-000001.parquet",
+  "literal_control_docs": 1,
+  "split": "train"
+ },
+ {
+  "file": "train/stackexchange/stackexchange-dolma-0001~part-000011.parquet",
+  "literal_control_docs": 1,
+  "split": "train"
+ },
+ {
+  "file": "train/stackv2-edu/stack-edu-0077~part-000002.parquet",
+  "literal_control_docs": 1,
+  "split": "train"
+ },
+ {
+  "file": "train/stackv2-edu/stack-edu-0077~part-000003.parquet",
+  "literal_control_docs": 1,
+  "split": "train"
+ },
+ {
+  "file": "train/stackv2-edu/stack-edu-0077~part-000004.parquet",
+  "literal_control_docs": 1,
+  "split": "train"
+ },
+ {
+  "file": "train/stackv2-edu/stack-edu-0079~part-000000.parquet",
+  "literal_control_docs": 4,
+  "split": "train"
+ },
+ {
+  "file": "train/stackv2-edu/stack-edu-0082~part-000000.parquet",
+  "literal_control_docs": 3,
+  "split": "train"
+ },
+ {
+  "file": "train/stackv2-edu/stack-edu-0082~part-000002.parquet",
+  "literal_control_docs": 1,
+  "split": "train"
+ },
+ {
+  "file": "train/stackv2-edu/stack-edu-0082~part-000003.parquet",
+  "literal_control_docs": 3,
+  "split": "train"
+ },
+ {
+  "file": "train/stackv2-edu/stack-edu-0082~part-000004.parquet",
+  "literal_control_docs": 1,
+  "split": "train"
+ },
+ {
+  "file": "train/stackv2-edu/stack-edu-0084~part-000000.parquet",
+  "literal_control_docs": 1,
+  "split": "train"
+ },
+ {
+  "file": "train/stackv2-edu/stack-edu-0086~part-000001.parquet",
+  "literal_control_docs": 1,
+  "split": "train"
+ }
+]

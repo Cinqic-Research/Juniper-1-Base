@@ -1,0 +1,160 @@
+# OASST1 conversations for instruction SFT (j1data.sftoasst, j1.sftoasst.v1).
+#
+# Rights: configs/sft_rights_v1.json R07 (APPROVED_TRAIN, filtered subset only); R12/R13 exclude
+# hosted-assistant output. Thresholds and patterns were fixed after one measurement pass over the
+# pinned files (sensitivity of the author rule and claim bands is recorded in docs/sft/oasst_v1.md);
+# from here on a change is a new source version.
+
+[source]
+repo = "OpenAssistant/oasst1"
+revision = "fdf72ae0827c1cda404aff25b6603abec9e3399b"   # HF HEAD on 2026-10-13 (lastModified 2023-05-02)
+files = [
+  "data/train-00000-of-00001-b42a775f407cee45.parquet",
+  "data/validation-00000-of-00001-134b8fd0c89408b6.parquet",
+]
+evidence = ["LICENSE", "README.md"]
+license = "Apache-2.0"
+rights_entry = "R07"
+
+# SHA-256 of the bytes at the pinned revision. Parquet values equal the upstream LFS object IDs;
+# LICENSE/README are plain git blobs (blob ids 261eeb9e…/7973fcd3… verified on download).
+[source.lock]
+"data/train-00000-of-00001-b42a775f407cee45.parquet" = "bbfadf5ed1278ba2208c837fdcad865adf65f5df55d80abadab2745db13fcb5e"
+"data/validation-00000-of-00001-134b8fd0c89408b6.parquet" = "24002597bb13a7edd42d92f773762f25e285f72c31a70449393d0ded1dc7b416"
+"LICENSE" = "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+"README.md" = "68483ac2fcc2f3f7779f453352363827678070ef35b6d746ccb2ca6958540fff"
+
+[tree]
+tree_state = "ready_for_export"
+lang = "en"            # every message on the path
+assistant_rank = 0     # each assistant step is the top-ranked reply
+
+[labels]
+# OASST label values are annotator means in [0, 1] (flags: fraction of annotators who flagged).
+required_min_count = 2
+assistant_required = ["quality", "helpfulness", "spam"]
+prompter_required = ["quality"]
+detoxify_max = 0.5     # max over Detoxify scores, when present
+[labels.flag_max]      # any annotator flag rejects
+spam = 0.0
+fails_task = 0.0
+lang_mismatch = 0.0
+pii = 0.0
+not_appropriate = 0.0
+hate_speech = 0.0
+sexual_content = 0.0
+[labels.likert_max]
+toxicity = 0.25
+violence = 0.25
+[labels.assistant_min]
+quality = 0.5
+helpfulness = 0.5
+creativity = 0.0       # declared and disabled: low creativity is correct for plain explanations
+[labels.prompter_min]
+quality = 0.25
+
+[model_origin]
+# Strong self-identification / training-data markers, rejected in either role.
+any_role = [
+  'as an ai\b', 'as a(?:n ai)? (?:large )?language model', "i(?:'m| am) (?:just |only )?an? (?:ai|artificial intelligence)\\b",
+  "i(?:'m| am) (?:just |only )?an? (?:large )?language model", 'large language model',
+  'language model (?:developed|trained|created|made|built) by', 'knowledge cut-?off', 'my training data',
+  'as of my (?:last|knowledge|training)',
+]
+# Assistant turns only: hosted-assistant names, foreign assistant identity, stock disclaimers.
+assistant = [
+  '\bopenai\b', 'chat ?gpt', '\bgpt-?(?:2|3|3\.5|4|j|neo)\b', '\banthropic\b', 'open ?assistant', '\blaion\b',
+  "i (?:do not|don't) have (?:personal )?(?:opinions|feelings|emotions|beliefs|preferences|experiences)",
+  "i (?:cannot|can't|am unable to|am not able to) (?:browse|access) the internet",
+  "i(?:'m| am) (?:sorry|afraid),? but (?:i (?:cannot|can't|am not able to|am unable to))",
+  "it(?:'s| is) (?:important|worth) (?:to note|noting|mentioning|to mention|to remember|to keep in mind)",
+  'it is not appropriate for me', 'as an artificial intelligence',
+]
+# Prompter turns only: questions about the assistant itself. OASST replies to these are volunteers
+# role-playing another assistant (identity, capabilities, training), so the pair is cut.
+prompter_identity = [
+  'are you (?:an? )?(?:ai|bot|chat ?bot|robot|human|real|sentient|conscious|alive|self-aware)\b', 'chat ?bot',
+  'who (?:are|made|created|trained|built) you', 'your (?:name|creators?|developers?|training|programming)',
+  'what are you\b', 'tell me about yourself', 'do you (?:have|feel) (?:feelings|emotions|consciousness)',
+]
+# An author with any assistant message (any language) matching these is excluded entirely.
+author_min_hits = 1
+author_min_rate = 0.0
+author_flag = [
+  'as an ai language model', "i(?:'m| am) an ai language model", 'as a large language model',
+  "i(?:'m| am) chat ?gpt", '(?:trained|developed|created) by openai', 'my knowledge cut-?off',
+]
+
+[pii]
+# Patterns are in j1data.sftoasst (EMAIL, PHONE, SSN, STREET, URL with user data, IBAN,
+# Luhn-valid 13-19 digit runs, IPv4); any hit in either role cuts the pair.
+
+[code]
+max_code_lines = 2     # either role: >= this many code-like lines; fenced code in either role
+max_inline_code = 4    # assistant: >= this many `inline code` spans
+max_math = 4           # assistant: >= this many equation/operator/math-symbol matches (unverified math)
+
+[claims]
+# Claim density per 100 words (denominator >= min_words) of each assistant turn.
+min_words = 60
+light = 3.0            # <= light: CLAIM_LIGHT; (light, heavy]: kept, tagged UNVERIFIED_CLAIMS
+heavy = 4.5            # > heavy: rejected
+max_citations = 0      # any citation marker rejects
+advice_min_terms = 2   # >= this many distinct domain terms in the pair rejects (medical/legal/financial)
+phrases = [
+  'according to', 'stud(?:y|ies) (?:have |has )?(?:show|shown|suggest|found|find|indicate)',
+  'research (?:shows|suggests|has shown|indicates|has found)', 'scientists (?:say|believe|have found|estimate)',
+  'statistic', '\bsurvey', 'per ?cent', '\d\s*%', 'it is estimated', 'estimates? (?:suggest|show|indicate)',
+  'data (?:shows|suggests|indicates)', 'was (?:founded|born|established|invented|discovered|published|released) in',
+  'population of', 'million', 'billion',
+]
+[claims.weights]
+numbers = 1.0
+years = 2.0
+proper = 0.5
+citations = 4.0
+phrases = 2.0
+urls = 3.0
+[claims.advice]
+medical = [
+  'diagnos', 'symptom', 'dosage', 'dose\b', 'mg\b', 'medication', 'prescri', 'treatment', 'disease', 'cancer',
+  'infection', 'therap', 'physician', 'doctor', 'surgery', 'vaccin', 'pregnan', 'blood pressure', 'antibiotic',
+  'mental health', 'suicid', 'self-harm', 'overdose', 'medical',
+]
+legal = [
+  'lawyer', 'attorney', 'lawsuit', 'sue\b', 'court\b', 'legal', 'illegal', 'statute', 'liabilit', 'tenant',
+  'custody', 'immigration', 'copyright infring', 'jurisdiction', 'contract law',
+]
+financial = [
+  'invest', 'stock market', 'stocks\b', 'crypto', 'bitcoin', 'portfolio', 'mortgage', 'loan\b', 'tax\b', 'taxes',
+  'retirement', '401k', 'interest rate', 'credit score', 'dividend', 'etf\b', 'index fund', 'insurance', 'trading',
+]
+
+[temporal]
+# OASST1 was written up to 2023-04; "current" statements about recent years are stale.
+recent_from = 2019
+future_after = 2023
+recency = [
+  'currently', 'current\b', 'as of', 'at the moment', 'right now', 'nowadays', 'these days', 'today',
+  'this year', 'latest', 'most recent', 'newest', 'up[- ]to[- ]date', 'recently', 'at present', 'presently',
+  'so far', 'state of the art', 'state-of-the-art',
+]
+
+[render]
+tokenizer = "tokenizer/j1-base-v0.2.2/frozen/cand5-j1tok-24k/tokenizer.json"
+tokenizer_sha256 = "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1"
+max_tokens = 2048      # whole rendered conversation (juniper-chat-v1, incl. optional system)
+system_probability = 0.5
+seed = 20261013
+
+[split]
+salt = "j1.sftoasst.v1/split"
+train = 0.90
+dev = 0.05             # test = remainder (0.05)
+
+[review]
+seed = 20261013
+admitted = 120
+rejected = 40
+near_pool_per_reason = 20  # closest-to-threshold rejected conversations per reason, then sampled
+dir = "sft/review/oasst1/v1"

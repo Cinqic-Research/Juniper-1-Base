@@ -1,0 +1,10 @@
+[ckpt] candidate /root/ckpt-recovery/t_die_mid_file/ckpt-000000020-940280e7 step=20: manifest missing or unparseable (incomplete checkpoint)
+[ckpt] candidate /root/ckpt-recovery/t_die_mid_file/ckpt-000000010-679d33e7 step=10: ok
+[resume] restored /root/ckpt-recovery/t_die_mid_file/ckpt-000000010-679d33e7 at step 10 in 42.19s (lr=0.000882594)
+step 20 loss 7.7968 lr 0.000637 319ms
+[ckpt] step 20 -> /root/ckpt-recovery/t_die_mid_file/ckpt-000000020-ad7427f9 (1667.7 MiB, 6.27s)
+step 30 loss 7.7896 lr 0.000279 319ms
+[ckpt] step 30 -> /root/ckpt-recovery/t_die_mid_file/ckpt-000000030-3966b7c1 (1667.7 MiB, 6.25s)
+step 40 loss 8.0218 lr 9.4e-05 320ms
+[ckpt] step 40 -> /root/ckpt-recovery/t_die_mid_file/ckpt-000000040-a4a4f787 (1667.7 MiB, 6.42s)
+{"steps_run": 30, "final_step": 40, "tokens_per_s_median": 102737.29940199123, "step_ms_median": 318.94939998164773, "peak_vram_gib": 28.859490394592285, "final_param_sha256": "0a2eecdd5245175ded97187c5d7a10b6114e579b43cef84f2941eb460374caec"}

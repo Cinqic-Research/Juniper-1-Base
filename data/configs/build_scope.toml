@@ -1,0 +1,27 @@
+# Processing scope for the Juniper 1 base corpus under the 3B+ directive (owner, 2026-10-08).
+#
+# The accepted corpus targets about 3B+ clean tokens (hard ceiling 15B, not a
+# goal). Only the units needed to fill configs/selection.toml with quality
+# headroom are processed; the rest of the acquired raw data stays on disk for
+# evidence-gated expansion later. Scope is part of the build identity because it
+# determines which records can enter the corpus. Sources not listed are processed
+# completely.
+
+[sources.fineweb-edu-dedup]
+# about 3x the educational-web quota, so selection can prefer higher edu scores
+namespace = "j1.scope.v1.fineweb-edu-dedup"
+count = 30
+
+[sources.finemath-4plus]
+namespace = "j1.scope.v1.finemath-4plus"
+count = 24
+
+[sources.stackexchange]
+# Units processed before the directive (0001-0004, 0008) are kept. Added: math
+# (0005-0006), Stack Overflow (0021, 0028), superuser and unix (0042-0043).
+include = [
+  "stackexchange-dolma-0001", "stackexchange-dolma-0002", "stackexchange-dolma-0003",
+  "stackexchange-dolma-0004", "stackexchange-dolma-0005", "stackexchange-dolma-0006",
+  "stackexchange-dolma-0008", "stackexchange-dolma-0021", "stackexchange-dolma-0028",
+  "stackexchange-dolma-0042", "stackexchange-dolma-0043",
+]

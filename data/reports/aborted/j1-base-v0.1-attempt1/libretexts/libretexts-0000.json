@@ -1,0 +1,86 @@
+{
+ "build_identity": "e20847a1edd8452571c279942291f4a2fd64a33fed858a40f2d3994c3106abd9",
+ "bytes_by_stage": {
+  "candidate": 345223230,
+  "contamination": 883569,
+  "extraction": 0,
+  "quality": 14063403
+ },
+ "bytes_in": 360170202,
+ "chars_in": 358278633,
+ "contamination_benchmarks": {
+  "mmlu": 10
+ },
+ "docs_in": 40049,
+ "kinds": {
+  "math": 8561,
+  "prose": 29831,
+  "technical": 47
+ },
+ "outputs": [
+  {
+   "file": "candidates/libretexts/libretexts-0000.parquet",
+   "rows": 38439,
+   "sha256": "cbfed99022f6be2d7593bcfc64199d654c2b16fdc8e0d29da47e96335725463a"
+  },
+  {
+   "file": "rejects/libretexts/libretexts-0000.parquet",
+   "rows": 1610,
+   "sha256": "1cf7ffcfde0a02dbb34d0fe6d0de9a6cdb8ebabc75b25b1d7161fa656d8097f4"
+  },
+  {
+   "file": "signatures/libretexts/libretexts-0000.npy",
+   "rows": 38439,
+   "sha256": "01153d63c3c237a8380a365863c41f4c3ae4a0c21966c8e7cf24312e1e1dc7b1"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "libretexts-0000.json.gz",
+ "reasons": {
+  "contamination.mmlu": 10,
+  "extraction.empty": 7,
+  "quality.corrupt_decoding": 2,
+  "quality.math.alpha_words": 7,
+  "quality.math.bullet_lines": 17,
+  "quality.math.duplicate_lines": 19,
+  "quality.math.duplicate_ngrams": 41,
+  "quality.math.not_english": 21,
+  "quality.math.top_ngram_repetition": 65,
+  "quality.prose.alpha_words": 173,
+  "quality.prose.bullet_lines": 178,
+  "quality.prose.duplicate_lines": 156,
+  "quality.prose.duplicate_ngrams": 600,
+  "quality.prose.ellipsis_lines": 11,
+  "quality.prose.line_length": 1,
+  "quality.prose.mean_word_length": 88,
+  "quality.prose.non_latin_script": 42,
+  "quality.prose.not_english": 490,
+  "quality.prose.stopwords": 16,
+  "quality.prose.symbol_ratio": 29,
+  "quality.prose.too_long": 1,
+  "quality.prose.too_short": 6,
+  "quality.prose.top_ngram_repetition": 74,
+  "quality.spam_terms": 13,
+  "quality.technical.top_ngram_repetition": 1
+ },
+ "redactions": {
+  "email": 6,
+  "home_path_user": 62,
+  "phone": 126
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 348.49,
+ "slow_documents": [],
+ "source_id": "libretexts",
+ "stages": {
+  "candidate": 38439,
+  "contamination": 10,
+  "extraction": 7,
+  "quality": 1593
+ },
+ "unit_id": "libretexts-0000"
+}

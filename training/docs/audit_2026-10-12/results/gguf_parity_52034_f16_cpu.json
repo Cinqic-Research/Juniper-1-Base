@@ -1,0 +1,44 @@
+{
+ "gguf": "/home/cinqic/j1-audit-2026-10-12/gguf/j1-52034-f16.gguf",
+ "gguf_bytes": 286188352,
+ "ngl": 0,
+ "rows": [
+  {
+   "prompt_tokens": 1,
+   "top1_llama": 334,
+   "top1_torch": 334,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.00651
+  },
+  {
+   "prompt_tokens": 7,
+   "top1_llama": 334,
+   "top1_torch": 334,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.00494
+  },
+  {
+   "prompt_tokens": 64,
+   "top1_llama": 1870,
+   "top1_torch": 1870,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.01403
+  },
+  {
+   "prompt_tokens": 300,
+   "top1_llama": 399,
+   "top1_torch": 399,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.00698
+  },
+  {
+   "prompt_tokens": 1000,
+   "top1_llama": 1850,
+   "top1_torch": 1850,
+   "top1_agree": true,
+   "max_abs_logprob_diff": 0.01462
+  }
+ ],
+ "gate": "F16 vs FP32: top-1 agree and max |dlogp| <= 0.05",
+ "pass": true
+}

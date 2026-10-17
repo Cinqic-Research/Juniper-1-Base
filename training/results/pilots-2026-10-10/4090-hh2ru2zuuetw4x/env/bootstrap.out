@@ -1,0 +1,5 @@
+{"ts_utc": "2026-10-10T11:58:19.802Z", "mono_s": 2029264.937029669, "producer": "pod_controller", "seq": 1, "event": "controller_start", "pod_id": "hh2ru2zuuetw4x", "cap_usd": 20.5, "soft_usd": 18.5, "stop_reserve_usd": 1.0, "spent_before_usd": 11.8, "rate_usd_h": 5.45, "session_start_utc": "2026-10-10T11:52:03Z", "deadline_utc": "2026-10-10T14:00:00Z", "pre_launch_s": 376.802489, "idle_s": 900.0, "poll_s": 30.0, "api_key_present": true, "runpodctl": "/usr/bin/runpodctl"}
+{"ts_utc": "2026-10-10T11:58:20.380Z", "mono_s": 2029265.514516656, "producer": "pod_controller", "seq": 2, "event": "poll", "provider": {"desired_status": "RUNNING", "cost_per_hr": 5.34, "uptime_s": 352, "last_status_change": "Rented by User: Sat Oct 10 2026 11:52:03 GMT+0000 (Coordinated Universal Time)"}, "billed_s_est": 540.0, "spend_est_usd": 12.6175, "rate_usd_h": 5.45, "gpu_util": 0.0, "idle_s": 0.6, "phase": "running", "training_pids": []}
+bootstrap done 2026-10-10T11:59:17Z
+pytest rc=0
+overlay             150G    1G      150G   1% /

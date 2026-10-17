@@ -1,0 +1,105 @@
+{
+ "arms": {
+  "A1": {
+   "arithmetic": {
+    "arm": 0.45166666666666666,
+    "arm_only": 53,
+    "c0": 0.5116666666666667,
+    "c0_only": 89,
+    "gain": -0.06,
+    "mcnemar_p": 0.0031718677905301705,
+    "n": 600
+   },
+   "false_equations": {
+    "answers": 9,
+    "with_false_equation": 0
+   },
+   "outcome": "NO_IMPROVEMENT_DETECTED",
+   "primary_gsm8k": {
+    "arm": 0.018,
+    "arm_only": 9,
+    "c0": 0.032,
+    "c0_only": 16,
+    "gain": -0.014,
+    "mcnemar_p": 0.2295229434967041,
+    "mcnemar_p_holm": 0.4590458869934082,
+    "n": 500
+   },
+   "retention": {
+    "bpb": 0.9595118521721595,
+    "pass": false,
+    "significant_regressions_vs_c0": [
+     "math"
+    ]
+   }
+  },
+  "A2": {
+   "arithmetic": {
+    "arm": 0.505,
+    "arm_only": 60,
+    "c0": 0.5116666666666667,
+    "c0_only": 64,
+    "gain": -0.006666666666666667,
+    "mcnemar_p": 0.787746582402333,
+    "n": 600
+   },
+   "false_equations": {
+    "answers": 11,
+    "with_false_equation": 5
+   },
+   "outcome": "NO_IMPROVEMENT_DETECTED",
+   "primary_gsm8k": {
+    "arm": 0.022,
+    "arm_only": 9,
+    "c0": 0.032,
+    "c0_only": 14,
+    "gain": -0.01,
+    "mcnemar_p": 0.4048728942871094,
+    "mcnemar_p_holm": 0.4590458869934082,
+    "n": 500
+   },
+   "retention": {
+    "bpb": 0.967804910182678,
+    "pass": false,
+    "significant_regressions_vs_c0": []
+   }
+  },
+  "A3": {
+   "arithmetic": {
+    "arm": 0.49666666666666665,
+    "arm_only": 58,
+    "c0": 0.5116666666666667,
+    "c0_only": 67,
+    "gain": -0.015,
+    "mcnemar_p": 0.47442157344095126,
+    "n": 600
+   },
+   "false_equations": {
+    "answers": 8,
+    "with_false_equation": 4
+   },
+   "outcome": "NO_IMPROVEMENT_DETECTED",
+   "primary_gsm8k": {
+    "arm": 0.016,
+    "arm_only": 6,
+    "c0": 0.032,
+    "c0_only": 14,
+    "gain": -0.016,
+    "mcnemar_p": 0.11531829833984375,
+    "mcnemar_p_holm": 0.34595489501953125,
+    "n": 500
+   },
+   "retention": {
+    "bpb": 0.9613001700093525,
+    "pass": false,
+    "significant_regressions_vs_c0": []
+   }
+  }
+ },
+ "c0": {
+  "bpb": 0.9698878030759208,
+  "gsm8k": 0.032
+ },
+ "note": "one seed per arm: a positive result needs a replication seed before any adoption",
+ "schema": "j1.distill-decision.v1"
+}

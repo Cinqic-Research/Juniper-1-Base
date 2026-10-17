@@ -1,0 +1,442 @@
+{
+ "schema": "juniper1.rights-ledger.v1",
+ "checked_utc": "2026-10-12T23:54:53Z",
+ "reviewer_note": "License pages and API metadata only; no dataset contents downloaded. Not legal advice.",
+ "entries": [
+  {
+   "id": "R00",
+   "resource": "Cinqic SFT generators (j1data.sftgen v1) and derived MBPP bug-fix variants",
+   "url": null,
+   "revision": "j1.sftgen.v1",
+   "license_spdx": "LicenseRef-Cinqic-generated",
+   "license_evidence_url": null,
+   "license_quote": null,
+   "content_provenance": "deterministic program output over generated inputs; targets are computed values, upstream source text (GSM8K, MBPP, Wikidata labels) or the single phrase \"I don't know.\" (from j1-sft-v1.1); user prompts are templates written in generator code during an AI-assisted engineering session (loss-masked)",
+   "intended_use": "SFT train/dev and held-out test items",
+   "training_permitted": true,
+   "commercial_compatible": true,
+   "redistribution": "Cinqic-controlled",
+   "attribution_required": false,
+   "attribution_text": null,
+   "restrictions": [
+    "no hosted-assistant natural-language answers as targets",
+    "the abstention target is the single phrase \"I don't know.\"",
+    "templated user prompts are loss-masked"
+   ],
+   "decision": "APPROVED_TRAIN",
+   "rationale": "no model-generated response text is a training target; the conflict with R13 noted by the 2026-10-12 review is resolved by construction in v1.1"
+  },
+  {
+   "id": "R01",
+   "resource": "openai/gsm8k (HF dataset, config 'main')",
+   "url": "https://huggingface.co/datasets/openai/gsm8k",
+   "revision": "740312add88f781978c0658806c59bc2815b9866",
+   "revision_note": "HF API sha at check time equals the pinned revision (lastModified 2026-03-23).",
+   "license_spdx": "MIT",
+   "license_evidence_url": "https://huggingface.co/datasets/openai/gsm8k/blob/740312add88f781978c0658806c59bc2815b9866/README.md",
+   "license_evidence_urls_extra": [
+    "https://github.com/openai/grade-school-math/blob/3101c7d5072418e28b9008a6636bde82a006892c/LICENSE",
+    "https://arxiv.org/abs/2110.14168"
+   ],
+   "license_quote": "The GSM8K dataset is licensed under the MIT License.",
+   "content_provenance": "Human-written: problems and natural-language solutions written by hired contractors (Upwork, then Surge AI) and re-solved for agreement (paper App. A, quoted in card). EXCEPTION: the 'socratic' config prefixes steps with model-generated sub-questions (grade-school-math README) - do not use 'socratic'.",
+   "intended_use": "train split (7473) -> SFT math reasoning; test split (1319) -> held-out evaluation only.",
+   "training_permitted": true,
+   "commercial_compatible": true,
+   "redistribution": "Permitted under MIT; copies or substantial portions must carry the MIT copyright + permission notice.",
+   "attribution_required": true,
+   "attribution_text": "GSM8K (Cobbe et al., 2021, arXiv:2110.14168). Copyright (c) 2021 OpenAI. Licensed under the MIT License.",
+   "restrictions": [
+    "Use config 'main' only; 'socratic' sub-questions are model-generated.",
+    "Never train on the test split; decontaminate SFT data against GSM8K test.",
+    "Card notes ~1.7% of problems may contain breaking errors.",
+    "Card's split table says train/validation; HF parquet splits are train/test - verify split name at load."
+   ],
+   "decision": "APPROVED_TRAIN",
+   "decision_scope": "train split -> SFT; test split -> APPROVED_EVAL_ONLY",
+   "rationale": "MIT confirmed on the pinned card and the GitHub LICENSE, and solutions in 'main' are contractor-written, so commercial SFT use is permitted with notice."
+  },
+  {
+   "id": "R02",
+   "resource": "google-research-datasets/mbpp (HF dataset, configs full/sanitized)",
+   "url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+   "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+   "revision_note": "HF API sha at check time equals the pinned revision (lastModified 2024-01-04).",
+   "license_spdx": "CC-BY-4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/google-research-datasets/mbpp/blob/4bb6404fdc6cacfda99d4ac4205087b89d32030c/README.md",
+   "license_evidence_urls_extra": [
+    "https://github.com/google-research/google-research/blob/e0b7b00ec50597d6cebeab301cc70995744de33a/mbpp/README.md",
+    "https://github.com/google-research/google-research/blob/e0b7b00ec50597d6cebeab301cc70995744de33a/LICENSE",
+    "https://arxiv.org/abs/2108.07732"
+   ],
+   "license_quote": "### Licensing Information  CC-BY-4.0",
+   "content_provenance": "Human-written: 974 problems, solutions and tests written by an internal Google crowdworker pool (paper s2.1); sanitized subset hand-edited by authors. Paper notes crowdworkers may have used internet reference material.",
+   "intended_use": "train (601-974), validation (511-600) and prompt (1-10) splits -> SFT code; test (11-510) -> evaluation only.",
+   "training_permitted": true,
+   "commercial_compatible": true,
+   "redistribution": "Permitted under CC-BY-4.0 with attribution, license link and indication of changes; no added restrictions/DRM on redistributed data.",
+   "attribution_required": true,
+   "attribution_text": "MBPP (Mostly Basic Python Problems), Austin et al., 'Program Synthesis with Large Language Models', arXiv:2108.07732, Google Research. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Changes: reformatted into chat/SFT examples.",
+   "restrictions": [
+    "Never train on test split (task_ids 11-510) in either config; sanitized test is a subset of full test IDs.",
+    "Card says 'prompt' split was used for few-shot, not training - descriptive, not a license term; fine to train on.",
+    "License evidence comes from the Google-owned HF card; the paper states no data license and the GitHub copy sits in an Apache-2.0 repo (both commercial-compatible; CC-BY-4.0 attribution is the stricter term and is applied)."
+   ],
+   "decision": "APPROVED_TRAIN",
+   "decision_scope": "train/validation/prompt -> SFT; test -> APPROVED_EVAL_ONLY",
+   "rationale": "CC-BY-4.0 on the Google-owned pinned card permits commercial training given attribution, and content is human-written."
+  },
+  {
+   "id": "R03",
+   "resource": "openai/openai_humaneval (HF dataset)",
+   "url": "https://huggingface.co/datasets/openai/openai_humaneval",
+   "revision": "7dce6050a7d6d172f3cc5c32aa97f52fa1a2e544",
+   "revision_note": "HF API sha at check time equals the pinned revision.",
+   "license_spdx": "MIT",
+   "license_evidence_url": "https://huggingface.co/datasets/openai/openai_humaneval/blob/7dce6050a7d6d172f3cc5c32aa97f52fa1a2e544/README.md",
+   "license_evidence_urls_extra": [
+    "https://github.com/openai/human-eval/blob/6d43fb980f9fee3c892a914eda09951f772ad10d/LICENSE",
+    "https://arxiv.org/abs/2107.03374"
+   ],
+   "license_quote": "### Licensing Information  MIT License",
+   "content_provenance": "Human-written: 164 problems 'handcrafted by engineers and researchers at OpenAI' (card).",
+   "intended_use": "Evaluation only (pass@k on 164 problems).",
+   "training_permitted": true,
+   "commercial_compatible": true,
+   "redistribution": "Permitted under MIT with notice.",
+   "attribution_required": true,
+   "attribution_text": "HumanEval (Chen et al., 2021, arXiv:2107.03374). Copyright (c) OpenAI. MIT License.",
+   "restrictions": [
+    "Eval-only by project policy (benchmark integrity); decontaminate SFT code data against it.",
+    "Execute model-generated code only in a sandbox (card warning)."
+   ],
+   "decision": "APPROVED_EVAL_ONLY",
+   "rationale": "MIT permits any use, but as a 164-item benchmark it is reserved for held-out evaluation."
+  },
+  {
+   "id": "R04",
+   "resource": "Wikidata structured data (entities via SPARQL query service / dumps)",
+   "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+   "revision": null,
+   "revision_note": "Live wiki/query service; no immutable revision. Record query text, retrieval timestamp and (ideally) the dump date or result hashes at ingestion.",
+   "license_spdx": "CC0-1.0",
+   "license_evidence_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+   "license_evidence_urls_extra": [
+    "https://www.wikidata.org/wiki/Wikidata:Data_access",
+    "https://www.wikidata.org/wiki/Wikidata:Copyright",
+    "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual",
+    "https://foundation.wikimedia.org/wiki/Policy:User-Agent_policy"
+   ],
+   "license_quote": "All that data is licensed CC0, \"No rights reserved\", for the public domain.",
+   "content_provenance": "Human-curated (plus bot-imported) structured statements; facts such as capitals/element symbols.",
+   "intended_use": "Source facts for templated SFT factual QA (e.g., country capitals, element symbols) and a disjoint held-out factual eval set.",
+   "training_permitted": true,
+   "commercial_compatible": true,
+   "redistribution": "Unrestricted (CC0). Data_access page applies CC0 to dumps, Linked Data, query service and API.",
+   "attribution_required": false,
+   "attribution_text": "Not required. Courtesy credit requested: 'Facts derived from Wikidata (https://www.wikidata.org), CC0 1.0.'",
+   "restrictions": [
+    "CC0 covers main/Property/Lexeme/EntitySchema namespaces only; text in other namespaces is CC BY-SA 4.0 - do not ingest talk/project pages.",
+    "Do not pull Wikipedia article text via sitelinks (CC BY-SA).",
+    "WDQS limits: 60 s query timeout, 60 s processing per 60 s per client, 5 parallel queries per IP, 30 error queries/min; honor HTTP 429 + Retry-After or risk ban.",
+    "Wikimedia User-Agent policy: informative UA with contact info, else 403/blocking (e.g. 'Juniper1-FactBuilder/1.0 (contact: <owner email or URL>)').",
+    "Use of the site subject to Wikimedia Terms of Use; Data_access asks for gzip and modest request volume.",
+    "Facts can be wrong/vandalized; cross-check values and pin retrieval date. Split train vs held-out eval by entity."
+   ],
+   "decision": "APPROVED_TRAIN",
+   "decision_scope": "Disjoint entity subsets: SFT and held-out eval",
+   "rationale": "Wikidata states its structured data, including via the query service, is CC0 with no attribution requirement, so commercial training use is clear."
+  },
+  {
+   "id": "R05",
+   "resource": "openai/gpt-oss-20b (HF model) as locally hosted distillation teacher",
+   "url": "https://huggingface.co/openai/gpt-oss-20b",
+   "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+   "revision_note": "HF model API sha at check time equals the pinned revision (lastModified 2025-08-26).",
+   "license_spdx": "Apache-2.0",
+   "license_evidence_url": "https://huggingface.co/openai/gpt-oss-20b/blob/6cee5e81ee83917806bbde320786a8fb61efebee/LICENSE",
+   "license_evidence_urls_extra": [
+    "https://huggingface.co/openai/gpt-oss-20b/blob/6cee5e81ee83917806bbde320786a8fb61efebee/USAGE_POLICY",
+    "https://huggingface.co/openai/gpt-oss-20b/blob/6cee5e81ee83917806bbde320786a8fb61efebee/README.md",
+    "https://github.com/openai/gpt-oss/blob/5681a6b6552635e7b29cde94a61ca6a7aee90ebd/USAGE_POLICY"
+   ],
+   "license_quote": "By using OpenAI gpt-oss-20b, you agree to comply with all applicable law.",
+   "content_provenance": "Teacher outputs would be machine-generated by gpt-oss-20b (OpenAI open-weight model) running on our own hardware.",
+   "intended_use": "Distillation teacher: generate SFT targets locally.",
+   "training_permitted": true,
+   "commercial_compatible": true,
+   "redistribution": "Weights: Apache-2.0 (keep LICENSE/NOTICE if redistributed). Apache-2.0 places no conditions on model outputs; usage policy only requires lawful use.",
+   "attribution_required": false,
+   "attribution_text": "None required for outputs. Recommended provenance note: 'Some SFT targets generated by gpt-oss-20b (Apache-2.0), run locally.'",
+   "restrictions": [
+    "Full USAGE_POLICY text is one paragraph: use safely/responsibly and comply with applicable law; it contains no anti-distillation or competing-model clause.",
+    "Applies ONLY to a locally hosted copy. Outputs obtained via OpenAI's hosted API/ChatGPT fall under OpenAI Terms (see R13) and are EXCLUDED; third-party hosts have their own ToS - review separately.",
+    "Model card says it must be prompted in harmony format (see R10).",
+    "Outputs are unverified: filter for correctness (e.g., GSM8K answer match, MBPP tests), safety and benchmark contamination; tag every generated row with teacher id + revision."
+   ],
+   "decision": "APPROVED_TRAIN",
+   "decision_scope": "Outputs of a locally run copy at the pinned revision only",
+   "rationale": "Apache-2.0 weights plus a usage policy requiring only lawful use impose no restriction on training another model from locally generated outputs."
+  },
+  {
+   "id": "R06",
+   "resource": "Anthropic/hh-rlhf (HF dataset)",
+   "url": "https://huggingface.co/datasets/Anthropic/hh-rlhf",
+   "revision": "09be8c5bbc57cb3887f3a9732ad6aa7ec602a1fa",
+   "revision_note": "HF API sha at check time (no pinned revision was supplied).",
+   "license_spdx": "MIT",
+   "license_evidence_url": "https://huggingface.co/datasets/Anthropic/hh-rlhf/blob/09be8c5bbc57cb3887f3a9732ad6aa7ec602a1fa/README.md",
+   "license_evidence_urls_extra": [
+    "https://github.com/anthropics/hh-rlhf/blob/c72f5cee8eb7b4d2ea5617657f4430d5e333af07/LICENSE",
+    "https://arxiv.org/abs/2204.05862"
+   ],
+   "license_quote": "MIT License  Copyright (c) 2022 Anthropic",
+   "content_provenance": "Prompts and preference labels by crowdworkers (MTurk/Upwork); assistant turns generated by Anthropic's 52B context-distilled models (rejection-sampled/online tranches); red-team transcripts include harmful content.",
+   "intended_use": "Assessed as possible SFT data; not planned.",
+   "training_permitted": true,
+   "commercial_compatible": true,
+   "redistribution": "Permitted under MIT with notice.",
+   "attribution_required": true,
+   "attribution_text": "Bai et al., 2022, arXiv:2204.05862; Copyright (c) 2022 Anthropic, MIT License.",
+   "restrictions": [
+    "Card: PM data are 'not meant for supervised training of dialogue agents'.",
+    "Card: red-team data 'not meant for fine-tuning or preference modeling'.",
+    "Contains offensive/harmful content.",
+    "Any future reward-model/preference use needs a separate review."
+   ],
+   "decision": "EXCLUDED",
+   "rationale": "MIT allows it, but the publisher says not to use it for SFT and warns that doing so likely yields harmful models, so it is unsuitable for ordinary SFT."
+  },
+  {
+   "id": "R07",
+   "resource": "OpenAssistant/oasst1 (HF dataset)",
+   "url": "https://huggingface.co/datasets/OpenAssistant/oasst1",
+   "revision": "fdf72ae0827c1cda404aff25b6603abec9e3399b",
+   "revision_note": "HF API sha at check time (no pinned revision was supplied).",
+   "license_spdx": "Apache-2.0",
+   "license_evidence_url": "https://huggingface.co/datasets/OpenAssistant/oasst1/blob/fdf72ae0827c1cda404aff25b6603abec9e3399b/LICENSE",
+   "license_evidence_urls_extra": [
+    "https://huggingface.co/datasets/OpenAssistant/oasst1/blob/fdf72ae0827c1cda404aff25b6603abec9e3399b/README.md",
+    "https://arxiv.org/abs/2304.07327"
+   ],
+   "license_quote": "Apache License Version 2.0, January 2004",
+   "content_provenance": "Card/paper: 'human-generated, human-annotated' by >13,500 volunteers on open-assistant.io (to 2023-04-12). Message schema has 'synthetic'/'model_name' fields; no documented screening for volunteers pasting ChatGPT outputs.",
+   "intended_use": "Candidate SFT conversations (English, ready_for_export trees, top-ranked assistant replies).",
+   "training_permitted": true,
+   "commercial_compatible": true,
+   "redistribution": "Permitted under Apache-2.0 (include license; state changes).",
+   "attribution_required": true,
+   "attribution_text": "OpenAssistant Conversations (OASST1), Kopf et al., 2023, arXiv:2304.07327, LAION / OpenAssistant contributors. Apache License 2.0.",
+   "restrictions": [
+    "Responses are not fact-verified; quality-filter (use ranks/labels) and avoid factual-claim-heavy turns or verify them.",
+    "Drop messages with synthetic=true or non-null model_name; drop spam/deleted; use ready_for_export trees.",
+    "Possible PII/toxicity; card exposes pii/toxicity labels - filter.",
+    "Multilingual (35 langs); select language deliberately."
+   ],
+   "decision": "APPROVED_TRAIN",
+   "decision_scope": "Filtered subset only (see restrictions)",
+   "rationale": "Apache-2.0 permits commercial training and content is volunteer-written, but responses are unverified and need quality/synthetic/PII filtering."
+  },
+  {
+   "id": "R08",
+   "resource": "databricks/databricks-dolly-15k (HF dataset)",
+   "url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k",
+   "revision": "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a",
+   "revision_note": "HF API sha at check time (no pinned revision was supplied).",
+   "license_spdx": "CC-BY-SA-3.0",
+   "license_evidence_url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k/blob/bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a/README.md",
+   "license_evidence_urls_extra": [
+    "https://creativecommons.org/licenses/by-sa/3.0/legalcode"
+   ],
+   "license_quote": "its use is subject to the CC BY-SA 3.0 license.",
+   "content_provenance": "Human-written by Databricks employees, told to avoid generative AI; context passages copied from Wikipedia (CC BY-SA).",
+   "intended_use": "Candidate SFT instruction data; not planned.",
+   "training_permitted": true,
+   "commercial_compatible": "unclear",
+   "redistribution": "Share-alike: redistributed data and adaptations must be CC BY-SA 3.0 (or compatible) with attribution.",
+   "attribution_required": true,
+   "attribution_text": "databricks-dolly-15k, Copyright (2023) Databricks, Inc., CC BY-SA 3.0; includes Wikipedia material, Copyright Wikipedia editors and contributors, CC BY-SA 3.0.",
+   "restrictions": [
+    "Share-alike: whether trained weights are an 'Adaptation' requiring BY-SA licensing is legally unsettled.",
+    "Any redistributed derived SFT files must be CC BY-SA.",
+    "Project policy excludes share-alike unless commercial-compatible training use is clearly established."
+   ],
+   "decision": "EXCLUDED",
+   "rationale": "Commercial use is explicitly allowed, but CC BY-SA 3.0 share-alike may reach derived data or weights, so policy excludes it pending owner/legal sign-off."
+  },
+  {
+   "id": "R09",
+   "resource": "google/IFEval (HF dataset) + google-research/instruction_following_eval (code)",
+   "url": "https://huggingface.co/datasets/google/IFEval",
+   "revision": "966cd89545d6b6acfd7638bc708b98261ca58e84",
+   "revision_note": "HF dataset sha at check time; code checked at google-research/google-research commit e0b7b00ec50597d6cebeab301cc70995744de33a (repo HEAD at check time).",
+   "license_spdx": "Apache-2.0",
+   "license_evidence_url": "https://huggingface.co/datasets/google/IFEval/blob/966cd89545d6b6acfd7638bc708b98261ca58e84/README.md",
+   "license_evidence_urls_extra": [
+    "https://github.com/google-research/google-research/blob/e0b7b00ec50597d6cebeab301cc70995744de33a/instruction_following_eval/evaluation_main.py",
+    "https://github.com/google-research/google-research/blob/e0b7b00ec50597d6cebeab301cc70995744de33a/LICENSE",
+    "https://arxiv.org/abs/2311.07911"
+   ],
+   "license_quote": "The dataset is available under the Apache 2.0 license.",
+   "content_provenance": "541 prompts: LM-generated base prompts (few-shot; model not named) then rephrased and manually checked/edited by authors (paper). No reference responses.",
+   "intended_use": "Evaluation only (verifiable instruction following); scorer code reused or reimplemented.",
+   "training_permitted": true,
+   "commercial_compatible": true,
+   "redistribution": "Apache-2.0: keep license header/NOTICE in copied code; state modifications.",
+   "attribution_required": true,
+   "attribution_text": "IFEval, Zhou et al., 2023, arXiv:2311.07911; Copyright The Google Research Authors, Apache License 2.0.",
+   "restrictions": [
+    "Eval-only by project policy; do not train on IFEval prompts or near-paraphrases.",
+    "Code files carry Apache-2.0 headers - retain if vendored."
+   ],
+   "decision": "APPROVED_EVAL_ONLY",
+   "rationale": "Apache-2.0 for both data and code, and reserved as a held-out benchmark."
+  },
+  {
+   "id": "R10",
+   "resource": "openai/simple-evals, openai/evals, openai/harmony (GitHub code)",
+   "url": "https://github.com/openai/simple-evals",
+   "revision": "simple-evals 652c89d0ca9df547706735883097e9537d40dc47; evals 8eac7a7de5215c907fbddc30efdaf316913eccdd; harmony abd677f7ac962629c808197caa1feb9e3e95d2b0",
+   "revision_note": "GitHub default-branch HEAD commits at check time (via GitHub API).",
+   "license_spdx": "MIT (simple-evals); MIT for code, mixed per-dataset (evals); Apache-2.0 (harmony)",
+   "license_evidence_url": "https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/LICENSE",
+   "license_evidence_urls_extra": [
+    "https://github.com/openai/evals/blob/8eac7a7de5215c907fbddc30efdaf316913eccdd/LICENSE.md",
+    "https://github.com/openai/harmony/blob/abd677f7ac962629c808197caa1feb9e3e95d2b0/LICENSE"
+   ],
+   "license_quote": "This license applies to all parts of this repository except for the datasets",
+   "content_provenance": "Human-written code; openai/evals registry datasets come from many third-party sources incl. CC BY-NC and CC BY-SA.",
+   "intended_use": "Methodology/harness code for evaluation; harmony for prompting gpt-oss teacher.",
+   "training_permitted": "unclear",
+   "commercial_compatible": true,
+   "redistribution": "MIT/Apache-2.0 code: keep notices. evals registry data: per-dataset licenses.",
+   "attribution_required": true,
+   "attribution_text": "simple-evals: Copyright (c) 2024 OpenAI, MIT. evals: Copyright (c) 2023 OpenAI, MIT. harmony: OpenAI, Apache License 2.0.",
+   "restrictions": [
+    "simple-evals is deprecated (July 2025) for new results; each benchmark it wraps has its own license.",
+    "openai/evals registry data excluded unless that dataset is reviewed individually (some are CC BY-NC).",
+    "Code is not training data; do not train on eval datasets."
+   ],
+   "decision": "APPROVED_EVAL_ONLY",
+   "decision_scope": "Code/methodology only; not data",
+   "rationale": "Code licenses (MIT/Apache-2.0) permit reuse as methodology and tooling, but bundled eval datasets carry separate, sometimes noncommercial, licenses."
+  },
+  {
+   "id": "R11",
+   "resource": "anthropics/evals (Model-Written Evaluation datasets, GitHub)",
+   "url": "https://github.com/anthropics/evals",
+   "revision": "84fcc677e52e1902d696c32cd1a6b663e70d3993",
+   "revision_note": "GitHub default-branch HEAD at check time (last commit 2023-01-03).",
+   "license_spdx": "CC-BY-4.0",
+   "license_evidence_url": "https://github.com/anthropics/evals/blob/84fcc677e52e1902d696c32cd1a6b663e70d3993/LICENSE",
+   "license_evidence_urls_extra": [
+    "https://github.com/anthropics/evals/blob/84fcc677e52e1902d696c32cd1a6b663e70d3993/README.md",
+    "https://arxiv.org/abs/2212.09251"
+   ],
+   "license_quote": "Attribution 4.0 International",
+   "content_provenance": "Mostly generated by Anthropic language models (README: 'datasets written by language models'); some human-written sets by Surge AI for comparison.",
+   "intended_use": "Evaluation only (persona, sycophancy, advanced-AI-risk, winogender).",
+   "training_permitted": true,
+   "commercial_compatible": true,
+   "redistribution": "CC BY 4.0 with attribution.",
+   "attribution_required": true,
+   "attribution_text": "Perez et al., 'Discovering Language Model Behaviors with Model-Written Evaluations', arXiv:2212.09251, Anthropic. CC BY 4.0.",
+   "restrictions": [
+    "Eval-only by project policy; model-generated content not used as training targets.",
+    "Contains biased/offensive content (README disclaimer)."
+   ],
+   "decision": "APPROVED_EVAL_ONLY",
+   "rationale": "CC BY 4.0 permits use with attribution, and as Anthropic-model-written benchmark items they are kept for evaluation only."
+  },
+  {
+   "id": "R12",
+   "resource": "tatsu-lab/alpaca and any data generated via OpenAI/Anthropic hosted APIs",
+   "url": "https://huggingface.co/datasets/tatsu-lab/alpaca",
+   "revision": "dce01c9b08f87459cf36a430d809084718273017",
+   "revision_note": "HF API sha at check time for tatsu-lab/alpaca; GitHub tatsu-lab/stanford_alpaca HEAD 761dc5bfbdeeffa89b8bff5d038781a4055f796a. Not applicable to the generic class of API-generated datasets.",
+   "license_spdx": "CC-BY-NC-4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/tatsu-lab/alpaca/blob/dce01c9b08f87459cf36a430d809084718273017/README.md",
+   "license_evidence_urls_extra": [
+    "https://github.com/tatsu-lab/stanford_alpaca/blob/761dc5bfbdeeffa89b8bff5d038781a4055f796a/README.md"
+   ],
+   "license_quote": "The dataset is available under the Creative Commons NonCommercial (CC BY-NC 4.0)",
+   "content_provenance": "52K instructions and outputs generated by OpenAI text-davinci-003 via hosted API (Self-Instruct pipeline).",
+   "intended_use": "None (exclusion confirmation).",
+   "training_permitted": false,
+   "commercial_compatible": false,
+   "redistribution": "Noncommercial only.",
+   "attribution_required": true,
+   "attribution_text": null,
+   "restrictions": [
+    "NonCommercial license; README: 'intended and licensed for research use only'.",
+    "Outputs of hosted OpenAI/Anthropic services are subject to provider terms barring use to build competing models (see R13).",
+    "Applies to all datasets whose targets came from hosted OpenAI/Anthropic APIs (e.g., ShareGPT, UltraChat, Alpaca derivatives) regardless of declared dataset license."
+   ],
+   "decision": "EXCLUDED",
+   "rationale": "Alpaca is CC BY-NC research-only and its outputs come from OpenAI's hosted API, whose terms bar using output to develop competing models."
+  },
+  {
+   "id": "R13",
+   "resource": "Anthropic Consumer/Commercial Terms and OpenAI Terms of Use (hosted-assistant outputs incl. Claude Code sessions)",
+   "url": "https://www.anthropic.com/legal/commercial-terms",
+   "revision": "Anthropic Consumer Terms effective 2025-10-08; Anthropic Commercial Terms effective 2025-06-17; OpenAI Terms of Use version/date not directly verified",
+   "revision_note": "Anthropic pages fetched directly. openai.com/policies/* returned HTTP 403 to our fetchers; the OpenAI wording comes from the search index of openai.com/policies/row-terms-of-use/ and openai.com/policies/dec-2024-eu-terms/ (index showed a 2026-01-01 version). Re-verify in a browser.",
+   "license_spdx": "LicenseRef-Proprietary-Terms",
+   "license_evidence_url": "https://www.anthropic.com/legal/consumer-terms",
+   "license_evidence_urls_extra": [
+    "https://www.anthropic.com/legal/commercial-terms",
+    "https://openai.com/policies/row-terms-of-use/",
+    "https://openai.com/policies/dec-2024-eu-terms/"
+   ],
+   "license_quote": "develop or train any artificial intelligence or machine learning algorithms or models",
+   "license_quotes_extra": [
+    "Anthropic Commercial s D.4: 'including to train competing AI models'",
+    "OpenAI Terms of Use: 'Use Output to develop models that compete with OpenAI.'"
+   ],
+   "content_provenance": "Outputs of hosted proprietary assistants (Claude incl. Claude Code, ChatGPT/OpenAI API).",
+   "intended_use": "None as training targets. Session output may be used as tooling/code/docs written for the owner, not as SFT targets.",
+   "training_permitted": false,
+   "commercial_compatible": false,
+   "redistribution": "N/A",
+   "attribution_required": false,
+   "attribution_text": null,
+   "restrictions": [
+    "Anthropic Consumer Terms s3 bars using Services to develop competing products, including training AI models.",
+    "Anthropic Commercial Terms s D.4 bars accessing Services to build competing products, including training competing AI models.",
+    "OpenAI Terms bar using Output to develop competing models.",
+    "Juniper 1 is a general-purpose LM; treat as potentially competing. Do not include Claude/ChatGPT transcripts, generated QA, rewrites or grading rationales as SFT targets."
+   ],
+   "decision": "EXCLUDED",
+   "rationale": "Both providers' terms prohibit using their services/outputs to train competing AI models, so hosted-assistant output (including this Claude Code session) is excluded as training data."
+  },
+  {
+   "id": "R14",
+   "resource": "evalplus/humanevalplus and evalplus/mbppplus (HF datasets; EvalPlus HumanEval+ and MBPP+)",
+   "url": "https://huggingface.co/datasets/evalplus/humanevalplus ; https://huggingface.co/datasets/evalplus/mbppplus",
+   "revision": "humanevalplus d32357cf319e50e9c8d8dab5ea876c72b0fd321b; mbppplus b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+   "revision_note": "HF API sha at check time (2026-10-13) equals the pinned revisions (lastModified 2024-05-01 / 2024-04-17). Files: data/test-00000-of-00001-5973903632b82d40.parquet sha256 4436f5c03d77c17e0cbc57543b90665b5c1266f55a43992a5ed7922cd34a7558; data/test-00000-of-00001-d5781c9c51e02795.parquet sha256 dc20030b3788fccf617444edcb34138ef13d7e4fafd17bfcb8c1279dbb12399b (same bytes as the exclusion registry copies). License re-verified independently by the integrator via the HF API at both pinned revisions (cardData license apache-2.0), 2026-10-13.",
+   "license_spdx": "Apache-2.0",
+   "license_evidence_url": "https://huggingface.co/datasets/evalplus/humanevalplus/blob/d32357cf319e50e9c8d8dab5ea876c72b0fd321b/README.md",
+   "license_evidence_urls_extra": [
+    "https://huggingface.co/datasets/evalplus/mbppplus/blob/b2d74c91837c3f2a20c1299ae98133cbe7cfa077/README.md",
+    "https://github.com/evalplus/evalplus/blob/26d6d00bb1fd0fa37f39c99d5290da67891d1c5e/LICENSE",
+    "https://arxiv.org/abs/2305.01210"
+   ],
+   "license_quote": "license: apache-2.0",
+   "content_provenance": "Problems from HumanEval (MIT) and MBPP (CC BY 4.0, some prompts and references revised); additional test inputs generated by the EvalPlus authors (LLM-seeded and type-aware mutation) with outputs from their canonical solutions.",
+   "intended_use": "Evaluation only: test inputs for the j1.codecheck.v1 stronger suites (expected values recomputed by the trusted reference in the sandbox; inputs kept only where they reproduce EvalPlus's recorded results).",
+   "training_permitted": true,
+   "commercial_compatible": true,
+   "redistribution": "Permitted under Apache-2.0 with notice; problem text keeps MBPP CC BY 4.0 / HumanEval MIT attribution.",
+   "attribution_required": true,
+   "attribution_text": "EvalPlus (Liu et al., 2023, arXiv:2305.01210), Apache-2.0; built on HumanEval (Chen et al., 2021, MIT) and MBPP (Austin et al., 2021, CC BY 4.0).",
+   "restrictions": [
+    "Eval-only by project policy (benchmark integrity); never written into SFT/RL training artifacts.",
+    "MBPP+ re-hosts MBPP problems from every split, so it is not clean for checkpoints trained on MBPP non-test records.",
+    "Execute references and model code only in the sandbox."
+   ],
+   "decision": "APPROVED_EVAL_ONLY",
+   "rationale": "Apache-2.0 permits use; the inputs strengthen held-out coding evaluation and are reserved for it."
+  }
+ ]
+}

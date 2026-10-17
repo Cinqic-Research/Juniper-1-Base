@@ -1,0 +1,179 @@
+{
+ "repo": "CinqicX/juniper1-corpus",
+ "started": "2026-10-10T05:56:37Z",
+ "files": [
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-24k-prefix-700MB/shards.json",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-24k-prefix-700MB/shards.json",
+   "size": 3430,
+   "sha256": "d46af268859c6961484e7d288d4f781055ea6b6c206b4eaaf257e65656d4e3eb",
+   "readback_sha256": "d46af268859c6961484e7d288d4f781055ea6b6c206b4eaaf257e65656d4e3eb",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-24k-prefix-700MB/train-docs.parquet",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-24k-prefix-700MB/train-docs.parquet",
+   "size": 3734382,
+   "sha256": "247830b35572dc9852e6ab1e8d0d4326a9d172195c2fc50f352304db1e346755",
+   "readback_sha256": "247830b35572dc9852e6ab1e8d0d4326a9d172195c2fc50f352304db1e346755",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-24k-prefix-700MB/train-tokens-00000.bin",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-24k-prefix-700MB/train-tokens-00000.bin",
+   "size": 366139842,
+   "sha256": "c6966e98977219baf256512c8d8ba2a7dd77dbc10b02cfee6545ec0d95eba4c3",
+   "readback_sha256": "c6966e98977219baf256512c8d8ba2a7dd77dbc10b02cfee6545ec0d95eba4c3",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-24k-prefix-700MB/validation-docs.parquet",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-24k-prefix-700MB/validation-docs.parquet",
+   "size": 67440,
+   "sha256": "489df36ea07db23cb7192c9b9d9e1a764c6ae089ef14edb1fea260bff0d8aa6d",
+   "readback_sha256": "489df36ea07db23cb7192c9b9d9e1a764c6ae089ef14edb1fea260bff0d8aa6d",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-24k-prefix-700MB/validation-tokens-00000.bin",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-24k-prefix-700MB/validation-tokens-00000.bin",
+   "size": 6459900,
+   "sha256": "d591539a7a113dab9ff2518bdb714ef12399dffe84b11185c9963cc918c40d98",
+   "readback_sha256": "d591539a7a113dab9ff2518bdb714ef12399dffe84b11185c9963cc918c40d98",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/tokenizer/j1-base-v0.2/candidates/j1tok-24k/eval.json",
+   "path_in_repo": "j1-base-v0.2/tokenizer_candidates/j1tok-24k/eval.json",
+   "size": 4305,
+   "sha256": "e804a7a62ab72940f43b278f98f536570f7c9fdd57976bc873f15b175b48cb39",
+   "readback_sha256": "e804a7a62ab72940f43b278f98f536570f7c9fdd57976bc873f15b175b48cb39",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/tokenizer/j1-base-v0.2/candidates/j1tok-24k/tokenizer.json",
+   "path_in_repo": "j1-base-v0.2/tokenizer_candidates/j1tok-24k/tokenizer.json",
+   "size": 680825,
+   "sha256": "174352e8a65f19ec5f60346ff181a5157db9d849963dcdc1aef3e4737f53a454",
+   "readback_sha256": "174352e8a65f19ec5f60346ff181a5157db9d849963dcdc1aef3e4737f53a454",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-28k-prefix-700MB/shards.json",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-28k-prefix-700MB/shards.json",
+   "size": 3430,
+   "sha256": "c2e6f6f78f87dac9d0c9f1069e474ec0d34f503d8fff5a40a116e8ac0be6a390",
+   "readback_sha256": "c2e6f6f78f87dac9d0c9f1069e474ec0d34f503d8fff5a40a116e8ac0be6a390",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-28k-prefix-700MB/train-docs.parquet",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-28k-prefix-700MB/train-docs.parquet",
+   "size": 3734317,
+   "sha256": "e89c2d4058d30c1bade0718555007194beaf925a860e47210b6e15a49d2bd7ae",
+   "readback_sha256": "e89c2d4058d30c1bade0718555007194beaf925a860e47210b6e15a49d2bd7ae",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-28k-prefix-700MB/train-tokens-00000.bin",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-28k-prefix-700MB/train-tokens-00000.bin",
+   "size": 360639558,
+   "sha256": "30d3f5827e173fac7606d6f2701d0b2466d6c60e1f4e6f9134a377e0c2e027ce",
+   "readback_sha256": "30d3f5827e173fac7606d6f2701d0b2466d6c60e1f4e6f9134a377e0c2e027ce",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-28k-prefix-700MB/validation-docs.parquet",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-28k-prefix-700MB/validation-docs.parquet",
+   "size": 67420,
+   "sha256": "8b382217844608290b4fde8ec5ea52df7a69006b6fdab5a3243718ffb0dacfa4",
+   "readback_sha256": "8b382217844608290b4fde8ec5ea52df7a69006b6fdab5a3243718ffb0dacfa4",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-28k-prefix-700MB/validation-tokens-00000.bin",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-28k-prefix-700MB/validation-tokens-00000.bin",
+   "size": 6357470,
+   "sha256": "a4a3bd247c240bbbd26878a504faef193363e24c259595b9b42b7c4f9ba13782",
+   "readback_sha256": "a4a3bd247c240bbbd26878a504faef193363e24c259595b9b42b7c4f9ba13782",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/tokenizer/j1-base-v0.2/candidates/j1tok-28k/eval.json",
+   "path_in_repo": "j1-base-v0.2/tokenizer_candidates/j1tok-28k/eval.json",
+   "size": 4304,
+   "sha256": "d9eadca10f26e80369a4a7fff9c5be875ba55ee1face54c0042f28f762184bfa",
+   "readback_sha256": "d9eadca10f26e80369a4a7fff9c5be875ba55ee1face54c0042f28f762184bfa",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/tokenizer/j1-base-v0.2/candidates/j1tok-28k/tokenizer.json",
+   "path_in_repo": "j1-base-v0.2/tokenizer_candidates/j1tok-28k/tokenizer.json",
+   "size": 803480,
+   "sha256": "a50ee49930006f9b4ff7af091081c860b8e9ba4f4d46f7babf9e0d519324f04e",
+   "readback_sha256": "a50ee49930006f9b4ff7af091081c860b8e9ba4f4d46f7babf9e0d519324f04e",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-32k-prefix-700MB/shards.json",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-32k-prefix-700MB/shards.json",
+   "size": 3430,
+   "sha256": "13e00f45ab13b5a50c6bd2172ac8cd9032b938f3ed560d6867f98c781edf9b68",
+   "readback_sha256": "13e00f45ab13b5a50c6bd2172ac8cd9032b938f3ed560d6867f98c781edf9b68",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-32k-prefix-700MB/train-docs.parquet",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-32k-prefix-700MB/train-docs.parquet",
+   "size": 3732573,
+   "sha256": "160ccedf39a14eceffb0b7ed7ee9ec253f369cf4cb372f263b02d1c1d4b0e0b2",
+   "readback_sha256": "160ccedf39a14eceffb0b7ed7ee9ec253f369cf4cb372f263b02d1c1d4b0e0b2",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-32k-prefix-700MB/train-tokens-00000.bin",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-32k-prefix-700MB/train-tokens-00000.bin",
+   "size": 356356516,
+   "sha256": "5b378d5a92bcf87545fc0e8df74598c7c98866f6a38f87480c65c1254e21dfd5",
+   "readback_sha256": "5b378d5a92bcf87545fc0e8df74598c7c98866f6a38f87480c65c1254e21dfd5",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-32k-prefix-700MB/validation-docs.parquet",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-32k-prefix-700MB/validation-docs.parquet",
+   "size": 67376,
+   "sha256": "6ae09c69017fa8478ce57b300b7feea061a0b156c4a903db92735890ab076261",
+   "readback_sha256": "6ae09c69017fa8478ce57b300b7feea061a0b156c4a903db92735890ab076261",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/token_shards/j1-base-v0.2/cand-j1tok-32k-prefix-700MB/validation-tokens-00000.bin",
+   "path_in_repo": "j1-base-v0.2/pilot_prefixes/cand-j1tok-32k-prefix-700MB/validation-tokens-00000.bin",
+   "size": 6282744,
+   "sha256": "fd4e35c092a6234f131ba55685fe060528bfc0c669edafcb5b7db32b0ef9f4fa",
+   "readback_sha256": "fd4e35c092a6234f131ba55685fe060528bfc0c669edafcb5b7db32b0ef9f4fa",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/tokenizer/j1-base-v0.2/candidates/j1tok-32k/eval.json",
+   "path_in_repo": "j1-base-v0.2/tokenizer_candidates/j1tok-32k/eval.json",
+   "size": 4307,
+   "sha256": "644ba9aebeecfdc9273eb4aa4fff8c3c91b2825cb39b94a88c213246df7eca3d",
+   "readback_sha256": "644ba9aebeecfdc9273eb4aa4fff8c3c91b2825cb39b94a88c213246df7eca3d",
+   "readback_ok": true
+  },
+  {
+   "local": "/media/cinqic/Cinqic Storage/juniper1-data/data/tokenizer/j1-base-v0.2/candidates/j1tok-32k/tokenizer.json",
+   "path_in_repo": "j1-base-v0.2/tokenizer_candidates/j1tok-32k/tokenizer.json",
+   "size": 927943,
+   "sha256": "9e173919d4e704cb36fcb47573e3a89c68fa27bf4eefcaee18ed3f4e77a5aacc",
+   "readback_sha256": "9e173919d4e704cb36fcb47573e3a89c68fa27bf4eefcaee18ed3f4e77a5aacc",
+   "readback_ok": true
+  }
+ ],
+ "upload_seconds": 399.2775866985321,
+ "commit": "1022bce6ed82aa101afa24b50d83cb8be2328cb3",
+ "readback_seconds": 238.48651766777039,
+ "all_ok": true,
+ "finished": "2026-10-10T06:07:30Z"
+}

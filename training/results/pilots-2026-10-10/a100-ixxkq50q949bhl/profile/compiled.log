@@ -1,0 +1,18 @@
+step 1 loss 10.3824 lr 9.24e-06 59923ms
+step 10 loss 9.4390 lr 9.24e-05 565ms
+step 20 loss 8.4586 lr 0.000185 567ms
+step 30 loss 7.7185 lr 0.000277 569ms
+step 40 loss 7.4007 lr 0.00037 570ms
+step 50 loss 7.2887 lr 0.000462 570ms
+step 60 loss 7.0085 lr 0.000554 572ms
+step 70 loss 6.7981 lr 0.000647 573ms
+step 80 loss 6.7725 lr 0.000739 575ms
+step 90 loss 6.6330 lr 0.000831 573ms
+step 100 loss 6.4968 lr 0.000924 573ms
+step 110 loss 6.4105 lr 0.000878 573ms
+step 120 loss 6.2229 lr 0.000734 571ms
+step 130 loss 6.0693 lr 0.00053 572ms
+step 140 loss 6.2081 lr 0.000319 572ms
+step 150 loss 6.1249 lr 0.000159 575ms
+step 160 loss 6.1058 lr 9.29e-05 574ms
+{"steps_run": 160, "final_step": 160, "tokens_per_s_median": 114407.39433674868, "step_ms_median": 572.8301075287163, "peak_vram_gib": 29.379550457000732, "final_param_sha256": "7eae67ad4eb543bbe0f0852564b2f2819e834689240ec4a20c152014a320248e"}

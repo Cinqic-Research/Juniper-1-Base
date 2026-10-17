@@ -1,0 +1,40 @@
+{
+ "schema": "j1.stage-authorization.v1",
+ "stage": "juniper1-sft-v2",
+ "authority": "owner directive 2026-10-13 sections 2 and 9 (bounded SFT v2 qualification/training); owner chat 2026-10-13 3:40 PM EDT: rent 3 x RTX 3090; hardware amended to RTX 4090 when 3090 stock ran out for the v2 seeds",
+ "parameter_changing": true,
+ "initial_checkpoint": {
+  "freeze_id": "juniper1-base-v1",
+  "freeze_record_sha256": "ef79b324fff459c8ffce7ac2e1b1542960a254b8383a6e8b19fd20402e92ff55",
+  "optimizer": "fresh AdamW"
+ },
+ "dataset": {
+  "version": "j1-sft-v1.3",
+  "manifest_sha256": "8584130b6a6bb49f7c007aadbb228615255635456080d6331a0554b39a2f62b9",
+  "eval_bundle_sha256": "935e12edb42a0a39cb75839ffbb74fcb5e01e034746f2725e9ff985ecdb89906",
+  "admission": "Juniper-1-Data docs/sft/reviews/dataset_v1.3_go_no_go.json (APPROVED_WITH_CONDITIONS)"
+ },
+ "tokenizer_sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+ "code": {
+  "train_branch": "sft/v2-stage",
+  "trainer_package_sha256": "f13afbdf0a67d5d8fc8e1d01f2aaa68331155c53f1372e339a06a859e5c2df89",
+  "data_code_revision": "5162bf7c9d76214ad0f81cb1a2472bae0197356f"
+ },
+ "protocol": {
+  "path": "docs/posttrain/sft_v2_protocol_v1.json",
+  "sha256": "38f4781b75dbbadc1ac8a48407b7cd69cd4de3c4e6b5dd956b1b12bab537d22a"
+ },
+ "prerequisites": [
+  "v1.3 admission (met with conditions)",
+  "smoke/recovery qualification on v1.3 (section 3.2; runs on the first pod before its seed)",
+  "baselines on bundle 935e12ed (running; thresholds are formulas so the order does not affect them)"
+ ],
+ "acceptance": "tools/sft_v2_decide.py with the frozen protocol; outcomes QUALIFIED_FOR_REVIEW / FAILED / INSUFFICIENT_EVIDENCE / BLOCKED; no promotion",
+ "budget": {
+  "runpod_usd_cap": 4.9,
+  "assignment_cap_usd": 5.0,
+  "spent_before_usd": 0.0
+ },
+ "rollback": "juniper1-base-v1 untouched; v2 runs are new lineages",
+ "authorized_et": "2026-10-13 3:46 PM EDT"
+}

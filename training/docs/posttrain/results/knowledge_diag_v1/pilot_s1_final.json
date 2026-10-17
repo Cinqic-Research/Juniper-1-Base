@@ -1,0 +1,1665 @@
+{
+ "bundle_sha256": "f96320150025d0250b5fbe7f5bc44b1f39b56ea836c8dfe842dbfc48c508eea1",
+ "items": [
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "0698a1707d6b575915346465027e1d7a#fewshot",
+   "output": "Palau",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "06a3c8c54409f1da335a681f321c950e#fewshot",
+   "output": "Luxembourg",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "0d74487d1afd4077ec49fccb82c2c0db#fewshot",
+   "output": "118",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "0f1e4edd527fc5c0f50cbebe49c5aefa#fewshot",
+   "output": "Fiji dirham",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "0f9b67e0a7a72e8d7387369a71492538#fewshot",
+   "output": "North America",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "11ede5a155cdb35a1bfbfe9b2c5b5a13#fewshot",
+   "output": "Cairo",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "129151bf0b91c44fcdbd9396e1aec452#fewshot",
+   "output": "Africa",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "19dd3a1902e11ae6724f20bf7e61184e#fewshot",
+   "output": "Turkmenistan",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "21a35a69a501dcb8c6756402ce6b5f8e#fewshot",
+   "output": "Africa",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "25252b28430f05482f064d7a1a64c4de#fewshot",
+   "output": "11",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "2a375307e2f13a9a540c875880129ba3#fewshot",
+   "output": "Port of Spain",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.us_state_capital",
+   "id": "2a7f74e56d0e4ba0dca72ef6d3b07685#fewshot",
+   "output": "Bismarck",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "2a9f9d9c30ae69e5e02b46b8ea1a1a68#fewshot",
+   "output": "10",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_capital",
+   "id": "2cb9908487830c0bc3d58fd6bd786073#fewshot",
+   "output": "Wellington",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "341c0631cda530084dc0ed12c1d39a1f#fewshot",
+   "output": "Cape Town",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "3469592424d9e3d2403cf4ce73c91fa9#fewshot",
+   "output": "North America",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "355b2555c1aba98a0622af2c8186f609#fewshot",
+   "output": "C",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "35693765d97a11f5807cf57962df3938#fewshot",
+   "output": "North Africa",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_capital",
+   "id": "35e44644b605408aacc2529bca8079dd#fewshot",
+   "output": "Beirut",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "37b84a35566acccdcc1da81327af005a#fewshot",
+   "output": "Cape casselle",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "382e718541d11ac5d3e3fbbbe4d7f40b#fewshot",
+   "output": "Rb",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "3ce332ad25973f68fbc5b436d200a85a#fewshot",
+   "output": "Europe",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "4363040f2e07a204e503ebf80d38d9e4#fewshot",
+   "output": "new pound",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "49701a7ea19a8b0adb0211fbed55baf2#fewshot",
+   "output": "Africa",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "4a91310d317e86f19093ca16e1b807e2#fewshot",
+   "output": "100",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "4c8a49ba65b229aaf27da5d7c2c87e47#fewshot",
+   "output": "Baja California",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "4e229a88e26ca8976a8bc8202bef02ea#fewshot",
+   "output": "Mn",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "515982aa99c84d54aa740ad03ddf6444#fewshot",
+   "output": "Saint Lucia dollar",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "5392a2fbc286c58fb49e86c68eee77fc#fewshot",
+   "output": "German franc",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "551f2cecc45da859bdf439eeab6b30fb#fewshot",
+   "output": "North America",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "56330c2c8b159865b58c5a4b0dc7dc57#fewshot",
+   "output": "North America",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "57f0f381f8382200e0491f771d5bf390#fewshot",
+   "output": "Australia",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "592dabb2632c2caf0d04c197f3b3b056#fewshot",
+   "output": "Dresden",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "5a4a756b92ac1d22c51b0f3223f13bf3#fewshot",
+   "output": "Johannesburg",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "5a6873c6215c7c17487908c7855fb762#fewshot",
+   "output": "Papuan New Guinean rupee",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "5c4ab52de1373495901b6b8cef6e213d#fewshot",
+   "output": "Palau dollar",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "6118fd2c4b45474eb83f3f5ed68fe62c#fewshot",
+   "output": "10",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "62f8ecb2c0cd4fdd23e0cf126b3b9146#fewshot",
+   "output": "Turkic dinar",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "63e96e016dd54befc0fdae2a9ec2dbee#fewshot",
+   "output": "110",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "64250453b076055d05cdd78e7bd05d1a#fewshot",
+   "output": "Serbian franc",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "67aa1f834d644604a34d99c26371e078#fewshot",
+   "output": "leu",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.element_symbol",
+   "id": "6aa67b1aadf422be7b88e028357ffc50#fewshot",
+   "output": "Xe",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.us_state_capital",
+   "id": "6ca33da07e05b6abf36b37a3307bd28c#fewshot",
+   "output": "Atlanta",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "6dce76e61ec285de1f9a67dc30145b2b#fewshot",
+   "output": "Africa",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "6eb48dfb4c1e38ad1476e7b937b645ff#fewshot",
+   "output": "Singapore",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "74df3d6baf8e538027bde05b4326afd0#fewshot",
+   "output": "Pb",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "75ddad02d51bd454d6aeb58455f90f5a#fewshot",
+   "output": "Africa",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_currency",
+   "id": "7953687fcc9e539f16efe2d0c61e477a#fewshot",
+   "output": "New Zealand dollar",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "853c8af1f2a31294c04b0908a3e58880#fewshot",
+   "output": "South America",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "8d99a8122f73e0c9b97aba099dc4beaa#fewshot",
+   "output": "Rn",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.element_symbol",
+   "id": "94126fa960fb2b50d389e1533c74f511#fewshot",
+   "output": "Li",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "9532ab2f431dceeedbef38443cd52fad#fewshot",
+   "output": "Nigeria City",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "9afb1b7fbe7a4b0a094a27cde823c049#fewshot",
+   "output": "10",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "9faa81604787adf78e629eed6924a8c9#fewshot",
+   "output": "Dp",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "a4fcfdb4f42c7d70a1f4031fa0e9a314#fewshot",
+   "output": "Baku",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.us_state_capital",
+   "id": "a6128bad09e4e9b8d8a21535cd5a3523#fewshot",
+   "output": "Bismarck",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "a851d97cda6d3c63305bc38db162ecd9#fewshot",
+   "output": "Guyana dollar",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "ab1285dd1f559928cbdcca73ada59f9d#fewshot",
+   "output": "Europe",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "ab918e2ef90cc786f7a589d0b419a237#fewshot",
+   "output": "Tb",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.element_symbol",
+   "id": "abf20bf6baa914ed9b4a5fcd1e84b494#fewshot",
+   "output": "No",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "ac771c0216815b0c6051092e895d2cef#fewshot",
+   "output": "South America",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "ad0246994d6af189ba2524ca773f7281#fewshot",
+   "output": "10",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "ad8faa16efaebc519952d09f3f689777#fewshot",
+   "output": "Europe",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.us_state_capital",
+   "id": "b47a80a30221402fed72ac09b90eb5de#fewshot",
+   "output": "Philadelphia",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "b6f02263c91adce5fbeccce92b08fd27#fewshot",
+   "output": "10",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "bde8194e5e2fe3737cd5f96a7685c673#fewshot",
+   "output": "South Africa",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "bf7dec69290ed30be8ae02a7fbacca1e#fewshot",
+   "output": "New Zealand dollar",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "bfcdb16657b48660df7f01e2fc443e51#fewshot",
+   "output": "Sri Lankan dollar",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "c43740c3d94c79e3724f904468a4b8a7#fewshot",
+   "output": "Nigerian dollar",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "c4f4369bd1ccceec9cc4c5e3df742bcd#fewshot",
+   "output": "Africa",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "c8d4405d22fd355fffb0b4730f4fe11d#fewshot",
+   "output": "Lebanese \u0111\u1ed3ng leu",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "cb4d64d7e0b4bc300d215ab4f1f1d5f8#fewshot",
+   "output": "Europe",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_capital",
+   "id": "cc3a9289e0041b4529ee3ee081dbe72b#fewshot",
+   "output": "Brussels",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "d07be68ffe1db071f9a95e63647edf76#fewshot",
+   "output": "14",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.element_symbol",
+   "id": "d0ec16f46e1c29339526eb9eb451e3c1#fewshot",
+   "output": "Ir",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "d12e9edb84822485f7c782ad7a52a3b7#fewshot",
+   "output": "100",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "d385222968af05ec36146e6e3976f6e5#fewshot",
+   "output": "11",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_capital",
+   "id": "d4736ec8a434774b37ec6d063d36f729#fewshot",
+   "output": "Belgrade",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "d71ef8b88b843c7d7c79b6501867b11c#fewshot",
+   "output": "Madagascar dollar",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "d9186e1bcb743f4066e4e27aabc6fa9c#fewshot",
+   "output": "India",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "e5b5749eb9831d37aa8fb79440048b0b#fewshot",
+   "output": "Cayman Islands",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "eef92715c46127d72b8e2fa6e78f7b07#fewshot",
+   "output": "Saint Lucia",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "f59a18ad9a9ba6033a2ccc8d71c0aea4#fewshot",
+   "output": "Vd",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.us_state_capital",
+   "id": "fbac59c775bce5696bee16009e79b03b#fewshot",
+   "output": "Baltimore",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "fc509fb6c47b6e845854ec1551da7594#fewshot",
+   "output": "Kampala",
+   "variant": "base_fewshot"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "0698a1707d6b575915346465027e1d7a",
+   "output": "Palau",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "06a3c8c54409f1da335a681f321c950e",
+   "output": "Libreville",
+   "variant": "chat"
+  },
+  {
+   "abstained": true,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "0d74487d1afd4077ec49fccb82c2c0db",
+   "output": "I don't know.",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "0f1e4edd527fc5c0f50cbebe49c5aefa",
+   "output": "Fiji dollar",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "0f9b67e0a7a72e8d7387369a71492538",
+   "output": "Europe",
+   "variant": "chat"
+  },
+  {
+   "abstained": true,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "11ede5a155cdb35a1bfbfe9b2c5b5a13",
+   "output": "I don't know.",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "129151bf0b91c44fcdbd9396e1aec452",
+   "output": "Oceania",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "19dd3a1902e11ae6724f20bf7e61184e",
+   "output": "Tashkent",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "21a35a69a501dcb8c6756402ce6b5f8e",
+   "output": "Africa",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "25252b28430f05482f064d7a1a64c4de",
+   "output": "111",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "2a375307e2f13a9a540c875880129ba3",
+   "output": "Panama",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.us_state_capital",
+   "id": "2a7f74e56d0e4ba0dca72ef6d3b07685",
+   "output": "Rhode Island",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "2a9f9d9c30ae69e5e02b46b8ea1a1a68",
+   "output": "111",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "2cb9908487830c0bc3d58fd6bd786073",
+   "output": "Auckland",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "341c0631cda530084dc0ed12c1d39a1f",
+   "output": "Porto-Novo",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "3469592424d9e3d2403cf4ce73c91fa9",
+   "output": "Asia",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.element_symbol",
+   "id": "355b2555c1aba98a0622af2c8186f609",
+   "output": "Ca",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "35693765d97a11f5807cf57962df3938",
+   "output": "Africa",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "35e44644b605408aacc2529bca8079dd",
+   "output": "Tripoli",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "37b84a35566acccdcc1da81327af005a",
+   "output": "Cape Verdean franc",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.element_symbol",
+   "id": "382e718541d11ac5d3e3fbbbe4d7f40b",
+   "output": "Rh",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "3ce332ad25973f68fbc5b436d200a85a",
+   "output": "Africa",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "4363040f2e07a204e503ebf80d38d9e4",
+   "output": "Liberian franc",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "49701a7ea19a8b0adb0211fbed55baf2",
+   "output": "Africa",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "4a91310d317e86f19093ca16e1b807e2",
+   "output": "8",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "4c8a49ba65b229aaf27da5d7c2c87e47",
+   "output": "Auckland",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "4e229a88e26ca8976a8bc8202bef02ea",
+   "output": "Mu",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "515982aa99c84d54aa740ad03ddf6444",
+   "output": "Saint Lucia peso",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "5392a2fbc286c58fb49e86c68eee77fc",
+   "output": "Liechtenstein franc",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "551f2cecc45da859bdf439eeab6b30fb",
+   "output": "Europe",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "56330c2c8b159865b58c5a4b0dc7dc57",
+   "output": "Asia",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "57f0f381f8382200e0491f771d5bf390",
+   "output": "Africa",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "592dabb2632c2caf0d04c197f3b3b056",
+   "output": "Berlin",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "5a4a756b92ac1d22c51b0f3223f13bf3",
+   "output": "Windhoek",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "5a6873c6215c7c17487908c7855fb762",
+   "output": "Papua New Guinean dollar",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "5c4ab52de1373495901b6b8cef6e213d",
+   "output": "Palaui dollar",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "6118fd2c4b45474eb83f3f5ed68fe62c",
+   "output": "100",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "62f8ecb2c0cd4fdd23e0cf126b3b9146",
+   "output": "Turkmenian lira",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "63e96e016dd54befc0fdae2a9ec2dbee",
+   "output": "111",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "64250453b076055d05cdd78e7bd05d1a",
+   "output": "Serbian krone",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "67aa1f834d644604a34d99c26371e078",
+   "output": "Algerian ouguiya",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.element_symbol",
+   "id": "6aa67b1aadf422be7b88e028357ffc50",
+   "output": "Xe",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.us_state_capital",
+   "id": "6ca33da07e05b6abf36b37a3307bd28c",
+   "output": "Tbilisi",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "6dce76e61ec285de1f9a67dc30145b2b",
+   "output": "South America",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "6eb48dfb4c1e38ad1476e7b937b645ff",
+   "output": "Australia",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "74df3d6baf8e538027bde05b4326afd0",
+   "output": "Pb",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "75ddad02d51bd454d6aeb58455f90f5a",
+   "output": "North America",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_currency",
+   "id": "7953687fcc9e539f16efe2d0c61e477a",
+   "output": "New Zealand dollar",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "853c8af1f2a31294c04b0908a3e58880",
+   "output": "North America",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "8d99a8122f73e0c9b97aba099dc4beaa",
+   "output": "Rn",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.element_symbol",
+   "id": "94126fa960fb2b50d389e1533c74f511",
+   "output": "Li",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "9532ab2f431dceeedbef38443cd52fad",
+   "output": "Nigeria",
+   "variant": "chat"
+  },
+  {
+   "abstained": true,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "9afb1b7fbe7a4b0a094a27cde823c049",
+   "output": "I don't know.",
+   "variant": "chat"
+  },
+  {
+   "abstained": true,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "9faa81604787adf78e629eed6924a8c9",
+   "output": "I don't know.",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "a4fcfdb4f42c7d70a1f4031fa0e9a314",
+   "output": "Ta\u00efs",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.us_state_capital",
+   "id": "a6128bad09e4e9b8d8a21535cd5a3523",
+   "output": "Bismarck",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "a851d97cda6d3c63305bc38db162ecd9",
+   "output": "Guyanian dollar",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "ab1285dd1f559928cbdcca73ada59f9d",
+   "output": "Europe",
+   "variant": "chat"
+  },
+  {
+   "abstained": true,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "ab918e2ef90cc786f7a589d0b419a237",
+   "output": "I don't know.",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "abf20bf6baa914ed9b4a5fcd1e84b494",
+   "output": "Na",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_continent",
+   "id": "ac771c0216815b0c6051092e895d2cef",
+   "output": "Africa",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "ad0246994d6af189ba2524ca773f7281",
+   "output": "91",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "ad8faa16efaebc519952d09f3f689777",
+   "output": "Europe",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.us_state_capital",
+   "id": "b47a80a30221402fed72ac09b90eb5de",
+   "output": "Pennsylvania",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "b6f02263c91adce5fbeccce92b08fd27",
+   "output": "11",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "bde8194e5e2fe3737cd5f96a7685c673",
+   "output": "Africa",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "bf7dec69290ed30be8ae02a7fbacca1e",
+   "output": "Comorian dollar",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_currency",
+   "id": "bfcdb16657b48660df7f01e2fc443e51",
+   "output": "sri lankan rupee",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "c43740c3d94c79e3724f904468a4b8a7",
+   "output": "Nigerian shilling",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "c4f4369bd1ccceec9cc4c5e3df742bcd",
+   "output": "Africa",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "c8d4405d22fd355fffb0b4730f4fe11d",
+   "output": "Lebanese rial",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "cb4d64d7e0b4bc300d215ab4f1f1d5f8",
+   "output": "Europe",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "cc3a9289e0041b4529ee3ee081dbe72b",
+   "output": "Berlin",
+   "variant": "chat"
+  },
+  {
+   "abstained": true,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "d07be68ffe1db071f9a95e63647edf76",
+   "output": "I don't know.",
+   "variant": "chat"
+  },
+  {
+   "abstained": true,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "d0ec16f46e1c29339526eb9eb451e3c1",
+   "output": "I don't know.",
+   "variant": "chat"
+  },
+  {
+   "abstained": true,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "d12e9edb84822485f7c782ad7a52a3b7",
+   "output": "I don't know.",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.element_number",
+   "id": "d385222968af05ec36146e6e3976f6e5",
+   "output": "10",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "d4736ec8a434774b37ec6d063d36f729",
+   "output": "Podgorica",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_currency",
+   "id": "d71ef8b88b843c7d7c79b6501867b11c",
+   "output": "Madagascar dollar",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": true,
+   "family": "facts.country_continent",
+   "id": "d9186e1bcb743f4066e4e27aabc6fa9c",
+   "output": "Asia",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "e5b5749eb9831d37aa8fb79440048b0b",
+   "output": "Guinean City",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": true,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "eef92715c46127d72b8e2fa6e78f7b07",
+   "output": "Victoria",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.element_symbol",
+   "id": "f59a18ad9a9ba6033a2ccc8d71c0aea4",
+   "output": "Van",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.us_state_capital",
+   "id": "fbac59c775bce5696bee16009e79b03b",
+   "output": "Maryland",
+   "variant": "chat"
+  },
+  {
+   "abstained": false,
+   "captured": false,
+   "correct": false,
+   "family": "facts.country_capital",
+   "id": "fc509fb6c47b6e845854ec1551da7594",
+   "output": "Madagascar",
+   "variant": "chat"
+  }
+ ],
+ "label": "pilot_s1_final",
+ "model": {
+  "checkpoint": "ckpt-000001226-55d13f9a",
+  "manifest_sha256": "dc0bbbb0cd655cc5114c1ee73ac777634985fca8a713a9f149f7686b08a110ce",
+  "model_state_sha256": "a4616f9045cfe250f188595fba591dd4c157cb613e331ceaa89aa889f8a79e95",
+  "run_id": "j1-sft-v1-pilot",
+  "stage": "juniper1-sft-v1-pilot",
+  "updates": 1226
+ },
+ "schema": "j1.sft-diag-facts.v1",
+ "scorer": "j1.sftscore.v3",
+ "split": "dev",
+ "summary": {
+  "base_fewshot": {
+   "all": {
+    "abstained": 0,
+    "captured": 25,
+    "correct": 21,
+    "n": 85,
+    "wrong": 64
+   },
+   "capitals": {
+    "abstained": 0,
+    "captured": 5,
+    "correct": 5,
+    "n": 24,
+    "wrong": 19
+   },
+   "facts.country_capital": {
+    "abstained": 0,
+    "captured": 3,
+    "correct": 4,
+    "n": 19,
+    "wrong": 15
+   },
+   "facts.country_continent": {
+    "abstained": 0,
+    "captured": 7,
+    "correct": 11,
+    "n": 20,
+    "wrong": 9
+   },
+   "facts.country_currency": {
+    "abstained": 0,
+    "captured": 0,
+    "correct": 1,
+    "n": 17,
+    "wrong": 16
+   },
+   "facts.element_number": {
+    "abstained": 0,
+    "captured": 8,
+    "correct": 0,
+    "n": 12,
+    "wrong": 12
+   },
+   "facts.element_symbol": {
+    "abstained": 0,
+    "captured": 5,
+    "correct": 4,
+    "n": 12,
+    "wrong": 8
+   },
+   "facts.us_state_capital": {
+    "abstained": 0,
+    "captured": 2,
+    "correct": 1,
+    "n": 5,
+    "wrong": 4
+   }
+  },
+  "chat": {
+   "all": {
+    "abstained": 8,
+    "captured": 27,
+    "correct": 19,
+    "n": 85,
+    "wrong": 66
+   },
+   "capitals": {
+    "abstained": 1,
+    "captured": 10,
+    "correct": 0,
+    "n": 24,
+    "wrong": 24
+   },
+   "facts.country_capital": {
+    "abstained": 1,
+    "captured": 9,
+    "correct": 0,
+    "n": 19,
+    "wrong": 19
+   },
+   "facts.country_continent": {
+    "abstained": 0,
+    "captured": 7,
+    "correct": 13,
+    "n": 20,
+    "wrong": 7
+   },
+   "facts.country_currency": {
+    "abstained": 0,
+    "captured": 0,
+    "correct": 2,
+    "n": 17,
+    "wrong": 15
+   },
+   "facts.element_number": {
+    "abstained": 4,
+    "captured": 7,
+    "correct": 0,
+    "n": 12,
+    "wrong": 12
+   },
+   "facts.element_symbol": {
+    "abstained": 3,
+    "captured": 3,
+    "correct": 4,
+    "n": 12,
+    "wrong": 8
+   },
+   "facts.us_state_capital": {
+    "abstained": 0,
+    "captured": 1,
+    "correct": 0,
+    "n": 5,
+    "wrong": 5
+   }
+  }
+ }
+}

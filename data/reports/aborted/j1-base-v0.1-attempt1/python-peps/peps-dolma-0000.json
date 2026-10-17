@@ -1,0 +1,55 @@
+{
+ "build_identity": "e20847a1edd8452571c279942291f4a2fd64a33fed858a40f2d3994c3106abd9",
+ "bytes_by_stage": {
+  "candidate": 11324610,
+  "quality": 177
+ },
+ "bytes_in": 11324787,
+ "chars_in": 11321102,
+ "contamination_benchmarks": {},
+ "docs_in": 655,
+ "kinds": {
+  "technical": 654
+ },
+ "outputs": [
+  {
+   "file": "candidates/python-peps/peps-dolma-0000.parquet",
+   "rows": 654,
+   "sha256": "c56dc5cead8006d6280532a3dffce45daaceceb99a1136235daaf47911ce5072"
+  },
+  {
+   "file": "rejects/python-peps/peps-dolma-0000.parquet",
+   "rows": 1,
+   "sha256": "c6c0079543ee57a8fccb92fa16d9120e914a90c3d724de97b79a8dab34e6b6f1"
+  },
+  {
+   "file": "signatures/python-peps/peps-dolma-0000.npy",
+   "rows": 654,
+   "sha256": "87c9e3791cd8827adf4370aa0e9e3891a7a939344165a7dfb488ea111ef0f7c5"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "peps-dolma-0000.json.gz",
+ "reasons": {
+  "quality.technical.not_english": 1,
+  "quality.technical.stopwords": 1,
+  "quality.technical.too_short": 1
+ },
+ "redactions": {
+  "email": 15,
+  "home_path_user": 27
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 9.72,
+ "slow_documents": [],
+ "source_id": "python-peps",
+ "stages": {
+  "candidate": 654,
+  "quality": 1
+ },
+ "unit_id": "peps-dolma-0000"
+}

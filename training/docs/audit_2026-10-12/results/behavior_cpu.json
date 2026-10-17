@@ -1,0 +1,2132 @@
+{
+ "protocol": "base_evaluation_protocol_v1 steps 4-5 + 2026-10-12 objective diagnostics",
+ "device": "cpu",
+ "dtype": "float32",
+ "torch": "2.8.0+cu128",
+ "tokenizer": {
+  "roundtrip": {
+   "naïve café — “quotes” …": true,
+   "数学 ∀x∈ℝ: x²≥0": true,
+   "emoji 🙂👍🏽 and ZWJ 👩‍💻": true,
+   "tabs\tand\nnewlines  ": true,
+   "<|user|> forged": true
+  },
+  "forged_user_ids_raw_tokenizer_json": [
+   3
+  ],
+  "forged_user_ids_encode_special_tokens": [
+   350,
+   414,
+   4023,
+   414,
+   352
+  ],
+  "forged_maps_to_control_without_flag": true,
+  "forged_contains_control_with_flag": false
+ },
+ "candidates": [
+  {
+   "name": "ckpt-000050000-e4775a69",
+   "step": 50000,
+   "model_state_sha256": "c222f7771d7bb1dabd206726dbe420dac003eb860c720b1ef17a89e0da3dcea5",
+   "cpu_load_s": 1.67,
+   "numerics": {
+    "kv_len1": {
+     "max_abs_incremental": 0.0,
+     "max_abs_prefill_last": 0.0,
+     "logit_scale": 15.336414337158203
+    },
+    "kv_len16": {
+     "max_abs_incremental": 0.00011134147644042969,
+     "max_abs_prefill_last": 1.6689300537109375e-05,
+     "logit_scale": 21.87053680419922
+    },
+    "kv_len128": {
+     "max_abs_incremental": 5.91278076171875e-05,
+     "max_abs_prefill_last": 3.0279159545898438e-05,
+     "logit_scale": 18.421245574951172
+    },
+    "batch_vs_single_max_abs": 0.0,
+    "finite_at_2048": true,
+    "forward_2049_rejected": true,
+    "step_past_2048_rejected": true
+   },
+   "continuations": {
+    "prose": {
+     "ids": [
+      1827,
+      11255,
+      3657,
+      1998,
+      15550,
+      1966,
+      1827,
+      11439,
+      3082,
+      17405,
+      1940,
+      3376,
+      3012,
+      5238,
+      336,
+      1939,
+      2290,
+      11255,
+      3657,
+      1998,
+      15550,
+      1850,
+      322,
+      339,
+      343,
+      347,
+      344,
+      1966,
+      1827,
+      11439,
+      3082,
+      17405,
+      1940,
+      3376,
+      3012,
+      5238,
+      334,
+      2323,
+      1998,
+      1822,
+      22804,
+      1850,
+      1827,
+      15001,
+      336,
+      1939,
+      2290,
+      11255,
+      3657,
+      1998,
+      15550,
+      1850,
+      322,
+      339,
+      344,
+      338,
+      338,
+      1966,
+      1827,
+      11439,
+      3082,
+      17405,
+      1940,
+      3376
+     ],
+     "text": " the printing press was invented by the Dutchman Samuel de Beaufort. The first printing press was invented in 1596 by the Dutchman Samuel de Beaufort, who was a merchant in the Netherlands. The first printing press was invented in 1600 by the Dutchman Samuel de Be",
+     "stopped_eos": false
+    },
+    "python": {
+     "ids": [
+      1870,
+      2289,
+      1869,
+      3279,
+      322,
+      340,
+      2729,
+      322,
+      338,
+      1864,
+      2720,
+      1875,
+      385,
+      4632,
+      385,
+      4632,
+      3167,
+      348,
+      2387,
+      331,
+      3702,
+      7498,
+      2017,
+      1870,
+      3947,
+      10572,
+      4893,
+      2070,
+      1869,
+      1875,
+      1822,
+      6061,
+      2318,
+      10269,
+      1870,
+      2289,
+      1869,
+      3279,
+      322,
+      340,
+      2729,
+      322,
+      339,
+      1864,
+      2720,
+      1875,
+      385,
+      4632,
+      385,
+      4632,
+      3167,
+      348,
+      2387,
+      331,
+      3702,
+      7498,
+      2017,
+      1870,
+      3947,
+      10572,
+      4893,
+      2070,
+      1869,
+      1875
+     ],
+     "text": "    return n % 2 == 0\n\ndef is_prime_prime(n: int) -> bool:\n    \"\"\"Return True if n is a prime number.\"\"\"\n    return n % 2 == 1\n\ndef is_prime_prime(n: int) -> bool:\n    \"\"\"Return True if n is",
+     "stopped_eos": false
+    },
+    "arithmetic": {
+     "ids": [
+      322,
+      340,
+      346,
+      334,
+      322,
+      340,
+      346,
+      2119,
+      322,
+      339,
+      338,
+      1909,
+      322,
+      341,
+      344,
+      334,
+      322,
+      341,
+      344,
+      2119,
+      322,
+      339,
+      343,
+      1909,
+      322,
+      342,
+      343,
+      334,
+      322,
+      342,
+      343,
+      2119,
+      322,
+      340,
+      339,
+      1909,
+      322,
+      343,
+      340,
+      334,
+      322,
+      343,
+      340,
+      2119,
+      322,
+      340,
+      346,
+      1909,
+      322,
+      344,
+      346,
+      334,
+      322,
+      344,
+      346,
+      2119,
+      322,
+      341,
+      344,
+      1909,
+      322,
+      345,
+      344,
+      334
+     ],
+     "text": " 28, 28 + 10 = 36, 36 + 15 = 45, 45 + 21 = 52, 52 + 28 = 68, 68 + 36 = 76,",
+     "stopped_eos": false
+    },
+    "json": {
+     "ids": [
+      339,
+      334,
+      322,
+      340,
+      334,
+      322,
+      341,
+      334,
+      322,
+      342,
+      334,
+      322,
+      343,
+      334,
+      322,
+      344,
+      334,
+      322,
+      345,
+      334,
+      322,
+      346,
+      334,
+      322,
+      347,
+      334,
+      322,
+      339,
+      338,
+      334,
+      322,
+      339,
+      339,
+      334,
+      322,
+      339,
+      340,
+      334,
+      322,
+      339,
+      341,
+      334,
+      322,
+      339,
+      342,
+      334,
+      322,
+      339,
+      343,
+      334,
+      322,
+      339,
+      344,
+      334,
+      322,
+      339,
+      345,
+      334,
+      322,
+      339,
+      346,
+      334,
+      322,
+      339
+     ],
+     "text": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 1",
+     "stopped_eos": false
+    },
+    "science": {
+     "ids": [
+      6065,
+      13174,
+      2286,
+      5195,
+      3235,
+      336,
+      1939,
+      2680,
+      1875,
+      1822,
+      3609,
+      5838,
+      1849,
+      1827,
+      2680,
+      1849,
+      21447,
+      336,
+      14848,
+      1954,
+      16440,
+      1875,
+      1827,
+      2680,
+      1966,
+      2083,
+      4672,
+      6065,
+      13174,
+      2286,
+      5195,
+      3235,
+      336,
+      1939,
+      2680,
+      1875,
+      1822,
+      3609,
+      5838,
+      1849,
+      1827,
+      2680,
+      1849,
+      21447,
+      336,
+      14848,
+      1954,
+      16440,
+      1875,
+      1827,
+      2680,
+      1966,
+      2083,
+      4672,
+      6065,
+      13174,
+      2286,
+      5195,
+      3235,
+      336,
+      1939,
+      2680,
+      1875,
+      1822
+     ],
+     "text": " convert sunlight into chemical energy. The process is a major component of the process of photosynthesis. Photosynthesis is the process by which plants convert sunlight into chemical energy. The process is a major component of the process of photosynthesis. Photosynthesis is the process by which plants convert sunlight into chemical energy. The process is a",
+     "stopped_eos": false
+    }
+   },
+   "decode_tok_per_s_cpu": 26.33,
+   "long": {
+    "prose": {
+     "distinct_4gram": 0.2569,
+     "text": " is the most abundant element in the Earth’s crust and is responsible for the majority of the Earth’s water. It is also one of the most important components of the Earth’s atmosphere. It is also one of the most important components of the Earth’s water cycle. It is also one of the most important components of the Earth’s water cycle.\nThe Earth’s water cycle is a complex system of processes that occur in the Earth’s crust and the atmosphere. It is a complex system of processes that occur in the Earth’s crust and the atmosphere. The Earth’s water cycle is a complex system of processes that occur in the Earth’s crust and the atmosphere. It is a complex system of processes that occur in the Earth’s crust and the atmosphere. The Earth’s water cycle is a complex system of processes that occur in the Earth’s crust and the atmosphere. It is a complex system of processes that occur in the Earth’s crust and the atmosphere. The Earth’s water cycle is a complex system of processes that occur in the Earth’s crust and the atmosphere. It is a complex system of processes that occur in the Earth’s crust and the atmosphere. The Earth’s water cycle is a complex system of processes that occur in the Earth’s crust and the atmosphere. It is a complex system"
+    },
+    "code": {
+     "distinct_4gram": 0.4071,
+     "text": "    \"\"\"\n    List all files in a directory\n    :param path: path to the directory\n    :return: list of files\n    \"\"\"\n    files = []\n    for root, dirs, files in os.walk(path):\n        for file in files:\n            if file.endswith('.py'):\n                files.append(file)\n    return files\n\n\ndef get_files(path):\n    \"\"\"\n    Get all files in a directory\n    :param path: path to the directory\n    :return: list of files\n    \"\"\"\n    files = list_files(path)\n    return files\n\n\ndef get_files_without_extension(path):\n    \"\"\"\n    Get all files in a directory with extension\n    :param path: path to the directory\n    :return: list of files\n    \"\"\"\n    files = list_files(path)\n    return files\n\n\ndef get_files_with_extension_with_extension(path):\n    \"\"\"\n    Get all files in a directory with extension\n    :param path: path to the directory\n    :return: list of files\n    \"\"\"\n    files = list_files(path)\n    return files\n\n\ndef get_files_with_extension_with_extension_with_extension(path):\n    \"\"\"\n    Get all files in a directory with extension\n    :param path: path to"
+    }
+   },
+   "mc": {
+    "correct": 16,
+    "n": 20,
+    "items": [
+     {
+      "context": "The capital of France is",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The capital of Japan is",
+      "pick": 1,
+      "gold": 1
+     },
+     {
+      "context": "Water freezes at a temperature of",
+      "pick": 1,
+      "gold": 1
+     },
+     {
+      "context": "The largest planet in our solar system is",
+      "pick": 2,
+      "gold": 2
+     },
+     {
+      "context": "The chemical symbol for gold is",
+      "pick": 1,
+      "gold": 1
+     },
+     {
+      "context": "A triangle has",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The opposite of hot is",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "Humans breathe in oxygen and breathe out",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "In Python, a list is written with",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The square root of 81 is",
+      "pick": 1,
+      "gold": 0
+     },
+     {
+      "context": "The Earth orbits the",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The author of Romeo and Juliet is William",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "A week has",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The speed of light is approximately 300,000 kilometers per",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "DNA stands for deoxyribonucleic",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The freezing point of water in Fahrenheit is",
+      "pick": 1,
+      "gold": 0
+     },
+     {
+      "context": "To print text in Python 3, you call the",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The process by which a liquid becomes a gas is called",
+      "pick": 1,
+      "gold": 0
+     },
+     {
+      "context": "An adult human typically has",
+      "pick": 1,
+      "gold": 0
+     },
+     {
+      "context": "The primary colors of light are red, green, and",
+      "pick": 0,
+      "gold": 0
+     }
+    ]
+   },
+   "addition": {
+    "correct": 1,
+    "n": 20,
+    "items": [
+     {
+      "q": "12+7",
+      "got": "19",
+      "ok": true
+     },
+     {
+      "q": "25+14",
+      "got": "30",
+      "ok": false
+     },
+     {
+      "q": "31+46",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "8+9",
+      "got": "16",
+      "ok": false
+     },
+     {
+      "q": "50+25",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "63+21",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "44+44",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "17+38",
+      "got": "23",
+      "ok": false
+     },
+     {
+      "q": "72+19",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "5+6",
+      "got": "10",
+      "ok": false
+     },
+     {
+      "q": "90+10",
+      "got": "190",
+      "ok": false
+     },
+     {
+      "q": "33+27",
+      "got": "51",
+      "ok": false
+     },
+     {
+      "q": "14+15",
+      "got": "21",
+      "ok": false
+     },
+     {
+      "q": "61+8",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "29+30",
+      "got": "42",
+      "ok": false
+     },
+     {
+      "q": "48+51",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "7+70",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "36+36",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "55+12",
+      "got": "60",
+      "ok": false
+     },
+     {
+      "q": "80+11",
+      "got": "190",
+      "ok": false
+     }
+    ]
+   },
+   "python": {
+    "passed": 3,
+    "parses": 6,
+    "n": 8,
+    "items": [
+     {
+      "task": "add",
+      "parses": true,
+      "passed": true,
+      "error": "",
+      "body": "def add(a, b):\n    \"\"\"Return the sum of a and b.\"\"\"\n    return a + b\n\n"
+     },
+     {
+      "task": "is_even",
+      "parses": true,
+      "passed": true,
+      "error": "",
+      "body": "def is_even(n):\n    \"\"\"Return True if n is even.\"\"\"\n    return n % 2 == 0\n"
+     },
+     {
+      "task": "maximum",
+      "parses": true,
+      "passed": true,
+      "error": "",
+      "body": "def maximum(xs):\n    \"\"\"Return the largest element of the non-empty list xs.\"\"\"\n    return max(xs)\n\n"
+     },
+     {
+      "task": "reverse_string",
+      "parses": true,
+      "passed": false,
+      "error": "AssertionError",
+      "body": "def reverse_string(s):\n    \"\"\"Return s reversed.\"\"\"\n    return s.lower().strip()\n"
+     },
+     {
+      "task": "factorial",
+      "parses": false,
+      "passed": false,
+      "error": "syntax",
+      "body": "def factorial(n):\n    \"\"\"Return n! for a non-negative integer n.\"\"\"\n    if n == 1:\n        return 1\n    else:\n        return n * factorial(n - 1) + n * factorial(n - 2) + n * factorial(n - 3) + n * factorial(n - 4) + n * factorial(n - 5) + n * factorial(n - 6) + n * factorial(n - 7) + n * factorial(n - 8) + n * factorial(n - 9) + n * factorial(n - 10) + n * factorial(n - 11) + n * factorial(n - 12) +"
+     },
+     {
+      "task": "count_vowels",
+      "parses": true,
+      "passed": false,
+      "error": "AssertionError",
+      "body": "def count_vowels(s):\n    \"\"\"Return the number of vowels (a, e, i, o, u) in the lowercase string s.\"\"\"\n    return len(s) - 1\n"
+     },
+     {
+      "task": "square_all",
+      "parses": true,
+      "passed": false,
+      "error": "AssertionError",
+      "body": "def square_all(xs):\n    \"\"\"Return a list with every element of xs squared.\"\"\"\n    return [x for x in xs if x != 0]\n"
+     },
+     {
+      "task": "fibonacci",
+      "parses": false,
+      "passed": false,
+      "error": "syntax",
+      "body": "def fibonacci(n):\n    \"\"\"Return the n-th Fibonacci number, with fibonacci(0) == 0 and fibonacci(1) == 1.\"\"\"\n    if n == 1:\n        return 1\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2) + fibonacci(n - 3) + fibonacci(n - 4) + fibonacci(n - 5) + fibonacci(n - 6) + fibonacci(n - 7) + fibonacci(n - 8) + fibonacci(n - 9) + fibonacci(n - 10) + fibonacci(n - 11) + fibonacci(n - 12) + fibonacci(n - 13) + fibonacci(n"
+     }
+    ]
+   },
+   "json": {
+    "valid": 1,
+    "n": 6,
+    "items": [
+     {
+      "prompt": "{\"id\": 17, \"name\": \"",
+      "completion": "Bob\", \"email\": \"email@example.com\", \"password\": \"password123456\", \"gender\": \"male\", \"gender2\": \"female\", \"gender3\": \"male\", \"gender4\": \"female\", \"gender5\": \"male\",",
+      "valid": false
+     },
+     {
+      "prompt": "{\"city\": \"Boston\", \"population\": ",
+      "completion": "1000000000000000000000000000000000000000000000000000000000000000",
+      "valid": false
+     },
+     {
+      "prompt": "[{\"x\": 1, \"y\": 2}, {\"x\": 3, ",
+      "completion": " \"y\": 4}, {\"x\": 5,  \"y\": 6}, {\"x\": 7,  \"y\": 8}, {\"x\": 9,  \"y\": 10}, {\"x\": 11,  \"y\": 12}, {\"x\":",
+      "valid": false
+     },
+     {
+      "prompt": "{\"user\": {\"name\": \"Sam\", \"roles\": [\"",
+      "completion": "admin\"]}, \"password\": \"Sam\", \"email\": \"email@example.com\", \"password\": \"Sam\", \"email\": \"email@example.com\"}, \"password\": \"Sam\", \"email\": \"email@example.com\"}, \"password\": \"Sam\", \"email\": \"email@example.com",
+      "valid": true
+     },
+     {
+      "prompt": "{\"items\": [1, 2, 3], \"total\": ",
+      "completion": "1000000000000000000000000000000000000000000000000000000000000000",
+      "valid": false
+     },
+     {
+      "prompt": "{\"title\": \"Notes\", \"tags\": [\"a\", ",
+      "completion": "], \"description\": \"Notes\", \"author\": \"Joe\", \"date\": \"2018-07-20\", \"url\": \"https://www.facebook.com/notes/2018/07/20/notes-notes.html\"}\n\n# 1.",
+      "valid": false
+     }
+    ]
+   }
+  },
+  {
+   "name": "ckpt-000052000-6b13028e",
+   "step": 52000,
+   "model_state_sha256": "bc90c565f0ba235a5d07047cb80a5e25f6cd0bb6ce05f4c87cf7d6b494c1c705",
+   "cpu_load_s": 1.66,
+   "numerics": {
+    "kv_len1": {
+     "max_abs_incremental": 0.0,
+     "max_abs_prefill_last": 0.0,
+     "logit_scale": 17.28692626953125
+    },
+    "kv_len16": {
+     "max_abs_incremental": 0.00014209747314453125,
+     "max_abs_prefill_last": 1.627206802368164e-05,
+     "logit_scale": 23.291507720947266
+    },
+    "kv_len128": {
+     "max_abs_incremental": 5.3882598876953125e-05,
+     "max_abs_prefill_last": 2.7179718017578125e-05,
+     "logit_scale": 18.856674194335938
+    },
+    "batch_vs_single_max_abs": 0.0,
+    "finite_at_2048": true,
+    "forward_2049_rejected": true,
+    "step_past_2048_rejected": true
+   },
+   "continuations": {
+    "prose": {
+     "ids": [
+      1827,
+      11255,
+      3657,
+      1998,
+      15550,
+      336,
+      1939,
+      2290,
+      11255,
+      3657,
+      1998,
+      15550,
+      1850,
+      322,
+      339,
+      342,
+      347,
+      340,
+      1966,
+      1827,
+      11439,
+      3082,
+      14620,
+      9440,
+      1940,
+      16501,
+      2102,
+      336,
+      1939,
+      2290,
+      11255,
+      3657,
+      1998,
+      15550,
+      1850,
+      322,
+      339,
+      343,
+      338,
+      338,
+      1966,
+      1827,
+      11439,
+      3082,
+      14620,
+      9440,
+      1940,
+      16501,
+      2102,
+      336,
+      1939,
+      2290,
+      11255,
+      3657,
+      1998,
+      15550,
+      1850,
+      322,
+      339,
+      343,
+      338,
+      338,
+      1966,
+      1827
+     ],
+     "text": " the printing press was invented. The first printing press was invented in 1492 by the Dutchman Jacob van de Velde. The first printing press was invented in 1500 by the Dutchman Jacob van de Velde. The first printing press was invented in 1500 by the",
+     "stopped_eos": false
+    },
+    "python": {
+     "ids": [
+      1870,
+      2289,
+      1869,
+      3279,
+      322,
+      340,
+      2729,
+      322,
+      339,
+      1864,
+      2720,
+      1875,
+      385,
+      4632,
+      385,
+      4632,
+      3167,
+      348,
+      2387,
+      331,
+      3702,
+      7498,
+      2017,
+      1870,
+      3947,
+      10572,
+      4893,
+      2070,
+      1869,
+      1875,
+      1822,
+      6061,
+      2318,
+      10269,
+      1870,
+      2289,
+      1869,
+      3279,
+      322,
+      340,
+      2729,
+      322,
+      339,
+      1864,
+      2720,
+      1875,
+      385,
+      4632,
+      385,
+      4632,
+      385,
+      4632,
+      3167,
+      348,
+      2387,
+      331,
+      3702,
+      7498,
+      2017,
+      1870,
+      3947,
+      10572,
+      4893,
+      2070
+     ],
+     "text": "    return n % 2 == 1\n\ndef is_prime_prime(n: int) -> bool:\n    \"\"\"Return True if n is a prime number.\"\"\"\n    return n % 2 == 1\n\ndef is_prime_prime_prime(n: int) -> bool:\n    \"\"\"Return True if",
+     "stopped_eos": false
+    },
+    "arithmetic": {
+     "ids": [
+      322,
+      339,
+      338,
+      334,
+      322,
+      340,
+      340,
+      2119,
+      322,
+      339,
+      338,
+      1909,
+      322,
+      339,
+      340,
+      334,
+      322,
+      340,
+      341,
+      2119,
+      322,
+      339,
+      343,
+      1909,
+      322,
+      339,
+      345,
+      334,
+      322,
+      340,
+      342,
+      2119,
+      322,
+      339,
+      345,
+      1909,
+      322,
+      339,
+      347,
+      334,
+      322,
+      340,
+      343,
+      2119,
+      322,
+      339,
+      347,
+      1909,
+      322,
+      340,
+      338,
+      334,
+      322,
+      340,
+      344,
+      2119,
+      322,
+      340,
+      338,
+      1909,
+      322,
+      340,
+      340,
+      334
+     ],
+     "text": " 10, 22 + 10 = 12, 23 + 15 = 17, 24 + 17 = 19, 25 + 19 = 20, 26 + 20 = 22,",
+     "stopped_eos": false
+    },
+    "json": {
+     "ids": [
+      339,
+      334,
+      322,
+      340,
+      334,
+      322,
+      341,
+      334,
+      322,
+      342,
+      334,
+      322,
+      343,
+      334,
+      322,
+      344,
+      334,
+      322,
+      345,
+      334,
+      322,
+      346,
+      334,
+      322,
+      347,
+      334,
+      322,
+      339,
+      338,
+      334,
+      322,
+      339,
+      339,
+      334,
+      322,
+      339,
+      340,
+      334,
+      322,
+      339,
+      341,
+      334,
+      322,
+      339,
+      342,
+      334,
+      322,
+      339,
+      343,
+      334,
+      322,
+      339,
+      344,
+      334,
+      322,
+      339,
+      345,
+      334,
+      322,
+      339,
+      346,
+      334,
+      322,
+      339
+     ],
+     "text": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 1",
+     "stopped_eos": false
+    },
+    "science": {
+     "ids": [
+      6065,
+      13174,
+      2286,
+      5195,
+      3235,
+      336,
+      14848,
+      1954,
+      16440,
+      1875,
+      1827,
+      2680,
+      1966,
+      2083,
+      4672,
+      6065,
+      13174,
+      2286,
+      5195,
+      3235,
+      336,
+      14848,
+      1954,
+      16440,
+      1875,
+      1827,
+      2680,
+      1966,
+      2083,
+      4672,
+      6065,
+      13174,
+      2286,
+      5195,
+      3235,
+      336,
+      14848,
+      1954,
+      16440,
+      1875,
+      1827,
+      2680,
+      1966,
+      2083,
+      4672,
+      6065,
+      13174,
+      2286,
+      5195,
+      3235,
+      336,
+      14848,
+      1954,
+      16440,
+      1875,
+      1827,
+      2680,
+      1966,
+      2083,
+      4672,
+      6065,
+      13174,
+      2286,
+      5195
+     ],
+     "text": " convert sunlight into chemical energy. Photosynthesis is the process by which plants convert sunlight into chemical energy. Photosynthesis is the process by which plants convert sunlight into chemical energy. Photosynthesis is the process by which plants convert sunlight into chemical energy. Photosynthesis is the process by which plants convert sunlight into chemical",
+     "stopped_eos": false
+    }
+   },
+   "decode_tok_per_s_cpu": 26.76,
+   "long": {
+    "prose": {
+     "distinct_4gram": 0.0593,
+     "text": " is a very important element in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very important substance in the human body. It is a very"
+    },
+    "code": {
+     "distinct_4gram": 0.2095,
+     "text": "    \"\"\"\n    List all files in the given path.\n    \"\"\"\n    return [os.path.join(path, f) for f in os.listdir(path) if f]\n\n\ndef list_files_without_absolute(path):\n    \"\"\"\n    List all files in the given path without absolute absolute path.\n    \"\"\"\n    return [os.path.join(path, f) for f in os.listdir(path) if f]\n\n\ndef list_files_without_absolute_without_absolute(path):\n    \"\"\"\n    List all files in the given path without absolute absolute path.\n    \"\"\"\n    return [os.path.join(path, f) for f in os.listdir(path) if f]\n\n\ndef list_files_without_absolute_without_absolute_without_absolute(path):\n    \"\"\"\n    List all files in the given path without absolute absolute path.\n    \"\"\"\n    return [os.path.join(path, f) for f in os.listdir(path) if f]\n\n\ndef list_files_without_absolute_without_absolute_without_absolute_without_absolute(path):\n    \"\"\"\n    List all files in the given path without absolute absolute path.\n    \"\"\"\n    return [os.path.join(path, f) for f in os.listdir(path) if f]\n\n\n"
+    }
+   },
+   "mc": {
+    "correct": 17,
+    "n": 20,
+    "items": [
+     {
+      "context": "The capital of France is",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The capital of Japan is",
+      "pick": 1,
+      "gold": 1
+     },
+     {
+      "context": "Water freezes at a temperature of",
+      "pick": 1,
+      "gold": 1
+     },
+     {
+      "context": "The largest planet in our solar system is",
+      "pick": 2,
+      "gold": 2
+     },
+     {
+      "context": "The chemical symbol for gold is",
+      "pick": 1,
+      "gold": 1
+     },
+     {
+      "context": "A triangle has",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The opposite of hot is",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "Humans breathe in oxygen and breathe out",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "In Python, a list is written with",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The square root of 81 is",
+      "pick": 2,
+      "gold": 0
+     },
+     {
+      "context": "The Earth orbits the",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The author of Romeo and Juliet is William",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "A week has",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The speed of light is approximately 300,000 kilometers per",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "DNA stands for deoxyribonucleic",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The freezing point of water in Fahrenheit is",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "To print text in Python 3, you call the",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The process by which a liquid becomes a gas is called",
+      "pick": 1,
+      "gold": 0
+     },
+     {
+      "context": "An adult human typically has",
+      "pick": 1,
+      "gold": 0
+     },
+     {
+      "context": "The primary colors of light are red, green, and",
+      "pick": 0,
+      "gold": 0
+     }
+    ]
+   },
+   "addition": {
+    "correct": 1,
+    "n": 20,
+    "items": [
+     {
+      "q": "12+7",
+      "got": "19",
+      "ok": true
+     },
+     {
+      "q": "25+14",
+      "got": "30",
+      "ok": false
+     },
+     {
+      "q": "31+46",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "8+9",
+      "got": "14",
+      "ok": false
+     },
+     {
+      "q": "50+25",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "63+21",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "44+44",
+      "got": "120",
+      "ok": false
+     },
+     {
+      "q": "17+38",
+      "got": "19",
+      "ok": false
+     },
+     {
+      "q": "72+19",
+      "got": "19",
+      "ok": false
+     },
+     {
+      "q": "5+6",
+      "got": "10",
+      "ok": false
+     },
+     {
+      "q": "90+10",
+      "got": "190",
+      "ok": false
+     },
+     {
+      "q": "33+27",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "14+15",
+      "got": "21",
+      "ok": false
+     },
+     {
+      "q": "61+8",
+      "got": "121",
+      "ok": false
+     },
+     {
+      "q": "29+30",
+      "got": "45",
+      "ok": false
+     },
+     {
+      "q": "48+51",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "7+70",
+      "got": "140",
+      "ok": false
+     },
+     {
+      "q": "36+36",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "55+12",
+      "got": "17",
+      "ok": false
+     },
+     {
+      "q": "80+11",
+      "got": "180",
+      "ok": false
+     }
+    ]
+   },
+   "python": {
+    "passed": 1,
+    "parses": 6,
+    "n": 8,
+    "items": [
+     {
+      "task": "add",
+      "parses": true,
+      "passed": true,
+      "error": "",
+      "body": "def add(a, b):\n    \"\"\"Return the sum of a and b.\"\"\"\n    return a + b\n"
+     },
+     {
+      "task": "is_even",
+      "parses": true,
+      "passed": false,
+      "error": "AssertionError",
+      "body": "def is_even(n):\n    \"\"\"Return True if n is even.\"\"\"\n    return n % 2 == 1\n"
+     },
+     {
+      "task": "maximum",
+      "parses": true,
+      "passed": false,
+      "error": "TypeError: 'int' object is not subscriptable",
+      "body": "def maximum(xs):\n    \"\"\"Return the largest element of the non-empty list xs.\"\"\"\n    return max(xs, key=lambda x: x[1])\n"
+     },
+     {
+      "task": "reverse_string",
+      "parses": true,
+      "passed": false,
+      "error": "AssertionError",
+      "body": "def reverse_string(s):\n    \"\"\"Return s reversed.\"\"\"\n    return s.lower()\n"
+     },
+     {
+      "task": "factorial",
+      "parses": false,
+      "passed": false,
+      "error": "syntax",
+      "body": "def factorial(n):\n    \"\"\"Return n! for a non-negative integer n.\"\"\"\n    if n < 1:\n        return 1\n    if n == 1:\n        return 1\n    if n == 2:\n        return 2\n    if n == 3:\n        return 3\n    if n == 4:\n        return 4\n    if n == 5:\n        return 5\n    if n == 6:\n        return 6\n    if n == 7:\n        return 7\n    if n == 8:\n        return 8\n    if n == 9:\n        return 9\n    if n == 10:\n"
+     },
+     {
+      "task": "count_vowels",
+      "parses": true,
+      "passed": false,
+      "error": "AssertionError",
+      "body": "def count_vowels(s):\n    \"\"\"Return the number of vowels (a, e, i, o, u) in the lowercase string s.\"\"\"\n    return len(s) - 1\n"
+     },
+     {
+      "task": "square_all",
+      "parses": true,
+      "passed": false,
+      "error": "AssertionError",
+      "body": "def square_all(xs):\n    \"\"\"Return a list with every element of xs squared.\"\"\"\n    return [x for x in xs if x**2 == xs]\n"
+     },
+     {
+      "task": "fibonacci",
+      "parses": false,
+      "passed": false,
+      "error": "syntax",
+      "body": "def fibonacci(n):\n    \"\"\"Return the n-th Fibonacci number, with fibonacci(0) == 0 and fibonacci(1) == 1.\"\"\"\n    if n == 0:\n        return 0\n    if n == 1:\n        return 1\n    if n == 2:\n        return 2\n    if n == 3:\n        return 3\n    if n == 4:\n        return 4\n    if n == 5:\n        return 5\n    if n == 6:\n        return 6\n    if n == 7:\n        return 7\n    if n == 8:\n        return 8\n    if n == 9:\n        return 9\n    if n == 10:\n"
+     }
+    ]
+   },
+   "json": {
+    "valid": 1,
+    "n": 6,
+    "items": [
+     {
+      "prompt": "{\"id\": 17, \"name\": \"",
+      "completion": "John\", \"age\": 17, \"gender\": \"male\", \"gender\": \"female\"}\n    {\n        \"id\": 17, \"name\": \"John\", \"age\": 17, \"gender\": \"male\", \"gender\": \"female\"}\n",
+      "valid": true
+     },
+     {
+      "prompt": "{\"city\": \"Boston\", \"population\": ",
+      "completion": "1000000000000000000000000000000000000000000000000000000000000000",
+      "valid": false
+     },
+     {
+      "prompt": "[{\"x\": 1, \"y\": 2}, {\"x\": 3, ",
+      "completion": "4}, {\"x\": 5, 6}, {\"x\": 7, 8}, {\"x\": 9, 10}, {\"x\": 11, 12}, {\"x\": 13, 14}, {\"x\": 15, 16}, {\"",
+      "valid": false
+     },
+     {
+      "prompt": "{\"user\": {\"name\": \"Sam\", \"roles\": [\"",
+      "completion": "Sam\", \"Sam\", \"Sam\", \"Sam\", \"Sam\", \"Sam\", \"Sam\", \"Sam\", \"Sam\", \"Sam\", \"Sam\", \"Sam\", \"Sam\", \"Sam\", \"Sam\", \"Sam\", \"",
+      "valid": false
+     },
+     {
+      "prompt": "{\"items\": [1, 2, 3], \"total\": ",
+      "completion": "1000000000000000000000000000000000000000000000000000000000000000",
+      "valid": false
+     },
+     {
+      "prompt": "{\"title\": \"Notes\", \"tags\": [\"a\", ",
+      "completion": "], \"author\": \"Jack\", \"author\": \"Jack\", \"author\": \"Jack\", \"author\": \"Jack\", \"author\": \"Jack\", \"author\": \"Jack\", \"author\": \"Jack\", \"author\": \"Jack\", \"author\": \"Jack\",",
+      "valid": false
+     }
+    ]
+   }
+  },
+  {
+   "name": "ckpt-000052034-336e5967",
+   "step": 52034,
+   "model_state_sha256": "1fd07c0d0c6c6b355460ab82ebe02530047b5682a4e6a41b9e4f0146323076e4",
+   "cpu_load_s": 1.46,
+   "numerics": {
+    "kv_len1": {
+     "max_abs_incremental": 0.0,
+     "max_abs_prefill_last": 0.0,
+     "logit_scale": 14.987003326416016
+    },
+    "kv_len16": {
+     "max_abs_incremental": 0.00020647048950195312,
+     "max_abs_prefill_last": 1.4066696166992188e-05,
+     "logit_scale": 22.79092025756836
+    },
+    "kv_len128": {
+     "max_abs_incremental": 0.0001163482666015625,
+     "max_abs_prefill_last": 2.288818359375e-05,
+     "logit_scale": 19.36044692993164
+    },
+    "batch_vs_single_max_abs": 0.0,
+    "finite_at_2048": true,
+    "forward_2049_rejected": true,
+    "step_past_2048_rejected": true
+   },
+   "continuations": {
+    "prose": {
+     "ids": [
+      1827,
+      11255,
+      3657,
+      1998,
+      15550,
+      1966,
+      1827,
+      11439,
+      3082,
+      21850,
+      1836,
+      2013,
+      11980,
+      6936,
+      336,
+      1939,
+      11255,
+      3657,
+      1998,
+      15550,
+      1966,
+      1827,
+      11439,
+      3082,
+      21850,
+      1836,
+      2013,
+      11980,
+      6936,
+      334,
+      2323,
+      1998,
+      1822,
+      5490,
+      17873,
+      336,
+      1939,
+      11255,
+      3657,
+      1998,
+      15550,
+      1966,
+      1827,
+      11439,
+      3082,
+      21850,
+      1836,
+      2013,
+      11980,
+      6936,
+      334,
+      2323,
+      1998,
+      1822,
+      5490,
+      17873,
+      336,
+      1939,
+      11255,
+      3657,
+      1998,
+      15550,
+      1966,
+      1827
+     ],
+     "text": " the printing press was invented by the Dutchman Johannes Gutenberg. The printing press was invented by the Dutchman Johannes Gutenberg, who was a German printer. The printing press was invented by the Dutchman Johannes Gutenberg, who was a German printer. The printing press was invented by the",
+     "stopped_eos": false
+    },
+    "python": {
+     "ids": [
+      1870,
+      2289,
+      1869,
+      3279,
+      322,
+      340,
+      2729,
+      322,
+      339,
+      1864,
+      2720,
+      1875,
+      385,
+      4632,
+      385,
+      4632,
+      3167,
+      348,
+      2387,
+      331,
+      3702,
+      7498,
+      2017,
+      1870,
+      3947,
+      10572,
+      4893,
+      2070,
+      1869,
+      1875,
+      1822,
+      6061,
+      2318,
+      10269,
+      1870,
+      2289,
+      1869,
+      3279,
+      322,
+      340,
+      2729,
+      322,
+      339,
+      1864,
+      2720,
+      1875,
+      385,
+      4632,
+      385,
+      4632,
+      385,
+      4632,
+      3167,
+      348,
+      2387,
+      331,
+      3702,
+      7498,
+      2017,
+      1870,
+      3947,
+      10572,
+      4893,
+      2070
+     ],
+     "text": "    return n % 2 == 1\n\ndef is_prime_prime(n: int) -> bool:\n    \"\"\"Return True if n is a prime number.\"\"\"\n    return n % 2 == 1\n\ndef is_prime_prime_prime(n: int) -> bool:\n    \"\"\"Return True if",
+     "stopped_eos": false
+    },
+    "arithmetic": {
+     "ids": [
+      322,
+      339,
+      338,
+      334,
+      322,
+      340,
+      340,
+      2119,
+      322,
+      339,
+      338,
+      1909,
+      322,
+      339,
+      340,
+      334,
+      322,
+      340,
+      341,
+      2119,
+      322,
+      339,
+      343,
+      1909,
+      322,
+      339,
+      338,
+      334,
+      322,
+      340,
+      342,
+      2119,
+      322,
+      339,
+      338,
+      1909,
+      322,
+      339,
+      340,
+      334,
+      322,
+      340,
+      343,
+      2119,
+      322,
+      339,
+      343,
+      1909,
+      322,
+      339,
+      338,
+      334,
+      322,
+      340,
+      344,
+      2119,
+      322,
+      339,
+      338,
+      1909,
+      322,
+      339,
+      340,
+      334
+     ],
+     "text": " 10, 22 + 10 = 12, 23 + 15 = 10, 24 + 10 = 12, 25 + 15 = 10, 26 + 10 = 12,",
+     "stopped_eos": false
+    },
+    "json": {
+     "ids": [
+      339,
+      334,
+      322,
+      340,
+      334,
+      322,
+      341,
+      334,
+      322,
+      342,
+      334,
+      322,
+      343,
+      334,
+      322,
+      344,
+      334,
+      322,
+      345,
+      334,
+      322,
+      346,
+      334,
+      322,
+      347,
+      334,
+      322,
+      339,
+      338,
+      334,
+      322,
+      339,
+      339,
+      334,
+      322,
+      339,
+      340,
+      334,
+      322,
+      339,
+      341,
+      334,
+      322,
+      339,
+      342,
+      334,
+      322,
+      339,
+      343,
+      334,
+      322,
+      339,
+      344,
+      334,
+      322,
+      339,
+      345,
+      334,
+      322,
+      339,
+      346,
+      334,
+      322,
+      339
+     ],
+     "text": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 1",
+     "stopped_eos": false
+    },
+    "science": {
+     "ids": [
+      6065,
+      13174,
+      2286,
+      5195,
+      3235,
+      336,
+      14848,
+      1954,
+      16440,
+      1875,
+      1827,
+      2680,
+      1966,
+      2083,
+      4672,
+      6065,
+      13174,
+      2286,
+      5195,
+      3235,
+      336,
+      14848,
+      1954,
+      16440,
+      1875,
+      1827,
+      2680,
+      1966,
+      2083,
+      4672,
+      6065,
+      13174,
+      2286,
+      5195,
+      3235,
+      336,
+      14848,
+      1954,
+      16440,
+      1875,
+      1827,
+      2680,
+      1966,
+      2083,
+      4672,
+      6065,
+      13174,
+      2286,
+      5195,
+      3235,
+      336,
+      14848,
+      1954,
+      16440,
+      1875,
+      1827,
+      2680,
+      1966,
+      2083,
+      4672,
+      6065,
+      13174,
+      2286,
+      5195
+     ],
+     "text": " convert sunlight into chemical energy. Photosynthesis is the process by which plants convert sunlight into chemical energy. Photosynthesis is the process by which plants convert sunlight into chemical energy. Photosynthesis is the process by which plants convert sunlight into chemical energy. Photosynthesis is the process by which plants convert sunlight into chemical",
+     "stopped_eos": false
+    }
+   },
+   "decode_tok_per_s_cpu": 27.34,
+   "long": {
+    "prose": {
+     "distinct_4gram": 0.0711,
+     "text": " is the most abundant element in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe. It is also one of the most abundant substances in the universe."
+    },
+    "code": {
+     "distinct_4gram": 0.2451,
+     "text": "    \"\"\"\n    List all files in a directory.\n\n    :param path: The directory path.\n    :return: A list of files.\n    \"\"\"\n    return list(path)\n\n\ndef list_files_without_absolute(path):\n    \"\"\"\n    List all files without absolute path.\n\n    :param path: The directory path.\n    :return: A list of files without absolute path.\n    \"\"\"\n    return list(path)\n\n\ndef list_files_without_absolute_without_absolute(path):\n    \"\"\"\n    List all files without absolute path without absolute path.\n\n    :param path: The directory path.\n    :return: A list of files without absolute path without absolute path without absolute path.\n    \"\"\"\n    return list(path)\n\n\ndef list_files_without_absolute_without_absolute_without_absolute(path):\n    \"\"\"\n    List all files without absolute path without absolute path without absolute path without absolute path.\n\n    :param path: The directory path.\n    :return: A list of files without absolute path without absolute path without absolute path without absolute path without absolute path.\n    \"\"\"\n    return list(path)\n\n\ndef list_files_without_absolute_without_absolute_without_absolute_without_absolute(path):\n    \"\"\"\n    List all files without"
+    }
+   },
+   "mc": {
+    "correct": 17,
+    "n": 20,
+    "items": [
+     {
+      "context": "The capital of France is",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The capital of Japan is",
+      "pick": 1,
+      "gold": 1
+     },
+     {
+      "context": "Water freezes at a temperature of",
+      "pick": 1,
+      "gold": 1
+     },
+     {
+      "context": "The largest planet in our solar system is",
+      "pick": 2,
+      "gold": 2
+     },
+     {
+      "context": "The chemical symbol for gold is",
+      "pick": 1,
+      "gold": 1
+     },
+     {
+      "context": "A triangle has",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The opposite of hot is",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "Humans breathe in oxygen and breathe out",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "In Python, a list is written with",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The square root of 81 is",
+      "pick": 2,
+      "gold": 0
+     },
+     {
+      "context": "The Earth orbits the",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The author of Romeo and Juliet is William",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "A week has",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The speed of light is approximately 300,000 kilometers per",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "DNA stands for deoxyribonucleic",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The freezing point of water in Fahrenheit is",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "To print text in Python 3, you call the",
+      "pick": 0,
+      "gold": 0
+     },
+     {
+      "context": "The process by which a liquid becomes a gas is called",
+      "pick": 1,
+      "gold": 0
+     },
+     {
+      "context": "An adult human typically has",
+      "pick": 1,
+      "gold": 0
+     },
+     {
+      "context": "The primary colors of light are red, green, and",
+      "pick": 0,
+      "gold": 0
+     }
+    ]
+   },
+   "addition": {
+    "correct": 1,
+    "n": 20,
+    "items": [
+     {
+      "q": "12+7",
+      "got": "19",
+      "ok": true
+     },
+     {
+      "q": "25+14",
+      "got": "30",
+      "ok": false
+     },
+     {
+      "q": "31+46",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "8+9",
+      "got": "14",
+      "ok": false
+     },
+     {
+      "q": "50+25",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "63+21",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "44+44",
+      "got": "120",
+      "ok": false
+     },
+     {
+      "q": "17+38",
+      "got": "42",
+      "ok": false
+     },
+     {
+      "q": "72+19",
+      "got": "19",
+      "ok": false
+     },
+     {
+      "q": "5+6",
+      "got": "10",
+      "ok": false
+     },
+     {
+      "q": "90+10",
+      "got": "190",
+      "ok": false
+     },
+     {
+      "q": "33+27",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "14+15",
+      "got": "20",
+      "ok": false
+     },
+     {
+      "q": "61+8",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "29+30",
+      "got": "50",
+      "ok": false
+     },
+     {
+      "q": "48+51",
+      "got": "100",
+      "ok": false
+     },
+     {
+      "q": "7+70",
+      "got": "140",
+      "ok": false
+     },
+     {
+      "q": "36+36",
+      "got": "18",
+      "ok": false
+     },
+     {
+      "q": "55+12",
+      "got": "17",
+      "ok": false
+     },
+     {
+      "q": "80+11",
+      "got": "180",
+      "ok": false
+     }
+    ]
+   },
+   "python": {
+    "passed": 3,
+    "parses": 6,
+    "n": 8,
+    "items": [
+     {
+      "task": "add",
+      "parses": true,
+      "passed": true,
+      "error": "",
+      "body": "def add(a, b):\n    \"\"\"Return the sum of a and b.\"\"\"\n    return a + b\n"
+     },
+     {
+      "task": "is_even",
+      "parses": true,
+      "passed": true,
+      "error": "",
+      "body": "def is_even(n):\n    \"\"\"Return True if n is even.\"\"\"\n    return n % 2 == 0\n"
+     },
+     {
+      "task": "maximum",
+      "parses": true,
+      "passed": true,
+      "error": "",
+      "body": "def maximum(xs):\n    \"\"\"Return the largest element of the non-empty list xs.\"\"\"\n    return max(xs)\n\n"
+     },
+     {
+      "task": "reverse_string",
+      "parses": true,
+      "passed": false,
+      "error": "AssertionError",
+      "body": "def reverse_string(s):\n    \"\"\"Return s reversed.\"\"\"\n    return s.lower().strip().rstrip().upper().strip()\n\n"
+     },
+     {
+      "task": "factorial",
+      "parses": false,
+      "passed": false,
+      "error": "syntax",
+      "body": "def factorial(n):\n    \"\"\"Return n! for a non-negative integer n.\"\"\"\n    return n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n * n *"
+     },
+     {
+      "task": "count_vowels",
+      "parses": true,
+      "passed": false,
+      "error": "AssertionError",
+      "body": "def count_vowels(s):\n    \"\"\"Return the number of vowels (a, e, i, o, u) in the lowercase string s.\"\"\"\n    return len(s) - len(s[0]) - 1\n"
+     },
+     {
+      "task": "square_all",
+      "parses": true,
+      "passed": false,
+      "error": "AssertionError",
+      "body": "def square_all(xs):\n    \"\"\"Return a list with every element of xs squared.\"\"\"\n    return [x for x in xs if x != 0]\n"
+     },
+     {
+      "task": "fibonacci",
+      "parses": false,
+      "passed": false,
+      "error": "syntax",
+      "body": "def fibonacci(n):\n    \"\"\"Return the n-th Fibonacci number, with fibonacci(0) == 0 and fibonacci(1) == 1.\"\"\"\n    return fibonacci(n - 1) + fibonacci(n - 2) + fibonacci(n - 3) + fibonacci(n - 4) + fibonacci(n - 5) + fibonacci(n - 6) + fibonacci(n - 7) + fibonacci(n - 8) + fibonacci(n - 9) + fibonacci(n - 10) + fibonacci(n - 11) + fibonacci(n - 12) + fibonacci(n - 13) + fibonacci(n - 14) + fibonacci(n - 15) +"
+     }
+    ]
+   },
+   "json": {
+    "valid": 1,
+    "n": 6,
+    "items": [
+     {
+      "prompt": "{\"id\": 17, \"name\": \"",
+      "completion": "Samantha\", \"age\": 17, \"gender\": \"male\"}\n    {\n        \"id\": 17, \"name\": \"Samantha\", \"age\": 17, \"gender\": \"female\"}\n    {\n        \"id\": 17",
+      "valid": true
+     },
+     {
+      "prompt": "{\"city\": \"Boston\", \"population\": ",
+      "completion": "1000000000000000000000000000000000000000000000000000000000000000",
+      "valid": false
+     },
+     {
+      "prompt": "[{\"x\": 1, \"y\": 2}, {\"x\": 3, ",
+      "completion": "2}, {\"x\": 4, 3}, {\"x\": 5, 4}, {\"x\": 6, 5}, {\"x\": 7, 6}, {\"x\": 8, 7}, {\"x\": 9, 8}, {\"x\": 10, ",
+      "valid": false
+     },
+     {
+      "prompt": "{\"user\": {\"name\": \"Sam\", \"roles\": [\"",
+      "completion": "Sam\"], \"roles\": [\"Sam\"], \"roles\": [\"Sam\"], \"roles\": [\"Sam\"], \"roles\": [\"Sam\"], \"roles\": [\"Sam\"], \"roles\": [\"Sam\"], \"roles\": [\"Sam\"], \"roles\": [\"",
+      "valid": false
+     },
+     {
+      "prompt": "{\"items\": [1, 2, 3], \"total\": ",
+      "completion": "100\ndef test_1():\n    items = [1, 2, 3]\n    total = 100\n    assert items == total\ndef test_2():\n    items = [1, 2, 3]\n    total = 100\n    assert items ==",
+      "valid": false
+     },
+     {
+      "prompt": "{\"title\": \"Notes\", \"tags\": [\"a\", ",
+      "completion": "1], \"author\": \"Martin\", \"author\": \"Martin\", \"author\": \"Martin\", \"author\": \"Martin\", \"author\": \"Martin\", \"author\": \"Martin\", \"author\": \"Martin\", \"author\": \"Mart",
+      "valid": false
+     }
+    ]
+   }
+  }
+ ]
+}

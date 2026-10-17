@@ -1,0 +1,102 @@
+{
+ "build_identity": "e20847a1edd8452571c279942291f4a2fd64a33fed858a40f2d3994c3106abd9",
+ "bytes_by_stage": {
+  "candidate": 2171700227,
+  "contamination": 49098,
+  "privacy": 1813908,
+  "quality": 36528849,
+  "selection": 25417866
+ },
+ "bytes_in": 2235509948,
+ "chars_in": 2234320634,
+ "contamination_benchmarks": {
+  "hellaswag": 1,
+  "mbpp": 1,
+  "mbppplus": 1,
+  "mmlu": 1
+ },
+ "docs_in": 573584,
+ "kinds": {
+  "math": 2104,
+  "technical": 556504
+ },
+ "outputs": [
+  {
+   "file": "candidates/stackexchange/stackexchange-dolma-0010.parquet",
+   "rows": 558608,
+   "sha256": "e56b8775b2f6ee9abaa1311e53d8fc0d40c17e24aaf9d00c9078f52deaa0d15c"
+  },
+  {
+   "file": "rejects/stackexchange/stackexchange-dolma-0010.parquet",
+   "rows": 14976,
+   "sha256": "a94a0edf1745b2a0e4bd0325e497fd15c40d48df11c8cc2d1cf08978ed2ac68c"
+  },
+  {
+   "file": "signatures/stackexchange/stackexchange-dolma-0010.npy",
+   "rows": 558608,
+   "sha256": "3059f5ec5b42d1fdb042cbcbfd284490a84153e85573d557a09aa23a00b91518"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "stackexchange-dolma-0010.json.gz",
+ "reasons": {
+  "contamination.hellaswag": 1,
+  "contamination.mbpp": 1,
+  "contamination.mbppplus": 1,
+  "contamination.mmlu": 1,
+  "privacy.pii.payment_card": 3,
+  "privacy.pii.us_ssn": 10,
+  "privacy.secret.auth_header": 18,
+  "privacy.secret.aws_access_key": 5,
+  "privacy.secret.credential_url": 22,
+  "privacy.secret.google_api_key": 9,
+  "privacy.secret.jwt": 5,
+  "privacy.secret.password_assignment": 93,
+  "privacy.secret.private_key": 23,
+  "quality.binary_or_base64": 45,
+  "quality.corrupt_decoding": 68,
+  "quality.math.duplicate_lines": 9,
+  "quality.math.duplicate_ngrams": 47,
+  "quality.math.duplicate_paragraphs": 1,
+  "quality.math.ellipsis_lines": 2,
+  "quality.math.symbol_ratio": 3,
+  "quality.math.too_short": 3,
+  "quality.math.top_ngram_repetition": 19,
+  "quality.mojibake": 86,
+  "quality.spam_terms": 7,
+  "quality.technical.alpha_words": 6,
+  "quality.technical.duplicate_lines": 640,
+  "quality.technical.duplicate_ngrams": 6037,
+  "quality.technical.duplicate_paragraphs": 36,
+  "quality.technical.ellipsis_lines": 283,
+  "quality.technical.mean_word_length": 23,
+  "quality.technical.non_latin_script": 26,
+  "quality.technical.not_english": 9,
+  "quality.technical.stopwords": 292,
+  "quality.technical.symbol_ratio": 69,
+  "quality.technical.too_short": 386,
+  "quality.technical.top_ngram_repetition": 1131,
+  "selection.meta_site": 6783
+ },
+ "redactions": {
+  "email": 1731,
+  "home_path_user": 9675,
+  "phone": 327
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 1817.07,
+ "slow_documents": [],
+ "source_id": "stackexchange",
+ "stages": {
+  "candidate": 558608,
+  "contamination": 4,
+  "privacy": 187,
+  "quality": 8002,
+  "selection": 6783
+ },
+ "unit_id": "stackexchange-dolma-0010"
+}

@@ -1,0 +1,39 @@
+{
+ "code": {
+  "commit": "07dfdba15e493ad0bed1a5124f4bff127d4c7dcc",
+  "dirty": false,
+  "package_version": "0.1.0"
+ },
+ "name": "measure-32k",
+ "pretokenize_pattern": "(?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\\r\\n\\p{L}\\p{N}]?\\p{L}+|\\p{N}| ?[^\\s\\p{L}\\p{N}]+[\\r\\n]*|\\s*[\\r\\n]+|\\s+(?!\\S)|\\s+",
+ "sample": {
+  "bytes": 132044553,
+  "bytes_by_source": {
+   "arxiv-papers": 7235674,
+   "finemath-4plus": 15420438,
+   "fineweb-edu-dedup": 47501898,
+   "libretexts": 3130189,
+   "oercommons": 202447,
+   "pressbooks": 4370004,
+   "python-peps": 63787,
+   "stackexchange": 15735165,
+   "stackv2-edu": 21189163,
+   "wikimedia": 17195788
+  },
+  "doc_ids_sha256": "8cca072d35a60f6cc707488c717a54bcdc51d3dc10cb1e2b0e1baf242847f7e8",
+  "documents": 29543,
+  "namespace": "j1.tokenizer-sample.v1",
+  "rate": 0.01
+ },
+ "schema": "j1.measurement-tokenizer.v1",
+ "spec": {
+  "limit_alphabet": 1000,
+  "min_frequency": 2,
+  "name": "measure-32k",
+  "total_vocab": 32768
+ },
+ "status": "PROVISIONAL MEASUREMENT ONLY - not a Juniper 1 tokenizer, not frozen",
+ "tokenizer_sha256": "3d85a5c822c331ad900f409fc0875c5f35c38f7c6b7f08945a770f2d1465cce6",
+ "version": "j1.measure-tokenizer.v1",
+ "vocab_size": 32768
+}

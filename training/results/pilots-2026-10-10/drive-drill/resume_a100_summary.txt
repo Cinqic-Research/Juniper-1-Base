@@ -1,0 +1,10 @@
+start 2026-10-10T14:24:48Z code 
+./tokenizer/candidates-v5/j1tok-32k/tokenizer.json: FAILED open or read
+./tokenizer/candidates-v5/sample.json: FAILED open or read
+./tokenizer/candidates-v5/summary.json: FAILED open or read
+manifest check rc=1 (entries not uploaded are reported missing)
+resume rc=0
+{"step": 26, "batch_fp_equal": true, "lr_equal": true, "loss_bitwise_equal": true, "loss_resumed": 7.722499370574951, "loss_reference": 7.722499370574951, "rel_diff": 0.0}
+{"step": 27, "batch_fp_equal": true, "lr_equal": true, "loss_bitwise_equal": true, "loss_resumed": 8.010671615600586, "loss_reference": 8.010671615600586, "rel_diff": 0.0}
+DRIVE-ONLY DRILL RESUME: PASS (pre-registered: fingerprints exact, losses within 1 %)
+end 2026-10-10T14:27:45Z

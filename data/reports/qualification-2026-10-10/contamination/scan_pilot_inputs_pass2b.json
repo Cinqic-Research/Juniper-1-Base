@@ -1,0 +1,1404 @@
+{
+ "version": "j1.contamination-layers.v1",
+ "index_identity": "eddb2f37fae2421b42be9244d4a39f3dc5bb4b0a9205ad7c57f52de3060ac049",
+ "accepted_manifest_sha256": "1a99ef755084dcfb1af3b207a476cc009c2bed99694e648fbc2eb8c3a54f37b3",
+ "build_identity": "aa9c4ed9522449521881a64b1dd810006df6249f56d8c1dae8b4e7cc1de8d005",
+ "splits": [
+  "train",
+  "validation"
+ ],
+ "only_ids_sha256": "c569c0d826237a89d6ac821ca5eeff968e6df3e4b206dbd9e419e20e8e973b89",
+ "common_sha256": "f87d0902e97abe326ca56807531c1045399f7d636e74e133162a3da2fef9ad4f",
+ "min_coverage": 0.6,
+ "units": 940,
+ "units_reused": 0,
+ "documents": 243331,
+ "hit_documents": 119,
+ "hits": [
+  {
+   "doc_id": "ae9ec3de6d561dbfa82fe75abd6c6846",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "cbb2b97b079ecdc2642f47d01fb45b0c",
+   "layer_a": {
+    "80391": 0.6667
+   },
+   "layer_a_benchmarks": [
+    "math"
+   ],
+   "layer_a_common_only": {},
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "140f657343d2b9135d3856767c1d2018",
+   "layer_a": {
+    "768": 1.0,
+    "912": 1.0
+   },
+   "layer_a_benchmarks": [
+    "aaa-exams"
+   ],
+   "layer_a_common_only": {},
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "2f44670b50ee7fca2ab28984e806058c",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "da2838c962a33d93af6e80319f2861c1",
+   "layer_a": {
+    "93008": 1.0
+   },
+   "layer_a_benchmarks": [
+    "mmlu"
+   ],
+   "layer_a_common_only": {},
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "3b16fc4484492b4a5188b815bfb8746e",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "7b51efbead47097e2e925f9b65cd79ca",
+   "layer_a": {
+    "103729": 1.0
+   },
+   "layer_a_benchmarks": [
+    "mmlu"
+   ],
+   "layer_a_common_only": {},
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "f61b9f188f9c08fd2832e5bb58e9601d",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6923
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "3050afd654b28326c2ed6b0cfc9ebe3d",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "86305c8eebafb422b8a0ea8f9840df32",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "69174": 1.0
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "5ce4a709e7fe8003e27173f9df240f09",
+   "layer_a": {
+    "114477": 1.0
+   },
+   "layer_a_benchmarks": [
+    "mmlu"
+   ],
+   "layer_a_common_only": {},
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "7c415d8e4dedb54a837f0c8bbaa8db06",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "d729b361a66416f528762c3fb765ea72",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "5d4d847a040ae5296a43fe82d64002eb",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "3b09fb5f5ebe730aefd2d4f7e8ae0611",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "430356b2b8b261af3f7462226ba042e6",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.8462
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "b3d446ddbeaecab4864f9dcc9e266bc6",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "4dad82df6d519d17edc343aab977742f",
+   "layer_a": {
+    "77841": 0.6071
+   },
+   "layer_a_benchmarks": [
+    "math"
+   ],
+   "layer_a_common_only": {},
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "519c59911d51c5d098d02ad3ba1d5622",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6923
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "64ce1cca808950e6475e46c9ed2d12e8",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "5f2a605461a82e5e27ad7a6faa8f99a1",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "7d7901fcf44a0728083582755f96313b",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "8e7e8497e2410e40147d03d93747785b",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "3-dimethylbutane"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "9ae956ea2053cf4d92ecb4dc6b3aed95",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-1-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "3650d25e09607af132ec58012e911254",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "2-dichlorobenzene",
+    "3-dichlorobenzene",
+    "4-dichlorobenzene"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "7e9969c251aa2a425a2ef702da0587b4",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "25-hydroxyvitamin"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "0b9a808060d873ff56be8fcd5748041b",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "f124da4e54f17021f3df664c4e0a5dde",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "25-hydroxyvitamin"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "c7b1c0d2df5b30b89493c318d125bbe9",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "25-hydroxyvitamin"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "4e483bf0e25f43e283e69f2e6ce92957",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "6-trichloroanisole"
+   ],
+   "layer_c_benchmarks": [
+    "hellaswag"
+   ]
+  },
+  {
+   "doc_id": "fdd264bd3f6c1a264421e8f9680f102c",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "25-hydroxyvitamin"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "fa29737c75a06fdc4349bdf565def50a",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "25-hydroxyvitamin"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "461148ab29718bfb648033bf5e6bdcec",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "a6c15719d74dc7cc2ef34eb82b3923ca",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "25-hydroxyvitamin"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "9f9f67d7172a1cdbec04a9806babfe32",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "25-hydroxyvitamin"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "49120ad470eadef3eb66401553852c1b",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "ff047f4734d6963b3c74b88fb7a5a631",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-1-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "5a1f2e2f77a98fb70a0add9ea6f54331",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphatase",
+    "glucose-6-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "418f6cf480a1239fd6c3ce7bc68d1a3f",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "c1602333bf44026057cf0c29b161ab9b",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "af11419c56498a94f3e59058c7ac86b8",
+   "layer_a": {
+    "94620": 1.0,
+    "94758": 1.0,
+    "94926": 1.0
+   },
+   "layer_a_benchmarks": [
+    "mmlu"
+   ],
+   "layer_a_common_only": {},
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "b6fa8c49218ad599a5095f70945582c9",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "25-hydroxyvitamin"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "664c35c423665c59b798e758d38f051e",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "25-hydroxyvitamin"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "9969884053b7bcf5de710279d2acfea7",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "25-hydroxyvitamin"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "597c86cddab249a65531b46d683d9ebf",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "81110648acb816b4545ff59d58890967",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "25-hydroxyvitamin"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "f8d6a98af347eb7d7f62879361e23e30",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "3-dimethylbutane"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "73fc479a0f58b21447b9d9b9fdc87c0d",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "de9cf13ba70b3a51034cdd492eab3fea",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "468f939d6b657c923787934e9fb0bba0",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "19c76ac120cfd29d9bae95c52f421e34",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "7f61ea87bf5b07bb5e2f8844cb7530b7",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphatase"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "cc2fe519bec76598cd9fa399ee8ebba0",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "aaf95afc7687b9e27ed8f2ef063a3ef6",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "3-dimethylbutane"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "575f08e1f56fdaca31868588931e13eb",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "glucose-6-phosphate"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "aba2917329c9a7b1e4dde297c640ba41",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "2-dichlorobenzene"
+   ],
+   "layer_c_benchmarks": [
+    "mmlu"
+   ]
+  },
+  {
+   "doc_id": "dede69679c6e6c80bd32073038d7a1d0",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "6f4d0f341cd440a111de67fb4339866f",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "92f6656421e22aa1a1cce6ce5bfacb24",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "af3b9b16343c32e3276ed4e594abab6b",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "443b428c061a1be0b22acb33cda61cbf",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6923
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "b5b51020379cf05767df275bfe259ccc",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "ea9416ae86e0267062935dc5efc3afef",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "f342614e349fe116fd9287938dafb42d",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "02937639e739484c499c219201d8d72e",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "116da17000369185e688423f3d3c12cf",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "ee305685da6d5d42c1961afd8289ec36",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "98d0e04b0e75200128128b696601e337",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "318ecb49a7a0f1843e5f384a17a5325a",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "f2780e643850d227b9e66d74a46b739e",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "938ee42b29a8a640bfd575f739c72404",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6923
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "c88692ecadec2207110cef36dd4de7d6",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "80969": 0.6154
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "66d1e3df6ce5f4c327b815638b297402",
+   "layer_a": {
+    "522": 0.8
+   },
+   "layer_a_benchmarks": [
+    "aaa-exams"
+   ],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "ba9b24a1e31f57406811ff84621992cb",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "1f5a89ee03d3aed9991e857913d92ca0",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "a5b6c93fefc5ad0218987c796553a29d",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "2581d487f3ff61844628ff48b9ec7d4f",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "6f627a80c71d036e855763584b8d8307",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "d5ac877002a2ec8275b72a60756097c3",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "4eecc2a7f9a606dd1d23f574a8aeef18",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "7bdcc00762c136f4372cd45d57dc75f2",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "02bc54a85195d0525520a125ad474c6a",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "df09aee01dbe9ec593b0cade84c61cd6",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "c9ce3f8afe0479b65a45830af62967eb",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "c1d499f3aad3c7668e52ea66acc81ff0",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "f3f2991967a9686156901990f7befacf",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "3b5c7cdae983dc7697a9b76e739ae266",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "15011c979ca4f86247dc6d81344c01a0",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "d0dcf06d1fbca6567c23d2d3079d9573",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "akiaiosfodnn7example"
+   ],
+   "layer_c_benchmarks": [
+    "gptoss-qualification",
+    "juniper-reference-eval"
+   ]
+  },
+  {
+   "doc_id": "7c85007bab6f3175844898c51154cf53",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "19db50aa04a882ae5b9026abee08c7b9",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "adaptiveavgpool2d"
+   ],
+   "layer_c_benchmarks": [
+    "juniperbench-code"
+   ]
+  },
+  {
+   "doc_id": "64f9e991e01cf178257a3bd32b8af14d",
+   "layer_a": {
+    "83713": 0.6667
+   },
+   "layer_a_benchmarks": [
+    "mbpp"
+   ],
+   "layer_a_common_only": {},
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "39f5a487c14da33d909afd65ffefe80c",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "adaptiveavgpool2d"
+   ],
+   "layer_c_benchmarks": [
+    "juniperbench-code"
+   ]
+  },
+  {
+   "doc_id": "d9a74a5407b3e0f0d2d4391b9b728a23",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "69174": 1.0
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "585be3796e20e18889870f907b48509b",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "70970": 1.0
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "ce9e644afa7e171d7e9c658941a8707f",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "adaptiveavgpool2d"
+   ],
+   "layer_c_benchmarks": [
+    "juniperbench-code"
+   ]
+  },
+  {
+   "doc_id": "e614321bbf370f90e6faf7c2edf41259",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "70970": 1.0
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "829670a834fe0eed337ae511fc0785a5",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {
+    "69174": 1.0
+   },
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "b8d47032a865e47d723dd07e6b0c4c66",
+   "layer_a": {
+    "72799": 1.0
+   },
+   "layer_a_benchmarks": [
+    "juniperbench-code"
+   ],
+   "layer_a_common_only": {},
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "84290fb8352b112beb418b479ca36d08",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "adaptiveavgpool2d"
+   ],
+   "layer_c_benchmarks": [
+    "juniperbench-code"
+   ]
+  },
+  {
+   "doc_id": "60a3d53a87e22bf88bd846fa441eb1a9",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "adaptiveavgpool2d"
+   ],
+   "layer_c_benchmarks": [
+    "juniperbench-code"
+   ]
+  },
+  {
+   "doc_id": "dfaf43caa5ff26495897ac76c5500242",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "adaptiveavgpool2d"
+   ],
+   "layer_c_benchmarks": [
+    "juniperbench-code"
+   ]
+  },
+  {
+   "doc_id": "9a9cf89fa9566e70f387d0a7da52a4ab",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "adaptiveavgpool2d"
+   ],
+   "layer_c_benchmarks": [
+    "juniperbench-code"
+   ]
+  },
+  {
+   "doc_id": "6ec4aebbfcff9f200f0a2f7cc7c9769e",
+   "layer_a": {
+    "70869": 1.0
+   },
+   "layer_a_benchmarks": [
+    "juniperbench-code"
+   ],
+   "layer_a_common_only": {},
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "d610ce1b2d1569dbbb6bd5bd7efe591d",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "adaptiveavgpool2d"
+   ],
+   "layer_c_benchmarks": [
+    "juniperbench-code"
+   ]
+  },
+  {
+   "doc_id": "01a00ff5a38199fbb0609ff3aead5f6f",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "adaptiveavgpool2d"
+   ],
+   "layer_c_benchmarks": [
+    "juniperbench-code"
+   ]
+  },
+  {
+   "doc_id": "3d46c5ea33e2dba4153cfde998b1e53f",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "adaptiveavgpool2d"
+   ],
+   "layer_c_benchmarks": [
+    "juniperbench-code"
+   ]
+  },
+  {
+   "doc_id": "0d0ce6b0b8ac945e6b32b18530e6a84f",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "adaptiveavgpool2d"
+   ],
+   "layer_c_benchmarks": [
+    "juniperbench-code"
+   ]
+  },
+  {
+   "doc_id": "e7132de9b664906ff5afa34d9ed4568b",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "adaptiveavgpool2d"
+   ],
+   "layer_c_benchmarks": [
+    "juniperbench-code"
+   ]
+  },
+  {
+   "doc_id": "147a156b0197496be069ee3e06b98eb3",
+   "layer_a": {
+    "87859": 0.6667,
+    "87898": 0.6667
+   },
+   "layer_a_benchmarks": [
+    "mbppplus"
+   ],
+   "layer_a_common_only": {},
+   "layer_c": [],
+   "layer_c_benchmarks": []
+  },
+  {
+   "doc_id": "d2e75d7a488fb1cf716e4d9f3e55e798",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "adaptiveavgpool2d"
+   ],
+   "layer_c_benchmarks": [
+    "juniperbench-code"
+   ]
+  },
+  {
+   "doc_id": "5d79c3bb40993062bb59cccffac05a8c",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "123456789abcdef0"
+   ],
+   "layer_c_benchmarks": [
+    "humaneval",
+    "humanevalplus"
+   ]
+  },
+  {
+   "doc_id": "e80105793deb5e05c8fa2bfb724df37a",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "e46d2217543c457c515128f1f2a457d8",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "ae614f9f283c3a73cb9643e43fba7a57",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "b8c83201f7f139ba02070116e6e08fd9",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "1d4ba78eec7425e004a4e2c87f282b81",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "8017dd5360b0a210ea8d44d205925f90",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "x86_64-linux-gnu"
+   ],
+   "layer_c_benchmarks": [
+    "aaa-exams"
+   ]
+  },
+  {
+   "doc_id": "710552c348ba830af5514f0a800e3795",
+   "layer_a": {},
+   "layer_a_benchmarks": [],
+   "layer_a_common_only": {},
+   "layer_c": [
+    "5f4dcc3b5aa765d61d8327deb882cf99"
+   ],
+   "layer_c_benchmarks": [
+    "humaneval"
+   ]
+  }
+ ],
+ "gram_df_summary": {
+  "distinct_index_grams_seen": 50467,
+  "df_ge_10": 4552,
+  "df_ge_50": 568
+ },
+ "seconds": 395.0
+}

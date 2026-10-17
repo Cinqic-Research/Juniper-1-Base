@@ -1,0 +1,24 @@
+{
+ "bytes": 132044553,
+ "bytes_by_source": {
+  "arxiv-papers": 7235674,
+  "finemath-4plus": 15420438,
+  "fineweb-edu-dedup": 47501898,
+  "libretexts": 3130189,
+  "oercommons": 202447,
+  "pressbooks": 4370004,
+  "python-peps": 63787,
+  "stackexchange": 15735165,
+  "stackv2-edu": 21189163,
+  "wikimedia": 17195788
+ },
+ "doc_ids_sha256": "8cca072d35a60f6cc707488c717a54bcdc51d3dc10cb1e2b0e1baf242847f7e8",
+ "documents": 29543,
+ "file": {
+  "file": "sample.parquet",
+  "rows": 29543,
+  "sha256": "1986be51446d6f6df114a2de3e4b5d77bf061be7e0d89dbce6fd90c42a33f19b"
+ },
+ "namespace": "j1.tokenizer-sample.v1",
+ "rate": 0.01
+}

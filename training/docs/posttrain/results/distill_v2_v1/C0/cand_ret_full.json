@@ -1,0 +1,27 @@
+{
+ "bpb": 0.9698878030759208,
+ "bytes": 12311466,
+ "device": "NVIDIA GeForce RTX 4090",
+ "input_hashes": {
+  "docs": "42e057d7771fc1223c9f59895edb5d4d2bb8cbfacdca5dabe6a91ec37482f787",
+  "shards": "1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef",
+  "tokenizer": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+  "validation": "03efc04fc4c1bf1b1960f950cf98de229a9494dca786bb9472410bc9d44e13df"
+ },
+ "loss": 2.5718353335876474,
+ "mode": "full",
+ "model": {
+  "checkpoint": "ckpt-000000200-44558b82",
+  "kind": "sft_checkpoint",
+  "manifest_sha256": "5477b51e286d90f29546a5af1ad33b6cef8de04900b95c0ac57f9aba193191c8",
+  "model_state_sha256": "d6d43fffd2e77b797a47a966572f01b9fb486c80cf5a0835b37e3668e93710c0",
+  "run_id": "j1-distill-v2-c0",
+  "stage": "juniper1-distill-v2",
+  "updates": 200
+ },
+ "precision": "fp32",
+ "schema": "j1.sft-retention.v1",
+ "seconds": 98.0,
+ "targets": 3218204,
+ "windows": 1572
+}

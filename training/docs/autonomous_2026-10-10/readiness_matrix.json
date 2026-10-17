@@ -1,0 +1,1294 @@
+{
+ "schema": "j1.readiness.v2",
+ "generated_utc": "2026-10-12T00:57:15+00:00",
+ "source_sha256": "42577b5a55ec66b38dafe0900e83e2fb8eaf53a76d36455f78eb2b8da35472e3",
+ "repo_heads": {
+  "Juniper-1-Train": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+  "Juniper-1-Data": "47cd1dd754903379c18cb821aba23a6993243eb9"
+ },
+ "bindings": {
+  "manifest_sha256": "db0921ce06919173dfb0c21e0dccf3647395053014545e551555f774125051db",
+  "run_id": "j1-base-r2",
+  "execution_profile_compile": false,
+  "host_gpu_uuid": "GPU-c3966d38-7505-59d0-d9bd-a41bfe3e946e",
+  "host_pod_id": "dxnsn6g7n5s4fw",
+  "train_commit": "828edd192fd97057c5126d6731191d2118638538",
+  "funding_contract_sha256": "e6dfe27538b4e1138303644c5a9de62d86681b64b33ba1de99f7413b771aa80d",
+  "funding_version": 7,
+  "unbound": {},
+  "committed_sources": {
+   "manifest": "Juniper-1-Train:docs/autonomous_2026-10-10/launch_manifest.json",
+   "funding": "Juniper-1-Train:docs/fable_2026-10-10/funding_contract_v7.json"
+  }
+ },
+ "valid": true,
+ "problems": [],
+ "stages": {
+  "BASE_PRETRAINING_LAUNCH": {
+   "gates": 19,
+   "gate_ids": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11",
+    "B12",
+    "B13a",
+    "B13b",
+    "B13c",
+    "B14",
+    "B15",
+    "B16",
+    "B17"
+   ],
+   "blocking": [],
+   "ready": true
+  },
+  "POSTTRAINING": {
+   "gates": 2,
+   "gate_ids": [
+    "T01",
+    "T02"
+   ],
+   "blocking": [
+    "T01",
+    "T02"
+   ],
+   "ready": false
+  },
+  "APP_INTEGRATION": {
+   "gates": 1,
+   "gate_ids": [
+    "A01"
+   ],
+   "blocking": [
+    "A01"
+   ],
+   "ready": false
+  },
+  "ERUDITION_RESEARCH": {
+   "gates": 1,
+   "gate_ids": [
+    "E01"
+   ],
+   "blocking": [
+    "E01"
+   ],
+   "ready": false
+  },
+  "RELEASE": {
+   "gates": 3,
+   "gate_ids": [
+    "R01",
+    "R02",
+    "R03"
+   ],
+   "blocking": [
+    "R01",
+    "R02",
+    "R03"
+   ],
+   "ready": false
+  }
+ },
+ "gates": [
+  {
+   "id": "B01",
+   "maps_to": [
+    "P01",
+    "P02"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Current authority (work order 2026-10-10, spec v0.7 DOCX) and repository context reconciled for the limited launch",
+   "status": "PASS",
+   "verification_method": "SHA-256 of the owner DOCX recomputed; live GitHub inventory of all ten repositories against the order's entry table",
+   "observed_outcome": "spec hash matches; all entry refs matched live state at 16:30Z",
+   "remaining_gap": "none for the base launch; product purpose/deployment constraints for chat stages are POSTTRAINING/APP",
+   "invalidation_triggers": [
+    "new owner order or spec version"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/autonomous_2026-10-10/authority.json",
+     "sha256": "e4505f016fd71adce51cda0ecc13e0682577b7a0093dacdac7797787e160dcc6",
+     "checks": [
+      {
+       "path": "spec_v07_docx_sha256",
+       "equals": "121fcb1de0dc927ce0d8d725c10bb68d199e28185f699d786472191418292ee3"
+      },
+      {
+       "path": "spec_hash_verified",
+       "equals": true
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "e4505f016fd71adce51cda0ecc13e0682577b7a0093dacdac7797787e160dcc6"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B02",
+   "maps_to": [
+    "P03"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Base model parameter class and 2,048-token context frozen (latency objectives are release requirements: R03)",
+   "status": "PASS",
+   "verification_method": "manifest generated from the selection record",
+   "observed_outcome": "j1-wide-20x768, 142,771,456 parameters (instantiated), seq_len 2,048",
+   "remaining_gap": "latency objectives are RELEASE",
+   "invalidation_triggers": [
+    "shape or context change"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/autonomous_2026-10-10/launch_manifest.json",
+     "sha256": "db0921ce06919173dfb0c21e0dccf3647395053014545e551555f774125051db",
+     "checks": [
+      {
+       "path": "trainer_config.seq_len",
+       "equals": 2048
+      },
+      {
+       "path": "model.n_params",
+       "min": 140000000
+      },
+      {
+       "path": "model.n_params",
+       "max": 150000000
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "db0921ce06919173dfb0c21e0dccf3647395053014545e551555f774125051db"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B03",
+   "maps_to": [
+    "P04"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Training-use decisions recorded for every source present in the accepted corpus",
+   "status": "PASS",
+   "verification_method": "sources of the v0.2.2 manifest joined with configs/owner_decisions.toml",
+   "observed_outcome": "all v0.2.2 sources training-approved",
+   "remaining_gap": "weight release and dataset redistribution are RELEASE (R01)",
+   "invalidation_triggers": [
+    "corpus change",
+    "decision change"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Data",
+     "path": "reports/j1-base-v0.2.2/source_permissions.json",
+     "sha256": "886c3cf5a1045162a41a732a5fb825acbca05396398a6df570096b9f3ccc43fc",
+     "checks": [
+      {
+       "path": "all_sources_training_approved",
+       "equals": true
+      },
+      {
+       "path": "build",
+       "equals": "j1-base-v0.2.2"
+      }
+     ],
+     "repo_commit": "47cd1dd754903379c18cb821aba23a6993243eb9",
+     "pinned_sha256": "886c3cf5a1045162a41a732a5fb825acbca05396398a6df570096b9f3ccc43fc"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B04",
+   "maps_to": [
+    "P05",
+    "P07"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Accepted immutable successor corpus j1-base-v0.2.2 with lineage-derived identity and a full independent recount of its model-ready shards",
+   "status": "PASS",
+   "verification_method": "tools/full_recount.py (separate implementation, every document)",
+   "observed_outcome": "v0.2.1 PASS; v0.2.2 PASS (2,959,371 docs, 3,413,019,479 tokens, 0 errors, 1484.5 s)",
+   "remaining_gap": "none for v0.2.2",
+   "invalidation_triggers": [
+    "any corpus, exclusion or tokenizer change"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Data",
+     "path": "reports/j1-base-v0.2.2/full_recount_cand5-j1tok-24k.json",
+     "sha256": "ac29e08120980e677717191fc40cb39706fc796ead65da5bb50c7470ed51dbea",
+     "checks": [
+      {
+       "path": "pass",
+       "equals": true
+      },
+      {
+       "path": "phase_a.n_errors",
+       "equals": 0
+      },
+      {
+       "path": "inputs.tokenizer_json_sha256",
+       "equals": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1"
+      },
+      {
+       "path": "phase_a.bpe_sample_mismatch",
+       "equals": 0
+      }
+     ],
+     "repo_commit": "47cd1dd754903379c18cb821aba23a6993243eb9",
+     "pinned_sha256": "ac29e08120980e677717191fc40cb39706fc796ead65da5bb50c7470ed51dbea"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B05",
+   "maps_to": [
+    "P06"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Evaluation exclusions: v3 + layers-v1 + F9 scans adjudicated, internal-source exclusion applied, residual blind spots recorded",
+   "status": "PASS",
+   "verification_method": "pre-registered criteria v2 / F9 criteria; successor tool fails closed if an excluded ID remains",
+   "observed_outcome": "F9 PASS (7,008 PROHIBITED); successor v0.2.2 excludes the 7,108-ID union (verified absent)",
+   "remaining_gap": "paraphrase/partial/format-changed copies and internal suites remain blind spots (recorded)",
+   "invalidation_triggers": [
+    "new evaluation suite",
+    "new corpus"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Data",
+     "path": "reports/contamination_f9/summary_f9.json",
+     "sha256": "220ab22b55a2ea4d58f13c6bf6bf050df79c68516d7db47892170a53ec4d3c9d",
+     "checks": [
+      {
+       "path": "prohibited_by_split.validation",
+       "equals": 7
+      }
+     ],
+     "repo_commit": "47cd1dd754903379c18cb821aba23a6993243eb9",
+     "pinned_sha256": "220ab22b55a2ea4d58f13c6bf6bf050df79c68516d7db47892170a53ec4d3c9d"
+    },
+    {
+     "repo": "Juniper-1-Data",
+     "path": "reports/j1-base-v0.2.2/successor_lineage.json",
+     "sha256": "771a5047a5ff7301dc576106569197b29393fa2c52577eb82fb1ace0473f0c74",
+     "checks": [
+      {
+       "path": "excluded_documents",
+       "equals": 7108
+      },
+      {
+       "path": "exclusions_absent_from_successor",
+       "equals": true
+      }
+     ],
+     "repo_commit": "47cd1dd754903379c18cb821aba23a6993243eb9",
+     "pinned_sha256": "771a5047a5ff7301dc576106569197b29393fa2c52577eb82fb1ace0473f0c74"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B06",
+   "maps_to": [
+    "P08",
+    "P10"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Tokenizer j1tok-24k frozen bytes, 64 reserved control IDs, round trips, no control IDs from text (encode_special_tokens)",
+   "status": "PASS",
+   "verification_method": "every document decoded back equal; control IDs refused; literal control spellings counted",
+   "observed_outcome": "v0.2.1 and v0.2.2: 0 errors, 0 BPE sample mismatches, 22 literal-control documents safe under jtok.load",
+   "remaining_gap": "chat grammar and App adapter: POSTTRAINING/APP (P10 remainder)",
+   "invalidation_triggers": [
+    "tokenizer bytes change"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Data",
+     "path": "reports/j1-base-v0.2.2/full_recount_cand5-j1tok-24k.json",
+     "sha256": "ac29e08120980e677717191fc40cb39706fc796ead65da5bb50c7470ed51dbea",
+     "checks": [
+      {
+       "path": "phase_a.n_errors",
+       "equals": 0
+      },
+      {
+       "path": "inputs.tokenizer_json_sha256",
+       "equals": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1"
+      }
+     ],
+     "repo_commit": "47cd1dd754903379c18cb821aba23a6993243eb9",
+     "pinned_sha256": "ac29e08120980e677717191fc40cb39706fc796ead65da5bb50c7470ed51dbea"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B07",
+   "maps_to": [
+    "P09"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Architecture selected by the registered protocol-18b rule (or registered engineering choice under uncertainty)",
+   "status": "PASS",
+   "verification_method": "tools/select_rule.py architecture-v2 over committed run records",
+   "observed_outcome": "SELECTED j1-wide-20x768: ET +0.46% (lower90 +0.11%), EC +1.24% (lower90 +0.94%), 7/7 critical domains improved; EC time matched within 0.21%",
+   "remaining_gap": "core LR at the upper grid edge (unresolved boundary; extension skipped by the registered budget cut order); one host, 3 seeds, 183M-target budget",
+   "invalidation_triggers": [
+    "data, tokenizer or profile change"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/autonomous_2026-10-10/selection_18b/select_architecture_v2.json",
+     "sha256": "9b29f75a016812146f1685636a78ed0fb0191bbda98720b342c3325c729c7a26",
+     "checks": [
+      {
+       "path": "rule",
+       "equals": "architecture-v2"
+      },
+      {
+       "path": "status",
+       "in": [
+        "SELECTED",
+        "ENGINEERING_CHOICE_UNDER_UNCERTAINTY"
+       ]
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "9b29f75a016812146f1685636a78ed0fb0191bbda98720b342c3325c729c7a26"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B08",
+   "maps_to": [
+    "P11"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Numerics: GPU test suite, SDPA correctness, FA-1 explained, on the launch host",
+   "status": "PASS",
+   "verification_method": "bootstrap qualification on the pod",
+   "observed_outcome": "206 GPU tests pass; FA-1 explained",
+   "remaining_gap": "none",
+   "invalidation_triggers": [
+    "host, driver, image or kernel change"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/autonomous_2026-10-10/evidence/host_pncbyxaf2dt2jl/host_qualification.json",
+     "sha256": "55c72e7360795da287300e96997e468d026d5e956c485bdf3238e8fbc11caa4c",
+     "checks": [
+      {
+       "path": "pytest_passed",
+       "equals": true
+      },
+      {
+       "path": "fa1_verdict",
+       "equals": "EXPLAINED_ACCUMULATION_NOISE"
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "55c72e7360795da287300e96997e468d026d5e956c485bdf3238e8fbc11caa4c"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B09",
+   "maps_to": [
+    "P12"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Real-data loader: exact-epoch consumption, full-split validation, keyed order, test split never read",
+   "status": "PASS",
+   "verification_method": "protocol-18b ET runs on the successor prefix",
+   "observed_outcome": "6 ET runs: exact epoch (trainer-enforced, arithmetic re-checked), full validation split (2,576 docs, 12,311,466 bytes), test split never read",
+   "remaining_gap": "prefix scale (183M targets); full-epoch loader exercised by the launch tranche",
+   "invalidation_triggers": [
+    "loader change"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/autonomous_2026-10-10/selection_18b/et_reference_summary.json",
+     "sha256": "70de94258f911bf257821e78278779be11da8dfbd49281cbc777f5fbca821c24",
+     "checks": [
+      {
+       "path": "exact_epoch_all",
+       "equals": true
+      },
+      {
+       "path": "eval_split",
+       "equals": "validation"
+      },
+      {
+       "path": "eval_documents",
+       "equals": 2576
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "70de94258f911bf257821e78278779be11da8dfbd49281cbc777f5fbca821c24"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B10",
+   "maps_to": [
+    "P13"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Checkpoint publication, corruption rejection and exact restore on the launch stack and storage class",
+   "status": "PASS",
+   "verification_method": "tools/recovery_suite.py (8 tests) on the network volume /vol with the launch shape, eager deterministic profile, final code (2026-10-11T06:16-06:32Z, pod pncbyxaf2dt2jl), bounded storage; plus the 2026-10-10 A100 suite",
+   "observed_outcome": "8/8 PASS on the final code/profile/storage (results.json); checkpoint write about 2.7 s, restore exact",
+   "remaining_gap": "none",
+   "invalidation_triggers": [
+    "checkpoint code or storage change"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/fable_2026-10-10/evidence/recovery_fable2/results.json",
+     "sha256": "6802a64222274e887922377598886262ca521a6277555fb7be61816fecf3758a",
+     "checks": [
+      {
+       "path": "0.result",
+       "equals": "PASS"
+      },
+      {
+       "path": "7.result",
+       "equals": "PASS"
+      },
+      {
+       "path": "7.test",
+       "equals": "incompatible_contract_handling"
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "6802a64222274e887922377598886262ca521a6277555fb7be61816fecf3758a"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/autonomous_2026-10-10/evidence/recovery_vol.json",
+     "sha256": "085c34d30ce65d4187b625ad2bc6433cae35e9ba09063a030650f3bc5924b6df",
+     "checks": [
+      {
+       "path": "prior_suite_a100_passed",
+       "equals": 8
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "085c34d30ce65d4187b625ad2bc6433cae35e9ba09063a030650f3bc5924b6df"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B11",
+   "maps_to": [
+    "P14"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Launch host qualified (identity, MIG, ECC, driver, image, tests, throughput) and storage class demonstrated",
+   "status": "PASS",
+   "verification_method": "bootstrap v4 host record on the launch GPU (identity, MIG/ECC, CUDA/SDPA both geometries, FA-1, test suite, every launch-input byte verified); gpu_uuid bound to the manifest",
+   "observed_outcome": "GPU-889ddbcd (A100-SXM4-80GB, MIG disabled, ECC enabled, driver 580.126.16) qualified 2026-10-11T11:5xZ-12:0xZ; the earlier GPU-5c42020f record is superseded for this launch",
+   "remaining_gap": "none",
+   "invalidation_triggers": [
+    "host change"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/fable_2026-10-10/evidence/host_dxnsn6g7n5s4fw-fable/host_qualification.json",
+     "sha256": "eb009e7874a697b1f2bb374d3c6adb5cac4fa497eb69506588d02ae6b2a17b56",
+     "checks": [
+      {
+       "path": "mig_disabled",
+       "equals": true
+      },
+      {
+       "path": "ecc_enabled",
+       "equals": true
+      },
+      {
+       "path": "prefix_data_verified",
+       "equals": true
+      },
+      {
+       "path": "gpu_uuid",
+       "equals_ref": {
+        "repo": "Juniper-1-Train",
+        "path": "docs/autonomous_2026-10-10/launch_manifest.json",
+        "json_path": "host.gpu_uuid"
+       }
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "eb009e7874a697b1f2bb374d3c6adb5cac4fa497eb69506588d02ae6b2a17b56"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/fable_2026-10-10/evidence/host_pncbyxaf2dt2jl-fable/sdpa_correctness_wide_det.json",
+     "sha256": "132149e1ad955542cfcf4f07fbddd24a8ccd63f98540630b5f5e3547d1b42779",
+     "checks": [
+      {
+       "path": "flash.pass",
+       "equals": true
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "132149e1ad955542cfcf4f07fbddd24a8ccd63f98540630b5f5e3547d1b42779"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/fable_2026-10-10/evidence/host_pncbyxaf2dt2jl-fable/fa1_diagnosis.json",
+     "sha256": "afdc0b3fd56cc6fe630cea8a07fc6b585a6bde0e3452007e7ba8b83a0f72ab19",
+     "checks": [
+      {
+       "path": "verdict",
+       "equals": "EXPLAINED_ACCUMULATION_NOISE"
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "afdc0b3fd56cc6fe630cea8a07fc6b585a6bde0e3452007e7ba8b83a0f72ab19"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B12",
+   "maps_to": [
+    "P15"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Compiled profile promoted only after eager/compiled learning equivalence on the final basis",
+   "status": "PASS",
+   "verification_method": "tools/compile_equivalence.py under the registered protocol docs/fable_2026-10-10/compile_equivalence_protocol_v2.json (1,000 updates, tolerances 0.5 % loss / 0.3 % bpb pinned here; the record's protocol.sha256 must equal the committed protocol, its identity.preset / identity.shards_json_sha256 the manifest's, review T-02/R-06); the manifest's execution_profile must be built from this record (compile_equivalence_sha256 equals its bytes; tools/launch_manifest.py enables compile only on PASS)",
+   "observed_outcome": "registered 1,000-update pair on the launch basis (2026-10-11): FAIL (final bpb 0.411 % > 0.3 %; max per-step 2.6 % > 2 %; critical domains); mean relative loss 0.417 % <= 0.5 %; eager-vs-eager replicate noise floor: final bpb 0.153 %, mean loss 0.250 %. The eager reference profile is the launch profile; compiled (2.0x throughput, consistently lower bpb) is not promoted.",
+   "remaining_gap": "compiled profile not promoted; a future promotion needs a passing registered check plus the profile-specific startup, recovery and supervision gates",
+   "invalidation_triggers": [
+    "compiler/kernel change",
+    "equivalence record rebuilt"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/fable_2026-10-10/compile_equivalence_v2.json",
+     "checks": [
+      {
+       "path": "status",
+       "in": [
+        "PASS",
+        "FAIL"
+       ]
+      },
+      {
+       "path": "tolerances.loss_rel",
+       "equals": 0.005
+      },
+      {
+       "path": "tolerances.bpb_rel",
+       "equals": 0.003
+      },
+      {
+       "path": "protocol.sha256",
+       "equals_sha256_of": "Juniper-1-Train:docs/fable_2026-10-10/compile_equivalence_protocol_v2.json"
+      },
+      {
+       "path": "identity.preset",
+       "equals_ref": {
+        "repo": "Juniper-1-Train",
+        "path": "docs/autonomous_2026-10-10/launch_manifest.json",
+        "json_path": "model.preset"
+       }
+      },
+      {
+       "path": "identity.shards_json_sha256",
+       "equals_ref": {
+        "repo": "Juniper-1-Train",
+        "path": "docs/autonomous_2026-10-10/launch_manifest.json",
+        "json_path": "data.shards_json_sha256"
+       }
+      }
+     ],
+     "sha256": "e348fd27b5198201e2b7bacbba46eb12e710018f11a51e192333e35bac20757b",
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "e348fd27b5198201e2b7bacbba46eb12e710018f11a51e192333e35bac20757b"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/autonomous_2026-10-10/launch_manifest.json",
+     "sha256": "db0921ce06919173dfb0c21e0dccf3647395053014545e551555f774125051db",
+     "checks": [
+      {
+       "path": "execution_profile.basis",
+       "in": [
+        "eager/compiled equivalence PASS",
+        "eager/compiled equivalence FAIL"
+       ]
+      },
+      {
+       "path": "execution_profile.compile_equivalence_sha256",
+       "equals_sha256_of": "Juniper-1-Train:docs/fable_2026-10-10/compile_equivalence_v2.json"
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "db0921ce06919173dfb0c21e0dccf3647395053014545e551555f774125051db"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B13a",
+   "maps_to": [
+    "P16"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Time supervision: time logger qualified on FLOWBOX and on the launch A100 stack",
+   "status": "PASS",
+   "verification_method": "j1bench timelog qualification record on each host (controls, wrapper, audit); the A100 record must be produced on the qualified launch host",
+   "observed_outcome": "FLOWBOX (NVMe + HDD) and A100 (network volume /vol, pod pncbyxaf2dt2jl, 2026-10-11T04:24Z) time-logger qualification PASS: durable event median 1.15 ms / p99 3.5 ms on the volume; controls and audit clean",
+   "remaining_gap": "none",
+   "invalidation_triggers": [
+    "timelog code change",
+    "host change"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/autonomous_2026-10-10/evidence/timelog_qual_flowbox.json",
+     "sha256": "8be7d230c73a9c96bcdd15a7e9f8e69d6d0ad9449e989341083a5db52fcec9eb",
+     "checks": [
+      {
+       "path": "pass",
+       "equals": true
+      },
+      {
+       "path": "audit.ok",
+       "equals": true
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "8be7d230c73a9c96bcdd15a7e9f8e69d6d0ad9449e989341083a5db52fcec9eb"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/fable_2026-10-10/evidence/timelog_qual_a100.json",
+     "checks": [
+      {
+       "path": "pass",
+       "equals": true
+      },
+      {
+       "path": "audit.ok",
+       "equals": true
+      }
+     ],
+     "sha256": "1b697535a2b97a7d993efaec399294ff46f201529448bcb9d5992b1f36def360",
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "1b697535a2b97a7d993efaec399294ff46f201529448bcb9d5992b1f36def360"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B13b",
+   "maps_to": [
+    "P16"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Two independently supervised shutdown paths drilled live (D1-D6) before substantial paid work",
+   "status": "PASS",
+   "verification_method": "live drill D1-D6 (controller_live_drill.md; raw ledgers under live_drill/) transcribed to controller_live_drill.json; every drill outcome checked, the transcription pinned to the markdown bytes",
+   "observed_outcome": "8 drills (D1, D2, D2b, D3, D4, D4b, D5, D6) PASS on 2026-10-10; both paths also acted live at the 2026-10-11 launch stop (attempt_record.json)",
+   "remaining_gap": "none",
+   "invalidation_triggers": [
+    "controller or watchdog code change"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/fable_2026-10-10/controller_live_drill.json",
+     "sha256": "8bb44285291b8266d4b2473950b5db3cd8398e65a68a37a45a13eb639f429ad9",
+     "checks": [
+      {
+       "path": "source_sha256",
+       "equals_sha256_of": "Juniper-1-Train:docs/autonomous_2026-10-10/controller_live_drill.md"
+      },
+      {
+       "path": "drill_count",
+       "equals": 8
+      },
+      {
+       "path": "drills.0.outcome",
+       "equals": "PASS"
+      },
+      {
+       "path": "drills.0.id",
+       "equals": "D1"
+      },
+      {
+       "path": "drills.1.outcome",
+       "equals": "PASS"
+      },
+      {
+       "path": "drills.1.id",
+       "equals": "D2"
+      },
+      {
+       "path": "drills.2.outcome",
+       "equals": "PASS"
+      },
+      {
+       "path": "drills.2.id",
+       "equals": "D2b"
+      },
+      {
+       "path": "drills.3.outcome",
+       "equals": "PASS"
+      },
+      {
+       "path": "drills.3.id",
+       "equals": "D3"
+      },
+      {
+       "path": "drills.4.outcome",
+       "equals": "PASS"
+      },
+      {
+       "path": "drills.4.id",
+       "equals": "D4"
+      },
+      {
+       "path": "drills.5.outcome",
+       "equals": "PASS"
+      },
+      {
+       "path": "drills.5.id",
+       "equals": "D4b"
+      },
+      {
+       "path": "drills.6.outcome",
+       "equals": "PASS"
+      },
+      {
+       "path": "drills.6.id",
+       "equals": "D5"
+      },
+      {
+       "path": "drills.7.outcome",
+       "equals": "PASS"
+      },
+      {
+       "path": "drills.7.id",
+       "equals": "D6"
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "8bb44285291b8266d4b2473950b5db3cd8398e65a68a37a45a13eb639f429ad9"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/autonomous_2026-10-10/controller_live_drill.md",
+     "sha256": "e6b56775a64c5da9e6377406e7449ab7ad249e4ebfe5743544d5174b7d3fbfd5",
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "e6b56775a64c5da9e6377406e7449ab7ad249e4ebfe5743544d5174b7d3fbfd5"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B13c",
+   "maps_to": [
+    "P16"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Money supervision: relaunch funding recorded in a versioned budget contract that admits the base launch",
+   "status": "PASS",
+   "verification_method": "versioned budget contract (v5 or later) recording the owner's relaunch funding and an explicit admission of the base launch",
+   "observed_outcome": "funding contract v7 (FC-7): balance 42.26 after the owner's $30 reload (reconciled to 0.02); v6 actuals 6.64 settled; CONTINUATION 33.00 admitted conditionally on readiness; QUAL3 1.50; SUPPORT3 1.50",
+   "remaining_gap": "the CONTINUATION job must still be admitted in the ledger at launch time",
+   "invalidation_triggers": [
+    "budget contract version change"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/fable_2026-10-10/funding_contract_v7.json",
+     "sha256": "e6dfe27538b4e1138303644c5a9de62d86681b64b33ba1de99f7413b771aa80d",
+     "checks": [
+      {
+       "path": "version",
+       "min": 7
+      },
+      {
+       "path": "relaunch_funding_recorded",
+       "equals": true
+      },
+      {
+       "path": "admission.base_launch_admitted",
+       "equals": true
+      },
+      {
+       "path": "admission.continuation_admitted",
+       "equals": true
+      },
+      {
+       "path": "placeholders_resolved",
+       "equals": true
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "e6dfe27538b4e1138303644c5a9de62d86681b64b33ba1de99f7413b771aa80d"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B14",
+   "maps_to": [
+    "P18"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Base-launch engineering thresholds frozen before launch (scope, canary C1-C9, stop rules, validation-only evaluation)",
+   "status": "PASS",
+   "verification_method": "committed before any launch run; the committed manifest must bind the current policy (LP-4) and declare the continuation",
+   "observed_outcome": "frozen; amended LP-1 (tranche 131,072,000 targets), LP-2 (required gates, stall rule, allowance), LP-3 (run j1-base-r2, limits 3.00/3.50/1.8 h, off-site 4 h deadline), LP-4 (owner continuation of the same run to the full horizon from the verified update-2000 checkpoint; limits 30.0/33.0/17.5 h; retention every 5,000 updates + {0, 2000, final}); model, data, tokenizer, schedule, seed and acceptance thresholds unchanged",
+   "remaining_gap": "product evaluation prompts/thresholds: POSTTRAINING (T02) and RELEASE",
+   "invalidation_triggers": [
+    "policy edit"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/autonomous_2026-10-10/launch_policy.json",
+     "sha256": "97bd306dbed170fde36931b7148f86ecf8474289bec5be8a8f5c6fcc90e784db",
+     "checks": [
+      {
+       "path": "tranche_max_targets",
+       "equals": 3410100224
+      },
+      {
+       "path": "continuation.from_update",
+       "equals": 8500
+      },
+      {
+       "path": "continuation.checkpoint",
+       "equals": "ckpt-000008500-205ec566"
+      },
+      {
+       "path": "retention.keep_every_updates",
+       "equals": 5000
+      },
+      {
+       "path": "instability_rel",
+       "equals": 0.02
+      },
+      {
+       "path": "canary_updates",
+       "equals": 50
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "97bd306dbed170fde36931b7148f86ecf8474289bec5be8a8f5c6fcc90e784db"
+    },
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/autonomous_2026-10-10/launch_manifest.json",
+     "checks": [
+      {
+       "path": "inputs_sha256.policy",
+       "equals_sha256_of": "Juniper-1-Train:docs/autonomous_2026-10-10/launch_policy.json"
+      },
+      {
+       "path": "schedule.continuation.from_update",
+       "equals": 8500
+      },
+      {
+       "path": "schedule.continuation.checkpoint",
+       "equals": "ckpt-000008500-205ec566"
+      },
+      {
+       "path": "schedule.tranche_stop_update",
+       "equals": 52034
+      },
+      {
+       "path": "checkpoints.retention.keep_every_updates",
+       "equals": 5000
+      }
+     ],
+     "sha256": "db0921ce06919173dfb0c21e0dccf3647395053014545e551555f774125051db",
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "db0921ce06919173dfb0c21e0dccf3647395053014545e551555f774125051db"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B15",
+   "maps_to": [
+    "P19"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Launch inputs preserved: final shards + tokenizer on HDD (canonical), Hugging Face (private) and Drive with byte receipts; lag limits frozen from measurements",
+   "status": "PASS",
+   "verification_method": "upload + fresh readback SHA-256 (HF), rclone check against server hashes (Drive), local rehash (HDD)",
+   "observed_outcome": "18 files; HDD rehash, HF readback (6f8c9867) and Drive rclone check all OK",
+   "remaining_gap": "full archive coverage and key custody: RELEASE R02",
+   "invalidation_triggers": [
+    "new artifacts"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Data",
+     "path": "reports/j1-base-v0.2.2/preservation_receipts.json",
+     "sha256": "9f9391b9786fa53576f848be679f8816902623a6ca349e12ed6451a760187e2e",
+     "checks": [
+      {
+       "path": "hf.all_ok",
+       "equals": true
+      },
+      {
+       "path": "drive.check_ok",
+       "equals": true
+      },
+      {
+       "path": "hdd.verified",
+       "equals": true
+      }
+     ],
+     "repo_commit": "47cd1dd754903379c18cb821aba23a6993243eb9",
+     "pinned_sha256": "9f9391b9786fa53576f848be679f8816902623a6ca349e12ed6451a760187e2e"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B16",
+   "maps_to": [
+    "P20"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Exact reviewed launch code, budget within the contract, conditional launch authority",
+   "status": "PASS",
+   "verification_method": "independent fresh-context reviews of the launch tooling, numerics, repairs and fix commits; record names the deployed commit",
+   "observed_outcome": "APPROVE_WITH_FIXES_APPLIED at 828edd1 (continuation review ledger pinned; j1bench tree unchanged since f0b4dea)",
+   "remaining_gap": "the manifest must name 828edd1 as code.train_commit",
+   "invalidation_triggers": [
+    "code change after review"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/fable_2026-10-10/launch_review_v3.json",
+     "sha256": "f7562f7efa39eb5504bc9c31466d71ac02812d8c98f8c98f663eae078d957f73",
+     "checks": [
+      {
+       "path": "verdict",
+       "in": [
+        "APPROVE",
+        "APPROVE_WITH_FIXES_APPLIED"
+       ]
+      },
+      {
+       "path": "reviewed_commit",
+       "equals_ref": {
+        "repo": "Juniper-1-Train",
+        "path": "docs/autonomous_2026-10-10/launch_manifest.json",
+        "json_path": "code.train_commit"
+       }
+      }
+     ],
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "f7562f7efa39eb5504bc9c31466d71ac02812d8c98f8c98f663eae078d957f73"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "B17",
+   "maps_to": [
+    "P12"
+   ],
+   "stage": "BASE_PRETRAINING_LAUNCH",
+   "requirement": "Full-stream trainer startup (exact epoch, preload, verify) measured on the launch stack to first update record, at most 5 minutes (the controller idle clock starts at re-arm, before the trainer)",
+   "status": "PASS",
+   "verification_method": "timed full-stream startup on the qualified A100 (cold process, first update record) after the startup fix, recorded with the code commit it ran on; the commit must equal the manifest's code.train_commit; the record's profile.compile must equal the manifest's execution_profile.compile (review R-05)",
+   "observed_outcome": "deployed commit f0b4dea on pod pncbyxaf2dt2jl: first trainer process after the 11:57:49Z restart (session prep only), full v0.2.2 stream, launch arguments, eager: process entry -> update 1 = 13.0 s; peak RSS 7.82 GiB; init checkpoint verified; earlier: 18.4 s (8f91e88, cold), 31.0 s, 169.8 s (serial)",
+   "remaining_gap": "none for the eager profile; a compiled profile would need its own measurement",
+   "invalidation_triggers": [
+    "loader or trainer startup change"
+   ],
+   "depends_on": [],
+   "evidence": [
+    {
+     "repo": "Juniper-1-Train",
+     "path": "docs/fable_2026-10-10/evidence/b17_startup_a100.json",
+     "checks": [
+      {
+       "path": "outcome",
+       "equals": "STARTUP_QUALIFIED"
+      },
+      {
+       "path": "elapsed_startup_s",
+       "max": 300
+      },
+      {
+       "path": "cold_process",
+       "equals": true
+      },
+      {
+       "path": "code.train_commit",
+       "equals_ref": {
+        "repo": "Juniper-1-Train",
+        "path": "docs/autonomous_2026-10-10/launch_manifest.json",
+        "json_path": "code.train_commit"
+       }
+      },
+      {
+       "path": "profile.compile",
+       "equals_ref": {
+        "repo": "Juniper-1-Train",
+        "path": "docs/autonomous_2026-10-10/launch_manifest.json",
+        "json_path": "execution_profile.compile"
+       }
+      }
+     ],
+     "sha256": "2d717ec34fe12c6f85f9ddf9a214c4668405d6f2391ce927f5289d4f6cc5daa1",
+     "repo_commit": "8b7ef3fc551850aed9c2aaea4c2839dacbf4ef1e",
+     "pinned_sha256": "2d717ec34fe12c6f85f9ddf9a214c4668405d6f2391ce927f5289d4f6cc5daa1"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": true
+  },
+  {
+   "id": "T01",
+   "maps_to": [
+    "P10"
+   ],
+   "stage": "POSTTRAINING",
+   "requirement": "Native chat grammar, escaping, role boundaries and SFT data format frozen",
+   "status": "NOT_VERIFIED",
+   "verification_method": "pending stage",
+   "observed_outcome": "not started",
+   "remaining_gap": "grammar freeze, adapter tests",
+   "invalidation_triggers": [],
+   "depends_on": [],
+   "evidence": [
+    {
+     "note": "juniper-chat-v1 proposed; control IDs reserved in the frozen tokenizer"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": false
+  },
+  {
+   "id": "T02",
+   "maps_to": [
+    "P18"
+   ],
+   "stage": "POSTTRAINING",
+   "requirement": "Chat/agent evaluation prompts, metrics and pass thresholds frozen",
+   "status": "NOT_VERIFIED",
+   "verification_method": "pending stage",
+   "observed_outcome": "not started",
+   "remaining_gap": "all",
+   "invalidation_triggers": [],
+   "depends_on": [],
+   "evidence": [
+    {
+     "note": "docs/prep/08 proposed"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": false
+  },
+  {
+   "id": "A01",
+   "maps_to": [
+    "P17",
+    "P10"
+   ],
+   "stage": "APP_INTEGRATION",
+   "requirement": "Juniper App native adapter, encode_special_tokens-safe tokenizer loading, export and deployment contract qualified",
+   "status": "NOT_VERIFIED",
+   "verification_method": "pending stage",
+   "observed_outcome": "not started",
+   "remaining_gap": "all",
+   "invalidation_triggers": [],
+   "depends_on": [],
+   "evidence": [
+    {
+     "note": "review A1-A9 open; 22 corpus documents prove the literal-control hazard"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": false
+  },
+  {
+   "id": "E01",
+   "maps_to": [],
+   "stage": "ERUDITION_RESEARCH",
+   "requirement": "Erudition successor experiments (AAA #34/#36 dispositions)",
+   "status": "NOT_VERIFIED",
+   "verification_method": "separate",
+   "observed_outcome": "not started",
+   "remaining_gap": "all",
+   "invalidation_triggers": [],
+   "depends_on": [],
+   "evidence": [
+    {
+     "note": "separate tracked workstream; AAA #34 CHANGES REQUIRED"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": false
+  },
+  {
+   "id": "R01",
+   "maps_to": [
+    "P04"
+   ],
+   "stage": "RELEASE",
+   "requirement": "Weight license and dataset redistribution decisions",
+   "status": "OWNER_DECISION_REQUIRED",
+   "verification_method": "owner decision",
+   "observed_outcome": "pending",
+   "remaining_gap": "owner action",
+   "invalidation_triggers": [],
+   "depends_on": [],
+   "evidence": [
+    {
+     "note": "configs/owner_decisions.toml: release_decision pending"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": false
+  },
+  {
+   "id": "R02",
+   "maps_to": [
+    "P19"
+   ],
+   "stage": "RELEASE",
+   "requirement": "Complete four-destination coverage of every PRESERVE artifact, encrypted-path key custody, unattended Drive OAuth",
+   "status": "BLOCKED",
+   "verification_method": "owner action then drill",
+   "observed_outcome": "blocked on owner",
+   "remaining_gap": "owner actions",
+   "invalidation_triggers": [],
+   "depends_on": [],
+   "evidence": [
+    {
+     "note": "Cinqic-Backup: recovery sheet not in the owner's safe; Drive OAuth app in Testing (7-day refresh tokens)"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": false
+  },
+  {
+   "id": "R03",
+   "maps_to": [
+    "P03"
+   ],
+   "stage": "RELEASE",
+   "requirement": "Latency objectives L1-L4 measured on a trained model",
+   "status": "NOT_VERIFIED",
+   "verification_method": "pending",
+   "observed_outcome": "not started",
+   "remaining_gap": "all",
+   "invalidation_triggers": [],
+   "depends_on": [],
+   "evidence": [
+    {
+     "note": "needs a trained model"
+    }
+   ],
+   "gate_problems": [],
+   "check_problems": [],
+   "satisfied": false
+  }
+ ]
+}

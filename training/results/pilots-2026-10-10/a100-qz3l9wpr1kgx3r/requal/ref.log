@@ -1,0 +1,11 @@
+[ckpt] step 0 -> /root/ckpt-requal/ref/ckpt-000000000-8ce05da0 (555.9 MiB, 2.09s)
+step 1 loss 10.3509 lr 0.000185 56903ms
+step 10 loss 7.8801 lr 0.000897 316ms
+[ckpt] step 10 -> /root/ckpt-requal/ref/ckpt-000000010-f73065b3 (1667.7 MiB, 6.23s)
+step 20 loss 7.9075 lr 0.000637 316ms
+[ckpt] step 20 -> /root/ckpt-requal/ref/ckpt-000000020-e48d943b (1667.7 MiB, 6.19s)
+step 30 loss 7.8094 lr 0.000279 315ms
+[ckpt] step 30 -> /root/ckpt-requal/ref/ckpt-000000030-9e6db9f1 (1667.7 MiB, 6.21s)
+step 40 loss 7.5574 lr 9.4e-05 316ms
+[ckpt] step 40 -> /root/ckpt-requal/ref/ckpt-000000040-08f2ecec (1667.7 MiB, 6.38s)
+{"steps_run": 40, "final_step": 40, "tokens_per_s_median": 103836.04643698155, "step_ms_median": 315.57441875338554, "peak_vram_gib": 28.861260414123535, "final_param_sha256": "24d7a59a474c6d9a696e273495b99eb418ba9bcafde1008f130cde00c3b7ad5c"}

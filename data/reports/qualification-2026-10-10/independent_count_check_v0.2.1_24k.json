@@ -1,0 +1,109 @@
+{
+ "tool": "independent_count_check.v1",
+ "accepted_manifest_sha256": "8d00090632bf6ca07f4dd75d3deea89421de823366c8216c6a85c9f003237968",
+ "build_identity": "e7909e40df202f0fb407369802d4d1d0becc02f9f86a777ef50a840d700c765a",
+ "accepted_docs": {
+  "train": 2961286,
+  "validation": 2583,
+  "test": 2610
+ },
+ "sample_namespace": "j1.count-check.v1",
+ "sample_rate": 0.002,
+ "min_per_stratum": 20,
+ "sample_docs": {
+  "train": 6032,
+  "validation": 144,
+  "test": 149
+ },
+ "prefix_bytes": null,
+ "prefix_documents_expected": null,
+ "sample_texts_found": 6325,
+ "candidates": {
+  "j1tok-24k": {
+   "shards_json_sha256": "cb2e2b53d5b4ce26210bca2367c20ea751362bc81d92294c2e81b7f2cda76ef3",
+   "tokenizer_json_sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+   "tokenizer_matches_shards": true,
+   "splits": {
+    "test": {
+     "documents": 2610,
+     "accepted_documents": 2610,
+     "doc_set_equal_accepted": true,
+     "doc_ids_unique": true,
+     "sum_n_tokens": 2657081,
+     "table_document_tokens": 2657081,
+     "table_stream_tokens": 2659691,
+     "table_separator_tokens": 2610,
+     "file_tokens": 2659691,
+     "by_source_equal": true,
+     "offsets_contiguous": true,
+     "token_files_sha256_ok": true,
+     "prefix_order_equal_independent": true,
+     "eos_after_every_doc": true,
+     "arithmetic_ok": true,
+     "sample": {
+      "checked": 149,
+      "missing": 0,
+      "count_mismatches": 0,
+      "id_mismatches": 0,
+      "examples": []
+     },
+     "ok": true
+    },
+    "train": {
+     "documents": 2961286,
+     "accepted_documents": 2961286,
+     "doc_set_equal_accepted": true,
+     "doc_ids_unique": true,
+     "sum_n_tokens": 3433653388,
+     "table_document_tokens": 3433653388,
+     "table_stream_tokens": 3436614674,
+     "table_separator_tokens": 2961286,
+     "file_tokens": 3436614674,
+     "by_source_equal": true,
+     "offsets_contiguous": true,
+     "token_files_sha256_ok": true,
+     "prefix_order_equal_independent": true,
+     "eos_after_every_doc": true,
+     "arithmetic_ok": true,
+     "sample": {
+      "checked": 6032,
+      "missing": 0,
+      "count_mismatches": 0,
+      "id_mismatches": 0,
+      "examples": []
+     },
+     "ok": true
+    },
+    "validation": {
+     "documents": 2583,
+     "accepted_documents": 2583,
+     "doc_set_equal_accepted": true,
+     "doc_ids_unique": true,
+     "sum_n_tokens": 3227354,
+     "table_document_tokens": 3227354,
+     "table_stream_tokens": 3229937,
+     "table_separator_tokens": 2583,
+     "file_tokens": 3229937,
+     "by_source_equal": true,
+     "offsets_contiguous": true,
+     "token_files_sha256_ok": true,
+     "prefix_order_equal_independent": true,
+     "eos_after_every_doc": true,
+     "arithmetic_ok": true,
+     "sample": {
+      "checked": 144,
+      "missing": 0,
+      "count_mismatches": 0,
+      "id_mismatches": 0,
+      "examples": []
+     },
+     "ok": true
+    }
+   },
+   "accepted_manifest_matches": true,
+   "splits_present": true
+  }
+ },
+ "ok": true,
+ "seconds": 185.1
+}

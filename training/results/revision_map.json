@@ -1,0 +1,103 @@
+{
+ "note": "Commit messages were rewritten to remove AI co-author trailers before publication. Trees are identical, so the code each old revision names is byte-identical to its new commit. Old revisions are cited in checkpoint manifests, run summaries and /workspace/j1code/<old>.tar.",
+ "map": [
+  {
+   "old": "c8093874f2bfe3e008708d9fec00a897298941e9",
+   "new": "357a1bd71a39a14102c68a29d4f02893db7004ab",
+   "tree": "3acd9491be4ee25121dd7b1c5e95ca40a5b2ba5d",
+   "tree_identical": true,
+   "subject": "Add qualification report, review handoff, operations updates and evidence"
+  },
+  {
+   "old": "b83d96d362c933b51b90d02dec974e64940a167d",
+   "new": "f40da1221cb109b28df173d4ba741fdd5a5efa4c",
+   "tree": "6a8fe7e857a9646653df9944aae5f6dfb0c7a67c",
+   "tree_identical": true,
+   "subject": "Adopt Juniper-1-Data lint rules; format; fix type errors and a vacuous test assertion"
+  },
+  {
+   "old": "4ea8a488cdbdb33755f5106bbbddec899e491601",
+   "new": "6edfdb7704ee463a7e2965143f1b2e4861a7bd90",
+   "tree": "d9e03faa7673e7cc0f2c1278d45df4438cea01a9",
+   "tree_identical": true,
+   "subject": "Merge repository initialization into the qualification branch"
+  },
+  {
+   "old": "5f1ad1f09e8e822147877bf21772ab42be982e15",
+   "new": "5f1ad1f09e8e822147877bf21772ab42be982e15",
+   "tree": "5653ca9f24747745655ffa60fafdd973f150ff14",
+   "tree_identical": true,
+   "subject": "Initialize repository"
+  },
+  {
+   "old": "089ab6f45e235cc6c8bf2bdc3320b55119b6bf5c",
+   "new": "0c6b91479f71fff9ec3de2288b85508a0648e04f",
+   "tree": "b8b1807f77b3d72057ccba7048715327dcfeb00c",
+   "tree_identical": true,
+   "subject": "Add benchmark summarizer (steady-state window, UTC sampling timestamps)"
+  },
+  {
+   "old": "411f7cbebf8baa41910f219cb3a3a906070f75d6",
+   "new": "ab1ed233e35f74624a37a69c57114a5f5c034e46",
+   "tree": "cf4862062b0f761851d90b56a49c4c8697618c1b",
+   "tree_identical": true,
+   "subject": "Add learnable synthetic document kinds (copy, permutation chain) and a learning test"
+  },
+  {
+   "old": "3f55a68e65b2399dc1b1f598c3d6c38522e8be00",
+   "new": "cd9f26068492c2a32097b1dcedcf6dac2f73a2da",
+   "tree": "ef3981f325b3d2bdbaef802a7e02e320cd2bd0ae",
+   "tree_identical": true,
+   "subject": "Profiler: count CUDA kernel events only; SDPA det mode sets cuBLAS workspace"
+  },
+  {
+   "old": "9735eaecabdf9491320aeac6a28d2a5e510b918f",
+   "new": "ddb4ef8ef4ffd7780d57fe5813f43e364422cd60",
+   "tree": "d2f7203f4b27e11a1c61eb2c56542081abe0e917",
+   "tree_identical": true,
+   "subject": "SDPA check: optional strict deterministic mode"
+  },
+  {
+   "old": "28a6877c4f5ae0156895ca2c7b8799b3682e86d2",
+   "new": "8357286b7073af8fcbbad325b2bb0c2c77acd774",
+   "tree": "246f64d8c535573f94b181fbbdeb804d697ae46f",
+   "tree_identical": true,
+   "subject": "Replicator: record unreachable source in the audit log and exit nonzero"
+  },
+  {
+   "old": "bcbda60f0ee80550b91fdb78ba14409f332e89f2",
+   "new": "08efa57e9455fa4aff096f322c73728679abe697",
+   "tree": "c30565418a9e567eb874b4086987f318c3613055",
+   "tree_identical": true,
+   "subject": "Add compile mode option, SDPA correctness and profiler scripts, cadence test, ops guide"
+  },
+  {
+   "old": "28c0bfcd53270c3c4fa854825e04d963ade3816b",
+   "new": "af26727af05c774b5831b2f3b7239beaedc883ed",
+   "tree": "6c0662c54558c6ed7499c2b447603e5846e0d501",
+   "tree_identical": true,
+   "subject": "Use strict deterministic mode so FlashAttention backward is deterministic"
+  },
+  {
+   "old": "63c25bffca587c5902b6baad5fc7fb63db282f83",
+   "new": "d2c5e0206183c634b6adf7526e2b4c6f27709ed2",
+   "tree": "86ceb22f578ccbf86615306bbba00c094fd5e00a",
+   "tree_identical": true,
+   "subject": "Add FLOWBOX pull replicator, recovery suite, archive config; refuse silent fresh starts"
+  },
+  {
+   "old": "4963cc5f928eef9059a0abcc6702eee819a80a78",
+   "new": "82f1eccca376a9c13afb048aae0a316753a452a7",
+   "tree": "c4c215a07f5077de82bd74fa54de15ba44b752cf",
+   "tree_identical": true,
+   "subject": "Add benchmark matrix runner with GPU and host sampling"
+  },
+  {
+   "old": "1df2228a7002dec7358abc485ec4ce6b30cf4ed8",
+   "new": "8cc67d80023ca042a7c54904d863008deaed9d84",
+   "tree": "1775d98645e3c4b676839ddb9fad5062509e443f",
+   "tree_identical": true,
+   "subject": "Juniper 1 A100 qualification harness: model, data, checkpoints, training loop"
+  }
+ ]
+}

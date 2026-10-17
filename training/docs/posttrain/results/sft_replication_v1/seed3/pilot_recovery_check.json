@@ -1,0 +1,20 @@
+{
+ "abs_diff": 0.0,
+ "checkpoint": {
+  "checkpoint": "ckpt-000001226-4389d0e3",
+  "manifest_sha256": "3c0163f7d6a65d761825d58bab91b2fa42ddef73e096b0b2d482acafe7a68a2d",
+  "model_state_sha256": "4d60c4cfdcd590e6583e7f7ac3e544958fc0060ccf26b0b8d2737a13f76f0e36",
+  "run_id": "j1-sft-v1-rep-s3",
+  "stage": "juniper1-sft-v1-replication",
+  "updates": 1226
+ },
+ "dev_targets": 52919,
+ "device": "NVIDIA GeForce RTX 2060",
+ "exact": true,
+ "recomputed_dev_loss": 0.6108285726874098,
+ "recorded_dev_loss": 0.6108285726874098,
+ "verify": [
+  true,
+  "ok"
+ ]
+}

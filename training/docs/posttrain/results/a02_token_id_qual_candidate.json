@@ -1,0 +1,103 @@
+{
+ "checks": {
+  "banned_ids_under_sampling": {
+   "banned_sampled": 0,
+   "seeds": 24,
+   "tokens": 507
+  },
+  "byte_fallback_ids_returned": {
+   "decoded": "\ud83d\ude42",
+   "forced": [
+    304,
+    223,
+    217,
+    194
+   ],
+   "ok": true,
+   "returned": [
+    304,
+    223,
+    217,
+    194
+   ]
+  },
+  "forged_control_spellings": {
+   "prompts_with_forged_control_ids": 0,
+   "spellings": 64,
+   "turn_outcomes": {
+    "eot": 6,
+    "malformed": 58
+   }
+  },
+  "greedy_parity_vs_pytorch_fp32": {
+   "checkpoint": {
+    "checkpoint": "ckpt-000001226-55d13f9a",
+    "manifest_sha256": "dc0bbbb0cd655cc5114c1ee73ac777634985fca8a713a9f149f7686b08a110ce",
+    "model_state_sha256": "a4616f9045cfe250f188595fba591dd4c157cb613e331ceaa89aa889f8a79e95",
+    "run_id": "j1-sft-v1-pilot",
+    "stage": "juniper1-sft-v1-pilot",
+    "updates": 1226
+   },
+   "identical_sequences": 47,
+   "median_first_divergence": 24.0,
+   "note": "F16 GGUF vs fp32 PyTorch; near-ties can flip greedy choices; tolerance gate is gguf_parity.py",
+   "prompts": 48
+  },
+  "kv_cache_continuation": {
+   "all_equal": true,
+   "cases": [
+    {
+     "cached_equals_full": true,
+     "generated": 4,
+     "split_at": 1
+    },
+    {
+     "cached_equals_full": true,
+     "generated": 7,
+     "split_at": 3
+    },
+    {
+     "cached_equals_full": true,
+     "generated": 12,
+     "split_at": 5
+    }
+   ]
+  },
+  "malformed_reported": {
+   "final_then_end": "malformed",
+   "no_channel": "malformed"
+  },
+  "regression_200_docs": {
+   "docs": 200,
+   "llama_text_tokenizer_identical": 0,
+   "note": "the client never calls /tokenize; it is called here only to show the unsafe path still diverges",
+   "token_id_path_evaluates_exact_prefix": 200
+  },
+  "self_test": {
+   "1": "limit:[7, 363]",
+   "10": "eos:[10]",
+   "11": "eos:[11]",
+   "9": "eos:[9]"
+  },
+  "text_roundtrip_and_prefix": {
+   "multi_turn_stop": "eot",
+   "roundtrip": {
+    "   leading a": true,
+    "def f(x):\n\ti": true,
+    "na\u00efve caf\u00e9 \u2014": true,
+    "\u2028line\u2029para\u0085n": true,
+    "\uffff\ud83e\uddff\u0000nul": true
+   },
+   "serialization_prefix_stable": true
+  }
+ },
+ "gguf": "/home/cinqic/j1post/gguf/juniper1-sft-pilot-v1-f16.gguf",
+ "paths_called_by_client": [
+  "/completion"
+ ],
+ "runtime": {
+  "build_info": "b11270-748d4225b",
+  "model_path": "/home/cinqic/j1post/gguf/juniper1-sft-pilot-v1-f16.gguf"
+ },
+ "schema": "j1.a02-qualification.v1"
+}

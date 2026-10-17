@@ -1,0 +1,10 @@
+[ckpt] candidate /root/ckpt-recovery/t_die_before_complete/ckpt-000000020-ca6fa3c7 step=20: completion marker missing (unpublished checkpoint)
+[ckpt] candidate /root/ckpt-recovery/t_die_before_complete/ckpt-000000010-eb2e01e5 step=10: ok
+[resume] restored /root/ckpt-recovery/t_die_before_complete/ckpt-000000010-eb2e01e5 at step 10 in 40.80s (lr=0.000882594)
+step 20 loss 7.7968 lr 0.000637 318ms
+[ckpt] step 20 -> /root/ckpt-recovery/t_die_before_complete/ckpt-000000020-23a9e97b (1667.7 MiB, 6.31s)
+step 30 loss 7.7896 lr 0.000279 320ms
+[ckpt] step 30 -> /root/ckpt-recovery/t_die_before_complete/ckpt-000000030-a0e996eb (1667.7 MiB, 6.46s)
+step 40 loss 8.0218 lr 9.4e-05 319ms
+[ckpt] step 40 -> /root/ckpt-recovery/t_die_before_complete/ckpt-000000040-9048be9d (1667.7 MiB, 6.36s)
+{"steps_run": 30, "final_step": 40, "tokens_per_s_median": 102642.25419759905, "step_ms_median": 319.24474239349365, "peak_vram_gib": 28.859490394592285, "final_param_sha256": "0a2eecdd5245175ded97187c5d7a10b6114e579b43cef84f2941eb460374caec"}

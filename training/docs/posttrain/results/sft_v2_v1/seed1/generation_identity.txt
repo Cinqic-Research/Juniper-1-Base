@@ -1,0 +1,2 @@
+cand_gen 6a53b6b081760696d61fb829f9aac6706ed217aceb524ab0ab6b51e2b711a0b7 1377.97 NVIDIA GeForce RTX 4090 2.8.0+cu128
+cand_gen_fewshot_facts b74a3f2bb9edf8e12a50f6bb24858a8ba13ffbb386bbed301a7531a3bfa3e092 22.16 NVIDIA GeForce RTX 4090 2.8.0+cu128

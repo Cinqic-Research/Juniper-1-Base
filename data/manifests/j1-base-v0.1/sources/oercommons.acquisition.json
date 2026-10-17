@@ -1,0 +1,28 @@
+{
+ "acquire_version": "j1.acquire.v1",
+ "acquired_utc": "2026-10-07T15:24:44+00:00",
+ "files": [
+  {
+   "git_blob_oid": "c0dac3346f9f42d3b8370024730473c8566e5fb2",
+   "path": "oercommons-0000.json.gz",
+   "retrieved_utc": "2026-10-07T15:24:44+00:00",
+   "sha256": "e1c5fcbd9232183cbbd3d1967f637cc0371fcc6fce3e14d9da7f75ee2c66bec5",
+   "size": 17028282,
+   "upstream_sha256": "e1c5fcbd9232183cbbd3d1967f637cc0371fcc6fce3e14d9da7f75ee2c66bec5",
+   "url": "https://huggingface.co/datasets/common-pile/oercommons_filtered/resolve/506b6159dadcbc0dc67611cea024eedb04232fb2/oercommons-0000.json.gz"
+  }
+ ],
+ "mechanism": "huggingface",
+ "repo": "common-pile/oercommons_filtered",
+ "revision": "506b6159dadcbc0dc67611cea024eedb04232fb2",
+ "schema": "j1.acquisition-manifest.v1",
+ "selected_bytes": 17028282,
+ "selected_file_count": 1,
+ "selection": {
+  "include": [
+   "*.json.gz"
+  ]
+ },
+ "source_id": "oercommons",
+ "upstream_file_count": 3
+}

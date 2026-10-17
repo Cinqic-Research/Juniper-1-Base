@@ -1,0 +1,92 @@
+{
+ "build_identity": "e20847a1edd8452571c279942291f4a2fd64a33fed858a40f2d3994c3106abd9",
+ "bytes_by_stage": {
+  "candidate": 551786899,
+  "contamination": 961910,
+  "extraction": 2,
+  "privacy": 23594,
+  "quality": 23581222
+ },
+ "bytes_in": 576353627,
+ "chars_in": 572143480,
+ "contamination_benchmarks": {
+  "mmlu": 29
+ },
+ "docs_in": 54455,
+ "kinds": {
+  "math": 1539,
+  "prose": 50343,
+  "technical": 179
+ },
+ "outputs": [
+  {
+   "file": "candidates/pressbooks/pressbooks-0000.parquet",
+   "rows": 52061,
+   "sha256": "e5dfb2c205d9281fb43b06366b0967265f2fb3740b8f3cba5b9004e6dd8e4df0"
+  },
+  {
+   "file": "rejects/pressbooks/pressbooks-0000.parquet",
+   "rows": 2394,
+   "sha256": "6af6e80275fd2dff655f09efabd1607b77b0d412239dd5b32508e4c5760c3028"
+  },
+  {
+   "file": "signatures/pressbooks/pressbooks-0000.npy",
+   "rows": 52061,
+   "sha256": "62def90f9c9636c372d3ca403fc7a4af757c857971ba9d4d52e193c2ab84c926"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "pressbooks-0000.json.gz",
+ "reasons": {
+  "contamination.mmlu": 29,
+  "extraction.empty": 20,
+  "privacy.pii.payment_card": 1,
+  "privacy.secret.aws_access_key": 1,
+  "quality.binary_or_base64": 1,
+  "quality.math.bullet_lines": 4,
+  "quality.math.duplicate_lines": 3,
+  "quality.math.duplicate_ngrams": 11,
+  "quality.math.top_ngram_repetition": 88,
+  "quality.mojibake": 4,
+  "quality.prose.alpha_words": 317,
+  "quality.prose.bullet_lines": 543,
+  "quality.prose.duplicate_lines": 144,
+  "quality.prose.duplicate_ngrams": 560,
+  "quality.prose.ellipsis_lines": 60,
+  "quality.prose.line_length": 3,
+  "quality.prose.mean_word_length": 148,
+  "quality.prose.non_latin_script": 35,
+  "quality.prose.not_english": 811,
+  "quality.prose.stopwords": 21,
+  "quality.prose.symbol_ratio": 23,
+  "quality.prose.too_long": 3,
+  "quality.prose.too_short": 26,
+  "quality.prose.top_ngram_repetition": 110,
+  "quality.spam_terms": 12,
+  "quality.technical.duplicate_lines": 3,
+  "quality.technical.duplicate_ngrams": 4,
+  "quality.technical.too_short": 3,
+  "quality.technical.top_ngram_repetition": 12
+ },
+ "redactions": {
+  "email": 233,
+  "home_path_user": 114,
+  "phone": 231
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 628.66,
+ "slow_documents": [],
+ "source_id": "pressbooks",
+ "stages": {
+  "candidate": 52061,
+  "contamination": 29,
+  "extraction": 20,
+  "privacy": 2,
+  "quality": 2343
+ },
+ "unit_id": "pressbooks-0000"
+}

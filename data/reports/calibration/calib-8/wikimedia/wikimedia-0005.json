@@ -1,0 +1,78 @@
+{
+ "build_identity": "e20847a1edd8452571c279942291f4a2fd64a33fed858a40f2d3994c3106abd9",
+ "bytes_by_stage": {
+  "candidate": 287077800,
+  "contamination": 5215,
+  "quality": 14152922,
+  "selection": 1334061939
+ },
+ "bytes_in": 1635297876,
+ "chars_in": 1627917835,
+ "contamination_benchmarks": {
+  "mmlu": 1
+ },
+ "docs_in": 639808,
+ "kinds": {
+  "math": 534,
+  "prose": 40359,
+  "technical": 84
+ },
+ "outputs": [
+  {
+   "file": "candidates/wikimedia/wikimedia-0005.parquet",
+   "rows": 40977,
+   "sha256": "a62274b902016961914f6b2318668e1b7bbf81c42f56e63de34c24197c730095"
+  },
+  {
+   "file": "rejects/wikimedia/wikimedia-0005.parquet",
+   "rows": 598831,
+   "sha256": "2c37ada0b09b707793c63433d0e486dcfe76cf71f3a394143032ca1eb61d51d7"
+  },
+  {
+   "file": "signatures/wikimedia/wikimedia-0005.npy",
+   "rows": 40977,
+   "sha256": "2ec9ab7f7b8907dc08018a984b102bceb448a37fdbb9c9a7667dfa6a63460a90"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "wikimedia-0005.json.gz",
+ "reasons": {
+  "contamination.mmlu": 1,
+  "quality.math.duplicate_lines": 1,
+  "quality.math.too_short": 1,
+  "quality.prose.alpha_words": 98,
+  "quality.prose.bullet_lines": 453,
+  "quality.prose.duplicate_lines": 160,
+  "quality.prose.duplicate_ngrams": 890,
+  "quality.prose.duplicate_paragraphs": 28,
+  "quality.prose.mean_word_length": 1,
+  "quality.prose.not_english": 1207,
+  "quality.prose.stopwords": 388,
+  "quality.prose.symbol_ratio": 3,
+  "quality.prose.too_short": 1938,
+  "quality.prose.top_ngram_repetition": 1473,
+  "quality.spam_terms": 47,
+  "quality.technical.top_ngram_repetition": 1,
+  "selection.namespace": 15871,
+  "selection.wiki": 578579
+ },
+ "redactions": {
+  "email": 1,
+  "phone": 1
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 266.08,
+ "slow_documents": [],
+ "source_id": "wikimedia",
+ "stages": {
+  "candidate": 40977,
+  "contamination": 1,
+  "quality": 4380,
+  "selection": 594450
+ },
+ "unit_id": "wikimedia-0005"
+}

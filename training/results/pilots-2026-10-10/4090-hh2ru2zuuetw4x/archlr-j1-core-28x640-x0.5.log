@@ -1,0 +1,49 @@
+[ckpt] step 0 -> /root/ckpt/archlr-j1-core-28x640-x0.5/ckpt-000000000-de052f12 (545.9 MiB, 2.73s)
+step 1 loss 10.2266 lr 9.29e-06 67782ms
+step 10 loss 9.2319 lr 9.3e-05 769ms
+step 20 loss 8.3939 lr 0.000186 770ms
+step 30 loss 7.5466 lr 0.000279 771ms
+step 40 loss 7.4635 lr 0.000372 772ms
+step 50 loss 7.1939 lr 0.000465 773ms
+step 60 loss 6.8640 lr 0.000558 773ms
+step 70 loss 6.7826 lr 0.000651 774ms
+step 80 loss 6.7499 lr 0.000744 774ms
+step 90 loss 6.3622 lr 0.000837 775ms
+step 100 loss 6.5826 lr 0.000929 776ms
+[ckpt] step 104 -> /root/ckpt/archlr-j1-core-28x640-x0.5/ckpt-000000104-50b3e339 (1637.7 MiB, 7.73s)
+step 110 loss 6.4195 lr 0.000928 774ms
+step 120 loss 6.4365 lr 0.000922 775ms
+step 130 loss 6.0153 lr 0.000912 775ms
+step 140 loss 6.0526 lr 0.000899 777ms
+step 150 loss 5.9444 lr 0.000881 778ms
+step 160 loss 5.9873 lr 0.00086 777ms
+step 170 loss 5.9694 lr 0.000836 778ms
+step 180 loss 5.8697 lr 0.000808 778ms
+step 190 loss 5.8725 lr 0.000778 778ms
+step 200 loss 5.5965 lr 0.000745 778ms
+[ckpt] step 208 -> /root/ckpt/archlr-j1-core-28x640-x0.5/ckpt-000000208-4596b2ae (1637.7 MiB, 7.33s)
+step 210 loss 5.6730 lr 0.00071 773ms
+step 220 loss 5.5455 lr 0.000672 776ms
+step 230 loss 5.5228 lr 0.000633 777ms
+step 240 loss 5.4753 lr 0.000593 777ms
+step 250 loss 5.4522 lr 0.000552 777ms
+step 260 loss 5.5683 lr 0.000511 780ms
+step 270 loss 5.3468 lr 0.00047 782ms
+step 280 loss 5.3888 lr 0.000429 782ms
+step 290 loss 5.2938 lr 0.000389 781ms
+step 300 loss 5.3181 lr 0.00035 784ms
+step 310 loss 5.3594 lr 0.000313 787ms
+[ckpt] step 312 -> /root/ckpt/archlr-j1-core-28x640-x0.5/ckpt-000000312-6682da95 (1637.7 MiB, 6.70s)
+step 320 loss 5.1933 lr 0.000278 776ms
+step 330 loss 5.3792 lr 0.000244 778ms
+step 340 loss 5.0138 lr 0.000214 779ms
+step 350 loss 5.1389 lr 0.000186 782ms
+step 360 loss 5.1220 lr 0.000162 782ms
+step 370 loss 5.2016 lr 0.000141 786ms
+step 380 loss 4.9079 lr 0.000124 783ms
+step 390 loss 5.1759 lr 0.00011 782ms
+step 400 loss 5.1305 lr 0.0001 786ms
+step 410 loss 5.0868 lr 9.46e-05 785ms
+[ckpt] step 416 -> /root/ckpt/archlr-j1-core-28x640-x0.5/ckpt-000000416-1a91d143 (1637.7 MiB, 6.90s)
+[ckpt] step 418 -> /root/ckpt/archlr-j1-core-28x640-x0.5/ckpt-000000418-770d1392 (1637.7 MiB, 6.90s)
+{"steps_run": 418, "final_step": 418, "tokens_per_s_median": 84300.2397306609, "step_ms_median": 777.411786839366, "peak_vram_gib": 15.51137113571167, "final_param_sha256": "fbc82005f98b8d0370ee33f8894138fa07b612cad27ebf4f7ee2db22020e5e2c"}

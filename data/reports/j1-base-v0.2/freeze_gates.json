@@ -1,0 +1,117 @@
+[
+ {
+  "evidence": "13 admissible sources validated against the schema; missing acquisition manifests: []",
+  "gate": "source registry complete",
+  "status": "PASS"
+ },
+ {
+  "evidence": "sources found in accepted manifest or process markers: ['arxiv-papers', 'cinqic-aaa-docs', 'cinqic-calculator-docs', 'cinqic-juniper-app-docs', 'finemath-4plus', 'fineweb-edu-dedup', 'libretexts', 'oercommons', 'pressbooks', 'python-peps', 'stackexchange', 'stackv2-edu', 'wikimedia']; inadmissible or unknown sources: []",
+  "gate": "no rejected or review-required sources in build outputs",
+  "status": "PASS"
+ },
+ {
+  "evidence": "no pending or rejected owner decisions apply to accepted sources",
+  "gate": "training-use owner decisions",
+  "status": "PASS"
+ },
+ {
+  "evidence": "all 13 accepted sources passed byte-level preflight",
+  "gate": "raw source identity recorded",
+  "status": "PASS"
+ },
+ {
+  "evidence": "recorded identity aa9c4ed9522449521881a64b1dd810006df6249f56d8c1dae8b4e7cc1de8d005; current input identity aa9c4ed9522449521881a64b1dd810006df6249f56d8c1dae8b4e7cc1de8d005",
+  "gate": "recorded build matches current pipeline inputs",
+  "status": "PASS"
+ },
+ {
+  "evidence": "planted-credential and PII tests passed on current commit and inputs",
+  "gate": "secrets/PII filter validated",
+  "status": "PASS"
+ },
+ {
+  "evidence": "129 logical units have hash-verified journals, independently checked ID digests, and sub-15-minute immutable segments",
+  "gate": "transactional process checkpoint recovery",
+  "status": "PASS"
+ },
+ {
+  "evidence": "process recovery is implemented and fixture-tested, but deduplication, selection, finalization, tokenizer sampling/probes, and token counting lack complete transactional recovery qualification at the required cadence",
+  "gate": "v0.3 transactional recovery across every CPU/data stage",
+  "status": "NOT VERIFIED"
+ },
+ {
+  "evidence": "this repository has no qualified canonical trainer or A100 evidence for complete training state, independent durable replicas, fresh-process restore equivalence, rollback, and failure injection",
+  "gate": "v0.3 canonical A100 training checkpoint and restore qualification",
+  "status": "NOT VERIFIED"
+ },
+ {
+  "evidence": "dedup saw 20196491 of 20196491 candidates; scope complete=True; expected release unit inventory reconstructed from source manifests and scope",
+  "gate": "global exact deduplication complete",
+  "status": "PASS"
+ },
+ {
+  "evidence": "MinHash-LSH {'bands': 14, 'rows': 8, 'threshold_at_half_detection': 0.719}",
+  "gate": "near deduplication complete",
+  "status": "PASS"
+ },
+ {
+  "evidence": "129 of 129 expected units scanned; invalid markers=[]; exclusion index 6bc49448dc1d75b9",
+  "gate": "benchmark contamination scan complete",
+  "status": "PASS"
+ },
+ {
+  "evidence": "518 of 129 expected unit markers; invalid markers=[]",
+  "gate": "accepted unit marker inventory complete",
+  "status": "NOT VERIFIED"
+ },
+ {
+  "evidence": "held-out 13-gram leakage removal in finalize; independent split recomputation in verify",
+  "gate": "split leakage checks complete",
+  "status": "NOT VERIFIED"
+ },
+ {
+  "evidence": "reports/accepted_statistics.json must name the current build identity",
+  "gate": "source/domain mixture measured",
+  "status": "PASS"
+ },
+ {
+  "evidence": "unbatched re-encoding of a keyed-hash sample against count tables",
+  "gate": "token count independently verified (provisional measurement tokenizers)",
+  "status": "NOT VERIFIED"
+ },
+ {
+  "evidence": "out of scope by owner decision: the Juniper 1 tokenizer is designed and frozen in a later stage",
+  "gate": "canonical tokenizer identity recorded",
+  "status": "NOT APPLICABLE"
+ },
+ {
+  "evidence": "1345 shards re-hashed",
+  "gate": "accepted shard hashes complete",
+  "status": "NOT VERIFIED"
+ },
+ {
+  "evidence": "raw = rejections + candidates; candidates = duplicates + leakage + accepted",
+  "gate": "document accounting closes",
+  "status": "NOT VERIFIED"
+ },
+ {
+  "evidence": "docs/data_card.md names the build identity",
+  "gate": "data card complete",
+  "status": "NOT VERIFIED"
+ },
+ {
+  "evidence": "docs/data_card.md#known-limitations",
+  "gate": "known limitations documented",
+  "status": "NOT VERIFIED"
+ },
+ {
+  "evidence": "tests/test_end_to_end.py exited successfully on the current commit and inputs",
+  "gate": "pipeline smoke rebuild passes",
+  "status": "PASS"
+ },
+ {
+  "evidence": "git status clean",
+  "gate": "review branch clean",
+  "status": "PASS"
+ }
+]

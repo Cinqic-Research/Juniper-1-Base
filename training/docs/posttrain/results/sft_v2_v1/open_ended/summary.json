@@ -1,0 +1,26 @@
+{
+ "baseline": "j1-sft-v1-pilot ckpt-000001226-55d13f9a (baseline seed 1)",
+ "candidate": "j1-sft-v2-s1 ckpt-000001226-48e927b5",
+ "items": 21,
+ "mean_total": {
+  "baseline": 10.1,
+  "candidate": 9.81
+ },
+ "note": "n = 21 is too small to gate (reported only); both models fail almost every item",
+ "pairs_sha256": "fb062d709fd9b37838e34b15ac6df1833f15382331b6b3ffba8389f450c4d3fa",
+ "pairs_tool": "tools/sft_open_ended_pairs.py --seed 20261014 (reproduces the blinded pairs byte-identically)",
+ "pass": {
+  "baseline": 0,
+  "candidate": 2
+ },
+ "preference": {
+  "baseline": 8,
+  "candidate": 7,
+  "tie": 6
+ },
+ "procedure": "verdicts written by the reviewer with the key held outside its readable inputs; key opened after the verdict file's SHA-256 was recorded",
+ "reviewer": "independent subagent reviewer (blinded; not the builder), 2026-10-14",
+ "rubric": "j1.open-ended-rubric.v1",
+ "schema": "j1.open-ended-review.v1",
+ "verdicts_sha256_before_key_opened": "2709c9561c0f2491c085431e43893bb94b5ffa9aada1b12a6ce4b96ff7a9b872"
+}

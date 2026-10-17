@@ -1,0 +1,25 @@
+{
+ "test": "incompatible_contract_handling (rerun after cb2a74d)",
+ "rc_exact": 1,
+ "rc_corrective": 0,
+ "lineage": {
+  "corrective_continuation": "qualification: lr change",
+  "parent_run": "t1",
+  "from_contract": "4ac3954860704258381d5ec061b6d6ded817455a7546a2fd8e07438afcfe1b59",
+  "to_contract": "3a0669b0aafd97c9752e8c030ea3caf47e86236b7781bafb4be6a8b9fd377411",
+  "scheduler_carryover": {
+   "position": 40,
+   "base_lr_from": [
+    0.00092376,
+    0.00092376
+   ],
+   "base_lr_to": [
+    0.0001,
+    0.0001
+   ],
+   "lr_after_restore": 1e-05
+  },
+  "optimizer_carryover": "AdamW moments and per-parameter step counts restored unchanged"
+ },
+ "result": "PASS"
+}

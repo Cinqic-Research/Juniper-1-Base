@@ -1,0 +1,15 @@
+{
+ "host": "qz3l9wpr1kgx3r",
+ "exact_continuation": {
+  "first_resumed_step": 16,
+  "mismatches": 0,
+  "final_param_equal": true,
+  "final_optim_equal": true
+ },
+ "sigkill": {
+  "first_resumed_step": 21,
+  "mismatches": 0,
+  "final_param_equal": true
+ },
+ "result": "PASS"
+}

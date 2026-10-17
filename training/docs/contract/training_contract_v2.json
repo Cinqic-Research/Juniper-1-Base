@@ -1,0 +1,404 @@
+{
+ "schema": "j1.training-contract.v2",
+ "supersedes": "docs/contract/training_contract_v1.json (PROPOSED_FOR_OWNER_FREEZE, 2026-10-10)",
+ "status": "FROZEN_LAUNCH_BLOCKED",
+ "decision_record": "engineer-selected under the owner work order of 2026-10-10 (delegated selection and freeze); no owner signature is implied",
+ "authority": {
+  "path": "docs/autonomous_2026-10-10/authority.json",
+  "sha256": "e4505f016fd71adce51cda0ecc13e0682577b7a0093dacdac7797787e160dcc6"
+ },
+ "code": {
+  "train_head_at_build": "f9caa8b2d8b9b6e87b94b922af08cd70933a39fc",
+  "data_head_at_build": "1c8cdf2699796007237f727314e8ae95d0324799",
+  "deployed_train_commit": "f832c0ecb27a53d58ee8e996c6f4e65bae16a8e0",
+  "deploy_tar_sha256": "6b15638bbc792d22480ef0c68270e3635eb34aa7b9574862e5c8bd3fe43aa774"
+ },
+ "corpus": {
+  "build": "j1-base-v0.2.2",
+  "build_identity": "89b08d5754c46dfd18ec239fdacb21ae899c1cf9d7606392401b5224c54bffc5",
+  "accepted_manifest_sha256": "54a3adb9650c96bf67b44b721386722383caeb774b48b0bf970ad6f9634d4185",
+  "lineage": {
+   "schema": "j1.successor-lineage-check.v1",
+   "build": "j1-base-v0.2.2",
+   "build_identity": "89b08d5754c46dfd18ec239fdacb21ae899c1cf9d7606392401b5224c54bffc5",
+   "manifest_sha256": "54a3adb9650c96bf67b44b721386722383caeb774b48b0bf970ad6f9634d4185",
+   "parent": {
+    "build_id": "j1-base-v0.2.1",
+    "build_identity": "e7909e40df202f0fb407369802d4d1d0becc02f9f86a777ef50a840d700c765a",
+    "manifest_sha256": "8d00090632bf6ca07f4dd75d3deea89421de823366c8216c6a85c9f003237968"
+   },
+   "criteria_commit": "869a208",
+   "exclusion_list_sha256": "4bd2e8ef7f5f95c1c2541d1e1c6945a563eece4b3726ed6d80c6a743e0af4ca1",
+   "exclusion_list_sha256_recomputed": "4bd2e8ef7f5f95c1c2541d1e1c6945a563eece4b3726ed6d80c6a743e0af4ca1",
+   "excluded_documents": 7108,
+   "removed_by_split": {
+    "test": 6,
+    "train": 7095,
+    "validation": 7
+   },
+   "accepted_by_split": {
+    "test": 2604,
+    "train": 2954191,
+    "validation": 2576
+   },
+   "documents_checked": 2959371,
+   "exclusions_absent_from_successor": true,
+   "exclusion_hash_consistent": true
+  },
+  "source_permissions": {
+   "path": "reports/j1-base-v0.2.2/source_permissions.json",
+   "sha256": "886c3cf5a1045162a41a732a5fb825acbca05396398a6df570096b9f3ccc43fc"
+  },
+  "exclusions": {
+   "union_list": {
+    "path": "reports/j1-base-v0.2.2/excluded_doc_ids_union.json",
+    "sha256": "4bd2e8ef7f5f95c1c2541d1e1c6945a563eece4b3726ed6d80c6a743e0af4ca1"
+   },
+   "f9": {
+    "path": "reports/contamination_f9/summary_f9.json",
+    "sha256": "220ab22b55a2ea4d58f13c6bf6bf050df79c68516d7db47892170a53ec4d3c9d"
+   },
+   "internal_sources": {
+    "path": "docs/source_exclusion_internal_2026-10-10.md",
+    "sha256": "9e5ad9a4581ce01ae95a3fc0264c612a6fb960f270ddbaeb6264a0da22e83c52"
+   }
+  },
+  "model_ready_shards": {
+   "shards_json_sha256": "1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef",
+   "train_stream_tokens": 3410114054,
+   "train_documents": 2954191
+  },
+  "independent_recount": {
+   "record": {
+    "path": "reports/j1-base-v0.2.2/full_recount_cand5-j1tok-24k.json",
+    "sha256": "ac29e08120980e677717191fc40cb39706fc796ead65da5bb50c7470ed51dbea"
+   },
+   "pass": true,
+   "splits": {
+    "test": {
+     "documents": 2604,
+     "document_tokens": 2643988,
+     "separator_tokens": 2604,
+     "stream_tokens": 2646592
+    },
+    "train": {
+     "documents": 2954191,
+     "document_tokens": 3407159863,
+     "separator_tokens": 2954191,
+     "stream_tokens": 3410114054
+    },
+    "validation": {
+     "documents": 2576,
+     "document_tokens": 3215628,
+     "separator_tokens": 2576,
+     "stream_tokens": 3218204
+    }
+   },
+   "bpe_sample_checked": 29779,
+   "literal_control_docs": 22
+  },
+  "preservation": {
+   "path": "reports/j1-base-v0.2.2/preservation_receipts.json",
+   "sha256": "9f9391b9786fa53576f848be679f8816902623a6ca349e12ed6451a760187e2e"
+  }
+ },
+ "tokenizer": {
+  "name": "j1tok-24k",
+  "tokenizer_json_sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+  "total_vocab": 24576,
+  "controls": "IDs 0-63 reserved (0 <|endoftext|> document separator; 1-11 juniper-chat-v1 roles/channels; 12-63 reserved)",
+  "loading": "j1data.jtok.load (encode_special_tokens on): mandatory for every consumer; a plain Tokenizer.from_str turns literal control spellings into control IDs (22 corpus documents)"
+ },
+ "model": {
+  "preset": "j1-wide-20x768",
+  "config": {
+   "vocab_size": 24576,
+   "n_layer": 20,
+   "d_model": 768,
+   "n_head": 12,
+   "n_kv_head": 6,
+   "head_dim": 64,
+   "d_ff": 1920,
+   "max_seq_len": 2048,
+   "rope_theta": 100000.0,
+   "norm_eps": 1e-05,
+   "qk_norm": "rmsnorm_per_head",
+   "tie_embeddings": true,
+   "init_std": 0.02
+  },
+  "n_params": 142771456,
+  "n_params_non_embedding": 123897088,
+  "attention": "GQA 12 query / 6 KV heads, head_dim 64, causal, QK-Norm rmsnorm_per_head before RoPE (theta 100000.0)",
+  "embeddings": "tied input/output embedding",
+  "norm": "RMSNorm (eps 1e-05), computed in fp32",
+  "bias": "no biases",
+  "init": "normal std 0.02",
+  "weight_decay": {
+   "policy": "matrices: 2-D projection weights decay 0.1; 1-D parameters and the tied embedding are excluded",
+   "decayed": {
+    "count": 140,
+    "elements": 123863040,
+    "names_sha256": "53e8c819a1765e1e63f118c363a05a92c4264e515781a5e0f0dfbaae9e8293be",
+    "examples": [
+     "blocks.0.attn.k.weight",
+     "blocks.0.attn.o.weight",
+     "blocks.0.attn.q.weight",
+     "blocks.0.attn.v.weight"
+    ]
+   },
+   "excluded": {
+    "count": 82,
+    "elements": 18908416,
+    "names": [
+     "embed.weight",
+     "final_norm.weight",
+     "blocks.*.attn.k_norm.weight",
+     "blocks.*.attn.q_norm.weight",
+     "blocks.*.attn_norm.weight",
+     "blocks.*.mlp_norm.weight"
+    ]
+   }
+  }
+ },
+ "training": {
+  "context": 2048,
+  "packing": "EOS-separated documents, cross-document attention allowed, every position a target incl. EOS, no padding",
+  "batch": {
+   "global_tokens_per_update": 65536,
+   "sequences_per_update": 32,
+   "micro_batch": 16,
+   "accumulation": 2
+  },
+  "optimizer": {
+   "type": "AdamW (fused)",
+   "betas": [
+    0.9,
+    0.95
+   ],
+   "eps": 1e-08,
+   "weight_decay": 0.1,
+   "decay_groups": "see model.weight_decay",
+   "clip_grad_norm": 1.0
+  },
+  "schedule": {
+   "peak_lr": 0.0016971,
+   "warmup_updates": 500,
+   "min_lr_ratio": 0.1,
+   "horizon_updates": 52034,
+   "limit_tokens": 3410100225,
+   "dropped_tail_windows": 6,
+   "tokens_per_update": 65536,
+   "tranche_stop_update": 2000,
+   "tranche_valid_targets": 131072000,
+   "canary_updates": 50,
+   "eval_every_updates": 500,
+   "seed": 1,
+   "data_order": "one exact epoch; window permutation seeded by (seed, epoch); the tranche is a prefix"
+  },
+  "precision": "BF16 autocast; RMSNorm and losses in fp32; eval cross-entropy fp32 with fp64 sums",
+  "kernels": "SDPA default backend (flash on A100); FA-1 explained as accumulation-order noise (evidence/host_*/fa1_diagnosis.json)",
+  "execution_profile": {
+   "optimized": {
+    "compile": false,
+    "basis": "eager/compiled equivalence FAIL",
+    "compile_equivalence_sha256": "76139ec77d5b8b2fa7d22d99b746c99d214095829ef733a7e2952fe258aa8c41"
+   },
+   "reference": "eager BF16, --deterministic (bitwise-resumable profile used by the recovery suite)",
+   "compile_equivalence": {
+    "status": "FAIL",
+    "record": {
+     "path": "docs/autonomous_2026-10-10/compile_equivalence.json",
+     "sha256": "76139ec77d5b8b2fa7d22d99b746c99d214095829ef733a7e2952fe258aa8c41"
+    }
+   }
+  },
+  "exposure": {
+   "tranche": "131072000 valid targets (no repeats)",
+   "full_epoch_horizon_updates": 52034,
+   "continuation": "separate owner allocation required"
+  }
+ },
+ "architecture_selection": {
+  "rule": "architecture-v2",
+  "status": "SELECTED",
+  "decision": "j1-wide-20x768",
+  "basis": "equal-token noninferiority, domain gates, material equal-compute improvement",
+  "record": {
+   "path": "docs/autonomous_2026-10-10/selection_18b/select_architecture_v2.json",
+   "sha256": "9b29f75a016812146f1685636a78ed0fb0191bbda98720b342c3325c729c7a26"
+  },
+  "protocol": {
+   "path": "docs/prep/18_architecture_followup_protocol.md",
+   "sha256": "93a8b70baca7e1364d94e77ab91fc6fa59c8ed872dae7ef3a77c42cb67e2e84a"
+  }
+ },
+ "host": {
+  "qualification": {
+   "schema": "j1.host-qualification.v1",
+   "pod_id": "pncbyxaf2dt2jl",
+   "gpu_uuid": "GPU-5c42020f-dc89-fe0f-2a91-a26d0948c4f4",
+   "gpu": "NVIDIA A100-SXM4-80GB",
+   "mig_disabled": true,
+   "ecc_enabled": true,
+   "driver": "580.126.16",
+   "image_digest": "sha256:0a360022e8de4375af99430f84e8b38951acc397252163a37ceac7204d01be35",
+   "datacenter": "US-MD-1",
+   "torch": "2.8.0+cu128 12.8 91002 3.4.0",
+   "pytest_passed": true,
+   "fa1_verdict": "EXPLAINED_ACCUMULATION_NOISE",
+   "probes_start_of_session": {
+    "probe-start-j1-core-28x640": {
+     "tokens_per_s_median": 117848.84176153959,
+     "peak_vram_gib": 28.584765911102295
+    },
+    "probe-start-j1-wide-20x768": {
+     "tokens_per_s_median": 129233.16422402291,
+     "peak_vram_gib": 24.998048305511475
+    }
+   },
+   "prefix_data_verified": true
+  },
+  "record": {
+   "path": "docs/autonomous_2026-10-10/evidence/host_pncbyxaf2dt2jl/host_qualification.json",
+   "sha256": "55c72e7360795da287300e96997e468d026d5e956c485bdf3238e8fbc11caa4c"
+  }
+ },
+ "evaluation": {
+  "base_launch": "full validation split of j1-base-v0.2.2 (bpb from summed NLL over scored UTF-8 bytes, by source); test split untouched",
+  "validation": {
+   "documents": 2576,
+   "scored_bytes": 12311466
+  },
+  "thresholds": {
+   "instability_after_update": 1000,
+   "instability_rel": 0.02,
+   "canary_updates": 50
+  },
+  "product_evaluations": "POSTTRAINING/RELEASE gates (pending)"
+ },
+ "checkpoints": {
+  "root": "/vol/ckpt",
+  "every_updates": 500,
+  "every_active_seconds": 900,
+  "retention": "all tranche checkpoints kept (init, canary, periodic, best, planned stop, final)",
+  "retention_policy": "v0.7: init, latest three, hourly for 24 active hours, daily, stage, best, release lineage; tranche keeps all",
+  "publication": "manifest-last COMPLETE marker, full received-byte verification",
+  "recovery": {
+   "path": "docs/autonomous_2026-10-10/evidence/recovery_vol.json",
+   "sha256": "085c34d30ce65d4187b625ad2bc6433cae35e9ba09063a030650f3bc5924b6df"
+  }
+ },
+ "preservation": {
+  "destinations": "FLOWBOX HDD canonical; Google Drive (owner-approved unencrypted base remote, juniper1/); GitHub source/evidence; Hugging Face private CinqicX/juniper1-corpus",
+  "checkpoint_replication": "FLOWBOX pull with full rehash (tools/replicate_ckpts.py)",
+  "lag_limits": {
+   "max_replica_lag_updates": 1000,
+   "max_replica_lag_seconds": 600,
+   "volume_bytes_max": 45000000000
+  },
+  "key_and_access_recovery": "R02 BLOCKED on owner actions (recovery sheet custody, Drive OAuth publishing); base-launch artifacts are private and unencrypted (no key on the recovery path)"
+ },
+ "supervision": {
+  "on_pod_controller": "tools/pod_controller.py (metrics progress)",
+  "off_pod_watchdog": "tools/remote_watchdog.py on CPU pod vls66uj40yrv2c",
+  "live_drill": {
+   "path": "docs/autonomous_2026-10-10/controller_live_drill.md",
+   "sha256": "e6b56775a64c5da9e6377406e7449ab7ad249e4ebfe5743544d5174b7d3fbfd5"
+  },
+  "limits": {
+   "usd_soft": 2.1,
+   "usd_hard": 2.4,
+   "runtime_hours_max": 1.4,
+   "volume_bytes_max": 45000000000,
+   "max_replica_lag_updates": 1000,
+   "max_replica_lag_seconds": 600,
+   "rate_usd_h": 1.9,
+   "spent_before_usd": 0.15,
+   "session_start_utc": "2026-10-10T17:45:58Z",
+   "launch_start_estimate_usd": 14.97,
+   "usd_soft_abs": 17.07,
+   "usd_hard_abs": 17.37,
+   "deadline_utc": "2026-10-11T02:55:24Z"
+  },
+  "stop_commands": [
+   "touch /vol/runs/STOP_REQUESTED (graceful)",
+   "RunPod pod-action stop pncbyxaf2dt2jl (provider)"
+  ]
+ },
+ "budget": {
+  "contract": {
+   "path": "docs/autonomous_2026-10-10/budget_contract.json",
+   "sha256": "64ed8c228ec08c45390b2baaec228134f76fd86816976090b967871964b106a1"
+  },
+  "B_task_usd": 19.01,
+  "allocations": {
+   "preparation_and_comparison_usd": 15.97,
+   "limited_launch_usd_protected": 2.4,
+   "reserve_usd": 5.0
+  },
+  "reserve_usd": 5.0
+ },
+ "time_logging": {
+  "schema": "j1.time-event.v1 (j1bench/timelog.py)",
+  "qualification": [
+   {
+    "path": "docs/autonomous_2026-10-10/evidence/timelog_qual_flowbox.json",
+    "sha256": "8be7d230c73a9c96bcdd15a7e9f8e69d6d0ad9449e989341083a5db52fcec9eb"
+   },
+   {
+    "path": "docs/autonomous_2026-10-10/evidence/timelog_qual_flowbox_hdd.json",
+    "sha256": "989a7feff7a08d10d6c0c30ad24d75a4afb8ab24412c46c66b978017748c66b2"
+   }
+  ]
+ },
+ "invalidation_map": {
+  "corpus or exclusion change": [
+   "corpus identity",
+   "recount",
+   "preservation receipts",
+   "launch manifest",
+   "architecture comparison applicability (re-check prefix identity)"
+  ],
+  "tokenizer change": [
+   "everything above",
+   "all architecture and LR evidence"
+  ],
+  "model shape change": [
+   "architecture selection",
+   "LR",
+   "throughput references",
+   "compile equivalence",
+   "launch manifest"
+  ],
+  "precision/kernel/compiler/driver/image change": [
+   "host qualification",
+   "FA-1",
+   "compile equivalence",
+   "throughput references",
+   "recovery evidence"
+  ],
+  "schedule, batch or optimizer change": [
+   "LR evidence",
+   "launch manifest",
+   "resume semantics of existing checkpoints (a corrective successor branch is required)"
+  ],
+  "host change": [
+   "host qualification",
+   "throughput references",
+   "comparison timing (protocol 18 \u00a76)"
+  ]
+ },
+ "known_limitations": [
+  "LR tuned at a 91M-target screening horizon; the full horizon is ~3.4B targets",
+  "three seeds per shape: decision intervals are wide (protocol 18 \u00a75)",
+  "base-LM bpb does not measure agent capability",
+  "the balance was owner-reported at freeze time; the provider console later showed $8.53 at 2026-10-11T01:38Z (the 16:47Z figure was ~$4.36 too high; budget contract v4, BC-5)",
+  "core 28x640 LR at the upper grid edge (unresolved boundary; extension skipped by the registered budget cut order), so part of wide's margin may be core under-tuning",
+  "eager/compiled equivalence FAIL (bpb 0.326% > 0.3%): the frozen profile is eager (half the compiled speed)",
+  "launch attempt j1-base-r1 stopped before update 1: full-stream trainer startup exceeded the 15-minute stall rule (readiness B17); FROZEN_LAUNCH_BLOCKED until fixed, reviewed and measured"
+ ],
+ "launch_manifest": {
+  "path": "docs/autonomous_2026-10-10/launch_manifest.json",
+  "sha256": "9fb4f5a20bceac4bf60eb15cfaf8f25a1aa23bd1f6960c4145211ad40b2b2848"
+ }
+}

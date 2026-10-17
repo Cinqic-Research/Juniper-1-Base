@@ -1,0 +1,3 @@
+{"tok": "j1tok-24k", "order": ["j1-core-28x640", "j1-deep-30x576", "j1-wide-20x768"], "seed": 1,
+ "lr": {"j1-core-28x640": 9.295e-04, "j1-deep-30x576": 9.798e-04, "j1-wide-20x768": 1.6971e-03},
+ "source": "tokenizer-v1.2 decision tok-j1tok-24k (select_tokenizer.json); lr-v1.1 per shape on the 4090 LR check (select_lr_<preset>.json)"}

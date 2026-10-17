@@ -1,0 +1,20 @@
+{
+ "abs_diff": 0.0,
+ "checkpoint": {
+  "checkpoint": "ckpt-000000200-eedbf21a",
+  "manifest_sha256": "bd640c56c2f2f67a614bef9323d5a370d33826259249c9a3bc5a52ef64f556d9",
+  "model_state_sha256": "39e13ed278f5bc5823a5087ec3ac5eee452fda53284e935e2d03edd787e6e153",
+  "run_id": "j1-distill-v2-a2",
+  "stage": "juniper1-distill-v2",
+  "updates": 200
+ },
+ "dev_targets": 52763,
+ "device": "NVIDIA GeForce RTX 4090",
+ "exact": true,
+ "recomputed_dev_loss": 1.0244645062038527,
+ "recorded_dev_loss": 1.0244645062038527,
+ "verify": [
+  true,
+  "ok"
+ ]
+}

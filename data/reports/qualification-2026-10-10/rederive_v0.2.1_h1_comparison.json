@@ -1,0 +1,22 @@
+{
+    "token_files_identical": {
+        "test-docs.parquet": true,
+        "test-tokens-00000.bin": true,
+        "train-docs.parquet": true,
+        "train-tokens-00000.bin": true,
+        "train-tokens-00001.bin": true,
+        "train-tokens-00002.bin": true,
+        "train-tokens-00003.bin": true,
+        "train-tokens-00004.bin": true,
+        "train-tokens-00005.bin": true,
+        "train-tokens-00006.bin": true,
+        "validation-docs.parquet": true,
+        "validation-tokens-00000.bin": true
+    },
+    "all_identical": true,
+    "accepted_shards_identical": true,
+    "old_identity": "aa9c4ed9522449521881a64b1dd810006df6249f56d8c1dae8b4e7cc1de8d005",
+    "new_identity": "e7909e40df202f0fb407369802d4d1d0becc02f9f86a777ef50a840d700c765a",
+    "new_manifest_sha256": "8d00090632bf6ca07f4dd75d3deea89421de823366c8216c6a85c9f003237968",
+    "new_shards_json_sha256": "cb2e2b53d5b4ce26210bca2367c20ea751362bc81d92294c2e81b7f2cda76ef3"
+}

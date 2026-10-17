@@ -1,0 +1,28 @@
+# Provisional measurement tokenizers (j1.measure-tokenizer.v1).
+#
+# Used ONLY to size the accepted corpus in tokens across the vocabulary range the
+# Juniper 1 design considers (about 24K-32K). They are not Juniper 1 tokenizer
+# candidates: vocabulary, merges, special/control tokens and chat template are
+# designed, evaluated and frozen in the separate tokenizer stage. total_vocab
+# counts the 256 byte-fallback tokens; there are no special tokens.
+
+[sample]
+rate = 0.01          # fraction of training-split documents (keyed hash of doc id)
+
+[[tokenizer]]
+name = "measure-24k"
+total_vocab = 24576
+limit_alphabet = 1000
+min_frequency = 2
+
+[[tokenizer]]
+name = "measure-28k"
+total_vocab = 28672
+limit_alphabet = 1000
+min_frequency = 2
+
+[[tokenizer]]
+name = "measure-32k"
+total_vocab = 32768
+limit_alphabet = 1000
+min_frequency = 2

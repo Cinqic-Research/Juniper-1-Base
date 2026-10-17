@@ -1,0 +1,115 @@
+{
+ "steps_profiled": 5,
+ "cuda_time_total_ms": 2905.123864000004,
+ "wall_ms_under_profiler": 4145.691886544228,
+ "gpu_busy_fraction": 0.7007573026421077,
+ "groups_pct": {
+  "other": 48.5,
+  "gemm": 24.1,
+  "copy/memset": 18.3,
+  "attention": 7.8,
+  "optimizer": 1.2
+ },
+ "top_kernels": [
+  {
+   "name": "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, f",
+   "self_cuda_us": 389715.10700001486,
+   "calls": 5060
+  },
+  {
+   "name": "void pytorch_flash::flash_bwd_dq_dk_dv_loop_seqk_parallel_kernel<Flash_bwd_kernel_traits<64, 128, 128, 8, 4, 4, 4, false",
+   "self_cuda_us": 212332.3470000005,
+   "calls": 140
+  },
+  {
+   "name": "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctor_add<float>, std::array<char*, 3ul> >(int, at::",
+   "self_cuda_us": 202264.38699999225,
+   "calls": 2115
+  },
+  {
+   "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}:",
+   "self_cuda_us": 185284.47600000666,
+   "calls": 2540
+  },
+  {
+   "name": "void at::native::vectorized_elementwise_kernel<4, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambd",
+   "self_cuda_us": 163340.30700000137,
+   "calls": 3380
+  },
+  {
+   "name": "void at::native::vectorized_elementwise_kernel<4, at::native::BinaryFunctor<float, float, float, at::native::binary_inte",
+   "self_cuda_us": 154336.5289999958,
+   "calls": 1700
+  },
+  {
+   "name": "ampere_bf16_s16816gemm_bf16_128x128_ldg8_f2f_stages_32x5_tn",
+   "self_cuda_us": 153694.29200000456,
+   "calls": 565
+  },
+  {
+   "name": "ampere_bf16_s16816gemm_bf16_128x256_ldg8_f2f_stages_64x3_nn",
+   "self_cuda_us": 103185.38499999835,
+   "calls": 285
+  },
+  {
+   "name": "ampere_bf16_s16816gemm_bf16_128x256_ldg8_f2f_stages_64x3_nt",
+   "self_cuda_us": 100553.16899999653,
+   "calls": 285
+  },
+  {
+   "name": "ampere_bf16_s16816gemm_bf16_128x128_ldg8_f2f_stages_32x5_nn",
+   "self_cuda_us": 98298.49299999964,
+   "calls": 700
+  },
+  {
+   "name": "void at::native::vectorized_elementwise_kernel<4, at::native::BinaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16,",
+   "self_cuda_us": 81951.29700000136,
+   "calls": 420
+  },
+  {
+   "name": "void pytorch_flash::flash_fwd_kernel<Flash_fwd_kernel_traits<64, 128, 128, 4, false, false, cutlass::bfloat16_t, Flash_k",
+   "self_cuda_us": 78797.38999999996,
+   "calls": 140
+  },
+  {
+   "name": "void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::T",
+   "self_cuda_us": 72034.79300000222,
+   "calls": 1120
+  },
+  {
+   "name": "ampere_bf16_s16816gemm_bf16_128x256_ldg8_f2f_stages_64x3_tn",
+   "self_cuda_us": 63902.01599999853,
+   "calls": 420
+  },
+  {
+   "name": "void at::native::reduce_kernel<128, 4, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_fun",
+   "self_cuda_us": 59594.27299999629,
+   "calls": 565
+  },
+  {
+   "name": "void at::native::vectorized_elementwise_kernel<4, at::native::AUnaryFunctor<float, float, float, at::native::binary_inte",
+   "self_cuda_us": 51541.55900000321,
+   "calls": 1135
+  },
+  {
+   "name": "void at::native::(anonymous namespace)::cunn_SoftMaxBackward<4, float, float, float, at::native::(anonymous namespace)::",
+   "self_cuda_us": 51481.45699999959,
+   "calls": 5
+  },
+  {
+   "name": "Memcpy DtoD (Device -> Device)",
+   "self_cuda_us": 49468.552999998705,
+   "calls": 565
+  },
+  {
+   "name": "ampere_bf16_s16816gemm_bf16_128x128_ldg8_f2f_stages_64x3_nt",
+   "self_cuda_us": 49465.787000001495,
+   "calls": 560
+  },
+  {
+   "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_fun",
+   "self_cuda_us": 48157.309000003355,
+   "calls": 565
+  }
+ ]
+}

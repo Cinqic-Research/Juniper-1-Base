@@ -1,0 +1,9 @@
+2026-10-10T12:13:39Z pytest rc=0 142 passed, 1 skipped, 2 warnings in 79.81s (0:01:19)
+2026-10-10T12:13:39Z dispatched tp-j1tok-24k on GPU 0
+2026-10-10T12:14:57Z all dispatched runs ended
+2026-10-10T12:14:57Z dispatched tp-j1tok-28k on GPU 0
+2026-10-10T12:16:16Z all dispatched runs ended
+2026-10-10T12:16:16Z dispatched tp-j1tok-32k on GPU 0
+2026-10-10T12:17:36Z all dispatched runs ended
+2026-10-10T12:17:36Z tp runs done
+2026-10-10T12:39:14Z requal PASS

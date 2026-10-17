@@ -1,0 +1,28 @@
+{
+ "acquire_version": "j1.acquire.v1",
+ "acquired_utc": "2026-10-07T15:24:41+00:00",
+ "files": [
+  {
+   "git_blob_oid": "b6dcb75b9ecf12eedb39935ecaa8fcc9095e2427",
+   "path": "pressbooks-0000.json.gz",
+   "retrieved_utc": "2026-10-07T15:24:41+00:00",
+   "sha256": "dd251acfa9b535a0aadeb7f61743a61934a1783bd1bdac947d4d136781b22d22",
+   "size": 191725499,
+   "upstream_sha256": "dd251acfa9b535a0aadeb7f61743a61934a1783bd1bdac947d4d136781b22d22",
+   "url": "https://huggingface.co/datasets/common-pile/pressbooks_filtered/resolve/1a1d3b50d77f834370f8eb4c0d174668dd1676bb/pressbooks-0000.json.gz"
+  }
+ ],
+ "mechanism": "huggingface",
+ "repo": "common-pile/pressbooks_filtered",
+ "revision": "1a1d3b50d77f834370f8eb4c0d174668dd1676bb",
+ "schema": "j1.acquisition-manifest.v1",
+ "selected_bytes": 191725499,
+ "selected_file_count": 1,
+ "selection": {
+  "include": [
+   "*.json.gz"
+  ]
+ },
+ "source_id": "pressbooks",
+ "upstream_file_count": 3
+}

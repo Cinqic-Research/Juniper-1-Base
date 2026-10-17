@@ -1,0 +1,6 @@
+[ckpt] step 0 -> /root/ckpt-recovery/t1/ckpt-000000000-5a0e9470 (555.9 MiB, 2.11s)
+step 1 loss 10.3499 lr 0.000185 4919ms
+step 10 loss 7.9697 lr 0.000897 319ms
+[ckpt] step 10 -> /root/ckpt-recovery/t1/ckpt-000000010-ad294749 (1667.7 MiB, 6.37s)
+[ckpt] step 15 -> /root/ckpt-recovery/t1/ckpt-000000015-20654228 (1667.7 MiB, 6.14s)
+{"steps_run": 15, "final_step": 15, "tokens_per_s_median": 102918.4279506318, "step_ms_median": 318.38807347230613, "peak_vram_gib": 28.861260414123535, "final_param_sha256": "b705f279c1d7eb9170560649dd6f872b310e8ba047573bf18a039151503a2b6f"}

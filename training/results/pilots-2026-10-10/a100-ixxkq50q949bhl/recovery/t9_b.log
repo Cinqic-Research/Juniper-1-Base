@@ -1,0 +1,20 @@
+[resume] restored /root/ckpt-recovery/t1/ckpt-000000000-5a0e9470 at step 0 in 14.63s (lr=0.000184752)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/j1train/j1bench/train.py", line 1124, in <module>
+    main()
+  File "/root/j1train/j1bench/train.py", line 1120, in main
+    Trainer(args).run()
+  File "/root/j1train/j1bench/train.py", line 863, in run
+    summary = self._run_body()
+              ^^^^^^^^^^^^^^^^
+  File "/root/j1train/j1bench/train.py", line 957, in _run_body
+    rec = self.train_step()
+          ^^^^^^^^^^^^^^^^^
+  File "/root/j1train/j1bench/train.py", line 742, in train_step
+    return self._train_step()
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/j1train/j1bench/train.py", line 788, in _train_step
+    raise FloatingPointError(f"learning rate {lr} outside [0, peak] at update {self.step + 1}")
+FloatingPointError: learning rate 0.00018475200000000002 outside [0, peak] at update 1

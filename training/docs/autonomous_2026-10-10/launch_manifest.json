@@ -1,0 +1,204 @@
+{
+ "schema": "j1.launch-manifest.v2",
+ "run_id": "j1-base-r2",
+ "built_utc": "2026-10-12T00:53:30Z",
+ "authority": "owner work order 2026-10-10 \u00a712 (conditional limited launch); engineer-selected under that order",
+ "code": {
+  "train_commit": "828edd192fd97057c5126d6731191d2118638538",
+  "data_commit": "47cd1dd754903379c18cb821aba23a6993243eb9",
+  "deploy_tar_sha256": "3c93db5cb15c20d5cc45b1a3f567088f7dace07563a88e8b6f2f42ef2bd21731"
+ },
+ "data": {
+  "dir": "/vol/data/v022-24k-full",
+  "build": "j1-base-v0.2.2",
+  "accepted_manifest_sha256": "54a3adb9650c96bf67b44b721386722383caeb774b48b0bf970ad6f9634d4185",
+  "shards_json_sha256": "1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef",
+  "train_stream_tokens": 3410114054,
+  "train_documents": 2954191
+ },
+ "tokenizer": {
+  "path": "/vol/data/tok/tokenizer.json",
+  "sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+  "total_vocab": 24576
+ },
+ "validation": {
+  "documents": 2576,
+  "scored_bytes": 12311466
+ },
+ "model": {
+  "preset": "j1-wide-20x768",
+  "n_params": 142771456,
+  "selection": {
+   "status": "SELECTED",
+   "basis": "equal-token noninferiority, domain gates, material equal-compute improvement"
+  },
+  "reference_runs": [
+   {
+    "file": "et-j1-wide-20x768-s21.json",
+    "run_id": "et-j1-wide-20x768-s21",
+    "seed": 21,
+    "contract_sha256": "7d28d7267a988cf0e516bb0f31ff61a3ed9565d7c9f9c5437f50d8a6b704c64b",
+    "tokens_per_s_median": 128958.81852991808
+   },
+   {
+    "file": "et-j1-wide-20x768-s22.json",
+    "run_id": "et-j1-wide-20x768-s22",
+    "seed": 22,
+    "contract_sha256": "215f405cce699fbf5f1a4348f2a25551e1d61701c375b792cbaf2eb0077cceb7",
+    "tokens_per_s_median": 129018.88495178513
+   },
+   {
+    "file": "et-j1-wide-20x768-s23.json",
+    "run_id": "et-j1-wide-20x768-s23",
+    "seed": 23,
+    "contract_sha256": "8af31a96eb3dd3830cf455628d08dd05a551cd7f73dc13155741513589f0bd66",
+    "tokens_per_s_median": 129357.45712566205
+   }
+  ]
+ },
+ "trainer_config": {
+  "preset": "j1-wide-20x768",
+  "seq_len": 2048,
+  "micro_bs": 16,
+  "accum": 2,
+  "steps": 52034,
+  "limit_tokens": 3410100225,
+  "lr": 0.0016971,
+  "warmup": 500,
+  "min_lr_ratio": 0.1,
+  "wd": 0.1,
+  "wd_policy": "matrices",
+  "clip": 1.0,
+  "opt": "fused",
+  "precision": "bf16",
+  "compile": false,
+  "seed": 1,
+  "exact_epoch": true,
+  "eval_set": "full-split"
+ },
+ "execution_profile": {
+  "compile": false,
+  "basis": "eager/compiled equivalence FAIL",
+  "compile_equivalence_sha256": "e348fd27b5198201e2b7bacbba46eb12e710018f11a51e192333e35bac20757b",
+  "compile_protocol_sha256": "34bba33de279a419b4de8675eaa6333f86d93baea556d4d481040bc18434dc75",
+  "compile_equivalence_identity": {
+   "preset": "j1-wide-20x768",
+   "shards_json_sha256": "1cf5e2320ad35e930f84ca0edbf5a9d188a2f524702dc4623e492dab043e3aef",
+   "tokenizer_json_sha256": "176a89e2197c24d3f024fbb60ce6f346635e7cba912b3579d93b37d486c9adf1",
+   "build": "j1-base-v0.2.2",
+   "limit_tokens": 3410100225,
+   "seed": 1,
+   "steps": 52034,
+   "stop_at": 1000,
+   "eval_documents": 2576,
+   "eval_scored_bytes": 12311466,
+   "code_package_sha256": {
+    "eager": "dbd0009e480e8e52fabfb7fcf1d2596736a8245fdb363e31bba1653b22106053",
+    "compiled": "dbd0009e480e8e52fabfb7fcf1d2596736a8245fdb363e31bba1653b22106053"
+   },
+   "n_params": 142771456,
+   "compile_mode": "default",
+   "run_ids": {
+    "eager": "ce2-eager",
+    "compiled": "ce2-compiled"
+   }
+  },
+  "compile_equivalence_tolerances": {
+   "loss_rel": 0.005,
+   "bpb_rel": 0.003
+  }
+ },
+ "schedule": {
+  "peak_lr": 0.0016971,
+  "warmup_updates": 500,
+  "min_lr_ratio": 0.1,
+  "horizon_updates": 52034,
+  "limit_tokens": 3410100225,
+  "dropped_tail_windows": 6,
+  "tokens_per_update": 65536,
+  "tranche_stop_update": 52034,
+  "tranche_valid_targets": 3410100224,
+  "canary_updates": 50,
+  "eval_every_updates": 500,
+  "seed": 1,
+  "data_order": "one exact epoch; window permutation seeded by (seed, epoch); the tranche is a prefix",
+  "continuation": {
+   "from_update": 8500,
+   "checkpoint": "ckpt-000008500-205ec566",
+   "checkpoint_manifest_sha256": "85eb6685d9e4405724a7f6733d6571c3e9f6037739401b350e9b584f984be333",
+   "canary_acceptance_sha256": "79b546e9e51c23ae0f2bb3c56460aa7bd106c9d33927eee11fcf8d773007b5d1",
+   "stage_id": "base-tranche-1",
+   "authority": "owner decision 2026-10-11 ~15:55Z (chat, after the LIMITED_TRANCHE_COMPLETE report and a $30 reload read at $42.26): continue the full epoch in one supervised session, eager profile, keep every 10th checkpoint off-site and prune the rest | LP-5: resume after the guard stop of 2026-10-11 18:37:39Z (FLOWBOX power-off -> replica lag; planned_shutdown checkpoint 8585 archived to /vol/ckpt/attempts as an operator decision because the resume point must be a 500-update checkpoint boundary; the eval checkpoint 8500 (best) is the resume point); owner directive 2026-10-11 (autonomous continuation) applies"
+  }
+ },
+ "checkpoints": {
+  "root": "/vol/ckpt",
+  "every_updates": 500,
+  "every_active_seconds": 900,
+  "retention": {
+   "keep_every_updates": 5000,
+   "keep_steps": [
+    0,
+    2000,
+    52034
+   ],
+   "volume": "the launch guard deletes non-keepers once their HDD replica is verified, always keeping the two newest valid checkpoints; keepers stay on the volume until the run ends",
+   "hdd": "the replicator deletes non-keepers after a newer verified replica (two newest kept); the preserver releases keepers after both off-site receipts, keeping the two newest preserved keepers",
+   "offsite": "keepers only (Drive + HF), each within preservation.offsite_deadline_seconds of its HDD verification"
+  }
+ },
+ "acceptance": {
+  "reference_tokens_per_s": 65315.8336580119,
+  "reference_basis": "compiled: median of the selected shape's protocol-18b ET confirmation runs; eager: the eager run of the equivalence check; the canary must reach the policy's throughput allowance",
+  "throughput_allowance": 0.9,
+  "instability_after_update": 1000,
+  "instability_rel": 0.02
+ },
+ "limits": {
+  "usd_soft": 26.0,
+  "usd_hard": 29.0,
+  "runtime_hours_max": 15.2,
+  "volume_bytes_max": 45000000000,
+  "max_replica_lag_updates": 1000,
+  "max_replica_lag_seconds": 600,
+  "rate_usd_h": 1.9,
+  "spent_before_usd": 0.0,
+  "session_start_utc": "2026-10-12T00:48:02Z",
+  "launch_start_estimate_usd": 0.2533,
+  "launch_start_basis": {
+   "ledger_poll_spend_est_usd": 0.2533,
+   "ledger_poll_ts_utc": "2026-10-12T00:53:18.039Z",
+   "ledger_billed_s_est": 480.0
+  },
+  "ledger_seq": {
+   "controller_start": 1,
+   "poll": 10
+  },
+  "usd_soft_abs": 26.25,
+  "usd_hard_abs": 29.25,
+  "deadline_utc": "2026-10-12T16:05:30Z",
+  "stall_s": 900
+ },
+ "supervision": {
+  "runs_dir": "/vol/runs",
+  "stop_file": "/vol/runs/STOP_REQUESTED"
+ },
+ "host": {
+  "gpu_uuid": "GPU-c3966d38-7505-59d0-d9bd-a41bfe3e946e",
+  "pod_id": "dxnsn6g7n5s4fw"
+ },
+ "inputs_sha256": {
+  "selection": "9b29f75a016812146f1685636a78ed0fb0191bbda98720b342c3325c729c7a26",
+  "amendment": "5b289e422007df620872a1f2f2c6e2f9caf60c18f49d99fc6dee4cfd180fb209",
+  "policy": "97bd306dbed170fde36931b7148f86ecf8474289bec5be8a8f5c6fcc90e784db",
+  "host_record": "eb009e7874a697b1f2bb374d3c6adb5cac4fa497eb69506588d02ae6b2a17b56",
+  "validation_record": "53dc8096f88027111173a742f90e61ad9b983791f80a3c8aae1c2b9d201e8914",
+  "compile_equivalence": "e348fd27b5198201e2b7bacbba46eb12e710018f11a51e192333e35bac20757b",
+  "reference_runs": {
+   "et-j1-wide-20x768-s21.json": "70e181adddf87cd88cb24d08b7b81c866cbe134853ef5ce3a138ce99781a9fbd",
+   "et-j1-wide-20x768-s22.json": "cf62e8204f9fedd17b4fe65e9afcc98c7359aff3dac95b7a502da264749f111b",
+   "et-j1-wide-20x768-s23.json": "80f75da13bc10953570269a8452b363122479df46fb279a0194819d56c11e65e"
+  },
+  "controller_ledger": "e29139dd15814e2290340998eb69baa610f22f6cd157bc22834f37e807d77519"
+ }
+}

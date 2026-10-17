@@ -1,0 +1,57 @@
+{
+ "host": "FLOWBOX",
+ "log_device_path": "/tmp/claude-1000/-home-cinqic-Documents-AAA/38c0026a-759d-4bb6-854d-33fe45806cf1/scratchpad/tlq",
+ "python": "3.12.3",
+ "clock": {
+  "method": "systemd-timesyncd",
+  "synchronized": true,
+  "offset_ms": 0.11900000000000001,
+  "root_distance_ms": 5.699,
+  "server": "2620:2d:4000:1::41 (ntp.ubuntu.com)",
+  "uncertainty_ms": 5.818
+ },
+ "controls": [
+  {
+   "target_s": 0.25,
+   "operation_s": 0.250084,
+   "span_elapsed_s": 0.250629,
+   "start_write_s": 0.000613,
+   "logger_excess_s": 0.000545,
+   "pass": true
+  },
+  {
+   "target_s": 1.0,
+   "operation_s": 1.000087,
+   "span_elapsed_s": 1.000465,
+   "start_write_s": 0.000385,
+   "logger_excess_s": 0.000378,
+   "pass": true
+  },
+  {
+   "target_s": 5.0,
+   "operation_s": 5.000081,
+   "span_elapsed_s": 5.000409,
+   "start_write_s": 0.000342,
+   "logger_excess_s": 0.000328,
+   "pass": true
+  }
+ ],
+ "wrapper": {
+  "elapsed_s": 2.003481,
+  "outer_wall_s": 2.114,
+  "pass": true
+ },
+ "event_cost_ms": {
+  "durable_median": 0.272,
+  "durable_p99": 0.409,
+  "routine_median": 0.057,
+  "routine_p99": 0.083,
+  "durable_mean": 0.281
+ },
+ "audit": {
+  "ok": true,
+  "problems": [],
+  "events": 414
+ },
+ "pass": true
+}

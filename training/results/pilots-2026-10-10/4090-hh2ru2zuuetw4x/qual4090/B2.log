@@ -1,0 +1,7 @@
+[ckpt] candidate /root/qual-ckpt8/qual-det-B/ckpt-000000020-5325c761 step=20: ok
+[resume] restored /root/qual-ckpt8/qual-det-B/ckpt-000000020-5325c761 at step 20 in 0.71s (lr=0.000650134)
+step 30 loss 7.4039 lr 0.000302 446ms
+[ckpt] step 30 -> /root/qual-ckpt8/qual-det-B/ckpt-000000030-fec9a71e (349.0 MiB, 1.83s)
+step 40 loss 7.5555 lr 0.000102 446ms
+[ckpt] step 40 -> /root/qual-ckpt8/qual-det-B/ckpt-000000040-057e538a (349.0 MiB, 1.68s)
+{"steps_run": 20, "final_step": 40, "tokens_per_s_median": 147053.85770658063, "step_ms_median": 445.6598488613963, "peak_vram_gib": 11.510214805603027, "final_param_sha256": "de8ed31dad2f410e711cd8d2551d8ecec15fbf6714e387417e5df6c2a067b7be"}

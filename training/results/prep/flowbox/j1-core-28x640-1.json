@@ -1,0 +1,48 @@
+{
+ "utc": "2026-10-08T22:12:44.676375+00:00",
+ "run_id": "run-cf86b12c",
+ "n_params": 148315264,
+ "steps_run": 15,
+ "tokens_per_s_median": 9540.330491142813,
+ "step_ms_median": 429.33523149986286,
+ "step_ms_p90": 429.8671497963369,
+ "peak_vram_gib": 4.361298561096191,
+ "first_step_s": 83.1051220149966,
+ "tokens_per_step": 4096,
+ "contract_sha256": "cf86b12cfb7184636dfd4393ad4382a67de23be24b0815b1b3d0c09ed050b8b5",
+ "config": {
+  "preset": "j1-core-28x640",
+  "precision": "fp16",
+  "gqa_kernel": "expand",
+  "micro_bs": 1,
+  "accum": 2,
+  "seq_len": 2048,
+  "compile": true,
+  "vocab": 32768,
+  "device": "cuda"
+ },
+ "code": {
+  "package_sha256": "d00ca2426881ac863038b317143b7f6e74e38718434d403174141fbb41b1eb82",
+  "files": {
+   "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "ckpt.py": "72b5bff0857eb6899a48f6f23cf44ae5342a5356dffb1101b6747549eb3aee19",
+   "data.py": "df328a4656d0acb8cdf75aa0ad13dd98d1a4bc64ccbe80dda269437f45def62b",
+   "model.py": "1496b57baccca22ed444f5c6ecaac3998eea336a1dcd1cfc1c7c3e380688a098",
+   "replicate.py": "38a22c16c408ffc4eb738efc57a9328d88abdfc03911a76d888da4a0d6222d1c",
+   "store.py": "6c28047f8e6f12b42ffff401f2003fb8a839602302269de4d7881843c9ada258",
+   "timeaudit.py": "7eca0697e4fcff983f107627a076287f98b12b49da1442c9dd7152a2728958a5",
+   "timelog.py": "20b4eab910655eafbb93b70fca28c00fa193a36e074bfd14b0904822ee53a86d",
+   "train.py": "6b10556b55bda6833c06a281aee8e0885d5d3793efdc732ca1b434894973ed33"
+  },
+  "git_revision": null
+ },
+ "deps": {
+  "python": "3.12.3",
+  "torch": "2.8.0+cu128",
+  "numpy": "2.1.2",
+  "cuda_runtime": "12.8",
+  "cudnn": 91002,
+  "device": "NVIDIA GeForce RTX 2060"
+ },
+ "note": "synthetic tokens; CPU contended by the corpus rebuild"
+}

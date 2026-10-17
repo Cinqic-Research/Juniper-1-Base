@@ -1,0 +1,856 @@
+{
+ "arxiv-papers": {
+  "bytes_by_stage": {
+   "candidate": 18679982728,
+   "contamination": 24798689,
+   "privacy": 108187733,
+   "quality": 667302734
+  },
+  "bytes_in": 19480271884,
+  "contamination_benchmarks": {
+   "arc": 36,
+   "bbh": 36,
+   "canary:26b5c67b": 8,
+   "gptoss-qualification": 17,
+   "gsm8k": 110,
+   "hellaswag": 12,
+   "humaneval": 28,
+   "humanevalplus": 25,
+   "juniperbench-code": 1,
+   "math": 41,
+   "mbpp": 29,
+   "mbppplus": 10,
+   "mmlu": 55
+  },
+  "docs_in": 295424,
+  "kinds": {
+   "math": 173791,
+   "technical": 114427
+  },
+  "mb_per_cpu_second": 1.035825992382425,
+  "reasons": {
+   "contamination.arc": 36,
+   "contamination.bbh": 36,
+   "contamination.canary": 8,
+   "contamination.gptoss-qualification": 17,
+   "contamination.gsm8k": 110,
+   "contamination.hellaswag": 12,
+   "contamination.humaneval": 28,
+   "contamination.humanevalplus": 25,
+   "contamination.juniperbench-code": 1,
+   "contamination.math": 41,
+   "contamination.mbpp": 29,
+   "contamination.mbppplus": 10,
+   "contamination.mmlu": 55,
+   "privacy.pii.payment_card": 1181,
+   "privacy.pii.us_ssn": 4,
+   "privacy.secret.aws_access_key": 3,
+   "privacy.secret.jwt": 2,
+   "privacy.secret.openai_key": 7,
+   "privacy.secret.password_assignment": 2,
+   "privacy.secret.slack_token": 1,
+   "quality.binary_or_base64": 1,
+   "quality.corrupt_decoding": 1,
+   "quality.math.alpha_words": 8,
+   "quality.math.duplicate_lines": 863,
+   "quality.math.duplicate_ngrams": 2178,
+   "quality.math.duplicate_paragraphs": 290,
+   "quality.math.line_length": 4,
+   "quality.math.mean_word_length": 457,
+   "quality.math.non_latin_script": 1,
+   "quality.math.not_english": 59,
+   "quality.math.stopwords": 1,
+   "quality.math.symbol_ratio": 11,
+   "quality.math.too_long": 2,
+   "quality.math.too_short": 3,
+   "quality.math.top_ngram_repetition": 778,
+   "quality.mojibake": 1,
+   "quality.spam_terms": 38,
+   "quality.technical.alpha_words": 20,
+   "quality.technical.bullet_lines": 2,
+   "quality.technical.duplicate_lines": 134,
+   "quality.technical.duplicate_ngrams": 1810,
+   "quality.technical.duplicate_paragraphs": 183,
+   "quality.technical.ellipsis_lines": 1,
+   "quality.technical.line_length": 1,
+   "quality.technical.mean_word_length": 7,
+   "quality.technical.non_latin_script": 1,
+   "quality.technical.not_english": 92,
+   "quality.technical.stopwords": 163,
+   "quality.technical.symbol_ratio": 3,
+   "quality.technical.too_long": 1,
+   "quality.technical.too_short": 174,
+   "quality.technical.top_ngram_repetition": 53
+  },
+  "redactions": {
+   "email": 16616,
+   "home_path_user": 1049,
+   "ipv4": 3531,
+   "phone": 713
+  },
+  "seconds": 18806.510000000002,
+  "stages": {
+   "candidate": 288218,
+   "contamination": 291,
+   "privacy": 1199,
+   "quality": 5716
+  },
+  "units": 8
+ },
+ "cinqic-aaa-docs": {
+  "bytes_by_stage": {
+   "candidate": 504773,
+   "contamination": 5239,
+   "quality": 121328,
+   "selection": 46057
+  },
+  "bytes_in": 677397,
+  "contamination_benchmarks": {
+   "aaa-exams": 1
+  },
+  "docs_in": 64,
+  "kinds": {
+   "prose": 52
+  },
+  "mb_per_cpu_second": 0.16767252475247527,
+  "reasons": {
+   "contamination.aaa-exams": 1,
+   "quality.prose.alpha_words": 5,
+   "quality.prose.duplicate_lines": 1,
+   "quality.prose.duplicate_ngrams": 3,
+   "quality.prose.not_english": 8,
+   "quality.prose.stopwords": 2,
+   "quality.prose.too_short": 2,
+   "quality.prose.top_ngram_repetition": 2,
+   "selection.deny_term": 2
+  },
+  "redactions": {
+   "ipv4": 3
+  },
+  "seconds": 4.04,
+  "stages": {
+   "candidate": 52,
+   "contamination": 1,
+   "quality": 9,
+   "selection": 2
+  },
+  "units": 1
+ },
+ "cinqic-calculator-docs": {
+  "bytes_by_stage": {
+   "candidate": 25304
+  },
+  "bytes_in": 25304,
+  "contamination_benchmarks": {},
+  "docs_in": 5,
+  "kinds": {
+   "prose": 5
+  },
+  "mb_per_cpu_second": 0.0066414698162729656,
+  "reasons": {},
+  "redactions": {},
+  "seconds": 3.81,
+  "stages": {
+   "candidate": 5
+  },
+  "units": 1
+ },
+ "cinqic-juniper-app-docs": {
+  "bytes_by_stage": {
+   "candidate": 124614,
+   "quality": 6905,
+   "selection": 42044
+  },
+  "bytes_in": 173563,
+  "contamination_benchmarks": {},
+  "docs_in": 67,
+  "kinds": {
+   "prose": 52
+  },
+  "mb_per_cpu_second": 0.04484832041343669,
+  "reasons": {
+   "quality.prose.duplicate_lines": 1,
+   "quality.prose.duplicate_ngrams": 1,
+   "quality.prose.duplicate_paragraphs": 1,
+   "quality.prose.not_english": 6,
+   "quality.prose.stopwords": 1,
+   "quality.prose.symbol_ratio": 3,
+   "quality.prose.too_short": 2,
+   "quality.prose.top_ngram_repetition": 1,
+   "selection.deny_term": 5
+  },
+  "redactions": {
+   "email": 1
+  },
+  "seconds": 3.87,
+  "stages": {
+   "candidate": 52,
+   "quality": 10,
+   "selection": 5
+  },
+  "units": 1
+ },
+ "finemath-4plus": {
+  "bytes_by_stage": {
+   "candidate": 4086040718,
+   "contamination": 6359574,
+   "privacy": 13026072,
+   "quality": 1316733966
+  },
+  "bytes_in": 5422160330,
+  "contamination_benchmarks": {
+   "arc": 7,
+   "gptoss-qualification": 1,
+   "gsm8k": 15,
+   "hellaswag": 9,
+   "humaneval": 8,
+   "math": 887,
+   "mbpp": 45,
+   "mbppplus": 7,
+   "mmlu": 38
+  },
+  "docs_in": 1065513,
+  "kinds": {
+   "math": 848389
+  },
+  "mb_per_cpu_second": 0.7949204487311995,
+  "reasons": {
+   "contamination.arc": 7,
+   "contamination.gptoss-qualification": 1,
+   "contamination.gsm8k": 15,
+   "contamination.hellaswag": 9,
+   "contamination.humaneval": 8,
+   "contamination.math": 887,
+   "contamination.mbpp": 45,
+   "contamination.mbppplus": 7,
+   "contamination.mmlu": 38,
+   "privacy.pii.payment_card": 148,
+   "privacy.pii.us_ssn": 11,
+   "privacy.secret.aws_access_key": 1,
+   "privacy.secret.credential_url": 1,
+   "privacy.secret.password_assignment": 4,
+   "privacy.secret.private_key": 6,
+   "privacy.secret.slack_token": 1,
+   "quality.binary_or_base64": 164,
+   "quality.corrupt_decoding": 978,
+   "quality.math.alpha_words": 11193,
+   "quality.math.bullet_lines": 1761,
+   "quality.math.duplicate_lines": 64881,
+   "quality.math.duplicate_ngrams": 116541,
+   "quality.math.duplicate_paragraphs": 39315,
+   "quality.math.ellipsis_lines": 6623,
+   "quality.math.line_length": 508,
+   "quality.math.mean_word_length": 3624,
+   "quality.math.non_latin_script": 2525,
+   "quality.math.not_english": 23095,
+   "quality.math.stopwords": 11956,
+   "quality.math.symbol_ratio": 4973,
+   "quality.math.too_long": 4,
+   "quality.math.too_short": 13711,
+   "quality.math.top_ngram_repetition": 33249,
+   "quality.mojibake": 6351,
+   "quality.spam_terms": 1278
+  },
+  "redactions": {
+   "email": 28453,
+   "home_path_user": 1406,
+   "ipv4": 4178,
+   "phone": 4410
+  },
+  "seconds": 6821.010000000001,
+  "stages": {
+   "candidate": 848389,
+   "contamination": 1006,
+   "privacy": 172,
+   "quality": 215946
+  },
+  "units": 24
+ },
+ "fineweb-edu-dedup": {
+  "bytes_by_stage": {
+   "candidate": 12044077959,
+   "contamination": 2173710,
+   "privacy": 7444097,
+   "quality": 622353229
+  },
+  "bytes_in": 12676048995,
+  "contamination_benchmarks": {
+   "arc": 8,
+   "hellaswag": 42,
+   "math": 12,
+   "mbpp": 7,
+   "mmlu": 67
+  },
+  "docs_in": 2650735,
+  "kinds": {
+   "math": 535,
+   "prose": 2539386,
+   "technical": 9144
+  },
+  "mb_per_cpu_second": 0.8529081589810356,
+  "reasons": {
+   "contamination.arc": 8,
+   "contamination.hellaswag": 42,
+   "contamination.math": 12,
+   "contamination.mbpp": 7,
+   "contamination.mmlu": 67,
+   "privacy.pii.payment_card": 92,
+   "privacy.pii.us_ssn": 4,
+   "privacy.secret.auth_header": 2,
+   "privacy.secret.aws_access_key": 14,
+   "privacy.secret.credential_url": 3,
+   "privacy.secret.jwt": 104,
+   "privacy.secret.password_assignment": 4,
+   "privacy.secret.private_key": 3,
+   "quality.binary_or_base64": 6,
+   "quality.corrupt_decoding": 626,
+   "quality.math.bullet_lines": 3,
+   "quality.math.ellipsis_lines": 5,
+   "quality.math.too_short": 2,
+   "quality.math.top_ngram_repetition": 9,
+   "quality.mojibake": 2707,
+   "quality.prose.alpha_words": 1419,
+   "quality.prose.bullet_lines": 7484,
+   "quality.prose.duplicate_lines": 22,
+   "quality.prose.duplicate_ngrams": 62531,
+   "quality.prose.ellipsis_lines": 12743,
+   "quality.prose.line_length": 275,
+   "quality.prose.mean_word_length": 64,
+   "quality.prose.non_latin_script": 598,
+   "quality.prose.not_english": 5265,
+   "quality.prose.stopwords": 8,
+   "quality.prose.symbol_ratio": 71,
+   "quality.prose.too_short": 1554,
+   "quality.prose.top_ngram_repetition": 5984,
+   "quality.spam_terms": 4280,
+   "quality.technical.bullet_lines": 19,
+   "quality.technical.duplicate_ngrams": 2,
+   "quality.technical.ellipsis_lines": 12,
+   "quality.technical.non_latin_script": 1,
+   "quality.technical.top_ngram_repetition": 1
+  },
+  "redactions": {
+   "email": 5140,
+   "home_path_user": 2003,
+   "ipv4": 7186,
+   "phone": 57365
+  },
+  "seconds": 14862.150000000001,
+  "stages": {
+   "candidate": 2549065,
+   "contamination": 135,
+   "privacy": 226,
+   "quality": 101309
+  },
+  "units": 30
+ },
+ "libretexts": {
+  "bytes_by_stage": {
+   "candidate": 345223230,
+   "contamination": 883569,
+   "extraction": 0,
+   "quality": 14063403
+  },
+  "bytes_in": 360170202,
+  "contamination_benchmarks": {
+   "mmlu": 10
+  },
+  "docs_in": 40049,
+  "kinds": {
+   "math": 8561,
+   "prose": 29831,
+   "technical": 47
+  },
+  "mb_per_cpu_second": 0.9230636407903843,
+  "reasons": {
+   "contamination.mmlu": 10,
+   "extraction.empty": 7,
+   "quality.corrupt_decoding": 2,
+   "quality.math.alpha_words": 7,
+   "quality.math.bullet_lines": 17,
+   "quality.math.duplicate_lines": 19,
+   "quality.math.duplicate_ngrams": 41,
+   "quality.math.not_english": 21,
+   "quality.math.top_ngram_repetition": 65,
+   "quality.prose.alpha_words": 173,
+   "quality.prose.bullet_lines": 178,
+   "quality.prose.duplicate_lines": 156,
+   "quality.prose.duplicate_ngrams": 600,
+   "quality.prose.ellipsis_lines": 11,
+   "quality.prose.line_length": 1,
+   "quality.prose.mean_word_length": 88,
+   "quality.prose.non_latin_script": 42,
+   "quality.prose.not_english": 490,
+   "quality.prose.stopwords": 16,
+   "quality.prose.symbol_ratio": 29,
+   "quality.prose.too_long": 1,
+   "quality.prose.too_short": 6,
+   "quality.prose.top_ngram_repetition": 74,
+   "quality.spam_terms": 13,
+   "quality.technical.top_ngram_repetition": 1
+  },
+  "redactions": {
+   "email": 6,
+   "home_path_user": 62,
+   "phone": 126
+  },
+  "seconds": 390.19,
+  "stages": {
+   "candidate": 38439,
+   "contamination": 10,
+   "extraction": 7,
+   "quality": 1593
+  },
+  "units": 1
+ },
+ "oercommons": {
+  "bytes_by_stage": {
+   "candidate": 46814327,
+   "contamination": 56886,
+   "extraction": 0,
+   "quality": 5007717
+  },
+  "bytes_in": 51878930,
+  "contamination_benchmarks": {
+   "mmlu": 3
+  },
+  "docs_in": 5249,
+  "kinds": {
+   "math": 13,
+   "prose": 4473,
+   "technical": 1
+  },
+  "mb_per_cpu_second": 1.2564526519738435,
+  "reasons": {
+   "contamination.mmlu": 3,
+   "extraction.empty": 5,
+   "quality.corrupt_decoding": 2,
+   "quality.prose.alpha_words": 10,
+   "quality.prose.bullet_lines": 3,
+   "quality.prose.duplicate_lines": 449,
+   "quality.prose.duplicate_ngrams": 604,
+   "quality.prose.ellipsis_lines": 2,
+   "quality.prose.line_length": 1,
+   "quality.prose.mean_word_length": 11,
+   "quality.prose.non_latin_script": 1,
+   "quality.prose.not_english": 41,
+   "quality.prose.stopwords": 14,
+   "quality.prose.symbol_ratio": 5,
+   "quality.prose.too_long": 1,
+   "quality.prose.too_short": 83,
+   "quality.prose.top_ngram_repetition": 119,
+   "quality.technical.duplicate_lines": 1,
+   "quality.technical.duplicate_ngrams": 1
+  },
+  "redactions": {
+   "email": 22,
+   "home_path_user": 17,
+   "phone": 15
+  },
+  "seconds": 41.29,
+  "stages": {
+   "candidate": 4487,
+   "contamination": 3,
+   "extraction": 5,
+   "quality": 754
+  },
+  "units": 1
+ },
+ "pressbooks": {
+  "bytes_by_stage": {
+   "candidate": 551786899,
+   "contamination": 961910,
+   "extraction": 2,
+   "privacy": 23594,
+   "quality": 23581222
+  },
+  "bytes_in": 576353627,
+  "contamination_benchmarks": {
+   "mmlu": 29
+  },
+  "docs_in": 54455,
+  "kinds": {
+   "math": 1539,
+   "prose": 50343,
+   "technical": 179
+  },
+  "mb_per_cpu_second": 0.9981704975667204,
+  "reasons": {
+   "contamination.mmlu": 29,
+   "extraction.empty": 20,
+   "privacy.pii.payment_card": 1,
+   "privacy.secret.aws_access_key": 1,
+   "quality.binary_or_base64": 1,
+   "quality.math.bullet_lines": 4,
+   "quality.math.duplicate_lines": 3,
+   "quality.math.duplicate_ngrams": 11,
+   "quality.math.top_ngram_repetition": 88,
+   "quality.mojibake": 4,
+   "quality.prose.alpha_words": 317,
+   "quality.prose.bullet_lines": 543,
+   "quality.prose.duplicate_lines": 144,
+   "quality.prose.duplicate_ngrams": 560,
+   "quality.prose.ellipsis_lines": 60,
+   "quality.prose.line_length": 3,
+   "quality.prose.mean_word_length": 148,
+   "quality.prose.non_latin_script": 35,
+   "quality.prose.not_english": 811,
+   "quality.prose.stopwords": 21,
+   "quality.prose.symbol_ratio": 23,
+   "quality.prose.too_long": 3,
+   "quality.prose.too_short": 26,
+   "quality.prose.top_ngram_repetition": 110,
+   "quality.spam_terms": 12,
+   "quality.technical.duplicate_lines": 3,
+   "quality.technical.duplicate_ngrams": 4,
+   "quality.technical.too_short": 3,
+   "quality.technical.top_ngram_repetition": 12
+  },
+  "redactions": {
+   "email": 233,
+   "home_path_user": 114,
+   "phone": 231
+  },
+  "seconds": 577.41,
+  "stages": {
+   "candidate": 52061,
+   "contamination": 29,
+   "extraction": 20,
+   "privacy": 2,
+   "quality": 2343
+  },
+  "units": 1
+ },
+ "python-peps": {
+  "bytes_by_stage": {
+   "candidate": 11324610,
+   "quality": 177
+  },
+  "bytes_in": 11324787,
+  "contamination_benchmarks": {},
+  "docs_in": 655,
+  "kinds": {
+   "technical": 654
+  },
+  "mb_per_cpu_second": 1.16750381443299,
+  "reasons": {
+   "quality.technical.not_english": 1,
+   "quality.technical.stopwords": 1,
+   "quality.technical.too_short": 1
+  },
+  "redactions": {
+   "email": 15,
+   "home_path_user": 27
+  },
+  "seconds": 9.7,
+  "stages": {
+   "candidate": 654,
+   "quality": 1
+  },
+  "units": 1
+ },
+ "stackexchange": {
+  "bytes_by_stage": {
+   "candidate": 20308387240,
+   "contamination": 1245230,
+   "privacy": 20340187,
+   "quality": 1082229136,
+   "selection": 679290822
+  },
+  "bytes_in": 22091492615,
+  "contamination_benchmarks": {
+   "hellaswag": 2,
+   "humaneval": 5,
+   "humanevalplus": 1,
+   "math": 221,
+   "mbpp": 7,
+   "mbppplus": 4,
+   "mmlu": 72
+  },
+  "docs_in": 7384277,
+  "kinds": {
+   "math": 1609720,
+   "technical": 5337799
+  },
+  "mb_per_cpu_second": 0.7126917867901872,
+  "reasons": {
+   "contamination.hellaswag": 2,
+   "contamination.humaneval": 5,
+   "contamination.humanevalplus": 1,
+   "contamination.math": 221,
+   "contamination.mbpp": 7,
+   "contamination.mbppplus": 4,
+   "contamination.mmlu": 72,
+   "privacy.pii.payment_card": 162,
+   "privacy.pii.us_ssn": 38,
+   "privacy.secret.auth_header": 268,
+   "privacy.secret.aws_access_key": 117,
+   "privacy.secret.aws_secret_key": 5,
+   "privacy.secret.credential_url": 463,
+   "privacy.secret.github_token": 2,
+   "privacy.secret.gitlab_token": 1,
+   "privacy.secret.google_api_key": 520,
+   "privacy.secret.jwt": 209,
+   "privacy.secret.openai_key": 6,
+   "privacy.secret.password_assignment": 1345,
+   "privacy.secret.private_key": 440,
+   "privacy.secret.sendgrid_key": 2,
+   "privacy.secret.slack_token": 9,
+   "privacy.secret.slack_webhook": 8,
+   "privacy.secret.stripe_key": 6,
+   "quality.binary_or_base64": 1360,
+   "quality.corrupt_decoding": 1240,
+   "quality.math.alpha_words": 1025,
+   "quality.math.duplicate_lines": 34345,
+   "quality.math.duplicate_ngrams": 37126,
+   "quality.math.duplicate_paragraphs": 5121,
+   "quality.math.ellipsis_lines": 396,
+   "quality.math.mean_word_length": 453,
+   "quality.math.non_latin_script": 23,
+   "quality.math.not_english": 654,
+   "quality.math.stopwords": 337,
+   "quality.math.symbol_ratio": 150,
+   "quality.math.too_short": 5495,
+   "quality.math.top_ngram_repetition": 16940,
+   "quality.mojibake": 444,
+   "quality.spam_terms": 926,
+   "quality.technical.alpha_words": 1104,
+   "quality.technical.duplicate_lines": 14076,
+   "quality.technical.duplicate_ngrams": 139706,
+   "quality.technical.duplicate_paragraphs": 1346,
+   "quality.technical.ellipsis_lines": 3721,
+   "quality.technical.line_length": 3,
+   "quality.technical.mean_word_length": 590,
+   "quality.technical.non_latin_script": 6155,
+   "quality.technical.not_english": 581,
+   "quality.technical.stopwords": 2824,
+   "quality.technical.symbol_ratio": 1765,
+   "quality.technical.too_short": 3977,
+   "quality.technical.top_ngram_repetition": 19656,
+   "selection.meta_site": 89034,
+   "selection.site": 101066
+  },
+  "redactions": {
+   "email": 17246,
+   "home_path_user": 196183,
+   "phone": 1899
+  },
+  "seconds": 30997.260000000002,
+  "stages": {
+   "candidate": 6947519,
+   "contamination": 308,
+   "privacy": 3424,
+   "quality": 242926,
+   "selection": 190100
+  },
+  "units": 11
+ },
+ "stackv2-edu": {
+  "bytes_by_stage": {
+   "candidate": 15391456772,
+   "contamination": 3265636,
+   "extraction": 26,
+   "privacy": 66312470,
+   "quality": 1916963298,
+   "selection": 22949764776
+  },
+  "bytes_in": 40327762978,
+  "contamination_benchmarks": {
+   "arc": 1,
+   "bbh": 3,
+   "canary:26b5c67b": 50,
+   "humaneval": 87,
+   "humanevalplus": 71,
+   "juniperbench-code": 27,
+   "math": 1,
+   "mbpp": 79,
+   "mbppplus": 13,
+   "mmlu": 3
+  },
+  "docs_in": 9515163,
+  "kinds": {
+   "code": 3819695,
+   "math": 4440,
+   "technical": 499744
+  },
+  "mb_per_cpu_second": 2.372261819642805,
+  "reasons": {
+   "contamination.arc": 1,
+   "contamination.bbh": 3,
+   "contamination.canary": 50,
+   "contamination.humaneval": 87,
+   "contamination.humanevalplus": 71,
+   "contamination.juniperbench-code": 27,
+   "contamination.math": 1,
+   "contamination.mbpp": 79,
+   "contamination.mbppplus": 13,
+   "contamination.mmlu": 3,
+   "extraction.empty": 217,
+   "privacy.pii.payment_card": 287,
+   "privacy.pii.us_ssn": 37,
+   "privacy.secret.auth_header": 288,
+   "privacy.secret.aws_access_key": 111,
+   "privacy.secret.aws_secret_key": 27,
+   "privacy.secret.credential_url": 1265,
+   "privacy.secret.github_token": 16,
+   "privacy.secret.gitlab_token": 1,
+   "privacy.secret.google_api_key": 771,
+   "privacy.secret.jwt": 465,
+   "privacy.secret.openai_key": 5,
+   "privacy.secret.password_assignment": 4000,
+   "privacy.secret.private_key": 465,
+   "privacy.secret.sendgrid_key": 10,
+   "privacy.secret.slack_token": 97,
+   "privacy.secret.slack_webhook": 77,
+   "privacy.secret.stripe_key": 3,
+   "privacy.secret.twilio_key": 2,
+   "quality.binary_or_base64": 884,
+   "quality.code.data_heavy": 823,
+   "quality.code.generated": 12953,
+   "quality.code.long_lines": 4494,
+   "quality.code.low_alnum": 15,
+   "quality.code.non_latin_script": 20887,
+   "quality.code.too_large": 412,
+   "quality.code.too_short": 3739,
+   "quality.code.vendored_or_minified": 29522,
+   "quality.corrupt_decoding": 870,
+   "quality.math.alpha_words": 2,
+   "quality.math.bullet_lines": 15,
+   "quality.math.duplicate_lines": 114,
+   "quality.math.duplicate_ngrams": 307,
+   "quality.math.duplicate_paragraphs": 52,
+   "quality.math.mean_word_length": 29,
+   "quality.math.non_latin_script": 2,
+   "quality.math.not_english": 80,
+   "quality.math.stopwords": 30,
+   "quality.math.symbol_ratio": 21,
+   "quality.math.too_short": 44,
+   "quality.math.top_ngram_repetition": 124,
+   "quality.mojibake": 321,
+   "quality.spam_terms": 11,
+   "quality.technical.alpha_words": 6,
+   "quality.technical.bullet_lines": 479,
+   "quality.technical.duplicate_lines": 3013,
+   "quality.technical.duplicate_ngrams": 26319,
+   "quality.technical.duplicate_paragraphs": 1304,
+   "quality.technical.ellipsis_lines": 55,
+   "quality.technical.mean_word_length": 985,
+   "quality.technical.non_latin_script": 344,
+   "quality.technical.not_english": 3921,
+   "quality.technical.stopwords": 5389,
+   "quality.technical.symbol_ratio": 3749,
+   "quality.technical.too_long": 1,
+   "quality.technical.too_short": 976,
+   "quality.technical.top_ngram_repetition": 5877,
+   "selection.edu_score": 5044317,
+   "selection.generated_code": 1704,
+   "selection.vendored_code": 23124
+  },
+  "redactions": {
+   "email": 480915,
+   "home_path_user": 95678,
+   "ipv4": 38951,
+   "phone": 1294
+  },
+  "seconds": 16999.710000000003,
+  "stages": {
+   "candidate": 4323879,
+   "contamination": 258,
+   "extraction": 217,
+   "privacy": 7302,
+   "quality": 114362,
+   "selection": 5069145
+  },
+  "units": 14
+ },
+ "wikimedia": {
+  "bytes_by_stage": {
+   "candidate": 18890323551,
+   "contamination": 637767,
+   "privacy": 2536724,
+   "quality": 1935107404,
+   "selection": 36586921434
+  },
+  "bytes_in": 57415526880,
+  "contamination_benchmarks": {
+   "bbh": 1,
+   "hellaswag": 2,
+   "math": 1,
+   "mmlu": 23
+  },
+  "docs_in": 16270586,
+  "kinds": {
+   "math": 37789,
+   "prose": 5094285,
+   "technical": 11839
+  },
+  "mb_per_cpu_second": 1.875709591921341,
+  "reasons": {
+   "contamination.bbh": 1,
+   "contamination.hellaswag": 2,
+   "contamination.math": 1,
+   "contamination.mmlu": 23,
+   "privacy.pii.payment_card": 81,
+   "privacy.pii.us_ssn": 5,
+   "privacy.secret.aws_access_key": 17,
+   "privacy.secret.password_assignment": 2,
+   "quality.binary_or_base64": 3,
+   "quality.corrupt_decoding": 25,
+   "quality.math.alpha_words": 26,
+   "quality.math.bullet_lines": 87,
+   "quality.math.duplicate_lines": 149,
+   "quality.math.duplicate_ngrams": 373,
+   "quality.math.duplicate_paragraphs": 40,
+   "quality.math.ellipsis_lines": 4,
+   "quality.math.mean_word_length": 55,
+   "quality.math.not_english": 135,
+   "quality.math.stopwords": 52,
+   "quality.math.too_short": 922,
+   "quality.math.top_ngram_repetition": 1273,
+   "quality.mojibake": 10,
+   "quality.prose.alpha_words": 43771,
+   "quality.prose.bullet_lines": 56923,
+   "quality.prose.duplicate_lines": 30076,
+   "quality.prose.duplicate_ngrams": 262680,
+   "quality.prose.duplicate_paragraphs": 7754,
+   "quality.prose.ellipsis_lines": 306,
+   "quality.prose.line_length": 5,
+   "quality.prose.mean_word_length": 1248,
+   "quality.prose.non_latin_script": 2089,
+   "quality.prose.not_english": 264001,
+   "quality.prose.stopwords": 210990,
+   "quality.prose.symbol_ratio": 4491,
+   "quality.prose.too_long": 1,
+   "quality.prose.too_short": 1152245,
+   "quality.prose.top_ngram_repetition": 662224,
+   "quality.spam_terms": 6421,
+   "quality.technical.bullet_lines": 7,
+   "quality.technical.duplicate_lines": 24,
+   "quality.technical.duplicate_ngrams": 319,
+   "quality.technical.duplicate_paragraphs": 16,
+   "quality.technical.ellipsis_lines": 1,
+   "quality.technical.line_length": 1,
+   "quality.technical.non_latin_script": 12,
+   "quality.technical.not_english": 9,
+   "quality.technical.stopwords": 101,
+   "quality.technical.too_short": 159,
+   "quality.technical.top_ngram_repetition": 357,
+   "selection.namespace": 5854621,
+   "selection.wiki": 3610642
+  },
+  "redactions": {
+   "email": 359,
+   "home_path_user": 778,
+   "phone": 620
+  },
+  "seconds": 30610.03,
+  "stages": {
+   "candidate": 5143913,
+   "contamination": 27,
+   "privacy": 105,
+   "quality": 1661278,
+   "selection": 9465263
+  },
+  "units": 35
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "build_identity": "07c062463b406a7cc508cfac0a96be9fd6daf44cf4522f30b83e7c8ef94d9556",
+ "bytes_by_stage": {
+  "candidate": 38202498,
+  "contamination": 56886,
+  "extraction": 0,
+  "quality": 13619546
+ },
+ "bytes_in": 51878930,
+ "chars_in": 51675057,
+ "contamination_benchmarks": {
+  "mmlu": 3
+ },
+ "docs_in": 5249,
+ "kinds": {
+  "math": 8,
+  "prose": 3714,
+  "technical": 1
+ },
+ "outputs": [
+  {
+   "file": "candidates/oercommons/oercommons-0000.parquet",
+   "rows": 3723,
+   "sha256": "0db760c06c557d01541850844dc1c87595cb8cf9b9085b5f05b65efd00e9a521"
+  },
+  {
+   "file": "rejects/oercommons/oercommons-0000.parquet",
+   "rows": 1526,
+   "sha256": "e266e124b6801cb5874778154fea14f27a549a31a67472bcbd6bee7e13b39646"
+  },
+  {
+   "file": "signatures/oercommons/oercommons-0000.npy",
+   "rows": 3723,
+   "sha256": "9a3c083bdd1de051d32fbefd1035bf58221e0e09b593943d884c06094a3f480d"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "oercommons-0000.json.gz",
+ "reasons": {
+  "contamination.mmlu": 3,
+  "extraction.empty": 5,
+  "quality.corrupt_decoding": 2,
+  "quality.math.duplicate_ngrams": 5,
+  "quality.prose.alpha_words": 42,
+  "quality.prose.bullet_lines": 3,
+  "quality.prose.duplicate_lines": 638,
+  "quality.prose.duplicate_ngrams": 1357,
+  "quality.prose.ellipsis_lines": 2,
+  "quality.prose.line_length": 1,
+  "quality.prose.mean_word_length": 11,
+  "quality.prose.non_latin_script": 1,
+  "quality.prose.not_english": 41,
+  "quality.prose.stopwords": 14,
+  "quality.prose.symbol_ratio": 5,
+  "quality.prose.too_long": 1,
+  "quality.prose.too_short": 83,
+  "quality.prose.top_ngram_repetition": 215,
+  "quality.technical.duplicate_lines": 1,
+  "quality.technical.duplicate_ngrams": 1
+ },
+ "redactions": {
+  "email": 19,
+  "home_path_user": 14,
+  "phone": 15
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 32.6,
+ "slow_documents": [],
+ "source_id": "oercommons",
+ "stages": {
+  "candidate": 3723,
+  "contamination": 3,
+  "extraction": 5,
+  "quality": 1518
+ },
+ "unit_id": "oercommons-0000"
+}

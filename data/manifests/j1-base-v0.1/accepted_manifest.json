@@ -1,0 +1,2750 @@
+{
+ "accepted_by_split": {
+  "test": 2610,
+  "train": 2961724,
+  "validation": 2583
+ },
+ "build_id": "j1-base-v0.1",
+ "build_identity": "13acc9a46f940b393ca950b21fe147911cd3a9307acd7c311f58e7b459ff2e86",
+ "candidates": 20196733,
+ "code": {
+  "commit": "07dfdba15e493ad0bed1a5124f4bff127d4c7dcc",
+  "dirty": false,
+  "package_version": "0.1.0"
+ },
+ "deduplicated_away": 154587,
+ "finalize_version": "j1.finalize.v1",
+ "heldout_index": {
+  "exclusive_ngrams": 3449558,
+  "heldout_docs": 5193,
+  "shared_ngrams_dropped": 18110
+ },
+ "not_selected": 17074984,
+ "schema": "j1.accepted-manifest.v1",
+ "selection": {
+  "arxiv-papers": {
+   "available_bytes_after_dedup": {
+    "*": 18676779954
+   },
+   "budget_bytes": {
+    "*": 680000000
+   },
+   "bytes_per_token": 3.4,
+   "mode": "quota",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 680086090
+   },
+   "selected_documents": {
+    "*": 10525
+   }
+  },
+  "cinqic-aaa-docs": {
+   "available_bytes_after_dedup": {
+    "*": 504722
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 504722
+   },
+   "selected_documents": {
+    "*": 52
+   }
+  },
+  "cinqic-calculator-docs": {
+   "available_bytes_after_dedup": {
+    "*": 25299
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 25299
+   },
+   "selected_documents": {
+    "*": 5
+   }
+  },
+  "cinqic-juniper-app-docs": {
+   "available_bytes_after_dedup": {
+    "*": 124556
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 124556
+   },
+   "selected_documents": {
+    "*": 52
+   }
+  },
+  "finemath-4plus": {
+   "available_bytes_after_dedup": {
+    "*": 3664044387
+   },
+   "budget_bytes": {
+    "*": 1470000000
+   },
+   "bytes_per_token": 3.5,
+   "mode": "quota",
+   "rank": "score",
+   "selected_bytes": {
+    "*": 1470120001
+   },
+   "selected_documents": {
+    "*": 298953
+   }
+  },
+  "fineweb-edu-dedup": {
+   "available_bytes_after_dedup": {
+    "*": 11979724205
+   },
+   "budget_bytes": {
+    "*": 4730000000
+   },
+   "bytes_per_token": 4.3,
+   "mode": "quota",
+   "rank": "score",
+   "selected_bytes": {
+    "*": 4730002070
+   },
+   "selected_documents": {
+    "*": 970641
+   }
+  },
+  "libretexts": {
+   "available_bytes_after_dedup": {
+    "*": 321959108
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 321959108
+   },
+   "selected_documents": {
+    "*": 36144
+   }
+  },
+  "oercommons": {
+   "available_bytes_after_dedup": {
+    "*": 37642070
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 37642070
+   },
+   "selected_documents": {
+    "*": 3890
+   }
+  },
+  "pressbooks": {
+   "available_bytes_after_dedup": {
+    "*": 455991906
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 455991906
+   },
+   "selected_documents": {
+    "*": 43946
+   }
+  },
+  "python-peps": {
+   "available_bytes_after_dedup": {
+    "*": 11244605
+   },
+   "budget_bytes": {},
+   "bytes_per_token": null,
+   "mode": "all",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 11244605
+   },
+   "selected_documents": {
+    "*": 653
+   }
+  },
+  "stackexchange": {
+   "available_bytes_after_dedup": {
+    "*": 20293550765
+   },
+   "budget_bytes": {
+    "*": 1638000000
+   },
+   "bytes_per_token": 3.9,
+   "mode": "quota",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 1638001252
+   },
+   "selected_documents": {
+    "*": 560132
+   }
+  },
+  "stackv2-edu": {
+   "available_bytes_after_dedup": {
+    "*": 9097593443,
+    "Markdown": 1790704295,
+    "Python": 4448500936
+   },
+   "budget_bytes": {
+    "*": 748000000,
+    "Markdown": 170000000,
+    "Python": 1122000000
+   },
+   "bytes_per_token": 3.4,
+   "mode": "quota",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 748000300,
+    "Markdown": 170000182,
+    "Python": 1122003610
+   },
+   "selected_documents": {
+    "*": 222616,
+    "Markdown": 47757,
+    "Python": 282141
+   }
+  },
+  "wikimedia": {
+   "available_bytes_after_dedup": {
+    "*": 18846052350
+   },
+   "budget_bytes": {
+    "*": 1806000000
+   },
+   "bytes_per_token": 4.3,
+   "mode": "quota",
+   "rank": "keyed hash",
+   "selected_bytes": {
+    "*": 1806001899
+   },
+   "selected_documents": {
+    "*": 489655
+   }
+  }
+ },
+ "shards": [
+  {
+   "file": "test/arxiv-papers/arxiv-papers-0000.parquet",
+   "rows": 1,
+   "sha256": "066c5aabfd5a3a7b7856ec4242240c7642ec77fcb582bdc9f0258ce3eb2a2090",
+   "source_id": "arxiv-papers",
+   "split": "test"
+  },
+  {
+   "file": "test/arxiv-papers/arxiv-papers-0002.parquet",
+   "rows": 3,
+   "sha256": "5343ddf9c5821508e426295845c6d24fbd10d01e73292f6fd7248a2bdc1de53d",
+   "source_id": "arxiv-papers",
+   "split": "test"
+  },
+  {
+   "file": "test/arxiv-papers/arxiv-papers-0003.parquet",
+   "rows": 1,
+   "sha256": "e9102ea881a5bd8661fd0aeb2dafae1f01eddf289b5f440d2a36ffb7700e439d",
+   "source_id": "arxiv-papers",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00001-of-00064.r00000000.parquet",
+   "rows": 4,
+   "sha256": "ca8c1f81939996597b6318ae04a8eec12436d743646883e07e75049f112be119",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00004-of-00064.r00000000.parquet",
+   "rows": 4,
+   "sha256": "15b07e966d83dedf0792a2b5c4e4dc767cc936c27ddeba485864921780da9bd5",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00005-of-00064.r00000000.parquet",
+   "rows": 7,
+   "sha256": "8c1e1f8ce1b63fc1c1b9a6d86d3ebb8c3e5cbc04141b26a4c61f42944a14a985",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00012-of-00064.r00100000.parquet",
+   "rows": 1,
+   "sha256": "5277412cd8192accebe5c05c00b7feac61bb3af8d1c1888cd23b31077b497f8a",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00013-of-00064.r00100000.parquet",
+   "rows": 2,
+   "sha256": "c2b08107e42886e73bad662a37a69af5fa9ed0dbc62e2ed802d6af2e8e787e2f",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00016-of-00064.r00000000.parquet",
+   "rows": 6,
+   "sha256": "e3e9b8ff4acf8a9e8991fe0c13dd4334237db1bbf7ae957f9c620713bbd10d0f",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00019-of-00064.r00000000.parquet",
+   "rows": 9,
+   "sha256": "7111de85706c8e9eca5bfb0f5ddb482fb7e03e5aa81e6e4837e97311864a38ad",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00020-of-00064.r00000000.parquet",
+   "rows": 7,
+   "sha256": "cb97181b3c7710141514fa3f4017cb2a981f184654a315aea1a7ff019e5daeef",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00024-of-00064.r00100000.parquet",
+   "rows": 1,
+   "sha256": "74406c641c967599beb0a6be735442d3fd11bd7b246ddd53660c24e14ffd81ef",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00026-of-00064.r00000000.parquet",
+   "rows": 9,
+   "sha256": "cf0e4eeb2d24c3d01c5003fbc315bfb66ccdbbe8a53d1528d8fa2e1935000522",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00029-of-00064.r00000000.parquet",
+   "rows": 3,
+   "sha256": "0e9c327e2b21efd1f3933abb5e21fd8c8aa4e493dd5b10a2b3f7aa023e12be19",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00031-of-00064.r00000000.parquet",
+   "rows": 3,
+   "sha256": "825334de8367718a701a50dcdf210954973736b0884ad7b20e001478c2b6ee90",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00053-of-00064.r00000000.parquet",
+   "rows": 2,
+   "sha256": "55850ddb648e1d14810375cb14051de9429a849f67ba8ed6cf5d8e7e413d0030",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/finemath-4plus/train-00054-of-00064.r00100000.parquet",
+   "rows": 1,
+   "sha256": "b2467bcb02350b67ce9cfbf543098fba979dfb0f8bcefd7d009bfff5a8194462",
+   "source_id": "finemath-4plus",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00003-of-00234.r00200000.parquet",
+   "rows": 41,
+   "sha256": "49679a3b5d92d230522825d99d64c3f401b29685e9ad3cb9b470ef87846d46e7",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00003-of-00234.r00400000.parquet",
+   "rows": 31,
+   "sha256": "daed238291b38b837ad9266b88c381bc66529d5a77eca9c3eae2d3c2ae059072",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00006-of-00234.r00100000.parquet",
+   "rows": 29,
+   "sha256": "496d9eaa4206c1331e083d2d73a285ef02d59442a5e390a0e6ac7096be3ae8b1",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00006-of-00234.r00200000.parquet",
+   "rows": 38,
+   "sha256": "9fbe83933f4f40ab5ef0286dd252aac4d151c5a33f5ff031df766521567f5bff",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00006-of-00234.r00700000.parquet",
+   "rows": 42,
+   "sha256": "92589a1cefe1c553185ef5f126f8de071f53a5ea2eeb82a6b615ccf38e963f7e",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00069-of-00234.r00500000.parquet",
+   "rows": 34,
+   "sha256": "9b7162a7d19bae3f5d054c57ec444235854b921fb4982dbc387cfc30ef935f12",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00069-of-00234.r00800000.parquet",
+   "rows": 2,
+   "sha256": "43cc41f677ff5805e50493c68c79d1aa9c2ed72317f780c3810f97e7da87eaa1",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00091-of-00234.r00100000.parquet",
+   "rows": 30,
+   "sha256": "7f4a25e520f20389dca87114432f0171c51d5fda6b55c8a91dddff5101fcec9d",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00091-of-00234.r00400000.parquet",
+   "rows": 43,
+   "sha256": "aa5a528a68913b1dae2153d3195cfdadf50d27bdfd8c2a92589b9c472adf76b1",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00091-of-00234.r00500000.parquet",
+   "rows": 21,
+   "sha256": "a76dfd67f2901eb9881cc726c790fe38685808c60120f2a42cea54819923dadc",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00095-of-00234.r00700000.parquet",
+   "rows": 25,
+   "sha256": "65f855dfe255ffe2397faea79fc0ec7834f5a95887a594e5345257d20ec1f7d8",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00095-of-00234.r00800000.parquet",
+   "rows": 4,
+   "sha256": "1ba3c2d64664478a1ecc52ab16156820397b793e009f5de63fd1c8e75a975312",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00099-of-00234.r00000000.parquet",
+   "rows": 25,
+   "sha256": "970e0e06f8225c997a30311b156adf4e9d606ed443e220265aaf4e73393395d7",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00099-of-00234.r00300000.parquet",
+   "rows": 15,
+   "sha256": "116d659b8ba3e013db5f1d5d4e6103b88ccc787cce4b1a0c946e74f04914f327",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00099-of-00234.r00600000.parquet",
+   "rows": 21,
+   "sha256": "487ee817746c9538d4da0e7eca48b85f9d0ec9343f5b8e7ec551c2602535c8c8",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00109-of-00234.r00200000.parquet",
+   "rows": 24,
+   "sha256": "31e09dccc76607be0da66987a180669bc3c9e74a398ce27a10a8179bb6f1bf45",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00181-of-00234.r00000000.parquet",
+   "rows": 21,
+   "sha256": "6cdcfd2df2fbb22aef96e5a5e966e471eca1079782701bde42dcd75cac494792",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00181-of-00234.r00300000.parquet",
+   "rows": 20,
+   "sha256": "b98cb6a488de15afff638adf215fecf867cad8df77a1a42acd50b4169e4e8048",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00181-of-00234.r00400000.parquet",
+   "rows": 23,
+   "sha256": "2eddbdbe64706511aad43bd4cc98553dd72c3399a15049ff36bddbc875051f76",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00181-of-00234.r00800000.parquet",
+   "rows": 1,
+   "sha256": "9106cab0345fa9d810987a675c5ed6fcd8818459f3d3d8a6d5120ddd13ddff0e",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00205-of-00234.r00000000.parquet",
+   "rows": 21,
+   "sha256": "ec5ca9986b4a8032221550d251cdf3be2e8b44856d5d0cac7b9b9b95d90c4681",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00205-of-00234.r00100000.parquet",
+   "rows": 20,
+   "sha256": "f8abbf52b89de9d3b8089027414f6e3580fb257987d050a3523dabeb41e3bf6a",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00205-of-00234.r00200000.parquet",
+   "rows": 32,
+   "sha256": "c949e6c9f5fad39378f145ba584718f557141f8c07a52540d677fa8b745c513c",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00205-of-00234.r00600000.parquet",
+   "rows": 30,
+   "sha256": "e728c639e2118db03388a696b4747df1a8729acacbb0f3c675ad179d1eed2181",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00205-of-00234.r00700000.parquet",
+   "rows": 32,
+   "sha256": "8f6c532f0bdc16206a2bf825cd61b053e610d64aa57989d6db2aa3c882bc57b6",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00205-of-00234.r00800000.parquet",
+   "rows": 4,
+   "sha256": "edcad40322676aaf0a1aaeb170ead2a215ee82760237d7649ba622c72e9baa86",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00217-of-00234.r00100000.parquet",
+   "rows": 26,
+   "sha256": "2a14324eda6c830b7ee7789f0bb30026eb903ea27115750f0a78632b7982d937",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00217-of-00234.r00500000.parquet",
+   "rows": 28,
+   "sha256": "344932652fe19c856bb72ff9fc787e7aecc5a6e9efe984b440c9c80f26f876d7",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00217-of-00234.r00700000.parquet",
+   "rows": 34,
+   "sha256": "8b5a7d19569931e6ceb5ac78c2a5a0358e490494ec63de5b114e4a828c27f6b3",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/fineweb-edu-dedup/train-00219-of-00234.r00500000.parquet",
+   "rows": 20,
+   "sha256": "93d86d296e18f31f2493496e7de2dcacd523f74a6de1b5d628391c3153138452",
+   "source_id": "fineweb-edu-dedup",
+   "split": "test"
+  },
+  {
+   "file": "test/libretexts/libretexts-0000.parquet",
+   "rows": 149,
+   "sha256": "eab3bba3aa76e96ab69de6ff13dc4c055e310a609287fe88933071c9d2ee6fd5",
+   "source_id": "libretexts",
+   "split": "test"
+  },
+  {
+   "file": "test/oercommons/oercommons-0000.parquet",
+   "rows": 4,
+   "sha256": "1a373b05c2353991716c067f613f842a882d083b5c06204970fcc1125fcdef3c",
+   "source_id": "oercommons",
+   "split": "test"
+  },
+  {
+   "file": "test/pressbooks/pressbooks-0000.parquet",
+   "rows": 82,
+   "sha256": "4e71d0664ecb1839d714f135791603d1488c7ebba9bdab2692e60f36fc205086",
+   "source_id": "pressbooks",
+   "split": "test"
+  },
+  {
+   "file": "test/stackexchange/stackexchange-dolma-0001.parquet",
+   "rows": 53,
+   "sha256": "08809db77d4c3519b20f8fdd3fa295df0fff17f403292d564c6639f086f872ea",
+   "source_id": "stackexchange",
+   "split": "test"
+  },
+  {
+   "file": "test/stackexchange/stackexchange-dolma-0002.parquet",
+   "rows": 61,
+   "sha256": "0384c1b235268cd8aee5a1ed787eec306202a0d6f8016fc1e15daea8dc4285fa",
+   "source_id": "stackexchange",
+   "split": "test"
+  },
+  {
+   "file": "test/stackexchange/stackexchange-dolma-0003.parquet",
+   "rows": 37,
+   "sha256": "2e50d54cca3468f34710b8f18c369081378554340eff180fab871b2c6dc582ac",
+   "source_id": "stackexchange",
+   "split": "test"
+  },
+  {
+   "file": "test/stackexchange/stackexchange-dolma-0004.parquet",
+   "rows": 35,
+   "sha256": "a12185c285779bc19caa0bf254f23e873b63645da3d8b77f1da72f57b5c1f759",
+   "source_id": "stackexchange",
+   "split": "test"
+  },
+  {
+   "file": "test/stackexchange/stackexchange-dolma-0005.parquet",
+   "rows": 85,
+   "sha256": "fe9808464faac56bcd01f488d05c348a32a9cc4f1adc1d5fff4ddfa5f3d1bbde",
+   "source_id": "stackexchange",
+   "split": "test"
+  },
+  {
+   "file": "test/stackexchange/stackexchange-dolma-0006.parquet",
+   "rows": 52,
+   "sha256": "01a07dd1081ea74a40be7fffa97ca1a5c713cd6e818b8920cff8c713d36aa957",
+   "source_id": "stackexchange",
+   "split": "test"
+  },
+  {
+   "file": "test/stackexchange/stackexchange-dolma-0008.parquet",
+   "rows": 11,
+   "sha256": "effa0880fc5be8b3a3a47ac2a0cebef49c31d354ee6154c19ad44f965ea96202",
+   "source_id": "stackexchange",
+   "split": "test"
+  },
+  {
+   "file": "test/stackexchange/stackexchange-dolma-0021.parquet",
+   "rows": 55,
+   "sha256": "bf33176f18259a829ddd47df958d926ec6e5ae50dff681a923e31f14d0f1af24",
+   "source_id": "stackexchange",
+   "split": "test"
+  },
+  {
+   "file": "test/stackexchange/stackexchange-dolma-0028.parquet",
+   "rows": 43,
+   "sha256": "34629cba93cb0081a1bd685846c382321ac58c1c78218a99d5b3f2ca12625e7a",
+   "source_id": "stackexchange",
+   "split": "test"
+  },
+  {
+   "file": "test/stackexchange/stackexchange-dolma-0042.parquet",
+   "rows": 70,
+   "sha256": "a8853640c4dd80c525d3b13d37141eb10f93aad3ad04beb32b08e63b14e00d6e",
+   "source_id": "stackexchange",
+   "split": "test"
+  },
+  {
+   "file": "test/stackexchange/stackexchange-dolma-0043.parquet",
+   "rows": 43,
+   "sha256": "5f7c4cd2ebffbecf746bcb28328f594baaf9a076b87de7c21ee79abb486d1465",
+   "source_id": "stackexchange",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0007.parquet",
+   "rows": 32,
+   "sha256": "f6d8a2ce1d25b6183851bdb4766f051c33d937d918438c2d73d236ac20beb0c3",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0011.parquet",
+   "rows": 25,
+   "sha256": "929972bfef9bfe98cfdd584381ac5b13a06a835d0e77391d13ed4a18f4144d5a",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0018.parquet",
+   "rows": 19,
+   "sha256": "909f50241d08a3e8e5e8d3ee419dc9391cc11b872c662c80dca78058826906d4",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0026.parquet",
+   "rows": 21,
+   "sha256": "518333cd465fec0f43726711645faba7b134831eedcacf654aba842ff5a93686",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0036.parquet",
+   "rows": 14,
+   "sha256": "f987b64287a36440be3dd9ffd058d35471c1af9da23f3c3e47b9991b4a9ce54a",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0047.parquet",
+   "rows": 25,
+   "sha256": "38e0fc2ea09873978fcd312ec90d36ae6abd2fc40b41f18f796cf5767840ef8e",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0055.parquet",
+   "rows": 23,
+   "sha256": "2cedbe7aa51e712b68566dc488bb407583469304b6e851916fdaeee5a021c280",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0077.parquet",
+   "rows": 88,
+   "sha256": "172cd83a3a2bb316a18d61019ab7881e94f314e96b7b7ab3e14d701f4d8000cf",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0079.parquet",
+   "rows": 81,
+   "sha256": "b18b64aa42f48d0f2a9c2fa534e68b583d9b67769a926c5c7bb41f39772e0742",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0082.parquet",
+   "rows": 72,
+   "sha256": "0c1dac9ea2033cc9654ace180081430300a97ce4122fcd888d20d7cba7c8851f",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0084.parquet",
+   "rows": 29,
+   "sha256": "cbd40e88bf3f38351630ec159895d5784285e450bd941a3f82d5785fdcc8c9da",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0086.parquet",
+   "rows": 28,
+   "sha256": "44575b9930a1502225761a6791eb898a363ff790c864053e2aa2d494fbe41514",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0088.parquet",
+   "rows": 44,
+   "sha256": "8b0e8e6e964d7160b94fb4c80d145d421b85dc669fc16750f6972d46fe8333e0",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/stackv2-edu/stack-edu-0092.parquet",
+   "rows": 22,
+   "sha256": "6cb1c4ce7c4a8ebe77585d4f42550c9c857ae78534fca0f39d3a0c681ebdc44f",
+   "source_id": "stackv2-edu",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0000.parquet",
+   "rows": 8,
+   "sha256": "5f64cafc9eb50a316d9b41815bf560f54469381686f5d170b64630b1707a4763",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0001.parquet",
+   "rows": 10,
+   "sha256": "cec1590e4d25c9047f7bfa6969aeab253650ff07e90664a920a18091c9a268b4",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0002.parquet",
+   "rows": 4,
+   "sha256": "e53a260c9756d92a3148edeefd8bd9eb6c89b13bb5cbe1e8330e30da0603cff8",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0003.parquet",
+   "rows": 9,
+   "sha256": "e81d21abfcaf81586dc61faa3245df2c0fd2af7260cc0b9c29e162336dbc64cf",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0004.parquet",
+   "rows": 13,
+   "sha256": "df977db7c170044bf6f8a8ecb528c3d30bd319961d322686bea8e8d1644930e5",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0005.parquet",
+   "rows": 5,
+   "sha256": "865f9842bd078e11979fbe90da41e06e85bc4650bfeaa73d7ed5dbcec96d2e22",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0006.parquet",
+   "rows": 3,
+   "sha256": "87de61617f0af7e36281965613b96e5ac8d9b256577125aba1be505864ae5831",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0007.parquet",
+   "rows": 8,
+   "sha256": "9c24243808afc245659bc399eab497699009b50e96d6a13b7acaea8a613efab9",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0008.parquet",
+   "rows": 9,
+   "sha256": "3c7cc6d404618c657680b5b984980ae358a0d7bd12554e969e3a38b3222bab5f",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0009.parquet",
+   "rows": 21,
+   "sha256": "6c44815bbe8fde4b0e270ce7e94e86aa2787bbc39369ea71c5518b7b0ad0814c",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0010.parquet",
+   "rows": 13,
+   "sha256": "29bf9186a547c9487e7a6a6da14811617391836f5a84e4e27cf3bd99d4ccc299",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0011.parquet",
+   "rows": 23,
+   "sha256": "18de8f0bb915a1b12a6a30accfeb1c9d8d654e24182454d47838f967fb54f1d9",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0012.parquet",
+   "rows": 22,
+   "sha256": "edcc4cd34f54f9ae56e5dfcd8d0b75ceef76b257a5fc1cc727218117f0785a9c",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0013.parquet",
+   "rows": 23,
+   "sha256": "27afe6de5170208348696183bdeeba72674ba4b68c1e499ce13911f490a5b1a7",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0014.parquet",
+   "rows": 16,
+   "sha256": "f4121c623cb4441c604a7a59ff29f67c7f3e0a7ec0e7e43a11b7b78ef1285d23",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0015.parquet",
+   "rows": 21,
+   "sha256": "9ba942df6e814a81f9d131cef1e1776919c589858df6fb02452a70ab354d47a9",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0016.parquet",
+   "rows": 18,
+   "sha256": "2409faabe8277bcfcbc9b272c4647d2e6f88a38c3f7cd1ee9fb8ac4bc654a634",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0017.parquet",
+   "rows": 9,
+   "sha256": "b132b62c6b795b578148302473a58fcd63e0a4ab220d327968de7cba2fc44190",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0018.parquet",
+   "rows": 12,
+   "sha256": "0fa79963b990392226bbd8b9f61cbd45c5433ad126e3644447a6e5978333c1ca",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0019.parquet",
+   "rows": 16,
+   "sha256": "72ffc4b84419794df6b6b1dfbc22c9cb77316417f6a3c5cae0118a372423fd8b",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0020.parquet",
+   "rows": 12,
+   "sha256": "162529a25bd5c75864604ed586f549a62b2595645bf9722f91cade22d51e4229",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0021.parquet",
+   "rows": 16,
+   "sha256": "a210bb7860111cce8d4cdf0b1685310dfe54e1e9b475268cf532e68b3dd2b8b0",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0022.parquet",
+   "rows": 19,
+   "sha256": "9820826f4bef4616d64931c9d00f1119c800c1fdb4851a32f76b663252ed10f0",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0023.parquet",
+   "rows": 15,
+   "sha256": "5604d6d19b225732f6412f75c5c5614773eec6014eab8998a6433bf4ac77cde4",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0024.parquet",
+   "rows": 10,
+   "sha256": "3cddec73311c37410e62044129512c2f8cecd86c0fcd82c4b6cd5f0c69229230",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0025.parquet",
+   "rows": 16,
+   "sha256": "bccf9ac58110dc9959d5e983b45688934beecca48685a4c5f32923d883cec2bc",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0026.parquet",
+   "rows": 19,
+   "sha256": "d71b6ef32ee046696f341f6d1e832fe136c17068312a8440c547f298846e1761",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0027.parquet",
+   "rows": 21,
+   "sha256": "97495ebfcd5db79276a21946af6b7d4eb9130d47e3488358819a926eade06866",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0028.parquet",
+   "rows": 19,
+   "sha256": "d5ebd49b498ceae0f04230b34b7b9fec548395640e5247beb01d614462148c90",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0029.parquet",
+   "rows": 17,
+   "sha256": "9450901a380c0146d841e373aae167b09748410625a126b05be108bb36cd5508",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0030.parquet",
+   "rows": 18,
+   "sha256": "fa1921964a5d70fbfc50ce158eefd958852c71ed9ef2af4072dd093ae621e90a",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0031.parquet",
+   "rows": 8,
+   "sha256": "f02f69d684e4e7bd3cda2435446664ee14e296408b300db8825f4d412d0c34a8",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0032.parquet",
+   "rows": 19,
+   "sha256": "7be755f0c0943f2ae3096ce9819359c2135e34f1a57649d8b65f696dacc7cbb0",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0033.parquet",
+   "rows": 25,
+   "sha256": "88656b8b7f1b027234b19fc383896ed9045ae8e5135b35e20b198cf4178c2c68",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "test/wikimedia/wikimedia-0034.parquet",
+   "rows": 9,
+   "sha256": "fda43c08e4c7e89c183c2fe0ce332634d10b72b11d5229553599e852d35ca4db",
+   "source_id": "wikimedia",
+   "split": "test"
+  },
+  {
+   "file": "train/arxiv-papers/arxiv-papers-0000.parquet",
+   "rows": 1550,
+   "sha256": "552d44a69c2fb4e9eb06cdd4926327a790a684e936947f1f88ff67c0620137cc",
+   "source_id": "arxiv-papers",
+   "split": "train"
+  },
+  {
+   "file": "train/arxiv-papers/arxiv-papers-0001.parquet",
+   "rows": 1523,
+   "sha256": "1e519326bc5a0e6a8540c212d891153d62c009d374277042a97e482d444e1651",
+   "source_id": "arxiv-papers",
+   "split": "train"
+  },
+  {
+   "file": "train/arxiv-papers/arxiv-papers-0002.parquet",
+   "rows": 1424,
+   "sha256": "c367c702ab58c5e9df8aee775cbcb6539f1072145f587b7332bc6c6f23a47052",
+   "source_id": "arxiv-papers",
+   "split": "train"
+  },
+  {
+   "file": "train/arxiv-papers/arxiv-papers-0003.parquet",
+   "rows": 1352,
+   "sha256": "d914eb3e260c281ead064628eb62ed720d8587f12e5df21c36d7b68493215543",
+   "source_id": "arxiv-papers",
+   "split": "train"
+  },
+  {
+   "file": "train/arxiv-papers/arxiv-papers-0004.parquet",
+   "rows": 1468,
+   "sha256": "3c3617d5b96de33db3c9a4891e3a7d33fddc878bfe77426ff4fbb8e1a5380a03",
+   "source_id": "arxiv-papers",
+   "split": "train"
+  },
+  {
+   "file": "train/arxiv-papers/arxiv-papers-0005.parquet",
+   "rows": 1414,
+   "sha256": "847a81ce65f48b7f0260906f16bd5d80f48cc37189c23ef21f1ad0d1c3feeb4d",
+   "source_id": "arxiv-papers",
+   "split": "train"
+  },
+  {
+   "file": "train/arxiv-papers/arxiv-papers-0006.parquet",
+   "rows": 1438,
+   "sha256": "b7617fd3b4b174d68dd70188f76688a617d46190ff253c9ae61fa8ac252f997c",
+   "source_id": "arxiv-papers",
+   "split": "train"
+  },
+  {
+   "file": "train/arxiv-papers/arxiv-papers-0007.parquet",
+   "rows": 339,
+   "sha256": "9036c5cf1b4e894815ae28a6349768b7b8803ce76a6750f3321f4b92ec311b71",
+   "source_id": "arxiv-papers",
+   "split": "train"
+  },
+  {
+   "file": "train/cinqic-aaa-docs/all.parquet",
+   "rows": 52,
+   "sha256": "58601ccd12151db7c6845fd4101d4a06d35c7a1510d1063404855a2a756c5c4c",
+   "source_id": "cinqic-aaa-docs",
+   "split": "train"
+  },
+  {
+   "file": "train/cinqic-calculator-docs/all.parquet",
+   "rows": 5,
+   "sha256": "e498a4e8f15d2e84c0621368256a21ba16b8a95c8628aefe0eff8cf910e13dbb",
+   "source_id": "cinqic-calculator-docs",
+   "split": "train"
+  },
+  {
+   "file": "train/cinqic-juniper-app-docs/all.parquet",
+   "rows": 52,
+   "sha256": "d73dccd9f1449a1a49563d1ab428166ef6d9ba9b8f81635e81cf5da1faa1056c",
+   "source_id": "cinqic-juniper-app-docs",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00001-of-00064.r00000000.parquet",
+   "rows": 29240,
+   "sha256": "a7abe0b721cc9d245ef888711769c9c16c056ecf99e53d46a0f3eb66aba8cd4b",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00004-of-00064.r00000000.parquet",
+   "rows": 29139,
+   "sha256": "d19a3477dde46d399fd41a1be470dc556015f0e2c9c28faecf35e14f5d7c9ead",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00005-of-00064.r00000000.parquet",
+   "rows": 28374,
+   "sha256": "af6d6e2bba60fd367d622fb15b31ea03e971b7afae11804dd4a8c8e6a4149a35",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00012-of-00064.r00100000.parquet",
+   "rows": 1318,
+   "sha256": "3859c58adb1e6b69405592e8606c6a690a180f8579a2e85a53ccbd8b55852340",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00013-of-00064.r00100000.parquet",
+   "rows": 1366,
+   "sha256": "d16f10c365c3b24d041574d8c6beb3d5caced7bc280232431fb2268e454b445b",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00014-of-00064.r00100000.parquet",
+   "rows": 1304,
+   "sha256": "a3ea6be6a7f977a5601e68f7eb36692ea65f72c22878110c97cd6bb04aad5510",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00015-of-00064.r00100000.parquet",
+   "rows": 1362,
+   "sha256": "db0c33ee59607a0e7cd6af59bd958f3eae7fc9ec763f77dcc51eb6babe0c28fa",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00016-of-00064.r00000000.parquet",
+   "rows": 28412,
+   "sha256": "93815b28210c59ccc6f2b41de1640582d3efd1fae048a130c1a46e038659ea7b",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00017-of-00064.r00100000.parquet",
+   "rows": 1346,
+   "sha256": "530b12ee38a97281f275a394d17f6d2b74a7d476f48c18fc8a807819d5fbdf16",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00019-of-00064.r00000000.parquet",
+   "rows": 28296,
+   "sha256": "82fe3f2556e0045bc24283de03475aec355c7e29228ad6700855ac0e08f639cf",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00020-of-00064.r00000000.parquet",
+   "rows": 27802,
+   "sha256": "18d427467c4d6742ee916600ec9a7f05fd9c642e4aee1e96a5f610802c763bee",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00024-of-00064.r00100000.parquet",
+   "rows": 1308,
+   "sha256": "d69dcf721edb41fece12597399c93df7e91a0eac055ce1722f5aa4127f78e497",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00026-of-00064.r00000000.parquet",
+   "rows": 27732,
+   "sha256": "ab9c2f03b750a96457f91fa4693469534546dca2ee32bd6b887baa0e7e9572ea",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00029-of-00064.r00000000.parquet",
+   "rows": 27487,
+   "sha256": "a9740fad5e0c8d0791dc93d118d0089400d1175a89b17ea65b600875d3d7d5e1",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00031-of-00064.r00000000.parquet",
+   "rows": 27045,
+   "sha256": "79f4fb5e2a094f9260ce3bef30aebbf0426f880ddc8fd00f18953516547bdabe",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00033-of-00064.r00100000.parquet",
+   "rows": 1225,
+   "sha256": "dee58706432d9e3883ca64b01421bfc89133f97e79a1ecb478daed1180e95edd",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00039-of-00064.r00100000.parquet",
+   "rows": 1253,
+   "sha256": "776d380e08e8771a002089fb94d9461521e0cdfd2e85750464f3507c924eb524",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00041-of-00064.r00100000.parquet",
+   "rows": 1248,
+   "sha256": "f5c2e117347cd0d43f10c5eaa04e32d60d340b394b662430302b0f162cfa9794",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00047-of-00064.r00100000.parquet",
+   "rows": 1200,
+   "sha256": "75807b2c8d43dfe6f1858370ed5a47d0a3c63170b28a6040c607777a3c8f3573",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00048-of-00064.r00100000.parquet",
+   "rows": 1264,
+   "sha256": "a57100b562849b4b2c802c15a75d47e2259be4c562f9420aa6e8e30fe60c6d70",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00049-of-00064.r00100000.parquet",
+   "rows": 1277,
+   "sha256": "0a2fda6f4d050b34b39b7519fceebc77076e8e671862c922fa0b54deb42f7c5c",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00053-of-00064.r00000000.parquet",
+   "rows": 27185,
+   "sha256": "957f152d73ba26f86e9a5f93f14c96f88eb065bf1f106ebed6eb1b00efdfaa57",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00054-of-00064.r00100000.parquet",
+   "rows": 1232,
+   "sha256": "d6fb35b80abf9f1d83d342dc06f5bfb9ffaf8baf3c06a55ac022105128e4a1b7",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/finemath-4plus/train-00060-of-00064.r00100000.parquet",
+   "rows": 1242,
+   "sha256": "00a7fa99b3db563b169064c6fa598f13d088aefe175a7de85563e9a40ad3c6d2",
+   "source_id": "finemath-4plus",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00003-of-00234.r00200000.parquet",
+   "rows": 39203,
+   "sha256": "b977e4f4c66284cd91d4df2b94316a56c5af080b1c87b461d29b6e8368bfada2",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00003-of-00234.r00400000.parquet",
+   "rows": 40153,
+   "sha256": "ea3c2236111ec222e9441900d8e84bc846022337fafdd4ffce7d80248501987c",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00006-of-00234.r00100000.parquet",
+   "rows": 38665,
+   "sha256": "80e9f18da8b2e8c4ede6c75d9aada62894df2dba32b1aa20d32e6b09458b7022",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00006-of-00234.r00200000.parquet",
+   "rows": 38723,
+   "sha256": "ebff3e20633eb17e2e0ef8708892fb27faafb002d6a97967df08d8b334c50662",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00006-of-00234.r00700000.parquet",
+   "rows": 40698,
+   "sha256": "226c77fb06710cc31179c3cf3c4d97bfe83393e135614014b1cd6b0f5bd23d61",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00069-of-00234.r00500000.parquet",
+   "rows": 37045,
+   "sha256": "a68fab1c1b45d871f251aab6dd79af38d6d00150ff66940bdb218cb3056ce4d9",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00069-of-00234.r00800000.parquet",
+   "rows": 4827,
+   "sha256": "7a0c5585d743814dffebb2495b0df0b231641cc76abaf1fac1cc8053bf207d35",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00091-of-00234.r00100000.parquet",
+   "rows": 36307,
+   "sha256": "c5636dbbb814f20d7e75ae6ad7f3a5f54ffb7ec0008694bcdbb48128106b4f57",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00091-of-00234.r00400000.parquet",
+   "rows": 36170,
+   "sha256": "9be2eedac4f6d3f6e950b6009ced6f7be07e74f3d80aeb569628addfb258cdf7",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00091-of-00234.r00500000.parquet",
+   "rows": 36124,
+   "sha256": "827b4f056537a82223ec92380b58d1d8b47096d7e45223af94acf081bca58fb3",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00095-of-00234.r00700000.parquet",
+   "rows": 35907,
+   "sha256": "fd6a876510a7e1f9c4a95ff3ad304aaa468b5f76620d4664e012907110d792fd",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00095-of-00234.r00800000.parquet",
+   "rows": 4632,
+   "sha256": "f692d6d97fa590f84ac57b6de088eb6edfa9a665483f4122abb157d7e1fff225",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00099-of-00234.r00000000.parquet",
+   "rows": 36867,
+   "sha256": "c663881ac7cd130d8e198e7842f41de59f867fecb3beb9d52e5dfddbca97e745",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00099-of-00234.r00300000.parquet",
+   "rows": 36181,
+   "sha256": "9006ed145a1a69997056f0fa39de3070867118fdfcac0df2ad1d7ea549879243",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00099-of-00234.r00600000.parquet",
+   "rows": 35785,
+   "sha256": "6eeee5aae9982a51b925bbed957b491685efcd90713dcd1d5c5ab63a65cb3493",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00109-of-00234.r00200000.parquet",
+   "rows": 35788,
+   "sha256": "968a428f8524e4f24dd88743a7935b5cbec1cb8ca4f77acbcbbd227360010bd7",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00181-of-00234.r00000000.parquet",
+   "rows": 35764,
+   "sha256": "0d89105ca1b691a1c25d70e479af8232af33727e860e49794befe1a0a7ede811",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00181-of-00234.r00300000.parquet",
+   "rows": 35455,
+   "sha256": "20dc80bd53edcc9f468a54d5de4101ec1d3f3ed37ca91959e1a7f6a753fcd838",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00181-of-00234.r00400000.parquet",
+   "rows": 35482,
+   "sha256": "31b6c77578732e92d69554872fd10307a04ab75b61b521a0fa15e059dfad38de",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00181-of-00234.r00800000.parquet",
+   "rows": 4550,
+   "sha256": "3cba80e835ee872822fa6adbcda4729cbe349042460a4275e8f503fa48d60b1b",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00205-of-00234.r00000000.parquet",
+   "rows": 35368,
+   "sha256": "99e947f84b52e041b325424c0b42febd412e5eb6655662f43973f71f77df87a6",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00205-of-00234.r00100000.parquet",
+   "rows": 35663,
+   "sha256": "e132a42878b96c21c2b14c18fe4474723800332167133acdb6ed9bf9d882a741",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00205-of-00234.r00200000.parquet",
+   "rows": 35881,
+   "sha256": "fb720a8bfcbb4de13875185ff77f7d9464cf846da70e7427fbb7d7e09ef2b2a4",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00205-of-00234.r00600000.parquet",
+   "rows": 35362,
+   "sha256": "16524a4cdf84a6f08778e70ae03afc489ba96d31841e5d00a8c49aee745f41bc",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00205-of-00234.r00700000.parquet",
+   "rows": 35612,
+   "sha256": "b98171443a224cd8457d654b3e4376b8d1ee86f8a3dd0fc60d7162f5a6f36fef",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00205-of-00234.r00800000.parquet",
+   "rows": 4935,
+   "sha256": "a03dbd343d142aa581c3d5ee21c1a0264d0865d7421790c71a5aa84e0fa205dc",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00217-of-00234.r00100000.parquet",
+   "rows": 35240,
+   "sha256": "c795e796165fd363ca8c6dfc4a429902171d6f9e79477bdc382b24bacf7c4b52",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00217-of-00234.r00500000.parquet",
+   "rows": 35815,
+   "sha256": "3e1c43fc2556ea49eba5c1ceaccd0c8af483e372b7d35fb35a3f658adc9e8e6a",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00217-of-00234.r00700000.parquet",
+   "rows": 35439,
+   "sha256": "727a2fe30463488edfa81c2bb2c32f145aee0c53e6dbc3493996d020d99342eb",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/fineweb-edu-dedup/train-00219-of-00234.r00500000.parquet",
+   "rows": 35410,
+   "sha256": "a4ffdf81541b9bdf684bb74e19880e3d74080e18b8720234eb15de395dee17cc",
+   "source_id": "fineweb-edu-dedup",
+   "split": "train"
+  },
+  {
+   "file": "train/libretexts/libretexts-0000.parquet",
+   "rows": 35969,
+   "sha256": "96d719085f0d8ce2458c5f02d170669e9841542f04e118b51c7ee3ef8f5b0cd5",
+   "source_id": "libretexts",
+   "split": "train"
+  },
+  {
+   "file": "train/oercommons/oercommons-0000.parquet",
+   "rows": 3884,
+   "sha256": "92d60451505920639492d5284240434c8298c2761dd8fcecf6f7c1394cc6f174",
+   "source_id": "oercommons",
+   "split": "train"
+  },
+  {
+   "file": "train/pressbooks/pressbooks-0000.parquet",
+   "rows": 43796,
+   "sha256": "5059668e7532ea2e7e8d5114a42595cb4a5c76f0206d77c962813f45287d81de",
+   "source_id": "pressbooks",
+   "split": "train"
+  },
+  {
+   "file": "train/python-peps/peps-dolma-0000.parquet",
+   "rows": 651,
+   "sha256": "e2d4093ebbd4d2665b31f838cd65fd7f92ca1e9dc2ca3e302a9acf416109cc84",
+   "source_id": "python-peps",
+   "split": "train"
+  },
+  {
+   "file": "train/stackexchange/stackexchange-dolma-0001.parquet",
+   "rows": 49810,
+   "sha256": "cd1ad7f5faf2e33d85aecc3a338db7912954d86df031c48be8b215eba6415ae7",
+   "source_id": "stackexchange",
+   "split": "train"
+  },
+  {
+   "file": "train/stackexchange/stackexchange-dolma-0002.parquet",
+   "rows": 58631,
+   "sha256": "92da00fde668bebe4f160f9e5233bdba438cf59c08eb160b9a0b0ee731fd7234",
+   "source_id": "stackexchange",
+   "split": "train"
+  },
+  {
+   "file": "train/stackexchange/stackexchange-dolma-0003.parquet",
+   "rows": 44643,
+   "sha256": "1c511adbc581bc67351ae948bd4b2b58e31b81fe3216384342f382db870aeeed",
+   "source_id": "stackexchange",
+   "split": "train"
+  },
+  {
+   "file": "train/stackexchange/stackexchange-dolma-0004.parquet",
+   "rows": 41877,
+   "sha256": "6d601f282f94b2d6991643bf92856680e6a0f47defb18b39965ba871be4f7d21",
+   "source_id": "stackexchange",
+   "split": "train"
+  },
+  {
+   "file": "train/stackexchange/stackexchange-dolma-0005.parquet",
+   "rows": 76811,
+   "sha256": "8743644ce3fd9ac576874d396a5555615330eeaa68a61f09349c1c45128e4c3b",
+   "source_id": "stackexchange",
+   "split": "train"
+  },
+  {
+   "file": "train/stackexchange/stackexchange-dolma-0006.parquet",
+   "rows": 56035,
+   "sha256": "7ec1d9a5f8b911ff1b489c3636b5a9f9a46c4c08e26174de61f3f7054518739e",
+   "source_id": "stackexchange",
+   "split": "train"
+  },
+  {
+   "file": "train/stackexchange/stackexchange-dolma-0008.parquet",
+   "rows": 17057,
+   "sha256": "93202f86404b98a1a03eaedee1b98859a924161e32f3adab7dce8ff6a048c378",
+   "source_id": "stackexchange",
+   "split": "train"
+  },
+  {
+   "file": "train/stackexchange/stackexchange-dolma-0021.parquet",
+   "rows": 55698,
+   "sha256": "34bbd1a2fa07090dc83489d8d9fffc642a064eed9cb4458c8eb1d9c84205c52b",
+   "source_id": "stackexchange",
+   "split": "train"
+  },
+  {
+   "file": "train/stackexchange/stackexchange-dolma-0028.parquet",
+   "rows": 54283,
+   "sha256": "9e3e4b458104131a04d5747bd453044c704f5ca130b049562444f38fc4bf92d5",
+   "source_id": "stackexchange",
+   "split": "train"
+  },
+  {
+   "file": "train/stackexchange/stackexchange-dolma-0042.parquet",
+   "rows": 60509,
+   "sha256": "18f2d6c1a5f1c8129e8da8f1c2de3022f812c843fea6f7746d4c0f1ae4e46def",
+   "source_id": "stackexchange",
+   "split": "train"
+  },
+  {
+   "file": "train/stackexchange/stackexchange-dolma-0043.parquet",
+   "rows": 43702,
+   "sha256": "5864bec460a7df95864f62c53b3c0432fe1ee65f186201b886d6a9fc5da9a6c7",
+   "source_id": "stackexchange",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0007.parquet",
+   "rows": 23699,
+   "sha256": "6f34b010439ee28de1c24cc1fbca5d1cc91ad286cacdc539db10381f5a6dd4ad",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0011.parquet",
+   "rows": 23970,
+   "sha256": "2c09919a7caa17fce05078ad757b4ea6e161d6a80771a23561138c91bfff4016",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0018.parquet",
+   "rows": 19989,
+   "sha256": "01b2a9373c2019c0771d814f94d8a4ffe3d32ebf2aa0b164f71feb8bfd498aac",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0026.parquet",
+   "rows": 18437,
+   "sha256": "7d19fe034b650bf536ce5d5a521d0f781a2b0b530afb7f8fd5bfdd7175cccb3f",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0036.parquet",
+   "rows": 22951,
+   "sha256": "f23e160e450ad447006dbf2b17fd660f6526149eefceed54e0e9b3f2661606f0",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0047.parquet",
+   "rows": 24674,
+   "sha256": "c01933f2b7991285f36f5ac05bbf55a694f1d6a25b874d765d38d1055a831d58",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0055.parquet",
+   "rows": 16797,
+   "sha256": "ccfd7464451fca35203dbfd194f8d46e1fc0eeedb275dfb93d010bdbb7562919",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0077.parquet",
+   "rows": 86558,
+   "sha256": "deb688980151310a77e3200b76c1bfa7a68c468c853e02492991201c4f4497b9",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0079.parquet",
+   "rows": 85827,
+   "sha256": "6c5fbfe059d10e82ff5aea820128d34c57a7d0c9e547f1a4ba3d25ef67a86436",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0082.parquet",
+   "rows": 85667,
+   "sha256": "32da25b72a385b169b7080235d2a60f42c7183b5f7872a21b48b772d766e7c85",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0084.parquet",
+   "rows": 36599,
+   "sha256": "4efb66d7ab531ce098cef1ceb4dd29c34b1709469c5a4281c2ebe7e0d1176d9c",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0086.parquet",
+   "rows": 34469,
+   "sha256": "da07171a242ce0a2cdbbcf413ff9e0181e6117ddc8f5e5f64b8d328f4e7fb9a1",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0088.parquet",
+   "rows": 42517,
+   "sha256": "221cc78ae76b0b882c7af8965f218e38efd8579d25a295dd6a44a3b24bf8456b",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/stackv2-edu/stack-edu-0092.parquet",
+   "rows": 29252,
+   "sha256": "52fedb07f7f093a4fcac7d7714336d98fce178e2bf181c5a0a645b6e91a11d4d",
+   "source_id": "stackv2-edu",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0000.parquet",
+   "rows": 7967,
+   "sha256": "436df1d973e44c7c185f038139ed80b6237ee4c8d745047cf461534f105434c2",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0001.parquet",
+   "rows": 8173,
+   "sha256": "ff699d9dda9ce65b51356c0de9095b6ef4d4de25d66a2bc335844a0ffe714f1c",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0002.parquet",
+   "rows": 6472,
+   "sha256": "6abf75c437da6312f787d7694289247e86f8e25ec055a00a037f4ada835bb22b",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0003.parquet",
+   "rows": 6157,
+   "sha256": "f2f16ea45669483c8ff2ea6e94e1a36f5499483a011d87026dbed72e646596b1",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0004.parquet",
+   "rows": 7181,
+   "sha256": "2f4c291e70d7e4b4fea1e75587670f8cb11a886882cf56fc336b0a814fb81022",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0005.parquet",
+   "rows": 3993,
+   "sha256": "5d56680071e92a8f58b9077beea84b26d2dd8b5234e4a87c797ec8056a5232a8",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0006.parquet",
+   "rows": 8071,
+   "sha256": "9eedc5f08b863f62eb68ca520919f7f4744595f8cf8279caad4ad917061baa7a",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0007.parquet",
+   "rows": 8111,
+   "sha256": "5cee75a5dc21a4ac4524b331ddd1913ee9eb3c9545035ec76e1d51ecebc61256",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0008.parquet",
+   "rows": 12653,
+   "sha256": "e196974c4fa2b28a7262d838b871a76b7487cda57ca5178a7c8f03c47fac82cd",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0009.parquet",
+   "rows": 19950,
+   "sha256": "a179af47f41267333d80b4f4f5145906e1825d1985b5abaf07c454c7ac31a1b7",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0010.parquet",
+   "rows": 19025,
+   "sha256": "4aa1fe328287477ac58a907b3c4418c137d80a0500bd63122ffbe43a9940b92c",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0011.parquet",
+   "rows": 17742,
+   "sha256": "8dcaa83d642de4e2d363aca09d284b9146f9d62ff24bec333781984e7aa97a41",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0012.parquet",
+   "rows": 15346,
+   "sha256": "fd6878b42f97b0ce3cb411019d9108b2efae8342527d8c22e089c9219821cb66",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0013.parquet",
+   "rows": 19937,
+   "sha256": "ab9e75f82033bcd034481c97b37defd1b205fb2a59390ad9e4e20fd68a8a063f",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0014.parquet",
+   "rows": 17804,
+   "sha256": "911ea6953e80131d0bd836fd3d0fcdbf4d05921cd5542ed94c746b0f2fd37dd2",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0015.parquet",
+   "rows": 17627,
+   "sha256": "264ef8a5ae47270911022e386186556113a9bc0708a336fa86228a5fe140bbe1",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0016.parquet",
+   "rows": 17373,
+   "sha256": "bd293cf94a6b5f7cb9cdd3fd5ba7da48b7333de2a8336f3fec38478825aa5059",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0017.parquet",
+   "rows": 16327,
+   "sha256": "d93bef5d33ba699b07fc25d4b316f67d1fcbe7c3d499c906f874f032af77b1d4",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0018.parquet",
+   "rows": 15823,
+   "sha256": "8a14c6d5db186568a84e5d413be0f92513b94efee087c513eb77deb0ecbd6d05",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0019.parquet",
+   "rows": 15272,
+   "sha256": "e6519e50bca9187a5d9ec562e101caace7b2df391fcc7ab3b0805a95a6626f84",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0020.parquet",
+   "rows": 15007,
+   "sha256": "66d508f61edd1998d96472deade8c230fdbb7e38bb90ccea50aa6e4895d219ce",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0021.parquet",
+   "rows": 14291,
+   "sha256": "d5b958d29cf9971f4b8fec88162302c5415ab4d18f660a95cd18211535b26236",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0022.parquet",
+   "rows": 14817,
+   "sha256": "9b1e43cd5d88b2cdf5d36d6c45cb46fb6ef8396ea64c374ece2c4c271cde87d8",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0023.parquet",
+   "rows": 16792,
+   "sha256": "1b1e833793dfc5369ba55d0143d38e57457818aa59432718a7c6a3a0cb10f6be",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0024.parquet",
+   "rows": 16626,
+   "sha256": "2824144e5636ba586f7d43beb5fc3f3d1edfef874f1ac0b5e9829e2133c966f1",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0025.parquet",
+   "rows": 16026,
+   "sha256": "1d97b0b43856ef145723e8ce8f6e07e0711eed36df7dc0ae8e1c43a58e2ec71d",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0026.parquet",
+   "rows": 16675,
+   "sha256": "d26922ac2742df27457790fb74bc7b212ba2cbfd2b8a4ec91f1f0c6e4803c50c",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0027.parquet",
+   "rows": 15283,
+   "sha256": "9ead77262901db3a8db62118e904ab30ae0de5218ef458c88275643250c6bb5f",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0028.parquet",
+   "rows": 15907,
+   "sha256": "01aa183454f0f0380ee0a479910528aec103bb3d48a9d1e9a4dfe205554e7549",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0029.parquet",
+   "rows": 15308,
+   "sha256": "eb943d6d1261fffba14a5b89b608b76d727f233c558fe4bc24e277a778b8691f",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0030.parquet",
+   "rows": 14627,
+   "sha256": "8e4a5102f17bf91f9ebfe287018fccd770d7baf87254963b726bce81fcc469e5",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0031.parquet",
+   "rows": 14363,
+   "sha256": "a1bd117e2ec823493dbc49f8510435d61748a5cc727afc8257c1ac2add8eab30",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0032.parquet",
+   "rows": 14274,
+   "sha256": "e25f06e7358c9e70ac59237815ef8222a4984f146633e0905258e2dca9c16f3d",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0033.parquet",
+   "rows": 14434,
+   "sha256": "5f5cd75cd5ce00b03cbef5ca38be165b251b884fb9b0c8b22ac2590d4ea8197c",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "train/wikimedia/wikimedia-0034.parquet",
+   "rows": 13203,
+   "sha256": "01b8b87d17f75a5255de0dfb95b716d3375f339c4eb2808f35b47108900f8b06",
+   "source_id": "wikimedia",
+   "split": "train"
+  },
+  {
+   "file": "validation/arxiv-papers/arxiv-papers-0000.parquet",
+   "rows": 3,
+   "sha256": "fe4080677fb1f80700f0edfcb6629941755b618519b0531216b939b6e31ee0f8",
+   "source_id": "arxiv-papers",
+   "split": "validation"
+  },
+  {
+   "file": "validation/arxiv-papers/arxiv-papers-0001.parquet",
+   "rows": 1,
+   "sha256": "c0ff018c3791e06e1add1df033610f1ea82aeb2e64e8975ddc6609858f121612",
+   "source_id": "arxiv-papers",
+   "split": "validation"
+  },
+  {
+   "file": "validation/arxiv-papers/arxiv-papers-0002.parquet",
+   "rows": 2,
+   "sha256": "9a2b5d5feb46c5c362d44e87fe637aa8b53a8bfe8307b4a9703c89e4bf1db3be",
+   "source_id": "arxiv-papers",
+   "split": "validation"
+  },
+  {
+   "file": "validation/arxiv-papers/arxiv-papers-0003.parquet",
+   "rows": 2,
+   "sha256": "5c018465084ceefe7195fb2261fc28d2f5335bd9ada8fdf3546cd64b5777c99c",
+   "source_id": "arxiv-papers",
+   "split": "validation"
+  },
+  {
+   "file": "validation/arxiv-papers/arxiv-papers-0004.parquet",
+   "rows": 1,
+   "sha256": "3fb82b1dfa951951641f11df57d7d2d89d0dc5d6d3cd79c08c01a6f965eff140",
+   "source_id": "arxiv-papers",
+   "split": "validation"
+  },
+  {
+   "file": "validation/arxiv-papers/arxiv-papers-0005.parquet",
+   "rows": 1,
+   "sha256": "b4e395c280fa255f71fda1afb8b0e4603b0e02bc19782de49de4a6ab997540fe",
+   "source_id": "arxiv-papers",
+   "split": "validation"
+  },
+  {
+   "file": "validation/arxiv-papers/arxiv-papers-0006.parquet",
+   "rows": 2,
+   "sha256": "27e7ad87196e345c82ffefa0731e58d331f259d7bed4930d712237d64401b8bc",
+   "source_id": "arxiv-papers",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00001-of-00064.r00000000.parquet",
+   "rows": 17,
+   "sha256": "806e784ab10280a81154f41768e2fc8fc90910b6dc05e9b38bd40128476d3612",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00004-of-00064.r00000000.parquet",
+   "rows": 16,
+   "sha256": "ad1b3f3439e8cce3a320e0b8de0b6c69147c0c80f42f0d01208d4d0fa5e36a90",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00005-of-00064.r00000000.parquet",
+   "rows": 21,
+   "sha256": "a0fa63d68d96b823ca1a501259e62b91488adfe5cb97cf7a06cc3fb7bdba8661",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00012-of-00064.r00100000.parquet",
+   "rows": 1,
+   "sha256": "53f49e5d49de5c3df58892766ef21cbf832c7276f3245334152d59ee2106f7e4",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00014-of-00064.r00100000.parquet",
+   "rows": 2,
+   "sha256": "f070294648f695627ef7107ae50417aa573a47ee944cdb162b4597f93e1df305",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00016-of-00064.r00000000.parquet",
+   "rows": 24,
+   "sha256": "faa769396b293caf79f78d9ad49306e40cea09fc5deb1df2659c21180099a354",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00017-of-00064.r00100000.parquet",
+   "rows": 1,
+   "sha256": "8b5adf87f269290a7e6ac81bc2142d0b783a9cabdccac6d9906d672ae65e4657",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00019-of-00064.r00000000.parquet",
+   "rows": 13,
+   "sha256": "70ede5667de9027aa7e99b553b278d37e21278f5d36809d461fbe2fd3427f41e",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00020-of-00064.r00000000.parquet",
+   "rows": 23,
+   "sha256": "940707dacedcdfd60c90baec10371c63d6992c902b627de61a9e06c75cff1f17",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00024-of-00064.r00100000.parquet",
+   "rows": 2,
+   "sha256": "04201501caca1a2c1bb40eb51129f2be25742d2be3cc381c6bcf0fe9657e5e1a",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00026-of-00064.r00000000.parquet",
+   "rows": 7,
+   "sha256": "fc1177ff4b17ac9bb607733f8a6caca07be1bc090c7c603484db4c0f0f23ee12",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00029-of-00064.r00000000.parquet",
+   "rows": 22,
+   "sha256": "e95d63862602940b04a5764839346a17f9b212c42bdac739a4136755d65bc653",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00031-of-00064.r00000000.parquet",
+   "rows": 15,
+   "sha256": "4d961d03e714a4f8a0bd6aa09f40ca19fbcb788ab2e15dbc9581607c3c48d145",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00041-of-00064.r00100000.parquet",
+   "rows": 2,
+   "sha256": "a1da7d9c8230222beb40f6ed2a0fead3f3cc642d8e7ed47c2baf06540860d3e9",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00047-of-00064.r00100000.parquet",
+   "rows": 1,
+   "sha256": "79bfe278f24a46a669106269502945c7bda1718b568a1bec9635a437c42a02cd",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00048-of-00064.r00100000.parquet",
+   "rows": 1,
+   "sha256": "5c48c4532229be8781ca34e755ae7082b6bc1cbbf3c36464efa63fe2a2887e5d",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00053-of-00064.r00000000.parquet",
+   "rows": 12,
+   "sha256": "a4e4a8b4e52384dcfaa42fd78c73069b539e95ad37287c40b1eb0047c98bb66b",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/finemath-4plus/train-00054-of-00064.r00100000.parquet",
+   "rows": 1,
+   "sha256": "f7f0d7fae09b22560a56d435e20813f027bea877eaa66ffdb62c3616740825c0",
+   "source_id": "finemath-4plus",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00003-of-00234.r00200000.parquet",
+   "rows": 43,
+   "sha256": "9be0ef77e27d49f629008fb8400ec72dda1fe7e533b2a415f9c35dcd07c47b01",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00003-of-00234.r00400000.parquet",
+   "rows": 27,
+   "sha256": "2711b07fdbacef5db100a4a5d21f16d6fc29055bf090e091773b97a5e81550af",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00006-of-00234.r00100000.parquet",
+   "rows": 32,
+   "sha256": "c6cdbd8d2b62f52dfff9d1608cd6010efc77043ac4ac1290a7bc60fe934a86d5",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00006-of-00234.r00200000.parquet",
+   "rows": 34,
+   "sha256": "c3d7b7cd989dfaf0f402d7816c462169ab7dedf504b1413ca5a76299312cce68",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00006-of-00234.r00700000.parquet",
+   "rows": 29,
+   "sha256": "6f44c9156f578d76c2bb3397bf39d3a2064b37a13b9d54952ecb36f3b376ce1a",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00069-of-00234.r00500000.parquet",
+   "rows": 34,
+   "sha256": "c7bc8076e073adfad8c6bbfb58d66311389343a48a9b23f6120d16ad58d452ff",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00091-of-00234.r00100000.parquet",
+   "rows": 37,
+   "sha256": "ee7391a3ff0fe7f67ecdf3688b2f12f9da61a50d7803d7274965e5e4d3f8cdf2",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00091-of-00234.r00400000.parquet",
+   "rows": 32,
+   "sha256": "28aa6c224b305c53ced7285798d5f8530593c6bd2919e2c15138ab074f0751f1",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00091-of-00234.r00500000.parquet",
+   "rows": 39,
+   "sha256": "d79aec3920a852470c4eb26e0ad7e369683956eadc138bcadc39ad53b7a4e198",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00095-of-00234.r00700000.parquet",
+   "rows": 27,
+   "sha256": "44f00484ea3023beb388bf052d7aaba351bef1a41aca10dcc2179d4c31a7c992",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00095-of-00234.r00800000.parquet",
+   "rows": 4,
+   "sha256": "60c92a5db2fc4fbe7fbc6ce07813c49e0e22e1a2afd01ba232551317e754199a",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00099-of-00234.r00000000.parquet",
+   "rows": 40,
+   "sha256": "3c7aac9a0a399ed36c47e506d181499937d6cf8e9a1f0b4851ce2b556a2ec7ab",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00099-of-00234.r00300000.parquet",
+   "rows": 36,
+   "sha256": "0ca196a7b560449521be9e21436966fdd4148ae84ea8c0d9a934ee0ab99e5aca",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00099-of-00234.r00600000.parquet",
+   "rows": 31,
+   "sha256": "5ac27552ae6580cb34882c62cd976353d628198ad63b870f9baa6c45f49c5ed8",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00109-of-00234.r00200000.parquet",
+   "rows": 42,
+   "sha256": "921b945196cd44fa58c23d6eada90956d06482f35165a5ed315497bbf5eba1bb",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00181-of-00234.r00000000.parquet",
+   "rows": 31,
+   "sha256": "5b32c79b6ebfe631d1625b90083ce1f8a403c468f38c68d3d93da9eafec1e7cd",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00181-of-00234.r00300000.parquet",
+   "rows": 28,
+   "sha256": "fb8682321cce469a81a3c024eba1d2071831af13ae0546ee053302b229564063",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00181-of-00234.r00400000.parquet",
+   "rows": 30,
+   "sha256": "13f6899a0c33d0694fe3d394c8b21e4540d39ec2da49fde747627695b85a2fbc",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00181-of-00234.r00800000.parquet",
+   "rows": 5,
+   "sha256": "62546ff7de77964a963789cfba2f44d74f58428de3d2d03056dc3632dea0f47f",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00205-of-00234.r00000000.parquet",
+   "rows": 30,
+   "sha256": "1fa87a09349eab8d376434ea46a730f06eb383b2357d5f4a3cfd39e8ab3059dd",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00205-of-00234.r00100000.parquet",
+   "rows": 31,
+   "sha256": "eec48317edd4c32f42b45f2e6f2717e7fa3096b8673a9a72a4aa17e429656c75",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00205-of-00234.r00200000.parquet",
+   "rows": 34,
+   "sha256": "6fca977a9a0c30d75e29edf248ac237e1c6175b205c7da5ab374315579af28e6",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00205-of-00234.r00600000.parquet",
+   "rows": 26,
+   "sha256": "7d818e4ec3865e1f5a8d8d06c94656b09609503af4bf6589b5a44af00a0f5d4e",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00205-of-00234.r00700000.parquet",
+   "rows": 24,
+   "sha256": "4cf093ea1a09d3b584f2b455b35a8a4887abe5fb6cfb952ed54a075f67d7df54",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00205-of-00234.r00800000.parquet",
+   "rows": 4,
+   "sha256": "2c717ff18c15a3ae3bf9e2c9f9a12b67a342769e15f607d7c07c61637b6c03ab",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00217-of-00234.r00100000.parquet",
+   "rows": 22,
+   "sha256": "8e5f730d93615656143b6e47c50d9e0a2bec92a699cd8a4f85801d056a2d611e",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00217-of-00234.r00500000.parquet",
+   "rows": 26,
+   "sha256": "3e0bd3bd8bdbad0a23c62c077d90468ebe853c739c07b8dada37298dbc1b3602",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00217-of-00234.r00700000.parquet",
+   "rows": 26,
+   "sha256": "4cb717ca914649fd10b700c72593a51f0da531294c7609077aeb879e7f7069c0",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/fineweb-edu-dedup/train-00219-of-00234.r00500000.parquet",
+   "rows": 28,
+   "sha256": "9ae05ca7f63641fa2432c8a14a7f44a1d5d6e49e5f0bab64d3f696dbda1139db",
+   "source_id": "fineweb-edu-dedup",
+   "split": "validation"
+  },
+  {
+   "file": "validation/libretexts/libretexts-0000.parquet",
+   "rows": 9,
+   "sha256": "31a60c74f852f63bcdd8af6bee3bc1043880f08a7a8818744fcec87c8a522444",
+   "source_id": "libretexts",
+   "split": "validation"
+  },
+  {
+   "file": "validation/oercommons/oercommons-0000.parquet",
+   "rows": 2,
+   "sha256": "577cf8f22f10b3bf1afc6ec7300caff6f5782eeb2b86bd7013cbb3ad9724dd16",
+   "source_id": "oercommons",
+   "split": "validation"
+  },
+  {
+   "file": "validation/pressbooks/pressbooks-0000.parquet",
+   "rows": 24,
+   "sha256": "6dba257276917d0836dad67efb7eaf2cbc04f484e2483bd22e2ee3435f79117c",
+   "source_id": "pressbooks",
+   "split": "validation"
+  },
+  {
+   "file": "validation/python-peps/peps-dolma-0000.parquet",
+   "rows": 1,
+   "sha256": "b4e75773726029783d1e58dc385d6807fda1fca8d25e3fe48ad01352f97be64e",
+   "source_id": "python-peps",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackexchange/stackexchange-dolma-0001.parquet",
+   "rows": 42,
+   "sha256": "3429a9884200248e2d787950774c91e2aa08b8c336bb34ec96b3671468147510",
+   "source_id": "stackexchange",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackexchange/stackexchange-dolma-0002.parquet",
+   "rows": 53,
+   "sha256": "4d47980faf5dc0c097d8c82d4e89a67a73c6fd661ef00683240e656c08356ff8",
+   "source_id": "stackexchange",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackexchange/stackexchange-dolma-0003.parquet",
+   "rows": 52,
+   "sha256": "215f71f8acf5d6621e319deabc244181f729d723dd98125a5d9890c1c19f9acb",
+   "source_id": "stackexchange",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackexchange/stackexchange-dolma-0004.parquet",
+   "rows": 41,
+   "sha256": "8c06bf7718aa31ad7f70bee0b51cba26672e96ef15231e2d3e4dbf25d1e22cc9",
+   "source_id": "stackexchange",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackexchange/stackexchange-dolma-0005.parquet",
+   "rows": 58,
+   "sha256": "7c160f88644b748243c873b34f4c60c41c77f8bd40b1f53208282d2ff6f90493",
+   "source_id": "stackexchange",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackexchange/stackexchange-dolma-0006.parquet",
+   "rows": 50,
+   "sha256": "5824c27219055b5d3f4cafbc91537ca50f1bd3debbd07184200d4d4d675ba094",
+   "source_id": "stackexchange",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackexchange/stackexchange-dolma-0008.parquet",
+   "rows": 22,
+   "sha256": "07d1692093a445e0ea640307dca100f56c71edbc92085f4ba9321015dbb07ab9",
+   "source_id": "stackexchange",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackexchange/stackexchange-dolma-0021.parquet",
+   "rows": 50,
+   "sha256": "25d9fe82aca7cef32e427a968b5f29f8d81e1aaa5a8fb5f8da536bb793458db5",
+   "source_id": "stackexchange",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackexchange/stackexchange-dolma-0028.parquet",
+   "rows": 54,
+   "sha256": "895fa27a606e3507aa409fb3bfbc05de01434e1f13fd986bf396630bf6f42a3e",
+   "source_id": "stackexchange",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackexchange/stackexchange-dolma-0042.parquet",
+   "rows": 57,
+   "sha256": "bdd4c44625a94f5c36f26627d83c1458418a5bd2d97cf33ebb9543093b5545c5",
+   "source_id": "stackexchange",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackexchange/stackexchange-dolma-0043.parquet",
+   "rows": 45,
+   "sha256": "cfdfa8910c696e644bdde750e0ba12960eb8929c35cd3241163290624e400148",
+   "source_id": "stackexchange",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0007.parquet",
+   "rows": 12,
+   "sha256": "33eb3091c94c90c78539ca56f4bc6a624215bcac532ceb649db27939dc3e8704",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0011.parquet",
+   "rows": 15,
+   "sha256": "9ce3b66253ae1707d12a3a8cea4e0d1ac5f07dbdbaabf0c3dd27637bef6551d8",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0018.parquet",
+   "rows": 15,
+   "sha256": "72b3f6f0322bde6eea2f437b557a9dafd7aa25c6dbce15bbf47a11789f150ddc",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0026.parquet",
+   "rows": 20,
+   "sha256": "7dbdce21aa2bfea47030f087922076dd9d050a867395d4e23088bef59a9387cc",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0036.parquet",
+   "rows": 34,
+   "sha256": "0caf3e76f95fae7cab23fecee9a591a1106c42aa7258d5dd1694fe014a4e6537",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0047.parquet",
+   "rows": 19,
+   "sha256": "cdb78f7c0b36069db8c175e5f0cc460a70b18cd329946c28e6ca66b03b38a300",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0055.parquet",
+   "rows": 18,
+   "sha256": "c02b36b87f2ac66e3bccdfec9fcc73965851bdeab5a279ebc97d9fbceb822b14",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0077.parquet",
+   "rows": 79,
+   "sha256": "d7196351c55edea03c2847a1badf39d2e4da7a2ae074f7f900f1dbcf4245958b",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0079.parquet",
+   "rows": 70,
+   "sha256": "2cf0018022565dbdcc4e2f7bc7fbaf48e2017d32741f5afc433027a9e6bac0e0",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0082.parquet",
+   "rows": 90,
+   "sha256": "48bbaa6f475d32a4e8721d4ef8b2f43ac2fca1adb977fc980c7a45179246b672",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0084.parquet",
+   "rows": 28,
+   "sha256": "20438c5826591f2b91a3db7b9c1b15970eba51c071d6e67be7ba1935cce91b04",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0086.parquet",
+   "rows": 30,
+   "sha256": "9ffca6c08fd17395bcb34d5de6cabaf1ec25209d350e7302e8120f27ed52c2b4",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0088.parquet",
+   "rows": 42,
+   "sha256": "6d16449d457887f5c0aed542accdddb1b7e2bd281cab36055711da7fa75d1564",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/stackv2-edu/stack-edu-0092.parquet",
+   "rows": 26,
+   "sha256": "c1ce170e9e032921d8b9d46ff6223c62333870071a886ecca193b69348bdd1fd",
+   "source_id": "stackv2-edu",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0000.parquet",
+   "rows": 6,
+   "sha256": "3a0858680f76c33fc0f56876e29ee68ca2c26ea264cd550b5d3f0595a68d9e36",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0001.parquet",
+   "rows": 11,
+   "sha256": "6a27c3a374be2c8fa18214e0954856e7fd442518c041b2b707649fc9ff07236d",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0002.parquet",
+   "rows": 8,
+   "sha256": "52c8b89e00bb722df56c67b96011c9a33edcecf5673cff271853b70c5d190214",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0003.parquet",
+   "rows": 5,
+   "sha256": "31e4f3f16a70b099e9129bfc93d6764c4acd5e35c3d13ef14db65b93bd8feb5c",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0004.parquet",
+   "rows": 5,
+   "sha256": "523e7e0104cf88063858c44918ba829888c72173d645639b2a076453597f3a70",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0005.parquet",
+   "rows": 11,
+   "sha256": "b26ff25a8b4ed01a44de2bc4a31a41c783ec282797264b86f5620012dc22e5ad",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0006.parquet",
+   "rows": 14,
+   "sha256": "d862656fd974f43bffec83676358cdde230392248325c884869aaad1fb6cfd24",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0007.parquet",
+   "rows": 2,
+   "sha256": "1db0a8fad8d566101b2cbcafcd305d720e004275c0258d6db163df7ae6ac5a8a",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0008.parquet",
+   "rows": 17,
+   "sha256": "1040591cc83645c5ef7851dca571f83e4f7e63efc07200816016975c1c3c66c3",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0009.parquet",
+   "rows": 22,
+   "sha256": "ac6ff27d810e374e142a9f9968d43c6cacd304605817779210b758e25c646192",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0010.parquet",
+   "rows": 15,
+   "sha256": "87265dcb6f2b6b3ef3fa1b956dc6a4bef1035074af39d2dcd70f6e4085006f64",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0011.parquet",
+   "rows": 16,
+   "sha256": "141d0c52fc1301320c6c833141a8af911e4608b7f29b0b05d87ba8fa84466104",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0012.parquet",
+   "rows": 16,
+   "sha256": "b98a2a6494ba83b5611cfa9a904bf1b487f820c73ed12dc442893ba4d8bf0f3e",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0013.parquet",
+   "rows": 16,
+   "sha256": "d4dcc9604855f92acc97a3051e2503039964fa31ad6a55caef20fe8dff9409bc",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0014.parquet",
+   "rows": 17,
+   "sha256": "224923980173b55d930d0e4d4f70a6ab332f79dac8f1dbf2eecdd2096cc5bc73",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0015.parquet",
+   "rows": 20,
+   "sha256": "0d9b631ce6567e93e1f50e06ac260934c8b50137cb28d3d9cd0235efcca4cd97",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0016.parquet",
+   "rows": 17,
+   "sha256": "b3a0ef6e20c2b3671bc3e473984cbbf341d229a6fb1a1c9fe9c680c799bfa12b",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0017.parquet",
+   "rows": 11,
+   "sha256": "3fde517f79f05374745f3c9892a2e326d0c9ceddcbb105249add256931c03200",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0018.parquet",
+   "rows": 14,
+   "sha256": "23f77041a292f92e652f71cce382aa2830074bad43dc1dd904dfc481a6356266",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0019.parquet",
+   "rows": 20,
+   "sha256": "bfd74f11e20d1dcc281b746a68754f0c2b6abedc2a11ae3f0f66762ba82ae7ea",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0020.parquet",
+   "rows": 14,
+   "sha256": "0ca235326a6e401295df19df0e5e1ca5fc1a8e8d6ecc11ad00ccd3458b823256",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0021.parquet",
+   "rows": 17,
+   "sha256": "67971300ecfc7fb4c63018b1286247b7c07fb4b5b76fba828725100ddf8753ed",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0022.parquet",
+   "rows": 14,
+   "sha256": "67268eb7958c1720eb07992c82215940c4d9fed4c14babf0a3a3a3748c96dca0",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0023.parquet",
+   "rows": 18,
+   "sha256": "bc26a20f30308b62073294f8c9f0e2b3212b5127844ec8d20cdbe1ee73b8e1d9",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0024.parquet",
+   "rows": 14,
+   "sha256": "9c2036e7f10eda6f187103621f341524d769e93341095c5baba4815a78476e21",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0025.parquet",
+   "rows": 17,
+   "sha256": "faf13b1cfdd3a344d9701ab1715a1a7db0ce91828afc17b416d7e89f741c6bd9",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0026.parquet",
+   "rows": 26,
+   "sha256": "628e3ec72d36688957e51c27fefa1d1f1c3c66994cf71f6a4752db958fee61ef",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0027.parquet",
+   "rows": 16,
+   "sha256": "00f6f56cf2032724a36baa394ec7bb6615e3e3ebe13588c7f87767b16e9cecee",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0028.parquet",
+   "rows": 18,
+   "sha256": "464a88d4088efcbe0beca884ddce659e6b732d78d93576ed42e8596eb36b8658",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0029.parquet",
+   "rows": 11,
+   "sha256": "d5e3650e0872de843b81751658f4af08b4ee9982a3b7bcfb9430a6ae591cacd8",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0030.parquet",
+   "rows": 22,
+   "sha256": "ee98466aeb9e07e61bbf3a3fcedad4007d8aa4cd778f21f00f095dfa1bb24123",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0031.parquet",
+   "rows": 13,
+   "sha256": "5ec8a132fc65d074ec329c466b326f181d224a1132358b2e950f658d02457bf9",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0032.parquet",
+   "rows": 9,
+   "sha256": "91f42eb79d4020d4a4442c640a7cdf86192f61fbebe7610edb9ce2bc06c27a9a",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0033.parquet",
+   "rows": 13,
+   "sha256": "dad5d0ace825e7cf9ab1b72eabaf5fba2300c5287ff771e4b8ddef4cea7027aa",
+   "source_id": "wikimedia",
+   "split": "validation"
+  },
+  {
+   "file": "validation/wikimedia/wikimedia-0034.parquet",
+   "rows": 15,
+   "sha256": "6d156e4bd534eca2096f57ca1c52ae20d65443f027524b82fd8e849aa838a9b0",
+   "source_id": "wikimedia",
+   "split": "validation"
+  }
+ ],
+ "split_config": {
+  "leak_fraction": 0.5,
+  "namespace": "j1.split.v1",
+  "test_fraction": 0.001,
+  "validation_fraction": 0.001
+ },
+ "split_leakage_removed": 245,
+ "split_version": "j1.split.v1"
+}

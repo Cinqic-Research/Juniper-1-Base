@@ -1,0 +1,158 @@
+{
+ "arxiv-papers": {
+  "bytes_per_token": 3.251756423075867,
+  "raw_tokens_estimate": 5990692213.524845,
+  "rejected_tokens_estimate_by_stage": {
+   "contamination": 7626244.334913217,
+   "extraction": 0.0,
+   "license": 0.0,
+   "privacy": 33270552.564224415,
+   "quality": 205213013.27016124,
+   "selection": 0.0
+  }
+ },
+ "cinqic-aaa-docs": {
+  "bytes_per_token": 3.6031239514845192,
+  "raw_tokens_estimate": 188002.69130927522,
+  "rejected_tokens_estimate_by_stage": {
+   "contamination": 1454.0160345695256,
+   "extraction": 0.0,
+   "license": 0.0,
+   "privacy": 0.0,
+   "quality": 33673.00199317644,
+   "selection": 12782.51889753171
+  }
+ },
+ "cinqic-calculator-docs": {
+  "bytes_per_token": 3.7912483141016033,
+  "raw_tokens_estimate": 6674.3188268311005,
+  "rejected_tokens_estimate_by_stage": {
+   "contamination": 0.0,
+   "extraction": 0.0,
+   "license": 0.0,
+   "privacy": 0.0,
+   "quality": 0.0,
+   "selection": 0.0
+  }
+ },
+ "cinqic-juniper-app-docs": {
+  "bytes_per_token": 4.267077766358342,
+  "raw_tokens_estimate": 40674.909036899066,
+  "rejected_tokens_estimate_by_stage": {
+   "contamination": 0.0,
+   "extraction": 0.0,
+   "license": 0.0,
+   "privacy": 0.0,
+   "quality": 1618.20345868525,
+   "selection": 9853.1131378657
+  }
+ },
+ "finemath-4plus": {
+  "bytes_per_token": 3.47516305037415,
+  "raw_tokens_estimate": 1560260698.966694,
+  "rejected_tokens_estimate_by_stage": {
+   "contamination": 1830007.3716872947,
+   "extraction": 0.0,
+   "license": 0.0,
+   "privacy": 3748334.052584255,
+   "quality": 378898470.9244751,
+   "selection": 0.0
+  }
+ },
+ "fineweb-edu-dedup": {
+  "bytes_per_token": 4.5009074331583125,
+  "raw_tokens_estimate": 2816331858.24156,
+  "rejected_tokens_estimate_by_stage": {
+   "contamination": 482949.2790689755,
+   "extraction": 0.0,
+   "license": 0.0,
+   "privacy": 1653910.263774617,
+   "quality": 138272834.58777803,
+   "selection": 0.0
+  }
+ },
+ "libretexts": {
+  "bytes_per_token": 4.18388197356579,
+  "raw_tokens_estimate": 86085172.64004901,
+  "rejected_tokens_estimate_by_stage": {
+   "contamination": 211184.01656224593,
+   "extraction": 0.0,
+   "license": 0.0,
+   "privacy": 0.0,
+   "quality": 3361328.806322471,
+   "selection": 0.0
+  }
+ },
+ "oercommons": {
+  "bytes_per_token": 4.494327596495572,
+  "raw_tokens_estimate": 11543201.710630154,
+  "rejected_tokens_estimate_by_stage": {
+   "contamination": 12657.288276973079,
+   "extraction": 0.0,
+   "license": 0.0,
+   "privacy": 0.0,
+   "quality": 1114230.525586239,
+   "selection": 0.0
+  }
+ },
+ "pressbooks": {
+  "bytes_per_token": 4.363054923195489,
+  "raw_tokens_estimate": 132098641.23779589,
+  "rejected_tokens_estimate_by_stage": {
+   "contamination": 220467.08485977523,
+   "extraction": 0.4583944129071852,
+   "license": 0.0,
+   "privacy": 5407.678889066064,
+   "quality": 5404750.207161999,
+   "selection": 0.0
+  }
+ },
+ "python-peps": {
+  "bytes_per_token": 4.137994312958079,
+  "raw_tokens_estimate": 2736781.6733185365,
+  "rejected_tokens_estimate_by_stage": {
+   "contamination": 0.0,
+   "extraction": 0.0,
+   "license": 0.0,
+   "privacy": 0.0,
+   "quality": 42.77434588194736,
+   "selection": 0.0
+  }
+ },
+ "stackexchange": {
+  "bytes_per_token": 3.755126345791207,
+  "raw_tokens_estimate": 5883022455.359038,
+  "rejected_tokens_estimate_by_stage": {
+   "contamination": 331608.01670379733,
+   "extraction": 0.0,
+   "license": 0.0,
+   "privacy": 5416645.174348804,
+   "quality": 288200458.8774958,
+   "selection": 180896928.47788137
+  }
+ },
+ "stackv2-edu": {
+  "bytes_per_token": 3.494868267141211,
+  "raw_tokens_estimate": 11539136784.39959,
+  "rejected_tokens_estimate_by_stage": {
+   "contamination": 934408.8962389642,
+   "extraction": 7.439479262910217,
+   "license": 0.0,
+   "privacy": 18974240.20912907,
+   "quality": 548508027.0473453,
+   "selection": 6566703813.066128
+  }
+ },
+ "wikimedia": {
+  "bytes_per_token": 3.9304196762990085,
+  "raw_tokens_estimate": 14607988868.523079,
+  "rejected_tokens_estimate_by_stage": {
+   "contamination": 162264.351526079,
+   "extraction": 0.0,
+   "license": 0.0,
+   "privacy": 645407.9230512731,
+   "quality": 492341165.4152288,
+   "selection": 9308655168.4606
+  }
+ }
+}

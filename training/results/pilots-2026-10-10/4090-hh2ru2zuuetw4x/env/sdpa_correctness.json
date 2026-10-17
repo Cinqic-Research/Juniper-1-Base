@@ -1,0 +1,42 @@
+{
+ "flash": {
+  "fwd_relerr_vs_fp64": 0.003366015109518484,
+  "grad_relerr_vs_fp64": {
+   "q": 0.004433731817785491,
+   "k": 0.004758891324331466,
+   "v": 0.004011134808657257
+  },
+  "causal_fwd_prefix_maxdiff": 0.0,
+  "causal_bwd_prefix_grad_maxdiff": 0.00048828125,
+  "status": "ok",
+  "pass": false
+ },
+ "cudnn": {
+  "fwd_relerr_vs_fp64": 0.003364427687115467,
+  "grad_relerr_vs_fp64": {
+   "q": 0.004430221187263248,
+   "k": 0.0047560808936719726,
+   "v": 0.004010350672075313
+  },
+  "causal_fwd_prefix_maxdiff": 0.0,
+  "causal_bwd_prefix_grad_maxdiff": 0.0,
+  "status": "ok",
+  "pass": true
+ },
+ "efficient": {
+  "status": "unavailable",
+  "error": "No available kernel. Aborting execution."
+ },
+ "math": {
+  "fwd_relerr_vs_fp64": 0.0031347522234273124,
+  "grad_relerr_vs_fp64": {
+   "q": 0.0040237669090570005,
+   "k": 0.00400994538879302,
+   "v": 0.003195573609757589
+  },
+  "causal_fwd_prefix_maxdiff": 0.0,
+  "causal_bwd_prefix_grad_maxdiff": 0.0,
+  "status": "ok",
+  "pass": true
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "accepted": 28,
+ "accepted_on_first_candidate": 24,
+ "accepted_records_with_a_wrong_intermediate_equation": 0,
+ "algebraic_equations_skipped": 3,
+ "candidates_generated": 38,
+ "intermediate_equations_checked": 24,
+ "intermediate_equations_wrong": 0,
+ "median_candidate_latency_s": 6.595000000000001,
+ "median_output_words_accepted": 44.0,
+ "median_reasoning_words_accepted": 25.0,
+ "note": "local GPT-OSS-20B (pinned artifact 9d7364f0) on FLOWBOX RTX 2060, Harmony, low reasoning effort, up to 3 candidates; acceptance = known GSM8K answer + deterministic checks (no model judge). Intermediate equations extracted from the visible answer and re-evaluated with the restricted evaluator. No training used these records.",
+ "prompts": 30,
+ "rejected": [
+  {
+   "candidates": 3,
+   "prompt_id": "gsm8k-train-230",
+   "reason": "no candidate passed: answer_matches",
+   "status": "rejected"
+  },
+  {
+   "candidates": 3,
+   "prompt_id": "gsm8k-train-1253",
+   "reason": "no candidate passed: answer_matches",
+   "status": "rejected"
+  }
+ ],
+ "run_id": "feasibility-2026-10-13",
+ "schema": "j1.teacher-feasibility.v1",
+ "teacher": {
+  "artifact_sha256": "9d7364f02d9952e158ab462629e72401bec844d2243cc3854b271bb35d33d23d",
+  "model": "openai/gpt-oss-20b",
+  "reasoning_effort": "low",
+  "runtime": "llama.cpp b11270 (748d4225b9016b17ce4bcfa69fdc2c39f473a965), CUDA sm_75, FLOWBOX",
+  "sampling": {
+   "max_tokens": 1536,
+   "seed": 1000,
+   "temperature": 0.6,
+   "top_p": 0.95
+  },
+  "upstream_revision": "6cee5e81ee83917806bbde320786a8fb61efebee"
+ },
+ "verification_note": "teacher outputs use LaTeX (\\(...\\), {,}, \\times); equations are normalized before re-evaluation and algebraic lines (with variables) are skipped. A first pass without normalization reported 8/16 wrong, all extraction artifacts; a distillation verifier must be LaTeX-aware.",
+ "wrong_equations": []
+}

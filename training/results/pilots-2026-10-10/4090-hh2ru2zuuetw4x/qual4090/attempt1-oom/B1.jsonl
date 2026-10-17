@@ -1,0 +1,1 @@
+{"t": 1791634336.611892, "event": "checkpoint", "step": 0, "name": "ckpt-000000000-cc650f8a", "tags": ["init"], "ckpt_serialize_s": 0.15050633205100894, "ckpt_hash_s": 0.1316906011197716, "ckpt_copy_verify_s": 0.21163973002694547, "ckpt_publish_verify_s": 0.11558272899128497, "ckpt_total_s": 0.6122558731585741, "ckpt_bytes": 122000929}

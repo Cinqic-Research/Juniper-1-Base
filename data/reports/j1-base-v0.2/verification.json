@@ -1,0 +1,45 @@
+{
+ "accepted_manifest_sha256": "1a99ef755084dcfb1af3b207a476cc009c2bed99694e648fbc2eb8c3a54f37b3",
+ "accounting": {
+  "candidates_equal_candidate_rows": true,
+  "candidates_equal_removed_plus_unselected_plus_leaked_plus_accepted": true,
+  "dedup_saw_all_candidates": true,
+  "finalize_dedup_agree": true,
+  "problems": [],
+  "raw_documents": 37282242,
+  "raw_equals_stage_total": true
+ },
+ "build_id": "j1-base-v0.2",
+ "build_identity": "aa9c4ed9522449521881a64b1dd810006df6249f56d8c1dae8b4e7cc1de8d005",
+ "code": {
+  "commit": "e3f243e16f877cfb5431a225f398dfa59058f785",
+  "dirty": false,
+  "package_version": "0.1.0"
+ },
+ "contamination": {
+  "contaminated_documents_found": 0,
+  "limitations": "sampled independently; zero hits do not certify a clean corpus",
+  "scanned_documents": 1473,
+  "short_exact_documents_found": 0,
+  "short_exact_eligible_items": 6122
+ },
+ "schema": "j1.verification.v2",
+ "shards": {
+  "problems": [],
+  "rows_by_split_from_parquet": {
+   "test": 2610,
+   "train": 2961841,
+   "validation": 2583
+  },
+  "shards": 1345
+ },
+ "uniqueness_and_splits": {
+  "duplicate_doc_ids": 0,
+  "duplicate_signature_hashes": 0,
+  "duplicate_text_hashes": 0,
+  "groups_spanning_splits": 0,
+  "problems": [],
+  "split_mismatches": 0
+ },
+ "verified_at_utc": "2026-10-09T00:30:53.586784+00:00"
+}

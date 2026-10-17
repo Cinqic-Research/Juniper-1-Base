@@ -1,0 +1,13 @@
+{
+ "schema": "j1.sft-v21-smoke.v1",
+ "ab_bitwise": true,
+ "rollback": {
+  "corrupt": {
+   "final_equals_A": true
+  },
+  "torn": {
+   "final_equals_A": true
+  }
+ },
+ "pass": true
+}

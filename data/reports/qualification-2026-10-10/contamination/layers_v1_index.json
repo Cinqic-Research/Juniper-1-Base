@@ -1,0 +1,104 @@
+{
+ "version": "j1.contamination-layers.v1",
+ "n": 10,
+ "min_alnum_tokens_per_gram": 3,
+ "common_df_threshold": 10,
+ "token_regex": "[^\\W_]+|[^\\w\\s]|_",
+ "ident_regex": "(?<![0-9a-z_-])(?=[0-9a-z_-]*\\d)(?=[0-9a-z_-]*[a-z])[0-9a-z_-]{16,}(?![0-9a-z_-])",
+ "normalization": "NFKC + casefold",
+ "source_fingerprint": "820db74f7831439860762d57c6cf7048d6e630c153e71edc5e36b3223561a813",
+ "items": 118516,
+ "gram_rows": 9292284,
+ "distinct_grams": 6104097,
+ "identifiers": 1413,
+ "benchmarks": {
+  "aaa-erudition": {
+   "items": 142,
+   "layer_a_items": 9,
+   "layer_c_items": 11
+  },
+  "aaa-exams": {
+   "items": 5761,
+   "layer_a_items": 424,
+   "layer_c_items": 1416
+  },
+  "arc": {
+   "items": 8834,
+   "layer_a_items": 8339,
+   "layer_c_items": 0
+  },
+  "bbh": {
+   "items": 13022,
+   "layer_a_items": 12772,
+   "layer_c_items": 2
+  },
+  "gptoss-qualification": {
+   "items": 3536,
+   "layer_a_items": 727,
+   "layer_c_items": 283
+  },
+  "gsm8k": {
+   "items": 5276,
+   "layer_a_items": 5276,
+   "layer_c_items": 0
+  },
+  "hellaswag": {
+   "items": 40090,
+   "layer_a_items": 39986,
+   "layer_c_items": 13
+  },
+  "humaneval": {
+   "items": 492,
+   "layer_a_items": 485,
+   "layer_c_items": 5
+  },
+  "humanevalplus": {
+   "items": 328,
+   "layer_a_items": 320,
+   "layer_c_items": 2
+  },
+  "juniper-app-wrapper-eval": {
+   "items": 3341,
+   "layer_a_items": 432,
+   "layer_c_items": 1
+  },
+  "juniper-reference-eval": {
+   "items": 1013,
+   "layer_a_items": 173,
+   "layer_c_items": 10
+  },
+  "juniperbench-code": {
+   "items": 4472,
+   "layer_a_items": 1849,
+   "layer_c_items": 1166
+  },
+  "math": {
+   "items": 10000,
+   "layer_a_items": 9979,
+   "layer_c_items": 9
+  },
+  "mbpp": {
+   "items": 4203,
+   "layer_a_items": 4179,
+   "layer_c_items": 21
+  },
+  "mbppplus": {
+   "items": 1134,
+   "layer_a_items": 1129,
+   "layer_c_items": 7
+  },
+  "mmlu": {
+   "items": 31716,
+   "layer_a_items": 30010,
+   "layer_c_items": 19
+  }
+ },
+ "files": {
+  "grams.npy": "65cc53cfab9cd0e3ecfbf4a933926a5f0d0b7b713221107543613d77812d3b1c",
+  "gram_items.npy": "ecce9432480cdcb48f2c70a0b697056e59fd5de6b7d6cc159b7b78760140f7e8",
+  "item_ngrams.npy": "cc6551715897f3a261829fba8375549bfa2f7a725811027a1dbdcf6a27f74b82",
+  "item_bench.json": "bac0b1848f9f0fac6023560ecdf1054eeb86906cab53069ce56cad21429262ea",
+  "idents.json": "3f2fee64964a041952a0273f7bc53b513a5362a61341acc9bcfd428f8cbfd291"
+ },
+ "index_identity": "eddb2f37fae2421b42be9244d4a39f3dc5bb4b0a9205ad7c57f52de3060ac049"
+}

@@ -1,0 +1,86 @@
+{
+ "build_identity": "6b91fa976cb3d19ac955489a320f810aed818a25097647edbff792d0b399b6ab",
+ "bytes_by_stage": {
+  "candidate": 454543950,
+  "contamination": 74976,
+  "privacy": 117773,
+  "quality": 14079414
+ },
+ "bytes_in": 468816113,
+ "chars_in": 465979716,
+ "contamination_benchmarks": {
+  "arc": 1,
+  "hellaswag": 1,
+  "mmlu": 5
+ },
+ "docs_in": 100000,
+ "kinds": {
+  "math": 18,
+  "prose": 97421,
+  "technical": 378
+ },
+ "outputs": [
+  {
+   "file": "candidates/fineweb-edu-dedup/train-00003-of-00234.r00000000.parquet",
+   "rows": 97817,
+   "sha256": "7d94512115b76582bb9d5019f1100658a9b3dfdf825b955288c27bd297d55eb5"
+  },
+  {
+   "file": "rejects/fineweb-edu-dedup/train-00003-of-00234.r00000000.parquet",
+   "rows": 2183,
+   "sha256": "e70fa8e84f26564c1d65046af8eefb63922f0b507c0bf450a26b2f427b64ac3d"
+  },
+  {
+   "file": "signatures/fineweb-edu-dedup/train-00003-of-00234.r00000000.npy",
+   "rows": 97817,
+   "sha256": "7240e1b7a059ab3a01c04d86c6f72034a0fd672ebdc853dd563465499814c5b8"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "fineweb-edu-dedup/train-00003-of-00234.parquet",
+ "reasons": {
+  "contamination.arc": 1,
+  "contamination.hellaswag": 1,
+  "contamination.mmlu": 5,
+  "privacy.pii.us_ssn": 1,
+  "privacy.secret.jwt": 9,
+  "quality.binary_or_base64": 1,
+  "quality.corrupt_decoding": 14,
+  "quality.mojibake": 77,
+  "quality.prose.alpha_words": 23,
+  "quality.prose.bullet_lines": 232,
+  "quality.prose.duplicate_ngrams": 1315,
+  "quality.prose.ellipsis_lines": 188,
+  "quality.prose.line_length": 6,
+  "quality.prose.mean_word_length": 2,
+  "quality.prose.non_latin_script": 26,
+  "quality.prose.not_english": 71,
+  "quality.prose.symbol_ratio": 2,
+  "quality.prose.too_short": 25,
+  "quality.prose.top_ngram_repetition": 107,
+  "quality.spam_terms": 122,
+  "quality.technical.bullet_lines": 1,
+  "quality.technical.top_ngram_repetition": 1
+ },
+ "redactions": {
+  "email": 230,
+  "home_path_user": 75,
+  "ipv4": 413,
+  "phone": 2265
+ },
+ "row_range": [
+  0,
+  100000
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 381.97,
+ "slow_documents": [],
+ "source_id": "fineweb-edu-dedup",
+ "stages": {
+  "candidate": 97817,
+  "contamination": 7,
+  "privacy": 10,
+  "quality": 2166
+ },
+ "unit_id": "train-00003-of-00234.r00000000"
+}

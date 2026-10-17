@@ -1,0 +1,58 @@
+{
+ "base_generation": {
+  "bundle_sha256": "f96320150025d0250b5fbe7f5bc44b1f39b56ea836c8dfe842dbfc48c508eea1",
+  "decoding": {
+   "batch": 32,
+   "masking": "bundle forbidden_ids (chat) / all control ids (few-shot)",
+   "method": "greedy"
+  },
+  "device": "NVIDIA GeForce RTX 2060",
+  "generated_tokens": 1250407,
+  "generations_sha256": "6a294e52c82b0fc6b23c9f82b7d8b752950e0b0a434d5beeee62e6cb97c0fbd1",
+  "model": {
+   "checkpoint": "ckpt-000052034-336e5967",
+   "freeze_id": "juniper1-base-v1",
+   "kind": "frozen_base",
+   "manifest_sha256": "a2f616c714bbad26a2dade682e71e80493ca70d6a4531430c64fdaedf5932e74"
+  },
+  "schema": "j1.sft-generations.v1",
+  "seconds": 4802.78,
+  "selection": {
+   "families": "all",
+   "prompts": 7456,
+   "split": "all",
+   "variant": "all"
+  },
+  "torch": "2.8.0+cu128"
+ },
+ "candidate_generation": {
+  "bundle_sha256": "f96320150025d0250b5fbe7f5bc44b1f39b56ea836c8dfe842dbfc48c508eea1",
+  "decoding": {
+   "batch": 32,
+   "masking": "bundle forbidden_ids (chat) / all control ids (few-shot)",
+   "method": "greedy"
+  },
+  "device": "NVIDIA GeForce RTX 2060",
+  "generated_tokens": 236360,
+  "generations_sha256": "8699d80f251a7e6c253ee199a51b1e598fabfebcc99760cbdafaf57f75dfb681",
+  "model": {
+   "checkpoint": "ckpt-000001226-55d13f9a",
+   "kind": "sft_checkpoint",
+   "manifest_sha256": "dc0bbbb0cd655cc5114c1ee73ac777634985fca8a713a9f149f7686b08a110ce",
+   "model_state_sha256": "a4616f9045cfe250f188595fba591dd4c157cb613e331ceaa89aa889f8a79e95",
+   "run_id": "j1-sft-v1-pilot",
+   "stage": "juniper1-sft-v1-pilot",
+   "updates": 1226
+  },
+  "schema": "j1.sft-generations.v1",
+  "seconds": 1524.77,
+  "selection": {
+   "families": "all",
+   "prompts": 5811,
+   "split": "all",
+   "variant": "chat"
+  },
+  "torch": "2.8.0+cu128"
+ },
+ "determinism_repeat": "200/200 identical (test heldout.json, candidate)"
+}

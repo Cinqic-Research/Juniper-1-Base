@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "j1data"
+version = "0.1.0"
+description = "Reproducible, provenance-complete training-data pipeline for Juniper 1."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "Cinqic" }]
+dependencies = [
+  "numpy>=2.0",
+  "pyarrow>=17",
+  "scipy>=1.13",
+  "tokenizers>=0.20",
+  "xxhash>=3.4",
+  "zstandard>=0.22",
+  "jsonschema>=4.21",
+  "regex>=2024.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.11", "types-regex"]
+
+[project.scripts]
+j1data = "j1data.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM", "RUF", "ARG", "PTH"]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests deliberately contain confusable Unicode (Greek, full-width) to check normalization.
+"tests/*" = ["RUF001", "ARG001"]
+# Tokenizer probe strings are deliberately math, science and multilingual Unicode.
+"src/j1data/jtok.py" = ["RUF001"]
+# SFT generators render arithmetic with the multiplication/division signs on purpose.
+"src/j1data/sftgen.py" = ["RUF001", "RUF003"]
+# The dataset card is Markdown assembled line by line (table rows and prose are kept unwrapped).
+"src/j1data/sftbuild.py" = ["E501", "RUF001"]
+# Answer normalization maps confusable apostrophes and the minus sign on purpose.
+"src/j1data/sftscore.py" = ["RUF001"]
+# Evidence-producing tools whose own file bytes are hashed into committed records
+# (reports/contamination_f9/prohibited_f9.json `tool_sha256` = sha256(contamination_f9.py bytes +
+# contamination_layers.TOOL_SHA)). They are kept byte-identical to the recorded run; style findings
+# (long lines, os.rename/os.replace, ambiguous `I`, a dict comprehension, one misplaced noqa) are not fixed.
+"tools/contamination_f9.py" = ["E501", "PTH104", "PTH105", "RUF028"]
+"tools/contamination_layers.py" = ["E501", "E741", "C416", "PTH105"]
+
+[tool.ruff.format]
+# Same reason: the recorded tool_sha256 binds these bytes; the file is not reformatted.
+exclude = ["tools/contamination_f9.py"]
+
+[tool.mypy]
+python_version = "3.12"
+files = ["src/j1data"]
+strict = true
+warn_unreachable = true
+
+[[tool.mypy.overrides]]
+module = ["pyarrow.*", "scipy.*", "xxhash.*", "zstandard.*", "jsonschema.*", "tokenizers.*"]
+ignore_missing_imports = true
+
+# tokenizers 0.23.2 has an untyped BpeTrainer constructor while 0.23.3 types it.
+# Keep the identity-bound tokenizer source unchanged across both environments.
+[[tool.mypy.overrides]]
+module = ["j1data.tokenization", "j1data.jtok"]
+disable_error_code = ["unused-ignore"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

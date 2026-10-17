@@ -1,0 +1,128 @@
+Juniper 1 Base (juniper1-base-v1)
+Copyright 2026 Cinqic
+
+This product includes software and model artifacts developed by Cinqic.
+
+1. Scope of the Apache License, Version 2.0
+
+The Apache License 2.0 in the file LICENSE applies to the artifacts Cinqic
+created and owns: the model weights and configuration of Juniper 1 Base, the
+tokenizer cand5-j1tok-24k (tokenizer.json, freeze.json), the Juniper-1-Train and Juniper-1-Data
+source code published in this release, and Cinqic's build manifests, hash lists, document-id
+lists and reports. It is a licence to Cinqic's contribution only.
+
+The model licence does not relicense, and grants no rights in, any
+third-party text, code or data that the model was trained on. Training
+material remains under the terms of its own authors and licensors as listed
+below. Nothing in this release should be read as a claim that any third-party
+work is now available under the Apache License.
+
+2. Training-data notices
+
+Juniper 1 Base was trained on the Cinqic corpus j1-base-v0.2.2
+(2,959,371 documents), assembled from the following sources. Per-source
+record: data/docs/data_card.md and docs/RIGHTS.md in this repository.
+
+2.1 Open Data Commons Attribution License (ODC-By) v1.0 - notice under
+    section 4.3
+
+Content in the training corpus was obtained from the following databases,
+each of which is made available under the Open Data Commons Attribution
+License v1.0 (https://opendatacommons.org/licenses/by/1-0/):
+
+  - FineMath (HuggingFaceTB/finemath, configuration finemath-4plus,
+    revision e92b25a616738fe95dc186b64dfb19f9c8525594), SmolLM2 authors,
+    arXiv:2502.02737.
+  - FineWeb-Edu as deduplicated in SmolLM-Corpus
+    (HuggingFaceTB/smollm-corpus, configuration fineweb-edu-dedup,
+    revision 3ba9d605774198c5868892d7a8deda78031a781f), derived from
+    HuggingFaceFW/fineweb-edu (Penedo et al.).
+
+This model is a Produced Work of those databases within the meaning of the
+ODC-By licence. Section 4.3 of that licence requires this notice: Content was
+obtained from the Databases named above, and those Databases are available
+under the Open Data Commons Attribution License v1.0. Use of those databases
+is also subject to the Common Crawl Terms of Use
+(https://commoncrawl.org/terms-of-use). The individual web pages in those
+databases remain the copyright of their respective authors; the ODC-By
+licence covers the databases, not the page contents, and this model release
+grants no rights in those pages.
+
+2.2 Creative Commons Attribution-ShareAlike content
+
+The training corpus includes text licensed under Creative Commons
+Attribution-ShareAlike licences (versions 2.5, 3.0 and 4.0):
+
+  - English Wikipedia, Wikibooks, Wikiversity, Wikinews and Wikivoyage
+    articles (Wikimedia Foundation projects; contributors credited per
+    article), CC BY-SA 4.0, obtained via common-pile/wikimedia_filtered.
+  - Stack Exchange questions, answers and comments (authors credited per
+    post by profile URL), CC BY-SA 2.5 / 3.0 / 4.0 according to
+    contribution date, obtained via common-pile/stackexchange_filtered.
+  - Individual CC BY-SA 3.0 and 4.0 documents within the LibreTexts,
+    Pressbooks, OER Commons and arXiv sources listed in 2.3.
+
+Attribution for every such document (author list or profile URLs where the
+upstream data carries them, title, canonical URL and licence URL) is
+preserved in the per-document metadata of the published Juniper 1 Base
+dataset and in the Juniper-1-Data manifests. Where text from these sources is
+redistributed by Cinqic (the dataset release), it is redistributed under the
+same CC BY-SA licence and version as the original, with attribution and an
+indication of the modifications made (text repairs, boilerplate-line removal,
+privacy redactions). Whether a trained language model constitutes Adapted
+Material of CC BY-SA text is a question Cinqic does not resolve here; this
+notice discloses the sources and preserves their attribution regardless.
+
+2.3 Creative Commons Attribution, CC0 and public-domain content
+
+  - LibreTexts textbook pages (per-page CC BY 4.0, CC BY 3.0, CC BY-SA
+    2.5/3.0/4.0, GNU Free Documentation License, public domain), via
+    common-pile/libretexts_filtered.
+  - Pressbooks open textbooks (per-chapter CC BY 4.0, CC BY-SA 4.0, CC0 1.0,
+    public domain), via common-pile/pressbooks_filtered.
+  - OER Commons resources (per-document CC BY 4.0, CC BY-SA 4.0, public
+    domain), via common-pile/oercommons_filtered.
+  - arXiv papers whose authors chose CC BY 4.0, CC BY 3.0, CC BY-SA 4.0,
+    CC0 1.0 or the public domain, via common-pile/arxiv_papers_filtered;
+    authors credited per paper.
+  - Python Enhancement Proposals (public domain / CC0 1.0), via
+    common-pile/python_enhancement_proposals_filtered.
+
+Per-document author, title, URL and licence are preserved as in 2.2.
+
+2.4 Permissively licensed source code
+
+The training corpus includes source files from public repositories whose
+detected licences are all on the Blue Oak Council permissive licence list
+(https://blueoakcouncil.org/list), predominantly MIT, Apache-2.0,
+BSD-2-Clause, BSD-3-Clause, ISC, Unlicense, 0BSD, Zlib and CC0-1.0, obtained
+via common-pile/stackv2_edu_filtered (revision
+c354dbe88469a1153e97c6a63ac50591849654de), itself derived from The Stack v2
+(BigCode / Software Heritage; Lozhkov et al., "StarCoder 2 and The Stack v2:
+The Next Generation"). Those licences require that copyright and permission
+notices accompany copies of the code. Repository name, file path, blob id,
+revision and detected licences for every file are preserved in the
+Juniper-1-Data manifests; copyright holders are the respective repository
+authors. This model release does not redistribute those files.
+
+2.5 Common Pile attribution
+
+Eight of the ten sources were obtained from The Common Pile v0.1:
+Nikhil Kandpal, Brian Lester, Colin Raffel, Sebastian Majstorovic, Stella
+Biderman, Baber Abbasi, Luca Soldaini, Enrico Shippole, A. Feder Cooper,
+Aviya Skowron, John Kirchenbauer, Shayne Longpre, Lintang Sutawika, Alon
+Albalak, Zhenlin Xu, Guilherme Penedo, Loubna Ben Allal, Elie Bakouch, John
+David Pressman, Honglu Fan, Dashiell Stander, Guangyu Song, Aaron Gokaslan,
+Tom Goldstein, Brian R. Bartoldson, Bhavya Kailkhura, Tyler Murray.
+"The Common Pile v0.1: An 8TB Dataset of Public Domain and Openly Licensed
+Text", arXiv:2506.05209 (2025). The Common Pile cards note that "license
+laundering and inaccurate metadata can cause us to erroneously assign the
+incorrect license to some documents"; Cinqic carries that caveat forward and
+will act on substantiated reports sent to the contact in the model card.
+
+3. Not included
+
+Cinqic's internal documentation sources, synthetic text, and any source
+whose terms restrict training or redistribution (see
+data/docs/sources.md, "Considered but not admitted") are not part of the
+training corpus.

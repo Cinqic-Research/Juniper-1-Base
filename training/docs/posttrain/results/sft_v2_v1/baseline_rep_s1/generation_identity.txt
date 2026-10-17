@@ -1,0 +1,2 @@
+cand_gen a3f3a5d78616a53634aab3bb24be5aab6388f89f7ea40ce1a15afd4faea0bee3 1534.75 NVIDIA GeForce RTX 2060 2.8.0+cu128
+cand_gen_fewshot_facts 8df758f0d57fc6e610f9a09b3f62bc35e9457dfb162492b9147fc00be5af28cc 19.89 NVIDIA GeForce RTX 2060 2.8.0+cu128

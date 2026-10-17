@@ -1,0 +1,105 @@
+{
+ "schema": "j1.sft-pilot-protocol.v1",
+ "registered_before_any_result": true,
+ "base": {
+  "freeze_id": "juniper1-base-v1",
+  "freeze_record_sha256": "ef79b324fff459c8ffce7ac2e1b1542960a254b8383a6e8b19fd20402e92ff55"
+ },
+ "dataset_manifest_sha256": "0e51f1b7100f8cc1327397b2a1b80e52938b30291077573b5c08e80ce46266d5",
+ "eval_bundle_sha256": "ad3bb1fe22e196eb05e8659b4161e13672df4657183332e63a6a695adff28e20",
+ "data_code_revision": "eaabc58",
+ "lr_probes": {
+  "lrs": [
+   1e-05,
+   3e-05,
+   0.0001
+  ],
+  "updates": 150,
+  "warmup_updates": 15,
+  "min_lr_ratio": 1.0,
+  "metric": "dev_loss_at_150",
+  "constraint": {
+   "fixed32_bpb_max": 0.893728,
+   "base_fixed32_bpb": 0.867697,
+   "ratio": 1.03
+  },
+  "fallback": "smallest lr",
+  "tie_relative": 0.005
+ },
+ "pilot": {
+  "updates": 1278,
+  "warmup_updates": 40,
+  "min_lr_ratio": 0.1,
+  "episodes_per_update": 64,
+  "token_budget": 1024,
+  "optimizer": {
+   "name": "adamw",
+   "betas": [
+    0.9,
+    0.95
+   ],
+   "eps": 1e-08,
+   "weight_decay": 0.1,
+   "decay_policy": "matrices",
+   "clip": 1.0
+  },
+  "precision": "fp32",
+  "seed": 1,
+  "dev_every": 100,
+  "checkpoint": {
+   "every_updates": 500,
+   "every_seconds": 900
+  },
+  "candidate": "final checkpoint",
+  "early_stop": [
+   "non-finite",
+   "dev loss rises at 3 consecutive dev evals",
+   "checkpoint publication failure"
+  ]
+ },
+ "recovery": {
+  "run_a_updates": 30,
+  "run_b_sigterm_after": 15,
+  "pass": "bitwise model+optimizer digests and batch fingerprints 16-30"
+ },
+ "evaluation": {
+  "split": "test",
+  "variant": "chat",
+  "scoring": "strict",
+  "bootstrap": {
+   "resamples": 10000,
+   "seed": 20261012
+  },
+  "test": "exact McNemar"
+ },
+ "primary": {
+  "id": "P1",
+  "category": "instruction_following_in_distribution",
+  "items": 500,
+  "min_difference": 0.2,
+  "ci_lower_gt": 0.0
+ },
+ "gates": {
+  "G-PROTO": {
+   "protocol_valid_min": 0.9
+  },
+  "G-REG": {
+   "mcnemar_alpha": 0.05
+  },
+  "G-RET": {
+   "full_split_bpb_max": 0.943872,
+   "base_full_split_bpb": 0.916381,
+   "ratio": 1.03
+  },
+  "G-UNC": {
+   "abstention_min": 0.5,
+   "false_abstention_max": 0.25
+  },
+  "G-REC": "stage 3"
+ },
+ "decision": {
+  "pass": "PILOT_CANDIDATE_QUALIFIED",
+  "fail": "NOT_PROMOTED",
+  "note": "not production; base remains canonical"
+ }
+}

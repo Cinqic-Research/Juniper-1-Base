@@ -1,0 +1,16 @@
+{
+ "cpu": {
+  "turn_latency_s_median": 0.12586880150047364,
+  "turn_latency_s_max": 0.1536468269987381,
+  "prompt_tok_per_s_median": 112.1327651939897,
+  "gen_tok_per_s_median": 113.09804380371989,
+  "turns": 20
+ },
+ "gpu": {
+  "turn_latency_s_median": 0.042281239500880474,
+  "turn_latency_s_max": 0.1425217710020661,
+  "prompt_tok_per_s_median": 348.18941504178275,
+  "gen_tok_per_s_median": 350.273828440393,
+  "turns": 20
+ }
+}

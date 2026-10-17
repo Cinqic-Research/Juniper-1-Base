@@ -1,0 +1,24 @@
+{
+ "schema": "j1.preservation-receipts.v1",
+ "build": "j1-base-v0.2.2",
+ "artifact": "launch inputs (cand5-j1tok-24k shards, manifest, exclusion lists, tokenizer)",
+ "manifest_sha256": "8e1e9fc9aad246842a634830286f4c4f1cb76e70578765593b7885a0b7319a71",
+ "files": 18,
+ "hdd": {
+  "root": "/media/cinqic/Cinqic Storage/juniper1-data/data (canonical)",
+  "verified": true
+ },
+ "hf": {
+  "repo": "CinqicX/juniper1-corpus",
+  "commit": "6f8c986783c8662485748fa0153bae5b2e39aeaa",
+  "all_ok": true,
+  "method": "upload then fresh download + SHA-256 of every file"
+ },
+ "drive": {
+  "remote": "cinqic-drive:juniper1/data/j1-base-v0.2.2",
+  "check_ok": true,
+  "method": "rclone check (server hashes), MANIFEST.sha256 last"
+ },
+ "github": "small records (manifest copy, exclusion lists, lineage, permissions, recount) in Juniper-1-Data reports/j1-base-v0.2.2",
+ "accepted_text": "HDD canonical; reconstructible from j1-base-v0.2 text on HF + committed successor exclusion lists; full v0.2.2 text off-site copy queued after the launch"
+}

@@ -1,0 +1,107 @@
+{
+ "item01": {
+  "X": "candidate",
+  "Y": "baseline",
+  "id": "0d379cfea925a10baa468cf53000ac0f"
+ },
+ "item02": {
+  "X": "baseline",
+  "Y": "candidate",
+  "id": "24cea9cf64a1c770e1fef88b884d9dae"
+ },
+ "item03": {
+  "X": "candidate",
+  "Y": "baseline",
+  "id": "2e9594a07b5389ece2644e0f1861b8ba"
+ },
+ "item04": {
+  "X": "candidate",
+  "Y": "baseline",
+  "id": "32ab438f81bec47db5a48020fc773405"
+ },
+ "item05": {
+  "X": "candidate",
+  "Y": "baseline",
+  "id": "46c2fd6e9762cf8a2172ead49eebcddc"
+ },
+ "item06": {
+  "X": "baseline",
+  "Y": "candidate",
+  "id": "4a775a133ce5a5c09591f38ad1f9d02f"
+ },
+ "item07": {
+  "X": "baseline",
+  "Y": "candidate",
+  "id": "52411e169a927e0a1f2426ace83bfcfc"
+ },
+ "item08": {
+  "X": "candidate",
+  "Y": "baseline",
+  "id": "5c22d4d3fde1bd56392994abb69075ad"
+ },
+ "item09": {
+  "X": "candidate",
+  "Y": "baseline",
+  "id": "5ddcc2c0fdc9014f3891b11375d99e27"
+ },
+ "item10": {
+  "X": "candidate",
+  "Y": "baseline",
+  "id": "5e18253b9302586fdb50740d9463ee18"
+ },
+ "item11": {
+  "X": "baseline",
+  "Y": "candidate",
+  "id": "61ceefb318f5470d062a531630c07866"
+ },
+ "item12": {
+  "X": "baseline",
+  "Y": "candidate",
+  "id": "6c55f2ec906732a4c48d90bc3072e469"
+ },
+ "item13": {
+  "X": "baseline",
+  "Y": "candidate",
+  "id": "716640a6bd3f81e22ddb03e7e487deb3"
+ },
+ "item14": {
+  "X": "baseline",
+  "Y": "candidate",
+  "id": "907ecff99427aa1af05501b3fc287625"
+ },
+ "item15": {
+  "X": "baseline",
+  "Y": "candidate",
+  "id": "b613c0fd7d469ace77d9f2b54d453a3f"
+ },
+ "item16": {
+  "X": "candidate",
+  "Y": "baseline",
+  "id": "b937d78d32d192c54b6db959c184da2a"
+ },
+ "item17": {
+  "X": "candidate",
+  "Y": "baseline",
+  "id": "c8c9865f8a0bbd17f2455e82647227b5"
+ },
+ "item18": {
+  "X": "candidate",
+  "Y": "baseline",
+  "id": "cd54460d05cf048e42be21000eee3ede"
+ },
+ "item19": {
+  "X": "candidate",
+  "Y": "baseline",
+  "id": "d6196ef7b5ad3ccc1f312e38f11c9f46"
+ },
+ "item20": {
+  "X": "candidate",
+  "Y": "baseline",
+  "id": "e4f6a24da15e7743a263a0133b784ae0"
+ },
+ "item21": {
+  "X": "candidate",
+  "Y": "baseline",
+  "id": "f9ded80e0ac77db9e4202e86a72957e0"
+ }
+}

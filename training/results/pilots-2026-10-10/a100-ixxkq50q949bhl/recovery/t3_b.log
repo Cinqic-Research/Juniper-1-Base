@@ -1,0 +1,7 @@
+[ckpt] candidate /root/ckpt-recovery/t3/ckpt-000000020-ebe4f12d step=20: ok
+[resume] restored /root/ckpt-recovery/t3/ckpt-000000020-ebe4f12d at step 20 in 42.42s (lr=0.000600568)
+step 30 loss 7.7896 lr 0.000279 319ms
+[ckpt] step 30 -> /root/ckpt-recovery/t3/ckpt-000000030-3318f955 (1667.7 MiB, 6.28s)
+step 40 loss 8.0218 lr 9.4e-05 319ms
+[ckpt] step 40 -> /root/ckpt-recovery/t3/ckpt-000000040-d8692d75 (1667.7 MiB, 6.26s)
+{"steps_run": 20, "final_step": 40, "tokens_per_s_median": 102967.22356749668, "step_ms_median": 318.2371910661459, "peak_vram_gib": 28.859490394592285, "final_param_sha256": "0a2eecdd5245175ded97187c5d7a10b6114e579b43cef84f2941eb460374caec"}

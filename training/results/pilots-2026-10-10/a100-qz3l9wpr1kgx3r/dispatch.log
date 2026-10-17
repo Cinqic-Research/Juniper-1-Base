@@ -1,0 +1,12 @@
+2026-10-10T12:13:39Z dispatched tp-j1tok-24k on GPU 0
+2026-10-10T12:14:57Z all dispatched runs ended
+2026-10-10T12:14:57Z dispatched tp-j1tok-28k on GPU 0
+2026-10-10T12:16:16Z all dispatched runs ended
+2026-10-10T12:16:16Z dispatched tp-j1tok-32k on GPU 0
+2026-10-10T12:17:36Z all dispatched runs ended
+2026-10-10T12:48:49Z dispatched arch-j1-core-28x640-s1 on GPU 0
+2026-10-10T13:21:29Z all dispatched runs ended
+2026-10-10T13:21:29Z dispatched arch-j1-deep-30x576-s1 on GPU 0
+2026-10-10T13:55:03Z all dispatched runs ended
+2026-10-10T13:55:03Z dispatched arch-j1-wide-20x768-s1 on GPU 0
+2026-10-10T14:24:43Z all dispatched runs ended

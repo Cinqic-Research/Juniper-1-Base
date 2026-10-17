@@ -1,0 +1,91 @@
+{
+ "build_identity": "4f0acb7dd606888b832d09c5ada9c37c3c3f29054ee2a5c67cde713328b763ff",
+ "bytes_by_stage": {
+  "candidate": 945652813,
+  "contamination": 791065,
+  "extraction": 49,
+  "privacy": 12938460,
+  "quality": 167706457
+ },
+ "bytes_in": 1127088844,
+ "chars_in": 1123964507,
+ "contamination_benchmarks": {
+  "bbh": 2,
+  "canary:26b5c67b": 18
+ },
+ "docs_in": 345240,
+ "kinds": {
+  "code": 303945
+ },
+ "outputs": [
+  {
+   "file": "candidates/stackv2-edu/stack-edu-0011.parquet",
+   "rows": 303945,
+   "sha256": "3e0ba62ddc85c94c89c60a8df87dc4817a39a4ba77add8907c5190ebc93cf39d"
+  },
+  {
+   "file": "rejects/stackv2-edu/stack-edu-0011.parquet",
+   "rows": 41295,
+   "sha256": "f70db2aa880c5086399d308d72fa27c5ff33bd71d9b11624a4599538574cf5c6"
+  },
+  {
+   "file": "signatures/stackv2-edu/stack-edu-0011.npy",
+   "rows": 303945,
+   "sha256": "0daefde4c71c339dee6015c0dbb935b44bc1b0412f38910320ba94cf223664ce"
+  }
+ ],
+ "process_version": "j1.process.v1",
+ "raw_file": "stack-edu-0011.json.gz",
+ "reasons": {
+  "contamination.bbh": 2,
+  "contamination.canary": 18,
+  "extraction.empty": 222,
+  "privacy.pii.payment_card": 74,
+  "privacy.pii.us_ssn": 1,
+  "privacy.secret.auth_header": 127,
+  "privacy.secret.aws_access_key": 26,
+  "privacy.secret.aws_secret_key": 7,
+  "privacy.secret.credential_url": 115,
+  "privacy.secret.github_token": 3,
+  "privacy.secret.google_api_key": 30,
+  "privacy.secret.jwt": 130,
+  "privacy.secret.password_assignment": 442,
+  "privacy.secret.private_key": 106,
+  "privacy.secret.slack_token": 24,
+  "privacy.secret.slack_webhook": 18,
+  "privacy.secret.stripe_key": 1,
+  "privacy.secret.twilio_key": 1,
+  "quality.binary_or_base64": 51,
+  "quality.code.data_heavy": 9,
+  "quality.code.generated": 1672,
+  "quality.code.long_lines": 32824,
+  "quality.code.low_alnum": 3,
+  "quality.code.non_latin_script": 85,
+  "quality.code.too_large": 3,
+  "quality.code.too_short": 1376,
+  "quality.code.vendored_or_minified": 3019,
+  "quality.corrupt_decoding": 21,
+  "quality.mojibake": 17,
+  "quality.spam_terms": 1948
+ },
+ "redactions": {
+  "email": 7960,
+  "home_path_user": 9905
+ },
+ "row_range": [
+  0,
+  -1
+ ],
+ "schema": "j1.unit-marker.v1",
+ "seconds": 835.94,
+ "slow_documents": [],
+ "source_id": "stackv2-edu",
+ "stages": {
+  "candidate": 303945,
+  "contamination": 18,
+  "extraction": 222,
+  "privacy": 1006,
+  "quality": 40049
+ },
+ "unit_id": "stack-edu-0011"
+}
