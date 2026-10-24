@@ -6,7 +6,7 @@ release under their own terms. Pinned revisions, per-source evidence links and t
 `data/configs/sources.toml`, `data/docs/sources.md` and `data/docs/data_card.md`. The release-rights table with
 quoted license statements is in `docs/RIGHTS.md`.
 
-| Source (`source_id`) | Upstream | Pinned revision | License(s) | Share of training tokens | In the dataset release |
+| Source (`source_id`) | Upstream | Pinned revision | License(s) | Share of document tokens (all splits) | In the dataset release |
 |---|---|---|---|---:|---|
 | `fineweb-edu-dedup` | `HuggingFaceTB/smollm-corpus` (FineWeb-Edu dedup) | `3ba9d605` | ODC-By 1.0; Common Crawl Terms of Use | 31.64 % | reconstruction manifest only (document IDs, hashes, pinned file inventory); no text |
 | `stackv2-edu` | `common-pile/stackv2_edu_filtered` | `c354dbe8` | per-file permissive licenses (MIT, Apache-2.0, BSD-2/3, ISC, Unlicense, 0BSD, Zlib, Blue Oak permissive) | 17.16 % | see `docs/DATASET.md` |

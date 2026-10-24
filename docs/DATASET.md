@@ -19,7 +19,7 @@ Apache-2.0 license of this repository covers only Cinqic's compilation, schema, 
 | `manifest-finemath-4plus` | `finemath-4plus` | 297,874 | 424,296,121 | 12.43 % | manifest only (IDs, hashes, WARC locators) | ODC-By 1.0 (database); page contents not licensed |
 
 Totals: 2,959,371 documents (train 2,954,191 / validation 2,576 / test 2,604), 3,413,019,479 document tokens.
-Text payloads cover 38.8 % of training tokens; the three manifest-only sources cover 61.2 %. Every row of every
+Text payloads cover 38.8 % of document tokens (all splits); the three manifest-only sources cover 61.2 %. Every row of every
 config carries `doc_id`, `split`, `sha256` and `norm_sha256` of Cinqic's stored text, so a document re-derived
 from the pinned upstream file with the published pipeline can be verified byte-exactly. The `reconstruction/`
 folder of the dataset holds the accepted manifest (`54a3adb9…4185`), `MANIFEST.sha256`, the exclusion lists,
@@ -44,3 +44,6 @@ held-out shards), byte-identical `shards.json` (the current writer omits a `seco
 end-to-end pipeline rerun by an outside party (the dedup and selection stages also saw three internal Cinqic
 documentation sources that were removed from v0.2.2 and are not published; the published document set is the
 definition of the corpus, verified by hash).
+
+`data/docs/data_card.md` is the historical export at `14ce3ffe`; its "remain pending" lines predate the
+2026-10-16 release decisions and the 2026-10-17 publication described here.
