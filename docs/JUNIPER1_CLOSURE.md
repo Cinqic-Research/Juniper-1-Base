@@ -1,4 +1,4 @@
-> Copy of the closure record in the private Juniper-1-Train repository (PR #35). Relative paths such as `docs/...` refer to that repository; the same files are mirrored here under `training/docs/`, and the Juniper-1-Data paths under `data/`.
+> Copy of the closure record in the private Juniper-1-Train repository (PR #35). Relative paths such as `docs/...` refer to that repository. Most of those files are exported here under `training/docs/` and the Juniper-1-Data paths under `data/`, but some, such as the funding contracts, were not exported ([export mapping](EXPORT_MAPPING.md)). For current dataset availability see [DATASET.md](DATASET.md): FineWeb-Edu, FineMath and Stack v2 Edu are all published as reconstruction manifests only.
 
 # Juniper 1 R&D closure record (2026-10-16)
 

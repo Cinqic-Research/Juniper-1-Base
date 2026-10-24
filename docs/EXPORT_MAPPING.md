@@ -21,3 +21,8 @@ replaced with `[owner-email-redacted]` (flagged `modified` in `EXPORT_MAPPING.js
 export banner at the top of `data/README.md` are written by the export script. No other exported file was altered. Evidence files keep the absolute
 workstation paths (`/home/cinqic/...`, `/media/cinqic/Cinqic Storage/...`) and cloud pod identifiers they were
 recorded with; several of them are self-hashed records whose bytes must not change.
+
+The `../EXPORT_MAPPING.md` references in `training/README.md` and `data/README.md` mean this file
+(`docs/EXPORT_MAPPING.md`); the machine-readable list is `EXPORT_MAPPING.json` at the repository root. Those
+exported files are hash-pinned and left unchanged, and the exported trees are not refreshed from the private
+repositories.

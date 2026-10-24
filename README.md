@@ -1,9 +1,10 @@
 # Juniper 1 Base
 
 **Juniper 1 Base** (`juniper1-base-v1`) is Cinqic's first original base language model: a 142,771,456-parameter
-decoder-only Transformer trained from scratch, by Cinqic, on one epoch of the 3.41-billion-token
-`j1-base-v0.2.2` corpus. This repository holds the released weights' loader, the tokenizer package, a
-text-continuation CLI, the training and data-pipeline source at their exact historical versions, the research
+decoder-only Transformer trained from scratch, by Cinqic, on one epoch of the `j1-base-v0.2.2` train split
+(3,410,100,224 training targets; the corpus totals 3,413,019,479 document tokens across all splits). This
+repository holds the released weights' loader, the tokenizer package, a text-continuation CLI, historical
+exports of the training and data-pipeline source at their exact historical versions, the research
 evidence behind the checkpoint selection, and a reproduction guide.
 
 | | |
@@ -87,10 +88,10 @@ Local files: `juniper1 complete --model ./juniper1-base "..."` where the directo
 | `juniper1/tokenizer.json` | The frozen tokenizer (same bytes as on the Hub) |
 | `tests/` | Tokenizer, model-numerics and generation tests (CPU, no download) |
 | `scripts/` | `convert_checkpoint_to_safetensors.py`, `parity_check.py` |
-| `training/` | Juniper-1-Train source at the frozen code identity (`j1bench/`, tools, tests) and the research evidence: freeze record, audit and selection reports, training contract, protocols, logged results |
-| `data/` | Juniper-1-Data pipeline source, configs, schemas, manifests and reports for `j1-base-v0.2.2`, data card, tokenizer stage |
+| `training/` | Historical export of the private Juniper-1-Train repository at `52bd74ca`, not a live mirror ([export mapping](docs/EXPORT_MAPPING.md)); the checkpoint-bound `j1bench/` files equal the checkpoint's code identity `828edd19`. Tools, tests and the research evidence: freeze record, audit and selection reports, training contract, protocols, logged results |
+| `data/` | Historical export of the private Juniper-1-Data repository at `14ce3ffe`, not a live mirror: pipeline source, configs, schemas, manifests and reports for `j1-base-v0.2.2`, data card, tokenizer stage |
 | `evidence/` | Training and validation curves extracted from the raw run log; reference-versus-export parity record |
-| `docs/` | Reproduction guide, dataset availability, release record, Juniper 1 R&D closure, export mapping |
+| `docs/` | Reproduction guide, dataset availability, release record, Juniper 1 R&D closure, export mapping, v1.0.0 release notes, and the dated 2026-10-16 rights table and dataset release plan |
 
 ## Reproduction levels
 
@@ -101,5 +102,7 @@ token bytes but a metadata field differs; and a full pretraining replication was
 
 ## Status
 
-Juniper 1 R&D is closed (owner decision, 2026-10-16). This repository receives packaging, security and
+Juniper 1 R&D is closed (owner decision, 2026-10-16). Juniper 1 Base v1.0.0 was published on 2026-10-17,
+US Eastern (GitHub release; Hugging Face model revision `cd4dce2c`, dataset revision `9cb35fc7`; see
+[docs/RELEASE_RECORD.md](docs/RELEASE_RECORD.md)). This repository receives packaging, security and
 documentation maintenance only. A future Juniper model would be a separate project and decision.
